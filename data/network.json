@@ -1,60 +1,20 @@
 {
-  "nodes":[
-    {"id":"METI","group":"Policy"},
-    {"id":"NEDO","group":"Policy"},
-
-    {"id":"Mitsui & Co.","group":"Trading"},
-    {"id":"Mitsubishi Corporation","group":"Trading"},
-    {"id":"Toyota Tsusho","group":"Trading"},
-
-    {"id":"Sumitomo Metal Mining","group":"Cathode"},
-    {"id":"Nichia","group":"Cathode"},
-    {"id":"Resonac","group":"Anode"},
-    {"id":"Mitsubishi Chemical","group":"Anode"},
-    {"id":"JX Nippon Mining & Metals","group":"Precursor"},
-
-    {"id":"Panasonic Energy","group":"Cell"},
-    {"id":"Prime Planet Energy","group":"Cell"},
-    {"id":"AESC","group":"Cell"},
-    {"id":"Blue Energy","group":"Cell"},
-    {"id":"GS Yuasa","group":"Cell"},
-
-    {"id":"Toyota","group":"OEM"},
-    {"id":"Honda","group":"OEM"},
-    {"id":"Nissan","group":"OEM"},
-    {"id":"Mazda","group":"OEM"},
-    {"id":"Suzuki","group":"OEM"},
-
-    {"id":"Makita","group":"Niche"},
-    {"id":"Kubota","group":"Niche"},
-    {"id":"Yanmar","group":"Niche"},
-    {"id":"Komatsu","group":"Niche"}
+  "nodes": [
+    {"id": "METI", "group": "Policy"},
+    {"id": "Honda Motor", "group": "OEM"},
+    {"id": "Jera", "group": "GX"},
+    {"id": "SMM", "group": "Cathode"},
+    {"id": "Nano One", "group": "Cathode"},
+    {"id": "Japanese Gov", "group": "Policy"},
+    {"id": "Canada Gov", "group": "Policy"}
   ],
-
-  "links":[
-
-    {"source":"METI","target":"Toyota","type":"Policy"},
-    {"source":"METI","target":"Panasonic Energy","type":"Subsidy"},
-    {"source":"NEDO","target":"Prime Planet Energy","type":"R&D"},
-
-    {"source":"Toyota Tsusho","target":"Prime Planet Energy","type":"Supply"},
-    {"source":"Mitsui & Co.","target":"Sumitomo Metal Mining","type":"Investment"},
-    {"source":"Mitsubishi Corporation","target":"JX Nippon Mining & Metals","type":"Investment"},
-
-    {"source":"Sumitomo Metal Mining","target":"Prime Planet Energy","type":"Cathode Supply"},
-    {"source":"Nichia","target":"AESC","type":"Cathode Supply"},
-    {"source":"Resonac","target":"Panasonic Energy","type":"Anode Supply"},
-    {"source":"Mitsubishi Chemical","target":"Blue Energy","type":"Material Supply"},
-
-    {"source":"Panasonic Energy","target":"Mazda","type":"Battery Supply"},
-    {"source":"Prime Planet Energy","target":"Toyota","type":"JV"},
-    {"source":"AESC","target":"Nissan","type":"Battery Supply"},
-    {"source":"Blue Energy","target":"Honda","type":"Battery Supply"},
-    {"source":"GS Yuasa","target":"Honda","type":"Battery Supply"},
-
-    {"source":"Panasonic Energy","target":"Makita","type":"Battery Supply"},
-    {"source":"GS Yuasa","target":"Kubota","type":"Battery Supply"},
-    {"source":"GS Yuasa","target":"Yanmar","type":"Battery Supply"},
-    {"source":"Panasonic Energy","target":"Komatsu","type":"Battery Supply"}
+  "links": [
+    {"source": "Japanese Gov", "target": "Jera", "type": "Policy"},
+    {"source": "METI", "target": "Honda Motor", "type": "Policy"},
+    {"source": "SMM", "target": "Nano One", "type": "Technology"},
+    {"source": "Canada Gov", "target": "Nano One", "type": "Investment"},
+    {"source": "Honda Motor", "target": "SMM", "type": "Procurement"},
+    {"source": "Jera", "target": "Japanese Gov", "type": "Partnership"},
+    {"source": "Canada Gov", "target": "Japanese Gov", "type": "Partnership"}
   ]
 }
