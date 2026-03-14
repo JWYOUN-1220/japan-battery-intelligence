@@ -1,20 +1,22 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
+    {"id": "US Gov", "group": "Policy"},
+    {"id": "Japanese Gov", "group": "Policy"},
+    {"id": "EU Commission", "group": "Policy"},
     {"id": "Honda Motor", "group": "OEM"},
+    {"id": "LG Energy Solution", "group": "Cell"},
     {"id": "Jera", "group": "GX"},
     {"id": "SMM", "group": "Cathode"},
     {"id": "Nano One", "group": "Cathode"},
-    {"id": "Japanese Gov", "group": "Policy"},
-    {"id": "Canada Gov", "group": "Policy"}
+    {"id": "Mitsui & Co.", "group": "Trading"}
   ],
   "links": [
-    {"source": "Japanese Gov", "target": "Jera", "type": "Policy"},
-    {"source": "METI", "target": "Honda Motor", "type": "Policy"},
+    {"source": "US Gov", "target": "Japanese Gov", "type": "Policy"},
+    {"source": "Japanese Gov", "target": "EU Commission", "type": "Policy"},
+    {"source": "Honda Motor", "target": "LG Energy Solution", "type": "Acquisition"},
+    {"source": "Honda Motor", "target": "Jera", "type": "Partnership"},
     {"source": "SMM", "target": "Nano One", "type": "Technology"},
-    {"source": "Canada Gov", "target": "Nano One", "type": "Investment"},
-    {"source": "Honda Motor", "target": "SMM", "type": "Procurement"},
-    {"source": "Jera", "target": "Japanese Gov", "type": "Partnership"},
-    {"source": "Canada Gov", "target": "Japanese Gov", "type": "Partnership"}
+    {"source": "Mitsui & Co.", "target": "Japanese Gov", "type": "Investment"},
+    {"source": "Jera", "target": "Japanese Gov", "type": "Policy"}
   ]
 }
