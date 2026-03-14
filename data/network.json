@@ -1,1 +1,23 @@
-
+{
+  "nodes": [
+    {"id": "METI", "group": "Policy"},
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Suzuki Motor", "group": "OEM"},
+    {"id": "Kanadevia", "group": "Cell"},
+    {"id": "Honda Motor", "group": "OEM"},
+    {"id": "LG Energy Solution", "group": "Cell"},
+    {"id": "Mitsui & Co.", "group": "Trading"},
+    {"id": "Sovereign Metals", "group": "GX"},
+    {"id": "Sumitomo Metal Mining", "group": "Cathode"},
+    {"id": "Toyota Motor", "group": "OEM"}
+  ],
+  "links": [
+    {"source": "METI", "target": "GS Yuasa", "type": "Investment"},
+    {"source": "Suzuki Motor", "target": "Kanadevia", "type": "Acquisition"},
+    {"source": "Honda Motor", "target": "LG Energy Solution", "type": "Partnership"},
+    {"source": "Honda Motor", "target": "GS Yuasa", "type": "JV"},
+    {"source": "Mitsui & Co.", "target": "Sovereign Metals", "type": "Partnership"},
+    {"source": "Sumitomo Metal Mining", "target": "Toyota Motor", "type": "Technology"},
+    {"source": "Sumitomo Metal Mining", "target": "Toyota Motor", "type": "Supply"}
+  ]
+}
