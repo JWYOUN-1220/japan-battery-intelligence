@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Japan Battery Supply Chain Map</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background:#f7f9fc;
+  color:#1a1a1a;
+}
+h1{
+  color:#005BAC;
+  margin-bottom:10px;
+}
+p{
+  color:#555;
+}
+#network{
+  width: 100%;
+  height: 760px;
+  border: 1px solid #d9e2ec;
+  background:#ffffff;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
 
+<h1>Japan Battery Supply Chain Network</h1>
+<p>정책 → 상사 → 소재 → 셀 → OEM 구조 기준으로 시각화</p>
+
+<div id="network"></div>
+
+<script>
+fetch("data/network.json")
+  .then(response => response.json())
+  .then(data => {
+    const groupColors = {
+      Policy: "#003B70",
+      Trading: "#4F81BD",
+      Cathode: "#D9534F",
+      Precursor: "#F0AD4E",
+      Anode: "#5CB85C",
+      Cell: "#5BC0DE",
+      OEM: "#9370DB",
+      Niche: "#8C564B",
+      GX: "#2CA02C",
+      Equipment: "#7F8C8D"
+    };
+
+    const nodes = data.nodes.map(node => ({
+      id: node.id,
+      label: node.id,
+      group: node.group,
+      color: groupColors[node.group] || "#999999",
+      shape: "box",
+      font: { color: "#ffffff", size: 14, face: "Arial" },
+      margin: 10
+    }));
+
+    const edges = data.links.map(link => ({
+      from: link.source,
+      to: link.target,
+      label: link.type,
+      arrows: "to",
+      font: { align: "middle", size: 11 }
+    }));
+
+    const container = document.getElementById("network");
+    const dataset = {
+      nodes: new vis.DataSet(nodes),
+      edges: new vis.DataSet(edges)
+    };
+
+    const options = {
+      layout: {
+        hierarchical: {
+          enabled: true,
+          direction: "LR",
+          sortMethod: "directed",
+          levelSeparation: 180,
+          nodeSpacing: 160
+        }
+      },
+      physics: false,
+      interaction: {
+        hover: true,
+        dragNodes: true
+      },
+      nodes: {
+        borderWidth: 1
+      },
+      edges: {
+        smooth: {
+          type: "cubicBezier",
+          forceDirection: "horizontal",
+          roundness: 0.4
+        }
+      }
+    };
+
+    new vis.Network(container, dataset, options);
+  })
+  .catch(error => {
+    document.getElementById("network").innerHTML =
+      "<p>network.json을 불러오지 못했습니다.</p>";
+    console.error(error);
+  });
+</script>
+
+</body>
+</html>
