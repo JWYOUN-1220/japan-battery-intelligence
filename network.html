@@ -1,115 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>Japan Battery Supply Chain Map</title>
-<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-<style>
-body{
-  font-family: Arial, sans-serif;
-  margin: 30px;
-  background:#f7f9fc;
-  color:#1a1a1a;
-}
-h1{
-  color:#005BAC;
-  margin-bottom:10px;
-}
-p{
-  color:#555;
-}
-#network{
-  width: 100%;
-  height: 760px;
-  border: 1px solid #d9e2ec;
-  background:#ffffff;
-  border-radius: 8px;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Battery Supply Chain Map</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <h1>Japan Battery Supply Chain Network</h1>
+        <p class="subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
+      </div>
+    </header>
 
-<h1>Japan Battery Supply Chain Network</h1>
-<p>정책 → 상사 → 소재 → 셀 → OEM 구조 기준으로 시각화</p>
+    <section class="card">
+      <div id="network" class="network-box"></div>
+    </section>
+  </div>
 
-<div id="network"></div>
+  <script>
+    fetch("data/network.json")
+      .then(response => response.json())
+      .then(data => {
+        const groupColors = {
+          Policy: "#003B70",
+          Trading: "#4F81BD",
+          Cathode: "#D9534F",
+          Precursor: "#F0AD4E",
+          Anode: "#5CB85C",
+          Cell: "#5BC0DE",
+          OEM: "#7E57C2",
+          Niche: "#8D6E63",
+          GX: "#2E7D32",
+          Equipment: "#607D8B"
+        };
 
-<script>
-fetch("data/network.json")
-  .then(response => response.json())
-  .then(data => {
-    const groupColors = {
-      Policy: "#003B70",
-      Trading: "#4F81BD",
-      Cathode: "#D9534F",
-      Precursor: "#F0AD4E",
-      Anode: "#5CB85C",
-      Cell: "#5BC0DE",
-      OEM: "#9370DB",
-      Niche: "#8C564B",
-      GX: "#2CA02C",
-      Equipment: "#7F8C8D"
-    };
+        const nodes = data.nodes.map(node => ({
+          id: node.id,
+          label: node.id,
+          group: node.group,
+          color: groupColors[node.group] || "#999999",
+          shape: "box",
+          font: { color: "#ffffff", size: 14, face: "Arial" },
+          margin: 10
+        }));
 
-    const nodes = data.nodes.map(node => ({
-      id: node.id,
-      label: node.id,
-      group: node.group,
-      color: groupColors[node.group] || "#999999",
-      shape: "box",
-      font: { color: "#ffffff", size: 14, face: "Arial" },
-      margin: 10
-    }));
+        const edges = data.links.map(link => ({
+          from: link.source,
+          to: link.target,
+          label: link.type,
+          arrows: "to",
+          font: { align: "middle", size: 11 }
+        }));
 
-    const edges = data.links.map(link => ({
-      from: link.source,
-      to: link.target,
-      label: link.type,
-      arrows: "to",
-      font: { align: "middle", size: 11 }
-    }));
+        const container = document.getElementById("network");
+        const dataset = {
+          nodes: new vis.DataSet(nodes),
+          edges: new vis.DataSet(edges)
+        };
 
-    const container = document.getElementById("network");
-    const dataset = {
-      nodes: new vis.DataSet(nodes),
-      edges: new vis.DataSet(edges)
-    };
+        const options = {
+          layout: {
+            hierarchical: {
+              enabled: true,
+              direction: "LR",
+              sortMethod: "directed",
+              levelSeparation: 180,
+              nodeSpacing: 160
+            }
+          },
+          physics: false,
+          interaction: { hover: true, dragNodes: true },
+          edges: {
+            smooth: {
+              type: "cubicBezier",
+              forceDirection: "horizontal",
+              roundness: 0.4
+            }
+          }
+        };
 
-    const options = {
-      layout: {
-        hierarchical: {
-          enabled: true,
-          direction: "LR",
-          sortMethod: "directed",
-          levelSeparation: 180,
-          nodeSpacing: 160
-        }
-      },
-      physics: false,
-      interaction: {
-        hover: true,
-        dragNodes: true
-      },
-      nodes: {
-        borderWidth: 1
-      },
-      edges: {
-        smooth: {
-          type: "cubicBezier",
-          forceDirection: "horizontal",
-          roundness: 0.4
-        }
-      }
-    };
-
-    new vis.Network(container, dataset, options);
-  })
-  .catch(error => {
-    document.getElementById("network").innerHTML =
-      "<p>network.json을 불러오지 못했습니다.</p>";
-    console.error(error);
-  });
-</script>
-
+        new vis.Network(container, dataset, options);
+      })
+      .catch(error => {
+        document.getElementById("network").innerHTML = "<p>network.json을 불러오지 못했습니다.</p>";
+        console.error(error);
+      });
+  </script>
 </body>
 </html>
