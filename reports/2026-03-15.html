@@ -3,84 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan Battery Market Intelligence Report - 2026.03.14</title>
+    <title>Japan Battery Market Intelligence Report - 2026.03.15</title>
     <style>
-        :root { --posco-blue: #004b91; --posco-gray: #4b4b4b; --bg-light: #f4f7f9; }
-        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 20px; line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .header { border-bottom: 3px solid var(--posco-blue); padding-bottom: 20px; margin-bottom: 30px; }
-        .header h1 { color: var(--posco-blue); margin: 0; font-size: 28px; }
-        .header p { color: #888; margin: 5px 0 0 0; font-size: 14px; }
-        .summary-box { background: #eef5ff; border-left: 5px solid var(--posco-blue); padding: 20px; margin-bottom: 30px; border-radius: 4px; }
-        .summary-box h2 { margin: 0 0 10px 0; font-size: 18px; color: var(--posco-blue); }
-        .news-card { border: 1px solid #ddd; border-radius: 8px; padding: 25px; margin-bottom: 25px; transition: transform 0.2s; }
-        .news-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+        :root { --posco-blue: #004b91; --posco-light-blue: #00a0e9; --posco-gray: #4b4b4b; --bg-light: #f8f9fa; }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase; }
         .high { background: #ffebeb; color: #d32f2f; }
         .medium { background: #fff4e5; color: #ef6c00; }
-        .news-title { font-size: 19px; font-weight: bold; margin-bottom: 10px; color: #222; }
-        .meta { font-size: 13px; color: #777; margin-bottom: 15px; }
-        .meta a { color: var(--posco-blue); text-decoration: none; font-weight: bold; }
-        .section-title { font-size: 20px; color: var(--posco-blue); border-bottom: 2px solid #eee; padding-bottom: 10px; margin: 40px 0 20px; }
-        .impact-flow { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; font-weight: bold; text-align: center; }
-        .impact-item { flex: 1; position: relative; }
-        .impact-item:not(:last-child):after { content: "↓"; position: absolute; right: -10px; color: var(--posco-blue); }
-        .posco-opt { background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px dashed var(--posco-blue); }
-        .footer { text-align: center; margin-top: 50px; padding: 20px; font-size: 12px; color: #aaa; border-top: 1px solid #eee; }
+        .low { background: #f0f0f0; color: #666; }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.4; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+        @media (max-width: 768px) { .container { padding: 20px; } .header h1 { font-size: 24px; } .impact-step:not(:last-child):after { content: "↓"; right: auto; left: 50%; bottom: -15px; top: auto; transform: translateX(-50%); } .impact-flow-container { flex-direction: column; gap: 30px; } }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>Japan Battery Market Intelligence Report</h1>
-            <p>Date: 2026.03.14 | Internal Intelligence Use Only</p>
+            <p>Date: 2026.03.15 | Analyst: MI Intelligence System</p>
         </div>
 
         <div class="summary-box">
             <h2>Executive Summary</h2>
-            <p>오늘 리포트의 핵심은 일본 배터리 시장의 '수요 재편'과 '에너지 안보'입니다. 혼다의 북미 EV 프로젝트 취소는 전동화 속도 조절의 신호탄이며, 하이브리드(HEV)용 소재 수요의 반등을 예고합니다. 동시에 Jera와 같은 발전사의 ESS 도입 검토와 기록적인 비축유 방출은 에너지 자립을 위한 배터리 시스템 구축이 더 이상 선택이 아닌 필수임을 보여줍니다. 포스코그룹은 변화하는 OEM 전략에 맞춘 소재 포트폴리오 최적화가 필요합니다.</p>
+            <p>오늘의 일본 배터리 공급망은 탈중국을 위한 3국 동맹(미·일·유럽)의 가격 정책 공조와 OEM들의 사업 구조조정으로 요약됩니다. 핵심 광물에 대한 '가격 하한제' 도입 논의는 비중국산 자원의 가치를 높이는 기회가 될 것이며, 혼다의 ESS 사업 전환은 EV 캐즘을 돌파하기 위한 일본 기업들의 유연한 대응 전략을 보여줍니다. 포스코그룹은 이러한 정책 변화와 고객사 수요 이동에 맞춘 정교한 타겟 마케팅이 필요한 시점입니다.</p>
         </div>
 
         <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <span class="badge high">HIGH</span>
+                <div class="news-title">미·일·유럽, 핵심 광물 '가격 하한제' 및 관세 도입 협상 본격화</div>
+                <div class="meta">
+                    <span>2026-03-13</span>
+                    <span>Source: Bloomberg / Japan Times</span>
+                    <a href="https://www.japantimes.co.jp/business/2026/03/13/critical-mineral-talks-us/" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">미국, 일본, 유럽 연합이 중국의 시장 지배력에 대항하기 위해 리튬, 니켈 등 핵심 광물에 대한 '가격 하한제(Price Floor)' 도입을 협상 중입니다. 이는 중국발 저가 공세로부터 비중국산 공급망을 보호하기 위한 조치로, 향후 관련 광물의 국경 조정 관세와 연계될 가능성이 높습니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">탈중국 공급망 구축 비용을 정책적으로 보전해주겠다는 신호로, 고원가 비중국산 광물 자산의 가치가 상승할 전망입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 아르헨티나 리튬 등 포스코 보유 비중국산 자원의 '프리미엄 원료' 지위 선점 및 전략적 장기 계약 제안.
+                </div>
+            </div>
 
-        <div class="news-card">
-            <span class="badge high">HIGH</span>
-            <div class="news-title">혼다(Honda), 북미 EV 모델 3종 출시 취소 및 전략적 HEV 강화</div>
-            <div class="meta">2026-03-12 | Source: Honda Global / Nikkei | <a href="https://global.honda/en/newsroom/news/2026/c260312eng.html" target="_blank">View Original</a></div>
-            <p><strong>Detailed Summary:</strong> 혼다가 북미 전동화 전략을 전면 재검토하며 0 시리즈 기반 EV 모델 3종의 출시를 취소했습니다. 약 2.5조 엔의 대규모 손실 처리를 단행하며, 확보된 재원을 차세대 하이브리드 시스템 개발과 소프트웨어 중심 차량(SDV) 플랫폼 고도화에 집중 투입할 계획입니다.</p>
-            <p><strong>Strategic Implication:</strong> EV 수요 캐즘 극복을 위한 수익성 방어 모드 진입. 단기적으로 HEV용 배터리 소재 수요 급증 예상.</p>
-            <p><strong>POSCO Relevance:</strong> HEV 전용 고출력 양극재 공급 기회 확대 및 차세대 플랫폼 소재 선점 제안 필요.</p>
-        </div>
+            <div class="news-card">
+                <span class="badge high">HIGH</span>
+                <div class="news-title">혼다(Honda), EV 투자 축소 및 배터리 사업 'ESS'로 전격 전환</div>
+                <div class="meta">
+                    <span>2026-03-12</span>
+                    <span>Source: Automotive Manufacturing Solutions</span>
+                    <a href="https://www.automotivemanufacturingsolutions.com/electrification/ev-batteries-oems-cut-investment-due-to-lower-demand/2625022" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">혼다가 북미 EV 출시 계획을 일부 취소하고 약 200억 달러의 투자를 축소했습니다. 대신 LG에너지솔루션과의 JV 지분을 확보하여 배터리 생산 라인을 직접 통제하며, 확보된 물량을 급성장하는 데이터센터용 ESS 시장으로 전용할 계획입니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">자동차용 수요 둔화 리스크를 ESS 시장 진출로 분산시키는 전략적 유연성 확보 단계입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 혼다의 신규 ESS 공급망 진입을 위한 전용 양극재(LFP 등) 및 시스템 소재 패키지 제안.
+                </div>
+            </div>
 
-        <div class="news-card">
-            <span class="badge medium">MEDIUM</span>
-            <div class="news-title">Jera, 가스 화력 발전 효율화를 위한 대형 배터리 시스템 도입 검토</div>
-            <div class="meta">2026-03-13 | Source: Argus Media | <a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2790335-japan-s-jera-eyes-batteries-to-extend-thermal-power-use" target="_blank">View Original</a></div>
-            <p><strong>Detailed Summary:</strong> 일본 최대 전력 생산 기업 Jera가 화력 발전소의 유연한 운영을 위해 ESS(에너지저장장치) 연계를 추진합니다. 재생에너지 비중 증가에 따른 계통 불안정성을 배터리로 해결하고, 발전소 고장률을 줄여 운영 효율을 극대화하려는 전략입니다.</p>
-            <p><strong>Strategic Implication:</strong> 자동차용 배터리 수요 둔화를 계통용 BESS 시장이 흡수하는 시장 구조의 변화.</p>
-            <p><strong>POSCO Relevance:</strong> BESS 전용 저가형 LFP 및 장수명 배터리 소재 마케팅 기회.</p>
-        </div>
-
-        <div class="news-card">
-            <span class="badge high">HIGH</span>
-            <div class="news-title">일본 정부, 에너지 안보 위기에 따른 역대 최대 비축유 방출 결정</div>
-            <div class="meta">2026-03-13 | Source: Nippon.com | <a href="https://www.nippon.com/en/japan-data/h02732/" target="_blank">View Original</a></div>
-            <p><strong>Detailed Summary:</strong> 일본 정부는 중동 긴장 및 호르무즈 해협 봉쇄 가능성에 대비해 45일분의 비축유를 방출합니다. 이는 에너지 공급망의 취약성을 보완하기 위한 조치로, 향후 재생에너지 및 배터리 기반의 에너지 자립 정책이 더욱 강화될 것으로 보입니다.</p>
-            <p><strong>Strategic Implication:</strong> 정책적 지원을 바탕으로 한 일본 내수 배터리 밸류체인 강화 및 GX 투자 가속화.</p>
-            <p><strong>POSCO Relevance:</strong> 일본 정부 주도의 배터리 내재화 프로젝트에 대한 소재 파트너십 기회 포착.</p>
+            <div class="news-card">
+                <span class="badge medium">MEDIUM</span>
+                <div class="news-title">Jera, 화력 발전 효율 개선을 위한 대규모 BESS 도입 본격화</div>
+                <div class="meta">
+                    <span>2026-02-18</span>
+                    <span>Source: Argus Media</span>
+                    <a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2790335-japan-s-jera-eyes-batteries-to-extend-thermal-power-use" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 최대 발전사 Jera가 화력 발전소의 유연한 운용과 재생에너지 연계를 위해 대형 에너지저장장치(BESS)를 도입합니다. 발전 설비의 기동/정지 횟수를 줄여 유지보수 비용을 절감하고 계통 안정성을 확보하는 것이 목적입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 전력망용 대용량 ESS 시장을 겨냥한 장수명/고안정성 배터리 소재 마케팅 강화.
+                </div>
+            </div>
         </div>
 
         <h2 class="section-title">Supply Chain Impact</h2>
-        <div class="impact-flow">
-            <div class="impact-item">정책: 에너지 안보 강화</div>
-            <div class="impact-item">상사: 북미 자원 동맹</div>
-            <div class="impact-item">소재: HEV/LFP 포트폴리오</div>
-            <div class="impact-item">셀: ESS향 공급 확대</div>
-            <div class="impact-item">OEM: 전략적 속도 조절</div>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>정책</strong><br>가격 하한제 도입</div>
+            <div class="impact-step"><strong>상사</strong><br>비중국산 광물 확보</div>
+            <div class="impact-item"><strong>소재</strong><br>LFP/ESS 포트폴리오</div>
+            <div class="impact-item"><strong>셀</strong><br>ESS 전환 가속</div>
+            <div class="impact-item"><strong>OEM</strong><br>전략적 속도 조절</div>
         </div>
 
         <h2 class="section-title">POSCO Opportunity</h2>
-        <div class="posco-opt">
-            <ul>
-                <li><strong>양극재:</strong> 혼다의 HEV 전환 가속화에 대응한 고출력 제품군 집중 제안.</li>
-                <li><strong>리튬/니켈:</strong> 캐나다-일본 자원 협력을 활용한 캐나다산 핵심 광물의 일본 직
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>양극재</strong></td>
+                        <td>혼다의 ESS 전환 및 Jera의 BESS 도입에 맞춰 LFP 양극재 시장 조기 진입 및 고객사 확보.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리튬/니켈</strong></td>
+                        <td>미·일·유럽 '가격 하한제' 수혜를 입는 IRA 적격 광물의 일본향 공급 계약 확대.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리사이클</strong></td>
+                        <td>일본-유럽 배터리 리사이클 MOU 흐름을 활용한 글로벌 재활용 소재 표준화 및 협업.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Daily Insight</h2>
+        <p>오늘의 흐름은 일본 배터리 공급망이 <strong>'제조 중심에서 정책 및 시스템 중심'</strong>으로 고도화되고 있음을 보여줍니다. 단순한 저가 경쟁이 아닌 정책적 가격 방어막이 형성되고 있다는 점은 포스코와 같은 업스트림 강자에게 매우 유리한 환경입니다. 또한 혼다의 ESS 전환은 배터리 소재의 최종 수요처가 자동차에서 데이터센터/에너지 인프라로 급격히 확장되고 있음을 의미합니다. 향후 다카이치 총리의 방미 결과에 따른 세부 관세 지침을 면밀히 추적하여 선제적 대응이 필요합니다.</p>
+
+        <div class="footer">
+            Internal Intelligence Use Only · Japan Battery Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
