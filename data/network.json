@@ -1,26 +1,22 @@
 {
   "nodes": [
     { "id": "METI", "group": "Policy" },
+    { "id": "US Govt", "group": "Policy" },
     { "id": "Toyota Motor", "group": "OEM" },
-    { "id": "Honda Motor", "group": "OEM" },
-    { "id": "Mitsubishi Corporation", "group": "Trading" },
-    { "id": "Idemitsu Kosan", "group": "Anode" },
-    { "id": "Panasonic Energy", "group": "Cell" },
-    { "id": "Mazda Motor", "group": "OEM" },
-    { "id": "Suzuki Motor", "group": "OEM" },
-    { "id": "Altna", "group": "GX" },
+    { "id": "GS Yuasa", "group": "Cell" },
+    { "id": "Lynas", "group": "Trading" },
+    { "id": "JARE", "group": "Trading" },
+    { "id": "Taesung", "group": "Equipment" },
+    { "id": "PEVE", "group": "Cell" },
     { "id": "POSCO", "group": "Cathode" }
   ],
   "links": [
-    { "source": "METI", "target": "Idemitsu Kosan", "type": "Policy" },
-    { "source": "Idemitsu Kosan", "target": "Toyota Motor", "type": "R&D" },
-    { "source": "Honda Motor", "target": "Mitsubishi Corporation", "type": "JV" },
-    { "source": "Mitsubishi Corporation", "target": "Altna", "type": "Investment" },
-    { "source": "Honda Motor", "target": "Altna", "type": "Investment" },
-    { "source": "Panasonic Energy", "target": "Mazda Motor", "type": "Supply" },
-    { "source": "Suzuki Motor", "target": "Panasonic Energy", "type": "Potential Partner" },
-    { "source": "POSCO", "target": "Panasonic Energy", "type": "Supply" },
-    { "source": "POSCO", "target": "Altna", "type": "Watchlist" },
-    { "source": "METI", "target": "Panasonic Energy", "type": "Policy" }
+    { "source": "METI", "target": "US Govt", "type": "Partnership" },
+    { "source": "Lynas", "target": "JARE", "type": "Supply" },
+    { "source": "METI", "target": "GS Yuasa", "type": "Policy" },
+    { "source": "Toyota Motor", "target": "PEVE", "type": "Acquisition" },
+    { "source": "POSCO", "target": "PEVE", "type": "Potential Partner" },
+    { "source": "POSCO", "target": "GS Yuasa", "type": "Potential Partner" },
+    { "source": "Taesung", "target": "GS Yuasa", "type": "Supply" }
   ]
 }
