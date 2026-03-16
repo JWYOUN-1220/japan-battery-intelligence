@@ -1,750 +1,144 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japan Battery Market Intelligence | 2026-03-14</title>
-  <style>
-    :root{
-      --posco-blue:#005BAC;
-      --posco-dark:#003B70;
-      --posco-light:#EAF2FB;
-      --gray-100:#F7F9FC;
-      --gray-200:#E5EAF0;
-      --gray-300:#D9E2EC;
-      --gray-500:#6B7280;
-      --gray-700:#374151;
-      --text:#1F2937;
-      --high:#D32F2F;
-      --medium:#F57C00;
-      --low:#388E3C;
-      --tag:#EEF4FB;
-    }
-
-    *{box-sizing:border-box;}
-
-    body{
-      margin:0;
-      padding:0;
-      font-family: Arial, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-      background:var(--gray-100);
-      color:var(--text);
-      line-height:1.65;
-    }
-
-    .container{
-      max-width:1400px;
-      margin:0 auto;
-      padding:32px 24px 64px;
-    }
-
-    .header{
-      background:linear-gradient(135deg,var(--posco-dark),var(--posco-blue));
-      color:#fff;
-      border-radius:16px;
-      padding:28px 32px;
-      margin-bottom:24px;
-      box-shadow:0 8px 24px rgba(0,0,0,0.10);
-    }
-
-    .header-top{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .header h1{
-      margin:0 0 8px 0;
-      font-size:32px;
-      font-weight:700;
-      letter-spacing:-0.2px;
-    }
-
-    .header .subtitle{
-      font-size:15px;
-      opacity:0.95;
-    }
-
-    .header .meta{
-      text-align:right;
-      font-size:14px;
-      opacity:0.95;
-      min-width:240px;
-    }
-
-    .header .meta strong{
-      display:block;
-      font-size:18px;
-      margin-bottom:6px;
-    }
-
-    .section{
-      background:#fff;
-      border:1px solid var(--gray-200);
-      border-radius:14px;
-      padding:24px;
-      margin-bottom:20px;
-      box-shadow:0 3px 10px rgba(0,0,0,0.03);
-    }
-
-    .section-title{
-      margin:0 0 16px 0;
-      color:var(--posco-dark);
-      font-size:22px;
-      font-weight:700;
-      border-left:6px solid var(--posco-blue);
-      padding-left:12px;
-    }
-
-    .summary-box{
-      background:var(--posco-light);
-      border:1px solid #D6E6FA;
-      border-radius:12px;
-      padding:18px 20px;
-      font-size:15px;
-      white-space:pre-line;
-    }
-
-    .news-grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:18px;
-    }
-
-    .news-card{
-      border:1px solid var(--gray-200);
-      border-radius:12px;
-      padding:18px 18px 16px;
-      background:#fff;
-    }
-
-    .news-card-top{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:16px;
-      margin-bottom:10px;
-      flex-wrap:wrap;
-    }
-
-    .news-title{
-      margin:0;
-      font-size:21px;
-      color:var(--posco-dark);
-      line-height:1.4;
-      flex:1;
-      min-width:280px;
-    }
-
-    .top-right{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-
-    .badge{
-      display:inline-block;
-      min-width:82px;
-      text-align:center;
-      padding:6px 10px;
-      border-radius:999px;
-      color:#fff;
-      font-size:12px;
-      font-weight:700;
-      letter-spacing:0.3px;
-    }
-
-    .badge.high{background:var(--high);}
-    .badge.medium{background:var(--medium);}
-    .badge.low{background:var(--low);}
-
-    .tag{
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      background:var(--tag);
-      color:var(--posco-dark);
-      font-size:12px;
-      font-weight:700;
-      border:1px solid #D3E3F6;
-    }
-
-    .meta-table{
-      width:100%;
-      border-collapse:collapse;
-      margin:10px 0 14px;
-      font-size:14px;
-    }
-
-    .meta-table th,
-    .meta-table td{
-      border:1px solid var(--gray-200);
-      padding:10px 12px;
-      vertical-align:top;
-      text-align:left;
-    }
-
-    .meta-table th{
-      width:130px;
-      background:#F9FBFD;
-      color:var(--gray-700);
-      font-weight:700;
-    }
-
-    .meta-table a{
-      color:var(--posco-blue);
-      word-break:break-all;
-      margin-right:12px;
-    }
-
-    .label{
-      display:block;
-      margin:12px 0 6px;
-      font-weight:700;
-      color:var(--posco-dark);
-      font-size:15px;
-    }
-
-    .body-text{
-      font-size:15px;
-      color:var(--text);
-      white-space:pre-line;
-    }
-
-    .jp-toggle{
-      margin-top:12px;
-      padding:8px 12px;
-      border:1px solid var(--gray-300);
-      background:#F8FAFC;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:700;
-      color:var(--gray-700);
-    }
-
-    .jp-toggle:hover{
-      background:#EEF3F8;
-    }
-
-    .jp-block{
-      display:none;
-      margin-top:12px;
-      padding:14px 16px;
-      background:#FAFBFD;
-      border:1px solid var(--gray-200);
-      border-radius:10px;
-    }
-
-    .impact-box{
-      margin-top:12px;
-      background:#F8FBFF;
-      border-left:5px solid var(--posco-blue);
-      border-radius:8px;
-      padding:14px 16px;
-    }
-
-    .opportunity-box{
-      margin-top:12px;
-      background:#FCFCFD;
-      border-left:5px solid #7B8794;
-      border-radius:8px;
-      padding:14px 16px;
-    }
-
-    .customer-box{
-      margin-top:12px;
-      background:#FFFDF7;
-      border-left:5px solid #C7A600;
-      border-radius:8px;
-      padding:14px 16px;
-    }
-
-    .flow{
-      background:#FAFBFC;
-      border:1px dashed #C9D3DF;
-      border-radius:12px;
-      padding:18px;
-      font-size:15px;
-      line-height:1.9;
-      white-space:pre-line;
-    }
-
-    .opportunity-list{
-      margin:0;
-      padding-left:20px;
-    }
-
-    .opportunity-list li{
-      margin-bottom:8px;
-    }
-
-    .signal-grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:14px;
-    }
-
-    .signal-card{
-      border:1px solid var(--gray-200);
-      border-radius:12px;
-      padding:16px;
-      background:#fff;
-    }
-
-    .signal-card h3{
-      margin:0 0 8px 0;
-      color:var(--posco-dark);
-      font-size:18px;
-    }
-
-    .insight-box{
-      background:linear-gradient(180deg,#F7FBFF,#EEF5FD);
-      border:1px solid #D8E7F8;
-      border-radius:12px;
-      padding:18px 20px;
-      font-size:15px;
-      white-space:pre-line;
-    }
-
-    .footer{
-      margin-top:26px;
-      color:var(--gray-500);
-      font-size:13px;
-      text-align:center;
-    }
-
-    @media (max-width:768px){
-      .container{padding:20px 14px 40px;}
-      .header{padding:22px 20px;}
-      .header h1{font-size:24px;}
-      .section{padding:18px 16px;}
-      .section-title{font-size:19px;}
-      .news-title{font-size:18px;}
-      .meta-table th{width:110px;}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery Market Intelligence - 2026.03.16</title>
+    <style>
+        :root { --posco-blue: #004b91; --posco-light-blue: #00a0e9; --posco-gray: #4b4b4b; --bg-light: #f8f9fa; }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase; }
+        .high { background: #ffebeb; color: #d32f2f; }
+        .medium { background: #fff4e5; color: #ef6c00; }
+        .low { background: #f0f0f0; color: #666; }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.4; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 800px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 150px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+        @media (max-width: 768px) { .impact-step:not(:last-child):after { content: "↓"; right: auto; left: 50%; bottom: -15px; top: auto; transform: translateX(-50%); } .impact-flow-container { flex-direction: column; gap: 30px; } }
+    </style>
 </head>
 <body>
-  <div class="container">
-
-    <div class="header">
-      <div class="header-top">
-        <div>
-          <h1>Japan Battery Market Intelligence</h1>
-          <div class="subtitle">일본 배터리 산업 / GX 뉴스 인텔리전스 데일리 브리프</div>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery Market Intelligence Report</h1>
+            <p>Date: 2026.03.16 | Analyst: MI Intelligence System</p>
         </div>
-        <div class="meta">
-          <strong>2026-03-14</strong>
-          Daily Report<br/>
-          Internal Intelligence Use
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>오늘의 리포트는 일본 배터리 산업의 '차세대 주도권' 확보 의지를 여실히 보여줍니다. 이데미츠 코산의 황화물계 전해질 양산 결정과 닛산의 전고체 파일럿 라인 공개는 전고체 배터리 상용화가 임박했음을 시사합니다. 또한 METI의 디지털 배터리 여권 도입 결정은 소재 공급망의 '투명성'과 '지속가능성'이 단순한 구호를 넘어 강력한 무역 장벽이 될 것임을 의미합니다. 포스코그룹은 이러한 기술적, 규제적 변화에 맞춘 고부가가치 솔루션 선점이 필요합니다.</p>
         </div>
-      </div>
+
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <span class="badge high">HIGH</span>
+                <div class="news-title">이데미츠 코산(Idemitsu), 전고체 배터리 전해질 양산 공장 건설 확정</div>
+                <div class="meta">
+                    <span>2026-03-13</span>
+                    <span>Source: Nikkei / Chemical Daily</span>
+                    <a href="https://www.nikkei.com/article/DGXZQOUC112340R10C26A3000000/" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">이데미츠 코산이 도요타 자동차와의 전방위적 협력을 위해 황화물계 고체 전해질 대량 양산 공장을 치바현에 건설합니다. 2027년 가동을 목표로 하며, 이는 전고체 배터리 상용화를 위한 세계 최대 규모의 소재 기지가 될 전망입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 전고체 전용 고성능 양극재 공동 개발 및 고체 전해질 핵심 원료 공급망 협력.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <span class="badge high">HIGH</span>
+                <div class="news-title">METI, 유럽 '배터리 여권' 연동 디지털 플랫폼 구축 합의</div>
+                <div class="meta">
+                    <span>2026-03-14</span>
+                    <span>Source: The Japan News</span>
+                    <a href="https://japannews.yomiuri.co.jp/business/economy/20260314-1725210/" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 정부가 유럽의 배터리 규제에 발맞춰 배터리 생산 전 과정을 디지털화하는 '배터리 여권' 시스템을 도입합니다. 탄소 배출량 및 광물 출처 이력 관리가 필수화되며, 향후 글로벌 시장 진입의 핵심 라이선스로 작용할 예정입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코 HY 클린메탈 및 소재 부문의 저탄소 공정 데이터를 표준화하여 친환경 프리미엄 소재 지위 확보.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <span class="badge medium">MEDIUM</span>
+                <div class="news-title">닛산(Nissan), 전고체 배터리 파일럿 라인 공개 및 2028년 상용화 확정</div>
+                <div class="meta">
+                    <span>2026-03-12</span>
+                    <span>Source: Reuters Japan</span>
+                    <a href="https://usa.nissannews.com/en-US/releases/nissan-unveils-all-solid-state-battery-pilot-line" target="_blank">원본 기사 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">닛산이 요코하마에 전고체 배터리 시범 생산 라인을 설치하고 구체적인 양산 로드맵을 발표했습니다. 에너지 밀도를 2배 높이고 비용을 낮추는 혁신을 통해 2028년 실제 EV 모델에 탑재할 계획입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 닛산의 차세대 EV 플랫폼용 하이니켈 양극재 및 실리콘 음극재 솔루션 공급 타진.
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>정책</strong><br>배터리 여권 도입</div>
+            <div class="impact-step"><strong>상사</strong><br>북미 IRA 적격 리튬 확보</div>
+            <div class="impact-step"><strong>소재</strong><br>고체 전해질 양산 투자</div>
+            <div class="impact-step"><strong>셀</strong><br>전고체 파일럿 라인 가동</div>
+            <div class="impact-step"><strong>OEM</strong><br>2028 전고체 EV 출시</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>부문</th>
+                        <th>전략적 기회 및 대응 방안</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>양극재 / 음극재</strong></td>
+                        <td>전고체 배터리 로드맵(Toyota, Nissan)에 최적화된 고부가가치 소재 샘플 공급 및 공동 R&D 강화.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리튬 / 니켈</strong></td>
+                        <td>미쓰비시 상사 등 일본 상사가 확보한 북미 광산 자산에 대한 공동 정련 및 가공 파트너십 제안.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>데이터/규제</strong></td>
+                        <td>METI-EU 배터리 여권 표준에 부합하는 소재 이력 관리 시스템 구축으로 무역 장벽 선제적 극복.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Daily Insight</h2>
+        <p>오늘 리포트가 보여주는 일본 시장의 방향은 명확합니다. **'전고체 기술의 조기 상용화'**와 **'디지털 기반의 공급망 투명성'**입니다. 일본 기업들은 현재의 가격 경쟁을 넘어 기술과 규제의 높은 장벽을 세우고 있습니다. 포스코그룹은 이러한 흐름에 발맞춰 단순 소재 공급을 넘어 리사이클링 데이터와 차세대 소재 기술을 결합한 통합 밸류체인 파트너로서 일본 OEM들에게 다가서야 합니다.</p>
+
+        <div class="footer">
+            Internal Intelligence Use Only · Japan Battery Market Intelligence · © 2026 POSCO Group
+        </div>
     </div>
-
-    <section class="section">
-      <h2 class="section-title">Executive Summary</h2>
-      <div class="summary-box">
-일본 배터리 산업은 정책 지원, 상사 중심 자원 확보, 셀-소재 조달 다변화, 중견 OEM 전동화 확대라는 흐름이 동시에 전개되고 있다.
-금일 뉴스에서는 전고체 및 차세대 배터리 관련 기술 논의와 함께, 일부 기업의 공급망 재편 가능성이 관찰되었다.
-일본 시장은 완성차 발표보다 상사 투자, 정책 방향, 소재사 증설 움직임이 더 중요한 선행 지표로 작동하는 경향이 있다.
-포스코그룹 관점에서는 양극재, 전구체, 니켈/리튬, 리사이클 연계와 관련된 기회를 중장기적으로 검토할 필요가 있다.
-특히 기존 공급망이 완전히 고정되지 않은 중견 OEM 및 니치 전동화 기업은 신규 진입 가능성을 탐색할 가치가 있다.
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Key News</h2>
-
-      <div class="news-grid">
-
-        <!-- News 1 -->
-        <article class="news-card">
-          <div class="news-card-top">
-            <h3 class="news-title">Toyota, 차세대 전고체 배터리 양산 로드맵 구체화</h3>
-            <div class="top-right">
-              <span class="tag">OEM</span>
-              <span class="badge high">HIGH</span>
-            </div>
-          </div>
-
-          <table class="meta-table">
-            <tr>
-              <th>발표일</th>
-              <td>2026-03-14</td>
-            </tr>
-            <tr>
-              <th>출처</th>
-              <td>Nikkei</td>
-            </tr>
-            <tr>
-              <th>원문 링크</th>
-              <td>
-                <a href="https://example.com/jp-news1" target="_blank">JP Source</a>
-                <a href="https://example.com/en-news1" target="_blank">EN Source</a>
-              </td>
-            </tr>
-          </table>
-
-          <span class="label">Summary (EN)</span>
-          <div class="body-text">
-Toyota clarified its commercialization roadmap for solid-state batteries and provided more concrete indications of pilot-scale production timing.
-The article highlighted expected improvements in energy density, charging speed, and durability compared with current lithium-ion batteries.
-This appears to be more than a technology statement and may indicate growing readiness in pilot manufacturing and supply chain preparation.
-          </div>
-
-          <button class="jp-toggle">日本語本文 / 日本語概要 보기</button>
-
-          <div class="jp-block">
-            <span class="label">日本語概要</span>
-            <div class="body-text">
-トヨタは全固体電池の量産化に向けたロードマップをより具体的に示した。
-エネルギー密度、充電速度、耐久性の改善が強調されており、試作ラインから量産準備への移行が進みつつあることが示唆される。
-これは単なる技術紹介ではなく、関連サプライチェーンの整備が現実的な段階に入りつつあることを意味する可能性がある。
-            </div>
-          </div>
-
-          <div class="impact-box">
-            <span class="label">Strategic Implication</span>
-            <div class="body-text">
-Japanese OEMs continue to frame solid-state batteries as a long-term differentiation strategy.
-If pilot lines advance, demand may increase not only for electrolytes but also for specialized cathode materials and process equipment.
-          </div>
-          </div>
-
-          <div class="opportunity-box">
-            <span class="label">POSCO Opportunity</span>
-            <div class="body-text">
-This development may create potential collaboration opportunities in advanced cathode materials and precursor supply.
-Monitoring Toyota’s pilot ecosystem and related material partners could help identify future entry points.
-            </div>
-          </div>
-        </article>
-
-        <!-- News 2 -->
-        <article class="news-card">
-          <div class="news-card-top">
-            <h3 class="news-title">Prime Planet Energy, 생산 확대 및 소재 조달 다변화 검토</h3>
-            <div class="top-right">
-              <span class="tag">Battery Cell</span>
-              <span class="badge high">HIGH</span>
-            </div>
-          </div>
-
-          <table class="meta-table">
-            <tr><th>발표일</th><td>2026-03-14</td></tr>
-            <tr><th>출처</th><td>Reuters Japan</td></tr>
-            <tr>
-              <th>원문 링크</th>
-              <td>
-                <a href="https://example.com/jp-news2" target="_blank">JP Source</a>
-                <a href="https://example.com/en-news2" target="_blank">EN Source</a>
-              </td>
-            </tr>
-          </table>
-
-          <span class="label">Summary (EN)</span>
-          <div class="body-text">
-Prime Planet Energy is reportedly reviewing production expansion and diversification of key material sourcing.
-The article suggests that increasing OEM demand and policy support are putting more emphasis on long-term supply stability.
-This could indicate that parts of Japan’s battery supply chain are becoming more flexible than before.
-          </div>
-
-          <button class="jp-toggle">日本語本文 / 日本語概要 보기</button>
-          <div class="jp-block">
-            <span class="label">日本語概要</span>
-            <div class="body-text">
-Prime Planet Energyは生産能力の拡大と主要材料の調達先多様化を検討していると報じられた。
-OEM需要の増加や政策支援を背景に、長期的な供給安定性がこれまで以上に重要になっている。
-従来の日本国内サプライヤー中心の構造を維持しつつも、一部で新規供給元の検討が始まっている可能性がある。
-            </div>
-          </div>
-
-          <div class="impact-box">
-            <span class="label">Strategic Implication</span>
-            <div class="body-text">
-A battery cell maker’s interest in sourcing diversification can be an early sign of supply pressure, cost concerns, or future volume expansion.
-For material suppliers, this may imply a gradual opening for new supplier discussions.
-            </div>
-          </div>
-
-          <div class="opportunity-box">
-            <span class="label">POSCO Opportunity</span>
-            <div class="body-text">
-This may indicate potential opportunities in cathode materials, precursor supply, and long-term sourcing stability proposals.
-A collaborative approach with existing Japanese counterparties may be more practical than a direct entry approach.
-            </div>
-          </div>
-        </article>
-
-        <!-- News 3 -->
-        <article class="news-card">
-          <div class="news-card-top">
-            <h3 class="news-title">Suzuki, 전동화 전략 확대 및 차세대 배터리 옵션 검토</h3>
-            <div class="top-right">
-              <span class="tag">OEM</span>
-              <span class="badge medium">MEDIUM</span>
-            </div>
-          </div>
-
-          <table class="meta-table">
-            <tr><th>발표일</th><td>2026-03-14</td></tr>
-            <tr><th>출처</th><td>Yahoo Japan News</td></tr>
-            <tr>
-              <th>원문 링크</th>
-              <td>
-                <a href="https://example.com/jp-news3" target="_blank">JP Source</a>
-                <a href="https://example.com/en-news3" target="_blank">EN Source</a>
-              </td>
-            </tr>
-          </table>
-
-          <span class="label">Summary (EN)</span>
-          <div class="body-text">
-Suzuki appears to be broadening its electrification strategy and expanding its review of next-generation battery options.
-The article suggests possible future moves around battery partnerships, technology acquisition, or adjustments in supply chain planning.
-Compared with larger Japanese OEMs, Suzuki may still have a more flexible battery ecosystem.
-          </div>
-
-          <button class="jp-toggle">日本語本文 / 日本語概要 보기</button>
-          <div class="jp-block">
-            <span class="label">日本語概要</span>
-            <div class="body-text">
-スズキは電動化戦略を強化しつつあり、次世代電池に関する検討範囲も広がっているとみられる。
-記事では、今後の電池パートナーシップ、技術確保、供給網再構築の可能性が示唆されている。
-大手OEMと比べると、電池エコシステムはまだ固定化されていない可能性がある。
-            </div>
-          </div>
-
-          <div class="impact-box">
-            <span class="label">Strategic Implication</span>
-            <div class="body-text">
-Mid-tier OEMs may offer more realistic new-entry opportunities than the largest Japanese automakers.
-Battery partner uncertainty or ecosystem expansion often becomes visible first in this group.
-            </div>
-          </div>
-
-          <div class="opportunity-box">
-            <span class="label">POSCO Opportunity</span>
-            <div class="body-text">
-Monitoring Suzuki’s battery strategy could help identify indirect entry routes through cell makers, trading companies, or material partners.
-This is worth tracking as a medium-term new customer signal rather than an immediate sales target.
-            </div>
-          </div>
-        </article>
-
-        <!-- News 4 -->
-        <article class="news-card">
-          <div class="news-card-top">
-            <h3 class="news-title">Mitsui &amp; Co., 배터리 광물 및 소재 투자 포트폴리오 확대</h3>
-            <div class="top-right">
-              <span class="tag">Trading</span>
-              <span class="badge medium">MEDIUM</span>
-            </div>
-          </div>
-
-          <table class="meta-table">
-            <tr><th>발표일</th><td>2026-03-14</td></tr>
-            <tr><th>출처</th><td>Bloomberg Japan</td></tr>
-            <tr>
-              <th>원문 링크</th>
-              <td>
-                <a href="https://example.com/jp-news4" target="_blank">JP Source</a>
-                <a href="https://example.com/en-news4" target="_blank">EN Source</a>
-              </td>
-            </tr>
-          </table>
-
-          <span class="label">Summary (EN)</span>
-          <div class="body-text">
-Mitsui continues to expand its investment portfolio across battery minerals, refining, and materials value chains.
-The article emphasizes that trading companies remain key architects of Japan’s battery ecosystem through resource access and investment coordination.
-This reinforces the view that supply chain changes often emerge through trading company activity before becoming visible at the OEM level.
-          </div>
-
-          <button class="jp-toggle">日本語本文 / 日本語概要 보기</button>
-          <div class="jp-block">
-            <span class="label">日本語概要</span>
-            <div class="body-text">
-三井物産は電池鉱物、精製、素材分野にわたる投資ポートフォリオ拡大を継続している。
-記事では、日本の電池産業において商社が資源確保と投資調整を通じてサプライチェーン設計を主導している点が強調された。
-完成車メーカーや電池メーカーの発表よりも先に、商社投資が構造変化の兆候を示すケースがある。
-            </div>
-          </div>
-
-          <div class="impact-box">
-            <span class="label">Strategic Implication</span>
-            <div class="body-text">
-Trading-company investment signals often reveal future movement in materials sourcing and mineral strategy.
-This type of news can be more strategically important than headline OEM announcements.
-            </div>
-          </div>
-
-          <div class="opportunity-box">
-            <span class="label">POSCO Opportunity</span>
-            <div class="body-text">
-This may create potential opportunities related to lithium, nickel, precursor, and recycling-linked cooperation.
-It may also be useful to assess whether a trading-company-led entry route could support future Japan-facing projects.
-            </div>
-          </div>
-        </article>
-
-        <!-- News 5 -->
-        <article class="news-card">
-          <div class="news-card-top">
-            <h3 class="news-title">METI, 배터리 공급망 및 차세대 기술 지원 정책 강화</h3>
-            <div class="top-right">
-              <span class="tag">Policy</span>
-              <span class="badge high">HIGH</span>
-            </div>
-          </div>
-
-          <table class="meta-table">
-            <tr><th>발표일</th><td>2026-03-14</td></tr>
-            <tr><th>출처</th><td>METI</td></tr>
-            <tr>
-              <th>원문 링크</th>
-              <td>
-                <a href="https://example.com/jp-news5" target="_blank">JP Source</a>
-                <a href="https://example.com/en-news5" target="_blank">EN Source</a>
-              </td>
-            </tr>
-          </table>
-
-          <span class="label">Summary (EN)</span>
-          <div class="body-text">
-METI reiterated policy support for Japan’s battery supply chain competitiveness and next-generation battery development.
-The policy language includes subsidies, production-base development, strategic materials localization, and solid-state R&D.
-This confirms once again that Japan’s battery industry remains strongly policy-driven.
-          </div>
-
-          <button class="jp-toggle">日本語本文 / 日本語概要 보기</button>
-          <div class="jp-block">
-            <span class="label">日本語概要</span>
-            <div class="body-text">
-経済産業省は、日本の電池サプライチェーン競争力強化と次世代電池技術の育成を改めて強調した。
-補助金、生産基盤整備、重要素材の国内確保、全固体電池研究支援などが政策の中心にある。
-日本の電池産業は民間主導に見えても、実際には政策ドリブンの色彩が強いことを示している。
-            </div>
-          </div>
-
-          <div class="impact-box">
-            <span class="label">Strategic Implication</span>
-            <div class="body-text">
-In Japan, policy changes often act as leading indicators for downstream movement in trading, materials, cell production, and OEM strategy.
-Tracking subsidy recipients and policy beneficiaries is therefore essential.
-            </div>
-          </div>
-
-          <div class="opportunity-box">
-            <span class="label">POSCO Opportunity</span>
-            <div class="body-text">
-Monitoring Japanese policy beneficiaries may help identify realistic local entry routes and partnership candidates.
-This may be particularly relevant for cathode, precursor, and recycling-linked proposals.
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Supply Chain Impact</h2>
-      <div class="flow">
-정책
-↓
-상사
-↓
-소재(양극재 / 전구체 / 음극재 / 전고체전해질)
-↓
-셀
-↓
-OEM / 니치 전동화 OEM
-
-금일 기준으로는 정책 지원 강화와 상사 투자 확대가 소재·셀 조달 구조의 방향성을 선행적으로 보여주고 있다.
-특히 Prime Planet Energy의 조달 다변화 가능성, Suzuki의 전동화 확장, Mitsui의 광물/소재 투자 움직임은 향후 공급망 재편의 초기 신호로 해석될 수 있다.
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">POSCO Opportunity</h2>
-      <ul class="opportunity-list">
-        <li>양극재: 일본 셀사 조달 다변화 흐름과 연결된 진입 가능성 검토</li>
-        <li>리튬 / 니켈: 상사 중심 자원 확보 구조와 연계한 협력 포인트 탐색</li>
-        <li>전구체 / 금속: 일본 내 금속·전구체 공급망 연결 포인트 발굴</li>
-        <li>리사이클: JX, DOWA 등과의 금속 회수 및 순환체계 연계 가능성 점검</li>
-        <li>전고체: Idemitsu 등 차세대 전해질 기업과의 소재 협업 가능성 추적</li>
-        <li>신규 고객: Suzuki, Kubota, Komatsu 등 공급망이 아직 유동적인 기업 지속 관찰</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">New Customer Signals</h2>
-
-      <div class="signal-grid">
-
-        <article class="signal-card">
-          <h3>Suzuki Motor <span class="badge medium">MEDIUM</span></h3>
-          <span class="label">시그널 요약</span>
-          <div class="body-text">전동화 전략 확장과 차세대 배터리 옵션 검토가 병행되고 있어 향후 배터리 파트너 또는 소재 공급망 재정비 가능성이 있다.</div>
-          <span class="label">암시되는 수요</span>
-          <div class="body-text">차세대 배터리 관련 소재, 신규 셀 파트너, 파일럿 공급망 확보 수요.</div>
-          <span class="label">POSCO 진입 경로</span>
-          <div class="body-text">셀사·상사·소재 파트너를 통한 우회 제안 구조 검토.</div>
-        </article>
-
-        <article class="signal-card">
-          <h3>Komatsu <span class="badge low">LOW</span></h3>
-          <span class="label">시그널 요약</span>
-          <div class="body-text">건설장비 전동화는 속도가 느리지만, 배터리 적용 범위가 확대될 경우 중대형 전지 수요 신호로 이어질 수 있다.</div>
-          <span class="label">암시되는 수요</span>
-          <div class="body-text">고출력·고신뢰성 배터리, 산업용 소재 공급망.</div>
-          <span class="label">POSCO 진입 경로</span>
-          <div class="body-text">직접 접근보다 셀사 및 장비사와 연계한 장기적 추적이 적절.</div>
-        </article>
-
-        <article class="signal-card">
-          <h3>Kubota / Yanmar <span class="badge low">LOW</span></h3>
-          <span class="label">시그널 요약</span>
-          <div class="body-text">농기계 전동화는 아직 초기 단계지만 일본 내 니치 배터리 수요 발생 가능성이 있다.</div>
-          <span class="label">암시되는 수요</span>
-          <div class="body-text">소형·중형 산업용 배터리와 내구성 중심 소재 수요.</div>
-          <span class="label">POSCO 진입 경로</span>
-          <div class="body-text">직접 공급보다 니치 셀사·상사 경유 협력 가능성 검토가 현실적.</div>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Daily Insight</h2>
-      <div class="insight-box">
-오늘 일본 배터리 산업 뉴스의 핵심은 메이저 OEM의 기술 방향과 함께, 중견 OEM 및 니치 전동화 기업에서 새로운 배터리 수요 신호가 서서히 나타나고 있다는 점이다.
-특히 정책과 상사 투자 움직임은 OEM 기사보다 더 앞서 공급망 변화를 보여주는 선행 지표로 작동하고 있다.
-셀사 조달 다변화와 차세대 기술 파일럿 확대가 동시에 진행될 경우, 일본 배터리 생태계 내 소재 공급 기회는 점진적으로 확대될 수 있다.
-포스코그룹 관점에서는 직접 판매보다는 셀·상사·정책 수혜 기업과 연계한 단계적 접근이 더 현실적일 수 있다.
-      </div>
-    </section>
-
-    <div class="footer">
-      Internal Intelligence Use Only · Japan Battery Market Intelligence
-    </div>
-
-  </div>
-
-  <script>
-    document.addEventListener("click", function(e){
-      if(e.target.classList.contains("jp-toggle")){
-        const block = e.target.nextElementSibling;
-        if(block.style.display === "block"){
-          block.style.display = "none";
-        } else {
-          block.style.display = "block";
-        }
-      }
-    });
-  </script>
 </body>
 </html>
