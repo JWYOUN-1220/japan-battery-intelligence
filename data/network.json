@@ -2,21 +2,22 @@
   "nodes": [
     {"id": "US Gov", "group": "Policy"},
     {"id": "Japanese Gov", "group": "Policy"},
-    {"id": "EU Commission", "group": "Policy"},
+    {"id": "METI", "group": "Policy"},
     {"id": "Honda Motor", "group": "OEM"},
-    {"id": "LG Energy Solution", "group": "Cell"},
     {"id": "Jera", "group": "GX"},
-    {"id": "SMM", "group": "Cathode"},
-    {"id": "Nano One", "group": "Cathode"},
-    {"id": "Mitsui & Co.", "group": "Trading"}
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Lynas Rare Earths", "group": "Trading"},
+    {"id": "JBIC", "group": "Trading"},
+    {"id": "Rio Tinto", "group": "Trading"}
   ],
   "links": [
     {"source": "US Gov", "target": "Japanese Gov", "type": "Policy"},
-    {"source": "Japanese Gov", "target": "EU Commission", "type": "Policy"},
-    {"source": "Honda Motor", "target": "LG Energy Solution", "type": "Acquisition"},
+    {"source": "METI", "target": "GS Yuasa", "type": "Investment"},
+    {"source": "Lynas Rare Earths", "target": "Japanese Gov", "type": "Supply"},
+    {"source": "JBIC", "target": "Rio Tinto", "type": "Investment"},
     {"source": "Honda Motor", "target": "Jera", "type": "Partnership"},
-    {"source": "SMM", "target": "Nano One", "type": "Technology"},
-    {"source": "Mitsui & Co.", "target": "Japanese Gov", "type": "Investment"},
-    {"source": "Jera", "target": "Japanese Gov", "type": "Policy"}
+    {"source": "Jera", "target": "METI", "type": "Policy"},
+    {"source": "Japanese Gov", "target": "METI", "type": "Policy"}
   ]
 }
+ 
