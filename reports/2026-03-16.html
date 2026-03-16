@@ -24,6 +24,7 @@
         }
 
         .container {
+            width: 95%;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -69,9 +70,7 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .news-card:hover {
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
+        .news-card:hover { box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
 
         .news-header {
             display: flex;
@@ -92,86 +91,22 @@
         .badge-tag { background-color: #e3f2fd; color: #0d47a1; }
         .badge-conf { background-color: #f1f3f5; color: #495057; }
 
-        .news-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 12px 0;
-            color: #2c3e50;
-        }
-
+        .news-title { font-size: 18px; font-weight: bold; margin: 12px 0; color: #2c3e50; }
         .news-meta { font-size: 13px; color: #7f8c8d; margin-bottom: 15px; border-bottom: 1px solid #f1f1f1; padding-bottom: 10px; }
         .news-meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: bold; margin-right: 15px; }
 
-        .summary-box { font-size: 14.5px; margin-bottom: 15px; color: #444; }
+        .summary-box { font-size: 14.5px; margin-bottom: 15px; color: #444; text-align: justify; line-height: 1.7; }
 
-        .jp-toggle {
-            font-size: 13px;
-            color: var(--posco-gray);
-            cursor: pointer;
-            text-decoration: underline;
-            margin: 10px 0;
-            display: inline-block;
-        }
+        .jp-toggle { font-size: 13px; color: var(--posco-gray); cursor: pointer; text-decoration: underline; margin: 10px 0; display: inline-block; }
+        .jp-content { display: none; background-color: #f9fafb; padding: 15px; border-radius: 6px; font-size: 13px; border: 1px solid #eee; color: #555; margin-bottom: 15px; }
 
-        .jp-content {
-            display: none;
-            background-color: #f9fafb;
-            padding: 15px;
-            border-radius: 6px;
-            font-size: 13px;
-            border: 1px solid #eee;
-            color: #555;
-            margin-bottom: 15px;
-        }
+        .strategic-insight { background-color: #f0f7ff; border-radius: 6px; padding: 18px; font-size: 14px; border-left: 4px solid var(--posco-blue); }
 
-        .strategic-insight {
-            background-color: #f0f7ff;
-            border-radius: 6px;
-            padding: 18px;
-            font-size: 14px;
-            border-left: 4px solid var(--posco-blue);
-        }
+        .customer-signals { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
-        .diagram-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+        .footer { text-align: center; font-size: 12px; color: #a0aec0; padding: 50px 0; border-top: 1px solid #e2e8f0; }
 
-        .diagram-node {
-            background: white;
-            border: 2px solid var(--posco-blue);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            color: var(--posco-blue);
-            font-size: 14px;
-        }
-
-        .diagram-arrow { color: #cbd5e0; font-weight: bold; }
-
-        .customer-signals {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #a0aec0;
-            padding: 50px 0;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        @media (max-width: 768px) {
-            header { flex-direction: column; text-align: center; gap: 15px; }
-            .diagram-container { flex-direction: column; }
-            .diagram-arrow { transform: rotate(90deg); }
-        }
+        @media (max-width: 768px) { header { flex-direction: column; text-align: center; gap: 15px; } }
     </style>
 </head>
 <body>
@@ -183,138 +118,60 @@
 
         <div class="section-box">
             <div class="section-title">Executive Summary</div>
-            <p style="font-size: 15px;">오늘 일본 배터리 시장은 차세대 전고체 배터리의 양산 기술 검증과 순환 경제를 위한 데이터 플랫폼 구축이 핵심 화두입니다. 이데미츠 코산과 도요타의 협력이 파일럿 가동 단계에 진입하며 소재 표준화가 가속화될 전망입니다. 또한 정부 주도의 '배터리 여권' 플랫폼 구축은 향후 소재 수출 시 탄소 정보 등 데이터 투명성 대응력을 필수 경쟁 요소로 만들 것으로 사료됩니다.</p>
+            <p style="font-size: 15px;">오늘 일본 배터리 시장은 전고체 배터리 상용화 기술 검증과 공급망 내재화를 위한 정부 보조금 집행이 핵심입니다. 도요타-이데미츠의 협력 가속화와 LFP 공급망 자립 시도는 일본이 비중국 배터리 주도권을 되찾으려는 강력한 의지로 판단됩니다. 포스코그룹은 소재 공급 및 순환 경제 파트너십 기회를 선제적으로 모색할 필요가 있습니다.</p>
         </div>
 
         <div class="section-title">Key News</div>
-        <div class="news-list">
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-tags">
-                        <span class="badge badge-tag">Material</span>
-                        <span class="badge badge-importance">중요도: 높음</span>
-                        <span class="badge badge-conf">신뢰도: 높음</span>
-                    </div>
-                    <div style="font-size: 13px; color: #888;">2026.01.29</div>
+        
+        <div class="news-card">
+            <div class="news-header">
+                <div class="news-tags">
+                    <span class="badge badge-tag">Material</span>
+                    <span class="badge badge-importance">중요도: 높음</span>
+                    <span class="badge badge-conf">신뢰도: 높음</span>
                 </div>
-                <div class="news-title">이데미츠 코산-도요타, 황화물계 고체 전해질 파일럿 라인 가동</div>
-                <div class="news-meta">
-                    출처: Idemitsu Kosan / Nikkei | 
-                    <a href="https://www.idemitsu.com/jp/news/2023/231012.html" target="_blank">JP 원문 보기</a>
-                </div>
-                <div class="summary-box">
-                    이데미츠 코산이 도요타 자동차와 협력하여 전고체 배터리 상용화를 위한 황화물계 고체 전해질 파일럿 생산 라인을 본격 가동하기 시작했습니다. 2027-2028년 실제 EV 탑재를 위한 양산 수율 확인과 비용 절감 기술 확보에 주력하고 있습니다.
-                </div>
-                <div class="jp-toggle" onclick="toggleJp('jp1')">▼ 일본어 요약 보기</div>
-                <div id="jp1" class="jp-content">出光興産は、トヨタ自動車と共同で全固体電池向け固体電解質のパイロット生産ラインを稼働させました。2027〜28年の実用化に向け、コスト低減と量産技術の検証を進めています。</div>
-                <div class="strategic-insight">
-                    <b>전략적 의미:</b> 전고체 배터리 제조의 경제성 확보 단계 진입.<br>
-                    <b>포스코 협업:</b> 고체 전해질 원료 공급망 파트너십 및 특수 양극재 공동 R&D 기회 존재.
-                </div>
+                <div style="font-size: 13px; color: #888;">2026.01.29</div>
             </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-tags">
-                        <span class="badge badge-tag">Policy</span>
-                        <span class="badge badge-importance">중요도: 높음</span>
-                    </div>
-                    <div style="font-size: 13px; color: #888;">2026.03.14</div>
-                </div>
-                <div class="news-title">METI, 아시아판 '배터리 여권' 데이터 플랫폼 구축 계획 발표</div>
-                <div class="news-meta">
-                    출처: 경제산업성(METI) / The Japan News | 
-                    <a href="https://www.meti.go.jp/policy/mono_info_service/mono/automobile/battery.html" target="_blank">JP 원문 보기</a>
-                </div>
-                <div class="summary-box">
-                    일본 정부는 배터리 전 생애주기를 추적하는 디지털 플랫폼 구축을 추진합니다. 이는 유럽 규제 대응과 아시아 공급망 내 표준 주도권 확보를 위한 전략으로, 향후 소재의 탄소 발자국 인증의 핵심 도구가 될 전망입니다.
-                </div>
-                <div class="jp-toggle" onclick="toggleJp('jp2')">▼ 일본어 요약 보기</div>
-                <div id="jp2" class="jp-content">経済産業省は「バッテリーパスポート」データプラットフォームの構築を開始しました。アジア圏でのサプライチェーン標準化を主導する狙いです。</div>
-                <div class="strategic-insight">
-                    <b>전략적 의미:</b> 데이터 투명성이 소재 경쟁력의 핵심 지표로 부상.<br>
-                    <b>포스코 협업:</b> 포스코 HY 클린메탈 등의 데이터를 일본 플랫폼과 연동하는 협업 모델 고려 가능.
-                </div>
+            <div class="news-title">이데미츠 코산-도요타, 황화물계 고체 전해질 파일럿 라인 가동 및 수율 검증 착수</div>
+            <div class="news-meta">출처: Idemitsu Kosan / Nikkei | <a href="https://www.idemitsu.com/jp/news/2023/231012.html" target="_blank">원본 기사 보기</a></div>
+            <div class="summary-box">
+                이데미츠 코산이 도요타 자동차와 협력하여 전고체 배터리 상용화의 핵심인 황화물계 고체 전해질 파일럿 생산 라인을 본격 가동하기 시작했습니다. 2027-2028년 실제 EV 탑재를 위한 대량 양산 수율 확인과 비용 절감 기술 확보에 주력하고 있으며, 소재의 대기 안정성 확보 공정을 공장 수준에서 구현한 것으로 평가받고 있습니다.
             </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-tags">
-                        <span class="badge badge-tag">Trading</span>
-                        <span class="badge badge-importance">중요도: 보통</span>
-                    </div>
-                    <div style="font-size: 13px; color: #888;">2026.03.10</div>
-                </div>
-                <div class="news-title">혼다-미쓰비시 상사, 배터리 순환 서비스 'Altna' 사업 확대</div>
-                <div class="news-meta">
-                    출처: Mitsubishi Corp / Honda | 
-                    <a href="https://www.mitsubishicorp.com/jp/ja/pr/archive/2024/html/0000053896.html" target="_blank">JP 원문 보기</a>
-                </div>
-                <div class="summary-box">
-                    합작법인 Altna는 배터리 리스, 2차 이용(ESS), 리사이클링을 통합한 플랫폼 사업을 일본 전역으로 넓히고 있습니다. 배터리 소유권 분리를 통해 EV 가격을 낮추고 자원 순환 체계를 강화하는 모델입니다.
-                </div>
-                <div class="jp-toggle" onclick="toggleJp('jp3')">▼ 일본어 요약 보기</div>
-                <div id="jp3" class="jp-content">ホンダと三菱商事の合弁会社ALTNAは、バッテリーリースとリサイクルを統合した事業を拡大しています。資源循環型モデルの構築を推進しています。</div>
-                <div class="strategic-insight">
-                    <b>전략적 의미:</b> 배터리 비즈니스의 '관리 및 서비스화' 진전.<br>
-                    <b>포스코 협업:</b> 수거 폐배터리의 블랙매스 처리 및 소재 회수 부문 협력 가능성 사료됨.
-                </div>
-            </div>
-
+            <div class="jp-toggle" onclick="toggleJp('jp1')">▼ 일본어 요약 보기</div>
+            <div id="jp1" class="jp-content">出光興産は、トヨタ自動車と共同で全固体電池向け固体電解質のパイロット生産ラインを稼働させました。量産プロセスの歩留まり向上とコスト低減を検証する重要な段階にあります。</div>
         </div>
 
-        <div class="section-box">
-            <div class="section-title">Supply Chain Impact</div>
-            <div class="diagram-container">
-                <div class="diagram-node">Policy (배터리 여권)</div>
-                <div class="diagram-arrow">▶</div>
-                <div class="diagram-node">Trading (순환 서비스)</div>
-                <div class="diagram-arrow">▶</div>
-                <div class="diagram-node">Materials (고사양/전고체)</div>
-                <div class="diagram-arrow">▶</div>
-                <div class="diagram-node">Cell (원통형/고사양화)</div>
-                <div class="diagram-arrow">▶</div>
-                <div class="diagram-node">OEM (전략적 제휴)</div>
+        <div class="news-card">
+            <div class="news-header">
+                <div class="news-tags">
+                    <span class="badge badge-tag">Policy</span>
+                    <span class="badge badge-importance">중요도: 높음</span>
+                </div>
+                <div style="font-size: 13px; color: #888;">2026.03.11</div>
             </div>
+            <div class="news-title">METI, 배터리 공급망 강화 위해 약 3,260억 엔 보조금 승인</div>
+            <div class="news-meta">출처: Argus Media / METI | <a href="https://www.meti.go.jp/policy/mono_info_service/mono/automobile/battery.html" target="_blank">원본 기사 보기</a></div>
+            <div class="summary-box">
+                일본 경제산업성(METI)은 리튬이온 및 LFP 배터리 양산과 핵심 광물 확보 프로젝트에 총 3,260억 엔 규모의 대규모 보조금 지원을 확정했습니다. 이는 일본 내 배립 생산 역량을 비약적으로 확대하고 중국 의존도를 낮추려는 국가 전략의 일환이며, 특히 소재 국산화와 광물 안보 강화를 목표로 합니다.
+            </div>
+            <div class="jp-toggle" onclick="toggleJp('jp2')">▼ 일본어 요약 보기</div>
+            <div id="jp2" class="jp-content">経済産業省は、蓄電池の国内生産基盤強化に向け、約3,260億円の補助金を決定しました。重要鉱物の確保およびLFP電池の量産化を支援します。</div>
         </div>
 
         <div class="section-box">
             <div class="section-title">New Customer Signals</div>
             <div class="customer-signals">
-                <div class="strategic-insight" style="border-left-color: #e67e22;">
-                    <b>Suzuki Motor</b><br>
-                    인도 EV 공장 투자 및 LFP 배터리 현지화 강화 중. 보급형 소재 수요 높음. 신호 강도: <b>HIGH</b>
-                </div>
-                <div class="strategic-insight" style="border-left-color: #27ae60;">
-                    <b>Mazda Motor</b><br>
-                    파나소닉과 2027 양산 EV 플랫폼 협력 구체화. 고사양 원통형 소재 요구. 신호 강도: <b>MEDIUM</b>
-                </div>
-                <div class="strategic-insight" style="border-left-color: #95a5a6;">
-                    <b>Makita</b><br>
-                    전동공구 무선화 전략에 따른 고출력 소형 배터리 소재 수요 지속 발생. 신호 강도: <b>MEDIUM</b>
-                </div>
+                <div class="strategic-insight" style="border-left-color: #e67e22;"><b>Suzuki Motor</b><br>인도 보급형 EV 시장 공략을 위한 비중국 LFP 소재 수요 급증. 신호 강도: HIGH</div>
+                <div class="strategic-insight" style="border-left-color: #27ae60;"><b>Mazda Motor</b><br>파나소닉과 전용 EV 협력 본격화에 따른 원통형 셀용 고성능 소재 요구 발생. 신호 강도: MEDIUM</div>
             </div>
         </div>
 
-        <div class="section-box">
-            <div class="section-title">Daily Insight</div>
-            <p style="font-size: 14px; color: #555;">일본 배터리 산업은 차세대 전고체 기술 선점과 생애주기 관리 표준화를 동시에 추구하는 고도화 단계에 진입했습니다. 특히 정부 주도의 디지털 플랫폼 구축은 향후 소재 기업들에게 단순 품질을 넘어 데이터 신뢰성을 요구할 것입니다. 포스코그룹은 비중국 공급망의 강점을 기반으로 디지털 경쟁력을 강화하여 일본 파트너사들과의 신뢰 장벽을 공고히 하는 전략이 유효할 것으로 사료됩니다.</p>
-        </div>
-
-        <div class="footer">
-            대외비 · Japan Battery Market Intelligence · Internal Use Only
-        </div>
+        <div class="footer">대외비 · Japan Battery Market Intelligence · Internal Use Only</div>
     </div>
-
     <script>
         function toggleJp(id) {
             const content = document.getElementById(id);
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
+            content.style.display = (content.style.display === "block") ? "none" : "block";
         }
     </script>
 </body>
