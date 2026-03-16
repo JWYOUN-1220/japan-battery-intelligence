@@ -4,17 +4,18 @@
     {"id": "EU Commission", "group": "Policy"},
     {"id": "Idemitsu Kosan", "group": "Anode"},
     {"id": "Toyota Motor", "group": "OEM"},
-    {"id": "Nissan Motor", "group": "OEM"},
+    {"id": "Honda Motor", "group": "OEM"},
+    {"id": "Jera", "group": "GX"},
     {"id": "Mitsubishi Corp", "group": "Trading"},
-    {"id": "Frontier Lithium", "group": "Policy"},
-    {"id": "JOGMEC", "group": "Policy"}
+    {"id": "Frontier Lithium", "group": "Precursor"},
+    {"id": "LG Energy Solution", "group": "Cell"}
   ],
   "links": [
     {"source": "METI", "target": "EU Commission", "type": "Partnership"},
     {"source": "Idemitsu Kosan", "target": "Toyota Motor", "type": "Strategic Partnership"},
-    {"source": "Nissan Motor", "target": "Toyota Motor", "type": "Technology"},
+    {"source": "Honda Motor", "target": "LG Energy Solution", "type": "Acquisition"},
     {"source": "Mitsubishi Corp", "target": "Frontier Lithium", "type": "Investment"},
-    {"source": "JOGMEC", "target": "Mitsubishi Corp", "type": "Policy"},
-    {"source": "Idemitsu Kosan", "target": "METI", "type": "Investment"}
+    {"source": "Jera", "target": "Policy", "type": "R&D"},
+    {"source": "Honda Motor", "target": "Jera", "type": "Supply"}
   ]
 }
