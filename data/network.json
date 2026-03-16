@@ -1,7 +1,6 @@
 {
   "nodes": [
     { "id": "METI", "group": "Policy" },
-    { "id": "EU Commission", "group": "Policy" },
     { "id": "Toyota Motor", "group": "OEM" },
     { "id": "Honda Motor", "group": "OEM" },
     { "id": "Mitsubishi Corporation", "group": "Trading" },
@@ -13,15 +12,15 @@
     { "id": "POSCO", "group": "Cathode" }
   ],
   "links": [
-    { "source": "METI", "target": "EU Commission", "type": "Partnership" },
+    { "source": "METI", "target": "Idemitsu Kosan", "type": "Policy" },
     { "source": "Idemitsu Kosan", "target": "Toyota Motor", "type": "R&D" },
     { "source": "Honda Motor", "target": "Mitsubishi Corporation", "type": "JV" },
     { "source": "Mitsubishi Corporation", "target": "Altna", "type": "Investment" },
     { "source": "Honda Motor", "target": "Altna", "type": "Investment" },
     { "source": "Panasonic Energy", "target": "Mazda Motor", "type": "Supply" },
     { "source": "Suzuki Motor", "target": "Panasonic Energy", "type": "Potential Partner" },
-    { "source": "POSCO", "target": "Idemitsu Kosan", "type": "Potential Partner" },
     { "source": "POSCO", "target": "Panasonic Energy", "type": "Supply" },
-    { "source": "POSCO", "target": "Altna", "type": "Watchlist" }
+    { "source": "POSCO", "target": "Altna", "type": "Watchlist" },
+    { "source": "METI", "target": "Panasonic Energy", "type": "Policy" }
   ]
 }
