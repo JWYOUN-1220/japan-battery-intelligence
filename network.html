@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
-<body class="network-page">
+<body class="network-page-simple">
 
-  <div class="network-header">
+  <div class="network-header-simple">
     <div>
       <h1>Japan Battery Supply Chain Network</h1>
       <p class="network-subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
@@ -17,56 +17,19 @@
     <div class="network-meta">대외비 · Internal Intelligence</div>
   </div>
 
-  <div class="network-layout">
-    <div id="network" class="network-full">
-      <div class="network-loading">공급망 데이터를 불러오는 중입니다.</div>
-    </div>
-
-    <aside class="network-panel">
-      <h2>상세 정보</h2>
-      <p class="panel-desc">
-        노드를 클릭하시면 해당 기업 또는 기관과 연결된 관계 정보를 확인하실 수 있습니다.
-      </p>
-
-      <div id="panel-default" class="panel-default">
-        현재 선택된 노드가 없습니다.
-      </div>
-
-      <div id="panel-content" class="panel-content" style="display:none;">
-        <div class="panel-section">
-          <div class="panel-label">선택 노드</div>
-          <div id="selected-node-name" class="panel-node-name"></div>
-        </div>
-
-        <div class="panel-section">
-          <div class="panel-label">연결 관계</div>
-          <div id="selected-node-links" class="panel-links"></div>
-        </div>
-      </div>
-    </aside>
+  <div id="network" class="network-canvas">
+    <div class="network-loading">공급망 데이터를 불러오는 중입니다.</div>
   </div>
 
   <script>
     const container = document.getElementById("network");
-    const panelDefault = document.getElementById("panel-default");
-    const panelContent = document.getElementById("panel-content");
-    const selectedNodeName = document.getElementById("selected-node-name");
-    const selectedNodeLinks = document.getElementById("selected-node-links");
 
-    function resetPanel() {
-      panelDefault.style.display = "block";
-      panelContent.style.display = "none";
-      selectedNodeName.textContent = "";
-      selectedNodeLinks.innerHTML = "";
-    }
-
-    function showNetworkMessage(message) {
+    function showMessage(message) {
       container.innerHTML = `<div class="network-message">${message}</div>`;
-      resetPanel();
     }
 
     if (typeof vis === "undefined") {
-      showNetworkMessage("vis-network 라이브러리를 불러오지 못했습니다.");
+      showMessage("vis-network 라이브러리를 불러오지 못했습니다.");
       throw new Error("vis-network not loaded");
     }
 
@@ -83,7 +46,7 @@
         }
 
         if (data.nodes.length === 0) {
-          showNetworkMessage("표시할 공급망 데이터가 없습니다.");
+          showMessage("표시할 공급망 데이터가 없습니다.");
           return;
         }
 
@@ -100,57 +63,59 @@
           Equipment: "#607D8B"
         };
 
-        const nodes = data.nodes.map(node => ({
-          id: node.id,
-          label: node.id,
-          group: node.group,
-          color: {
-            background: groupColors[node.group] || "#999999",
-            border: "#ffffff"
-          },
-          shape: "box",
-          margin: 10,
-          font: {
-            color: "#ffffff",
-            size: 14,
-            face: "Arial"
-          }
-        }));
+        const nodes = new vis.DataSet(
+          data.nodes.map(node => ({
+            id: node.id,
+            label: node.id,
+            group: node.group,
+            shape: "box",
+            margin: 10,
+            color: {
+              background: groupColors[node.group] || "#999999",
+              border: "#ffffff",
+              highlight: {
+                background: groupColors[node.group] || "#999999",
+                border: "#333333"
+              }
+            },
+            font: {
+              color: "#ffffff",
+              size: 14,
+              face: "Arial"
+            }
+          }))
+        );
 
-        const edges = data.links.map((link, idx) => ({
-          id: idx,
-          from: link.source,
-          to: link.target,
-          label: link.type || "",
-          arrows: "to",
-          width: 1.5,
-          color: {
-            color: "#9aa4b2",
-            highlight: "#333333"
-          },
-          font: {
-            size: 11,
-            align: "middle"
-          },
-          smooth: {
-            enabled: true,
-            type: "cubicBezier",
-            roundness: 0.25
-          },
-          raw: link
-        }));
-
-        const nodeDataset = new vis.DataSet(nodes);
-        const edgeDataset = new vis.DataSet(edges);
+        const edges = new vis.DataSet(
+          data.links.map((link, idx) => ({
+            id: idx,
+            from: link.source,
+            to: link.target,
+            label: link.type || "",
+            arrows: "to",
+            width: 1.5,
+            color: {
+              color: "#9aa4b2",
+              highlight: "#333333"
+            },
+            font: {
+              size: 11,
+              align: "middle",
+              face: "Arial"
+            },
+            smooth: {
+              enabled: true,
+              type: "cubicBezier",
+              roundness: 0.25
+            }
+          }))
+        );
 
         container.innerHTML = "";
 
         const network = new vis.Network(
           container,
-          {
-            nodes: nodeDataset,
-            edges: edgeDataset
-          },
+          { nodes, edges },
           {
             autoResize: true,
             physics: false,
@@ -179,7 +144,6 @@
           }
         );
 
-        // 강제로 화면에 맞춤
         network.once("afterDrawing", function () {
           network.fit({
             animation: {
@@ -188,133 +152,10 @@
             }
           });
         });
-
-        function resetAll() {
-          nodeDataset.get().forEach(node => {
-            nodeDataset.update({
-              id: node.id,
-              color: {
-                background: groupColors[node.group] || "#999999",
-                border: "#ffffff"
-              },
-              font: {
-                color: "#ffffff",
-                size: 14,
-                face: "Arial"
-              }
-            });
-          });
-
-          edgeDataset.get().forEach(edge => {
-            edgeDataset.update({
-              id: edge.id,
-              color: {
-                color: "#9aa4b2",
-                highlight: "#333333"
-              },
-              width: 1.5
-            });
-          });
-
-          resetPanel();
-        }
-
-        function renderPanel(nodeId) {
-          const relatedEdges = edgeDataset.get().filter(edge => edge.from === nodeId || edge.to === nodeId);
-
-          panelDefault.style.display = "none";
-          panelContent.style.display = "block";
-          selectedNodeName.textContent = nodeId;
-          selectedNodeLinks.innerHTML = "";
-
-          if (relatedEdges.length === 0) {
-            selectedNodeLinks.innerHTML = "<div class='panel-empty'>연결된 관계 정보가 없습니다.</div>";
-            return;
-          }
-
-          relatedEdges.forEach(edge => {
-            const raw = edge.raw || {};
-            const otherNode = edge.from === nodeId ? edge.to : edge.from;
-
-            const item = document.createElement("div");
-            item.className = "panel-link-item";
-
-            const strength = raw.strength || "보통";
-            let badgeClass = "panel-badge-medium";
-            if (strength === "높음") badgeClass = "panel-badge-high";
-            if (strength === "낮음") badgeClass = "panel-badge-low";
-
-            item.innerHTML = `
-              <div class="panel-link-top">
-                <span class="panel-badge ${badgeClass}">${strength}</span>
-                <span class="panel-link-title">${nodeId} ↔ ${otherNode}</span>
-              </div>
-              <div class="panel-link-meta">
-                <div><strong>관계 유형:</strong> ${raw.type || edge.label || "-"}</div>
-                <div><strong>날짜:</strong> ${raw.date || "-"}</div>
-              </div>
-              <div class="panel-link-note">
-                ${raw.note || "추가 설명이 없습니다."}
-              </div>
-            `;
-
-            selectedNodeLinks.appendChild(item);
-          });
-        }
-
-        network.on("click", function(params) {
-          if (params.nodes.length === 0) {
-            resetAll();
-            return;
-          }
-
-          const selectedNode = params.nodes[0];
-          const connectedNodes = network.getConnectedNodes(selectedNode);
-          const connectedEdges = network.getConnectedEdges(selectedNode);
-
-          nodeDataset.get().forEach(node => {
-            const active = node.id === selectedNode || connectedNodes.includes(node.id);
-
-            nodeDataset.update({
-              id: node.id,
-              color: active
-                ? {
-                    background: groupColors[node.group] || "#999999",
-                    border: "#ffffff"
-                  }
-                : {
-                    background: "#D9D9D9",
-                    border: "#EEEEEE"
-                  },
-              font: {
-                color: active ? "#ffffff" : "#888888",
-                size: 14,
-                face: "Arial"
-              }
-            });
-          });
-
-          edgeDataset.get().forEach(edge => {
-            const active = connectedEdges.includes(edge.id);
-
-            edgeDataset.update({
-              id: edge.id,
-              color: {
-                color: active ? "#333333" : "#E5E7EB",
-                highlight: "#333333"
-              },
-              width: active ? 2.5 : 1
-            });
-          });
-
-          renderPanel(selectedNode);
-        });
-
-        resetPanel();
       })
       .catch(error => {
         console.error(error);
-        showNetworkMessage("network.json을 불러오지 못했거나 형식이 올바르지 않습니다.");
+        showMessage("network.json을 불러오지 못했거나 형식이 올바르지 않습니다.");
       });
   </script>
 </body>
