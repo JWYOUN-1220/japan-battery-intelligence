@@ -1,38 +1,127 @@
+let allReports = [];
+let filteredReports = [];
+let currentPage = 1;
+const perPage = 10;
+
 async function loadReports() {
   try {
     const url = "https://api.github.com/repos/JWYOUN-1220/japan-battery-intelligence/contents/reports";
     const response = await fetch(url);
     const data = await response.json();
 
-    const list = document.getElementById("report-list");
-    if (!list) return;
-
     if (!Array.isArray(data)) {
-      list.innerHTML = "<li>리포트 목록을 불러오지 못했습니다.</li>";
-      console.error("Unexpected reports API response:", data);
-      return;
+      throw new Error("Unexpected reports API response");
     }
 
-    data
+    allReports = data
       .filter(file => file.name.endsWith(".html"))
-      .sort((a, b) => b.name.localeCompare(a.name))
-      .forEach(file => {
-        const li = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = "reports/" + file.name;
-        link.textContent = file.name.replace(".html", "");
-        li.appendChild(link);
-        list.appendChild(li);
-      });
+      .sort((a, b) => b.name.localeCompare(a.name));
 
-    if (list.children.length === 0) {
-      list.innerHTML = "<li>아직 업로드된 리포트가 없습니다.</li>";
-    }
+    filteredReports = [...allReports];
+
+    renderLatestReports();
+    renderReports();
   } catch (error) {
-    const list = document.getElementById("report-list");
-    if (list) list.innerHTML = "<li>리포트 목록을 불러오지 못했습니다.</li>";
+    const latestList = document.getElementById("latest-report-list");
+    const reportList = document.getElementById("report-list");
+
+    if (latestList) latestList.innerHTML = "<li>최신 리포트를 불러오지 못했습니다.</li>";
+    if (reportList) reportList.innerHTML = "<li>리포트 목록을 불러오지 못했습니다.</li>";
+
     console.error(error);
   }
+}
+
+function renderLatestReports() {
+  const latestList = document.getElementById("latest-report-list");
+  if (!latestList) return;
+
+  latestList.innerHTML = "";
+
+  allReports.slice(0, 5).forEach(file => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = "reports/" + file.name;
+    link.textContent = file.name.replace(".html", "");
+    li.appendChild(link);
+    latestList.appendChild(li);
+  });
+
+  if (latestList.children.length === 0) {
+    latestList.innerHTML = "<li>업로드된 리포트가 없습니다.</li>";
+  }
+}
+
+function renderReports() {
+  const list = document.getElementById("report-list");
+  const pageInfo = document.getElementById("pageInfo");
+  if (!list) return;
+
+  list.innerHTML = "";
+
+  const totalPages = Math.max(1, Math.ceil(filteredReports.length / perPage));
+  if (currentPage > totalPages) currentPage = totalPages;
+
+  const start = (currentPage - 1) * perPage;
+  const end = start + perPage;
+  const pageReports = filteredReports.slice(start, end);
+
+  pageReports.forEach(file => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = "reports/" + file.name;
+    link.textContent = file.name.replace(".html", "");
+    li.appendChild(link);
+    list.appendChild(li);
+  });
+
+  if (pageReports.length === 0) {
+    list.innerHTML = "<li>검색 결과가 없습니다.</li>";
+  }
+
+  if (pageInfo) {
+    pageInfo.textContent = `${currentPage} / ${totalPages}`;
+  }
+}
+
+function setupPagination() {
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
+
+  if (nextBtn) {
+    nextBtn.onclick = () => {
+      const totalPages = Math.ceil(filteredReports.length / perPage);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderReports();
+      }
+    };
+  }
+
+  if (prevBtn) {
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderReports();
+      }
+    };
+  }
+}
+
+function setupSearch() {
+  const input = document.getElementById("reportSearch");
+  if (!input) return;
+
+  input.addEventListener("input", (e) => {
+    const keyword = e.target.value.trim().toLowerCase();
+
+    filteredReports = allReports.filter(r =>
+      r.name.toLowerCase().includes(keyword)
+    );
+
+    currentPage = 1;
+    renderReports();
+  });
 }
 
 async function loadRecentChanges() {
@@ -40,31 +129,52 @@ async function loadRecentChanges() {
     const response = await fetch("data/network.json");
     const data = await response.json();
 
-    const list = document.getElementById("change-list");
-    if (!list) return;
+    const changeList = document.getElementById("change-list");
+    const keywordList = document.getElementById("keyword-list");
+
+    if (!changeList || !keywordList) return;
+
+    changeList.innerHTML = "";
+    keywordList.innerHTML = "";
 
     if (!data.links || !Array.isArray(data.links)) {
-      list.innerHTML = "<li>공급망 데이터를 불러오지 못했습니다.</li>";
+      changeList.innerHTML = "<li>공급망 데이터를 불러오지 못했습니다.</li>";
       return;
     }
 
-    const recentLinks = data.links.slice(-8).reverse();
+    const recentLinks = data.links.slice(-6).reverse();
+
+    const keywordSet = new Set();
 
     recentLinks.forEach(link => {
       const li = document.createElement("li");
       li.textContent = `${link.source} → ${link.target} (${link.type})`;
-      list.appendChild(li);
+      changeList.appendChild(li);
+
+      keywordSet.add(link.source);
+      keywordSet.add(link.target);
+    });
+
+    Array.from(keywordSet).slice(0, 8).forEach(keyword => {
+      const chip = document.createElement("span");
+      chip.className = "keyword-chip";
+      chip.textContent = keyword;
+      keywordList.appendChild(chip);
     });
 
     if (recentLinks.length === 0) {
-      list.innerHTML = "<li>표시할 공급망 변화가 없습니다.</li>";
+      changeList.innerHTML = "<li>표시할 공급망 변화가 없습니다.</li>";
     }
   } catch (error) {
-    const list = document.getElementById("change-list");
-    if (list) list.innerHTML = "<li>공급망 데이터를 불러오지 못했습니다.</li>";
+    const changeList = document.getElementById("change-list");
+    if (changeList) {
+      changeList.innerHTML = "<li>공급망 데이터를 불러오지 못했습니다.</li>";
+    }
     console.error(error);
   }
 }
 
+setupPagination();
+setupSearch();
 loadReports();
 loadRecentChanges();
