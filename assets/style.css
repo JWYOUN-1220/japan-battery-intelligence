@@ -200,19 +200,6 @@ a:hover{
   line-height:1.7;
 }
 
-@media (max-width:900px){
-  .dashboard-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-@media (max-width:768px){
-  .container{padding:20px 14px 40px;}
-  .hero{padding:22px 20px;}
-  .hero h1{font-size:24px;}
-  .card{padding:18px 16px;}
-  .card h2{font-size:19px;}
-}
 .signal-item{
   display:flex;
   align-items:flex-start;
@@ -249,4 +236,74 @@ a:hover{
 .signal-text{
   flex:1;
   min-width:220px;
+}
+
+/* Network page dedicated layout */
+.network-page{
+  background:#ffffff;
+  margin:0;
+  padding:0;
+}
+
+.network-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  padding:20px 28px 16px;
+  border-bottom:1px solid var(--gray-200);
+  background:#ffffff;
+}
+
+.network-header h1{
+  margin:0 0 6px 0;
+  color:var(--posco-dark);
+  font-size:28px;
+}
+
+.network-subtitle{
+  margin:0;
+  color:var(--gray-500);
+  font-size:14px;
+}
+
+.network-meta{
+  color:var(--gray-500);
+  font-size:13px;
+  white-space:nowrap;
+}
+
+.network-full{
+  width:100%;
+  height:calc(100vh - 88px);
+  min-height:1200px;
+  background:#ffffff;
+}
+
+@media (max-width:900px){
+  .dashboard-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:768px){
+  .container{padding:20px 14px 40px;}
+  .hero{padding:22px 20px;}
+  .hero h1{font-size:24px;}
+  .card{padding:18px 16px;}
+  .card h2{font-size:19px;}
+
+  .network-header{
+    padding:16px 16px 12px;
+    flex-direction:column;
+  }
+
+  .network-header h1{
+    font-size:22px;
+  }
+
+  .network-full{
+    height:calc(100vh - 110px);
+    min-height:1000px;
+  }
 }
