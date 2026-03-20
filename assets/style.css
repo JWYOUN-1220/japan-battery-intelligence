@@ -286,7 +286,7 @@ a:hover{
 .network-full{
   width:100%;
   height:100%;
-  background:#ffffff;
+  background:#fbfcfe;
   border-right:1px solid var(--gray-200);
   position:relative;
 }
