@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "date": "2026-03-15",
+      "source": "METI",
+      "target": "Toyota",
+      "type": "Policy",
+      "strength": "높음",
+      "note": "정책 지원 방향 재강조",
+      "news_title": "METI, 배터리 공급망 경쟁력 및 차세대 기술 지원 정책 재강조",
+      "source_name": "METI",
+      "jp_url": "https://www.meti.go.jp/",
+      "en_url": ""
+    },
+    {
+      "date": "2026-03-15",
+      "source": "Prime Planet Energy",
+      "target": "Toyota",
+      "type": "JV",
+      "strength": "높음",
+      "note": "JV 구조 핵심",
+      "news_title": "Prime Planet Energy, 생산 확대와 소재 조달 다변화 검토",
+      "source_name": "Reuters Japan",
+      "jp_url": "https://www.reuters.com/world/japan/",
+      "en_url": "https://www.reuters.com/world/japan/"
+    }
+  ]
+}
