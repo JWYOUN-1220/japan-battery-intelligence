@@ -65,6 +65,11 @@
       resetPanel();
     }
 
+    if (typeof vis === "undefined") {
+      showNetworkMessage("vis-network 라이브러리를 불러오지 못했습니다.");
+      throw new Error("vis-network not loaded");
+    }
+
     fetch("data/network.json")
       .then(response => {
         if (!response.ok) {
@@ -95,98 +100,119 @@
           Equipment: "#607D8B"
         };
 
-        const nodeDataset = new vis.DataSet(
-          data.nodes.map(node => ({
-            id: node.id,
-            label: node.id,
-            group: node.group,
-            color: groupColors[node.group] || "#999999",
-            shape: "box",
-            font: {
-              color: "#ffffff",
-              size: 14,
-              face: "Arial"
-            },
-            margin: 10
-          }))
-        );
+        const nodes = data.nodes.map(node => ({
+          id: node.id,
+          label: node.id,
+          group: node.group,
+          color: {
+            background: groupColors[node.group] || "#999999",
+            border: "#ffffff"
+          },
+          shape: "box",
+          margin: 10,
+          font: {
+            color: "#ffffff",
+            size: 14,
+            face: "Arial"
+          }
+        }));
 
-        const edgeDataset = new vis.DataSet(
-          data.links.map((link, idx) => ({
-            id: idx,
-            from: link.source,
-            to: link.target,
-            label: link.type || "",
-            arrows: "to",
-            font: {
-              align: "middle",
-              size: 11,
-              face: "Arial"
-            },
-            color: { color: "#999999" },
-            width: 1.2,
-            smooth: {
-              type: "cubicBezier",
-              forceDirection: "horizontal",
-              roundness: 0.4
-            },
-            raw: link
-          }))
-        );
+        const edges = data.links.map((link, idx) => ({
+          id: idx,
+          from: link.source,
+          to: link.target,
+          label: link.type || "",
+          arrows: "to",
+          width: 1.5,
+          color: {
+            color: "#9aa4b2",
+            highlight: "#333333"
+          },
+          font: {
+            size: 11,
+            align: "middle"
+          },
+          smooth: {
+            enabled: true,
+            type: "cubicBezier",
+            roundness: 0.25
+          },
+          raw: link
+        }));
+
+        const nodeDataset = new vis.DataSet(nodes);
+        const edgeDataset = new vis.DataSet(edges);
 
         container.innerHTML = "";
 
         const network = new vis.Network(
           container,
-          { nodes: nodeDataset, edges: edgeDataset },
           {
-            layout: {
-              hierarchical: {
-                enabled: true,
-                direction: "LR",
-                sortMethod: "directed",
-                levelSeparation: 220,
-                nodeSpacing: 180,
-                treeSpacing: 220,
-                blockShifting: true,
-                edgeMinimization: true,
-                parentCentralization: true
-              }
-            },
-            physics: false,
+            nodes: nodeDataset,
+            edges: edgeDataset
+          },
+          {
             autoResize: true,
+            physics: false,
             interaction: {
               hover: true,
               dragNodes: true,
               dragView: true,
               zoomView: true
             },
-            nodes: {
-              borderWidth: 1,
-              shapeProperties: {
-                borderRadius: 6
+            layout: {
+              hierarchical: {
+                enabled: true,
+                direction: "LR",
+                sortMethod: "directed",
+                levelSeparation: 180,
+                nodeSpacing: 140,
+                treeSpacing: 180
               }
             },
+            nodes: {
+              borderWidth: 1
+            },
             edges: {
-              width: 1.2
+              width: 1.5
             }
           }
         );
+
+        // 강제로 화면에 맞춤
+        network.once("afterDrawing", function () {
+          network.fit({
+            animation: {
+              duration: 300,
+              easingFunction: "easeInOutQuad"
+            }
+          });
+        });
 
         function resetAll() {
           nodeDataset.get().forEach(node => {
             nodeDataset.update({
               id: node.id,
-              color: groupColors[node.group] || "#999999",
-              font: { color: "#ffffff", size: 14, face: "Arial" }
+              color: {
+                background: groupColors[node.group] || "#999999",
+                border: "#ffffff"
+              },
+              font: {
+                color: "#ffffff",
+                size: 14,
+                face: "Arial"
+              }
             });
           });
 
           edgeDataset.get().forEach(edge => {
             edgeDataset.update({
               id: edge.id,
-              color: { color: "#999999" },
-              width: 1.2
+              color: {
+                color: "#9aa4b2",
+                highlight: "#333333"
+              },
+              width: 1.5
             });
           });
 
@@ -247,13 +273,21 @@
           const connectedEdges = network.getConnectedEdges(selectedNode);
 
           nodeDataset.get().forEach(node => {
-            const isActive = node.id === selectedNode || connectedNodes.includes(node.id);
+            const active = node.id === selectedNode || connectedNodes.includes(node.id);
 
             nodeDataset.update({
               id: node.id,
-              color: isActive ? (groupColors[node.group] || "#999999") : "#D3D3D3",
+              color: active
+                ? {
+                    background: groupColors[node.group] || "#999999",
+                    border: "#ffffff"
+                  }
+                : {
+                    background: "#D9D9D9",
+                    border: "#EEEEEE"
+                  },
               font: {
-                color: isActive ? "#ffffff" : "#AAAAAA",
+                color: active ? "#ffffff" : "#888888",
                 size: 14,
                 face: "Arial"
               }
@@ -261,12 +295,15 @@
           });
 
           edgeDataset.get().forEach(edge => {
-            const isActive = connectedEdges.includes(edge.id);
+            const active = connectedEdges.includes(edge.id);
 
             edgeDataset.update({
               id: edge.id,
-              color: { color: isActive ? "#333333" : "#E0E0E0" },
-              width: isActive ? 2 : 1
+              color: {
+                color: active ? "#333333" : "#E5E7EB",
+                highlight: "#333333"
+              },
+              width: active ? 2.5 : 1
             });
           });
 
