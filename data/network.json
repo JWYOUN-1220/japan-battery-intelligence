@@ -1,22 +1,19 @@
 {
   "nodes": [
-    { "id": "METI", "group": "Policy" },
-    { "id": "US Govt", "group": "Policy" },
-    { "id": "Toyota Motor", "group": "OEM" },
-    { "id": "GS Yuasa", "group": "Cell" },
-    { "id": "Lynas", "group": "Trading" },
-    { "id": "JARE", "group": "Trading" },
-    { "id": "Taesung", "group": "Equipment" },
-    { "id": "PEVE", "group": "Cell" },
-    { "id": "POSCO", "group": "Cathode" }
+    {"id": "METI", "group": "Policy"},
+    {"id": "Idemitsu Kosan", "group": "Cathode"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Mitsubishi Corporation", "group": "Trading"},
+    {"id": "DOWA Holdings", "group": "Precursor"},
+    {"id": "Komatsu", "group": "Niche"},
+    {"id": "Sumitomo Metal Mining", "group": "Cathode"},
+    {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
-    { "source": "METI", "target": "US Govt", "type": "Partnership" },
-    { "source": "Lynas", "target": "JARE", "type": "Supply" },
-    { "source": "METI", "target": "GS Yuasa", "type": "Policy" },
-    { "source": "Toyota Motor", "target": "PEVE", "type": "Acquisition" },
-    { "source": "POSCO", "target": "PEVE", "type": "Potential Partner" },
-    { "source": "POSCO", "target": "GS Yuasa", "type": "Potential Partner" },
-    { "source": "Taesung", "target": "GS Yuasa", "type": "Supply" }
+    {"source": "METI", "target": "Idemitsu Kosan", "type": "Policy"},
+    {"source": "Mitsubishi Corporation", "target": "DOWA Holdings", "type": "JV"},
+    {"source": "Panasonic Energy", "target": "POSCO", "type": "Potential Partner"},
+    {"source": "Komatsu", "target": "Panasonic Energy", "type": "Procurement"},
+    {"source": "Sumitomo Metal Mining", "target": "POSCO", "type": "Watchlist"}
   ]
 }
