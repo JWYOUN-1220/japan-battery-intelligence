@@ -142,13 +142,42 @@ async function loadRecentChanges() {
       return;
     }
 
-    const recentLinks = data.links.slice(-6).reverse();
+    const recentLinks = [...data.links]
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+      .slice(0, 6);
 
     const keywordSet = new Set();
 
     recentLinks.forEach(link => {
       const li = document.createElement("li");
-      li.textContent = `${link.source} → ${link.target} (${link.type})`;
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "signal-item";
+
+      const badge = document.createElement("span");
+      badge.className = "signal-badge";
+
+      const strength = link.strength || "보통";
+      if (strength === "높음") {
+        badge.classList.add("signal-high");
+      } else if (strength === "낮음") {
+        badge.classList.add("signal-low");
+      } else {
+        badge.classList.add("signal-medium");
+      }
+      badge.textContent = strength;
+
+      const text = document.createElement("div");
+      text.className = "signal-text";
+
+      const date = link.date ? `${link.date} | ` : "";
+      const note = link.note ? ` - ${link.note}` : "";
+
+      text.textContent = `${date}${link.source} → ${link.target} (${link.type})${note}`;
+
+      wrapper.appendChild(badge);
+      wrapper.appendChild(text);
+      li.appendChild(wrapper);
       changeList.appendChild(li);
 
       keywordSet.add(link.source);
