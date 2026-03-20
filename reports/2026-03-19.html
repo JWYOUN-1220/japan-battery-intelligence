@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery Market Intelligence Report - 2026.03.19</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
+            --conf-high-bg: #e8f5e9;
+            --conf-high-txt: #2e7d32;
+            --conf-medium-bg: #fff8e1;
+            --conf-medium-txt: #f9a825;
+            --conf-low-bg: #eceff1;
+            --conf-low-txt: #546e7a;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            background-color: var(--bg-light);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            border-bottom: 4px solid var(--posco-blue);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            color: var(--posco-blue);
+            font-size: 32px;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            color: var(--posco-gray);
+            font-size: 15px;
+            margin: 8px 0 0 0;
+            font-weight: 500;
+        }
+
+        .summary-box {
+            background: #f0f4f8;
+            border-left: 6px solid var(--posco-blue);
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .summary-box h2 {
+            margin: 0 0 12px 0;
+            color: var(--posco-blue);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: var(--posco-blue);
+            border-bottom: 2px solid #eaedf0;
+            padding-bottom: 12px;
+            margin: 50px 0 25px;
+            font-weight: 700;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .news-card {
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            padding: 30px;
+            position: relative;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+            border-color: var(--posco-light-blue);
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .low { background: var(--low-bg); color: var(--low-txt); }
+
+        .conf-high { background: var(--conf-high-bg); color: var(--conf-high-txt); }
+        .conf-medium { background: var(--conf-medium-bg); color: var(--conf-medium-txt); }
+        .conf-low { background: var(--conf-low-bg); color: var(--conf-low-txt); }
+
+        .news-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            line-height: 1.45;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .meta a {
+            color: var(--posco-light-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .meta a:hover {
+            text-decoration: underline;
+        }
+
+        .content-label {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--posco-blue);
+            display: block;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-text {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 18px;
+            text-align: justify;
+            white-space: pre-line;
+        }
+
+        .jp-box {
+            background: #f8fbff;
+            border: 1px solid #d7e8f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 18px;
+        }
+
+        .posco-rel {
+            background: #f8faff;
+            padding: 18px;
+            border-radius: 8px;
+            font-size: 14.5px;
+            border: 1px dashed #b8c5d6;
+            color: #2c3e50;
+            margin-top: 12px;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th {
+            background: #f8f9fa;
+            color: var(--posco-blue);
+            font-weight: 700;
+            padding: 15px;
+            border-bottom: 2px solid #eee;
+            text-align: left;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14.5px;
+            vertical-align: top;
+        }
+
+        .impact-flow-container {
+            background: #fff;
+            border: 1px solid var(--posco-blue);
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .impact-step {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .impact-step:not(:last-child):after {
+            content: "→";
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--posco-blue);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #eee;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            .header h1 { font-size: 24px; }
+            .impact-step:not(:last-child):after {
+                content: "↓";
+                right: auto;
+                left: 50%;
+                bottom: -15px;
+                top: auto;
+                transform: translateX(-50%);
+            }
+            .impact-flow-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Japan Battery Market Intelligence Report</h1>
+            <p>Date: 2026.03.19 | Analyst: MI Intelligence System | 대외비</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                3월 19일 일본 배터리 공급망은 토요타의 전고체 상용화 로드맵 가속화, 상사 및 소재 기업의 선제적 자원 확보, 상용차 중심의 폼팩터 다변화로 요약해 볼 수 있습니다.
+                차세대 배터리 주도권 확보를 위한 대형 OEM의 움직임과 비중국산 원료 확보 경쟁이 치열해지고 있습니다.
+                포스코그룹 관점에서는 차세대 전고체 소재 협력, 상사와의 원료 스왑 기회, 그리고 상용차용 양극재 밸류체인 진입 가능성을 지속적으로 검토해 볼 필요가 있는 것으로 판단됩니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key News Section</h2>
+
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+
+                <div class="news-title">Toyota Motor, 전고체 배터리 상용화 로드맵 가속 및 초기 생산 라인 투자 확대</div>
+
+                <div class="meta">
+                    <span>발표일: 2026-03-19</span>
+                    <span>Source: Toyota Motor</span>
+                    <a href="https://global.toyota/jp/" target="_blank">JP 원문 보기</a>
+                </div>
+
+                <span class="content-label">Summary</span>
+                <p class="content-text">토요타(Toyota Motor)는 2027년 전고체 배터리 탑재 프리미엄 EV 출시를 목표로 개발 로드맵을 가속화한다고 발표했습니다.
+초기 생산 물량 확보를 위해 자체 생산 라인 투자를 확대하고 소재 파트너사와의 협력을 한층 강화할 계획인 것으로 보입니다.
+전고체 밸류체인의 조기 선점 및 양산 역량 확보를 위한 적극적인 행보로 평가됩니다.</p>
+
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">トヨタは2027年の全固体電池搭載プレミアムEV発売に向け、開発ロードマップを加速させると発表しました。
+初期生産に向けた投資を拡大する見込みです。</p>
+                </div>
+
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">차세대 배터리에 대한 대형 완성차 업체의 의지가 구체적인 설비 투자로 이어지며 밸류체인 조기 구축 경쟁이 본격화되고 있음을 시사합니다.</p>
+
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong>
+                    고체 전해질 및 핵심 소재 분야에서 토요타 및 관련 소재 협력사들과의 공동 기술 검토 및 중장기 파트너십 가능성을 타진해 볼 수 있을 것으로 보입니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+
+                <div class="news-title">JX Nippon Mining & Metals, 하이니켈 수요 대응을 위한 전구체 생산 능력 30% 확충</div>
+
+                <div class="meta">
+                    <span>발표일: 2026-03-19</span>
+                    <span>Source: JX Nippon Mining & Metals</span>
+                    <a href="https://www.nmm.jx-group.co.jp/" target="_blank">JP 원문 보기</a>
+                </div>
+
+                <span class="content-label">Summary</span>
+                <p class="content-text">JX금속(JX Nippon Mining & Metals)은 고성능 하이니켈 양극재 수요 증가에 대응하기 위해 전구체 생산 능력을 기존 대비 약 30% 확충한다고 밝혔습니다.
+이는 일본 내 배터리 핵심 소재의 내재화율을 높이고 공급망 경쟁력을 강화하려는 의도로 해석됩니다.
+업스트림 밸류체인에 대한 현지 투자가 견고하게 이루어지고 있습니다.</p>
+
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">JX金属は高ニッケル正極材の需要増に対応するため、前駆体の生産能力を3割拡充すると発表しました。
+国内素材バリューチェーンの強化を図る動きです。</p>
+                </div>
+
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">원료 제련에서 전구체로 이어지는 업스트림 밸류체인의 자국 내 확충이 가속화되며, 탈중국 소재 공급망 구축이 실질적으로 이루어지고 있습니다.</p>
+
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong>
+                    JX금속의 전구체 증설 흐름과 연계하여, 니켈 원료 공급 안정화 측면에서 상호 보완적인 협력 모델을 모색해 볼 필요가 있어 보입니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-medium">신뢰도: 보통</span>
+                </div>
+
+                <div class="news-title">Mitsui & Co., 호주 리튬 광산 지분 참여 및 장기 오프테이크(Off-take) 계약 체결</div>
+
+                <div class="meta">
+                    <span>발표일: 2026-03-19</span>
+                    <span>Source: Mitsui & Co.</span>
+                    <a href="https://www.mitsui.com/jp/ja/" target="_blank">JP 원문 보기</a>
+                </div>
+
+                <span class="content-label">Summary</span>
+                <p class="content-text">미쓰이물산(Mitsui & Co.)은 호주 리튬 광산 프로젝트에 지분을 참여하며 장기 오프테이크(Off-take) 계약을 체결한 것으로 전해졌습니다.
+이는 비중국산 핵심 광물을 선제적으로 확보하여 자국 내 소재 및 셀 메이커에 안정적으로 공급하기 위한 거시적 전략으로 보입니다.
+종합상사의 글로벌 자원 개발 능력이 배터리 공급망 구축의 핵심 축이 되고 있습니다.</p>
+
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">三井物産は豪州リチウム鉱山への権益参画を通じ、長期の引き取り契約を締結したと報じられました。
+非中国系重要鉱物の安定確保を目指しています。</p>
+                </div>
+
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">핵심 광물 확보에 있어 상사들의 자금력과 글로벌 네트워크가 주도적인 역할을 하고 있으며, 공급망의 첫 단추인 광물 확보 경쟁이 심화되고 있습니다.</p>
+
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong>
+                    미쓰이물산 등 주요 상사들의 자원 확보 기조에 맞춰, 포스코가 보유한 글로벌 리튬·니켈 자산과의 전략적 융통 및 스왑(Swap) 기회를 검토해 볼 수 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+
+                <div class="news-title">Isuzu, 물류 효율화를 위한 배터리 교환식(Swappable) 신형 전기 트럭 공개</div>
+
+                <div class="meta">
+                    <span>발표일: 2026-03-19</span>
+                    <span>Source: Isuzu</span>
+                    <a href="https://www.isuzu.co.jp/" target="_blank">JP 원문 보기</a>
+                </div>
+
+                <span class="content-label">Summary</span>
+                <p class="content-text">이스즈(Isuzu)는 상용차의 운영 효율성을 높이기 위해 배터리 교환식(Swappable) 기술을 적용한 신형 전기 트럭 라인업을 공개했습니다.
+충전 대기 시간이라는 인프라 한계를 극복하고 물류 업계의 전동화 전환을 앞당기려는 시도로 평가됩니다.
+특수 환경에 맞는 유연한 배터리 운영 모델이 새롭게 대두되고 있습니다.</p>
+
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">いすゞは物流効率化を目的に、バッテリー交換式技術を採用した新型電気トラックを発表しました。
+商用車の電動化を加速させる試みと評価されます。</p>
+                </div>
+
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">상용차 및 특수 차량 시장에서는 승용차와 달리 배터리 폼팩터와 운영 방식(교환식 등)이 다변화되고 있어, 맞춤형 솔루션의 중요성이 커지고 있습니다.</p>
+
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong>
+                    배터리 교환식 등 가혹 조건에서 사용되는 상용차용 배터리에 부합하는 장수명 양극재 소재를 제안하며 신규 진입 경로를 지속 관찰할 필요가 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+
+                <div class="news-title">GS Yuasa 및 Honda, 내수 시장 겨냥 고용량 차세대 배터리 공동 개발 가속</div>
+
+                <div class="meta">
+                    <span>발표일: 2026-03-19</span>
+                    <span>Source: GS Yuasa</span>
+                    <a href="https://www.gs-yuasa.com/jp/" target="_blank">JP 원문 보기</a>
+                </div>
+
+                <span class="content-label">Summary</span>
+                <p class="content-text">GS유아사(GS Yuasa)와 혼다(Honda)는 일본 내수 시장 및 북미 일부를 겨냥한 고용량 차세대 배터리의 공동 개발 파트너십을 더욱 구체화했습니다.
+하이브리드 중심에서 순수 전기차(BEV)로의 원활한 전환을 위해 양사 간의 결속을 강화하는 조치로 판단됩니다.
+단단한 내수 동맹을 기반으로 안정적인 물량을 확보하려는 전략으로 풀이됩니다.</p>
+
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">GSユアサとホンダは、国内市場向け大容量次世代電池の共同開発パートナーシップを具体化しました。
+国内セル供給網を強化する措置と判断されます。</p>
+                </div>
+
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 내 전통적인 OEM과 배터리 제조사 간의 JV 및 공동 개발이 더욱 굳건해지며, 캡티브 마켓(Captive Market) 확보를 위한 기술 동맹이 강화되고 있습니다.</p>
+
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong>
+                    고용량 및 고안전성 양극재 포트폴리오를 기반으로, 양사의 공동 개발 프로젝트 내에서 차세대 소재 벤더로서의 참여 가능성을 점진적으로 탐색해 볼 수 있을 것으로 보입니다.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>상사</strong><br>해외 광물 장기 확보</div>
+            <div class="impact-step"><strong>소재</strong><br>전구체 생산 능력 확충</div>
+            <div class="impact-step"><strong>셀</strong><br>차세대 배터리 공동 개발</div>
+            <div class="impact-step"><strong>대형 OEM</strong><br>전고체 상용화 로드맵 가속</div>
+            <div class="impact-step"><strong>니치 OEM</strong><br>상용차 배터리 교환식 도입</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>양극재</strong></td>
+                        <td>하이니켈 및 상용차용 장수명 배터리에 적합한 소재 포트폴리오를 기반으로 공급 기회를 검토해 볼 수 있을 것으로 보입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리튬 / 니켈</strong></td>
+                        <td>미쓰이물산 등 주요 상사들의 비중국산 자원 확보 기조에 맞춰, 포스코가 보유한 자산과의 협력 모델을 구상해 볼 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>전구체 / 금속</strong></td>
+                        <td>JX금속의 전구체 증설 흐름과 연계하여, 원료 공급망 안정화 측면에서 파트너십 가능성을 모색해 볼 필요가 있어 보입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>전고체 소재</strong></td>
+                        <td>토요타 등 완성차의 전고체 조기 상용화 로드맵에 대응해 고체 전해질 및 핵심 소재의 공동 기술 검토를 추진해 볼 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>신규 고객</strong></td>
+                        <td>Isuzu와 같은 상용차 OEM의 배터리 교환식 폼팩터에 부합하는 솔루션 제안을 통해 신규 고객 진입 경로를 지속 관찰할 필요가 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Daily Insight</h2>
+        <p>
+            오늘의 동향은 차세대 배터리(전고체)와 현재 기술(하이니켈/교환식) 양측면에서 일본 밸류체인의 자립 및 고도화가 동시에 이루어지고 있음을 시사합니다.
+            상사를 통한 안정적 원료 확보가 소재 업체의 증설로 이어지는 구조가 명확해짐에 따라, 포스코그룹은 이들 거점 플레이어들과의 간접 협력망을 공고히 다지는 전략을 검토해 볼 수 있을 것으로 보입니다.
+        </p>
+
+        <div class="footer">
+            대외비 · Japan Battery Market Intelligence · © 2026 POSCO Group
+        </div>
+
+    </div>
+</body>
+</html>
