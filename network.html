@@ -18,7 +18,9 @@
   </div>
 
   <div class="network-layout">
-    <div id="network" class="network-full"></div>
+    <div id="network" class="network-full">
+      <div class="network-loading">공급망 데이터를 불러오는 중입니다.</div>
+    </div>
 
     <aside class="network-panel">
       <h2>상세 정보</h2>
@@ -45,9 +47,41 @@
   </div>
 
   <script>
+    const container = document.getElementById("network");
+    const panelDefault = document.getElementById("panel-default");
+    const panelContent = document.getElementById("panel-content");
+    const selectedNodeName = document.getElementById("selected-node-name");
+    const selectedNodeLinks = document.getElementById("selected-node-links");
+
+    function resetPanel() {
+      panelDefault.style.display = "block";
+      panelContent.style.display = "none";
+      selectedNodeName.textContent = "";
+      selectedNodeLinks.innerHTML = "";
+    }
+
+    function showNetworkMessage(message) {
+      container.innerHTML = `<div class="network-message">${message}</div>`;
+      resetPanel();
+    }
+
     fetch("data/network.json")
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("network.json 파일을 찾을 수 없습니다.");
+        }
+        return response.json();
+      })
       .then(data => {
+        if (!data || !Array.isArray(data.nodes) || !Array.isArray(data.links)) {
+          throw new Error("network.json 형식이 올바르지 않습니다.");
+        }
+
+        if (data.nodes.length === 0) {
+          showNetworkMessage("표시할 공급망 데이터가 없습니다.");
+          return;
+        }
+
         const groupColors = {
           Policy: "#003B70",
           Trading: "#4F81BD",
@@ -82,7 +116,7 @@
             id: idx,
             from: link.source,
             to: link.target,
-            label: link.type,
+            label: link.type || "",
             arrows: "to",
             font: {
               align: "middle",
@@ -100,7 +134,7 @@
           }))
         );
 
-        const container = document.getElementById("network");
+        container.innerHTML = "";
 
         const network = new vis.Network(
           container,
@@ -120,6 +154,7 @@
               }
             },
             physics: false,
+            autoResize: true,
             interaction: {
               hover: true,
               dragNodes: true,
@@ -137,18 +172,6 @@
             }
           }
         );
-
-        const panelDefault = document.getElementById("panel-default");
-        const panelContent = document.getElementById("panel-content");
-        const selectedNodeName = document.getElementById("selected-node-name");
-        const selectedNodeLinks = document.getElementById("selected-node-links");
-
-        function resetPanel() {
-          panelDefault.style.display = "block";
-          panelContent.style.display = "none";
-          selectedNodeName.textContent = "";
-          selectedNodeLinks.innerHTML = "";
-        }
 
         function resetAll() {
           nodeDataset.get().forEach(node => {
@@ -253,9 +276,8 @@
         resetPanel();
       })
       .catch(error => {
-        document.getElementById("network").innerHTML =
-          "<div style='padding:24px; color:#666;'>network.json을 불러오지 못했습니다.</div>";
         console.error(error);
+        showNetworkMessage("network.json을 불러오지 못했거나 형식이 올바르지 않습니다.");
       });
   </script>
 </body>
