@@ -213,3 +213,40 @@ a:hover{
   .card{padding:18px 16px;}
   .card h2{font-size:19px;}
 }
+.signal-item{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.signal-badge{
+  display:inline-block;
+  min-width:56px;
+  text-align:center;
+  padding:5px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.signal-high{
+  background:#ffebeb;
+  color:#d32f2f;
+}
+
+.signal-medium{
+  background:#fff4e5;
+  color:#ef6c00;
+}
+
+.signal-low{
+  background:#f0f0f0;
+  color:#666;
+}
+
+.signal-text{
+  flex:1;
+  min-width:220px;
+}
