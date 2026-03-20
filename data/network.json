@@ -1,43 +1,16 @@
 {
   "nodes": [
-    { "id": "METI", "group": "Policy" },
-    { "id": "Toyota Tsusho", "group": "Trading" },
-    { "id": "POSCO", "group": "Cathode" },
-    { "id": "Panasonic Energy", "group": "Cell" },
-    { "id": "Toyota", "group": "OEM" }
+    { "id": "A", "group": "Policy" },
+    { "id": "B", "group": "Trading" }
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Toyota Tsusho",
-      "type": "정책 지원",
+      "source": "A",
+      "target": "B",
+      "type": "테스트",
       "strength": "높음",
-      "date": "2026-03-15",
-      "note": "정부 보조금 및 공급망 지원"
-    },
-    {
-      "source": "Toyota Tsusho",
-      "target": "POSCO",
-      "type": "원료 조달",
-      "strength": "보통",
-      "date": "2026-03-15",
-      "note": "리튬 및 니켈 공급 협력 가능성"
-    },
-    {
-      "source": "POSCO",
-      "target": "Panasonic Energy",
-      "type": "양극재 공급",
-      "strength": "높음",
-      "date": "2026-03-15",
-      "note": "하이니켈 양극재 공급 가능성"
-    },
-    {
-      "source": "Panasonic Energy",
-      "target": "Toyota",
-      "type": "배터리 공급",
-      "strength": "높음",
-      "date": "2026-03-15",
-      "note": "EV용 배터리 공급"
+      "date": "2026-03-20",
+      "note": "테스트 연결"
     }
   ]
 }
