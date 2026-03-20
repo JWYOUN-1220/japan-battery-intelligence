@@ -240,46 +240,55 @@ a:hover{
 
 /* Simple network page */
 .network-page-simple{
-  background:#ffffff;
+  background:var(--gray-100);
   margin:0;
-  padding:0;
-  height:100vh;
-  overflow:hidden;
+  padding:24px;
+  min-height:100vh;
 }
 
-.network-header-simple{
+.network-shell{
+  width:100%;
+}
+
+.network-hero{
+  background:linear-gradient(135deg,var(--posco-dark),var(--posco-blue));
+  color:#fff;
+  border-radius:14px;
+  padding:24px 28px;
+  margin-bottom:16px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
   gap:20px;
-  padding:20px 28px 16px;
-  border-bottom:1px solid var(--gray-200);
-  background:#ffffff;
-  height:88px;
+  flex-wrap:wrap;
 }
 
-.network-header-simple h1{
-  margin:0 0 6px 0;
-  color:var(--posco-dark);
-  font-size:28px;
+.network-hero h1{
+  margin:0 0 8px 0;
+  font-size:30px;
 }
 
-.network-subtitle{
+.network-hero-subtitle{
   margin:0;
-  color:var(--gray-500);
-  font-size:14px;
+  font-size:15px;
+  opacity:0.95;
 }
 
-.network-meta{
-  color:var(--gray-500);
-  font-size:13px;
-  white-space:nowrap;
+.network-hero-meta{
+  font-size:14px;
+  text-align:right;
+  opacity:0.95;
 }
 
 .network-canvas{
   width:100%;
-  height:calc(100vh - 88px);
-  background:#fbfcfe;
+  height:calc(100vh - 170px);
+  min-height:720px;
+  background:#ffffff;
+  border:1px solid var(--gray-200);
+  border-radius:14px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.03);
+  overflow:hidden;
 }
 
 .network-loading,
@@ -308,17 +317,24 @@ a:hover{
   .card{padding:18px 16px;}
   .card h2{font-size:19px;}
 
-  .network-header-simple{
-    padding:16px 16px 12px;
-    flex-direction:column;
-    height:auto;
+  .network-page-simple{
+    padding:16px;
   }
 
-  .network-header-simple h1{
-    font-size:22px;
+  .network-hero{
+    padding:20px;
+  }
+
+  .network-hero h1{
+    font-size:24px;
+  }
+
+  .network-hero-meta{
+    text-align:left;
   }
 
   .network-canvas{
-    height:calc(100vh - 110px);
+    height:calc(100vh - 190px);
+    min-height:620px;
   }
 }
