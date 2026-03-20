@@ -1,19 +1,43 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Idemitsu Kosan", "group": "Cathode"},
-    {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Mitsubishi Corporation", "group": "Trading"},
-    {"id": "DOWA Holdings", "group": "Precursor"},
-    {"id": "Komatsu", "group": "Niche"},
-    {"id": "Sumitomo Metal Mining", "group": "Cathode"},
-    {"id": "POSCO", "group": "Cathode"}
+    { "id": "METI", "group": "Policy" },
+    { "id": "Toyota Tsusho", "group": "Trading" },
+    { "id": "POSCO", "group": "Cathode" },
+    { "id": "Panasonic Energy", "group": "Cell" },
+    { "id": "Toyota", "group": "OEM" }
   ],
   "links": [
-    {"source": "METI", "target": "Idemitsu Kosan", "type": "Policy"},
-    {"source": "Mitsubishi Corporation", "target": "DOWA Holdings", "type": "JV"},
-    {"source": "Panasonic Energy", "target": "POSCO", "type": "Potential Partner"},
-    {"source": "Komatsu", "target": "Panasonic Energy", "type": "Procurement"},
-    {"source": "Sumitomo Metal Mining", "target": "POSCO", "type": "Watchlist"}
+    {
+      "source": "METI",
+      "target": "Toyota Tsusho",
+      "type": "정책 지원",
+      "strength": "높음",
+      "date": "2026-03",
+      "note": "정부 보조금 및 공급망 지원"
+    },
+    {
+      "source": "Toyota Tsusho",
+      "target": "POSCO",
+      "type": "원료 조달",
+      "strength": "보통",
+      "date": "2026-03",
+      "note": "리튬/니켈 공급 협력"
+    },
+    {
+      "source": "POSCO",
+      "target": "Panasonic Energy",
+      "type": "양극재 공급",
+      "strength": "높음",
+      "date": "2026-03",
+      "note": "하이니켈 양극재 공급 가능성"
+    },
+    {
+      "source": "Panasonic Energy",
+      "target": "Toyota",
+      "type": "배터리 공급",
+      "strength": "높음",
+      "date": "2026-03",
+      "note": "EV용 배터리 공급"
+    }
   ]
 }
