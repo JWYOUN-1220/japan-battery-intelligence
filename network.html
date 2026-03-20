@@ -7,22 +7,17 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
-<body>
-  <div class="container">
-    <header class="hero">
-      <div>
-        <h1>Japan Battery Supply Chain Network</h1>
-        <p class="subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
-      </div>
-      <div class="hero-meta">
-        <div>대외비 · 내부 참고용</div>
-      </div>
-    </header>
+<body class="network-page">
 
-    <section class="card">
-      <div id="network" class="network-full"></div>
-    </section>
+  <div class="network-header">
+    <div>
+      <h1>Japan Battery Supply Chain Network</h1>
+      <p class="network-subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
+    </div>
+    <div class="network-meta">대외비 · Internal Intelligence</div>
   </div>
+
+  <div id="network" class="network-full"></div>
 
   <script>
     fetch("data/network.json")
@@ -47,7 +42,11 @@
           group: node.group,
           color: groupColors[node.group] || "#999999",
           shape: "box",
-          font: { color: "#ffffff", size: 14, face: "Arial" },
+          font: {
+            color: "#ffffff",
+            size: 14,
+            face: "Arial"
+          },
           margin: 10
         }));
 
@@ -56,7 +55,15 @@
           to: link.target,
           label: link.type,
           arrows: "to",
-          font: { align: "middle", size: 11 }
+          font: {
+            align: "middle",
+            size: 11
+          },
+          smooth: {
+            type: "cubicBezier",
+            forceDirection: "horizontal",
+            roundness: 0.4
+          }
         }));
 
         const container = document.getElementById("network");
@@ -71,28 +78,152 @@
               enabled: true,
               direction: "LR",
               sortMethod: "directed",
-              levelSeparation: 180,
-              nodeSpacing: 160
+              levelSeparation: 220,
+              nodeSpacing: 180,
+              treeSpacing: 220,
+              blockShifting: true,
+              edgeMinimization: true,
+              parentCentralization: true
             }
           },
           physics: false,
           interaction: {
             hover: true,
-            dragNodes: true
+            dragNodes: true,
+            dragView: true,
+            zoomView: true
+          },
+          nodes: {
+            borderWidth: 1,
+            shapeProperties: {
+              borderRadius: 6
+            }
           },
           edges: {
-            smooth: {
-              type: "cubicBezier",
-              forceDirection: "horizontal",
-              roundness: 0.4
-            }
+            width: 1.2
           }
         };
 
         new vis.Network(container, dataset, options);
       })
       .catch(error => {
-        document.getElementById("network").innerHTML = "<p>network.json을 불러오지 못했습니다.</p>";
+        document.getElementById("network").innerHTML =
+          "<div style='padding:24px; color:#666;'>network.json을 불러오지 못했습니다.</div>";
+        console.error(error);
+      });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Battery Supply Chain Map</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body class="network-page">
+
+  <div class="network-header">
+    <div>
+      <h1>Japan Battery Supply Chain Network</h1>
+      <p class="network-subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
+    </div>
+    <div class="network-meta">대외비 · Internal Intelligence</div>
+  </div>
+
+  <div id="network" class="network-full"></div>
+
+  <script>
+    fetch("data/network.json")
+      .then(response => response.json())
+      .then(data => {
+        const groupColors = {
+          Policy: "#003B70",
+          Trading: "#4F81BD",
+          Cathode: "#D9534F",
+          Precursor: "#F0AD4E",
+          Anode: "#5CB85C",
+          Cell: "#5BC0DE",
+          OEM: "#7E57C2",
+          Niche: "#8D6E63",
+          GX: "#2E7D32",
+          Equipment: "#607D8B"
+        };
+
+        const nodes = data.nodes.map(node => ({
+          id: node.id,
+          label: node.id,
+          group: node.group,
+          color: groupColors[node.group] || "#999999",
+          shape: "box",
+          font: {
+            color: "#ffffff",
+            size: 14,
+            face: "Arial"
+          },
+          margin: 10
+        }));
+
+        const edges = data.links.map(link => ({
+          from: link.source,
+          to: link.target,
+          label: link.type,
+          arrows: "to",
+          font: {
+            align: "middle",
+            size: 11
+          },
+          smooth: {
+            type: "cubicBezier",
+            forceDirection: "horizontal",
+            roundness: 0.4
+          }
+        }));
+
+        const container = document.getElementById("network");
+        const dataset = {
+          nodes: new vis.DataSet(nodes),
+          edges: new vis.DataSet(edges)
+        };
+
+        const options = {
+          layout: {
+            hierarchical: {
+              enabled: true,
+              direction: "LR",
+              sortMethod: "directed",
+              levelSeparation: 220,
+              nodeSpacing: 180,
+              treeSpacing: 220,
+              blockShifting: true,
+              edgeMinimization: true,
+              parentCentralization: true
+            }
+          },
+          physics: false,
+          interaction: {
+            hover: true,
+            dragNodes: true,
+            dragView: true,
+            zoomView: true
+          },
+          nodes: {
+            borderWidth: 1,
+            shapeProperties: {
+              borderRadius: 6
+            }
+          },
+          edges: {
+            width: 1.2
+          }
+        };
+
+        new vis.Network(container, dataset, options);
+      })
+      .catch(error => {
+        document.getElementById("network").innerHTML =
+          "<div style='padding:24px; color:#666;'>network.json을 불러오지 못했습니다.</div>";
         console.error(error);
       });
   </script>
