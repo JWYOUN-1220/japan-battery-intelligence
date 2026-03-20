@@ -17,7 +17,32 @@
     <div class="network-meta">대외비 · Internal Intelligence</div>
   </div>
 
-  <div id="network" class="network-full"></div>
+  <div class="network-layout">
+    <div id="network" class="network-full"></div>
+
+    <aside class="network-panel">
+      <h2>상세 정보</h2>
+      <p class="panel-desc">
+        노드를 클릭하시면 해당 기업 또는 기관과 연결된 관계 정보를 확인하실 수 있습니다.
+      </p>
+
+      <div id="panel-default" class="panel-default">
+        현재 선택된 노드가 없습니다.
+      </div>
+
+      <div id="panel-content" class="panel-content" style="display:none;">
+        <div class="panel-section">
+          <div class="panel-label">선택 노드</div>
+          <div id="selected-node-name" class="panel-node-name"></div>
+        </div>
+
+        <div class="panel-section">
+          <div class="panel-label">연결 관계</div>
+          <div id="selected-node-links" class="panel-links"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <script>
     fetch("data/network.json")
@@ -70,7 +95,8 @@
               type: "cubicBezier",
               forceDirection: "horizontal",
               roundness: 0.4
-            }
+            },
+            raw: link
           }))
         );
 
@@ -112,6 +138,18 @@
           }
         );
 
+        const panelDefault = document.getElementById("panel-default");
+        const panelContent = document.getElementById("panel-content");
+        const selectedNodeName = document.getElementById("selected-node-name");
+        const selectedNodeLinks = document.getElementById("selected-node-links");
+
+        function resetPanel() {
+          panelDefault.style.display = "block";
+          panelContent.style.display = "none";
+          selectedNodeName.textContent = "";
+          selectedNodeLinks.innerHTML = "";
+        }
+
         function resetAll() {
           nodeDataset.get().forEach(node => {
             nodeDataset.update({
@@ -127,6 +165,51 @@
               color: { color: "#999999" },
               width: 1.2
             });
+          });
+
+          resetPanel();
+        }
+
+        function renderPanel(nodeId) {
+          const relatedEdges = edgeDataset.get().filter(edge => edge.from === nodeId || edge.to === nodeId);
+
+          panelDefault.style.display = "none";
+          panelContent.style.display = "block";
+          selectedNodeName.textContent = nodeId;
+          selectedNodeLinks.innerHTML = "";
+
+          if (relatedEdges.length === 0) {
+            selectedNodeLinks.innerHTML = "<div class='panel-empty'>연결된 관계 정보가 없습니다.</div>";
+            return;
+          }
+
+          relatedEdges.forEach(edge => {
+            const raw = edge.raw || {};
+            const otherNode = edge.from === nodeId ? edge.to : edge.from;
+
+            const item = document.createElement("div");
+            item.className = "panel-link-item";
+
+            const strength = raw.strength || "보통";
+            let badgeClass = "panel-badge-medium";
+            if (strength === "높음") badgeClass = "panel-badge-high";
+            if (strength === "낮음") badgeClass = "panel-badge-low";
+
+            item.innerHTML = `
+              <div class="panel-link-top">
+                <span class="panel-badge ${badgeClass}">${strength}</span>
+                <span class="panel-link-title">${nodeId} ↔ ${otherNode}</span>
+              </div>
+              <div class="panel-link-meta">
+                <div><strong>관계 유형:</strong> ${raw.type || edge.label || "-"}</div>
+                <div><strong>날짜:</strong> ${raw.date || "-"}</div>
+              </div>
+              <div class="panel-link-note">
+                ${raw.note || "추가 설명이 없습니다."}
+              </div>
+            `;
+
+            selectedNodeLinks.appendChild(item);
           });
         }
 
@@ -163,7 +246,11 @@
               width: isActive ? 2 : 1
             });
           });
+
+          renderPanel(selectedNode);
         });
+
+        resetPanel();
       })
       .catch(error => {
         document.getElementById("network").innerHTML =
