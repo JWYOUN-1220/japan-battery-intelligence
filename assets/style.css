@@ -1,309 +1,175 @@
-:root{
-  --posco-blue:#005BAC;
-  --posco-dark:#003B70;
-  --posco-light:#EAF2FB;
-  --gray-100:#F7F9FC;
-  --gray-200:#E5EAF0;
-  --gray-300:#D9E2EC;
-  --gray-500:#6B7280;
-  --gray-700:#374151;
-  --text:#1F2937;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Battery Supply Chain Map</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body class="network-page">
 
-*{box-sizing:border-box;}
+  <div class="network-header">
+    <div>
+      <h1>Japan Battery Supply Chain Network</h1>
+      <p class="network-subtitle">정책 → 상사 → 소재 → 셀 → OEM / 니치 전동화 구조</p>
+    </div>
+    <div class="network-meta">대외비 · Internal Intelligence</div>
+  </div>
 
-body{
-  margin:0;
-  padding:0;
-  font-family: Arial, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  background:var(--gray-100);
-  color:var(--text);
-  line-height:1.6;
-}
+  <div id="network" class="network-full"></div>
 
-.container{
-  max-width:1280px;
-  margin:0 auto;
-  padding:32px 20px 60px;
-}
+  <script>
+    fetch("data/network.json")
+      .then(response => response.json())
+      .then(data => {
+        const groupColors = {
+          Policy: "#003B70",
+          Trading: "#4F81BD",
+          Cathode: "#D9534F",
+          Precursor: "#F0AD4E",
+          Anode: "#5CB85C",
+          Cell: "#5BC0DE",
+          OEM: "#7E57C2",
+          Niche: "#8D6E63",
+          GX: "#2E7D32",
+          Equipment: "#607D8B"
+        };
 
-.hero{
-  background:linear-gradient(135deg,var(--posco-dark),var(--posco-blue));
-  color:#fff;
-  border-radius:14px;
-  padding:28px 32px;
-  margin-bottom:24px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.08);
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-}
+        const nodeDataset = new vis.DataSet(
+          data.nodes.map(node => ({
+            id: node.id,
+            label: node.id,
+            group: node.group,
+            color: groupColors[node.group] || "#999999",
+            shape: "box",
+            font: {
+              color: "#ffffff",
+              size: 14,
+              face: "Arial"
+            },
+            margin: 10
+          }))
+        );
 
-.hero h1{
-  margin:0 0 8px 0;
-  font-size:30px;
-}
+        const edgeDataset = new vis.DataSet(
+          data.links.map((link, idx) => ({
+            id: idx,
+            from: link.source,
+            to: link.target,
+            label: link.type,
+            arrows: "to",
+            font: {
+              align: "middle",
+              size: 11,
+              face: "Arial"
+            },
+            color: { color: "#999999" },
+            width: 1.2,
+            smooth: {
+              type: "cubicBezier",
+              forceDirection: "horizontal",
+              roundness: 0.4
+            }
+          }))
+        );
 
-.subtitle{
-  margin:0;
-  font-size:15px;
-  opacity:0.95;
-}
+        const container = document.getElementById("network");
 
-.hero-meta{
-  font-size:14px;
-  text-align:right;
-  opacity:0.95;
-}
+        const network = new vis.Network(
+          container,
+          { nodes: nodeDataset, edges: edgeDataset },
+          {
+            layout: {
+              hierarchical: {
+                enabled: true,
+                direction: "LR",
+                sortMethod: "directed",
+                levelSeparation: 220,
+                nodeSpacing: 180,
+                treeSpacing: 220,
+                blockShifting: true,
+                edgeMinimization: true,
+                parentCentralization: true
+              }
+            },
+            physics: false,
+            interaction: {
+              hover: true,
+              dragNodes: true,
+              dragView: true,
+              zoomView: true
+            },
+            nodes: {
+              borderWidth: 1,
+              shapeProperties: {
+                borderRadius: 6
+              }
+            },
+            edges: {
+              width: 1.2
+            }
+          }
+        );
 
-.dashboard-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
+        function resetAll() {
+          nodeDataset.get().forEach(node => {
+            nodeDataset.update({
+              id: node.id,
+              color: groupColors[node.group] || "#999999",
+              font: { color: "#ffffff", size: 14, face: "Arial" }
+            });
+          });
 
-.top-grid{
-  margin-bottom:20px;
-}
+          edgeDataset.get().forEach(edge => {
+            edgeDataset.update({
+              id: edge.id,
+              color: { color: "#999999" },
+              width: 1.2
+            });
+          });
+        }
 
-.card{
-  background:#fff;
-  border:1px solid var(--gray-200);
-  border-radius:14px;
-  padding:24px;
-  margin-bottom:20px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.03);
-}
+        network.on("click", function(params) {
+          if (params.nodes.length === 0) {
+            resetAll();
+            return;
+          }
 
-.highlight-card{
-  background:linear-gradient(180deg,#ffffff 0%, #f7fbff 100%);
-}
+          const selectedNode = params.nodes[0];
+          const connectedNodes = network.getConnectedNodes(selectedNode);
+          const connectedEdges = network.getConnectedEdges(selectedNode);
 
-.info-card{
-  background:#fafcff;
-}
+          nodeDataset.get().forEach(node => {
+            const isActive = node.id === selectedNode || connectedNodes.includes(node.id);
 
-.card h2{
-  margin:0 0 10px 0;
-  color:var(--posco-dark);
-  font-size:22px;
-  border-left:6px solid var(--posco-blue);
-  padding-left:12px;
-}
+            nodeDataset.update({
+              id: node.id,
+              color: isActive ? (groupColors[node.group] || "#999999") : "#D3D3D3",
+              font: {
+                color: isActive ? "#ffffff" : "#AAAAAA",
+                size: 14,
+                face: "Arial"
+              }
+            });
+          });
 
-.section-desc{
-  color:var(--gray-500);
-  margin:0 0 16px 0;
-}
+          edgeDataset.get().forEach(edge => {
+            const isActive = connectedEdges.includes(edge.id);
 
-.report-list,
-.change-list{
-  margin:0;
-  padding-left:20px;
-}
-
-.report-list li{
-  margin-bottom:8px;
-}
-
-.change-list li{
-  margin-bottom:10px;
-  padding:8px 10px;
-  background:#fafcff;
-  border:1px solid #e8eef5;
-  border-radius:8px;
-}
-
-.keyword-list{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:14px;
-}
-
-.keyword-chip{
-  display:inline-block;
-  padding:7px 12px;
-  border-radius:999px;
-  background:var(--posco-light);
-  color:var(--posco-dark);
-  border:1px solid #cfe0f5;
-  font-size:13px;
-  font-weight:700;
-}
-
-a{
-  color:var(--posco-blue);
-  text-decoration:none;
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
-.primary-button{
-  display:inline-block;
-  background:var(--posco-blue);
-  color:#fff;
-  padding:10px 16px;
-  border-radius:8px;
-  font-weight:700;
-  text-decoration:none;
-}
-
-.primary-button:hover{
-  background:var(--posco-dark);
-  text-decoration:none;
-}
-
-.search-box{
-  width:100%;
-  padding:12px 14px;
-  border:1px solid var(--gray-300);
-  border-radius:8px;
-  margin-bottom:16px;
-  font-size:14px;
-}
-
-.pagination{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-top:14px;
-}
-
-.pagination button{
-  border:1px solid var(--gray-300);
-  background:#fff;
-  border-radius:8px;
-  padding:8px 14px;
-  cursor:pointer;
-}
-
-.pagination button:hover{
-  background:#f3f6fa;
-}
-
-#pageInfo{
-  color:var(--gray-700);
-  font-size:14px;
-}
-
-.contact-box{
-  margin-top:18px;
-  padding:16px 18px;
-  background:#f8fbff;
-  border:1px solid #d9e6f5;
-  border-radius:10px;
-  color:var(--gray-700);
-  line-height:1.7;
-}
-
-.signal-item{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  flex-wrap:wrap;
-}
-
-.signal-badge{
-  display:inline-block;
-  min-width:56px;
-  text-align:center;
-  padding:5px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:700;
-  line-height:1.2;
-}
-
-.signal-high{
-  background:#ffebeb;
-  color:#d32f2f;
-}
-
-.signal-medium{
-  background:#fff4e5;
-  color:#ef6c00;
-}
-
-.signal-low{
-  background:#f0f0f0;
-  color:#666;
-}
-
-.signal-text{
-  flex:1;
-  min-width:220px;
-}
-
-/* Network page dedicated layout */
-.network-page{
-  background:#ffffff;
-  margin:0;
-  padding:0;
-}
-
-.network-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:20px;
-  padding:20px 28px 16px;
-  border-bottom:1px solid var(--gray-200);
-  background:#ffffff;
-}
-
-.network-header h1{
-  margin:0 0 6px 0;
-  color:var(--posco-dark);
-  font-size:28px;
-}
-
-.network-subtitle{
-  margin:0;
-  color:var(--gray-500);
-  font-size:14px;
-}
-
-.network-meta{
-  color:var(--gray-500);
-  font-size:13px;
-  white-space:nowrap;
-}
-
-.network-full{
-  width:100%;
-  height:calc(100vh - 88px);
-  min-height:1200px;
-  background:#ffffff;
-}
-
-@media (max-width:900px){
-  .dashboard-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-@media (max-width:768px){
-  .container{padding:20px 14px 40px;}
-  .hero{padding:22px 20px;}
-  .hero h1{font-size:24px;}
-  .card{padding:18px 16px;}
-  .card h2{font-size:19px;}
-
-  .network-header{
-    padding:16px 16px 12px;
-    flex-direction:column;
-  }
-
-  .network-header h1{
-    font-size:22px;
-  }
-
-  .network-full{
-    height:calc(100vh - 110px);
-    min-height:1000px;
-  }
-}
+            edgeDataset.update({
+              id: edge.id,
+              color: { color: isActive ? "#333333" : "#E0E0E0" },
+              width: isActive ? 2 : 1
+            });
+          });
+        });
+      })
+      .catch(error => {
+        document.getElementById("network").innerHTML =
+          "<div style='padding:24px; color:#666;'>network.json을 불러오지 못했습니다.</div>";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
