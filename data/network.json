@@ -1,43 +1,53 @@
 {
   "nodes": [
-    { "id": "METI", "group": "Policy" },
-    { "id": "Toyota Tsusho", "group": "Trading" },
-    { "id": "POSCO", "group": "Cathode" },
-    { "id": "Panasonic Energy", "group": "Cell" },
-    { "id": "Toyota", "group": "OEM" }
+    {"id": "Idemitsu Kosan", "group": "Cathode"},
+    {"id": "Toyota Motor", "group": "OEM"},
+    {"id": "Sumitomo Corporation", "group": "Trading"},
+    {"id": "Hitachi Construction Machinery", "group": "Niche"},
+    {"id": "Mitsui & Co.", "group": "Trading"},
+    {"id": "NEDO", "group": "Policy"},
+    {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Toyota Tsusho",
-      "type": "정책 지원",
+      "source": "Idemitsu Kosan",
+      "target": "Toyota Motor",
+      "type": "Supply",
+      "date": "2026-03-21",
       "strength": "높음",
-      "date": "2026-03-15",
-      "note": "정부 보조금 및 공급망 지원"
+      "note": "황화물계 고체 전해질 테스트 및 공급 확대 논의"
     },
     {
-      "source": "Toyota Tsusho",
+      "source": "Sumitomo Corporation",
       "target": "POSCO",
-      "type": "원료 조달",
+      "type": "Potential Partner",
+      "date": "2026-03-21",
       "strength": "보통",
-      "date": "2026-03-15",
-      "note": "리튬 및 니켈 공급 협력 가능성"
+      "note": "북미 리튬 정제 시설과 아르헨티나 자산 연계 스왑 기회 검토"
     },
     {
-      "source": "POSCO",
-      "target": "Panasonic Energy",
-      "type": "양극재 공급",
-      "strength": "높음",
-      "date": "2026-03-15",
-      "note": "하이니켈 양극재 공급 가능성"
+      "source": "Hitachi Construction Machinery",
+      "target": "POSCO",
+      "type": "Watchlist",
+      "date": "2026-03-21",
+      "strength": "보통",
+      "note": "수소-배터리 하이브리드용 고출력 소재 제안 가능성"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "Toyota",
-      "type": "배터리 공급",
+      "source": "Mitsui & Co.",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-21",
       "strength": "높음",
-      "date": "2026-03-15",
-      "note": "EV용 배터리 공급"
+      "note": "인도네시아 생산 MHP 기반 조달 및 파트너십 기회"
+    },
+    {
+      "source": "NEDO",
+      "target": "POSCO",
+      "type": "Policy",
+      "date": "2026-03-21",
+      "strength": "보통",
+      "note": "배터리 여권 데이터 연동 표준화 규제 대응 협의 필요"
     }
   ]
 }
