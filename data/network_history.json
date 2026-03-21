@@ -26,3 +26,51 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-03-21",
+      "event": "이데미츠 코산, 전고체 전해질 제3 양산 라인 가동",
+      "company": ["Idemitsu Kosan", "Toyota Motor"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "황화물계 고체 전해질의 연간 생산 능력을 기존 대비 2배 이상 확보하며 제3 양산 라인 가동 시작. 글로벌 셀 메이커와 공급 협의 진행 중.",
+      "impact": "전고체 배터리 상용화 시점이 산업 생산 단계로 진입함에 따라 소재 선점 경쟁 심화. POSCO는 특수 원료 공급 파트너십 검토 필요.",
+      "source": "Idemitsu Kosan",
+      "url": "https://www.idemitsu.com/jp/"
+    },
+    {
+      "date": "2026-03-20",
+      "event": "스미토모 상사, 캐나다 퀘벡 리튬 정제 공장 건설 투자",
+      "company": ["Sumitomo Corporation"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "북미 IRA 요건 충족을 위해 캐나다 내 배터리급 수산화리튬 직접 정제 시설을 건설하는 대규모 투자 계획 확정.",
+      "impact": "일본 상사 주도의 비중국계 리튬 공급망(Refining) 확보 강화. POSCO의 자체 리튬 자산과 스왑(Swap) 등 전략적 연계 가능성 증대.",
+      "source": "Sumitomo Corporation",
+      "url": "https://www.sumitomocorp.com/jp/"
+    },
+    {
+      "date": "2026-03-20",
+      "event": "히타치 건기, 배터리-수소 하이브리드 굴착기 실증 완료",
+      "company": ["Hitachi Construction Machinery"],
+      "type": "OEM 전략 변화",
+      "strength": "보통",
+      "summary": "대형 건설기계의 장시간 고출력 가동을 위해 배터리와 수소 연료전지를 결합한 탄소 배출 제로 하이브리드 시스템 실증에 성공.",
+      "impact": "대형 니치 전동화 시장에서 용량 한계를 극복하기 위한 하이브리드 기술 대두. POSCO는 특수/고출력 양극재 공급 기회 발굴 필요.",
+      "source": "Hitachi Construction Machinery",
+      "url": "https://www.hitachicm.com/global/jp/"
+    },
+    {
+      "date": "2026-03-19",
+      "event": "미쓰이 물산, 인도네시아 니켈 HPAL 공정 추가 투자",
+      "company": ["Mitsui & Co."],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "인도네시아 니켈 제련 프로젝트에 저품위 니켈광을 처리할 수 있는 고압산침출(HPAL) 공정 도입 자금 투입 결정.",
+      "impact": "하이니켈 배터리 수요 대응을 위한 업스트림 역량 내재화 고도화. POSCO는 안정적인 MHP 조달 측면에서 파트너십 강화 검토 필요.",
+      "source": "Mitsui & Co.",
+      "url": "https://www.mitsui.com/jp/ja/"
+    }
+  ]
+}
