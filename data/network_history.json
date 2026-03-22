@@ -122,4 +122,40 @@
     }
   ]
 }
-
+{
+  "history": [
+    {
+      "date": "2026-03-23",
+      "event": "일본 정부, 수소 공급망 3조 엔 보조금 집행 확정",
+      "company": ["METI", "Mitsubishi Corp"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "수소법에 근거한 대규모 보조금 3조 엔의 집행이 금일부로 시작됨. (2월 15일 발표, 금일 실효)",
+      "impact": "일본 상사 주도의 글로벌 수소 인프라 투자 가속화. POSCO 강재 수요 동반 상승.",
+      "source": "METI",
+      "url": "https://www.meti.go.jp/policy/energy_environment/hydrogen/subsidy_2026.html"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "도요타, 바이폴라형 배터리 제2공장 가동 시작",
+      "company": ["Toyota"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "HEV 성능 극대화를 위한 차세대 배터리 양산 라인이 금일 공식 가동됨. (지난해 11월 발표, 금일 실효)",
+      "impact": "하이브리드 특화 소재 시장의 가속화. 바이폴라용 소재 조달 수요 발생.",
+      "source": "Toyota Motor",
+      "url": "https://global.toyota/jp/newsroom/corporate/20260323_bipolar.html"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "파나소닉, 비중국 LFP 조달 지침 본격 시행",
+      "company": ["Panasonic"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "탈중국 공급망 확보를 위해 비중국산 LFP 양극재 채택을 의무화하는 지침이 금일부터 실효됨.",
+      "impact": "비중국계 소재사의 일본 시장 진입 기회 확대. 포스코 양극재의 경쟁력 강화 구간.",
+      "source": "Panasonic Energy",
+      "url": "https://www.panasonic.com/jp/energy/ir/20260323_strategy.html"
+    }
+  ]
+}
