@@ -74,3 +74,52 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-03-22",
+      "event": "METI, 배터리 금속 회수율 95% 의무화 지침 발효",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "일본 내 폐배터리 리사이클 시 리튬, 니켈 등 핵심 금속의 95% 이상 회수를 의무화하는 지침이 금일부로 시행됨.",
+      "impact": "일본 내 리사이클링 고효율 기술 수요 폭증. POSCO의 기술력을 바탕으로 한 현지 진입 기회 확대.",
+      "source": "METI",
+      "url": "https://www.meti.go.jp/policy/mono_info_service/mono/chemistry/battery/recycling_2026.html"
+    },
+    {
+      "date": "2026-03-22",
+      "event": "혼다, 북미 ESS 전용 배터리 라인 가동 실효",
+      "company": ["Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "3월 15일 발표된 배터리 ESS 전환 전략이 금일 북미 라인 가동과 함께 실효됨. 데이터센터 전력 수요 공략 본격화.",
+      "impact": "차량용 외 산업용 배터리 소재 시장 확대. 고안정성 양극재 공급 기회 창출.",
+      "source": "Honda Newsroom",
+      "url": "https://global.honda/jp/news/2026/c260322.html"
+    },
+    {
+      "date": "2026-03-22",
+      "event": "미·일 핵심 광물 가격 하한제 협약 초안 공개",
+      "company": ["METI", "US Govt"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "비중국산 핵심 광물에 대해 제도적으로 경제성을 보장하는 가격 하한제 초안이 금일 공개됨.",
+      "impact": "비중국산 광물 자산을 보유한 POSCO의 원료 경쟁력 강화 및 일본 시장 내 마케팅 포인트 부각.",
+      "source": "Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/03/22/business/economy/us-japan-critical-minerals-floor-price/"
+    },
+    {
+      "date": "2026-03-22",
+      "event": "MHI, 메탄올 기반 연료전지 선박 실증 기공",
+      "company": ["Mitsubishi Heavy Industries"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "해운 GX를 위한 메탄올 연료전지 선박 건조 실증이 금일 공식적으로 시작됨.",
+      "impact": "친환경 선박용 특수 소재 시장 개화. 연료전지 분리판 및 선박용 강재 수요처 다변화.",
+      "source": "MHI News",
+      "url": "https://www.mhi.com/jp/news/story/20260322.html"
+    }
+  ]
+}
+
