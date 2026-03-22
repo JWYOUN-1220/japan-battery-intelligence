@@ -1,53 +1,44 @@
 {
   "nodes": [
-    {"id": "Idemitsu Kosan", "group": "Cathode"},
-    {"id": "Toyota Motor", "group": "OEM"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Mitsubishi Heavy Industries", "group": "GX"},
+    {"id": "Suzuki", "group": "OEM"},
     {"id": "Sumitomo Corporation", "group": "Trading"},
-    {"id": "Hitachi Construction Machinery", "group": "Niche"},
-    {"id": "Mitsui & Co.", "group": "Trading"},
-    {"id": "NEDO", "group": "Policy"},
     {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
-      "source": "Idemitsu Kosan",
-      "target": "Toyota Motor",
-      "type": "Supply",
-      "date": "2026-03-21",
+      "source": "METI",
+      "target": "Honda",
+      "type": "Policy",
+      "date": "2026-03-22",
       "strength": "높음",
-      "note": "황화물계 고체 전해질 테스트 및 공급 확대 논의"
+      "note": "리사이클 의무화 및 ESS 전환 정책 지원"
+    },
+    {
+      "source": "Honda",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-22",
+      "strength": "보통",
+      "note": "ESS용 장수명 양극재 공급 기회 부각"
     },
     {
       "source": "Sumitomo Corporation",
       "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-21",
+      "type": "JV",
+      "date": "2026-03-22",
       "strength": "보통",
-      "note": "북미 리튬 정제 시설과 아르헨티나 자산 연계 스왑 기회 검토"
+      "note": "일본 내 배터리 리사이클 금속 회수 JV 검토"
     },
     {
-      "source": "Hitachi Construction Machinery",
-      "target": "POSCO",
-      "type": "Watchlist",
-      "date": "2026-03-21",
-      "strength": "보통",
-      "note": "수소-배터리 하이브리드용 고출력 소재 제안 가능성"
-    },
-    {
-      "source": "Mitsui & Co.",
+      "source": "Mitsubishi Heavy Industries",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-21",
-      "strength": "높음",
-      "note": "인도네시아 생산 MHP 기반 조달 및 파트너십 기회"
-    },
-    {
-      "source": "NEDO",
-      "target": "POSCO",
-      "type": "Policy",
-      "date": "2026-03-21",
-      "strength": "보통",
-      "note": "배터리 여권 데이터 연동 표준화 규제 대응 협의 필요"
+      "date": "2026-03-22",
+      "strength": "낮음",
+      "note": "선박용 연료전지 분리판 및 고부가가치 강재 협력"
     }
   ]
 }
