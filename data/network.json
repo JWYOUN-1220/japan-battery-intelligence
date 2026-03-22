@@ -1,44 +1,44 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Mitsubishi Heavy Industries", "group": "GX"},
-    {"id": "Suzuki", "group": "OEM"},
-    {"id": "Sumitomo Corporation", "group": "Trading"},
-    {"id": "POSCO", "group": "Cathode"}
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "Panasonic", "group": "Cell"},
+    {"id": "Mitsubishi Corp", "group": "Trading"},
+    {"id": "POSCO", "group": "Cathode"},
+    {"id": "Daifuku", "group": "Equipment"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "Honda",
+      "target": "Mitsubishi Corp",
       "type": "Policy",
-      "date": "2026-03-22",
+      "date": "2026-03-23",
       "strength": "높음",
-      "note": "리사이클 의무화 및 ESS 전환 정책 지원"
+      "note": "수소 지원법 3조 엔 보조금 집행 시작"
     },
     {
-      "source": "Honda",
+      "source": "Panasonic",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-22",
-      "strength": "보통",
-      "note": "ESS용 장수명 양극재 공급 기회 부각"
+      "date": "2026-03-23",
+      "strength": "높음",
+      "note": "비중국산 LFP 양극재 조달 비중 확대 지침"
     },
     {
-      "source": "Sumitomo Corporation",
+      "source": "Mitsubishi Corp",
       "target": "POSCO",
-      "type": "JV",
-      "date": "2026-03-22",
+      "type": "Partnership",
+      "date": "2026-03-23",
       "strength": "보통",
-      "note": "일본 내 배터리 리사이클 금속 회수 JV 검토"
+      "note": "수소/암모니아 도입 터미널 강재 공급 협의"
     },
     {
-      "source": "Mitsubishi Heavy Industries",
+      "source": "Toyota",
       "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-22",
-      "strength": "낮음",
-      "note": "선박용 연료전지 분리판 및 고부가가치 강재 협력"
+      "type": "Watchlist",
+      "date": "2026-03-23",
+      "strength": "보통",
+      "note": "바이폴라 배터리용 특수박 소재 개발 모니터링"
     }
   ]
 }
