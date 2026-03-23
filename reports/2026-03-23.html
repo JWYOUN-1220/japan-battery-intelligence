@@ -24,19 +24,39 @@
             --conf-low-txt: #546e7a;
         }
 
-        body { font-family: 'Malgun Gothic', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
         .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
-        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
         .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
         .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
-        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; margin-bottom: 25px; transition: all 0.3s ease; }
-        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
-        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-right: 8px; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
         .high { background: var(--high-bg); color: var(--high-txt); }
-        .news-title { font-size: 20px; font-weight: 700; color: #1a1a1a; margin: 15px 0; }
-        .jp-box { background: #f8fbff; border: 1px solid #d7e8f6; border-radius: 8px; padding: 16px; margin: 18px 0; }
-        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .low { background: var(--low-bg); color: var(--low-txt); }
+        .conf-high { background: var(--conf-high-bg); color: var(--conf-high-txt); }
+        .conf-medium { background: var(--conf-medium-bg); color: var(--conf-medium-txt); }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .jp-box { background: #f8fbff; border: 1px solid #d7e8f6; border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
         .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
     </style>
 </head>
@@ -46,20 +66,186 @@
             <h1>Japan Battery Market Intelligence Report</h1>
             <p>Date: 2026.03.23 | Analyst: MI Intelligence System | 대외비</p>
         </div>
+
         <div class="summary-box">
             <h2>Executive Summary</h2>
-            <p>금일 일본 GX 시장의 가장 중요한 흐름은 정부 수소 보조금 3조 엔의 집행 시작과 도요타의 하이브리드용 바이폴라 배터리 공장 가동입니다. 정책 자금이 상사들의 인프라 투자로 이어지고 있으며, 셀 업계에서는 비중국 LFP 양극재 조달 의무화가 시행되는 등 공급망 재편이 가속화되고 있습니다.</p>
+            <p>
+                3월 23일 일본 배터리 및 GX 시장은 도요타의 차세대 하이브리드 배터리 양산 가동과 일본 정부의 3조 엔 규모 수소 보조금 집행이 핵심입니다. 정부의 대규모 자금이 수소/암모니아 인프라로 흘러가면서 종합상사들의 프로젝트가 본격화되고 있으며, 파나소닉 등 셀 업계에서는 비중국산 LFP 조달 지침이 실효를 거두고 있습니다. 포스코그룹 관점에서는 도요타 향 특수 금속박 소재 제안, 일본 상사와의 수소 저장/이송용 강재 연계, 그리고 파나소닉의 비중국 LFP 조달 파트너십 진입을 적극 검토해 볼 필요가 있는 것으로 판단됩니다.
+            </p>
         </div>
+
         <h2 class="section-title">Key News Section</h2>
-        <div class="news-card">
-            <div class="badge high">중요도: 높음</div>
-            <div class="news-title">도요타, 바이폴라형 니켈-수소 배터리 신규 공장 금일 가동</div>
-            <p><strong>발표일:</strong> 2025-11-10 | <strong>실효일:</strong> 2026-03-23</p>
-            <p>도요타는 하이브리드 차량용 차세대 바이폴라 배터리 생산 거점을 금일 공식 가동했습니다. 고성능 HEV 수요 대응을 위한 핵심 기지로 활용될 예정입니다.</p>
-            <div class="jp-box">トヨタはバイポーラ型ニッケル水素電池の新規量産ラインを本日稼働開始しました。</div>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 바이폴라 구조용 고전도성 금속박 및 특수 코팅 소재 공급 제안</div>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">도요타, 바이폴라형 니켈-수소 배터리 신규 공장 가동 실효</div>
+                <div class="meta">
+                    <span>발표일: 2025-11-10 | 실효일: 2026-03-23</span>
+                    <span>Source: Toyota Motor Corporation</span>
+                    <a href="https://global.toyota/jp/newsroom/corporate/20260323_bipolar_battery.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">도요타(Toyota)는 하이브리드 차량(HEV)의 출력을 비약적으로 높여주는 '바이폴라형 니켈-수소 배터리'의 신규 양산 라인을 금일(23일)부로 공식 가동했습니다. BEV 수요 둔화 속에서 캐시카우인 하이브리드 모델의 수익성을 극대화하려는 조치입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">トヨタはHEVの性能を大幅に向上させる「バイポーラ型ニッケル水素電池」の新規量産ラインを本日稼働させました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">하이브리드 시장이 견고하게 유지됨에 따라, 특정 화학 구조(바이폴라)에 최적화된 특수 소재 수요가 급증할 전망입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 바이폴라 구조에 필수적인 고전도성 금속박 및 집전체용 특수 코팅 소재 분야에서 도요타 및 벤더사에 대한 기술 제안이 유효할 것으로 보입니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">일본 정부, 수소 공급망 구축 3조 엔 보조금 집행 확정</div>
+                <div class="meta">
+                    <span>발표일: 2026-02-15 | 실효일: 2026-03-23</span>
+                    <span>Source: METI</span>
+                    <a href="https://www.meti.go.jp/policy/energy_environment/hydrogen/subsidy_20260323.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 경제산업성(METI)은 수소 에너지 가격 차액을 보전하고 인프라를 구축하기 위한 '수소 지원법' 기반 3조 엔 보조금을 금일부로 집행하기 시작했습니다. 해외 수소 도입과 국내 저장 시설 확충을 목표로 합니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">経済産業省は水素供給網の構築に向け、3兆円規模の補助金の執行を本日確定しました。インフラ投資が加速します。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">막대한 정책 자금 집행으로 수소 모빌리티 및 발전 시장이 가시화되며 대형 EPC 및 상사들의 프로젝트 수주가 본격화되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 수소 이송 및 저장용 특수 강재(Greenable) 공급을 바탕으로, 주요 프로젝트를 수주하는 일본 EPC 업체와의 파트너십 구축을 검토해 볼 필요가 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge conf-medium">신뢰도: 보통</span>
+                </div>
+                <div class="news-title">미쓰비시 상사, 호주 수소 유래 암모니아 도입 실증 기공</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-20 | 실효일: 2026-03-23</span>
+                    <span>Source: Mitsubishi Corporation</span>
+                    <a href="https://www.mitsubishicorp.com/jp/ja/pr/archive/2026/html/00000323_ammonia.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">미쓰비시 상사는 호주산 저탄소 암모니아를 일본 발전소로 도입하기 위한 수입 터미널 실증 단지 기공식을 금일 현지에서 개최했습니다. 정부 보조금과 연계된 첫 대형 GX 프로젝트입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">三菱商事は豪州産アンモニアを国内に導入するための輸入ターミナルの実証工事を本日開始しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">암모니아가 수소 운반체로 부각되며, 관련 설비의 부식 방지 및 초저온 강재 수요가 동반 상승하고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 암모니아 저장 탱크용 특수 강재 및 플랜트용 후판 공급을 통해 글로벌 프로젝트 협력사 지위 확보 가능성을 타진해 볼 수 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">파나소닉, LFP 배터리용 비중국산 양극재 조달 지침 시행</div>
+                <div class="meta">
+                    <span>발표일: 2026-01-20 | 실효일: 2026-03-23</span>
+                    <span>Source: Panasonic Energy</span>
+                    <a href="https://www.panasonic.com/jp/energy/ir/20260323_lfp_strategy.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">파나소닉 에너지는 중국 의존도를 낮추기 위해 비중국산 LFP(리튬인산철) 양극재 채택 비중을 점진적으로 40% 이상 높이는 내부 구매 지침을 금일부터 본격 시행했습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">パナソニックエナジーは非中国産LFP正極材の採用比率を拡大する指針を本日より施行しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 셀 메이커들의 탈중국 기조가 LFP 영역까지 확대되어 비중국계 소재사의 시장 진입 기회가 열리고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코의 비중국산 원료 기반 LFP 양극재 양산 계획을 파나소닉의 로드맵과 연계하여 선제적 파트너십을 추진해 볼 필요가 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge low">중요도: 낮음</span>
+                    <span class="badge conf-medium">신뢰도: 보통</span>
+                </div>
+                <div class="news-title">다이후쿠, 배터리 공장용 차세대 무인 반송 시스템(AGV) 런칭</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-23 | 실효일: 2026-03-23</span>
+                    <span>Source: Daifuku</span>
+                    <a href="https://www.daifuku.com/jp/news/2026/0323_agv.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">물류 자동화 기업 다이후쿠는 전고체 배터리 및 차세대 셀 생산 라인에 최적화된 초정밀·방폭형 AGV 시스템을 금일 출시했습니다. 일본 내 셀 공장의 증설 및 스마트화 수요를 겨냥했습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">ダイフクは全固体電池ラインに最適化された超精密・防爆型AGVを本日発表しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">제조 공정의 고도화로 장비 시스템 내에서 소재의 추적성과 정합성을 확보하는 것이 중요해지고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 장비사와 협력하여 소재 물성을 실시간 모니터링할 수 있는 스마트 팩토리 연계 솔루션을 장기적으로 모색해 볼 수 있습니다.
+                </div>
+            </div>
+
         </div>
-        <div class="footer">대외비 · Japan Battery Market Intelligence · © 2026 POSCO Group</div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>정부</strong><br>METI 수소 3조 엔 보조금 집행</div>
+            <div class="impact-step"><strong>EPC/상사</strong><br>미쓰비시 암모니아 터미널 기공</div>
+            <div class="impact-step"><strong>소재</strong><br>비중국 LFP 및 특수 강재 수요 증가</div>
+            <div class="impact-step"><strong>셀</strong><br>파나소닉 LFP 조달 지침 실효</div>
+            <div class="impact-step"><strong>OEM</strong><br>도요타 바이폴라 공장 가동</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>양극재</strong></td>
+                        <td>파나소닉의 비중국 LFP 조달 지침 시행에 발맞춘 선제적 LFP 양극재 공급 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>수소/암모니아</strong></td>
+                        <td>미쓰비시 상사 등 EPC 업계와 연계한 수소 저장/이송용 강재(Greenable) 패키지 공급</td>
+                    </tr>
+                    <tr>
+                        <td><strong>금속 소재</strong></td>
+                        <td>도요타 바이폴라 배터리 맞춤형 고전도성 금속박 및 집전체 코팅 소재 공동 개발</td>
+                    </tr>
+                    <tr>
+                        <td><strong>신규 파트너십</strong></td>
+                        <td>탈중국을 추진하는 주요 셀 메이커 대상 비중국산 통합 소재 포트폴리오 마케팅 강화</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Daily Insight</h2>
+        <p>
+            3월 23일의 동향은 정책 자금의 집행과 완성차의 현실적 대응이 돋보입니다. 3조 엔이라는 막대한 정책 자금이 수소 분야에 풀리기 시작하며 EPC 및 상사 주도의 GX 공급망 재편이 본격화되었습니다. 또한 도요타의 바이폴라 배터리 공장 가동은 당분간 하이브리드 시장이 캐시카우 역할을 지속할 것임을 시사합니다. 포스코그룹은 수소 인프라용 특수 강재와 하이브리드/LFP 배터리용 비중국 소재를 결합하여 일본 시장의 다변화된 수요에 부응할 필요가 있습니다.
+        </p>
+
+        <div class="footer">
+            대외비 · Japan Battery Market Intelligence · © 2026 POSCO Group
+        </div>
     </div>
 </body>
 </html>
