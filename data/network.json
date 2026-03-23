@@ -1,44 +1,54 @@
 {
   "nodes": [
+    {"id": "Japanese Government (Cabinet)", "group": "Policy"},
     {"id": "METI", "group": "Policy"},
-    {"id": "Toyota", "group": "OEM"},
+    {"id": "Hitachi", "group": "Equipment"},
+    {"id": "TEPCO", "group": "Niche"},
     {"id": "Mitsubishi Corporation", "group": "Trading"},
+    {"id": "GS Yuasa", "group": "Cell"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Daifuku", "group": "Equipment"},
     {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Mitsubishi Corporation",
+      "source": "Japanese Government (Cabinet)",
+      "target": "Hitachi",
       "type": "Policy",
-      "date": "2026-03-23",
+      "date": "2026-03-24",
       "strength": "높음",
-      "note": "수소 공급망 3조 엔 보조금 집행 개시"
+      "note": "비중국 BESS 프로젝트 법인세 20% 감면 혜택 제공"
     },
     {
-      "source": "Toyota",
+      "source": "Hitachi",
+      "target": "TEPCO",
+      "type": "Partnership",
+      "date": "2026-03-24",
+      "strength": "높음",
+      "note": "차세대 VPP용 대용량 LFP 배터리 시스템 공동 검증"
+    },
+    {
+      "source": "Hitachi",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-23",
-      "strength": "보통",
-      "note": "바이폴라형 배터리용 특수 금속박 소재 협력 타진"
+      "date": "2026-03-24",
+      "strength": "높음",
+      "note": "비중국 LFP 공급 및 법인세 감면용 투명성 리포트 제안"
     },
     {
       "source": "Mitsubishi Corporation",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-23",
+      "date": "2026-03-24",
       "strength": "보통",
-      "note": "수소/암모니아 인프라용 특수 강재 조달 협의"
+      "note": "폐배터리 블랙 매스 수입 가이드라인 연계 추출 협력"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-23",
+      "source": "METI",
+      "target": "GS Yuasa",
+      "type": "Investment",
+      "date": "2026-03-24",
       "strength": "높음",
-      "note": "비중국산 LFP 양극재 조달 지침에 따른 파트너십 검토"
+      "note": "248억 엔 ESS 배터리 공장 건설 보조금 최종 승인"
     }
   ]
 }
