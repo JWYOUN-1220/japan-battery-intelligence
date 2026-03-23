@@ -2,43 +2,43 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "Panasonic", "group": "Cell"},
-    {"id": "Mitsubishi Corp", "group": "Trading"},
-    {"id": "POSCO", "group": "Cathode"},
-    {"id": "Daifuku", "group": "Equipment"}
+    {"id": "Mitsubishi Corporation", "group": "Trading"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Daifuku", "group": "Equipment"},
+    {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "Mitsubishi Corp",
+      "target": "Mitsubishi Corporation",
       "type": "Policy",
       "date": "2026-03-23",
       "strength": "높음",
-      "note": "수소 지원법 3조 엔 보조금 집행 시작"
-    },
-    {
-      "source": "Panasonic",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-23",
-      "strength": "높음",
-      "note": "비중국산 LFP 양극재 조달 비중 확대 지침"
-    },
-    {
-      "source": "Mitsubishi Corp",
-      "target": "POSCO",
-      "type": "Partnership",
-      "date": "2026-03-23",
-      "strength": "보통",
-      "note": "수소/암모니아 도입 터미널 강재 공급 협의"
+      "note": "수소 공급망 3조 엔 보조금 집행 개시"
     },
     {
       "source": "Toyota",
       "target": "POSCO",
-      "type": "Watchlist",
+      "type": "Potential Partner",
       "date": "2026-03-23",
       "strength": "보통",
-      "note": "바이폴라 배터리용 특수박 소재 개발 모니터링"
+      "note": "바이폴라형 배터리용 특수 금속박 소재 협력 타진"
+    },
+    {
+      "source": "Mitsubishi Corporation",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-23",
+      "strength": "보통",
+      "note": "수소/암모니아 인프라용 특수 강재 조달 협의"
+    },
+    {
+      "source": "Panasonic Energy",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-23",
+      "strength": "높음",
+      "note": "비중국산 LFP 양극재 조달 지침에 따른 파트너십 검토"
     }
   ]
 }
