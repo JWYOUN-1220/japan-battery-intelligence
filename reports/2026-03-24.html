@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery Market Intelligence Report - 2026.03.24</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
+            --conf-high-bg: #e8f5e9;
+            --conf-high-txt: #2e7d32;
+            --conf-medium-bg: #fff8e1;
+            --conf-medium-txt: #f9a825;
+            --conf-low-bg: #eceff1;
+            --conf-low-txt: #546e7a;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .low { background: var(--low-bg); color: var(--low-txt); }
+        .conf-high { background: var(--conf-high-bg); color: var(--conf-high-txt); }
+        .conf-medium { background: var(--conf-medium-bg); color: var(--conf-medium-txt); }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .jp-box { background: #f8fbff; border: 1px solid #d7e8f6; border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery Market Intelligence Report</h1>
+            <p>Date: 2026.03.24 | Analyst: MI Intelligence System | 대외비</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                3월 24일 일본 배터리 및 GX 시장은 '비중국산 공급망 확보'가 기업의 강력한 재무적 혜택(법인세 감면)으로 직결되는 구조적 전환점을 맞이했습니다. 정부의 '공급망 안보 투자 세제' 확정에 따라 대형 EPC인 히타치와 도쿄전력은 즉시 비중국산 LFP 기반 VPP 검증에 착수했습니다. 상사들의 블랙 매스 수입 가이드라인 제정과 ESS 대형 보조금 지원이 맞물리며 일본 내 자원 안보 생태계가 굳건해지고 있습니다. 포스코그룹 관점에서는 히타치 등 주요 고객사의 구매 결정권이 재무 부서로 이동함을 인지하고, 아르헨티나 리튬 등 비중국 자산을 '세제 혜택 보증 자산'으로 어필하는 전략이 필요한 것으로 판단됩니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">도쿄전력-히타치, 차세대 VPP용 'LFP 배터리 시스템' 공동 검증 착수</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-24 | 실효일: 2026-03-24</span>
+                    <span>Source: TEPCO / Hitachi</span>
+                    <a href="https://www.hitachi.co.jp/New/cnews/month/2026/03/0324.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">도쿄전력과 대형 EPC인 히타치 제작소는 재생에너지 변동성을 흡수하기 위한 가상발전소(VPP) 전용 대용량 LFP 배터리 시스템 검증에 착수했습니다. 정부 정책에 부합하는 '비중국산 공급망 기반 경제성 확보'가 핵심입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">東京電力と日立製作所は、非中国系サプライチェーンに基づくVPP向け大容量LFP電池システムの共同検証に着手しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 최대 전력사와 인프라 기업이 탈중국 LFP를 공식화함에 따라 보조금 수령이 가능한 '안보 적격 소재' 확보가 사업의 전제가 되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 비중국산 LFP 양극재와 리튬을 히타치-도쿄전력 컨소시엄에 제안하고, 기대되는 '보조금 가점'을 화폐 가치로 환산하여 선제 리포팅할 필요가 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">일본 정부, '공급망 안보 투자 세제' 확정 (법인세 최대 20% 감면)</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-24 | 실효일: 2026-03-24</span>
+                    <span>Source: METI / 내각</span>
+                    <a href="https://www.meti.go.jp/press/2025/03/20260324001/20260324001.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 정부는 국무회의를 거쳐 BESS 및 반도체 분야에서 특정 국가(중국) 의존도를 50% 이하로 낮춘 프로젝트에 대해 투자액의 최대 20%를 법인세에서 감면하는 세제를 최종 확정했습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">政府は特定国への依存度を下げた蓄電池事業に対し、法人税を最大20%減免する「供給網強靱化投資促進税制」を確定しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">탈중국 공급망이 기업의 현금 흐름을 직접 개선하는 수단이 되어, 히타치 등 대형 고객사의 구매 결정권이 재무 부서로 이동할 전망입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코 소재 채용 시 히타치 그룹이 얻을 세제 절감 시뮬레이션을 제공하여 단가 협상력을 무력화하고 파트너십을 공고히 해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">주요 종합상사, 폐배터리 '블랙 매스(Black Mass)' 수입 가이드라인 제정</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-24 | 실효일: 2026-03-24</span>
+                    <span>Source: Mitsubishi Corporation</span>
+                    <a href="https://www.mitsubishicorp.com/jp/ja/pr/archive/2026/html/00000324_recycling.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">미쓰비시 등 상사들이 해외 폐배터리 '블랙 매스'를 일본으로 들여와 희유금속을 추출하기 위한 통합 가이드라인을 제정했습니다. 탄소 이력 추적 시스템 구축이 핵심입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">主要商社は、廃電池「ブラックマス」輸入ガイドラインを制定し、再生材の履歴追跡システム構築を目指しています。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">재생재 기반 밸류체인의 상업적 기반이 마련되며 리사이클링 추출 기술을 가진 기업으로 주도권이 이동 중입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코HY클린메탈의 역량을 히타치의 폐쇄형 루프 모델에 연동하여 '무탄소 순환 모델' 제안을 타진해 볼 수 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge conf-high">신뢰도: 높음</span>
+                </div>
+                <div class="news-title">METI, GS유아사 대규모 ESS 배터리 공장 건설에 248억 엔 보조금 승인</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-04 | 실효일: 2026-03-24</span>
+                    <span>Source: GS Yuasa / METI</span>
+                    <a href="https://www.gs-yuasa.com/jp/newsroom/news/2026/0324_ess_subsidy.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">GS유아사가 건설하는 2GWh 규모의 ESS 리튬이온 배터리 공장 프로젝트가 경제산업성의 약 248억 엔 보조금 지급 승인을 받았습니다. 내수 공급망 강화를 위한 조치입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">経済産業省は、GSユアサの系統用電池工場建設に対し、約248億円の補助金支給を正式承認しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">정부가 ESS를 핵심 인프라로 지정함에 따라 전력망 연계형 배터리 소재 시장이 비약적으로 커질 전망입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> GS유아사의 신규 공장 가동(2028년)에 대응하여 ESS 전용 고안정성 양/음극재 장기 조달 파트너십을 모색할 필요가 있습니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge conf-medium">신뢰도: 보통</span>
+                </div>
+                <div class="news-title">파나소닉, 안보 세제 연계 비중국산 LFP 전용 라인 신설 긍정 검토</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-24 | 실효일: 2026-03-24</span>
+                    <span>Source: Panasonic Energy</span>
+                    <a href="https://www.panasonic.com/jp/energy/ir/20260324_lfp_expansion.html" target="_blank">JP 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">파나소닉 에너지는 안보 투자 세제 확정에 발맞춰, 법인세 감면 조건을 충족하는 100% 비중국산 원소재 기반의 산업용 LFP 배터리 라인 신설을 긍정적으로 검토 중입니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">パナソニックは、税制優遇を活用し、非中国産原料に基づく産業用LFP電池の専用ライン新設を検討しています。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">파격적인 세제 혜택이 셀 메이커들의 소재 다변화(LFP 진입)를 직접적으로 촉진하는 트리거가 되고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 파나소닉의 신규 라인 계획에 맞춰 투명성 리포트가 포함된 맞춤형 LFP 소재 공급 패키지를 제안해 볼 수 있습니다.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>정부</strong><br>안보 투자 세제 확정(국무회의)</div>
+            <div class="impact-step"><strong>EPC/SI</strong><br>히타치-TEPCO 비중국 LFP VPP 구축</div>
+            <div class="impact-step"><strong>상사</strong><br>블랙 매스 수입 가이드라인 연계</div>
+            <div class="impact-step"><strong>셀</strong><br>파나소닉 LFP 검토 / GS유아사 보조금 획득</div>
+            <div class="impact-step"><strong>에너지망</strong><br>무탄소 순환형 안전망 구축</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>양극재</strong></td>
+                        <td>히타치-도쿄전력 VPP 프로젝트향 비중국 LFP 양극재 조기 스펙 인(Spec-in) 타진</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리튬 / 니켈</strong></td>
+                        <td>안보 투자 세제 요건을 충족하는 아르헨티나 기반 자산의 '법인세 20% 절감' 재무적 가치 어필</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리사이클</strong></td>
+                        <td>상사 가이드라인에 맞춰 히타치(배출)-상사(회수)-포스코(추출)로 이어지는 닫힌 순환 모델 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>신규 파트너십</strong></td>
+                        <td>대형 EPC(히타치)의 세무/재무 부서 대상 맞춤형 공급망 안보 리포트 및 세제 시뮬레이션 선제 제공</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Daily Insight</h2>
+        <p>
+            오늘 확정된 일본 정부의 '공급망 안보 투자 세제(최대 20% 감면)'는 BESS 및 배터리 공급망 판도를 뒤흔들 강력한 게임 체인저입니다. 이에 발맞춰 도쿄전력과 히타치는 즉각 비중국산 LFP 기반 VPP 구축에 나섰습니다. 고객사의 소재 구매 결정 기준이 단순 '성능'에서 '세금 감면과 보조금 수령 여부'로 완전히 이동했음을 의미합니다. 포스코그룹은 자사의 비중국산 자산이 고객사의 '수천억 엔 규모의 현금 흐름 개선'으로 이어진다는 점을 어필하여 재무 부서를 타겟으로 한 공격적인 파트너십을 추진할 필요가 있습니다.
+        </p>
+
+        <div class="footer">
+            대외비 · Japan Battery Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
