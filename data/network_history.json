@@ -159,3 +159,77 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-03-23",
+      "event": "일본 정부, 수소 공급망 3조 엔 보조금 집행 확정",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "수소/암모니아 인프라 확충을 위해 지원법 기반 3조 엔의 보조금 집행이 금일부로 개시됨.",
+      "impact": "대형 EPC 및 상사 주도의 수소 밸류체인 구축 가속. 특수 강재 수요 확대 예상.",
+      "source": "METI",
+      "url": "https://www.meti.go.jp/policy/energy_environment/hydrogen/subsidy_20260323.html"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "도요타, 바이폴라형 니켈-수소 배터리 공장 가동",
+      "company": ["Toyota"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "하이브리드 차량 성능 극대화를 위한 차세대 바이폴라 배터리 양산 라인이 금일 가동을 시작함.",
+      "impact": "하이브리드 캐시카우 시장 연장에 따른 특수 금속박/코팅 소재 수요 증가.",
+      "source": "Toyota Motor",
+      "url": "https://global.toyota/jp/newsroom/corporate/20260323_bipolar_battery.html"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "파나소닉, 비중국산 LFP 양극재 조달 지침 본격 시행",
+      "company": ["Panasonic Energy"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "공급망 탈중국을 위해 비중국산 LFP 채택 비율을 점진적으로 40% 이상 높이는 내부 지침이 실효됨.",
+      "impact": "비중국산 LFP 소재사의 일본 진입 장벽 완화 및 파트너십 논의 급물살.",
+      "source": "Panasonic Energy",
+      "url": "https://www.panasonic.com/jp/energy/ir/20260323_lfp_strategy.html"
+    }
+  ]
+}
+{
+  "history": [
+    {
+      "date": "2026-03-24",
+      "event": "일본 정부, 공급망 안보 강화 투자 촉진 세제 확정",
+      "company": ["Japanese Government (Cabinet)", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "특정 국가(중국) 의존도를 낮춘 BESS/반도체 프로젝트에 설비 투자액의 최대 20%를 법인세에서 감면하는 파격적 정책이 국무회의를 통과함.",
+      "impact": "소재 구매 결정권이 조달에서 '재무 부서'로 이동. 포스코 비중국 자산의 재무적 가치 급상승.",
+      "source": "METI",
+      "url": "https://www.meti.go.jp/press/2025/03/20260324001/20260324001.html"
+    },
+    {
+      "date": "2026-03-24",
+      "event": "도쿄전력-히타치, 차세대 VPP용 LFP 배터리 시스템 공동 검증",
+      "company": ["TEPCO", "Hitachi"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "대형 EPC(히타치)와 전력사(도쿄전력)가 보조금 및 세제 혜택 수령을 위한 비중국산 LFP 기반 VPP 구축을 공식화함.",
+      "impact": "안보 적격 LFP 소재 수요 급증. POSCO LFP 양극재의 EPC 대상 조기 스펙 인 가능성 대두.",
+      "source": "Hitachi",
+      "url": "https://www.hitachi.co.jp/New/cnews/month/2026/03/0324.html"
+    },
+    {
+      "date": "2026-03-24",
+      "event": "일본 주요 종합상사, 블랙 매스 수입 가이드라인 제정",
+      "company": ["Mitsubishi Corporation"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "상사 주도의 블랙 매스 해외 조달 및 탄소 이력 추적 시스템 구축을 위한 통합 가이드라인이 제정됨.",
+      "impact": "재생재 밸류체인 본격 상업화. 포스코HY클린메탈 등 고효율 추출 기업과의 협업 수요 증대.",
+      "source": "Mitsubishi Corporation",
+      "url": "https://www.mitsubishicorp.com/jp/ja/pr/archive/2026/html/00000324_recycling.html"
+    }
+  ]
+}
