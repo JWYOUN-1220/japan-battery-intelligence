@@ -241,3 +241,41 @@
   ]
 }
 
+{
+  "history": [
+    {
+      "date": "2026-03-25",
+      "event": "METI, 보조금 지침 개정 (비중국 소재 50% 의무화 실효)",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "신규 배터리 프로젝트 보조금 수령을 위해 비중국산 소재 비중을 50% 이상으로 유지해야 하는 지침이 금일부로 강제 시행됨.",
+      "impact": "일본 내 배터리 조달 기준이 '원산지 투명성' 중심으로 재편. 포스코 비중국 자산 가치 극대화.",
+      "source": "経済産業省 (METI)",
+      "url": "https://www.meti.go.jp/policy/mono_info_service/mono/chemistry/battery/index.html"
+    },
+    {
+      "date": "2026-03-25",
+      "event": "히타치 에너지, 비중국산 ESS 조달 체계 공식 가동",
+      "company": ["Hitachi Energy"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "정부 보조금 요건 충족을 위해 금일부터 모든 계통용 축전지 프로젝트의 조달망을 비중국 중심으로 전환함.",
+      "impact": "대형 EPC의 핵심 조달 파트너로서 포스코의 조기 진입 기회 확립.",
+      "source": "Hitachi Energy Press Release",
+      "url": "https://www.hitachi.co.jp/products/energy/"
+    },
+    {
+      "date": "2026-03-25",
+      "event": "스미토모 상사, 캐나다 리튬 정제 투자 본계약 체결",
+      "company": ["Sumitomo Corporation"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "북미 IRA 대응을 위한 캐나다 리튬 가공 거점 구축 최종 계약이 금일 체결됨.",
+      "impact": "일본 상사의 업스트림 지배력 강화. 포스코와의 자원 스왑 등 전략적 제휴 가능성 대두.",
+      "source": "Sumitomo Corporation Global",
+      "url": "https://www.sumitomocorp.com/ja/jp/news/release/2026/group/17580"
+    }
+  ]
+}
+
