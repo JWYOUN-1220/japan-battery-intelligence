@@ -1,61 +1,44 @@
 {
   "nodes": [
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Hitachi", "group": "Equipment"},
     {"id": "METI", "group": "Policy"},
-    {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Idemitsu Kosan", "group": "Cathode"},
+    {"id": "Hitachi Energy", "group": "Equipment"},
+    {"id": "Mitsubishi Corporation", "group": "Trading"},
+    {"id": "Sumitomo Corporation", "group": "Trading"},
+    {"id": "Tokyo Electric Power (TEPCO)", "group": "Niche"},
     {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
-      "source": "Hitachi",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-24",
-      "strength": "높음",
-      "note": "큐슈 지역 ESS/VPP 사업향 비중국산 LFP 제안"
-    },
-    {
       "source": "METI",
-      "target": "GS Yuasa",
-      "type": "Investment",
-      "date": "2026-03-24",
+      "target": "Hitachi Energy",
+      "type": "Policy",
+      "date": "2026-03-25",
       "strength": "높음",
-      "note": "248억 엔 경제 안보 ESS 배터리 공장 보조금 확정"
+      "note": "비중국 소재 50% 의무화 지침에 따른 보조금 심사 강화"
     },
     {
-      "source": "GS Yuasa",
+      "source": "Hitachi Energy",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-24",
+      "date": "2026-03-25",
       "strength": "높음",
-      "note": "보조금 적격(비중국산) 원소재 장기 조달 입찰 참여"
+      "note": "안보 적격 LFP 시스템용 비중국산 양극재 조달 검토"
     },
     {
-      "source": "Idemitsu Kosan",
-      "target": "Toyota",
+      "source": "Sumitomo Corporation",
+      "target": "POSCO",
+      "type": "Partnership",
+      "date": "2026-03-25",
+      "strength": "보통",
+      "note": "북미-남미 리튬 자산 간 지역별 스왑(Swap) 파트너십 제안"
+    },
+    {
+      "source": "Mitsubishi Corporation",
+      "target": "POSCO",
       "type": "Supply",
-      "date": "2026-03-24",
-      "strength": "높음",
-      "note": "전고체 배터리용 고체 전해질 수백 톤 양산 공장 착공"
-    },
-    {
-      "source": "Idemitsu Kosan",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-24",
+      "date": "2026-03-25",
       "strength": "보통",
-      "note": "고체 전해질 원료(황화리튬) 업스트림 파트너십 타진"
-    },
-    {
-      "source": "Honda",
-      "target": "POSCO",
-      "type": "Watchlist",
-      "date": "2026-03-24",
-      "strength": "보통",
-      "note": "EV 개발 취소 후 HV 전환에 따른 맞춤형 소재 대응"
+      "note": "암모니아 터미널용 Greenable 특수 강재 공급 협의"
     }
   ]
 }
