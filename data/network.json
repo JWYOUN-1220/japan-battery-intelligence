@@ -1,44 +1,72 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "Hitachi Energy", "group": "Equipment"},
-    {"id": "Mitsubishi Corporation", "group": "Trading"},
-    {"id": "Sumitomo Corporation", "group": "Trading"},
-    {"id": "Tokyo Electric Power (TEPCO)", "group": "Niche"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "Idemitsu Kosan", "group": "Cathode"},
+    {"id": "Hitachi", "group": "Equipment"},
+    {"id": "Sumitomo Metal Mining", "group": "Trading"},
+    {"id": "Mazda", "group": "OEM"},
+    {"id": "Panasonic Energy", "group": "Cell"},
     {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "Hitachi Energy",
+      "target": "GS Yuasa",
       "type": "Policy",
       "date": "2026-03-25",
       "strength": "높음",
-      "note": "비중국 소재 50% 의무화 지침에 따른 보조금 심사 강화"
+      "note": "4,341억 엔 배터리 양산 투자에 대한 1,587억 엔 실자금 교부"
     },
     {
-      "source": "Hitachi Energy",
+      "source": "Honda",
+      "target": "GS Yuasa",
+      "type": "JV",
+      "date": "2026-03-25",
+      "strength": "높음",
+      "note": "20GWh 규모 고용량 배터리 공동 양산 설비 시공 개시"
+    },
+    {
+      "source": "Idemitsu Kosan",
+      "target": "Toyota",
+      "type": "Partnership",
+      "date": "2026-03-25",
+      "strength": "높음",
+      "note": "차세대 전고체 배터리용 황화물계 고체 전해질 대량 양산 협업"
+    },
+    {
+      "source": "Hitachi",
       "target": "POSCO",
       "type": "Potential Partner",
       "date": "2026-03-25",
       "strength": "높음",
-      "note": "안보 적격 LFP 시스템용 비중국산 양극재 조달 검토"
+      "note": "ESS/VPP망 구축을 위한 안보 적격(비중국산) LFP 양극재 조달 검토"
     },
     {
-      "source": "Sumitomo Corporation",
+      "source": "Sumitomo Metal Mining",
       "target": "POSCO",
       "type": "Partnership",
       "date": "2026-03-25",
       "strength": "보통",
-      "note": "북미-남미 리튬 자산 간 지역별 스왑(Swap) 파트너십 제안"
+      "note": "블랙 매스 리사이클링 라인 가동에 따른 추출 기술 제휴 논의"
     },
     {
-      "source": "Mitsubishi Corporation",
-      "target": "POSCO",
+      "source": "Mazda",
+      "target": "Panasonic Energy",
       "type": "Supply",
       "date": "2026-03-25",
+      "strength": "높음",
+      "note": "차세대 EV용 원통형 배터리 중장기 조달 본계약 체결"
+    },
+    {
+      "source": "Panasonic Energy",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-25",
       "strength": "보통",
-      "note": "암모니아 터미널용 Greenable 특수 강재 공급 협의"
+      "note": "원통형 폼팩터 확장에 따른 하이니켈 양극재 조기 스펙 인(Spec-in) 타진"
     }
   ]
 }
