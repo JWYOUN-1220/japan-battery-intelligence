@@ -1,46 +1,21 @@
 {
   "nodes": [
-    {"id": "Japanese Government (Cabinet)", "group": "Policy"},
-    {"id": "METI", "group": "Policy"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Toyota", "group": "OEM"},
     {"id": "Hitachi", "group": "Equipment"},
-    {"id": "TEPCO", "group": "Niche"},
-    {"id": "Mitsubishi Corporation", "group": "Trading"},
+    {"id": "METI", "group": "Policy"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Idemitsu Kosan", "group": "Cathode"},
     {"id": "POSCO", "group": "Cathode"}
   ],
   "links": [
     {
-      "source": "Japanese Government (Cabinet)",
-      "target": "Hitachi",
-      "type": "Policy",
-      "date": "2026-03-24",
-      "strength": "높음",
-      "note": "비중국 BESS 프로젝트 법인세 20% 감면 혜택 제공"
-    },
-    {
-      "source": "Hitachi",
-      "target": "TEPCO",
-      "type": "Partnership",
-      "date": "2026-03-24",
-      "strength": "높음",
-      "note": "차세대 VPP용 대용량 LFP 배터리 시스템 공동 검증"
-    },
-    {
       "source": "Hitachi",
       "target": "POSCO",
       "type": "Potential Partner",
       "date": "2026-03-24",
       "strength": "높음",
-      "note": "비중국 LFP 공급 및 법인세 감면용 투명성 리포트 제안"
-    },
-    {
-      "source": "Mitsubishi Corporation",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-24",
-      "strength": "보통",
-      "note": "폐배터리 블랙 매스 수입 가이드라인 연계 추출 협력"
+      "note": "큐슈 지역 ESS/VPP 사업향 비중국산 LFP 제안"
     },
     {
       "source": "METI",
@@ -48,7 +23,39 @@
       "type": "Investment",
       "date": "2026-03-24",
       "strength": "높음",
-      "note": "248억 엔 ESS 배터리 공장 건설 보조금 최종 승인"
+      "note": "248억 엔 경제 안보 ESS 배터리 공장 보조금 확정"
+    },
+    {
+      "source": "GS Yuasa",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-24",
+      "strength": "높음",
+      "note": "보조금 적격(비중국산) 원소재 장기 조달 입찰 참여"
+    },
+    {
+      "source": "Idemitsu Kosan",
+      "target": "Toyota",
+      "type": "Supply",
+      "date": "2026-03-24",
+      "strength": "높음",
+      "note": "전고체 배터리용 고체 전해질 수백 톤 양산 공장 착공"
+    },
+    {
+      "source": "Idemitsu Kosan",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-24",
+      "strength": "보통",
+      "note": "고체 전해질 원료(황화리튬) 업스트림 파트너십 타진"
+    },
+    {
+      "source": "Honda",
+      "target": "POSCO",
+      "type": "Watchlist",
+      "date": "2026-03-24",
+      "strength": "보통",
+      "note": "EV 개발 취소 후 HV 전환에 따른 맞춤형 소재 대응"
     }
   ]
 }
