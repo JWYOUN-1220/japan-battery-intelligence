@@ -181,3 +181,63 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-03-12",
+      "event": "혼다(Honda), 북미 생산 예정 EV 3차종 전격 개발 취소",
+      "company": ["Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "북미 환경 규제 완화 및 EV 수요 둔화에 따라 주요 북미 생산 전기차 모델 개발을 취소하고 HV로 전략을 수정함.",
+      "impact": "북미 전동화 스케줄 후퇴. 포스코 EV향 배터리 소재 밸류체인의 공급 다변화 및 리스크 헤징 필요.",
+      "source": "Honda 企業情報サイト",
+      "url": "https://global.honda/jp/news/2026/c260312.html"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "도요타, 미국 켄터키·인디애나 공장에 10억 달러 추가 투자",
+      "company": ["Toyota"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "경쟁사의 후퇴에도 차세대 EV 라인 구축과 대형 하이브리드(HV) 증산을 위해 미국 현지 공장에 대규모 투자를 단행함.",
+      "impact": "도요타의 북미 현지화 가속. 포스코퓨처엠 등 북미 공급망을 가진 벤더의 IRA 대응 파트너십 기회 확대.",
+      "source": "MOTOR CARS / Kyodo",
+      "url": "https://motorcars.jp/toyota-to-invest-1-billion-in-kentucky-and-indiana-plants-20260323"
+    },
+    {
+      "date": "2026-02-10",
+      "event": "히타치-KS에너지, 큐슈 계통용 축전지(ESS/VPP) 공동 개발 시공",
+      "company": ["Hitachi"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "대형 EPC 히타치 주도의 큐슈 전력망 안정화 대규모 ESS/VPP 사업 부지 정지가 완료되고 배터리 시스템 시공이 착수됨.",
+      "impact": "대형 EPC의 ESS 시장 진출 본격화. 가혹한 계통 환경을 견디는 LFP 시스템 소재 제안 필요성 급증.",
+      "source": "PR TIMES / Hitachi",
+      "url": "https://prtimes.jp/main/html/rd/p/000000551.000067590.html"
+    },
+    {
+      "date": "2026-02-19",
+      "event": "METI, GS유아사 대규모 ESS 배터리 공장에 248억 엔 보조금 확정",
+      "company": ["METI", "GS Yuasa"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "경제 안보 차원에서 국산 배터리 공급망 강화를 위해 GS유아사의 2GWh ESS 공장 지원금이 확정되어 소재 입찰이 시작됨.",
+      "impact": "ESS 인프라 지원 본격화. 안보 적격(비중국) 소재를 보유한 포스코의 소재 입찰 록인(Lock-in) 가능성 확대.",
+      "source": "Dempa Digital",
+      "url": "https://dempa-digital.com/article/708790"
+    },
+    {
+      "date": "2026-01-29",
+      "event": "이데미츠 코산, 고체 전해질 대형 파일럿 장치 최종 투자 착공",
+      "company": ["Idemitsu Kosan", "Toyota"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "도요타 차세대 EV에 투입될 수백 톤 규모의 황화물계 고체 전해질 양산 공장 건설이 지바 사업소에서 본격 착공됨.",
+      "impact": "전고체 상용화 타임라인 스케일업 현실화. 황화리튬 등 특수 업스트림 원소재 공급망 확보 경쟁 심화.",
+      "source": "Idemitsu Kosan",
+      "url": "https://www.idemitsu.com/jp/news/2025/260129.pdf"
+    }
+  ]
+}
+
