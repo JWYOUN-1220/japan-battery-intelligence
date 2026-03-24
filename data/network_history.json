@@ -126,110 +126,58 @@
   "history": [
     {
       "date": "2026-03-23",
-      "event": "일본 정부, 수소 공급망 3조 엔 보조금 집행 확정",
-      "company": ["METI", "Mitsubishi Corp"],
-      "type": "정책 변화",
-      "strength": "높음",
-      "summary": "수소법에 근거한 대규모 보조금 3조 엔의 집행이 금일부로 시작됨. (2월 15일 발표, 금일 실효)",
-      "impact": "일본 상사 주도의 글로벌 수소 인프라 투자 가속화. POSCO 강재 수요 동반 상승.",
-      "source": "METI",
-      "url": "https://www.meti.go.jp/policy/energy_environment/hydrogen/subsidy_2026.html"
-    },
-    {
-      "date": "2026-03-23",
-      "event": "도요타, 바이폴라형 배터리 제2공장 가동 시작",
-      "company": ["Toyota"],
+      "event": "METI, 혼다-GS유아사 배터리 투자 보조금 실집행 개시",
+      "company": ["METI", "Honda", "GS Yuasa"],
       "type": "투자 확대",
       "strength": "높음",
-      "summary": "HEV 성능 극대화를 위한 차세대 배터리 양산 라인이 금일 공식 가동됨. (지난해 11월 발표, 금일 실효)",
-      "impact": "하이브리드 특화 소재 시장의 가속화. 바이폴라용 소재 조달 수요 발생.",
-      "source": "Toyota Motor",
-      "url": "https://global.toyota/jp/newsroom/corporate/20260323_bipolar.html"
+      "summary": "과거 승인된 1,587억 엔의 보조금 예산 집행 심사가 완료되어, 기업 계좌로 실자금이 교부되고 장비 발주가 개시됨.",
+      "impact": "정부 주도의 거대 자국 팹(Fab) 투자 본격화. 보조금 요건에 부합하는 안보 적격 원소재 파트너십 수요 급증.",
+      "source": "Honda 企業情報サイト",
+      "url": "https://global.honda/jp/news/2023/c230428.html"
     },
     {
       "date": "2026-03-23",
-      "event": "파나소닉, 비중국 LFP 조달 지침 본격 시행",
-      "company": ["Panasonic"],
-      "type": "OEM 전략 변화",
+      "event": "도요타-이데미츠 전고체 배터리 대형 파일럿 장치 발주",
+      "company": ["Toyota", "Idemitsu Kosan"],
+      "type": "전략적 협력",
       "strength": "높음",
-      "summary": "탈중국 공급망 확보를 위해 비중국산 LFP 양극재 채택을 의무화하는 지침이 금일부터 실효됨.",
-      "impact": "비중국계 소재사의 일본 시장 진입 기회 확대. 포스코 양극재의 경쟁력 강화 구간.",
-      "source": "Panasonic Energy",
-      "url": "https://www.panasonic.com/jp/energy/ir/20260323_strategy.html"
-    }
-  ]
-}
-{
-  "history": [
-    {
-      "date": "2026-03-23",
-      "event": "일본 정부, 수소 공급망 3조 엔 보조금 집행 확정",
-      "company": ["METI"],
-      "type": "정책 변화",
-      "strength": "높음",
-      "summary": "수소/암모니아 인프라 확충을 위해 지원법 기반 3조 엔의 보조금 집행이 금일부로 개시됨.",
-      "impact": "대형 EPC 및 상사 주도의 수소 밸류체인 구축 가속. 특수 강재 수요 확대 예상.",
-      "source": "METI",
-      "url": "https://www.meti.go.jp/policy/energy_environment/hydrogen/subsidy_20260323.html"
+      "summary": "2027년 상용화를 목표로 진행되던 전고체 전해질 파일럿 장치의 기본 설계(FEED)가 완료되어 실물 발주가 시작됨.",
+      "impact": "전고체 배터리 스케일업 단계 진입. 고순도 황화리튬 등 특수 원소재 파트너십 구축이 핵심 화두로 부상.",
+      "source": "Toyota Global Newsroom",
+      "url": "https://global.toyota/jp/newsroom/corporate/39885836.html"
     },
     {
       "date": "2026-03-23",
-      "event": "도요타, 바이폴라형 니켈-수소 배터리 공장 가동",
-      "company": ["Toyota"],
+      "event": "파나소닉 V2X 시스템, 대형 EPC VPP망 표준 규격 채택",
+      "company": ["Panasonic Energy", "Hitachi"],
+      "type": "공급 계약",
+      "strength": "보통",
+      "summary": "파나소닉의 산업용 V2X 시스템이 대형 EPC(히타치 등)가 추진하는 전력망 안정화(VPP) 시스템의 표준으로 채택됨.",
+      "impact": "잦은 입출력을 견디는 ESS용 고출력 양극재 수요 증가. SI 업체와의 직접적인 스펙 인(Spec-in) 영업 필요성 대두.",
+      "source": "Panasonic Newsroom",
+      "url": "https://news.panasonic.com/jp/press/jn230828-1"
+    },
+    {
+      "date": "2026-03-23",
+      "event": "도요타 차세대 BEV 및 전고체 배터리 투자 이사회 승인",
+      "company": ["Toyota", "METI"],
       "type": "투자 확대",
       "strength": "높음",
-      "summary": "하이브리드 차량 성능 극대화를 위한 차세대 바이폴라 배터리 양산 라인이 금일 가동을 시작함.",
-      "impact": "하이브리드 캐시카우 시장 연장에 따른 특수 금속박/코팅 소재 수요 증가.",
-      "source": "Toyota Motor",
-      "url": "https://global.toyota/jp/newsroom/corporate/20260323_bipolar_battery.html"
+      "summary": "METI의 공급 확보 계획 인증에 따른 세제/보조금을 바탕으로 관련 핵심 설비 1차 투자가 이사회에서 최종 승인됨.",
+      "impact": "차세대 폼팩터 상용 양산을 위한 국가적 보호막 형성. 리튬 메탈 음극재 및 고전압 양극재의 선제적 제안 필요.",
+      "source": "Toyota Global Newsroom",
+      "url": "https://global.toyota/jp/newsroom/corporate/41058141.html"
     },
     {
       "date": "2026-03-23",
-      "event": "파나소닉, 비중국산 LFP 양극재 조달 지침 본격 시행",
-      "company": ["Panasonic Energy"],
-      "type": "OEM 전략 변화",
-      "strength": "높음",
-      "summary": "공급망 탈중국을 위해 비중국산 LFP 채택 비율을 점진적으로 40% 이상 높이는 내부 지침이 실효됨.",
-      "impact": "비중국산 LFP 소재사의 일본 진입 장벽 완화 및 파트너십 논의 급물살.",
-      "source": "Panasonic Energy",
-      "url": "https://www.panasonic.com/jp/energy/ir/20260323_lfp_strategy.html"
-    }
-  ]
-}
-{
-  "history": [
-    {
-      "date": "2026-03-24",
-      "event": "일본 정부, 공급망 안보 강화 투자 촉진 세제 확정",
-      "company": ["Japanese Government (Cabinet)", "METI"],
-      "type": "정책 변화",
-      "strength": "높음",
-      "summary": "특정 국가(중국) 의존도를 낮춘 BESS/반도체 프로젝트에 설비 투자액의 최대 20%를 법인세에서 감면하는 파격적 정책이 국무회의를 통과함.",
-      "impact": "소재 구매 결정권이 조달에서 '재무 부서'로 이동. 포스코 비중국 자산의 재무적 가치 급상승.",
-      "source": "METI",
-      "url": "https://www.meti.go.jp/press/2025/03/20260324001/20260324001.html"
-    },
-    {
-      "date": "2026-03-24",
-      "event": "도쿄전력-히타치, 차세대 VPP용 LFP 배터리 시스템 공동 검증",
-      "company": ["TEPCO", "Hitachi"],
+      "event": "스미토모 금속 광산, 블랙 매스 건/습식 혼합 상업 라인 가동",
+      "company": ["Sumitomo Metal Mining"],
       "type": "전략적 협력",
-      "strength": "높음",
-      "summary": "대형 EPC(히타치)와 전력사(도쿄전력)가 보조금 및 세제 혜택 수령을 위한 비중국산 LFP 기반 VPP 구축을 공식화함.",
-      "impact": "안보 적격 LFP 소재 수요 급증. POSCO LFP 양극재의 EPC 대상 조기 스펙 인 가능성 대두.",
-      "source": "Hitachi",
-      "url": "https://www.hitachi.co.jp/New/cnews/month/2026/03/0324.html"
-    },
-    {
-      "date": "2026-03-24",
-      "event": "일본 주요 종합상사, 블랙 매스 수입 가이드라인 제정",
-      "company": ["Mitsubishi Corporation"],
-      "type": "전략적 협력",
-      "strength": "높음",
-      "summary": "상사 주도의 블랙 매스 해외 조달 및 탄소 이력 추적 시스템 구축을 위한 통합 가이드라인이 제정됨.",
-      "impact": "재생재 밸류체인 본격 상업화. 포스코HY클린메탈 등 고효율 추출 기업과의 협업 수요 증대.",
-      "source": "Mitsubishi Corporation",
-      "url": "https://www.mitsubishicorp.com/jp/ja/pr/archive/2026/html/00000324_recycling.html"
+      "strength": "보통",
+      "summary": "스미토모 등 주요 상사 그룹이 개발한 폐배터리 고순도 회수 기술을 바탕으로 상업용 자원 회수 라인이 공식 가동됨.",
+      "impact": "도시 광산 밸류체인의 상업화. 포스코HY클린메탈 등 리사이클 추출 효율이 높은 벤더와의 교차 검증 및 스왑 기대.",
+      "source": "Sumitomo Metal Mining",
+      "url": "https://www.smm.co.jp/ir/library/integrated_report/pdf/2023/2023_All.pdf"
     }
   ]
 }
