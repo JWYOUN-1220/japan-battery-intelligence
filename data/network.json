@@ -1,72 +1,70 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
     {"id": "Honda", "group": "OEM"},
-    {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Idemitsu Kosan", "group": "Cathode"},
-    {"id": "Hitachi", "group": "Equipment"},
-    {"id": "Sumitomo Metal Mining", "group": "Trading"},
-    {"id": "Mazda", "group": "OEM"},
-    {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "POSCO", "group": "Cathode"}
+    {"id": "Sony", "group": "IT"},
+    {"id": "Japanese Government", "group": "Policy"},
+    {"id": "ENEOS", "group": "Energy"},
+    {"id": "JFE Engineering", "group": "EPC"},
+    {"id": "Kyushu Steel", "group": "Steel"},
+    {"id": "Sumitomo Electric", "group": "Material"},
+    {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "GS Yuasa",
-      "type": "Policy",
-      "date": "2026-03-25",
+      "source": "Honda",
+      "target": "Sony",
+      "type": "JV (Cancelled)",
+      "date": "2026-03-26",
       "strength": "높음",
-      "note": "4,341억 엔 배터리 양산 투자에 대한 1,587억 엔 실자금 교부"
+      "note": "Sony-Honda Mobility EV 'AFEELA' 전격 개발 취소 (Nikkei)"
     },
     {
       "source": "Honda",
-      "target": "GS Yuasa",
+      "target": "POSCO",
+      "type": "Watchlist",
+      "date": "2026-03-26",
+      "strength": "높음",
+      "note": "EV 취소에 따른 북미 배터리 양극재 공급 계획 헷징(Hedging) 필요"
+    },
+    {
+      "source": "Japanese Government",
+      "target": "ENEOS",
+      "type": "Subsidy",
+      "date": "2026-03-26",
+      "strength": "높음",
+      "note": "SAF(지속가능항공유) 구매 지원 및 설비 투자 4,000억 엔 집행 (Nikkei)"
+    },
+    {
+      "source": "ENEOS",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-26",
+      "strength": "보통",
+      "note": "신규 SAF 정제 플랜트 및 저장 탱크용 특수 강재 공급 기회"
+    },
+    {
+      "source": "JFE Engineering",
+      "target": "Kyushu Steel",
       "type": "JV",
-      "date": "2026-03-25",
+      "date": "2026-03-26",
       "strength": "높음",
-      "note": "20GWh 규모 고용량 배터리 공동 양산 설비 시공 개시"
+      "note": "다케오 축전소 대형 계통용 ESS 상업 가동 (Japan Metal Daily)"
     },
     {
-      "source": "Idemitsu Kosan",
-      "target": "Toyota",
-      "type": "Partnership",
-      "date": "2026-03-25",
-      "strength": "높음",
-      "note": "차세대 전고체 배터리용 황화물계 고체 전해질 대량 양산 협업"
-    },
-    {
-      "source": "Hitachi",
+      "source": "JFE Engineering",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-25",
+      "date": "2026-03-26",
       "strength": "높음",
-      "note": "ESS/VPP망 구축을 위한 안보 적격(비중국산) LFP 양극재 조달 검토"
+      "note": "철강사 유휴 부지 활용 ESS용 비중국 LFP 소재 팩 역제안"
     },
     {
-      "source": "Sumitomo Metal Mining",
+      "source": "Sumitomo Electric",
       "target": "POSCO",
-      "type": "Partnership",
-      "date": "2026-03-25",
+      "type": "R&D",
+      "date": "2026-03-26",
       "strength": "보통",
-      "note": "블랙 매스 리사이클링 라인 가동에 따른 추출 기술 제휴 논의"
-    },
-    {
-      "source": "Mazda",
-      "target": "Panasonic Energy",
-      "type": "Supply",
-      "date": "2026-03-25",
-      "strength": "높음",
-      "note": "차세대 EV용 원통형 배터리 중장기 조달 본계약 체결"
-    },
-    {
-      "source": "Panasonic Energy",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-25",
-      "strength": "보통",
-      "note": "원통형 폼팩터 확장에 따른 하이니켈 양극재 조기 스펙 인(Spec-in) 타진"
+      "note": "축전지 부재 기술 응용 수전해(수소) 설비 공동 R&D 타진 (Japan Metal Daily)"
     }
   ]
 }
