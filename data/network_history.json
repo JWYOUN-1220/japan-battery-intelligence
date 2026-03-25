@@ -278,4 +278,62 @@
     }
   ]
 }
-
+{
+  "history": [
+    {
+      "date": "2026-03-26",
+      "event": "소니·혼다, EV 'AFEELA' 개발 및 출시 전격 취소",
+      "company": ["Sony", "Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "일본경제신문 보도. 미 정책 변화와 수요 급감으로 혼다와 소니의 합작 EV 사업이 백지화되며 수천억 엔의 손실이 예상됨.",
+      "impact": "일본 OEM의 북미 전동화 로드맵 붕괴 충격. 기존 EV향 양극재 공급 계획을 보류하고 HV 포트폴리오로 긴급 선회 필요.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/article/DGKKZO95238250W6A320C2MM8000/"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "일본 정부, 차세대 항공연료 'SAF' 국가 지원 도입",
+      "company": ["Japanese Government", "Airlines"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "일본경제신문 보도. SAF 구입비를 정부가 지원하고 승객도 부담하는 제도를 논의하며, 2029년까지 4천억 엔의 설비 투자를 유도함.",
+      "impact": "SAF 제조 인프라 시장의 폭발적 팽창. 거대 플랜트 및 저장 탱크 구축에 필요한 특수 철강재(초저온/내식성) 수요 급증.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "JFE엔지니어링 등 4사, 큐슈제강 부지 내 대형 ESS 상업 가동",
+      "company": ["JFE Engineering", "Kyushu Steel"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "일간철강신문 보도. 철강사와 EPC가 합작해 철강 공장 유휴 부지에 구축한 대규모 계통용 축전지가 공식 상업 운전을 개시함.",
+      "impact": "철강-EPC 융합 전력망 사업 모델 부상. JFE 등 대형 EPC향 ESS 전용 비중국산 배터리 소재 영업의 적기.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/articles/-/250101"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "스미토모전공, 대형 축전지 소재 응용 수소 제조 장치 사업화",
+      "company": ["Sumitomo Electric"],
+      "type": "R&D",
+      "strength": "보통",
+      "summary": "일간철강신문 보도. 대용량 배터리에서 축적한 전극 및 부재 기술을 수전해(수소 생성) 장치에 적용해 2030년 사업화를 선언함.",
+      "impact": "배터리 소재 기술의 수소 밸류체인 확장. 2차전지 노하우를 바탕으로 한 수소 플랜트 핵심 부품 공동 개발 기회 창출.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/articles/-/248252"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "ENEOS, 아시아 전역 SAF 서플라이체인 구축",
+      "company": ["ENEOS"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "일본경제신문 보도. 동남아시아에서 비식용유 등 바이오 원료를 확보해 범아시아 SAF 유통망을 짓는 AZEC 기반 프로젝트 본격화.",
+      "impact": "범아시아 SAF 물류 인프라 급성장. 운송용 선박 건조 강재 및 포스코인터내셔널의 글로벌 바이오 조달망 연계 가능성 대두.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/azec_2025_02.html"
+    }
+  ]
+}
