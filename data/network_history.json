@@ -337,3 +337,62 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-03-27",
+      "event": "파나소닉, AI 데이터센터용 UPS 배터리 3배 확대 (80% 기계약)",
+      "company": ["Panasonic Energy", "Global Big Tech"],
+      "type": "생산 확대",
+      "strength": "매우 높음",
+      "summary": "The Register 보도. AI 서버 수요 폭증에 대응해 UPS용 배터리 생산을 3배 확충하며 빅테크와 80% 사전 계약을 완료함.",
+      "impact": "배터리 산업 캐시카우가 EV에서 AI 데이터센터로 대전환. 포스코의 고출력/안정성 양극재 및 인프라용 특수강 턴키 영업 최적기.",
+      "source": "The Register / Nikkei",
+      "url": "https://www.theregister.com/"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "소니·혼다, EV 'AFEELA' 개발 및 출시 전격 취소",
+      "company": ["Sony", "Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "일본경제신문 보도. 미 정책 변화와 수요 급감으로 혼다와 소니의 합작 EV 사업이 백지화되며 수천억 엔의 손실이 예상됨.",
+      "impact": "일본 OEM의 북미 전동화 로드맵 붕괴 충격. 기존 EV향 양극재 공급 계획을 즉각 파나소닉(UPS) 및 ESS 향으로 긴급 선회 필요.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/article/DGKKZO95238250W6A320C2MM8000/"
+    },
+    {
+      "date": "2026-03-27",
+      "event": "일본 정부, GX 경제이행채권 2조 엔 추가 발행 및 배터리 우선 배정",
+      "company": ["Japanese Government", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "일본경제신문 보도. 2조 엔을 발행해 파나소닉 등 첨단 배터리 및 수소 공급망 기업에 저리 자금으로 우선 배정하는 공고를 발표함.",
+      "impact": "일본 내 첨단 배터리(AI 서버용 등) 및 인프라 설비 투자 폭발. 일본 상사와 연계한 포스코 소재 거점 진출 호기.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-03-27",
+      "event": "JFE엔지니어링 등 4사, 큐슈제강 부지 내 대형 ESS 상업 가동",
+      "company": ["JFE Engineering", "Kyushu Steel"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "일간철강신문 보도. 철강사와 EPC가 합작해 철강 공장 유휴 부지에 구축한 대규모 계통용 축전지가 전력 판매 상업 운전을 개시함.",
+      "impact": "철강-EPC 융합 전력망 사업 모델 부상. JFE 등 대형 EPC향 ESS 전용 비중국산 배터리 소재 영업망 강화 필요.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/articles/-/250101"
+    },
+    {
+      "date": "2026-03-27",
+      "event": "일본 정부, 차세대 항공연료 'SAF' 4,000억 엔 투자 지원 확정",
+      "company": ["Japanese Government", "ENEOS"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "일본경제신문 보도. SAF 구입비를 정부가 지원하고 2029년까지 4천억 엔 규모의 정유사 플랜트 및 저장 설비 투자를 유도함.",
+      "impact": "SAF 제조 인프라 시장의 거대 국책 플랜트화. 대형 플랜트 및 저장 탱크 구축에 필요한 포스코 특수 철강재(초저온/내식성) 수요 폭발적 증가.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    }
+  ]
+}
