@@ -1,70 +1,63 @@
 {
   "nodes": [
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Global Big Tech", "group": "IT"},
     {"id": "Honda", "group": "OEM"},
     {"id": "Sony", "group": "IT"},
     {"id": "Japanese Government", "group": "Policy"},
-    {"id": "ENEOS", "group": "Energy"},
     {"id": "JFE Engineering", "group": "EPC"},
     {"id": "Kyushu Steel", "group": "Steel"},
-    {"id": "Sumitomo Electric", "group": "Material"},
+    {"id": "ENEOS", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
+      "source": "Panasonic Energy",
+      "target": "Global Big Tech",
+      "type": "Supply",
+      "date": "2026-03-27",
+      "strength": "매우 높음",
+      "note": "AI 데이터센터 백업 전원(UPS)용 배터리 80% 기계약 (The Register)"
+    },
+    {
+      "source": "Panasonic Energy",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-27",
+      "strength": "매우 높음",
+      "note": "UPS용 장수명 양극재 및 데이터센터 랙용 고내식 강재 패키지 조달"
+    },
+    {
       "source": "Honda",
       "target": "Sony",
       "type": "JV (Cancelled)",
-      "date": "2026-03-26",
+      "date": "2026-03-27",
       "strength": "높음",
-      "note": "Sony-Honda Mobility EV 'AFEELA' 전격 개발 취소 (Nikkei)"
-    },
-    {
-      "source": "Honda",
-      "target": "POSCO",
-      "type": "Watchlist",
-      "date": "2026-03-26",
-      "strength": "높음",
-      "note": "EV 취소에 따른 북미 배터리 양극재 공급 계획 헷징(Hedging) 필요"
+      "note": "EV 'AFEELA' 전격 개발 취소 및 모빌리티 리스크 현실화 (Nikkei)"
     },
     {
       "source": "Japanese Government",
-      "target": "ENEOS",
+      "target": "Panasonic Energy",
       "type": "Subsidy",
-      "date": "2026-03-26",
+      "date": "2026-03-27",
       "strength": "높음",
-      "note": "SAF(지속가능항공유) 구매 지원 및 설비 투자 4,000억 엔 집행 (Nikkei)"
-    },
-    {
-      "source": "ENEOS",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-26",
-      "strength": "보통",
-      "note": "신규 SAF 정제 플랜트 및 저장 탱크용 특수 강재 공급 기회"
+      "note": "GX 경제이행채권 기반 배터리 공장 증설 저리 자금 지원 (Nikkei)"
     },
     {
       "source": "JFE Engineering",
       "target": "Kyushu Steel",
       "type": "JV",
-      "date": "2026-03-26",
+      "date": "2026-03-27",
       "strength": "높음",
       "note": "다케오 축전소 대형 계통용 ESS 상업 가동 (Japan Metal Daily)"
     },
     {
-      "source": "JFE Engineering",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-26",
+      "source": "Japanese Government",
+      "target": "ENEOS",
+      "type": "Subsidy",
+      "date": "2026-03-27",
       "strength": "높음",
-      "note": "철강사 유휴 부지 활용 ESS용 비중국 LFP 소재 팩 역제안"
-    },
-    {
-      "source": "Sumitomo Electric",
-      "target": "POSCO",
-      "type": "R&D",
-      "date": "2026-03-26",
-      "strength": "보통",
-      "note": "축전지 부재 기술 응용 수전해(수소) 설비 공동 R&D 타진 (Japan Metal Daily)"
+      "note": "SAF 항공연료 플랜트 및 저장 탱크 4,000억 엔 투자 지원 (Nikkei)"
     }
   ]
 }
