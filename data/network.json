@@ -1,63 +1,53 @@
 {
   "nodes": [
+    {"id": "METI", "group": "Policy"},
+    {"id": "Sumitomo Metal Mining", "group": "Material"},
+    {"id": "Tokyo Electric Power", "group": "Utility"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Global Big Tech", "group": "IT"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Sony", "group": "IT"},
-    {"id": "Japanese Government", "group": "Policy"},
-    {"id": "JFE Engineering", "group": "EPC"},
-    {"id": "Kyushu Steel", "group": "Steel"},
-    {"id": "ENEOS", "group": "Energy"},
+    {"id": "JFE Steel", "group": "Steel"},
+    {"id": "Mitsui & Co", "group": "Trading"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Panasonic Energy",
-      "target": "Global Big Tech",
-      "type": "Supply",
-      "date": "2026-03-27",
-      "strength": "매우 높음",
-      "note": "AI 데이터센터 백업 전원(UPS)용 배터리 80% 기계약 (The Register)"
+      "source": "METI",
+      "target": "POSCO",
+      "type": "Regulation",
+      "date": "2026-03-30",
+      "strength": "높음",
+      "note": "신규 배터리 자원 순환법에 따른 소재 회수율 의무 준수 필요"
     },
     {
-      "source": "Panasonic Energy",
+      "source": "Sumitomo Metal Mining",
+      "target": "Panasonic Energy",
+      "type": "Supply",
+      "date": "2026-03-30",
+      "strength": "매우 높음",
+      "note": "황화리튬 양산 플랜트 기반 전고체 소재 장기 공급 계약 체결"
+    },
+    {
+      "source": "Tokyo Electric Power",
+      "target": "Panasonic Energy",
+      "type": "JV/Service",
+      "date": "2026-03-30",
+      "strength": "매우 높음",
+      "note": "AI 데이터센터 백업 배터리 활용 통합 VPP 상업 운영 개시"
+    },
+    {
+      "source": "JFE Steel",
+      "target": "POSCO",
+      "type": "Coopetition",
+      "date": "2026-03-30",
+      "strength": "보통",
+      "note": "저탄소 강재 기반 ESS 컨테이너 시장 주도권 경쟁 가시화"
+    },
+    {
+      "source": "Mitsui & Co",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-27",
-      "strength": "매우 높음",
-      "note": "UPS용 장수명 양극재 및 데이터센터 랙용 고내식 강재 패키지 조달"
-    },
-    {
-      "source": "Honda",
-      "target": "Sony",
-      "type": "JV (Cancelled)",
-      "date": "2026-03-27",
+      "date": "2026-03-30",
       "strength": "높음",
-      "note": "EV 'AFEELA' 전격 개발 취소 및 모빌리티 리스크 현실화 (Nikkei)"
-    },
-    {
-      "source": "Japanese Government",
-      "target": "Panasonic Energy",
-      "type": "Subsidy",
-      "date": "2026-03-27",
-      "strength": "높음",
-      "note": "GX 경제이행채권 기반 배터리 공장 증설 저리 자금 지원 (Nikkei)"
-    },
-    {
-      "source": "JFE Engineering",
-      "target": "Kyushu Steel",
-      "type": "JV",
-      "date": "2026-03-27",
-      "strength": "높음",
-      "note": "다케오 축전소 대형 계통용 ESS 상업 가동 (Japan Metal Daily)"
-    },
-    {
-      "source": "Japanese Government",
-      "target": "ENEOS",
-      "type": "Subsidy",
-      "date": "2026-03-27",
-      "strength": "높음",
-      "note": "SAF 항공연료 플랜트 및 저장 탱크 4,000억 엔 투자 지원 (Nikkei)"
+      "note": "북미 리튬 광산 정제 공정에 대한 위탁 가공 파트너십 타진"
     }
   ]
 }
