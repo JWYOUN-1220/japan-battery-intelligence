@@ -1,63 +1,60 @@
 {
   "nodes": [
+    {"id": "Tohoku University", "group": "R&D"},
+    {"id": "JX Nippon Mining & Metals", "group": "Refining"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "Hanwa Co.", "group": "Trading"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Global Big Tech", "group": "IT"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Sony", "group": "IT"},
-    {"id": "JFE Engineering", "group": "EPC"},
-    {"id": "Kyushu Steel", "group": "Steel"},
-    {"id": "Idemitsu Kosan", "group": "Cathode"},
-    {"id": "ENEOS", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Panasonic Energy",
-      "target": "Global Big Tech",
+      "source": "Tohoku University",
+      "target": "POSCO",
+      "type": "Potential R&D",
+      "date": "2026-03-31",
+      "strength": "높음",
+      "note": "공장 폐수 활용 저전력 리튬/니켈 농축 기술 교차 검증 논의"
+    },
+    {
+      "source": "JX Nippon Mining & Metals",
+      "target": "Panasonic Energy",
       "type": "Supply",
       "date": "2026-03-31",
       "strength": "매우 높음",
-      "note": "AI 데이터센터 UPS 배터리 물량 80% 기계약 및 증산 자금 집행"
+      "note": "도시광산 직접 추출 고순도 황산니켈 셀 양산 라인 투입"
+    },
+    {
+      "source": "METI",
+      "target": "POSCO",
+      "type": "Subsidy Qualification",
+      "date": "2026-03-31",
+      "strength": "매우 높음",
+      "note": "비중국산 천연/인조 흑연 공급망 보조금 지원 요건 충족"
+    },
+    {
+      "source": "Hanwa Co.",
+      "target": "JX Nippon Mining & Metals",
+      "type": "Supply",
+      "date": "2026-03-31",
+      "strength": "높음",
+      "note": "동남아시아 확보 블랙 매스 일본 내 제련소 전량 반입"
+    },
+    {
+      "source": "Hanwa Co.",
+      "target": "POSCO",
+      "type": "Potential Swap",
+      "date": "2026-03-31",
+      "strength": "보통",
+      "note": "글로벌 폐배터리 수집 물량 스왑 및 물류 최적화 협력 타진"
     },
     {
       "source": "Panasonic Energy",
       "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-31",
-      "strength": "매우 높음",
-      "note": "UPS용 장수명 양극재 및 데이터센터 서버 랙용 특수강 턴키 조달 논의"
-    },
-    {
-      "source": "Honda",
-      "target": "Sony",
-      "type": "JV (Cancelled)",
-      "date": "2026-03-31",
-      "strength": "매우 높음",
-      "note": "EV 'AFEELA 1' 개발 및 출시 공식 중단 및 손실 처리 확정"
-    },
-    {
-      "source": "JFE Engineering",
-      "target": "Kyushu Steel",
-      "type": "JV",
+      "type": "Standardization",
       "date": "2026-03-31",
       "strength": "높음",
-      "note": "제강 공장 부지 활용 대형 계통용 ESS 상업 운전 실효 가동 시작"
-    },
-    {
-      "source": "Idemitsu Kosan",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-31",
-      "strength": "높음",
-      "note": "전고체 대형 파일럿 본격 시공에 따른 핵심 원료 및 특수 소재 파트너십"
-    },
-    {
-      "source": "ENEOS",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-03-31",
-      "strength": "보통",
-      "note": "SAF 상업 공급망 확장에 따른 거대 저장 탱크용 특수강 수주 대응"
+      "note": "재생 원료 80% 포함 의무화 가이드라인에 따른 양극재 장기 조달"
     }
   ]
 }
