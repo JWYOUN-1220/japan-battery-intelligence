@@ -1,53 +1,65 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
-    {"id": "Tokyo Electric Power", "group": "Utility"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Sony", "group": "IT"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "JFE Steel", "group": "Steel"},
-    {"id": "Mitsui & Co", "group": "Trading"},
+    {"id": "Global Big Tech", "group": "IT"},
+    {"id": "JFE Engineering", "group": "EPC"},
+    {"id": "Kyushu Steel", "group": "Steel"},
+    {"id": "Idemitsu Kosan", "group": "Cathode"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "ENEOS", "group": "Energy"},
+    {"id": "American Airlines", "group": "Airlines"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "POSCO",
-      "type": "Regulation",
+      "source": "Honda",
+      "target": "Sony",
+      "type": "JV (Cancelled)",
       "date": "2026-03-30",
-      "strength": "높음",
-      "note": "신규 배터리 자원 순환법에 따른 소재 회수율 의무 준수 필요"
+      "strength": "매우 높음",
+      "note": "합작 EV 'AFEELA' 개발 전격 취소 및 모빌리티 밸류체인 붕괴 (Nikkei)"
     },
     {
-      "source": "Sumitomo Metal Mining",
-      "target": "Panasonic Energy",
+      "source": "Panasonic Energy",
+      "target": "Global Big Tech",
       "type": "Supply",
       "date": "2026-03-30",
       "strength": "매우 높음",
-      "note": "황화리튬 양산 플랜트 기반 전고체 소재 장기 공급 계약 체결"
+      "note": "AI 데이터센터용 백업 배터리(UPS) 대규모 증산 및 장기 공급 (Panasonic)"
     },
     {
-      "source": "Tokyo Electric Power",
-      "target": "Panasonic Energy",
-      "type": "JV/Service",
-      "date": "2026-03-30",
-      "strength": "매우 높음",
-      "note": "AI 데이터센터 백업 배터리 활용 통합 VPP 상업 운영 개시"
-    },
-    {
-      "source": "JFE Steel",
-      "target": "POSCO",
-      "type": "Coopetition",
-      "date": "2026-03-30",
-      "strength": "보통",
-      "note": "저탄소 강재 기반 ESS 컨테이너 시장 주도권 경쟁 가시화"
-    },
-    {
-      "source": "Mitsui & Co",
+      "source": "Panasonic Energy",
       "target": "POSCO",
       "type": "Potential Partner",
       "date": "2026-03-30",
       "strength": "높음",
-      "note": "북미 리튬 광산 정제 공정에 대한 위탁 가공 파트너십 타진"
+      "note": "UPS 배터리용 고출력/장수명 양극재 및 데이터센터 랙용 특수강 역제안"
+    },
+    {
+      "source": "JFE Engineering",
+      "target": "Kyushu Steel",
+      "type": "JV",
+      "date": "2026-03-30",
+      "strength": "높음",
+      "note": "다케오 축전소 대형 계통용 ESS 상업 운전 실효 가동 (JFE)"
+    },
+    {
+      "source": "Idemitsu Kosan",
+      "target": "Toyota",
+      "type": "Supply",
+      "date": "2026-03-30",
+      "strength": "높음",
+      "note": "전고체 배터리용 황화물계 고체 전해질 대형 파일럿 본격 시공 (Idemitsu)"
+    },
+    {
+      "source": "ENEOS",
+      "target": "American Airlines",
+      "type": "Supply",
+      "date": "2026-03-30",
+      "strength": "보통",
+      "note": "차세대 항공연료(SAF) 실물 인도 및 글로벌 상업 밸류체인 가동 (ENEOS)"
     }
   ]
 }
