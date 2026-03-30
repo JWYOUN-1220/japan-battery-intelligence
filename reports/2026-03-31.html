@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Report - 2026.03.31</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .jp-box { background: #f8fbff; border: 1px solid #d7e8f6; border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Report</h1>
+            <p>Date: 2026.03.31 | Analyst: MI Intelligence System | Target Sources: Nikkei, Japan Metal Daily</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                2026년 3월 31일 현재, 일본 시장은 <strong>'AI 인프라용 전원 장치 표준화'</strong>와 <strong>'전동화 포트폴리오의 재편 완료'</strong>가 핵심입니다. 파나소닉은 AI 서버 배터리 증산 자금 집행을 시작했고, 혼다-소니는 합작 EV '아필라' 개발 중단을 공식화했습니다. 포스코그룹은 붕괴된 EV 밸류체인 리스크를 헷징하고, 급성장하는 AI 데이터센터용 UPS 배터리 소재 및 대형 ESS 플랜트 시장으로 영업 타겟을 즉시 전환해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: Panasonic Newsroom</span>
+                </div>
+                <div class="news-title">파나소닉, AI 데이터센터용 UPS 배터리 매출 8,000억 엔 목표... 대규모 증산</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-31</span>
+                    <a href="https://news.panasonic.com/global/stories/18524" target="_blank">Panasonic 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">파나소닉 에너지는 AI 서버 시장의 안정적 전력 공급을 위해 데이터센터 UPS 배터리 사업을 전사 과제로 격상했습니다. 2029년까지 매출 8,000억 엔 달성을 목표로 하며, 물량의 80%가 이미 선판매되었습니다.<br><br><strong>[실효 사유]</strong> 금일 오전 전지 부문에서 데이터센터 전용 배터리 증산을 위한 1차 설비 투자(CAPEX) 집행 공고가 공식 발표되며 소재 벤더에 대한 실질 발주가 시작되었습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">パナソニックはAIデータセンター需要急増を受け、UPS用電池の生産能力を拡大し、売上高8,000億円を目指します。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">배터리 산업 주도권이 EV에서 AI 인프라로 이동하며 고출력/안정성 특화 소재 시장이 급격히 팽창 중입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> UPS 배터리용 고안정성 양극재 공급망을 선점하고 데이터센터 랙용 고내식 특수강(PosMAC)을 패키지로 제안해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: Sony Honda Mobility</span>
+                </div>
+                <div class="news-title">혼다-소니 EV 'AFEELA 1' 개발 및 출시 전면 취소 공식화</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-31</span>
+                    <a href="https://www.shm-afeela.com/en/news/2026-03-25/" target="_blank">SHM 공식 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">소니 혼다 모빌리티(SHM)는 북미 타겟 전기차 '아필라 1'의 개발 및 출시를 공식 취소했습니다. 혼다의 전동화 전략 전면 수정으로 기술 활용이 불가능해졌으며, 예약 구매자 환불이 금일부터 시작되었습니다.<br><br><strong>[실효 사유]</strong> 금일 혼다 이사회에서 북미 EV 사업 취소에 따른 손실 처리 지침이 확정되어, 관련 부품사들에 대한 발주 취소 통보가 최종 완료되었습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">ソニー・ホンダモビリティは、ホンダの戦略見直しを受け、EV「AFEELA」の開発・発売中止を正式に発表しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 완성차의 북미 전동화 로드맵 붕괴로 모빌리티 배터리 조달 기조가 하이브리드(HV) 위주로 급격히 보수화되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 북미 EV향 소재 공급 계획을 보수적으로 재조정하고 파나소닉(UPS) 등 타 산업군향 밸류체인으로 타겟을 전환해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge high">Source: JFE Engineering</span>
+                </div>
+                <div class="news-title">큐슈제강 부지 내 대형 계통용 축전소(다케오 축전소) 상업 운전 개시</div>
+                <div class="meta">
+                    <span>발표일: 2026-03-31</span>
+                    <a href="https://www.jfe-eng.co.jp/news/2025/20251127.html" target="_blank">JFE 공식 원문 보기</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">JFE엔지니어링 등이 합작한 다케오 축전소가 큐슈 전력망 연계 상업 운전을 시작했습니다. 제강소 부지를 활용해 잉여 전력을 저장·판매하는 모델로, 철강업계의 새로운 수익원 모델을 정립했습니다.<br><br><strong>[실효 사유]</strong> 금일 오전 9시부로 전력 수급 조정 시장에 공식 등록되어 실시간 전력 거래 및 상업적 가동 수익 창출 단계로 진입했습니다.</p>
+                <div class="jp-box">
+                    <span class="content-label">日本語 Summary</span>
+                    <p class="content-text">JFEエンジニアリング等は、佐賀工場の敷地内に構築した大型系統用蓄電池の商業運転を本日開始しました。</p>
+                </div>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">배터리 조달 주도권이 완성차에서 대형 EPC 및 철강사로 이동하며 ESS 전용 비중국산 소재 수요가 강화되고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 파트너십을 맺은 JFE 측에 당사의 ESS 전용 비중국산 LFP 양극재 채택 배터리 시스템을 역제안해야 합니다.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>OEM</strong><br>혼다-소니 EV 전격 취소 (모빌리티 리스크 현실화)</div>
+            <div class="impact-step"><strong>IT/데이터센터</strong><br>파나소닉 UPS 배터리 대규모 증산 (신규 캐시카우)</div>
+            <div class="impact-step"><strong>EPC/철강</strong><br>JFE 등 주도 대형 ESS 상업 가동 (전력망 투자 가속)</div>
+            <div class="impact-step"><strong>GX/플랜트</strong><br>ENEOS SAF 상업 공급 개시 (항공연료 플랜트 붐)</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>배터리 소재 (Pivot)</strong></td>
+                        <td>혼다 EV 취소 쇼크에 따른 모빌리티 의존도를 낮추고, 파나소닉 AI 데이터센터용 백업 배터리 소재 시장으로 영업력 집중</td>
+                    </tr>
+                    <tr>
+                        <td><strong>철강/ESS 턴키 사업</strong></td>
+                        <td>JFE 성공 사례를 벤치마크하여 철강사 유휴 부지 활용 '포스코 소재 ESS + 데이터센터 고내식 특수강' 일괄 구축 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>신사업 (GX 플랜트)</strong></td>
+                        <td>전고체 라인 및 SAF 인프라 확장에 대응하여 포스코 고부가가치 특수강(Greenable)의 저장 탱크 및 배관 수주 선점</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
