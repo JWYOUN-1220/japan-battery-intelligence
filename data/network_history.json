@@ -455,4 +455,62 @@
     }
   ]
 }
-
+{
+  "history": [
+    {
+      "date": "2026-03-31",
+      "event": "파나소닉, AI 데이터센터용 UPS 배터리 3배 증산 자금 집행",
+      "company": ["Panasonic Energy", "Global Big Tech"],
+      "type": "생산 확대",
+      "strength": "매우 높음",
+      "summary": "파나소닉 뉴스룸 보도. AI 서버 수요 폭증에 대응해 UPS 배터리 생산을 3배 확충하기 위한 CAPEX 집행을 승인하고 실질 발주를 개시함.",
+      "impact": "배터리 산업 캐시카우가 EV에서 AI 인프라로 대전환. 포스코의 고출력 양극재 및 데이터센터용 고내식 강재 턴키 수주 최적기.",
+      "source": "Panasonic Newsroom",
+      "url": "https://news.panasonic.com/global/stories/18524"
+    },
+    {
+      "date": "2026-03-31",
+      "event": "혼다-소니, 합작 EV 'AFEELA 1' 개발 및 출시 공식 취소",
+      "company": ["Honda", "Sony"],
+      "type": "OEM 전략 변화",
+      "strength": "매우 높음",
+      "summary": "SHM 공식 발표. 혼다의 전동화 로드맵 재수정에 따라 합작 EV 프로젝트가 전격 중단되었으며 금일부터 예약금 환불 처리가 시작됨.",
+      "impact": "일본 완성차의 북미 전동화 거품 붕괴. 기존 모빌리티 소재 공급 계획을 보류하고 타 산업군향 밸류체인으로 타겟 전환 필수.",
+      "source": "Sony Honda Mobility Official News",
+      "url": "https://www.shm-afeela.com/en/news/2026-03-25/"
+    },
+    {
+      "date": "2026-03-31",
+      "event": "JFE엔지니어링-큐슈제강, 대형 ESS '다케오 축전소' 상업 가동",
+      "company": ["JFE Engineering", "Kyushu Steel"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "JFE 공식 발표. 철강업계가 공장 부지에 구축한 대규모 계통용 축전지가 전력 수급 조정 시장에 등록되어 상업 가동 수익 창출을 시작함.",
+      "impact": "철강사 주도의 전력망 사업 본격화. EPC향 비중국산 LFP 배터리 소재 패키지 영업 및 강재-소재 융합 비즈니스 강화 필요.",
+      "source": "JFE Engineering Newsroom",
+      "url": "https://www.jfe-eng.co.jp/news/2025/20251127.html"
+    },
+    {
+      "date": "2026-03-31",
+      "event": "이데미츠 코산, 전고체 배터리용 고체 전해질 대형 파일럿 본격 시공",
+      "company": ["Idemitsu Kosan"],
+      "type": "기술 상용화",
+      "strength": "높음",
+      "summary": "이데미츠 뉴스룸. 도요타 전고체 상용화를 뒷받침할 수백 톤 규모의 파일럿 설비 본공사가 시작되어 실물 원료 공급망 단계로 진입함.",
+      "impact": "전고체 밸류체인 가시화. 고순도 황화리튬 등 핵심 원료의 조달 경쟁 심화 및 특수 양극재 공동 개발 가치 급상승.",
+      "source": "Idemitsu Kosan News Release",
+      "url": "https://www.idemitsu.com/jp/news/2025/260129.pdf"
+    },
+    {
+      "date": "2026-03-31",
+      "event": "ENEOS, 아메리칸 항공향 SAF 첫 상업 물량 인도 완료",
+      "company": ["ENEOS", "American Airlines"],
+      "type": "공급 계약",
+      "strength": "보통",
+      "summary": "ENEOS 공식 발표. 일본 내 정제 SAF가 미국 메이저 항공사 노선에 실제 공급되어 매출이 실현되며 글로벌 상업 밸류체인이 실효 가동됨.",
+      "impact": "SAF 플랜트의 거대 국책 사업화 입증. 대형 플랜트 및 거대 저장 탱크 구축에 필요한 포스코 특수 강재 수요 지속 증가 전망.",
+      "source": "ENEOS Official Press Release",
+      "url": "https://www.eneos.co.jp/english/information/2024/pdf/20250328_01.pdf"
+    }
+  ]
+}
