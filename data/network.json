@@ -1,65 +1,63 @@
 {
   "nodes": [
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Sony", "group": "IT"},
     {"id": "Panasonic Energy", "group": "Cell"},
     {"id": "Global Big Tech", "group": "IT"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Sony", "group": "IT"},
     {"id": "JFE Engineering", "group": "EPC"},
     {"id": "Kyushu Steel", "group": "Steel"},
     {"id": "Idemitsu Kosan", "group": "Cathode"},
-    {"id": "Toyota", "group": "OEM"},
     {"id": "ENEOS", "group": "Energy"},
-    {"id": "American Airlines", "group": "Airlines"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Honda",
-      "target": "Sony",
-      "type": "JV (Cancelled)",
-      "date": "2026-03-30",
-      "strength": "매우 높음",
-      "note": "합작 EV 'AFEELA' 개발 전격 취소 및 모빌리티 밸류체인 붕괴 (Nikkei)"
-    },
-    {
       "source": "Panasonic Energy",
       "target": "Global Big Tech",
       "type": "Supply",
-      "date": "2026-03-30",
+      "date": "2026-03-31",
       "strength": "매우 높음",
-      "note": "AI 데이터센터용 백업 배터리(UPS) 대규모 증산 및 장기 공급 (Panasonic)"
+      "note": "AI 데이터센터 UPS 배터리 물량 80% 기계약 및 증산 자금 집행"
     },
     {
       "source": "Panasonic Energy",
       "target": "POSCO",
       "type": "Potential Partner",
-      "date": "2026-03-30",
-      "strength": "높음",
-      "note": "UPS 배터리용 고출력/장수명 양극재 및 데이터센터 랙용 특수강 역제안"
+      "date": "2026-03-31",
+      "strength": "매우 높음",
+      "note": "UPS용 장수명 양극재 및 데이터센터 서버 랙용 특수강 턴키 조달 논의"
+    },
+    {
+      "source": "Honda",
+      "target": "Sony",
+      "type": "JV (Cancelled)",
+      "date": "2026-03-31",
+      "strength": "매우 높음",
+      "note": "EV 'AFEELA 1' 개발 및 출시 공식 중단 및 손실 처리 확정"
     },
     {
       "source": "JFE Engineering",
       "target": "Kyushu Steel",
       "type": "JV",
-      "date": "2026-03-30",
+      "date": "2026-03-31",
       "strength": "높음",
-      "note": "다케오 축전소 대형 계통용 ESS 상업 운전 실효 가동 (JFE)"
+      "note": "제강 공장 부지 활용 대형 계통용 ESS 상업 운전 실효 가동 시작"
     },
     {
       "source": "Idemitsu Kosan",
-      "target": "Toyota",
-      "type": "Supply",
-      "date": "2026-03-30",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-31",
       "strength": "높음",
-      "note": "전고체 배터리용 황화물계 고체 전해질 대형 파일럿 본격 시공 (Idemitsu)"
+      "note": "전고체 대형 파일럿 본격 시공에 따른 핵심 원료 및 특수 소재 파트너십"
     },
     {
       "source": "ENEOS",
-      "target": "American Airlines",
-      "type": "Supply",
-      "date": "2026-03-30",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-03-31",
       "strength": "보통",
-      "note": "차세대 항공연료(SAF) 실물 인도 및 글로벌 상업 밸류체인 가동 (ENEOS)"
+      "note": "SAF 상업 공급망 확장에 따른 거대 저장 탱크용 특수강 수주 대응"
     }
   ]
 }
