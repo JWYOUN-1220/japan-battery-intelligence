@@ -514,3 +514,62 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-01",
+      "event": "일본 경제산업성, '핵심 광물 안보 이행안' 확정 및 보조금 개시",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "매우 높음",
+      "summary": "신년도 예산 집행과 함께 흑연, 리튬 등 탈중국 조달망 확보 기업에 1조 엔 규모의 금융 지원과 보조금 지급 지침을 확정함.",
+      "impact": "보조금 수령이 배터리 가격 경쟁력의 핵심 변수로 등극. 비중국 밸류체인을 보유한 소재사의 협상력 강화.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-01",
+      "event": "미쓰비시 상사-JX금속, 도시광산 통합 합작 법인 출범",
+      "company": ["Mitsubishi Corp", "JX Metals"],
+      "type": "전략적 합작",
+      "strength": "매우 높음",
+      "summary": "상사의 수집 네트워크와 제련사의 추출 기술을 결합하여 폐배터리/폐수 리사이클링 원료 자급률을 40%까지 높이는 법인을 설립함.",
+      "impact": "일본 내 순환 경제 밸류체인의 수직계열화 완성. 외부 업체에 대한 리사이클 원료 진입 장벽 구축.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    },
+    {
+      "date": "2026-04-01",
+      "event": "도호쿠대-스미토모 화학, 폐수 리튬 회수 필터 공장 준공",
+      "company": ["Tohoku Univ", "Sumitomo Chemical"],
+      "type": "기술 상용화",
+      "strength": "높음",
+      "summary": "공장 폐수에서 리튬을 저비용으로 선택 추출하는 나노 이온 필터의 대량 양산 및 상업 공급 체계를 구축함.",
+      "impact": "리사이클 대상이 폐수를 포함한 산업 전반으로 확장. 도시광산 추출 비용의 획기적 절감 실현.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-01",
+      "event": "레조낙, 인조흑연 음극재 전용 생산 라인 가동",
+      "company": ["Resonac", "METI"],
+      "type": "생산 개시",
+      "strength": "높음",
+      "summary": "METI 보조금을 지원받아 구축한 비중국 흑연 자급화 라인이 가동되어 도요타 등 주요 고객사에 인증 물량 출하를 시작함.",
+      "impact": "일본 내 흑연 자급화 실효성 확보. 외부 공급사의 원산지 투명성 및 품질 데이터 경쟁 격화.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    },
+    {
+      "date": "2026-04-01",
+      "event": "파나소닉, 배터리 광물 이력 추적 시스템 실효 가동",
+      "company": ["Panasonic Energy"],
+      "type": "조달 규범 변화",
+      "strength": "매우 높음",
+      "summary": "광물의 채굴부터 폐기까지 전 과정을 블록체인으로 추적하는 시스템을 가동하고, 벤더들에게 인증 데이터 연동을 의무화함.",
+      "impact": "공급망 투명성이 납품의 절대 기준으로 확립. 직접 광산 자산을 보유한 포스코와 같은 기업에 유리한 조달 환경 조성.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    }
+  ]
+}
