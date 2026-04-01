@@ -1,10 +1,10 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
+    {"id": "GS Yuasa", "group": "Cell"},
     {"id": "Mitsubishi Corp", "group": "Trading"},
     {"id": "JX Metals", "group": "Refining"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
     {"id": "Itochu Corp", "group": "Trading"},
     {"id": "POSCO", "group": "Material"}
   ],
@@ -15,7 +15,15 @@
       "type": "Subsidy Qualification",
       "date": "2026-04-02",
       "strength": "매우 높음",
-      "note": "신년도 안보 등급 가이드라인에 따른 비중국 소재 우대 수혜 가능성"
+      "note": "안보 등급 가이드라인 시행에 따른 비중국(LFP/흑연) 소재 보조금 수혜 가점 부여"
+    },
+    {
+      "source": "GS Yuasa",
+      "target": "POSCO",
+      "type": "Pricing Strategy",
+      "date": "2026-04-02",
+      "strength": "매우 높음",
+      "note": "배터리 가격 인상에 따른 원가 방어 목적 장기 가격 안정형 소재 제안 타진"
     },
     {
       "source": "Mitsubishi Corp",
@@ -23,7 +31,7 @@
       "type": "Supply",
       "date": "2026-04-02",
       "strength": "높음",
-      "note": "폐수 리사이클 리튬 첫 상업 물량 인도 및 성능 검증 완료"
+      "note": "폐수 리사이클 화학 추출 탄산리튬 첫 상업 물량 납품 및 검증"
     },
     {
       "source": "Panasonic Energy",
@@ -31,23 +39,15 @@
       "type": "Compliance",
       "date": "2026-04-02",
       "strength": "매우 높음",
-      "note": "배터리 여권 연동 재생 원료 비율 인증 데이터 제출 의무화"
+      "note": "배터리 여권 연동 재생 원료(Recycled Content) 비율 실시간 인증 의무화"
     },
     {
       "source": "Itochu Corp",
       "target": "POSCO",
       "type": "Potential Partner",
       "date": "2026-04-02",
-      "strength": "높음",
-      "note": "호주산 흑연 원광과 포스코 가공 기술을 결합한 하이브리드 음극재 개발 논의"
-    },
-    {
-      "source": "JX Metals",
-      "target": "POSCO",
-      "type": "Potential Swap",
-      "date": "2026-04-02",
       "strength": "보통",
-      "note": "한-일 도시광산 연합을 통한 리사이클링 블랙매스 상호 교환 타진"
+      "note": "호주산 천연흑연 물량 기반 포스코 기술 적용 하이브리드 음극재 개발 협의"
     }
   ]
 }
