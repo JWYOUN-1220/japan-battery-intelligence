@@ -1,60 +1,54 @@
 {
   "nodes": [
-    {"id": "Tohoku University", "group": "R&D"},
-    {"id": "JX Nippon Mining & Metals", "group": "Refining"},
     {"id": "METI", "group": "Policy"},
-    {"id": "Hanwa Co.", "group": "Trading"},
+    {"id": "Mitsubishi Corp", "group": "Trading"},
+    {"id": "JX Metals", "group": "Refining"},
+    {"id": "Sumitomo Chemical", "group": "Material"},
+    {"id": "Tohoku Univ", "group": "R&D"},
+    {"id": "Resonac", "group": "Material"},
     {"id": "Panasonic Energy", "group": "Cell"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Tohoku University",
-      "target": "POSCO",
-      "type": "Potential R&D",
-      "date": "2026-03-31",
-      "strength": "높음",
-      "note": "공장 폐수 활용 저전력 리튬/니켈 농축 기술 교차 검증 논의"
-    },
-    {
-      "source": "JX Nippon Mining & Metals",
-      "target": "Panasonic Energy",
-      "type": "Supply",
-      "date": "2026-03-31",
-      "strength": "매우 높음",
-      "note": "도시광산 직접 추출 고순도 황산니켈 셀 양산 라인 투입"
-    },
-    {
       "source": "METI",
-      "target": "POSCO",
-      "type": "Subsidy Qualification",
-      "date": "2026-03-31",
-      "strength": "매우 높음",
-      "note": "비중국산 천연/인조 흑연 공급망 보조금 지원 요건 충족"
-    },
-    {
-      "source": "Hanwa Co.",
-      "target": "JX Nippon Mining & Metals",
-      "type": "Supply",
-      "date": "2026-03-31",
+      "target": "Resonac",
+      "type": "Subsidy",
+      "date": "2026-04-01",
       "strength": "높음",
-      "note": "동남아시아 확보 블랙 매스 일본 내 제련소 전량 반입"
+      "note": "비중국 인조흑연 국산화 라인 증설 보조금 지급"
     },
     {
-      "source": "Hanwa Co.",
-      "target": "POSCO",
-      "type": "Potential Swap",
-      "date": "2026-03-31",
-      "strength": "보통",
-      "note": "글로벌 폐배터리 수집 물량 스왑 및 물류 최적화 협력 타진"
+      "source": "Mitsubishi Corp",
+      "target": "JX Metals",
+      "type": "JV",
+      "date": "2026-04-01",
+      "strength": "매우 높음",
+      "note": "도시광산 핵심 광물 추출 및 통합 유통 법인 설립"
+    },
+    {
+      "source": "Tohoku Univ",
+      "target": "Sumitomo Chemical",
+      "type": "R&D/Mfg",
+      "date": "2026-04-01",
+      "strength": "높음",
+      "note": "폐수 리튬 회수용 나노 필터 대량 양산 및 공급"
     },
     {
       "source": "Panasonic Energy",
       "target": "POSCO",
-      "type": "Standardization",
-      "date": "2026-03-31",
-      "strength": "높음",
-      "note": "재생 원료 80% 포함 의무화 가이드라인에 따른 양극재 장기 조달"
+      "type": "Compliance",
+      "date": "2026-04-01",
+      "strength": "매우 높음",
+      "note": "광물 이력 추적 시스템(Blockchain) 연동 및 투명 데이터 요구"
+    },
+    {
+      "source": "JX Metals",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-04-01",
+      "strength": "보통",
+      "note": "한-일 간 리사이클 원료(Black Mass) 스왑 협력 타진"
     }
   ]
 }
