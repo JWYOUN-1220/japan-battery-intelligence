@@ -584,3 +584,62 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-02",
+      "event": "일본 정부, 배터리 보조금 '안보 등급' 공식 도입 및 시행",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "매우 높음",
+      "summary": "일본경제신문 보도. 중국산 LFP 배터리를 사용하는 프로젝트에 보조금 지급을 실질적으로 배제하는 안보 가점제를 금일부로 가동함.",
+      "impact": "중국산 소재의 가격 경쟁력 무력화. 비중국 밸류체인을 보유한 포스코퓨처엠 등 한국 소재사의 일본 내 지배력 강화 기회.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "미쓰비시-JX 리사이클 법인, 폐수 추출 리튬 첫 상업 출하",
+      "company": ["Mitsubishi Corp", "JX Metals", "Panasonic Energy"],
+      "type": "상업화 실효",
+      "strength": "높음",
+      "summary": "일간철강신문 보도. 폐배터리가 아닌 산업 폐수에서 고효율로 리튬을 회수하는 기술을 상용화하여 파나소닉에 첫 물량을 공급함.",
+      "impact": "도시광산의 정의가 수처리 영역으로 확장. 저비용 리사이클링 원료가 일본 내수 양극재 가격 결정의 핵심 변수로 부상.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "파나소닉, 배터리 여권 기반 재생 원료 인증제 도입",
+      "company": ["Panasonic Energy"],
+      "type": "조달 규범 변화",
+      "strength": "매우 높음",
+      "summary": "일본경제신문 보도. 유럽 수출 모델을 겨냥해 양극재 등 핵심 소재의 재생 원료 함량을 인증하는 데이터 연동 시스템을 전격 시행함.",
+      "impact": "소재 공급의 문턱이 '품질'에서 '이력'으로 상향. 직접 리사이클링 자산을 보유한 포스코의 통합 밸류체인 가치 수직 상승.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "이토추 상사, 호주산 흑연 대규모 독점 조달 계약",
+      "company": ["Itochu Corp", "Resonac"],
+      "type": "공급망 확보",
+      "strength": "높음",
+      "summary": "일간철강신문 보도. 중국의 수출 통제에 맞서 호주산 천연흑연 10년 치를 확보하고 일본 내 음극재 제조사에 배분하는 계약을 체결함.",
+      "impact": "일본 상사 주도의 비중국 흑연 공급망 구축 완료. 포스코의 비중국 흑연 자산과 상사 물량 간의 전략적 조합 필요.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "스미토모 금속 광산, 황산니켈 라인 완전 자동화 실효",
+      "company": ["Sumitomo Metal Mining"],
+      "type": "공정 혁신",
+      "strength": "보통",
+      "summary": "일본경제신문 보도. AI 분석 기반 제련 공정 자동화를 통해 황산니켈 생산 원가를 15% 절감하고 첫 양산 로트 물량을 출하함.",
+      "impact": "원재료 단계의 가격 방어력 강화. 소재 파트너사들에게도 디지털 트윈 및 데이터 기반 원가 투명성을 요구할 것으로 전망됨.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    }
+  ]
+}
