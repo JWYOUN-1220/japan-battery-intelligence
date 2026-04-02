@@ -643,3 +643,40 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-03",
+      "event": "GS유아사, 도요타 신형 RAV4용 배터리 탑재 및 단가 인상 실효",
+      "company": ["GS Yuasa", "Toyota"],
+      "type": "공급망/가격",
+      "strength": "매우 높음",
+      "summary": "신년도 시작과 함께 배터리 판가 인상이 적용되었으며, 도요타 신규 모델에 최신 고용량 셀 공급이 개시됨.",
+      "impact": "일본 내 하이브리드/전기차 배터리 시장 수익성 회복 신호. 소재사에 대한 원가 압박과 고성능 요구가 병행됨.",
+      "source": "GS Yuasa Official PR",
+      "url": "https://newsroom.gs-yuasa.com/en/news-release"
+    },
+    {
+      "date": "2026-04-03",
+      "event": "미쓰비시 머티리얼, 글로벌 리사이클 연맹(US-Japan) 가동",
+      "company": ["Mitsubishi Materials", "ReElement"],
+      "type": "전략적 제휴",
+      "strength": "높음",
+      "summary": "미국 희토류 리사이클 선두주자와 손잡고 북미와 일본을 잇는 자원 순환 밸류체인 구축 착수.",
+      "impact": "도시광산 비즈니스가 국가 대항전으로 격상. 포스코HY클린메탈의 글로벌 진출 시 강력한 경쟁자 혹은 파트너 부상.",
+      "source": "Nippon.com",
+      "url": "https://www.nippon.com/en/news/yjj2026033100834/"
+    },
+    {
+      "date": "2026-04-03",
+      "event": "일본 GX-ETS 탄소배출권 의무화 제도 공식 발효",
+      "company": ["METI", "Battery Sector"],
+      "type": "정책 시행",
+      "strength": "매우 높음",
+      "summary": "기업별 배출 한도가 설정되고 초과분 구매가 의무화되는 거래제가 전면 가동됨.",
+      "impact": "소재의 탄소 발자국이 곧 제품의 가격 경쟁력이 됨. 포스코 저탄소 강재 및 배터리 소재의 마케팅 소구점 강화.",
+      "source": "Carbon Credits",
+      "url": "https://carboncredits.com/2026-could-redefine-voluntary-and-compliance-carbon-market-convergence-with-japan-leading-the-way/"
+    }
+  ]
+}
