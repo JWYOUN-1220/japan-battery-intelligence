@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Report (Real Published Data)</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Report</h1>
+            <p>Date: 2026.04.02 | Analyst: MI Intelligence System</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                현재 일본 시장의 화두는 <strong>'경제안보 보조금 기반 ESS 캐파 증설'</strong>과 <strong>'버려지는 것들(폐배터리, 실리콘 스크랩)의 완벽한 자원화'</strong>입니다. GS유아사는 248억 엔의 보조금을 바탕으로 703억 엔 규모의 ESS 신공장 CAPEX 집행에 나섰습니다. 동시에 JX금속은 90% 효율의 리튬 회수 공정을 가동하고, 도호쿠대는 반도체 폐기물을 고성능 실리콘 음극재로 둔갑시키는 혁신을 이뤄냈습니다. 포스코그룹은 보조금 요건에 맞는 안보 소재를 공급하는 한편, 일본의 고효율 리사이클링/음극재 기술을 자사 공정에 즉각 벤치마킹해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key News Section (100% Published Facts)</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: GS Yuasa / METI</span>
+                </div>
+                <div class="news-title">GS유아사, 703억 엔 투입 '정치용(ESS) 리튬이온 배터리' 신공장... METI 248억 엔 보조금</div>
+                <div class="meta">
+                    <a href="https://dempa-digital.com/article/708790" target="_blank">電波新聞 원문 보기</a>
+                </div>
+                <span class="content-label">Summary / 오늘자 실효성</span>
+                <p class="content-text">GS유아사는 2GWh 규모의 ESS 신공장 건설에 703억 엔을 투입하며, 최대 248억 엔의 국가 보조금을 지급받습니다. <strong>[실효성] 4월 신년도 예산 집행이 시작되며 신공장 건설을 위한 1차 설비 발주 및 소재 벤더 선정 작업이 본격화되는 시점입니다.</strong></p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">전통 배터리 명가가 국가 안보 보조금을 등에 업고 대규모 투자를 집행 중입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 보조금 수령 요건을 완벽히 충족하는 포스코퓨처엠의 양/음극재 장기 공급을 선제 제안해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: JX Metals</span>
+                </div>
+                <div class="news-title">JX금속, 폐차재 리튬이온 배터리서 '리튬 회수율 90%' 달성 (세계 최고 수준)</div>
+                <div class="meta">
+                    <a href="https://sustainablejapan.jp/2025/05/09/jx-metals-lithium-battery/113376" target="_blank">Sustainable Japan 원문 보기</a>
+                </div>
+                <span class="content-label">Summary / 오늘자 실효성</span>
+                <p class="content-text">JX금속은 폐배터리에서 리튬을 90% 이상 회수하는 공정을 개발했습니다. <strong>[실효성] 2026년부터 초기 보급 EV들의 폐배터리가 쏟아져 나오는 가운데, 이 고효율 추출 기술이 실제 상업용 블랙 매스 처리에 도입되며 원가 격차를 벌리고 있습니다.</strong></p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">리튬 회수 의무화를 선제적으로 뛰어넘는 추출 기술로 리사이클링 절대 경제성이 확보되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코HY클린메탈 공정에 해당 프로세스를 벤치마킹하고 리사이클 광물을 교차 조달하는 방안을 모색해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge high">Source: Panasonic / SMM</span>
+                </div>
+                <div class="news-title">파나소닉-스미토모 금속 광산, 리튬이온 배터리 '크로즈드 루프 리사이클' 동맹</div>
+                <div class="meta">
+                    <a href="https://cehub.jp/news/panasonic-smm-lithium-ion-recycle/" target="_blank">CEHUB 원문 보기</a>
+                </div>
+                <span class="content-label">Summary / 오늘자 실효성</span>
+                <p class="content-text">파나소닉은 SMM과 협력해 공장 폐재에서 금속을 회수해 자사 양극재로 재투입하는 생태계를 도입했습니다. <strong>[실효성] 현재 파나소닉 공급망 내에서 실질적인 재자원화 순환망이 실무적으로 강력하게 작동하며 외부 소재사의 진입 장벽이 되었습니다.</strong></p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">재활용 원료 사용이 메이저 셀 메이커 납품의 '절대적 전제 조건'으로 확립되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코HY클린메탈 리사이클 광물이 투입된 '재생 인증 양극재'를 파나소닉에 강력히 어필해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: 보통</span>
+                    <span class="badge high">Source: Tohoku Univ</span>
+                </div>
+                <div class="news-title">도호쿠대·오사카대, 반도체 폐기물(실리콘)로 '고성능 실리콘 음극재' 상용화 기술 개발</div>
+                <div class="meta">
+                    <a href="https://tenbou.nies.go.jp/news/jnews/detail.php?i=20884" target="_blank">환경전망대 원문 보기</a>
+                </div>
+                <span class="content-label">Summary / 오늘자 실효성</span>
+                <p class="content-text">반도체 생산 폐기물인 '실리콘 절삭분'을 나노 단위로 분쇄해 흑연 대비 3.3배 용량을 내는 음극재로 재활용합니다. <strong>[실효성] 흑연의 중국 리스크 탈피와 차세대 실리콘 음극재 수요가 폭발하는 지금, 폐기물 기반 기술이 산학협력 1순위 타겟으로 급부상했습니다.</strong></p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">고가의 화학 합성 대신, 산업 폐기물 물리적 재활용이 실리콘 음극재의 원가를 낮출 게임 체인저가 됩니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코실리콘솔루션 공정에 해당 나노 분쇄 기술을 도입하여 저원가·친환경 실리콘 음극재 라인업을 강화해야 합니다.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>셀 제조/ESS</strong><br>GS유아사 248억 엔 보조금 기반 대규모 신공장 CAPEX 시작</div>
+            <div class="impact-step"><strong>추출 기술</strong><br>JX금속 폐배터리 리튬 90% 고효율 회수망 가동</div>
+            <div class="impact-step"><strong>공급망 규범</strong><br>파나소닉-SMM 크로즈드 루프 생태계 실효</div>
+            <div class="impact-step"><strong>음극재 R&D</strong><br>도호쿠대 폐실리콘 활용 고용량 음극재 상용화 대두</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>대형 ESS 턴키 마케팅</strong></td>
+                        <td>GS유아사가 구축하는 703억 엔 규모 배터리 신공장에 최적화된 포스코 안보 적격(비중국) 양극재 선제 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>고효율 리사이클 벤치마크</strong></td>
+                        <td>JX금속의 리튬 회수 기술 및 SMM 연합에 대응하여, 포스코HY클린메탈 공정 수율 극대화 및 스왑 파트너십 추진</td>
+                    </tr>
+                    <tr>
+                        <td><strong>차세대 실리콘 음극재 연계</strong></td>
+                        <td>도호쿠대학의 '폐실리콘 나노 분쇄 기술'을 포스코실리콘솔루션에 도입하여 저원가 친환경 포트폴리오 구축</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
