@@ -2,52 +2,52 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Mitsubishi Corp", "group": "Trading"},
     {"id": "JX Metals", "group": "Refining"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Itochu Corp", "group": "Trading"},
+    {"id": "Sumitomo Metal Mining", "group": "Refining"},
+    {"id": "Tohoku/Osaka Univ", "group": "R&D"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "POSCO",
-      "type": "Subsidy Qualification",
-      "date": "2026-04-02",
+      "target": "GS Yuasa",
+      "type": "Subsidy",
+      "date": "Effectively Active",
       "strength": "매우 높음",
-      "note": "안보 등급 가이드라인 시행에 따른 비중국(LFP/흑연) 소재 보조금 수혜 가점 부여"
+      "note": "248억 엔 규모 정치용(ESS) 리튬이온 배터리 신공장 CAPEX 집행 가동"
     },
     {
       "source": "GS Yuasa",
       "target": "POSCO",
-      "type": "Pricing Strategy",
-      "date": "2026-04-02",
+      "type": "Potential Supply",
+      "date": "Effectively Active",
       "strength": "매우 높음",
-      "note": "배터리 가격 인상에 따른 원가 방어 목적 장기 가격 안정형 소재 제안 타진"
+      "note": "보조금 수령 요건에 부합하는 안보 적격(비중국산) 양·음극재 장기 공급"
     },
     {
-      "source": "Mitsubishi Corp",
-      "target": "Panasonic Energy",
-      "type": "Supply",
-      "date": "2026-04-02",
+      "source": "JX Metals",
+      "target": "POSCO",
+      "type": "Tech Benchmarking",
+      "date": "Effectively Active",
       "strength": "높음",
-      "note": "폐수 리사이클 화학 추출 탄산리튬 첫 상업 물량 납품 및 검증"
+      "note": "리튬 90% 최고 효율 회수 기술 벤치마킹 및 블랙 매스 스왑"
     },
     {
       "source": "Panasonic Energy",
-      "target": "POSCO",
-      "type": "Compliance",
-      "date": "2026-04-02",
+      "target": "Sumitomo Metal Mining",
+      "type": "Recycling Alliance",
+      "date": "Effectively Active",
       "strength": "매우 높음",
-      "note": "배터리 여권 연동 재생 원료(Recycled Content) 비율 실시간 인증 의무화"
+      "note": "사용 후 배터리 및 공정 폐재 크로즈드 루프(Closed-loop) 실가동"
     },
     {
-      "source": "Itochu Corp",
+      "source": "Tohoku/Osaka Univ",
       "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-04-02",
+      "type": "R&D Synergy",
+      "date": "Effectively Active",
       "strength": "보통",
-      "note": "호주산 천연흑연 물량 기반 포스코 기술 적용 하이브리드 음극재 개발 협의"
+      "note": "반도체 폐실리콘 절삭분을 활용한 저원가 실리콘 음극재 상용화 협력"
     }
   ]
 }
