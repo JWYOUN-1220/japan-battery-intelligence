@@ -1,53 +1,53 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "JX Metals", "group": "Refining"},
-    {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Sumitomo Metal Mining", "group": "Refining"},
-    {"id": "Tohoku/Osaka Univ", "group": "R&D"},
+    {"id": "Mitsubishi Materials", "group": "Refining"},
+    {"id": "Sumitomo Metal Mining", "group": "Material"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "ReElement (US)", "group": "Recycling"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
+      "source": "GS Yuasa",
+      "target": "Toyota",
+      "type": "Supply",
+      "date": "2026-04-03",
+      "strength": "매우 높음",
+      "note": "신형 RAV4용 고용량 리튬이온 배터리 초도 물량 납품"
+    },
+    {
+      "source": "Mitsubishi Materials",
+      "target": "ReElement (US)",
+      "type": "Strategic MOU",
+      "date": "2026-04-03",
+      "strength": "높음",
+      "note": "북미 희토류 및 폐배터리 리사이클링 공동 사업 추진"
+    },
+    {
+      "source": "Sumitomo Metal Mining",
+      "target": "Toyota",
+      "type": "Partnership",
+      "date": "2026-04-03",
+      "strength": "매우 높음",
+      "note": "전고체 배터리용 양극재 양산 사양 확정 및 설비 준비"
+    },
+    {
       "source": "METI",
       "target": "GS Yuasa",
-      "type": "Subsidy",
-      "date": "Effectively Active",
-      "strength": "매우 높음",
-      "note": "248억 엔 규모 정치용(ESS) 리튬이온 배터리 신공장 CAPEX 집행 가동"
-    },
-    {
-      "source": "GS Yuasa",
-      "target": "POSCO",
-      "type": "Potential Supply",
-      "date": "Effectively Active",
-      "strength": "매우 높음",
-      "note": "보조금 수령 요건에 부합하는 안보 적격(비중국산) 양·음극재 장기 공급"
-    },
-    {
-      "source": "JX Metals",
-      "target": "POSCO",
-      "type": "Tech Benchmarking",
-      "date": "Effectively Active",
+      "type": "Regulation/Subsidy",
+      "date": "2026-04-03",
       "strength": "높음",
-      "note": "리튬 90% 최고 효율 회수 기술 벤치마킹 및 블랙 매스 스왑"
+      "note": "GX-ETS 의무화에 따른 탄소 관리 지침 하달"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "Sumitomo Metal Mining",
-      "type": "Recycling Alliance",
-      "date": "Effectively Active",
-      "strength": "매우 높음",
-      "note": "사용 후 배터리 및 공정 폐재 크로즈드 루프(Closed-loop) 실가동"
-    },
-    {
-      "source": "Tohoku/Osaka Univ",
-      "target": "POSCO",
-      "type": "R&D Synergy",
-      "date": "Effectively Active",
-      "strength": "보통",
-      "note": "반도체 폐실리콘 절삭분을 활용한 저원가 실리콘 음극재 상용화 협력"
+      "source": "POSCO",
+      "target": "GS Yuasa",
+      "type": "Potential Supply",
+      "date": "2026-04-03",
+      "strength": "높음",
+      "note": "원가 인하를 위한 비중국 흑연/리튬 기반 소재 패키지 제안"
     }
   ]
 }
