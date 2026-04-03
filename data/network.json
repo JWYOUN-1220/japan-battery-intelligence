@@ -1,11 +1,11 @@
 {
   "nodes": [
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Mitsubishi Materials", "group": "Refining"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "METI", "group": "Policy"},
+    {"id": "Mitsubishi Materials", "group": "Refining"},
     {"id": "ReElement (US)", "group": "Recycling"},
+    {"id": "Sumitomo Metal Mining", "group": "Material"},
+    {"id": "METI", "group": "Policy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
@@ -15,15 +15,15 @@
       "type": "Supply",
       "date": "2026-04-03",
       "strength": "매우 높음",
-      "note": "신형 RAV4용 고용량 리튬이온 배터리 초도 물량 납품"
+      "note": "신형 RAV4 모델 탑재용 고용량 리튬이온 배터리 상용화 납품"
     },
     {
       "source": "Mitsubishi Materials",
       "target": "ReElement (US)",
-      "type": "Strategic MOU",
+      "type": "MOU",
       "date": "2026-04-03",
       "strength": "높음",
-      "note": "북미 희토류 및 폐배터리 리사이클링 공동 사업 추진"
+      "note": "북미 희토류 및 배터리 리사이클링 거점 구축 기술 협력"
     },
     {
       "source": "Sumitomo Metal Mining",
@@ -31,15 +31,15 @@
       "type": "Partnership",
       "date": "2026-04-03",
       "strength": "매우 높음",
-      "note": "전고체 배터리용 양극재 양산 사양 확정 및 설비 준비"
+      "note": "전고체 배터리용 양극재 양산 체제 및 스펙 협력 확정"
     },
     {
       "source": "METI",
       "target": "GS Yuasa",
-      "type": "Regulation/Subsidy",
+      "type": "Regulation",
       "date": "2026-04-03",
       "strength": "높음",
-      "note": "GX-ETS 의무화에 따른 탄소 관리 지침 하달"
+      "note": "GX-ETS 의무화 가동에 따른 탄소 배출권 실적 의무 규제 적용"
     },
     {
       "source": "POSCO",
@@ -47,7 +47,23 @@
       "type": "Potential Supply",
       "date": "2026-04-03",
       "strength": "높음",
-      "note": "원가 인하를 위한 비중국 흑연/리튬 기반 소재 패키지 제안"
+      "note": "가격 안정형 및 저탄소·비중국 양극재 패키지 선제 마케팅"
+    },
+    {
+      "source": "POSCO",
+      "target": "Mitsubishi Materials",
+      "type": "Potential JV",
+      "date": "2026-04-03",
+      "strength": "보통",
+      "note": "글로벌 네트워크 및 추출 기술 스왑을 통한 북미 리사이클 거점 협력"
+    },
+    {
+      "source": "POSCO",
+      "target": "Sumitomo Metal Mining",
+      "type": "R&D Synergy",
+      "date": "2026-04-03",
+      "strength": "보통",
+      "note": "고체 전해질 및 전고체 전용 하이니켈 양극재 공동 연구 타진"
     }
   ]
 }
