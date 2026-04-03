@@ -18,60 +18,166 @@
             --low-txt: #666;
         }
 
-        body { font-family: 'Malgun Gothic', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
         .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
-        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; }
-        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; }
-        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; margin-bottom: 25px; transition: 0.3s; }
-        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
-        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
         .high { background: var(--high-bg); color: var(--high-txt); }
-        .news-title { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 15px; }
-        .meta { font-size: 14px; color: #888; margin-bottom: 15px; }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
         .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
-        .content-label { font-weight: 700; color: var(--posco-blue); display: block; margin-top: 15px; }
-        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; border: 1px dashed #b8c5d6; margin-top: 15px; }
-        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; }
+        .meta a:hover { text-decoration: underline; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .today-impact { background: #fff4e5; padding: 15px; border-left: 4px solid #ef6c00; margin-bottom: 18px; font-size: 14.5px; color: #333; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>Japan Battery & GX Market Intelligence Report</h1>
-            <p>Date: 2026.04.03 | Analyst: MI Intelligence System | Real Fact Edition</p>
+            <p>Date: 2026.04.03 | Analyst: MI Intelligence System</p>
         </div>
 
         <div class="summary-box">
             <h2>Executive Summary</h2>
-            <p>현재 일본 시장은 <strong>안보 기반 자원 자급화</strong>와 <strong>탄소 규제 의무화</strong>라는 두 개의 큰 톱니바퀴가 돌아가기 시작했습니다. GS유아사의 가격 인상, 미쓰비시의 글로벌 리사이클 동맹, 도요타-스미토모의 전고체 양산 협력 등 실질적인 사업 성과와 공시가 쏟아지고 있습니다. 포스코그룹은 일본의 자국 보호 성벽이 높아지기 전에 <strong>핵심 광물 공급권</strong>을 무기로 파이프라인을 구축해야 합니다.</p>
+            <p>
+                2026년 4월 초, 일본 배터리 시장은 <strong>'공급망 안보 기반의 자원 자급화'</strong>와 <strong>'수익성 개선을 위한 가격 정책 재편'</strong>이 동시에 진행되고 있습니다. GS유아사는 원가 압박에 단가 인상을 단행함과 동시에 RAV4용 신형 배터리를 공급 중이며, 미쓰비시 머티리얼은 미국 리엘리먼트와 리사이클링 MOU를 맺고 글로벌로 확장했습니다. 스미토모 금속 광산은 도요타와 전고체 양극재 파트너십을 구축했고, GX-ETS(탄소배출권)가 의무화되었습니다. 포스코그룹은 가격 안정성과 비중국 안보를 앞세운 패키지로 일본의 틈새를 공략해야 합니다.
+            </p>
         </div>
 
-        <div class="news-card">
-            <span class="badge high">중요도: 매우 높음</span>
-            <div class="news-title">GS유아사, 배터리 단가 인상 및 도요타향 신형 리튬이온 배터리 공급 본격화</div>
-            <div class="meta">출처: GS Yuasa Newsroom | <a href="https://newsroom.gs-yuasa.com/en/news-release" target="_blank">공식 공시 보기</a></div>
-            <span class="content-label">오늘자 실효성</span>
-            <p>4월 신년도 계약 갱신과 도요타 신차 RAV4 양산 라인 가동이 맞물려 실질적인 현금 흐름과 점유율 변화가 발생하는 시점입니다.</p>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 가격 인상 기조를 틈타 장기 안정적 가격을 보장하는 포스코의 흑연/리튬 기반 양극재 솔루션 역제안.</div>
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: GS Yuasa</span>
+                </div>
+                <div class="news-title">GS유아사, 산업용·전기차용 배터리 '납품 단가 인상' 단행 및 신형 배터리 상용화</div>
+                <div class="meta">
+                    <a href="https://newsroom.gs-yuasa.com/en/news-release" target="_blank">GS Yuasa 공식 원문 보기</a>
+                </div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">GS유아사는 원자재 가격과 물류비 상승에 대응하기 위해 배터리 가격 인상을 공식 발표했습니다. 동시에 에너지 밀도를 높인 신형 리튬이온 배터리를 도요타 RAV4 모델에 탑재하기 시작했습니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 4월 신년도 거래 계약 갱신 시점에 맞춰 인상된 단가가 실적에 반영되기 시작했으며, 신형 배터리 탑재 차량 양산이 본격화되는 타임라인입니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> GS유아사의 원가 압박을 해소할 수 있는 포스코퓨처엠의 저탄소·고효율 양극재 라인업을 차세대 모델용으로 제안해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 높음</span>
+                    <span class="badge high">Source: Mitsubishi Materials</span>
+                </div>
+                <div class="news-title">미쓰비시 머티리얼, 미국 ReElement와 희토류·배터리 리사이클링 전략적 제휴(MOU)</div>
+                <div class="meta">
+                    <a href="https://www.nippon.com/en/news/yjj2026033100834/" target="_blank">Nippon.com 원문 보기</a>
+                </div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">미쓰비시 머티리얼은 미국 리엘리먼트(ReElement Technologies)와 폐자석 및 폐배터리에서 희토류/희유금속을 회수하는 기술 협력 MOU를 맺고 북미 거점 구축을 검토합니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 4월부터 한미일 핵심 광물 안보 파트너십 예산이 집행됨에 따라, 일본 제련 대기업의 북미 도시광산 진출이 실무적 단계로 진입했습니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코HY클린메탈 블랙 매스 추출 기술과 미쓰비시 글로벌 네트워크를 결합한 북미 리사이클링 JV 파트너십을 타진해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: Sumitomo Metal Mining</span>
+                </div>
+                <div class="news-title">스미토모 금속 광산(SMM)-도요타, '전고체 배터리용 양극재' 양산 파트너십 구축</div>
+                <div class="meta">
+                    <a href="https://miningdigital.com/news/transforming-mining-demand-through-solid-state-batteries" target="_blank">Mining Digital 원문 보기</a>
+                </div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">SMM은 도요타와 협력해 2027~2028년 상용화 타겟의 고품질 전고체 양극재 양산 체제를 구축했습니다. SMM의 독자 합성 기술로 전고체에 적합한 내구성 높은 양극재를 공급합니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 도요타 배터리 자회사(TOYOTA BATTERY) 출범과 맞물려, 차세대 전해질용 소재의 초도 물량 사양 확정 및 설비 투자가 진행 중입니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 미래기술연구원의 고체 전해질 기술과 SMM 양극재 합성 기술 간 교차 검증 및 공동 연구를 제안해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: 매우 높음</span>
+                    <span class="badge high">Source: METI</span>
+                </div>
+                <div class="news-title">일본 GX-ETS(탄소배출권 거래제) 4월부터 본격 의무화 가동</div>
+                <div class="meta">
+                    <a href="https://carboncredits.com/2026-could-redefine-voluntary-and-compliance-carbon-market-convergence-with-japan-leading-the-way/" target="_blank">Carbon Credits 원문 보기</a>
+                </div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">일본 GX-ETS가 본격 시행되며 약 300~400개 기업이 규제 대상에 포함되었습니다. 배터리 제조 공정 등에서의 탄소 배출량이 직접적인 재무 비용으로 직결되는 구조가 완성되었습니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 4월 신년도 예산 집행과 함께 배출권 구매/보고가 의무화되어 소재 벤더들에게 저탄소 공정 데이터를 요구하는 실무 공문이 발송되기 시작했습니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 저탄소 공정이 적용된 포스코퓨처엠 양·음극재를 '일본 탄소 비용 절감 솔루션'으로 브랜드화하여 영업 경쟁 우위를 확보해야 합니다.
+                </div>
+            </div>
+
         </div>
 
-        <div class="news-card">
-            <span class="badge high">중요도: 높음</span>
-            <div class="news-title">미쓰비시 머티리얼, 미국 기업과 희토류·배터리 리사이클 전략적 제휴(MOU)</div>
-            <div class="meta">출처: Nippon.com / Mitsubishi Materials | <a href="https://www.nippon.com/en/news/yjj2026033100834/" target="_blank">원문 보기</a></div>
-            <span class="content-label">오늘자 실효성</span>
-            <p>한일미 광물 안보 협력에 따른 일본 제련 기업의 첫 대규모 북미 자원 순환 사업 진출 공시입니다.</p>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 북미 내 포스코의 집하 네트워크와 미쓰비시의 정제 역량을 결합한 글로벌 리사이클 밸류체인 공동 구축 논의.</div>
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>셀 제조</strong><br>GS유아사 단가 인상 및 도요타 신차 배터리 공급</div>
+            <div class="impact-step"><strong>제련/리사이클</strong><br>미쓰비시 머티리얼-美 리엘리먼트 협력</div>
+            <div class="impact-step"><strong>차세대 소재</strong><br>스미토모-도요타 전고체 양산 파트너십 구축</div>
+            <div class="impact-step"><strong>GX 정책</strong><br>GX-ETS 탄소 배출권 거래 본격 의무화</div>
         </div>
 
-        <div class="news-card">
-            <span class="badge high">중요도: 매우 높음</span>
-            <div class="news-title">일본 GX-ETS(배출권 거래제) 의무 시행... 배터리 업계 탄소 비용 부담 현실화</div>
-            <div class="meta">출처: Carbon Credits / METI | <a href="https://carboncredits.com/2026-could-redefine-voluntary-and-compliance-carbon-market-convergence-with-japan-leading-the-way/" target="_blank">관련 소식</a></div>
-            <span class="content-label">오늘자 실효성</span>
-            <p>2026년 4월부터 자발적 참여에서 의무 준수제로 전환됨에 따라 기업들의 탄소 비용이 실무 예산에 반영되었습니다.</p>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 저탄소 공정 데이터를 확보한 포스코 소재를 '일본 탄소세 절감형 소재'로 마케팅하여 판가 프리미엄 확보.</div>
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>가격 및 수익성 대응</strong></td>
+                        <td>일본 셀 메이커의 가격 인상 기조에 맞춰 포스코 광산 자산 기반 '장기 가격 안정성/비중국 안보' 양극재 패키지 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>글로벌 리사이클 거점 협력</strong></td>
+                        <td>미쓰비시 머티리얼의 북미 프로젝트에 포스코인터내셔널 수집망 및 HY클린메탈 추출 기술 연계 3자 동맹 타진</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GX 저탄소 마케팅</strong></td>
+                        <td>일본 탄소배출권 의무화 실시에 대응하여 전공정 탄소 발자국(LCA) 데이터를 선제 제공하는 저탄소 프리미엄 영업 전개</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="footer">
