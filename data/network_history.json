@@ -680,3 +680,29 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-06",
+      "event": "GS유아사 배터리 단가 10% 이상 인상 실효 적용",
+      "company": ["GS Yuasa"],
+      "type": "가격 정책 변화",
+      "strength": "매우 높음",
+      "summary": "4월 첫 월요일부터 산업용 및 EV용 배터리 납품 단가 인상이 실질적으로 발효됨.",
+      "impact": "셀 제조사의 수익성 방어 기조 전환. 소재사에 대한 원가 방어 및 고성능 패키지 조달 압박 강화.",
+      "source": "GS Yuasa Newsroom",
+      "url": "https://newsroom.gs-yuasa.com/en/news-release/382"
+    },
+    {
+      "date": "2026-04-06",
+      "event": "일본 GX-ETS 탄소배출권 거래제 의무화 본격 가동",
+      "company": ["METI"],
+      "type": "정책 시행",
+      "strength": "매우 높음",
+      "summary": "기업별 배출 한도가 설정되고 초과분 구매가 의무화되는 거래제가 전면 가동됨.",
+      "impact": "소재의 탄소 발자국이 곧 가격 경쟁력이 됨. 포스코 저탄소 소재의 마케팅 소구점 강화.",
+      "source": "Carbon Credits",
+      "url": "https://carboncredits.com/2026-could-redefine-voluntary-and-compliance-carbon-market-convergence-with-japan-leading-the-way/"
+    }
+  ]
+}
