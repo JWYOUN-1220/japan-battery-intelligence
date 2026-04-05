@@ -1,69 +1,44 @@
 {
   "nodes": [
-    {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Mitsubishi Materials", "group": "Refining"},
-    {"id": "ReElement (US)", "group": "Recycling"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
     {"id": "METI", "group": "Policy"},
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Zoox", "group": "OEM"},
+    {"id": "France Gov", "group": "Partner"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "GS Yuasa",
-      "target": "Toyota",
-      "type": "Supply",
-      "date": "2026-04-03",
-      "strength": "매우 높음",
-      "note": "신형 RAV4 모델 탑재용 고용량 리튬이온 배터리 상용화 납품"
-    },
-    {
-      "source": "Mitsubishi Materials",
-      "target": "ReElement (US)",
-      "type": "MOU",
-      "date": "2026-04-03",
-      "strength": "높음",
-      "note": "북미 희토류 및 배터리 리사이클링 거점 구축 기술 협력"
-    },
-    {
-      "source": "Sumitomo Metal Mining",
-      "target": "Toyota",
-      "type": "Partnership",
-      "date": "2026-04-03",
-      "strength": "매우 높음",
-      "note": "전고체 배터리용 양극재 양산 체제 및 스펙 협력 확정"
-    },
-    {
       "source": "METI",
       "target": "GS Yuasa",
       "type": "Regulation",
-      "date": "2026-04-03",
-      "strength": "높음",
-      "note": "GX-ETS 의무화 가동에 따른 탄소 배출권 실적 의무 규제 적용"
+      "date": "2026-04-06",
+      "strength": "High",
+      "note": "GX-ETS 의무화에 따른 탄소 관리 지침 적용 및 가격 인상 묵인"
+    },
+    {
+      "source": "Panasonic Energy",
+      "target": "Zoox",
+      "type": "Supply",
+      "date": "2026-04-06",
+      "strength": "High",
+      "note": "로보택시용 2170 배터리 셀 상업 공급 개시"
+    },
+    {
+      "source": "METI",
+      "target": "France Gov",
+      "type": "Strategic Alliance",
+      "date": "2026-04-06",
+      "strength": "Medium",
+      "note": "중국 의존도 탈피를 위한 중희토류 정제 공장 공동 구축 추진"
     },
     {
       "source": "POSCO",
       "target": "GS Yuasa",
       "type": "Potential Supply",
-      "date": "2026-04-03",
-      "strength": "높음",
-      "note": "가격 안정형 및 저탄소·비중국 양극재 패키지 선제 마케팅"
-    },
-    {
-      "source": "POSCO",
-      "target": "Mitsubishi Materials",
-      "type": "Potential JV",
-      "date": "2026-04-03",
-      "strength": "보통",
-      "note": "글로벌 네트워크 및 추출 기술 스왑을 통한 북미 리사이클 거점 협력"
-    },
-    {
-      "source": "POSCO",
-      "target": "Sumitomo Metal Mining",
-      "type": "R&D Synergy",
-      "date": "2026-04-03",
-      "strength": "보통",
-      "note": "고체 전해질 및 전고체 전용 하이니켈 양극재 공동 연구 타진"
+      "date": "2026-04-06",
+      "strength": "High",
+      "note": "가격 안정형 및 저탄소·비중국 소재 패키지 선제 마케팅"
     }
   ]
 }
