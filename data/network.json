@@ -2,43 +2,51 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Tohoku Univ", "group": "R&D"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Zoox", "group": "OEM"},
-    {"id": "France Gov", "group": "Partner"},
+    {"id": "JX Metals / Mitsubishi Corp", "group": "Recycling"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "GS Yuasa",
-      "type": "Regulation",
-      "date": "2026-04-06",
-      "strength": "High",
-      "note": "GX-ETS 의무화에 따른 탄소 관리 지침 적용 및 가격 인상 묵인"
+      "target": "POSCO",
+      "type": "Subsidy Qualification",
+      "date": "2026-04-07",
+      "strength": "매우 높음",
+      "note": "비중국 흑연 및 리튬 조달망에 대한 안보 보조금 수혜 적격성 확보"
+    },
+    {
+      "source": "GS Yuasa",
+      "target": "POSCO",
+      "type": "Potential Supply",
+      "date": "2026-04-07",
+      "strength": "매우 높음",
+      "note": "703억 엔 규모 ESS 신공장향 양/음극재 최종 벤더 심사 대응"
+    },
+    {
+      "source": "Tohoku Univ",
+      "target": "POSCO",
+      "type": "R&D Benchmarking",
+      "date": "2026-04-07",
+      "strength": "높음",
+      "note": "폐실리콘 활용 저원가 음극재 제조 기술 라이선싱 및 공정 이식 검토"
+    },
+    {
+      "source": "JX Metals / Mitsubishi Corp",
+      "target": "POSCO",
+      "type": "Potential Swap",
+      "date": "2026-04-07",
+      "strength": "보통",
+      "note": "일본 내 수거 블랙 매스(Black Mass)와 포스코 정제 광물 간 물량 스왑"
     },
     {
       "source": "Panasonic Energy",
-      "target": "Zoox",
-      "type": "Supply",
-      "date": "2026-04-06",
-      "strength": "High",
-      "note": "로보택시용 2170 배터리 셀 상업 공급 개시"
-    },
-    {
-      "source": "METI",
-      "target": "France Gov",
-      "type": "Strategic Alliance",
-      "date": "2026-04-06",
-      "strength": "Medium",
-      "note": "중국 의존도 탈피를 위한 중희토류 정제 공장 공동 구축 추진"
-    },
-    {
-      "source": "POSCO",
-      "target": "GS Yuasa",
-      "type": "Potential Supply",
-      "date": "2026-04-06",
-      "strength": "High",
-      "note": "가격 안정형 및 저탄소·비중국 소재 패키지 선제 마케팅"
+      "target": "POSCO",
+      "type": "Compliance Supply",
+      "date": "2026-04-07",
+      "strength": "높음",
+      "note": "로보택시용 배터리 및 원통형 로드맵에 맞춘 하이엔드 소재 조달"
     }
   ]
 }
