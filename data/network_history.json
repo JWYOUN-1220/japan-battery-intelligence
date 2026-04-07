@@ -706,3 +706,37 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-07",
+      "event": "일본 경제산업성(METI), 비중국 흑연 보조금 심사 포털 정식 가동",
+      "company": ["METI", "Panasonic", "Resonac"],
+      "type": "정책 시행",
+      "strength": "매우 높음",
+      "summary": "1조 엔 규모의 안보 보조금 예산 집행을 위한 원산지 증명 심사 개시. 중국산 흑연 배제 본격화.",
+      "impact": "공급망 내 원산지 투명성이 조달의 절대적 기준 확립. 포스코퓨처엠의 비중국 밸류체인 가치 극대화.",
+      "source": "METI Official & Nikkei"
+    },
+    {
+      "date": "2026-04-07",
+      "event": "도호쿠대, 반도체 폐기물 기반 실리콘 음극재 상용화 가이드 배포",
+      "company": ["Tohoku Univ"],
+      "type": "기술 상용화",
+      "strength": "높음",
+      "summary": "버려지는 실리콘 슬러지를 활용한 3.3배 고용량 음극재 제조 공정 라이선싱 실시.",
+      "impact": "고원가 실리콘 음극재 시장의 원가 파괴 예고. 포스코실리콘솔루션과의 기술 협력 필요성 대두.",
+      "source": "Tohoku University AIMR Press"
+    },
+    {
+      "date": "2026-04-07",
+      "event": "GS유아사, ESS 신공장 설비 및 소재 1차 발주 본격화",
+      "company": ["GS Yuasa"],
+      "type": "CAPEX 집행",
+      "strength": "매우 높음",
+      "summary": "703억 엔 규모 북관동 리튬이온 배터리 공장 건설을 위한 실무적 계약 체결 단계 진입.",
+      "impact": "ESS 소재 시장의 거대 납품 기회 창출. 초기 벤더 진입 여부가 향후 5년의 일본 매출 좌우.",
+      "source": "GS Yuasa Corporate Newsroom"
+    }
+  ]
+}
