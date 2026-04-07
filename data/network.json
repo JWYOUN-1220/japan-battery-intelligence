@@ -1,20 +1,56 @@
 {
   "nodes": [
+    {"id": "Nissan", "group": "OEM"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Mitsubishi Motors", "group": "OEM"},
     {"id": "METI", "group": "Policy"},
+    {"id": "JX Metals", "group": "Refining"},
+    {"id": "JERA", "group": "Energy"},
+    {"id": "Idemitsu Kosan", "group": "Material"},
+    {"id": "Toyota", "group": "OEM"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Tohoku Univ", "group": "R&D"},
-    {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "JX Metals / Mitsubishi Corp", "group": "Recycling"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
+    {
+      "source": "Nissan",
+      "target": "Honda",
+      "type": "Strategic Alliance",
+      "date": "2026-04-07",
+      "strength": "매우 높음",
+      "note": "전기차 공동 플랫폼 개발 및 배터리 부품 표준화"
+    },
+    {
+      "source": "Honda",
+      "target": "Mitsubishi Motors",
+      "type": "Strategic Alliance",
+      "date": "2026-04-07",
+      "strength": "매우 높음",
+      "note": "일본 3대 거대 완성차 연합 합류 및 규모의 경제 실현"
+    },
     {
       "source": "METI",
       "target": "POSCO",
       "type": "Subsidy Qualification",
       "date": "2026-04-07",
       "strength": "매우 높음",
-      "note": "비중국 흑연 및 리튬 조달망에 대한 안보 보조금 수혜 적격성 확보"
+      "note": "1조 엔 흑연 안보 보조금 지급 요건 충족(비중국 공급망)"
+    },
+    {
+      "source": "JX Metals",
+      "target": "JERA",
+      "type": "Recycling JV",
+      "date": "2026-04-07",
+      "strength": "높음",
+      "note": "JERA 수거망 기반 폐배터리 희유금속 90% 추출 인프라 협력"
+    },
+    {
+      "source": "Idemitsu Kosan",
+      "target": "Toyota",
+      "type": "Supply Partnership",
+      "date": "2026-04-07",
+      "strength": "매우 높음",
+      "note": "전고체 배터리용 황화물계 고체 전해질 대량 양산 설비 가동"
     },
     {
       "source": "GS Yuasa",
@@ -22,31 +58,15 @@
       "type": "Potential Supply",
       "date": "2026-04-07",
       "strength": "매우 높음",
-      "note": "703억 엔 규모 ESS 신공장향 양/음극재 최종 벤더 심사 대응"
+      "note": "703억 엔 신공장향 보조금 적격 장기 가격 안정형 소재 제안"
     },
     {
-      "source": "Tohoku Univ",
-      "target": "POSCO",
-      "type": "R&D Benchmarking",
-      "date": "2026-04-07",
-      "strength": "높음",
-      "note": "폐실리콘 활용 저원가 음극재 제조 기술 라이선싱 및 공정 이식 검토"
-    },
-    {
-      "source": "JX Metals / Mitsubishi Corp",
-      "target": "POSCO",
+      "source": "POSCO",
+      "target": "JX Metals",
       "type": "Potential Swap",
       "date": "2026-04-07",
       "strength": "보통",
-      "note": "일본 내 수거 블랙 매스(Black Mass)와 포스코 정제 광물 간 물량 스왑"
-    },
-    {
-      "source": "Panasonic Energy",
-      "target": "POSCO",
-      "type": "Compliance Supply",
-      "date": "2026-04-07",
-      "strength": "높음",
-      "note": "로보택시용 배터리 및 원통형 로드맵에 맞춘 하이엔드 소재 조달"
+      "note": "일본 내 수직계열화 도시광산 대응 블랙 매스 및 정제 광물 스왑 타진"
     }
   ]
 }
