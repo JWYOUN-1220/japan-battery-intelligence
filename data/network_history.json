@@ -740,3 +740,51 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-08",
+      "event": "도요타, 450~500Wh/kg 스펙 전고체 배터리 파일럿 생산 공식 돌입",
+      "company": ["Toyota"],
+      "type": "기술 상용화",
+      "strength": "매우 높음",
+      "summary": "Unteachable Courses 보도. 도요타가 2027~28년 상용화를 목표로 정부 승인을 받은 전고체 배터리의 실물 파일럿 라인 가동을 시작함.",
+      "impact": "전고체 밸류체인이 실험실을 넘어 부품 조달 및 품질 인증(Qualification) 실무 단계로 진입. 포스코의 샘플 긴급 투입 필요.",
+      "source": "Solid-State Batteries in 2026",
+      "url": "(Private Report)"
+    },
+    {
+      "date": "2026-04-08",
+      "event": "도요타-SPARX, 중소기업 배터리 생태계 육성 '미래 펀드 II' 가동",
+      "company": ["Toyota", "SPARX Group"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "Toyota Global Newsroom 공시. 차세대 제조 기술 및 리사이클 등 강소기업을 지원하고 자사 공급망으로 편입하는 대형 펀드 자금 집행 시작.",
+      "impact": "일본 내 하위 밸류체인의 도요타 생태계 강력 귀속화. 포스코는 해당 펀드 편입 강소기업과의 전략적 협력을 타진해야 함.",
+      "source": "Toyota Global Newsroom",
+      "url": "https://global.toyota/en/newsroom/"
+    },
+    {
+      "date": "2026-04-08",
+      "event": "도요타, 140억 달러 북미 배터리 공장 연계 수입/현지산 EV 라인업 대폭 강화",
+      "company": ["Toyota"],
+      "type": "생산 확대",
+      "strength": "매우 높음",
+      "summary": "The Japan Times 보도. 켄터키 공장의 3열 SUV 생산 및 노스캐롤라이나 배터리 공장 스케줄을 구체화하며 북미 전동화 속도전 선언.",
+      "impact": "북미 현지 내 IRA 100% 적격 핵심 소재 수요 폭증. 퀘벡 등 북미 공급망을 갖춘 포스코퓨처엠의 강력한 장기 계약 록인 호기.",
+      "source": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/"
+    },
+    {
+      "date": "2026-04-08",
+      "event": "프랑스 Neoen-일본 Toho, 400MWh 규모 일본 최대 ESS 'Ako Battery' 구축 발표",
+      "company": ["Neoen", "Toho"],
+      "type": "프로젝트 수주",
+      "strength": "매우 높음",
+      "summary": "Neoen 공식 발표. 간사이 지역 그리드 안정화를 위해 100MW/400MWh 급의 거대 축전소를 2028년 가동 목표로 건설 확정.",
+      "impact": "초대형 유틸리티 스케일 ESS 실무 발주 개시. BESS 인프라에 필수적인 LFP 배터리 및 외함 특수 철강재의 매스(Mass) 마케팅 적기.",
+      "source": "Neoen Press Release",
+      "url": "https://neoen.com/en/news/"
+    }
+  ]
+}
