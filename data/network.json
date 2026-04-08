@@ -1,72 +1,51 @@
 {
   "nodes": [
-    {"id": "Nissan", "group": "OEM"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Mitsubishi Motors", "group": "OEM"},
-    {"id": "METI", "group": "Policy"},
-    {"id": "JX Metals", "group": "Refining"},
-    {"id": "JERA", "group": "Energy"},
-    {"id": "Idemitsu Kosan", "group": "Material"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "SPARX Group", "group": "Finance"},
+    {"id": "Neoen", "group": "Energy"},
+    {"id": "Toho", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Nissan",
-      "target": "Honda",
-      "type": "Strategic Alliance",
-      "date": "2026-04-07",
+      "source": "Toyota",
+      "target": "SPARX Group",
+      "type": "Joint Fund",
+      "date": "2026-04-08",
       "strength": "매우 높음",
-      "note": "전기차 공동 플랫폼 개발 및 배터리 부품 표준화"
+      "note": "전고체 및 차세대 공급망 강화를 위한 일본 모노즈쿠리 미래 펀드 II 가동"
     },
     {
-      "source": "Honda",
-      "target": "Mitsubishi Motors",
-      "type": "Strategic Alliance",
-      "date": "2026-04-07",
+      "source": "Neoen",
+      "target": "Toho",
+      "type": "Joint Venture",
+      "date": "2026-04-08",
       "strength": "매우 높음",
-      "note": "일본 3대 거대 완성차 연합 합류 및 규모의 경제 실현"
+      "note": "일본 간사이 지역 최대 규모 400MWh ESS 프로젝트 (Ako Battery) 건설"
     },
     {
-      "source": "METI",
+      "source": "Toyota",
       "target": "POSCO",
-      "type": "Subsidy Qualification",
-      "date": "2026-04-07",
-      "strength": "매우 높음",
-      "note": "1조 엔 흑연 안보 보조금 지급 요건 충족(비중국 공급망)"
-    },
-    {
-      "source": "JX Metals",
-      "target": "JERA",
-      "type": "Recycling JV",
-      "date": "2026-04-07",
+      "type": "Potential R&D",
+      "date": "2026-04-08",
       "strength": "높음",
-      "note": "JERA 수거망 기반 폐배터리 희유금속 90% 추출 인프라 협력"
+      "note": "전고체 파일럿 라인용 고체 전해질 및 양극재 B-Sample 테스트 진입 타진"
     },
     {
-      "source": "Idemitsu Kosan",
-      "target": "Toyota",
-      "type": "Supply Partnership",
-      "date": "2026-04-07",
-      "strength": "매우 높음",
-      "note": "전고체 배터리용 황화물계 고체 전해질 대량 양산 설비 가동"
-    },
-    {
-      "source": "GS Yuasa",
+      "source": "Toyota",
       "target": "POSCO",
       "type": "Potential Supply",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "strength": "매우 높음",
-      "note": "703억 엔 신공장향 보조금 적격 장기 가격 안정형 소재 제안"
+      "note": "노스캐롤라이나 140억 달러 공장향 북미 IRA 적격 양·음극재 장기 공급 논의"
     },
     {
-      "source": "POSCO",
-      "target": "JX Metals",
-      "type": "Potential Swap",
-      "date": "2026-04-07",
-      "strength": "보통",
-      "note": "일본 내 수직계열화 도시광산 대응 블랙 매스 및 정제 광물 스왑 타진"
+      "source": "Neoen",
+      "target": "POSCO",
+      "type": "Potential Turnkey",
+      "date": "2026-04-08",
+      "strength": "높음",
+      "note": "400MWh ESS향 비중국산 LFP 및 배터리 외함용 특수강 턴키 솔루션 제안"
     }
   ]
 }
