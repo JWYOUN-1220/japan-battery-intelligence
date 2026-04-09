@@ -1,10 +1,10 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "Toyota", "group": "OEM"},
     {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "Idemitsu Kosan", "group": "Material"},
     {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Neoen/Toho", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
@@ -12,33 +12,41 @@
       "source": "METI",
       "target": "POSCO",
       "type": "Regulation Compliance",
-      "date": "2026-04-09",
+      "date": "2026-04-08",
       "strength": "High",
       "note": "GX-ETS 의무화에 따른 저탄소 소재 데이터 증명 요구"
     },
     {
-      "source": "Toyota",
-      "target": "POSCO",
-      "type": "Potential R&D",
-      "date": "2026-04-09",
-      "strength": "Very High",
-      "note": "전고체 파일럿 라인용 고체 전해질 및 양극재 샘플 테스트 개시"
-    },
-    {
       "source": "GS Yuasa",
-      "target": "POSCO",
-      "type": "Supply Strategy",
-      "date": "2026-04-09",
-      "strength": "High",
-      "note": "가격 인상 기조 대응을 위한 장기 안정형 양극재 공급 논의"
+      "target": "Toyota",
+      "type": "Supply",
+      "date": "2026-04-08",
+      "strength": "Very High",
+      "note": "신형 RAV4용 고용량 리튬이온 배터리 본격 납품 및 단가 인상 적용"
     },
     {
-      "source": "Neoen/Toho",
+      "source": "Idemitsu Kosan",
+      "target": "Toyota",
+      "type": "Joint Development",
+      "date": "2026-04-08",
+      "strength": "High",
+      "note": "전고체 배터리용 황화물계 고체 전해질 대량 양산 설비 구축 가속"
+    },
+    {
+      "source": "Panasonic Energy",
       "target": "POSCO",
-      "type": "Potential Turnkey",
-      "date": "2026-04-09",
+      "type": "Potential Strategic Deal",
+      "date": "2026-04-08",
       "strength": "Medium",
-      "note": "400MWh ESS 프로젝트향 비중국 LFP 및 외함 특수강 융합 수주 타진"
+      "note": "그룹 통합 조달 체제 개편에 따른 소재 대량 턴키 조달 논의 가능성"
+    },
+    {
+      "source": "POSCO",
+      "target": "GS Yuasa",
+      "type": "Pricing Strategy",
+      "date": "2026-04-08",
+      "strength": "High",
+      "note": "원가 압박 대응을 위한 비중국 흑연/리튬 기반 가격 안정형 양극재 역제안"
     }
   ]
 }
