@@ -1,51 +1,44 @@
 {
   "nodes": [
+    {"id": "METI", "group": "Policy"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "SPARX Group", "group": "Finance"},
-    {"id": "Neoen", "group": "Energy"},
-    {"id": "Toho", "group": "Energy"},
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Neoen/Toho", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Toyota",
-      "target": "SPARX Group",
-      "type": "Joint Fund",
-      "date": "2026-04-08",
-      "strength": "매우 높음",
-      "note": "전고체 및 차세대 공급망 강화를 위한 일본 모노즈쿠리 미래 펀드 II 가동"
-    },
-    {
-      "source": "Neoen",
-      "target": "Toho",
-      "type": "Joint Venture",
-      "date": "2026-04-08",
-      "strength": "매우 높음",
-      "note": "일본 간사이 지역 최대 규모 400MWh ESS 프로젝트 (Ako Battery) 건설"
+      "source": "METI",
+      "target": "POSCO",
+      "type": "Regulation Compliance",
+      "date": "2026-04-09",
+      "strength": "High",
+      "note": "GX-ETS 의무화에 따른 저탄소 소재 데이터 증명 요구"
     },
     {
       "source": "Toyota",
       "target": "POSCO",
       "type": "Potential R&D",
-      "date": "2026-04-08",
-      "strength": "높음",
-      "note": "전고체 파일럿 라인용 고체 전해질 및 양극재 B-Sample 테스트 진입 타진"
+      "date": "2026-04-09",
+      "strength": "Very High",
+      "note": "전고체 파일럿 라인용 고체 전해질 및 양극재 샘플 테스트 개시"
     },
     {
-      "source": "Toyota",
+      "source": "GS Yuasa",
       "target": "POSCO",
-      "type": "Potential Supply",
-      "date": "2026-04-08",
-      "strength": "매우 높음",
-      "note": "노스캐롤라이나 140억 달러 공장향 북미 IRA 적격 양·음극재 장기 공급 논의"
+      "type": "Supply Strategy",
+      "date": "2026-04-09",
+      "strength": "High",
+      "note": "가격 인상 기조 대응을 위한 장기 안정형 양극재 공급 논의"
     },
     {
-      "source": "Neoen",
+      "source": "Neoen/Toho",
       "target": "POSCO",
       "type": "Potential Turnkey",
-      "date": "2026-04-08",
-      "strength": "높음",
-      "note": "400MWh ESS향 비중국산 LFP 및 배터리 외함용 특수강 턴키 솔루션 제안"
+      "date": "2026-04-09",
+      "strength": "Medium",
+      "note": "400MWh ESS 프로젝트향 비중국 LFP 및 외함 특수강 융합 수주 타진"
     }
   ]
 }
