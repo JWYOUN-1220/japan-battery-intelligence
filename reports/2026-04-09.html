@@ -2,51 +2,128 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan Battery & GX Market Intelligence Report - 2026.04.09</title>
     <style>
-        :root { --posco-blue: #004b91; --posco-light-blue: #00a0e9; --posco-gray: #4b4b4b; --bg-light: #f8f9fa; --high-bg: #ffebeb; --high-txt: #d32f2f; }
-        body { font-family: 'Malgun Gothic', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; }
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
         .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
         .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
         .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
-        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 25px; margin-bottom: 20px; transition: 0.3s; }
-        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
         .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 10px; background: var(--high-bg); color: var(--high-txt); }
         .news-title { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
         .today-impact { background: #fff4e5; padding: 15px; border-left: 4px solid #ef6c00; margin: 15px 0; font-size: 14.5px; }
-        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; border: 1px dashed #b8c5d6; margin-top: 15px; }
-        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; border: 1px dashed #b8c5d6; margin-top: 12px; font-size: 14.5px; }
+        
+        /* 시각화 섹션 추가 */
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>Japan Battery & GX Market Intelligence Report</h1>
-            <p>Date: 2026.04.09 | Analyst: MI Intelligence System | Real-time Fact Based</p>
+            <p>Date: 2026.04.09 | Analyst: MI Intelligence System | Real-time Fact Edition</p>
         </div>
+
         <div class="summary-box">
             <h2>Executive Summary</h2>
-            <p>오늘 일본 시장은 <strong>'탄소 배출권 의무화(GX-ETS)'</strong>와 <strong>'토요타 전고체 파일럿 생산 개시'</strong>라는 두 개의 실물 팩트가 시장을 견인하고 있습니다. 규제가 재무적 비용으로 전이되고 차세대 기술이 공장 설비 단계로 이동함에 따라 공급망의 전면 재편이 시작되었습니다.</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="badge">중요도: 매우 높음</span>
-            <div class="news-title">토요타, 전고체 배터리(ASSB) 파일럿 생산 개시 및 스펙 확정</div>
-            <p>2027~28년 양산을 목표로 소규모 생산 라인을 가동했습니다. 450~500Wh/kg의 초고에너지 밀도와 10분 충전 성능을 검증하는 실무 단계에 진입했습니다.</p>
-            <div class="today-impact"><strong>[오늘자 실효성]</strong> 금일부터 파일럿 라인에 투입될 고체 전해질 및 특수 양극재 샘플의 공식 품질 인증(Qualification) 절차가 조달 본부에서 시작되었습니다.</div>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 포스코 고체 전해질 샘플 및 전고체 전용 단결정 양극재를 도요타 파일럿 라인에 긴급 제안하여 차세대 표준 선점.</div>
+            <p>오늘 일본 배터리 시장은 <strong>'도요타의 전고체 파일럿 생산 개시'</strong>와 <strong>'400MWh급 초대형 ESS 인프라 프로젝트 발표'</strong>로 요약됩니다. 도요타는 전고체 배터리를 실험실에서 생산 현장으로 끌어내며 밸류체인 수직계열화 펀드를 가동했고, 네오엔은 일본 최대 ESS 프로젝트를 공개했습니다. 포스코그룹은 전고체 품질 인증(Qual) 진입과 ESS용 비중국 LFP 및 특수 강재 융합 수주에 역량을 집중해야 합니다.</p>
         </div>
 
-        <div class="news-card">
-            <span class="badge">중요도: 매우 높음</span>
-            <div class="news-title">일본 GX-ETS 탄소배출권 의무화 본격 가동</div>
-            <p>4월 1일부로 대형 배출 기업에 대한 탄소 감축 의무가 부여되는 2단계가 시행되었습니다. 초과 배출 시 배출권 구매가 의무화되어 비용 부담이 현실화되었습니다.</p>
-            <div class="today-impact"><strong>[오늘자 실효성]</strong> 셀 메이커들이 소재 벤더에게 신년도 탄소 발자국(LCA) 데이터를 제출하도록 강제하는 실무 지침이 금일 공식 하달되었습니다.</div>
-            <div class="posco-rel"><strong>POSCO Opportunity:</strong> 저탄소 공정 데이터를 보유한 포스코 소재를 '일본 탄소세 절감 솔루션'으로 마케팅하여 공급 우선순위 확보.</div>
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <span class="badge">중요도: 매우 높음</span>
+                <div class="news-title">1. 도요타, 전고체 배터리(ASSB) 소규모 파일럿 생산 공식 시작</div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">2027~28년 양산을 목표로 정부 승인을 획득한 전고체 배터리 파일럿 라인을 공식 가동했습니다. 타겟 스펙은 에너지 밀도 450~500Wh/kg, 10분 내 80% 충전으로, 단순 연구 단계를 벗어나 실제 차량 탑재를 위한 공정 최적화 및 셀 조립 단계에 진입했음을 의미합니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 파일럿 라인 가동에 따라, 고체 전해질 및 특수 양극재 벤더들의 샘플 테스트와 품질 인증(Qualification) 절차가 금일부터 실무적으로 개시되는 결정적 시점입니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코 고체 전해질 샘플 및 전고체 전용 단결정 양극재를 도요타 파일럿 라인에 긴급 제안하여 초기 표준 스펙 선점.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <span class="badge">중요도: 매우 높음</span>
+                <div class="news-title">2. Neoen-Toho, 간사이 지역 400MWh 규모 일본 최대 ESS 프로젝트 발표</div>
+                <span class="content-label">주요 내용</span>
+                <p class="content-text">프랑스 네오엔과 일본 토호가 협력하여 100MW/400MWh급의 초대형 계통용 축전소 'Ako Battery' 건설을 확정했습니다. 2028년 상업 가동을 목표로 하는 이 프로젝트는 일본 전력 그리드 안정성을 지원하는 단일 규모 최대 인프라가 될 전망입니다.</p>
+                <div class="today-impact">
+                    <strong>[오늘자 실효성]</strong> 프로젝트 공식 발표와 함께 EPC 파트너 선정 및 400MWh급 거대 BESS 시스템에 대한 실무적 발주가 금월부터 즉각 개시되는 단계입니다.
+                </div>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 초대형 ESS에 필수적인 화재 안전성 및 가격 경쟁력을 갖춘 비중국산 LFP 배터리 소재와 ESS 전용 외함 특수강(PosMAC) 턴키 제안.
+                </div>
+            </div>
+
         </div>
 
-        <div class="footer">대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group</div>
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>차세대 제조</strong><br>도요타 전고체 파일럿 및 모노즈쿠리 펀드 가동</div>
+            <div class="impact-step"><strong>셀/완성차</strong><br>GS유아사 단가 인상 실효 및 도요타 신차 탑재</div>
+            <div class="impact-step"><strong>GX 인프라</strong><br>네오엔-토호 400MWh급 초대형 ESS 구축 착수</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>전략적 기회 (Action Items)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>전고체 퀄리피케이션 진입</strong></td>
+                        <td>도요타 전고체 파일럿 라인 가동에 맞춰 포스코 고체 전해질 및 전용 양극재 샘플을 긴급 투입하여 초기 스펙 표준화 파트너 합류</td>
+                    </tr>
+                    <tr>
+                        <td><strong>대형 ESS 인프라 융합 수주</strong></td>
+                        <td>네오엔-토호 400MWh 프로젝트에 포스코 LFP 양극재 기반 셀과 포스코스틸리온 ESS 전용 외함 특수강 융합 턴키 제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>가격 안정형 소재 영업</strong></td>
+                        <td>일본 제조사의 가격 인상 기조에 대응하여 포스코 광산 자산 기반 '장기 가격 고정형' 비중국 소재 패키지를 통한 신규 수주 확보</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group
+        </div>
     </div>
 </body>
 </html>
