@@ -1,52 +1,52 @@
 {
   "nodes": [
+    {"id": "Energy Vault", "group": "Energy"},
+    {"id": "Nihon Kagaku Sangyo", "group": "Recycling"},
     {"id": "METI", "group": "Policy"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Idemitsu Kosan", "group": "Material"},
     {"id": "Panasonic Energy", "group": "Cell"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "METI",
+      "source": "Energy Vault",
       "target": "POSCO",
-      "type": "Regulation Compliance",
-      "date": "2026-04-08",
+      "type": "Potential Turnkey",
+      "date": "2026-04-10",
       "strength": "High",
-      "note": "GX-ETS 의무화에 따른 저탄소 소재 데이터 증명 요구"
+      "note": "850MW 규모 일본 ESS 프로젝트용 LFP 및 특수강 융합 조달 논의"
     },
     {
-      "source": "GS Yuasa",
-      "target": "Toyota",
-      "type": "Supply",
-      "date": "2026-04-08",
+      "source": "METI",
+      "target": "Nihon Kagaku Sangyo",
+      "type": "Subsidy Support",
+      "date": "2026-04-10",
       "strength": "Very High",
-      "note": "신형 RAV4용 고용량 리튬이온 배터리 본격 납품 및 단가 인상 적용"
+      "note": "중요광물 공급 확보 계획 인증 기반 리사이클 파일럿 설비 완공"
     },
     {
-      "source": "Idemitsu Kosan",
-      "target": "Toyota",
-      "type": "Joint Development",
-      "date": "2026-04-08",
+      "source": "Nihon Kagaku Sangyo",
+      "target": "POSCO",
+      "type": "Tech Benchmarking",
+      "date": "2026-04-10",
+      "strength": "Medium",
+      "note": "블랙 매스 정제 공정 상호 검증 및 향후 광물 스왑 파트너십 타진"
+    },
+    {
+      "source": "METI",
+      "target": "GS Yuasa",
+      "type": "Regulation Compliance",
+      "date": "2026-04-10",
       "strength": "High",
-      "note": "전고체 배터리용 황화물계 고체 전해질 대량 양산 설비 구축 가속"
+      "note": "GX-ETS 의무화에 따른 탄소 배출 관리 지침 하달"
     },
     {
       "source": "Panasonic Energy",
       "target": "POSCO",
-      "type": "Potential Strategic Deal",
-      "date": "2026-04-08",
-      "strength": "Medium",
-      "note": "그룹 통합 조달 체제 개편에 따른 소재 대량 턴키 조달 논의 가능성"
-    },
-    {
-      "source": "POSCO",
-      "target": "GS Yuasa",
-      "type": "Pricing Strategy",
-      "date": "2026-04-08",
+      "type": "Integrated Supply",
+      "date": "2026-04-10",
       "strength": "High",
-      "note": "원가 압박 대응을 위한 비중국 흑연/리튬 기반 가격 안정형 양극재 역제안"
+      "note": "그룹 통합 조달 체제 개편에 따른 저탄소 배터리 소재 납품 논의"
     }
   ]
 }
