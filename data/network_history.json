@@ -810,3 +810,40 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-13",
+      "event": "일본 방위성 무인기 방어체계 'SHIELD' 가동 및 전고체 요구 사양 발표",
+      "company": ["Ministry of Defense (MoD)"],
+      "type": "국방/안보 수요",
+      "strength": "매우 높음",
+      "summary": "1,000억 엔 투입 방어 체계 본격화. 영하 40도 환경을 견디는 전고체 배터리가 필수 작전 사양으로 지정됨.",
+      "impact": "전고체 배터리가 민수용을 넘어 초고부가가치 방산 시장으로 급격히 확대. 관련 핵심 소재 조기 납품 기회 발생.",
+      "source": "The Strategist",
+      "url": "Internal DB"
+    },
+    {
+      "date": "2026-04-13",
+      "event": "글로벌 자본의 일본 메가 ESS(BESS) 시장 1,200MW 이상 진격",
+      "company": ["Energy Vault", "Neoen"],
+      "type": "인프라 투자",
+      "strength": "매우 높음",
+      "summary": "에너지 볼트 850MW, 네오엔 400MWh 등 해외 자본이 일본 그리드 제약 해소를 위해 유틸리티급 투자를 연이어 실가동함.",
+      "impact": "일본 내 LFP 및 ESS 컨테이너용 특수강 수요의 폭발적 증가. 완성품 셀 벤더와의 협력을 통한 턴키 제안 필수.",
+      "source": "ESG Today, Neoen PR",
+      "url": "Internal DB"
+    },
+    {
+      "date": "2026-04-13",
+      "event": "GS유아사, 상용차 및 드론 겨냥 차세대 고내구성 배터리 라인업 실효",
+      "company": ["GS Yuasa"],
+      "type": "제품 상용화",
+      "strength": "높음",
+      "summary": "EV 캐즘에 대응해 4월 신년도부터 상용 인프라/물류 시장 보조 전원에 특화된 고성능 배터리 공급을 본격화함.",
+      "impact": "승용차 외 특수 목적 모빌리티(PBV) 시장의 캐시카우화. 진동과 내구성을 보장하는 맞춤형 소재/강재 공급망 요구 확대.",
+      "source": "FactorFocus",
+      "url": "Internal DB"
+    }
+  ]
+}
