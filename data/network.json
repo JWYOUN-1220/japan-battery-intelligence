@@ -1,47 +1,39 @@
 {
   "nodes": [
-    {"id": "Ministry of Defense (MoD)", "group": "Policy"},
-    {"id": "Energy Vault", "group": "Energy"},
-    {"id": "Neoen", "group": "Energy"},
+    {"id": "Toyota", "group": "OEM"},
     {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Mitsubishi Materials", "group": "Refining"},
+    {"id": "Ministry of Defense (MoD)", "group": "Policy"},
+    {"id": "Energy Vault / Neoen", "group": "Energy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
+      "source": "GS Yuasa",
+      "target": "Toyota",
+      "type": "OE Supply",
+      "strength": "Very High",
+      "note": "신형 RAV4 하이브리드용 에너지 밀도 10% 향상 신형 셀(EHW4GA) 탑재"
+    },
+    {
       "source": "Ministry of Defense (MoD)",
       "target": "POSCO",
-      "type": "Defense ROC Compliance",
-      "strength": "매우 높음",
-      "note": "SHIELD 무인기용 극한 환경(영하 40도) 대응 고체 전해질 및 단결정 소재 요구"
+      "type": "Defense ROC",
+      "strength": "High",
+      "note": "무인기 방어체계용 영하 40도 극한 환경 대응 전고체 배터리 소재 요구"
     },
     {
-      "source": "Energy Vault",
+      "source": "Energy Vault / Neoen",
       "target": "POSCO",
       "type": "BESS Turnkey",
-      "strength": "매우 높음",
-      "note": "850MW급 일본 포트폴리오향 비중국 LFP 및 철강 외함 솔루션 제안"
-    },
-    {
-      "source": "Neoen",
-      "target": "POSCO",
-      "type": "BESS Turnkey",
-      "strength": "높음",
-      "note": "400MWh Ako Battery 프로젝트향 융합 수주 타진"
+      "strength": "High",
+      "note": "1.2GW 규모 대형 ESS 프로젝트향 LFP 소재 및 철강 외함 융합 조달"
     },
     {
       "source": "GS Yuasa",
       "target": "POSCO",
-      "type": "Material Supply",
-      "strength": "보통",
-      "note": "차세대 상용차/드론용 특수 배터리에 내구성이 강화된 소재 패키지 공급"
-    },
-    {
-      "source": "Mitsubishi Materials",
-      "target": "POSCO",
-      "type": "Recycle Swap",
-      "strength": "보통",
-      "note": "미국 연계 희토류 및 자원 리사이클링 생태계 한-일-미 공조 타진"
+      "type": "Material Partnership",
+      "strength": "High",
+      "note": "저저항·고출력 셀 양산을 위한 포스코퓨처엠 고성능 소재 공급 논의"
     }
   ]
 }
