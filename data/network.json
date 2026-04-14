@@ -1,39 +1,49 @@
 {
   "nodes": [
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Ministry of Defense (MoD)", "group": "Policy"},
-    {"id": "Energy Vault / Neoen", "group": "Energy"},
+    {"id": "AESC", "group": "Cell"},
+    {"id": "NEXTES", "group": "Energy"},
+    {"id": "JX Metals", "group": "Recycling"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Zoox", "group": "OEM"},
+    {"id": "GSL ENERGY", "group": "Cell"},
+    {"id": "METI", "group": "Policy"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "GS Yuasa",
-      "target": "Toyota",
-      "type": "OE Supply",
+      "source": "AESC",
+      "target": "NEXTES",
+      "type": "Strategic Supply",
       "strength": "Very High",
-      "note": "신형 RAV4 하이브리드용 에너지 밀도 10% 향상 신형 셀(EHW4GA) 탑재"
+      "note": "1.5GWh 규모 700Ah급 초고용량 ESS 셀 일본 최대 계약 체결"
     },
     {
-      "source": "Ministry of Defense (MoD)",
+      "source": "JX Metals",
       "target": "POSCO",
-      "type": "Defense ROC",
+      "type": "Tech Benchmarking",
       "strength": "High",
-      "note": "무인기 방어체계용 영하 40도 극한 환경 대응 전고체 배터리 소재 요구"
+      "note": "리튬 회수율 90% 혁신 공정 달성에 따른 기술 벤치마킹 및 물량 스왑 논의"
     },
     {
-      "source": "Energy Vault / Neoen",
-      "target": "POSCO",
-      "type": "BESS Turnkey",
+      "source": "Panasonic Energy",
+      "target": "Zoox",
+      "type": "Supply",
       "strength": "High",
-      "note": "1.2GW 규모 대형 ESS 프로젝트향 LFP 소재 및 철강 외함 융합 조달"
+      "note": "자율주행 로보택시 전용 2170 배터리 초도 물량 상업 인도 개시"
     },
     {
-      "source": "GS Yuasa",
+      "source": "AESC",
       "target": "POSCO",
-      "type": "Material Partnership",
-      "strength": "High",
-      "note": "저저항·고출력 셀 양산을 위한 포스코퓨처엠 고성능 소재 공급 논의"
+      "type": "Material Supply",
+      "strength": "Very High",
+      "note": "700Ah급 ESS 셀 폼팩터에 최적화된 양·음극재 턴키 조달 타진"
+    },
+    {
+      "source": "GSL ENERGY",
+      "target": "POSCO",
+      "type": "High-end Material",
+      "strength": "Medium",
+      "note": "드론용 400Wh/kg 세미솔리드 배터리향 하이니켈 소재 제안"
     }
   ]
 }
