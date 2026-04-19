@@ -1,17 +1,47 @@
 {
   "nodes": [
+    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
     {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "Toyota", "group": "OEM", "label": "토요타"},
-    {"id": "GS Yuasa", "group": "Cell", "label": "GS유아사"},
-    {"id": "Panasonic", "group": "Cell", "label": "파나소닉 에너지"},
-    {"id": "JX Metals", "group": "Recycling", "label": "JX금속"},
+    {"id": "Mitsubishi Corp", "group": "Energy", "label": "미쓰비시 상사"},
+    {"id": "Battery Alliance (9 Companies)", "group": "Mfg", "label": "9개사 배터리 제조 연합"},
+    {"id": "Japanese OEMs (Toyota/Panasonic)", "group": "Cell", "label": "주요 배터리 제조사"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "METI", "target": "POSCO", "type": "Regulation", "note": "GX-ETS 의무화에 따른 탄소 데이터 요구"},
-    {"source": "Toyota", "target": "GS Yuasa", "type": "Supply", "note": "RAV4용 신형 셀 채택"},
-    {"source": "Toyota", "target": "POSCO", "type": "Future Qual", "note": "전고체 파일럿 라인용 소재 인증"},
-    {"source": "JX Metals", "target": "POSCO", "type": "Partnership", "note": "리튬 회수 기술 교류 및 스왑"},
-    {"source": "Panasonic", "target": "POSCO", "type": "Supply", "note": "로보택시용 하이엔드 양극재 공급 논의"}
+    {
+      "source": "Hitachi Energy",
+      "target": "POSCO",
+      "type": "Infrastructure Supply",
+      "strength": "Very High",
+      "note": "북미 10억 불 투자 전력망 현대화 프로젝트용 Hyper NO 강판 턴키 조달 타진"
+    },
+    {
+      "source": "METI",
+      "target": "Hitachi Energy",
+      "type": "Subsidy",
+      "strength": "High",
+      "note": "데이터센터 스마트 그리드 연동 시스템 2,000억 엔 지원"
+    },
+    {
+      "source": "Japanese OEMs (Toyota/Panasonic)",
+      "target": "POSCO",
+      "type": "R&D Partnership",
+      "strength": "High",
+      "note": "저온 성능 개선 프리미엄 LFP 양극재 소재 공동 연구 및 공급 논의"
+    },
+    {
+      "source": "Mitsubishi Corp",
+      "target": "POSCO",
+      "type": "Specialty Steel Supply",
+      "strength": "Medium",
+      "note": "북미 블루 수소/암모니아 터미널용 극저온 고망간강 및 CCUS 강재 규격 등재"
+    },
+    {
+      "source": "Battery Alliance (9 Companies)",
+      "target": "POSCO",
+      "type": "Standardization",
+      "strength": "High",
+      "note": "표준화 고속 배터리 생산 라인 내 포스코 소재 레퍼런스 등록"
+    }
   ]
 }
