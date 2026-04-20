@@ -1,47 +1,17 @@
 {
   "nodes": [
-    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "Mitsubishi Corp", "group": "Energy", "label": "미쓰비시 상사"},
-    {"id": "Battery Alliance (9 Companies)", "group": "Mfg", "label": "9개사 배터리 제조 연합"},
-    {"id": "Japanese OEMs (Toyota/Panasonic)", "group": "Cell", "label": "주요 배터리 제조사"},
-    {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
+    {"id": "METI", "group": "Policy"},
+    {"id": "Toyota/Honda (ABTC)", "group": "OEM"},
+    {"id": "Hitachi Energy", "group": "Energy"},
+    {"id": "Samsung C&T", "group": "Infra"},
+    {"id": "Energy Vault", "group": "Energy"},
+    {"id": "POSCO", "group": "Material"}
   ],
   "links": [
-    {
-      "source": "Hitachi Energy",
-      "target": "POSCO",
-      "type": "Infrastructure Supply",
-      "strength": "Very High",
-      "note": "북미 10억 불 투자 전력망 현대화 프로젝트용 Hyper NO 강판 턴키 조달 타진"
-    },
-    {
-      "source": "METI",
-      "target": "Hitachi Energy",
-      "type": "Subsidy",
-      "strength": "High",
-      "note": "데이터센터 스마트 그리드 연동 시스템 2,000억 엔 지원"
-    },
-    {
-      "source": "Japanese OEMs (Toyota/Panasonic)",
-      "target": "POSCO",
-      "type": "R&D Partnership",
-      "strength": "High",
-      "note": "저온 성능 개선 프리미엄 LFP 양극재 소재 공동 연구 및 공급 논의"
-    },
-    {
-      "source": "Mitsubishi Corp",
-      "target": "POSCO",
-      "type": "Specialty Steel Supply",
-      "strength": "Medium",
-      "note": "북미 블루 수소/암모니아 터미널용 극저온 고망간강 및 CCUS 강재 규격 등재"
-    },
-    {
-      "source": "Battery Alliance (9 Companies)",
-      "target": "POSCO",
-      "type": "Standardization",
-      "strength": "High",
-      "note": "표준화 고속 배터리 생산 라인 내 포스코 소재 레퍼런스 등록"
-    }
+    { "source": "METI", "target": "POSCO", "type": "Regulation", "note": "GX-ETS 하한선(1,700엔) 설정에 따른 탄소 비용 영업 타진" },
+    { "source": "Toyota/Honda (ABTC)", "target": "POSCO", "type": "Data Compliance", "note": "블록체인 기반 배터리 추적 시스템(ABTC) 데이터 직연동 요구" },
+    { "source": "Hitachi Energy", "target": "Samsung C&T", "type": "Strategic Alliance", "note": "글로벌 초고압 교류(HVAC) 전력망 한-일 연합군 구축" },
+    { "source": "Hitachi Energy", "target": "POSCO", "type": "Material Standard", "note": "한-일 연합 HVAC 프로젝트향 Hyper NO 및 구조용 강재 납품" },
+    { "source": "Energy Vault", "target": "POSCO", "type": "BESS Turnkey", "note": "GW급 일본 ESS향 LFP 및 특수강 융합 제안" }
   ]
 }
