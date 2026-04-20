@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Intel Report - 2026.04.21</title>
+    <style>
+        :root {
+            --posco-blue: #004b91; --posco-light-blue: #00a0e9; --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa; --high-bg: #ffebeb; --high-txt: #d32f2f;
+        }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 10px; background: var(--high-bg); color: var(--high-txt); }
+        .news-title { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .today-impact { background: #fff4e5; padding: 15px; border-left: 4px solid #ef6c00; margin: 15px 0; font-size: 14.5px; border-radius: 0 4px 4px 0; }
+        
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
+        
+        .table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f8f9fa; color: var(--posco-blue); font-weight: 700; padding: 15px; border-bottom: 2px solid #eee; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #f0f0f0; font-size: 14.5px; vertical-align: top; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Report</h1>
+            <p>Date: 2026.04.21 | Analyst: Gemini Intelligence System</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>오늘 일본 시장의 거대한 흐름은 <strong>'데이터 장벽(ABTC)의 실물화'</strong>와 <strong>'한-일 인프라 연합(히타치-삼성물산)'</strong>으로 요약됩니다. 소재의 물리적 납품보다 블록체인 기반의 탄소/원산지 데이터 등록이 우선시되는 시대가 열렸으며, GX-ETS 탄소 가격 하한선(1,700엔) 설정으로 저탄소 소재 도입의 강력한 재무적 명분이 생겼습니다. 포스코그룹은 ABTC 시스템에 데이터를 직결하고 한-일 연합군에 초고효율 전기강판을 표준 자재로 밀어넣어야 합니다.</p>
+        </div>
+
+        <h2 class="section-title">Key News Section</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <span class="badge">중요도: 매우 높음</span>
+                <div class="news-title">1. 토요타-혼다 연합, 배터리 추적 센터(ABTC) 가동 및 데이터 등록 의무화</div>
+                <p class="content-text">원산지 및 탄소 이력을 블록체인에 등록하는 시스템이 가동되었습니다. 비중국산 증빙 등 글로벌 규제 대응을 위해, 소재의 실물 납품 이전에 '데이터 승인'이 선행되어야 하는 데이터 퍼스트 조달 체계가 정착되었습니다.</p>
+                <div class="today-impact"><strong>[오늘자 실효성]</strong> 일본 자동차 부품 산업 협회(JAPIA) 가이드라인에 따라, 납품 벤더들의 시스템 연동 및 원산지 이력 증빙 실무가 금주부터 강제되고 있습니다.</div>
+            </div>
+
+            <div class="news-card">
+                <span class="badge">중요도: 매우 높음</span>
+                <div class="news-title">2. 히타치 에너지-삼성물산, '초고압 교류(HVAC)' 글로벌 전략적 동맹</div>
+                <p class="content-text">일본의 전력 기기 기술력과 한국의 시공 능력(EPC)이 결합된 '한-일 인프라 연합군'이 탄생했습니다. 북미 및 유럽의 거대 전력망(HVAC) 현대화 수주전에 공동 대응하며 시장 지배력을 강화합니다.</p>
+                <div class="today-impact"><strong>[오늘자 실효성]</strong> 대규모 계통 통합 프로젝트 위주로 시장이 재편됨에 따라, 양사 연합 프로젝트에 투입될 전기강판 및 구조용 강재의 턴키 조달 논의가 시작되었습니다.</div>
+            </div>
+
+            <div class="news-card">
+                <span class="badge">중요도: 매우 높음</span>
+                <div class="news-title">3. 일본 GX-ETS 2단계 의무화... 탄소 가격 하한선(1,700엔/톤) 설정</div>
+                <p class="content-text">대형 기업 대상 탄소 배출권 거래제가 의무화되었으며, 가격 급락을 막기 위해 하한선을 톤당 1,700엔으로 고정했습니다. 탄소 배출이 환경 리스크를 넘어 '강제적 재무 부채'로 확정되었습니다.</p>
+                <div class="today-impact"><strong>[오늘자 실효성]</strong> 하한선 제도로 인해 저탄소 소재 도입에 따른 재무적 이익(ROI)이 고정됨에 따라, 조달 부서의 저탄소 소재 구매 예산 편성이 활발해졌습니다.</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Supply Chain Impact</h2>
+        <div class="impact-flow-container">
+            <div class="impact-step"><strong>데이터/규제 장벽</strong><br>ABTC 데이터 의무화 & GX-ETS 하한선 도입<br>(데이터 없으면 납품 불가 & 탄소 비용 확정)</div>
+            <div class="impact-step"><strong>글로벌 인프라 연합</strong><br>히타치-삼성물산 HVAC 동맹 결성<br>(초고효율 철강/기기 대규모 턴키 수요)</div>
+            <div class="impact-step"><strong>로컬 생태계 팽창</strong><br>CEV 보조금 개편 & GW급 BESS 시장 폭발<br>(비중국 소재 국산화 강제)</div>
+        </div>
+
+        <h2 class="section-title">POSCO Opportunity</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>구분</th><th>전략적 기회 (Action Items)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>ABTC 데이터 연동</strong></td><td>토요타-혼다 연합군 진입을 위해 포스코 소재의 LCA 및 원산지 증빙 데이터를 ABTC 시스템에 API로 자동 연동하는 IT 협의체 구성</td></tr>
+                    <tr><td><strong>한-일 연합 표준 자재</strong></td><td>히타치-삼성물산 글로벌 전력망 프로젝트에 포스코 Hyper NO 전기강판을 최우선 표준 스펙(Standard Spec)으로 등재</td></tr>
+                    <tr><td><strong>탄소 ROI 재무 영업</strong></td><td>GX-ETS 하한선(1,700엔)을 역이용하여, 포스코 저탄소 강재 도입 시 고객사가 얻는 '배출권 비용 절감액'을 명확히 수치화한 영업 전개</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
