@@ -1,42 +1,17 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Toyota/Honda (PMAC)", "group": "OEM"},
-    {"id": "Hitachi Energy", "group": "Energy"},
-    {"id": "Samsung C&T", "group": "Infra"},
-    {"id": "Mitsubishi Corp", "group": "Energy"},
-    {"id": "POSCO", "group": "Material"}
+    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
+    {"id": "Samsung C&T", "group": "Infra", "label": "삼성물산"},
+    {"id": "Kawasaki/Kobe Heavy", "group": "Mfg", "label": "일본 수소엔진 제조사"},
+    {"id": "MLIT", "group": "Policy", "label": "국토교통성"},
+    {"id": "Toyota/Honda (PMAC)", "group": "OEM", "label": "일본 통상 연합"},
+    {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {
-      "source": "Toyota/Honda (PMAC)",
-      "target": "POSCO",
-      "type": "Compliance Data",
-      "note": "북미 무관세 혜택 수호를 위한 비중국 소재 원산지 증빙 데이터 요구"
-    },
-    {
-      "source": "Hitachi Energy",
-      "target": "Samsung C&T",
-      "type": "Strategic Alliance",
-      "note": "글로벌 초고압 교류(HVAC) 그리드 확장을 위한 한-일 인프라 연합 결성"
-    },
-    {
-      "source": "Hitachi Energy",
-      "target": "POSCO",
-      "type": "Material Standard",
-      "note": "한-일 연합 전력망 프로젝트향 Hyper NO 전기강판 등 표준 자재 록인 타진"
-    },
-    {
-      "source": "METI",
-      "target": "Mitsubishi Corp",
-      "type": "Subsidy",
-      "note": "수소 공급망 상업화 구축을 위한 3,000억 엔 규모 펀드 지원"
-    },
-    {
-      "source": "Mitsubishi Corp",
-      "target": "POSCO",
-      "type": "Specialty Steel Supply",
-      "note": "수소/암모니아 터미널 인프라용 극저온 특수강 조달 논의"
-    }
+    {"source": "Hitachi Energy", "target": "Samsung C&T", "type": "Strategic Alliance", "note": "유럽 HVAC 전력망 진출을 위한 한-일 인프라 연합 구축"},
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Material Standard", "note": "유럽 진출용 저탄소 인증 Hyper NO 전기강판 턴키 논의"},
+    {"source": "Kawasaki/Kobe Heavy", "target": "POSCO", "type": "Specialty Steel Supply", "note": "수소 혼소 가스 엔진용 고내열 강재 조달"},
+    {"source": "MLIT", "target": "Toyota/Honda (PMAC)", "type": "Safety Regulation", "note": "항공 및 모빌리티 화재 안전 규제 강화"},
+    {"source": "Toyota/Honda (PMAC)", "target": "POSCO", "type": "Compliance Data", "note": "화재 안전 및 비중국 원산지 무관세 인증 데이터 연동 요구"}
   ]
 }
