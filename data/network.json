@@ -1,19 +1,18 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
+    {"id": "Nissan", "group": "OEM", "label": "닛산"},
+    {"id": "Toyota/Honda (ABTC)", "group": "OEM", "label": "일본 통상 연합"},
     {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "Samsung C&T", "group": "Infra", "label": "삼성물산"},
-    {"id": "Mitsubishi Corp / JERA", "group": "Energy", "label": "미쓰비시 상사/JERA"},
-    {"id": "Toyota", "group": "OEM", "label": "토요타"},
-    {"id": "Sion Power", "group": "Cell", "label": "Sion Power (리튬메탈)"},
+    {"id": "Mitsubishi Corp", "group": "Energy", "label": "미쓰비시 상사"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "Hitachi Energy", "target": "Samsung C&T", "type": "Strategic Alliance", "note": "유럽 전력망 진출을 위한 한-일 인프라 EPC 연합"},
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Material Standard", "note": "유럽 진출용 저탄소 인증 Hyper NO 전기강판 턴키 조달"},
-    {"source": "METI", "target": "Mitsubishi Corp / JERA", "type": "CfD Subsidy", "note": "글로벌 블루 암모니아/수소 인프라 15년 차액 보전 지원"},
-    {"source": "Mitsubishi Corp / JERA", "target": "POSCO", "type": "Specialty Steel", "note": "수소 터미널 및 배관용 초저온 특수강재 공급 타진"},
-    {"source": "Toyota", "target": "POSCO", "type": "R&D Qual", "note": "차세대 BEV 800km 타겟 하이니켈 양극재 인증"},
-    {"source": "Sion Power", "target": "POSCO", "type": "High-end Material", "note": "500Wh/kg급 방산 드론용 차세대 초고밀도 소재 공급 논의"}
+    {"source": "Nissan", "target": "POSCO", "type": "External Sourcing", "note": "LFP 공장 취소에 따른 범용 소재 전면 외부 조달"},
+    {"source": "Nissan", "target": "POSCO", "type": "R&D Qual", "note": "23층 전고체 파일럿 라인향 고체 전해질 샘플 인증 타진"},
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Data Compliance", "note": "EcoSpace 플랫폼 내 저탄소 강판 LCA 데이터 우선 등록"},
+    {"source": "Toyota/Honda (ABTC)", "target": "POSCO", "type": "Data Compliance", "note": "무관세 혜택 증빙용 비중국 클린 데이터 API 직연동 요구"},
+    {"source": "METI", "target": "Mitsubishi Corp", "type": "CfD Subsidy", "note": "수소 터미널 투자 리스크 소거를 위한 차액 보조금 지원"},
+    {"source": "Mitsubishi Corp", "target": "POSCO", "type": "Specialty Steel", "note": "장기 인프라용 초저온/수소 이송 특수 강재 턴키 조달"}
   ]
 }
