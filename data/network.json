@@ -1,18 +1,16 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "Nissan", "group": "OEM", "label": "닛산"},
-    {"id": "Toyota/Honda (ABTC)", "group": "OEM", "label": "일본 통상 연합"},
-    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "Mitsubishi Corp", "group": "Energy", "label": "미쓰비시 상사"},
+    {"id": "GBP", "group": "Infra", "label": "GBP (BESS 허브)"},
+    {"id": "Dragonfly Energy", "group": "Tech", "label": "Dragonfly Energy"},
+    {"id": "Japanese OEMs", "group": "OEM", "label": "일본 완성차/셀 메이커"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "Nissan", "target": "POSCO", "type": "External Sourcing", "note": "LFP 공장 취소에 따른 범용 소재 전면 외부 조달"},
-    {"source": "Nissan", "target": "POSCO", "type": "R&D Qual", "note": "23층 전고체 파일럿 라인향 고체 전해질 샘플 인증 타진"},
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Data Compliance", "note": "EcoSpace 플랫폼 내 저탄소 강판 LCA 데이터 우선 등록"},
-    {"source": "Toyota/Honda (ABTC)", "target": "POSCO", "type": "Data Compliance", "note": "무관세 혜택 증빙용 비중국 클린 데이터 API 직연동 요구"},
-    {"source": "METI", "target": "Mitsubishi Corp", "type": "CfD Subsidy", "note": "수소 터미널 투자 리스크 소거를 위한 차액 보조금 지원"},
-    {"source": "Mitsubishi Corp", "target": "POSCO", "type": "Specialty Steel", "note": "장기 인프라용 초저온/수소 이송 특수 강재 턴키 조달"}
+    {"source": "METI", "target": "Japanese OEMs", "type": "Subsidy", "note": "LFP 자립화를 위한 3.3조 원 대규모 보조금 지급"},
+    {"source": "Japanese OEMs", "target": "POSCO", "type": "External Sourcing", "note": "보조금 수령 요건에 부합하는 완벽한 비중국 LFP 소재 조달"},
+    {"source": "METI", "target": "POSCO", "type": "Regulation", "note": "순환경제 플랜(리사이클 함량 의무화) 달성을 위한 재생 광물 협력"},
+    {"source": "GBP", "target": "POSCO", "type": "Supply", "note": "야마구치 BESS 제조 허브용 PosMAC 특수강 및 소재 턴키 발주"},
+    {"source": "Dragonfly Energy", "target": "Japanese OEMs", "type": "IP Competition", "note": "일본 내 전고체/건식 공정 특허 장벽화 및 기술 경쟁"}
   ]
 }
