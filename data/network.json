@@ -1,16 +1,17 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "GBP", "group": "Infra", "label": "GBP (BESS 허브)"},
-    {"id": "Dragonfly Energy", "group": "Tech", "label": "Dragonfly Energy"},
-    {"id": "Japanese OEMs", "group": "OEM", "label": "일본 완성차/셀 메이커"},
+    {"id": "SoftBank", "group": "Tech", "label": "소프트뱅크 (빅테크)"},
+    {"id": "AESC", "group": "Cell", "label": "AESC (지분 매각)"},
+    {"id": "Sumitomo", "group": "Infra", "label": "스미토모 전기"},
+    {"id": "Kobe Steel / Osaka Gas", "group": "Energy", "label": "고베 제강/오사카 가스"},
+    {"id": "ACSL", "group": "Defense", "label": "ACSL (방산)"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "METI", "target": "Japanese OEMs", "type": "Subsidy", "note": "LFP 자립화를 위한 3.3조 원 대규모 보조금 지급"},
-    {"source": "Japanese OEMs", "target": "POSCO", "type": "External Sourcing", "note": "보조금 수령 요건에 부합하는 완벽한 비중국 LFP 소재 조달"},
-    {"source": "METI", "target": "POSCO", "type": "Regulation", "note": "순환경제 플랜(리사이클 함량 의무화) 달성을 위한 재생 광물 협력"},
-    {"source": "GBP", "target": "POSCO", "type": "Supply", "note": "야마구치 BESS 제조 허브용 PosMAC 특수강 및 소재 턴키 발주"},
-    {"source": "Dragonfly Energy", "target": "Japanese OEMs", "type": "IP Competition", "note": "일본 내 전고체/건식 공정 특허 장벽화 및 기술 경쟁"}
+    {"source": "SoftBank", "target": "POSCO", "type": "Direct Supply", "note": "데이터센터 전용 배터리 제조 라인향 소재 직납"},
+    {"source": "AESC", "target": "POSCO", "type": "Data Compliance", "note": "지배구조 로컬라이징에 따른 비중국 원산지 클린 데이터 증빙"},
+    {"source": "Sumitomo", "target": "POSCO", "type": "Specialty Steel", "note": "바나듐 흐름전지(VRFB) 인프라용 고내식 특수강(PosMAC) 공급"},
+    {"source": "Kobe Steel / Osaka Gas", "target": "POSCO", "type": "Infra Steel", "note": "CCS 인프라용 극저온 고망간강 조달"},
+    {"source": "ACSL", "target": "POSCO", "type": "Defense Sourcing", "note": "특정 중요물자(방산) 규격 충족형 탈중국 고밀도 소재 공급"}
   ]
 }
