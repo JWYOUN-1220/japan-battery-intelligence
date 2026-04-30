@@ -1,17 +1,17 @@
 {
   "nodes": [
-    {"id": "SoftBank", "group": "Tech", "label": "소프트뱅크 (빅테크)"},
-    {"id": "AESC", "group": "Cell", "label": "AESC (지분 매각)"},
-    {"id": "Sumitomo", "group": "Infra", "label": "스미토모 전기"},
-    {"id": "Kobe Steel / Osaka Gas", "group": "Energy", "label": "고베 제강/오사카 가스"},
-    {"id": "ACSL", "group": "Defense", "label": "ACSL (방산)"},
+    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
+    {"id": "Toyota/Honda/Ford", "group": "OEM", "label": "한미일 OEM 통상 연합"},
+    {"id": "Kawasaki/Kobe", "group": "Energy", "label": "일본 수소 혼소 제조사"},
+    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
+    {"id": "Nissan", "group": "OEM", "label": "닛산"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "SoftBank", "target": "POSCO", "type": "Direct Supply", "note": "데이터센터 전용 배터리 제조 라인향 소재 직납"},
-    {"source": "AESC", "target": "POSCO", "type": "Data Compliance", "note": "지배구조 로컬라이징에 따른 비중국 원산지 클린 데이터 증빙"},
-    {"source": "Sumitomo", "target": "POSCO", "type": "Specialty Steel", "note": "바나듐 흐름전지(VRFB) 인프라용 고내식 특수강(PosMAC) 공급"},
-    {"source": "Kobe Steel / Osaka Gas", "target": "POSCO", "type": "Infra Steel", "note": "CCS 인프라용 극저온 고망간강 조달"},
-    {"source": "ACSL", "target": "POSCO", "type": "Defense Sourcing", "note": "특정 중요물자(방산) 규격 충족형 탈중국 고밀도 소재 공급"}
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital Compliance", "note": "북미 파워 일렉트로닉스 역량 센터향 Hyper NO 성능 데이터 연동"},
+    {"source": "Toyota/Honda/Ford", "target": "POSCO", "type": "Strategic Supply", "note": "BESS 생태계 확장을 위한 100% 비중국산 핵심 광물 조달"},
+    {"source": "Kawasaki/Kobe", "target": "POSCO", "type": "Specialty Steel", "note": "상업용 수소 혼소 엔진 및 인프라향 수소 부식 내성 강재 턴키 조달"},
+    {"source": "METI", "target": "POSCO", "type": "Regulation", "note": "GX-ETS 의무화에 따른 탄소 배출 절감형(Greenate) 소재 요구"},
+    {"source": "Nissan", "target": "POSCO", "type": "R&D Qual", "note": "23층 전고체 파일럿 라인향 고체 전해질/양극재 인증"}
   ]
 }
