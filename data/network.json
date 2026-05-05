@@ -1,17 +1,19 @@
 {
   "nodes": [
+    {"id": "Honda", "group": "OEM", "label": "혼다 (투자 보류)"},
+    {"id": "Toyota/Honda (ABtC)", "group": "OEM", "label": "일본 자동차 통상 연합"},
     {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "Toyota/Honda/Ford", "group": "OEM", "label": "한미일 OEM 통상 연합"},
-    {"id": "Kawasaki/Kobe", "group": "Energy", "label": "일본 수소 혼소 제조사"},
     {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "Nissan", "group": "OEM", "label": "닛산"},
+    {"id": "Mitsubishi/JERA", "group": "Energy", "label": "미쓰비시 상사/JERA"},
+    {"id": "JX Nippon Mining", "group": "Material", "label": "JX금속 (리사이클)"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital Compliance", "note": "북미 파워 일렉트로닉스 역량 센터향 Hyper NO 성능 데이터 연동"},
-    {"source": "Toyota/Honda/Ford", "target": "POSCO", "type": "Strategic Supply", "note": "BESS 생태계 확장을 위한 100% 비중국산 핵심 광물 조달"},
-    {"source": "Kawasaki/Kobe", "target": "POSCO", "type": "Specialty Steel", "note": "상업용 수소 혼소 엔진 및 인프라향 수소 부식 내성 강재 턴키 조달"},
-    {"source": "METI", "target": "POSCO", "type": "Regulation", "note": "GX-ETS 의무화에 따른 탄소 배출 절감형(Greenate) 소재 요구"},
-    {"source": "Nissan", "target": "POSCO", "type": "R&D Qual", "note": "23층 전고체 파일럿 라인향 고체 전해질/양극재 인증"}
+    {"source": "Honda", "target": "POSCO", "type": "Strategic Shift", "note": "캐나다 허브 무기한 보류에 따른 북미 JV 투자 속도 조절"},
+    {"source": "Toyota/Honda (ABtC)", "target": "POSCO", "type": "Data Compliance", "note": "무관세 통과를 위한 블록체인 비중국 데이터 API 연동"},
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Local Sourcing", "note": "US-First 전략에 따른 북미 로컬 가공 센터 기반 강재 조달"},
+    {"source": "METI", "target": "Mitsubishi/JERA", "type": "CfD Subsidy", "note": "블루 암모니아 터미널 15년 장기 보조금 지원 집행"},
+    {"source": "Mitsubishi/JERA", "target": "POSCO", "type": "Specialty Steel", "note": "장기 인프라 구축용 고압/극저온 특수 강재 턴키 공급"},
+    {"source": "JX Nippon Mining", "target": "POSCO", "type": "Recycle Swap", "note": "리튬 회수율 90% 달성에 따른 한-일 리사이클 광물 스왑 파트너십"}
   ]
 }
