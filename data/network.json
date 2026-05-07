@@ -1,19 +1,15 @@
 {
   "nodes": [
-    {"id": "Honda", "group": "OEM", "label": "혼다 (투자 보류)"},
-    {"id": "Toyota/Honda (ABtC)", "group": "OEM", "label": "일본 자동차 통상 연합"},
     {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "Mitsubishi/JERA", "group": "Energy", "label": "미쓰비시 상사/JERA"},
-    {"id": "JX Nippon Mining", "group": "Material", "label": "JX금속 (리사이클)"},
+    {"id": "Toyota", "group": "OEM", "label": "토요타"},
+    {"id": "Honda", "group": "OEM", "label": "혼다"},
+    {"id": "GS Yuasa", "group": "Cell", "label": "GS 유아사"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "Honda", "target": "POSCO", "type": "Strategic Shift", "note": "캐나다 허브 무기한 보류에 따른 북미 JV 투자 속도 조절"},
-    {"source": "Toyota/Honda (ABtC)", "target": "POSCO", "type": "Data Compliance", "note": "무관세 통과를 위한 블록체인 비중국 데이터 API 연동"},
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Local Sourcing", "note": "US-First 전략에 따른 북미 로컬 가공 센터 기반 강재 조달"},
-    {"source": "METI", "target": "Mitsubishi/JERA", "type": "CfD Subsidy", "note": "블루 암모니아 터미널 15년 장기 보조금 지원 집행"},
-    {"source": "Mitsubishi/JERA", "target": "POSCO", "type": "Specialty Steel", "note": "장기 인프라 구축용 고압/극저온 특수 강재 턴키 공급"},
-    {"source": "JX Nippon Mining", "target": "POSCO", "type": "Recycle Swap", "note": "리튬 회수율 90% 달성에 따른 한-일 리사이클 광물 스왑 파트너십"}
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital Compliance", "note": "전력기기 제어 알고리즘 향 Hyper NO 디지털 데이터 라이브러리 연동 요구"},
+    {"source": "Toyota", "target": "POSCO", "type": "Process Optimization", "note": "수분 제어 양산 공정 특허에 완벽히 부합하는 고체 전해질 규격 조달"},
+    {"source": "Honda", "target": "POSCO", "type": "Interface Material", "note": "계면 내구성 특허에 최적화된 고체 전해질 및 실리콘 음극재 페어링"},
+    {"source": "GS Yuasa", "target": "POSCO", "type": "EPR Closed-Loop", "note": "98% 재활용 제품 인증을 위한 재생 원료 역공급 및 강재 설계 지원"}
   ]
 }
