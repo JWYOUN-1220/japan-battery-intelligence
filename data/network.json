@@ -1,15 +1,23 @@
 {
+  "report_metadata": {
+    "date": "2026-05-08",
+    "analyst": "Gemini System",
+    "classification": "Confidential"
+  },
   "nodes": [
+    {"id": "JERA", "group": "Energy", "label": "JERA (전력/인프라)"},
     {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "Toyota", "group": "OEM", "label": "토요타"},
-    {"id": "Honda", "group": "OEM", "label": "혼다"},
-    {"id": "GS Yuasa", "group": "Cell", "label": "GS 유아사"},
+    {"id": "NVIDIA", "group": "Tech", "label": "엔비디아 (디지털 트윈)"},
+    {"id": "Mitsubishi Materials", "group": "Material", "label": "미쓰비시 머티리얼즈"},
+    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
     {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
   ],
   "links": [
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital Compliance", "note": "전력기기 제어 알고리즘 향 Hyper NO 디지털 데이터 라이브러리 연동 요구"},
-    {"source": "Toyota", "target": "POSCO", "type": "Process Optimization", "note": "수분 제어 양산 공정 특허에 완벽히 부합하는 고체 전해질 규격 조달"},
-    {"source": "Honda", "target": "POSCO", "type": "Interface Material", "note": "계면 내구성 특허에 최적화된 고체 전해질 및 실리콘 음극재 페어링"},
-    {"source": "GS Yuasa", "target": "POSCO", "type": "EPR Closed-Loop", "note": "98% 재활용 제품 인증을 위한 재생 원료 역공급 및 강재 설계 지원"}
+    {"source": "METI", "target": "JERA", "type": "Subsidy", "note": "일본 제1호 수소/암모니아 공급 거점 인증 및 15년 CfD 보조금 지원"},
+    {"source": "JERA", "target": "POSCO", "type": "Infra_Sourcing", "note": "헤키난 발전소 암모니아 터미널 및 배관용 극저온/내식 특수강 턴키 수주"},
+    {"source": "Hitachi Energy", "target": "NVIDIA", "type": "Tech_Alliance", "note": "AI 데이터센터 전용 디지털 트윈 전력망 공동 구축"},
+    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital_Compliance", "note": "디지털 트윈 시스템 향 Hyper NO 전자기적 물성 데이터 API 연동"},
+    {"source": "METI", "target": "POSCO", "type": "Tax_Benefit", "note": "저탄소 강재(Greenate) 및 배터리 소재 도입 시 고객사 법인세 세액 공제 혜택 발동"},
+    {"source": "Mitsubishi Materials", "target": "POSCO", "type": "Recycling_Tech", "note": "초고순도(99.5%) 리튬 회수 폐쇄 루프 신공정 파트너십 협의"}
   ]
 }
