@@ -1,23 +1,54 @@
 {
-  "report_metadata": {
-    "date": "2026-05-08",
-    "analyst": "Gemini System",
-    "classification": "Confidential"
-  },
   "nodes": [
-    {"id": "JERA", "group": "Energy", "label": "JERA (전력/인프라)"},
-    {"id": "Hitachi Energy", "group": "Energy", "label": "히타치 에너지"},
-    {"id": "NVIDIA", "group": "Tech", "label": "엔비디아 (디지털 트윈)"},
-    {"id": "Mitsubishi Materials", "group": "Material", "label": "미쓰비시 머티리얼즈"},
-    {"id": "METI", "group": "Policy", "label": "일본 경제산업성"},
-    {"id": "POSCO", "group": "Material", "label": "포스코그룹"}
+    {"id": "METI", "group": "Policy"},
+    {"id": "Japanese Gov", "group": "Policy"},
+    {"id": "JERA", "group": "Energy"},
+    {"id": "Hitachi Energy", "group": "Infra"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "AESC", "group": "Cell Maker"},
+    {"id": "NVIDIA", "group": "Tech"},
+    {"id": "POSCO", "group": "Material"}
   ],
   "links": [
-    {"source": "METI", "target": "JERA", "type": "Subsidy", "note": "일본 제1호 수소/암모니아 공급 거점 인증 및 15년 CfD 보조금 지원"},
-    {"source": "JERA", "target": "POSCO", "type": "Infra_Sourcing", "note": "헤키난 발전소 암모니아 터미널 및 배관용 극저온/내식 특수강 턴키 수주"},
-    {"source": "Hitachi Energy", "target": "NVIDIA", "type": "Tech_Alliance", "note": "AI 데이터센터 전용 디지털 트윈 전력망 공동 구축"},
-    {"source": "Hitachi Energy", "target": "POSCO", "type": "Digital_Compliance", "note": "디지털 트윈 시스템 향 Hyper NO 전자기적 물성 데이터 API 연동"},
-    {"source": "METI", "target": "POSCO", "type": "Tax_Benefit", "note": "저탄소 강재(Greenate) 및 배터리 소재 도입 시 고객사 법인세 세액 공제 혜택 발동"},
-    {"source": "Mitsubishi Materials", "target": "POSCO", "type": "Recycling_Tech", "note": "초고순도(99.5%) 리튬 회수 폐쇄 루프 신공정 파트너십 협의"}
+    {
+      "source": "Japanese Gov",
+      "target": "Panasonic Energy",
+      "type": "Investment Support",
+      "date": "2026-05-11",
+      "strength": "높음",
+      "note": "$5,500억 대미 투자 계획 내 배터리 섹터 포함으로 북미 진출 가속화"
+    },
+    {
+      "source": "METI",
+      "target": "JERA",
+      "type": "Certification/Subsidy",
+      "date": "2026-05-07",
+      "strength": "높음",
+      "note": "일본 최초 저탄소 수소/암모니아 공급 거점 공식 인증 및 CfD 보조금 지급"
+    },
+    {
+      "source": "Hitachi Energy",
+      "target": "NVIDIA",
+      "type": "Strategic Alliance",
+      "date": "2026-05-07",
+      "strength": "보통",
+      "note": "AI 데이터센터 전용 디지털 트윈 전력망 공동 구축 협력"
+    },
+    {
+      "source": "POSCO",
+      "target": "JERA",
+      "type": "Potential Supply",
+      "date": "2026-05-11",
+      "strength": "보통",
+      "note": "신규 암모니아 터미널용 내부식 특수강 및 초저온 강재 공급 추진"
+    },
+    {
+      "source": "POSCO",
+      "target": "Hitachi Energy",
+      "type": "Potential Supply",
+      "date": "2026-05-11",
+      "strength": "높음",
+      "note": "버지니아 신규 변압기 공장향 Hyper NO 전기강판 공급 및 데이터 연동"
+    }
   ]
 }
