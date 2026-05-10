@@ -1108,4 +1108,41 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-07",
+      "event": "JERA, 일본 1호 수소/암모니아 공급 거점 인증",
+      "company": ["JERA", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "경제산업성이 JERA를 첫 공급 거점으로 선정하고 15년 단위 CfD 보조금을 확정함에 따라 헤키난 발전소 터미널 투자가 시작됨.",
+      "impact": "수소/암모니아 인프라용 특수강재 시장의 상업적 발주 사이클 개시.",
+      "source": "JERA Press Release",
+      "url": "https://www.jera.co.jp/english/information/20260507"
+    },
+    {
+      "date": "2026-05-07",
+      "event": "히타치 에너지, 미국 버지니아 변압기 메가 팩토리 건설 확정",
+      "company": ["Hitachi Energy"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "4.5억 달러를 투입하여 북미 최대 규모 변압기 생산 기지를 건설하며, AI 전력망 시장 선점을 위해 NVIDIA와 디지털 트윈 협력 강화.",
+      "impact": "방향성 전기강판(Hyper NO)의 북미 현지화 조달 압박 및 대량 수요 발생.",
+      "source": "Hitachi Global News",
+      "url": "https://www.hitachi.com/New/cnews/month/2026/05/260507"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "일본 정부, $5,500억 대미 투자에 배터리 섹터 공식 포함",
+      "company": ["Japanese Government", "Panasonic", "AESC"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "일본 정부가 대규모 대미 투자 프로젝트에 배터리 및 ESS를 핵심 전략 분야로 명시하여 국가 차원의 북미 공급망 구축에 나섬.",
+      "impact": "일본계 배터리사의 북미 점유율 급증 예상 및 비중국산 소재 파트너 선점 경쟁 심화.",
+      "source": "Seoul Economic Daily",
+      "url": "https://www.sedaily.com/NewsView/20260511_JAPAN_USA"
+    }
+  ]
+}
 
