@@ -2,6 +2,8 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "Japanese Gov", "group": "Policy"},
+    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
+    {"id": "Daimler Truck", "group": "OEM"},
     {"id": "JERA", "group": "Energy"},
     {"id": "Hitachi Energy", "group": "Infra"},
     {"id": "Panasonic Energy", "group": "Cell Maker"},
@@ -19,6 +21,14 @@
       "note": "$5,500억 대미 투자 계획 내 배터리 섹터 포함으로 북미 진출 가속화"
     },
     {
+      "source": "Kawasaki Heavy Industries",
+      "target": "Daimler Truck",
+      "type": "Strategic Partnership",
+      "date": "2026-05-11",
+      "strength": "높음",
+      "note": "독일-일본 간 액체 수소 글로벌 공급망 및 물류 표준 공동 개발"
+    },
+    {
       "source": "METI",
       "target": "JERA",
       "type": "Certification/Subsidy",
@@ -32,23 +42,15 @@
       "type": "Strategic Alliance",
       "date": "2026-05-07",
       "strength": "보통",
-      "note": "AI 데이터센터 전용 디지털 트윈 전력망 공동 구축 협력"
+      "note": "AI 데이터센터 전용 디지털 트윈 전력망 구축을 위한 협력"
     },
     {
       "source": "POSCO",
-      "target": "JERA",
+      "target": "Kawasaki Heavy Industries",
       "type": "Potential Supply",
-      "date": "2026-05-11",
-      "strength": "보통",
-      "note": "신규 암모니아 터미널용 내부식 특수강 및 초저온 강재 공급 추진"
-    },
-    {
-      "source": "POSCO",
-      "target": "Hitachi Energy",
-      "type": "Potential Supply",
-      "date": "2026-05-11",
+      "date": "2026-05-12",
       "strength": "높음",
-      "note": "버지니아 신규 변압기 공장향 Hyper NO 전기강판 공급 및 데이터 연동"
+      "note": "액체 수소 운반선 및 인수 터미널용 극저온 특수강재 공급 추진"
     }
   ]
 }
