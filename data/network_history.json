@@ -1145,4 +1145,64 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-11",
+      "event": "소프트뱅크 차세대 배터리 양산 사업 'GX Factory' 공식화",
+      "company": ["SoftBank"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "수계 아연-할로겐 기술 기반의 GWh 규모 ESS 전용 배터리 제조 라인을 구축하며 AI 인프라 자립화 선언.",
+      "impact": "리튬이온 외 차세대 화학 시스템 배터리의 상업 조달 시장 형성 및 아연 소재 수요 급증 예상.",
+      "source": "SoftBank News",
+      "url": "https://www.softbank.jp/en/corp/news/press/2026/20260511_01/"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "가와사키 중공업-다임러 트럭 액체 수소 글로벌 공급망 협약",
+      "company": ["Kawasaki Heavy Industries", "Daimler Truck"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "독일-일본 간 액체 수소 전용 운반선(4만 m3)과 터미널 아키텍처를 수립하여 글로벌 수소 물류 표준 선점에 착수.",
+      "impact": "극저온 특수강 및 수소 인프라 하드웨어의 국제 표준 사양 결정권 강화.",
+      "source": "Kawasaki Heavy Industries Newsroom",
+      "url": "https://www.khi.co.jp/pressrelease/detail/20260511_1.html"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "일본 정부, $5,500억 대미 투자에 배터리 섹터 공식 포함",
+      "company": ["METI", "Panasonic Energy", "AESC"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "대규모 대미 투자 프로젝트에 배터리 및 ESS를 핵심 전략 분야로 명시하여 국가 차원의 북미 공급망 구축 기반 마련.",
+      "impact": "일본계 배터리사의 북미 점유율 급증 예상 및 비중국산 소재 파트너 선점 경쟁 심화.",
+      "source": "Seoul Economic Daily",
+      "url": "https://www.sedaily.com/NewsView/20260511_JAPAN_USA"
+    },
+    {
+      "date": "2026-05-12",
+      "event": "히타치-X LABS 북미 GW급 '에너지 파크' 사업 착수",
+      "company": ["Hitachi", "X LABS"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "전력망 병목을 우회하는 독립적 전력 공급 서비스(Power as a Service) 제공을 위해 기가와트 규모의 에너지 허브 구축.",
+      "impact": "고품질 전력 기기 수요 폭증 및 전기강판(Hyper NO)의 북미 내수 조달 경쟁 심화.",
+      "source": "Hitachi Newsroom",
+      "url": "https://www.hitachi.com/New/cnews/month/2026/05/260512.html"
+    },
+    {
+      "date": "2026-05-10",
+      "event": "스타트업 LiSTie, 초고순도 리튬 회수 기술 발표",
+      "company": ["LiSTie"],
+      "type": "공략 기술 개발",
+      "strength": "보통",
+      "summary": "폐배터리에서 99.9% 이상의 리튬을 정제하며 비용을 30% 절감하는 새로운 분리 공정 개발 성공.",
+      "impact": "일본 내 리사이클링 광물 자급률 제고 및 저품위 원료 처리 기술 경쟁 우위 확보.",
+      "source": "Nikkei Tech",
+      "url": "https://www.nikkei.com/article/DGXZQOUC100000/"
+    }
+  ]
+}
+
 
