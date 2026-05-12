@@ -1,56 +1,56 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Japanese Gov", "group": "Policy"},
-    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
+    {"id": "SoftBank", "group": "Tech/Cell"},
+    {"id": "Hitachi", "group": "Infra/Energy"},
+    {"id": "X LABS", "group": "Investment"},
+    {"id": "Kawasaki Heavy Industries", "group": "GX/Logistics"},
     {"id": "Daimler Truck", "group": "OEM"},
-    {"id": "JERA", "group": "Energy"},
-    {"id": "Hitachi Energy", "group": "Infra"},
+    {"id": "LiSTie", "group": "Material/Startup"},
+    {"id": "METI", "group": "Policy"},
     {"id": "Panasonic Energy", "group": "Cell Maker"},
     {"id": "AESC", "group": "Cell Maker"},
-    {"id": "NVIDIA", "group": "Tech"},
-    {"id": "POSCO", "group": "Material"}
+    {"id": "POSCO", "group": "Material/Steel"}
   ],
   "links": [
     {
-      "source": "Japanese Gov",
-      "target": "Panasonic Energy",
-      "type": "Investment Support",
+      "source": "SoftBank",
+      "target": "SoftBank",
+      "type": "투자 확대",
       "date": "2026-05-11",
       "strength": "높음",
-      "note": "$5,500억 대미 투자 계획 내 배터리 섹터 포함으로 북미 진출 가속화"
+      "note": "GWh급 아연-할로겐 배터리 생산 공장 'GX Factory' 런칭"
+    },
+    {
+      "source": "Hitachi",
+      "target": "X LABS",
+      "type": "전략적 협력",
+      "date": "2026-05-12",
+      "strength": "높음",
+      "note": "북미 AI 데이터센터 타겟 GW급 에너지 파크 건설 파트너십"
     },
     {
       "source": "Kawasaki Heavy Industries",
       "target": "Daimler Truck",
-      "type": "Strategic Partnership",
+      "type": "전략적 협력",
       "date": "2026-05-11",
       "strength": "높음",
-      "note": "독일-일본 간 액체 수소 글로벌 공급망 및 물류 표준 공동 개발"
+      "note": "유럽-일본 간 대규모 액체 수소 공급망 구축 협약"
     },
     {
       "source": "METI",
-      "target": "JERA",
-      "type": "Certification/Subsidy",
-      "date": "2026-05-07",
+      "target": "Panasonic Energy",
+      "type": "정책 변화",
+      "date": "2026-05-11",
       "strength": "높음",
-      "note": "일본 최초 저탄소 수소/암모니아 공급 거점 공식 인증 및 CfD 보조금 지급"
-    },
-    {
-      "source": "Hitachi Energy",
-      "target": "NVIDIA",
-      "type": "Strategic Alliance",
-      "date": "2026-05-07",
-      "strength": "보통",
-      "note": "AI 데이터센터 전용 디지털 트윈 전력망 구축을 위한 협력"
+      "note": "$5,500억 대미 투자 계획 내 배터리 섹터 공식 포함 지원"
     },
     {
       "source": "POSCO",
-      "target": "Kawasaki Heavy Industries",
-      "type": "Potential Supply",
-      "date": "2026-05-12",
-      "strength": "높음",
-      "note": "액체 수소 운반선 및 인수 터미널용 극저온 특수강재 공급 추진"
+      "target": "Hitachi",
+      "type": "공급 계약 논의",
+      "date": "2026-05-13",
+      "strength": "보통",
+      "note": "에너지 파크향 Hyper NO 전기강판 턴키 제안"
     }
   ]
 }
