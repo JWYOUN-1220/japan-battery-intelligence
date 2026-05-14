@@ -1204,5 +1204,69 @@
     }
   ]
 }
+{
+  "records": [
+    {
+      "date": "2026-05-12",
+      "source": "Hitachi",
+      "target": "X LABS",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "히타치가 X LABS와 북미 전역에 전력망 연계가 필요 없는 GW급 '에너지 파크'를 구축하여 EaaS 시장을 선점함.",
+      "news_title": "히타치, 북미 AI 데이터센터 겨냥 'GW급 에너지 파크' 사업 착수",
+      "source_name": "Hitachi Global Press",
+      "jp_url": "",
+      "en_url": "https://www.hitachi.com/New/cnews/month/2026/05/260512.html"
+    },
+    {
+      "date": "2026-05-13",
+      "source": "Panasonic Energy",
+      "target": "Tesla",
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "note": "파나소닉이 EV 수요 둔화를 고려하여 북미 4680 배터리 양산을 연기하고 기존 2170 배터리의 에너지 밀도 개량에 집중함.",
+      "news_title": "파나소닉, 4680 배터리 양산 연기... 2170 성능 개량으로 선회",
+      "source_name": "Panasonic IR",
+      "jp_url": "",
+      "en_url": "https://news.panasonic.com/global/press/"
+    },
+    {
+      "date": "2026-05-12",
+      "source": "Mitsubishi Materials (MMC)",
+      "target": "ReElement Technologies",
+      "type": "투자 확대",
+      "strength": "보통",
+      "note": "MMC가 ReElement 지분 투자를 통해 용매 추출법을 대체하는 고순도(99.5%) 리튬 회수 크로마토그래피 기술을 도입함.",
+      "news_title": "미쓰비시 머티리얼즈(MMC), 크로마토그래피 기반 고순도 리튬 회수 도입",
+      "source_name": "Mitsubishi Materials News",
+      "jp_url": "",
+      "en_url": "https://www.mmc.co.jp/corporate/en/news/"
+    },
+    {
+      "date": "2026-05-11",
+      "source": "SoftBank",
+      "target": "SoftBank",
+      "type": "JV 설립",
+      "strength": "높음",
+      "note": "소프트뱅크가 AI 데이터센터 전용 수계 아연-할로겐 배터리를 양산하기 위해 독자적인 'GX Factory'를 런칭함.",
+      "news_title": "소프트뱅크, GWh급 '수계 아연-할로겐' 배터리 직접 생산 진출",
+      "source_name": "SoftBank News",
+      "jp_url": "",
+      "en_url": "https://www.softbank.jp/en/corp/news/press/2026/20260511_01/"
+    },
+    {
+      "date": "2026-05-11",
+      "source": "Kawasaki Heavy Industries",
+      "target": "Daimler Truck",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "가와사키와 다임러 트럭이 4만m3급 운반선과 터미널을 연계한 글로벌 액체 수소 상업 물류 아키텍처를 공동 수립함.",
+      "news_title": "가와사키 중공업-다임러 트럭, '유럽-일본 액체 수소 복도' 구축 파트너십",
+      "source_name": "Kawasaki Heavy Industries Newsroom",
+      "jp_url": "https://www.khi.co.jp/pressrelease/",
+      "en_url": ""
+    }
+  ]
+}
 
 
