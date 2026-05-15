@@ -1,64 +1,64 @@
 {
   "nodes": [
-    {"id": "Hitachi", "group": "Infra"},
-    {"id": "X LABS", "group": "Investment"},
+    {"id": "Hitachi Energy", "group": "Infra"},
+    {"id": "US Government", "group": "Policy"},
+    {"id": "JAMA", "group": "OEM Union"},
     {"id": "Panasonic Energy", "group": "Cell Maker"},
     {"id": "Tesla", "group": "OEM"},
-    {"id": "Mitsubishi Materials (MMC)", "group": "Material"},
-    {"id": "ReElement Technologies", "group": "Tech/Recycle"},
     {"id": "SoftBank", "group": "IT/Cell Maker"},
-    {"id": "Kawasaki Heavy Industries", "group": "GX/Shipbuilding"},
-    {"id": "Daimler Truck", "group": "OEM"},
+    {"id": "Mitsubishi Materials", "group": "Material/Recycle"},
+    {"id": "JERA", "group": "Energy"},
+    {"id": "METI", "group": "Policy"},
     {"id": "POSCO", "group": "Material/Steel"}
   ],
   "links": [
     {
-      "source": "Hitachi",
-      "target": "X LABS",
-      "type": "전략적 협력",
+      "source": "US Government",
+      "target": "Hitachi Energy",
+      "type": "DPA발동/투자확대",
       "date": "2026-05-12",
       "strength": "높음",
-      "note": "북미 AI 데이터센터 타겟 GW급 에너지 파크 공동 구축"
+      "note": "국방물자생산법(DPA) 기반 북미 전력망 안보 공급망 구축"
     },
     {
       "source": "Panasonic Energy",
       "target": "Tesla",
-      "type": "공급 조정",
-      "date": "2026-05-13",
+      "type": "공급조정",
+      "date": "2026-05-14",
       "strength": "높음",
-      "note": "4680 배터리 양산 연기 및 2170 개량형 공급 집중"
+      "note": "4680 양산 연기 및 2170 성능 개량형 집중"
     },
     {
-      "source": "Mitsubishi Materials (MMC)",
-      "target": "ReElement Technologies",
-      "type": "투자/기술도입",
-      "date": "2026-05-12",
-      "strength": "보통",
-      "note": "크로마토그래피 기반 초고순도 리튬 회수 기술 일본 도입"
+      "source": "JAMA",
+      "target": "JAMA",
+      "type": "전략적협력",
+      "date": "2026-05-13",
+      "strength": "높음",
+      "note": "공급망 복원력 확보를 위한 일본 자동차 제조사 간 데이터 공유 및 공동 조달"
+    },
+    {
+      "source": "METI",
+      "target": "JERA",
+      "type": "정책지원",
+      "date": "2026-05-07",
+      "strength": "높음",
+      "note": "일본 제1호 수소/암모니아 공급 거점 공식 인증 및 CfD 보조금 지원"
     },
     {
       "source": "SoftBank",
       "target": "SoftBank",
-      "type": "신사업 진출",
+      "type": "신사업진출",
       "date": "2026-05-11",
       "strength": "높음",
-      "note": "수계 아연-할로겐 기반 GWh급 배터리 양산 공장 'GX Factory' 런칭"
-    },
-    {
-      "source": "Kawasaki Heavy Industries",
-      "target": "Daimler Truck",
-      "type": "전략적 협력",
-      "date": "2026-05-11",
-      "strength": "높음",
-      "note": "독일-일본 간 액체 수소 운반 및 벙커링 인프라 구축 협력"
+      "note": "AI 데이터센터용 수계 아연-할로겐 배터리 독자 양산(GX Factory)"
     },
     {
       "source": "POSCO",
-      "target": "Hitachi",
-      "type": "잠재적 공급",
-      "date": "2026-05-14",
+      "target": "Hitachi Energy",
+      "type": "잠재적공급",
+      "date": "2026-05-15",
       "strength": "높음",
-      "note": "북미 에너지 파크용 Hyper NO 전기강판 및 BESS 특수강 제안"
+      "note": "안보 물자급 Hyper NO 전기강판 공급 및 데이터 인증 협력"
     }
   ]
 }
