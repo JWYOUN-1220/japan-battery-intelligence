@@ -1268,5 +1268,64 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-07",
+      "event": "JERA, 일본 최초 저탄소 수소/암모니아 공급 거점 인증",
+      "company": ["JERA", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "경제산업성이 JERA를 첫 공급 거점으로 선정하고 15년 단위 CfD 보조금을 확정함에 따라 수소 인프라 실물 발주 사이클 진입.",
+      "impact": "수소/암모니아 인프라용 특수강재 시장의 상업적 발주 본격화.",
+      "source": "JERA Press Release",
+      "url": "https://www.jera.co.jp/english/information/20260507"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "소프트뱅크 차세대 배터리 양산 사업 'GX Factory' 런칭",
+      "company": ["SoftBank"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "비인화성 수계 아연-할로겐 기술 기반의 GWh 규모 ESS 배터리 제조 시설 설립 발표.",
+      "impact": "비리튬계 차세대 ESS 소재 시장 형성 및 아연 소재 수요 급증.",
+      "source": "SoftBank News",
+      "url": "https://www.softbank.jp/en/corp/news/press/2026/20260511_01/"
+    },
+    {
+      "date": "2026-05-12",
+      "event": "히타치 에너지, 북미 그리드 안보를 위한 10억 불 투자 가속",
+      "company": ["Hitachi Energy", "US Government"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "미국 국방물자생산법(DPA) 대응을 위해 버지니아 등 북미 변압기 공장 건설 가속화 및 공급망 현지화.",
+      "impact": "방향성 전기강판(Hyper NO)의 북미 안보 물자화 및 우방국 조달 데이터 요구 강화.",
+      "source": "ESS News",
+      "url": "https://www.essnews.com/2026/05/12/hitachi-energy-us-grid-investment/"
+    },
+    {
+      "date": "2026-05-13",
+      "event": "일본 자동차 연합(JAMA) 공급망 서바이벌 전략 선포",
+      "company": ["JAMA", "Toyota", "Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "중국 패권 및 중동 리스크에 대응하여 공급망 복원력(Resilience)을 최우선 가치로 설정하고 공동 조달 체제 구축.",
+      "impact": "안전한 제3국(한국 등) 소재 및 탄소 데이터 기반 고기능 강재 조달 비중 확대.",
+      "source": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/2026/04/29/jama-supply-chain-crisis/"
+    },
+    {
+      "date": "2026-05-14",
+      "event": "파나소닉 4680 배터리 양산 일정 조정 및 2170 집중",
+      "company": ["Panasonic Energy", "Tesla"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "북미 EV 시장 환경 변화에 맞춰 4680 양산 시점을 늦추고 기존 2170 배터리의 성능 개선에 역량 집중.",
+      "impact": "차세대 소재 도입 속도 조절 및 기존 범용 하이엔드 소재의 LTA 비중 증가.",
+      "source": "Nikkei",
+      "url": "https://news.panasonic.com/global/press/"
+    }
+  ]
+}
 
 
