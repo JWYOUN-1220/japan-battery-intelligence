@@ -1,64 +1,56 @@
 {
   "nodes": [
-    {"id": "Hitachi Energy", "group": "Infra"},
-    {"id": "US Government", "group": "Policy"},
-    {"id": "JAMA", "group": "OEM Union"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
-    {"id": "Tesla", "group": "OEM"},
-    {"id": "SoftBank", "group": "IT/Cell Maker"},
-    {"id": "Mitsubishi Materials", "group": "Material/Recycle"},
-    {"id": "JERA", "group": "Energy"},
     {"id": "METI", "group": "Policy"},
-    {"id": "POSCO", "group": "Material/Steel"}
+    {"id": "Mitsubishi Materials", "group": "Material"},
+    {"id": "ReElement Technologies", "group": "Tech"},
+    {"id": "Hanwa", "group": "Trading"},
+    {"id": "Canada Metal Infra", "group": "Material"},
+    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
+    {"id": "Daimler Truck", "group": "OEM"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "Dongfeng Honda", "group": "Cell/OEM"},
+    {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "US Government",
-      "target": "Hitachi Energy",
-      "type": "DPA발동/투자확대",
-      "date": "2026-05-12",
+      "source": "Mitsubishi Materials",
+      "target": "ReElement Technologies",
+      "type": "전략적 협력",
+      "date": "2026-05-15",
       "strength": "높음",
-      "note": "국방물자생산법(DPA) 기반 북미 전력망 안보 공급망 구축"
+      "note": "크로마토그래피 공정 기반 블랙매스 고순도 수산화리튬 추출 스펙 공개 및 일본 내 사업 본격화"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "Tesla",
-      "type": "공급조정",
+      "source": "Hanwa",
+      "target": "Canada Metal Infra",
+      "type": "투자 확대",
       "date": "2026-05-14",
       "strength": "높음",
-      "note": "4680 양산 연기 및 2170 성능 개량형 집중"
+      "note": "비중국 스펙 규제 적격성 선제 취득을 위한 캐나다 정제 및 인프라 기업 지분 확보"
     },
     {
-      "source": "JAMA",
-      "target": "JAMA",
-      "type": "전략적협력",
-      "date": "2026-05-13",
-      "strength": "높음",
-      "note": "공급망 복원력 확보를 위한 일본 자동차 제조사 간 데이터 공유 및 공동 조달"
-    },
-    {
-      "source": "METI",
-      "target": "JERA",
-      "type": "정책지원",
-      "date": "2026-05-07",
-      "strength": "높음",
-      "note": "일본 제1호 수소/암모니아 공급 거점 공식 인증 및 CfD 보조금 지원"
-    },
-    {
-      "source": "SoftBank",
-      "target": "SoftBank",
-      "type": "신사업진출",
+      "source": "Kawasaki Heavy Industries",
+      "target": "Daimler Truck",
+      "type": "전략적 협력",
       "date": "2026-05-11",
       "strength": "높음",
-      "note": "AI 데이터센터용 수계 아연-할로겐 배터리 독자 양산(GX Factory)"
+      "note": "글로벌 액체 수소 복도 구축용 4만 m³급 차세대 선박 극저온 탱크 표준 설계 완료"
+    },
+    {
+      "source": "Honda",
+      "target": "Dongfeng Honda",
+      "type": "OEM 전략 변화",
+      "date": "2026-05-15",
+      "strength": "높음",
+      "note": "북미 인프라 증설 속도 조절 및 중국 현지 공장 생산 EV의 일본 본토 역수입 구조 가동"
     },
     {
       "source": "POSCO",
-      "target": "Hitachi Energy",
-      "type": "잠재적공급",
-      "date": "2026-05-15",
-      "strength": "높음",
-      "note": "안보 물자급 Hyper NO 전기강판 공급 및 데이터 인증 협력"
+      "target": "Kawasaki Heavy Industries",
+      "type": "공급 계약",
+      "date": "2026-05-18",
+      "strength": "보통",
+      "note": "표준 설계가 완료된 차세대 액체 수소 탱크 구조체향 극저온 고망간강 및 특수 합금 후판 승인 타진"
     }
   ]
 }
