@@ -1327,5 +1327,53 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-15",
+      "event": "미쓰비시 머티리얼즈 차세대 크로마토그래피 리튬 정제 공정 실전 전개",
+      "company": ["Mitsubishi Materials", "ReElement Technologies"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "MMC는 오사카 전시회에서 ReElement사의 흡착 분리 원천 기술을 적용한 연속식 크로마토그래피 공정을 통해 폐배터리 블랙매스에서 99.5% 이상의 고순도 수산화리튬을 95% 수율로 회수하는 분산형 도심 인프라 스펙을 확정했습니다.",
+      "impact": "기존 용매 추출법의 높은 고정비와 환경 부담을 우회하는 분산형 도시광산 생태계의 채산성 고도화 유도",
+      "source": "Mitsubishi Materials Newsroom",
+      "url": "https://www.mmc.co.jp/corporate/en/news/"
+    },
+    {
+      "date": "2026-05-14",
+      "event": "한와흥업 탈중국 규제 무력화를 위한 캐나다 자원 가공 거점 지분 투자",
+      "company": ["Hanwa", "Canada Metal Infra"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "일본 핵심 금속 상사인 한와흥업은 지정학적 무역 장벽 돌파 및 북미 시장 내 비중국 공급망 증빙 스펙 자산화를 위해 캐나다 핵심 자원 정제 및 인프라 제조 파트너의 지분을 인수하는 전략적 파트너십을 체결했습니다.",
+      "impact": "단순 광산 투자를 넘어 가공·정제 단계까지 우방국 자본을 결속하여 IRA/CRMA 무역 면제권 확보 가속",
+      "source": "Nikkei Business",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "가와사키 중공업 상업용 대형 액체 수소 운반선 탱크 FEED 완료",
+      "company": ["Kawasaki Heavy Industries", "Daimler Truck"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "독일 다임러 트럭 연합과의 액체 수소 복도 구축 로드맵에 의거, 4만 m³급 상업용 대형 선박에 탑재될 영하 253도 다중 진공 단열 극저온 탱크 구조의 표준 설계를 완료하고 발주 단계에 진입했습니다.",
+      "impact": "실증 수준에 머물던 수소 물류를 상업 마진 확보가 가능한 대형 상용선 선박 하드웨어 규격 표준화 단계로 견인",
+      "source": "KHI English Press",
+      "url": "https://www.khi.co.jp/english/pressrelease/"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "혼다 고정비 분산 및 자산 효율성을 위한 중국 EV 역수입 단행",
+      "company": ["Honda", "Dongfeng Honda"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "북미 공장의 대규모 인프라 투자 일정을 유연하게 연기 조정한 혼다는 자산 효율성 방어와 고정비 리스크 분산을 목적으로 중국 합작 공장 생산 EV 모델의 일본 본토 역수입 판매 구조를 전격 확정했습니다.",
+      "impact": "북미 정치적 관세 리스크를 회피하고 유휴 가동 자산의 효율 극대화를 우선시하는 실리 중심 조달 기조 가시화",
+      "source": "Gasgoo News",
+      "url": "https://autonews.gasgoo.com/"
+    }
+  ]
+}
 
 
