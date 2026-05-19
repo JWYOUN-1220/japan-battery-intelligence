@@ -1,56 +1,64 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Mitsubishi Materials", "group": "Material"},
-    {"id": "ReElement Technologies", "group": "Tech"},
-    {"id": "Hanwa", "group": "Trading"},
-    {"id": "Canada Metal Infra", "group": "Material"},
-    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
-    {"id": "Daimler Truck", "group": "OEM"},
     {"id": "Honda", "group": "OEM"},
-    {"id": "Dongfeng Honda", "group": "Cell/OEM"},
+    {"id": "LG Energy Solution", "group": "Cell Maker"},
+    {"id": "L-H Battery Company", "group": "Cell Maker"},
+    {"id": "TEPCO", "group": "Energy"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "Tokyo Gas", "group": "Energy"},
+    {"id": "IHI", "group": "Infra"},
+    {"id": "Kobe Steel", "group": "Material"},
+    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "Mitsubishi Materials",
-      "target": "ReElement Technologies",
-      "type": "전략적 협력",
-      "date": "2026-05-15",
+      "source": "Honda",
+      "target": "L-H Battery Company",
+      "type": "생산 라인 전환",
+      "date": "2026-05-19",
       "strength": "높음",
-      "note": "크로마토그래피 공정 기반 블랙매스 고순도 수산화리튬 추출 스펙 공개 및 일본 내 사업 본격화"
+      "note": "북미 합작공장 라인 일부를 HEV용 배터리용으로 강제 전환"
     },
     {
-      "source": "Hanwa",
-      "target": "Canada Metal Infra",
-      "type": "투자 확대",
-      "date": "2026-05-14",
+      "source": "TEPCO",
+      "target": "METI",
+      "type": "규정 개정",
+      "date": "2026-05-18",
       "strength": "높음",
-      "note": "비중국 스펙 규제 적격성 선제 취득을 위한 캐나다 정제 및 인프라 기업 지분 확보"
+      "note": "민간 독립형 오프그리드 마이크로그리드 직송전 허용 상업 규정 개정"
+    },
+    {
+      "source": "Tokyo Gas",
+      "target": "IHI",
+      "type": "전략적 협력",
+      "date": "2026-05-15",
+      "strength": "보통",
+      "note": "수소 CfD 예산 연계 대형 e-methane 합성 메가 플랜트 FEED 착수"
     },
     {
       "source": "Kawasaki Heavy Industries",
-      "target": "Daimler Truck",
-      "type": "전략적 협력",
-      "date": "2026-05-11",
+      "target": "METI",
+      "type": "전략 동맹",
+      "date": "2026-05-18",
       "strength": "높음",
-      "note": "글로벌 액체 수소 복도 구축용 4만 m³급 차세대 선박 극저온 탱크 표준 설계 완료"
-    },
-    {
-      "source": "Honda",
-      "target": "Dongfeng Honda",
-      "type": "OEM 전략 변화",
-      "date": "2026-05-15",
-      "strength": "높음",
-      "note": "북미 인프라 증설 속도 조절 및 중국 현지 공장 생산 EV의 일본 본토 역수입 구조 가동"
+      "note": "중국 패권에 대응한 수소 하드웨어 및 선박 주권 아키텍처 수립"
     },
     {
       "source": "POSCO",
-      "target": "Kawasaki Heavy Industries",
-      "type": "공급 계약",
-      "date": "2026-05-18",
+      "target": "Honda",
+      "type": "소재 제안",
+      "date": "2026-05-19",
       "strength": "보통",
-      "note": "표준 설계가 완료된 차세대 액체 수소 탱크 구조체향 극저온 고망간강 및 특수 합금 후판 승인 타진"
+      "note": "HEV/PHEV 배터리 믹스 다변화에 맞춘 고출력 양극재 역제안"
+    },
+    {
+      "source": "POSCO",
+      "target": "TEPCO",
+      "type": "인프라 협력",
+      "date": "2026-05-18",
+      "strength": "높음",
+      "note": "독립형 마이크로그리드 전력 품질 안정화용 Hyper NO 전기강판 공급 타진"
     }
   ]
 }
