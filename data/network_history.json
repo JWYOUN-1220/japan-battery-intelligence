@@ -1375,5 +1375,53 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-19",
+      "event": "혼다 북미 배터리 JV 라인 하이브리드(HEV)용 전격 전환",
+      "company": ["Honda", "L-H Battery Company"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "트럼프 2기 통상 관세 위험과 EV 캐즘 장기화에 대응해 미국 오하이오 합작법인 배터리 라인 일부를 HEV 전용으로 강제 전환하고 4.4조 엔을 투입합니다.",
+      "impact": "북미 배터리 벨트 핵심이 BEV에서 고출력 HEV/PHEV 중심 자급화로 이동하며 양극재 조달 믹스 변화 요구",
+      "source": "Honda IR Newsroom",
+      "url": "https://global.honda/en/investors/"
+    },
+    {
+      "date": "2026-05-18",
+      "event": "일본 10대 전력사 오프그리드 마이크로그리드 직송전 합법화",
+      "company": ["TEPCO", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "AI 데이터센터의 전력 계통 연계 병목을 우회하기 위해 민간 구축 독립형 전력망에서 인근 사업장으로의 직송전 상업 규정을 전면 개정했습니다.",
+      "impact": "일본 내 민간 주도 독립 발전소 및 미니 변전소 인프라 건설 붐 유도 및 전력 안정화 소재 수요 팽창",
+      "source": "TEPCO Press Release",
+      "url": "https://www.tepco.co.jp/en/hd/about/pressrelease/"
+    },
+    {
+      "date": "2026-05-18",
+      "event": "일본 수소 경제 공급망 전략 재정의 및 하드웨어 주권 선언",
+      "company": ["Kawasaki Heavy Industries", "METI"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "중국 주도의 재생에너지 클린테크 독점에 맞서 선박, 터빈, 탱크, 압축기 등 하드웨어 전반의 아키텍처와 안전 표준 독점을 선언했습니다.",
+      "impact": "수소 터미널 및 상용 선박 건조 시 우방국 적격 소재 법제화 유도 및 하이엔드 특수강 수요 유발",
+      "source": "METI English Site",
+      "url": "https://www.meti.go.jp/english/"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "도교가스-IHI 청정 e-methane 대형 플랜트 FEED 공식 착수",
+      "company": ["Tokyo Gas", "IHI"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "일본 수소 CfD(가격 차액 보조금) 예산 확정안에 연계하여 이산화탄소 포집 가스 합성을 위한 메가 플랜트 실전 기초설계를 전격 시작했습니다.",
+      "impact": "기존 가스 배관망 자산을 보존하는 상업용 메가 플랜트 건설 주기로 진입하며 고온·고압용 특수 합금강 수요 개시",
+      "source": "Tokyo Gas English Site",
+      "url": "https://www.tokyo-gas.co.jp/en/"
+    }
+  ]
+}
 
 
