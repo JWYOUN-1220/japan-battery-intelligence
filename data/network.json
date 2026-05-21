@@ -1,64 +1,56 @@
 {
   "nodes": [
-    {"id": "Honda", "group": "OEM"},
-    {"id": "LG Energy Solution", "group": "Cell Maker"},
-    {"id": "L-H Battery Company", "group": "Cell Maker"},
-    {"id": "TEPCO", "group": "Energy"},
     {"id": "METI", "group": "Policy"},
-    {"id": "Tokyo Gas", "group": "Energy"},
-    {"id": "IHI", "group": "Infra"},
-    {"id": "Kobe Steel", "group": "Material"},
+    {"id": "TSE", "group": "Policy"},
+    {"id": "TDK", "group": "Material"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "L-H Battery Company", "group": "Cell Maker"},
+    {"id": "Mitsubishi Materials", "group": "Recycle"},
+    {"id": "ReElement Technologies", "group": "Tech"},
+    {"id": "TEPCO", "group": "Energy"},
     {"id": "Kawasaki Heavy Industries", "group": "Infra"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
+      "source": "METI",
+      "target": "TDK",
+      "type": "정책 변화",
+      "date": "2026-05-18",
+      "strength": "높음",
+      "note": "SX 브랜드 2026 지정을 통한 ROIC 기반 AI-GX 포트폴리오 개편 유도"
+    },
+    {
       "source": "Honda",
       "target": "L-H Battery Company",
-      "type": "생산 라인 전환",
+      "type": "OEM 전략 변화",
       "date": "2026-05-19",
       "strength": "높음",
-      "note": "북미 합작공장 라인 일부를 HEV용 배터리용으로 강제 전환"
+      "note": "북미 관세 리스크 대응 미국 오하이오 배터리 라인 일부를 HEV용으로 전격 전환"
+    },
+    {
+      "source": "Mitsubishi Materials",
+      "target": "ReElement Technologies",
+      "type": "전략적 협력",
+      "date": "2026-05-15",
+      "strength": "높음",
+      "note": "오사카 전시회에서 크로마토그래피 기반 99.5% 블랙매스 리튬 직접 추출 스펙 가동"
     },
     {
       "source": "TEPCO",
       "target": "METI",
-      "type": "규정 개정",
+      "type": "정책 변화",
       "date": "2026-05-18",
       "strength": "높음",
-      "note": "민간 독립형 오프그리드 마이크로그리드 직송전 허용 상업 규정 개정"
-    },
-    {
-      "source": "Tokyo Gas",
-      "target": "IHI",
-      "type": "전략적 협력",
-      "date": "2026-05-15",
-      "strength": "보통",
-      "note": "수소 CfD 예산 연계 대형 e-methane 합성 메가 플랜트 FEED 착수"
-    },
-    {
-      "source": "Kawasaki Heavy Industries",
-      "target": "METI",
-      "type": "전략 동맹",
-      "date": "2026-05-18",
-      "strength": "높음",
-      "note": "중국 패권에 대응한 수소 하드웨어 및 선박 주권 아키텍처 수립"
+      "note": "AI 데이터센터 계통 우회를 위한 민간 오프그리드 직송전 규정 전면 개정"
     },
     {
       "source": "POSCO",
-      "target": "Honda",
-      "type": "소재 제안",
-      "date": "2026-05-19",
-      "strength": "보통",
-      "note": "HEV/PHEV 배터리 믹스 다변화에 맞춘 고출력 양극재 역제안"
-    },
-    {
-      "source": "POSCO",
-      "target": "TEPCO",
-      "type": "인프라 협력",
-      "date": "2026-05-18",
+      "target": "Kawasaki Heavy Industries",
+      "type": "공급 계약",
+      "date": "2026-05-21",
       "strength": "높음",
-      "note": "독립형 마이크로그리드 전력 품질 안정화용 Hyper NO 전기강판 공급 타진"
+      "note": "4만 m³급 상업용 액체 수소 탱크 표준 설계에 맞춰 극저온 고망간강 Spec-in 승인 추진"
     }
   ]
 }
