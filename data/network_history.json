@@ -1423,5 +1423,63 @@
     }
   ]
 }
-
+{
+  "history": [
+    {
+      "date": "2026-04-14",
+      "event": "일본 METI, 경제안전보장추진법 연계 배터리 비중국산 원료 공급망 지수 확정",
+      "company": ["METI", "SMM", "Toda Kogyo"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "일본 경제산업성(METI)은 광물 채굴부터 활물질 제조까지 중국 공정 의존도가 높은 소재를 배제하는 'Non-China Index' 가이드라인을 전격 가동했습니다.",
+      "impact": "중국산 전구체 의존도가 75% 이상인 일본 양극재 기업들의 비중국산 대체 서플라이 체인 구축 강제화",
+      "source": "Nikkei Economy & Policy",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "일본 전지공업회(BAJ), HEV·PHEV 고출력 배터리 소재 비중국산 규격 표준화 착수",
+      "company": ["BAJ", "Panasonic Energy", "Honda"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "BAJ는 일본 완성차 메이커들의 하이브리드(HEV) 시프트 전략에 발맞추어 미국 IRA FEOC 규제를 충족하는 차세대 배터리 셀용 소재 조달 규격을 제정하기 시작했습니다.",
+      "impact": "하이니켈 BEV 중심에서 고출력 HEV 전용 추적 가능한(Traceable) 클린 소재 중심으로 조달 동력 재배치",
+      "source": "Chemical Daily Japan",
+      "url": "https://www.baj.or.jp/e/index.html"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "도쿄가스-IHI, 메가 합성메탄 플랜트용 고압·수소 취성 내성 핵심 강재 스펙 확정",
+      "company": ["Tokyo Gas", "IHI", "Kobe Steel"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "정부 수소 CfD 보조금 예산을 기반으로 가동되는 연산 수만 톤 규모 e-methane 제조 플랜트의 리액터 및 고압 배관 핵심 강재 사양을 최종 도출했습니다.",
+      "impact": "실증 수준의 수소 인프라가 장기 보증(Warranty)이 요구되는 상업 마진 확보형 하드웨어 산업 단계로 진화",
+      "source": "Tokyo Gas English Press",
+      "url": "https://www.tokyo-gas.co.jp/en/press/index.html"
+    },
+    {
+      "date": "2026-05-22",
+      "event": "토요타-치요다화공, 100MW급 대형 알칼리 수전해 시스템 상업화 및 실전 배치",
+      "company": ["Toyota", "Chiyoda"],
+      "type": "공급 계약",
+      "strength": "높음",
+      "summary": "토요타의 셀 스택 대량 양산 기술과 치요다의 플랜트 설계 역량을 결합하여 공급망 리스크가 없는 귀금속 프리 니켈 전극 기반의 상업용 수소 생산 시스템 패키지를 런칭했습니다.",
+      "impact": "중국이 독점한 재생에너지 벨트 대신 선박·터빈·탱크 생태계를 장악하는 일본 중심의 '에너지 하드웨어 주권' 전략 구체화",
+      "source": "Toyota Global Newsroom",
+      "url": "https://global.toyota/en/newsroom/"
+    },
+    {
+      "date": "2026-05-24",
+      "event": "일본 정부, 전국 38곳 'GX 전략지역' 선정 및 와트·비트(Watt-Bit) 통합 인프라 가동",
+      "company": ["METI", "TEPCO"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "METI는 AI 데이터센터 유치에 따른 전력망 쇼티지를 돌파하기 위해 전력 인프라(와트)와 통신망(비트)을 단일 클러스터 내에 일체화하여 정비하는 정부 보조금 연계 정책을 수립했습니다.",
+      "impact": "지정 지역 중심의 고부하 독립형 마이크로그리드 및 미니 변전소 건설 붐을 유도하며 변전 기기용 특수강 수요 폭증 유발",
+      "source": "METI 공고",
+      "url": "https://www.meti.go.jp/policy/energy_environment/index.html"
+    }
+  ]
+}
 
