@@ -1,56 +1,83 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "TSE", "group": "Policy"},
-    {"id": "TDK", "group": "Material"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "L-H Battery Company", "group": "Cell Maker"},
-    {"id": "Mitsubishi Materials", "group": "Recycle"},
-    {"id": "ReElement Technologies", "group": "Tech"},
-    {"id": "TEPCO", "group": "Energy"},
-    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
+    {"id": "METI", "group": "Government"},
+    {"id": "BAJ", "group": "Association"},
+    {"id": "SMM", "group": "Material"},
+    {"id": "Toda Kogyo", "group": "Material"},
+    {"id": "Resonac", "group": "Material"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "Tokyo Gas", "group": "Energy"},
+    {"id": "IHI", "group": "Infra"},
+    {"id": "Kobe Steel", "group": "Material"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "Chiyoda", "group": "Infra"},
+    {"id": "Nippon Foundation", "group": "Foundation"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "TDK",
-      "type": "정책 변화",
-      "date": "2026-05-18",
+      "target": "SMM",
+      "type": "규제 적용",
+      "date": "2026-04-14",
       "strength": "높음",
-      "note": "SX 브랜드 2026 지정을 통한 ROIC 기반 AI-GX 포트폴리오 개편 유도"
+      "note": "비중국산 원료 공급망 지수(Non-China Index) 기준 미달 시 조달 배제 위험 부과"
     },
     {
-      "source": "Honda",
-      "target": "L-H Battery Company",
-      "type": "OEM 전략 변화",
-      "date": "2026-05-19",
+      "source": "BAJ",
+      "target": "Panasonic Energy",
+      "type": "표준화 수립",
+      "date": "2026-05-11",
       "strength": "높음",
-      "note": "북미 관세 리스크 대응 미국 오하이오 배터리 라인 일부를 HEV용으로 전격 전환"
+      "note": "미국 IRA FEOC 완벽 대응을 위한 HEV/PHEV용 고출력 소재 비중국산 규격 표준화 착수"
     },
     {
-      "source": "Mitsubishi Materials",
-      "target": "ReElement Technologies",
+      "source": "Tokyo Gas",
+      "target": "IHI",
       "type": "전략적 협력",
       "date": "2026-05-15",
       "strength": "높음",
-      "note": "오사카 전시회에서 크로마토그래피 기반 99.5% 블랙매스 리튬 직접 추출 스펙 가동"
+      "note": "합성메탄 메가 플랜트 기초설계(FEED) 단계에서 고압·수소 취성 내성 강재 스펙 확정"
     },
     {
-      "source": "TEPCO",
-      "target": "METI",
-      "type": "정책 변화",
-      "date": "2026-05-18",
+      "source": "Toyota",
+      "target": "Chiyoda",
+      "type": "공동 전개",
+      "date": "2026-05-22",
       "strength": "높음",
-      "note": "AI 데이터센터 계통 우회를 위한 민간 오프그리드 직송전 규정 전면 개정"
+      "note": "귀금속 프리 니켈 기반 100MW급 대형 수전해 시스템 상업화 및 실전 가동 세일즈 착수"
+    },
+    {
+      "source": "Chiyoda",
+      "target": "METI",
+      "type": "정책 연계 수주",
+      "date": "2026-05-19",
+      "strength": "보통",
+      "note": "GX 경제이행채 금융 가이드라인 및 의무형 GX-ETS 2단계 규제 대응 해외 CCS FEED 연속 수주"
+    },
+    {
+      "source": "Nippon Foundation",
+      "target": "Toyota",
+      "type": "기술 검증",
+      "date": "2026-05-19",
+      "strength": "보통",
+      "note": "태평양 심해저에서 발견된 수소·배터리용 고효율 망간 촉매 원가 절감 유효성 검증"
     },
     {
       "source": "POSCO",
-      "target": "Kawasaki Heavy Industries",
-      "type": "공급 계약",
-      "date": "2026-05-21",
+      "target": "BAJ",
+      "type": "사양 제안",
+      "date": "2026-05-25",
       "strength": "높음",
-      "note": "4만 m³급 상업용 액체 수소 탱크 표준 설계에 맞춰 극저온 고망간강 Spec-in 승인 추진"
+      "note": "비중국산 흑연 음극재 및 탄소 배출 이력 데이터 기반 기술 파트너 진입 타진"
+    },
+    {
+      "source": "POSCO",
+      "target": "IHI",
+      "type": "Spec-in 승인 추진",
+      "date": "2026-05-25",
+      "strength": "높음",
+      "note": "e-methane 리액터 및 배관류 적격성 인증을 위한 고망간강 및 특수 합금강 데이터 제출"
     }
   ]
 }
