@@ -39,7 +39,11 @@
         .meta a:hover { text-decoration: underline; }
         .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
         .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .jp-box { background: #f8fbff; border: 1px solid #d7e8f6; border-radius: 8px; padding: 16px; margin-bottom: 18px; }
         .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        .impact-flow-container { background: #fff; border: 1px solid var(--posco-blue); padding: 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .impact-step { flex: 1; min-width: 120px; padding: 10px; position: relative; }
+        .impact-step:not(:last-child):after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--posco-blue); font-weight: bold; font-size: 20px; }
         .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
     </style>
 </head>
@@ -47,40 +51,40 @@
     <div class="container">
         <div class="header">
             <h1>Japan Battery & GX Market Intelligence Report</h1>
-            <p>Date: 2026.05.25 | Analyst: MI Intelligence System | Target Sources: METI, BAJ, Tokyo Gas, Chiyoda, Toyota</p>
+            <p>Date: 2026.05.25 | Analyst: New Business Team Leader | Target Sources: METI, BAJ, Tokyo Gas, Chiyoda, Toyota</p>
         </div>
 
         <div class="summary-box">
             <h2>Executive Summary</h2>
             <p>
-                2026년 5월 말 일본 배터리 및 그린 트랜스포메이션(GX) 시장은 <strong>'비중국산 조달 규정 법제화 고도화'</strong>와 <strong>'에너지 하드웨어 주권(Sovereignty Bet) 확보'</strong> 국면이 정면으로 교차하고 있습니다[cite: 1]. METI의 핵심 광물 안보 조달 룰과 수소 경제 CfD 예산 집행이 실무 궤도에 정착되면서 단순한 탈탄소 논리를 넘어 독자적 아키텍처 구축을 향한 메가 플랜트 발주가 본격화되었습니다[cite: 1]. 특히 일본 자동차 제조사(JAMA) 및 배터리 공급망의 한계로 지적되는 전구체 대중국 의존도(75% 이상) 리스크는 포스코그룹에게 대체 불가능한 밸류체인 파트너로서의 강력한 전략적 기회를 제공합니다[cite: 1].
+                현재 일본 배터리 및 GX 시장은 METI의 경제안전보장 규범 구체화에 따른 <strong>'정제·합성 공정의 탈중국화(Non-China Index)'</strong> 압박과, 전력 계통 불안정성을 정면 돌파하려는 <strong>'분산형 독립 그리드(와트·비트 연계)'</strong> 인프라 투자가 핵심 축을 이루고 있습니다[cite: 1]. 국내 전구체 조달 의존도가 75%를 상회하는 일본 소재사들의 아킬레스건이 부각되는 가운데, 혼다의 북미 배터리 생산 라인의 HEV 시프트와 토요타·치요다화공의 100MW급 대형 수전해 시스템 상업 가동은 공급망 안보의 내실화와 주권 확보를 방증합니다[cite: 1]. 포스코그룹은 비중국 전구체·양극재 통합 공급망 역량 및 고효율 Hyper NO, 극저온 고망간강 사양 등록(Spec-in)을 통해 일본 핵심 진영과의 파트너십을 전방위적으로 확장해야 하는 적기를 맞이했습니다[cite: 1].
             </p>
         </div>
 
         <h2 class="section-title">Key News Section</h2>
         <div class="news-grid">
 
-            <!-- 뉴스 1: METI 비중국산 조달 룰 -->
+            <!-- 뉴스 1: METI 공급망 지수 & 조달 규제 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
-                    <span class="badge high">Source: 경제산업성 (METI)</span>
+                    <span class="badge high">Source: 경제산업성 (METI) / Nikkei</span>
                 </div>
-                <div class="news-title">일본 METI, '비중국산 원료 공급망 지수' 산정 스펙 확정 및 조달 규제 강화</div>
+                <div class="news-title">일본 METI, '비중국산 원료 공급망 지수' 산정 스펙 확정 및 조달 룰 공포</div>
                 <div class="meta">
-                    <span>발표일: 2026-04-14</span> | 
-                    <a href="https://www.meti.go.jp/policy/economy/economic_security/index.html" target="_blank">METI 경제안전보장추진법 정책 원문</a>
+                    <span>발표일: 2026-04-14</span>
+                    <a href="https://www.meti.go.jp/policy/economy/economic_security/index.html" target="_blank">METI 경제안전보장 규범 공식 페이지</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">일본 경제산업성(METI)은 경제안전보장추진법에 의거하여 배터리 가치사슬 전반의 탈중국화 수준을 계량화하는 '비중국산 원료 공급망 지수(Non-China Index)' 산정 메커니즘을 확정했습니다[cite: 1]. 광물 채굴부터 제련, 전구체 합성, 최종 활물질 제조 단계까지 가중치를 합산하는 방식으로, 중국 내 공정을 거친 전구체는 가중치 0 처리되어 조달 시장에서 원천 배제됩니다[cite: 1]. 한편 전력 계통 시장 개정(BESS 가격 캡 63% 하향) 및 산림법 개정으로 메가 솔라 개발이 제한됨에 따라 '상업용 루프탑 태양광(kWh당 19엔 FIT)+자가소비형 BESS' 유닛 수요가 폭증하고 있습니다[cite: 1].</p>
+                <p class="content-text">일본 경제산업성(METI)은 경제안전보장추진법에 의거하여 배터리 가치사슬 전체의 탈중국화 수준을 계량화하는 '비중국산 원료 공급망 지수(Non-China Index)' 산정 공식을 전격 가동했습니다[cite: 1]. 채굴부터 제련, 전구체 합성, 최종 활물질 제조 단계까지 중량 비중과 지역 가중치를 적용하며, 원광 채굴지보다 '황산염 정제 및 전구체 합성' 공정이 중국 내에서 이뤄졌을 경우 가장 큰 감점(가중치 0 처리)을 부여해 조달 시장에서 완전 배제하는 엄격한 추적성(Traceability) 기준을 수립했습니다[cite: 1]. 동시에 4월 전면 시행된 고속 반응 전력 조절 시장의 가격 캡 63% 하향 조치와 상업용 루프탑 태양광의 kWh당 19엔 FIT 확정으로 인해 공장·물류센터용 '루프탑 태양광 + 자가소비형 ESS(BESS)' 수요가 폭증하고 있습니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">단순한 원광 채굴지를 넘어 '황산염 정제 및 전구체 합성' 공정의 비중국화 여부가 일본 시장 진입의 절대적 허들이 되었습니다[cite: 1]. 계통 인프라의 한계로 인해 민간 주도의 분산형 고부하 독립 전력망 및 BESS 시장의 사업 아키텍처가 전면 재편되는 구조입니다[cite: 1].</p>
+                <p class="content-text">단순히 원료의 채굴국가뿐만 아니라 제련과 전구체 생산 거점의 탈중국성이 일본 시장 진입의 핵심 장벽으로 정착되었습니다[cite: 1]. 또한 전력 계통 시장의 가격 캡 제어로 인해 대규모 BESS 개발사들이 주파수 제어에서 재생에너지 발전 제어 및 독립형 그리드 자산 운영 형태로 사업 모델을 전환하고 있어 소형 분산형 BESS 연계 아키텍처가 시장의 주류로 부상 중입니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코퓨처엠의 비중국 전구체 및 양극재 밸류체인을 METI 가이드라인의 최고 등급 적격 원료로 등록 추진해야 합니다. 또한 자가소비형 BESS 독립망의 미세 전력 조절에 필수적인 고효율 방향성 전기강판(Hyper NO) 패키지 스펙인(Spec-in) 영업을 종합상사 채널과 다각화해야 합니다[cite: 1].
+                    <strong>POSCO Opportunity:</strong> 포스코퓨처엠의 비중국 인조흑연/천연흑연 음극재 및 전구체-양극재 수직계열화 밸류체인을 METI 가이드라인 최적격 규격으로 연동하는 한편, 상업용 루프탑 ESS 결합 독립망용 변압기에 필수적인 고효율 방향성 전기강판(Hyper NO) 패키지 공급 딜을 공동 추진해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 2: 일본 전구체 아킬레스건 및 BAJ 가이드라인 -->
+            <!-- 뉴스 2: 일본 전구체 아킬레스건 & BAJ 표준화 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
@@ -88,39 +92,39 @@
                 </div>
                 <div class="news-title">일본 전지공업회(BAJ), 'HEV·PHEV' 배터리 소재 비중국산 규격 표준화 착수</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-11</span> | 
-                    <a href="https://www.baj.or.jp/e/index.html" target="_blank">BAJ 가이드라인 공지</a>
+                    <span>발표일: 2026-05-11</span>
+                    <a href="https://www.baj.or.jp/e/index.html" target="_blank">BAJ 가이드라인 공지 페이지</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">스미토모 금속광산, 니치아 등 일본 양극재 기업들은 세계 최고 수준의 하이니켈 합성 기술을 보유하고 있으나 전구체 조달의 대중국 의존도는 75%를 상회합니다[cite: 1]. 이에 따라 일본 전지공업회(BAJ)는 완성차 메이커들의 하이브리드(HEV) 시프트 전략에 발맞추어 미국 IRA FEOC 규제를 100% 충족하는 '차세대 고출력 배터리 셀용 소재 조달 가이드라인' 제정에 전격 착수했습니다[cite: 1]. 파나소닉 에너지가 북미향 2170 원통형 배터리에 비중국산 음극재 조달 계약을 체결한 기조와 일치합니다[cite: 1].</p>
+                <p class="content-text">일본의 메이저 양극재 제조사(스미토모 금속광산, 니치아, 도다공업 등)들은 세계 최고 수준의 합성 기술을 보유하고 있으나, 전 단계인 전구체 조달의 대중국 의존도가 75%를 상회하고 있어 METI 규범 하에서 탈락 위기에 직면했습니다[cite: 1]. 이에 따라 일본 전지공업회(BAJ)는 완성차 메이커들의 북미 EV 라인 하이브리드(HEV) 시프트 전략에 맞추어, 미국 IRA의 FEOC 규제와 일본의 경제안보 규범을 100% 충족하는 '차세대 고출력 배터리 셀용 소재 조달 가이드라인' 제정에 전격 착수했습니다[cite: 1]. 이는 파나소닉 에너지가 북미향 2170 원통형 셀에 비중국산 음극재 조달 계약을 집중 배치한 흐름과 일치합니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">일본 독자 리사이클링 자산만으로는 파나소닉 등 대규모 원통형 셀 라인의 피드스탁을 감당할 수 없어 중국 의존도가 지속되는 딜레마에 직면했습니다[cite: 1]. 배터리 조달 동력이 하이니켈 BEV 소재에서 고출력·장수명 HEV 전용 '추적 가능한(Traceable) 클린 소재'로 급격히 재배치되고 있습니다[cite: 1].</p>
+                <p class="content-text">스미토모 금속광산 등 일본 선도사들이 자체 에히메현 리사이클링 자산을 가동 중이나, 대규모 메인 피드스탁 수요를 감당하기에는 용량이 절대적으로 부족해 중국 조달에 의존하는 구조적 아킬레스건이 노출되었습니다[cite: 1]. 배터리 공급망의 동력이 하이니켈 BEV 위주에서 고출력·장수명 HEV 전용 소재 및 추적 가능한(Traceable) 클린 소재 체계로 고속 재배치되고 있습니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코그룹이 확보한 비중국산 천연/인조흑연 음극재 포트폴리오와 탄소 배출 이력 데이터를 패키징하여 BAJ의 신규 표준 가이드라인 제정 시 기술 파트너로 진입해야 하며, 일본계 양극재사들의 전구체 쇼티지를 방어하는 공급망 동맹 구축이 긴요합니다[cite: 1].
+                    <strong>POSCO Opportunity:</strong> 혼다 및 파나소닉 진역의 비중국산 소재 갈증을 해결하기 위해 포스코퓨처엠이 보유한 비중국산 천연/인조흑연 음극재 포트폴리오와 탄소 배출 이력 데이터를 패키징하여 BAJ의 신규 표준 가이드라인 제정 시 기술 파트너로 조기 진입하고 전구체 쇼티지 대응 공급망 동맹을 수립해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 3: 도쿄가스-IHI e-methane 강재 확정 -->
+            <!-- 뉴스 3: 혼다 배터리 라인 HEV 전격 전환 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
-                    <span class="badge high">Source: 도쿄가스 / IHI Newsroom</span>
+                    <span class="badge high">Source: 혼다 자동차 (Honda IR)</span>
                 </div>
-                <div class="news-title">도쿄가스-IHI, 합성메탄(e-methane) 플랜트용 '고압·수소 취성 내성' 핵심 강재 스펙 확정</div>
+                <div class="news-title">혼다, 북미 EV 배터리 생산 라인일부 '하이브리드(HEV)용' 전격 전환 선언</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-15</span> | 
-                    <a href="https://www.tokyo-gas.co.jp/en/press/index.html" target="_blank">Tokyo Gas English Press</a>
+                    <span>발표일: 2026-05-19</span>
+                    <a href="https://global.honda/en/investors.html" target="_blank">Honda 비즈니스 브리핑 페이지</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">도쿄가스는 고베제강 및 IHI와 협력하여 추진 중인 연산 수만 톤 규모의 메가 합성메탄 플랜트 기초설계(FEED) 단계에서 이산화탄소와 수소의 고온·고압 반응을 견뎌야 하는 리액터 및 배관류의 핵심 강재 스펙을 최종 확정했습니다[cite: 1]. 이는 일본 정부의 수소 CfD 예산이 실무적으로 확정되어 인프라 투자의 재무적 마진이 소거되었기 때문에 가시화된 프로젝트입니다[cite: 1].</p>
+                <p class="content-text">혼다는 공식 미디어를 통해 미국 오하이오주에 LG에너지솔루션과 합작 설립한 'L-H Battery Company'의 전기차(EV) 배터리 생산 라인 일부를 하이브리드(HEV)용 배터리 생산 라인으로 전격 전환한다고 최종 발표했습니다[cite: 1]. 북미 관세 장벽과 EV 캐즘 기류에 유연하게 대응하기 위해 향후 3년간 HEV 및 가솔린에 총 4.4조 엔을 투입할 예정이며, 모터와 인버터 등 핵심 구동 부품의 미국 내 현지 조달 비율을 기존 대비 4배 이상 강제로 끌어올리는 서바이벌 기조를 확정했습니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">기존 도시가스 배관망을 100% 재활용하는 '자산 보존형 GX' 모델이 실제 하드웨어 발주가 일어나는 건설 단계로 진화했습니다[cite: 1]. 단순 실증용 범용재 조달에서 벗어나, 장기 보증(Warranty)이 요구되는 수소 환경 특화 고부가가치 합금강 중심으로 구매 구조가 격상되었습니다[cite: 1].</p>
+                <p class="content-text">무리한 전기차 독주 대신 시장의 실질 수요와 유휴 가동 자산의 효율성을 극대화하는 '재무적 생존력(Operational Efficiency)'을 최우선 가치로 설정한 결과입니다[cite: 1]. 북미 배터리 벨트의 조달 패러다임이 대용량 BEV 셀 위주에서 미국 내 자급화가 입증된 고출력 시스템 부품망 중심으로 재편되고 있습니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 가와사키 중공업의 수소 엔진 출시와 도쿄가스 메가 플랜트의 설계 도면(FEED)에 포스코의 수소 취성 내성 특수강 및 극저온 고망간(High Mn)강이 사양 반영(Spec-in)되도록 고베제강 및 일본 엔지니어링사 설계 부서에 적격성 인증 데이터를 즉시 투입해야 합니다[cite: 1].
+                    <strong>POSCO Opportunity:</strong> 혼다의 전략 수정에 따라 포스코퓨처엠의 북미 양극재 공급 라인업을 BEV 하이니켈 단결정 중심에서 고출력·장수명 HEV 전용 소재 공급으로 믹스 다변화하고, 부품 현지화 가속 기조에 맞추어 미국 내 가공 데이터 인증 연계 소재 공급권을 확보해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 4: GX 전략지역 38곳 선정 -->
+            <!-- 뉴스 4: METI GX 전략지역 38곳 선정 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
@@ -128,75 +132,75 @@
                 </div>
                 <div class="news-title">일본 정부, 'GX 전략지역' 38곳 선정... 통신·전력 통합 '와트·비트(Watt-Bit)' 인프라 가동</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-24</span> | 
-                    <a href="https://www.meti.go.jp/policy/energy_environment/index.html" target="_blank">METI GX 정책 공고</a>
+                    <span>발표일: 2026-05-24</span>
+                    <a href="https://www.meti.go.jp/policy/energy_environment/index.html" target="_blank">METI GX 경제이행 추진 전략 페이지</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">경제산업성(METI)은 2050 넷제로 달성과 산업경쟁력 강화를 위해 일본 전역에 38개의 'GX 전략지역'을 선정했습니다[cite: 1]. 이번 정책의 핵심은 전력 인프라(와트)와 통신 인프라(비트)를 단일 산업 단지 내에 일체적으로 정비하는 '와트·비트 연계' 공략입니다[cite: 1]. 선정 지역은 장기 탈탄소 전원 옥션 및 배출권 거래제(GX 리그)와 연동된 정부 보조금과 세제 혜택이 집중 배정됩니다[cite: 1].</p>
+                <p class="content-text">경제산업성(METI)은 2050 넷제로 달성과 국가 경쟁력 강화를 위해 일본 전역에 총 38개의 공식 'GX 전략지역'을 지정했습니다[cite: 1]. 이번 인프라의 핵심 테마는 전력망(와트)과 통신 데이터망(비트)을 단일 산업 클러스터 내에 입체화하여 연계하는 '와트·비트' 공략이며, 올여름 최종 인정을 앞두고 장기 탈탄소 전원 옥션 및 필수형 'GX-ETS 2단계(배출권 거래제 의무화)' 규제 완충을 위한 국가 보조금과 세제 혜택이 집중 투입됩니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">AI 데이터센터 유치에 따른 전력망 부족을 지역별 '넷제로 클러스터' 내부의 분산형 에너지 자립으로 돌파하려는 시·공간적 효율 극대화 전략입니다[cite: 1]. 인프라 투자가 개별 플랜트 단위에서 재생에너지, 변전소, BESS, 데이터센터가 통합된 플랫폼 인프라로 재편되었습니다[cite: 1].</p>
+                <p class="content-text">빅테크의 AI 데이터센터 유치에 따른 전력망 쇼티지 정체를 지역별 넷제로 클러스터 내부의 분산형 에너지 자립망으로 우회 돌파하는 전략입니다[cite: 1]. 전력망 인프라가 개별 공장 단위를 넘어 재생에너지, 변전소, 배터리(BESS), 데이터센터가 단일 플랫폼으로 묶이는 패러다임으로 진화했습니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 고부하 독립 전력망 내부의 미니 변전소 건설은 전력 손실 제어가 극도로 까다롭습니다. 올여름 최종 인정을 앞둔 유망 지역의 일본 종합상사 및 EPC 라인을 대상으로 포스코의 방향성 전기강판(Hyper NO)을 포함한 '클러스터 전용 고효율 강재 패키지' 세일즈를 가동해야 합니다[cite: 1].
+                    <strong>POSCO Opportunity:</strong> 고부하 독립형 마이크로그리드 내부의 미니 변전소 인프라는 미세한 전력 손실 방어 및 품질 제어가 생명입니다. 해당 클러스터를 주도하는 유망 지역의 일본 종합상사 및 EPC 파트너를 대상으로 포스코 고효율 방향성 전기강판(Hyper NO) 패키지 제안 딜을 다각화해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 5: 토요타-치요다화공 수전해 시스템 -->
+            <!-- 뉴스 5: 토요타-치요다화공 수전해 상업화 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
                     <span class="badge high">Source: 토요타자동차 / 치요다화공건설</span>
                 </div>
-                <div class="news-title">토요타-치요다화공, 100MW급 대형 수전해 시스템 상업화 및 혼샤 공장 실전 가동</div>
+                <div class="news-title">토요타-치요다화공, 100MW급 대형 수전해 시스템 상업화 및 실전 배치 가동</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-22</span> | 
-                    <a href="https://global.toyota/en/newsroom/" target="_blank">Toyota Global Newsroom</a>
+                    <span>발표일: 2026-05-22</span>
+                    <a href="https://global.toyota/en/newsroom/" target="_blank">Toyota 글로벌 뉴스룸</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">토요타(Toyota)와 치요다화공건설(Chiyoda)은 공동 개발한 대규모 알칼리 수전해 수소 생산 시스템을 토요타 혼샤(Honsha) 공장에 실전 배치하고, 100메가와트(MW) 이상의 초대형 프로젝트로 확장 가능한 '상업용 수소 오퍼레이션(O&M) 패키지'를 공식 출시했습니다[cite: 1]. 토요타가 덴소 후쿠시마 공장에서 다진 스택 기술에 치요다의 플랜트 엔지니어링 노하우를 결합했으며, 공급망 리스크가 없는 코발트 및 귀금속 프리(Free) 니켈 기반 수소 전극 기술의 글로벌 세일즈를 하노버 메세 2026을 기점으로 가속화하고 있습니다[cite: 1].</p>
+                <p class="content-text">토요타(Toyota)와 치요다화공건설(Chiyoda)은 양사가 공동 개발한 대규모 알칼리 수전해 수소 생산 시스템을 토요타 혼샤(Honsha) 공장에 실전 배치하고, 100메가와트(MW) 이상의 초대형 프로젝트로 확장 가능한 '상업용 수소 오퍼레이션(O&M) 패키지'를 공식 런칭했습니다[cite: 1]. 토요타가 덴소 후쿠시마 공장에서 고도화한 셀 스택 적층 기술에 치요다의 플랜트 설계 노하우를 결합했으며, 하노버 메세 2026을 기점으로 공급망 리스크가 없는 코발트 및 귀금속 프리(Free) 니켈 기반 전극 기술의 글로벌 수소 세일즈를 대대적으로 가속화하고 있습니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">일본 주도의 '수소 전략'이 단순 탈탄소를 넘어 '중국 주도 클린테크 공급망에 대항하는 에너지 하드웨어 주권(Sovereignty Bet)'으로 재정의되었습니다[cite: 1]. 태양광·풍력과 달리 선박, 터빈, 탱크, 압축기 등 하드웨어 생태계와 안전 표준 전체를 자국 및 우방국 중심으로 독자 구축하겠다는 포석입니다[cite: 1].</p>
+                <p class="content-text">일본 진영의 수소 로드맵이 단순 탄소 감축 수단에서 '중국 주도 클린테크 공급망에 대항하는 에너지 하드웨어 주권(Sovereignty Bet)' 확보 전술로 공식 재정의되었습니다[cite: 1]. 태양광 등 달리 선박, 터빈, 탱크, 압축기 등 고난도 하드웨어 생태계와 표준 자체를 독자 조달망으로 통제하겠다는 야심찬 포석입니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 일본 대형 상사와 완성차 진역이 향후 수소 터미널 및 수송 인프라 구축 시 우방국의 안보 적격 소재 사용을 규정화할 가능성이 높습니다[cite: 1]. 토요타-치요다 수전해 플랜트 구조물 및 배관재 라인에 포스코의 고내식 스테인리스강 및 가공 특수 합금재 공급 협의를 개시해야 합니다.
+                    <strong>POSCO Opportunity:</strong> 향후 일본 대형 상사와 수소 연합이 물류 기지 구축 시 확실한 우방국 안보 적격 소재 사용을 규정화할 가능성이 확실시됩니다[cite: 1]. 토요타-치요다 수전해 인프라 스택 및 가와사키 중공업의 수소 터빈용 구조재 라인에 포스코 고내식 스테인리스강 및 가공 합금재 스펙인 영업을 전개해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 6: 치요다화공 CCS FEED 연속 수주 -->
+            <!-- 뉴스 6: IHI-도쿄가스 e-methane 강재 스펙 확정 -->
             <div class="news-card">
                 <div class="badge-row">
-                    <span class="badge medium">중요도: MEDIUM</span>
-                    <span class="badge high">Source: 치요다화공건설 IR</span>
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge medium">Source: 도쿄가스 / IHI 뉴스룸</span>
                 </div>
-                <div class="news-title">치요다화공, 해외 대형 CCS 프로젝트 FEED(기초설계) 연속 수주</div>
+                <div class="news-title">IHI·도쿄가스, 합성메탄(e-methane) 플랜트용 '고압·수소 취성 내성' 핵심 강재 스펙 확정</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-19</span> | 
-                    <a href="https://www.chiyodacorp.com/en/media/news/" target="_blank">Chiyoda Corp News</a>
+                    <span>발표일: 2026-05-15</span>
+                    <a href="https://www.tokyo-gas.co.jp/en/" target="_blank">Tokyo Gas 영문 포털</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">치요다화공건설은 일본 경제산업성(METI)의 GX 추진 전략 및 20조 엔 규모의 'GX 경제이행채' 자금 지원 가이드라인에 발맞추어, 대형 이산화탄소 포집·저장(CCS) 프로젝트의 기초설계(FEED) 및 타당성 조사를 연이어 수수했다고 밝혔습니다[cite: 1]. 이는 일본 다배출 기업들이 4월부터 도입된 필수형 'GX-ETS 2단계(배출권 거래제 의무화)' 규제를 회피하기 위해 해외 탄소 저장소 자본 투자를 서두르고 있기 때문입니다[cite: 1].</p>
+                <p class="content-text">도쿄가스와 IHI는 일본 정부의 청정 수소 경제 가격 차액 보조금(CfD) 예산 획득을 기반으로 추진 중인 연산 수만 톤 규모의 메가 합성메탄 플랜트 기초설계(FEED) 단계에서 핵심 아키텍처 스펙을 최종 조율했습니다[cite: 1]. 이산화탄소 포집 가스와 수소의 가혹한 고온·고압 반응을 견뎌야 하는 핵심 리액터(반응기) 및 내부 배관류의 '고압·수소 취성 내성' 특수강 스펙을 확정하고 실무 자재 발주 검토에 착수했습니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">일본 내수 중심의 CCUS 사업 구조가 일본 정부의 경제이행채 금융 인프라를 기반으로 동남아시아 및 호주 등 해외 국경 간(Cross-border) 이송 저장 사업으로 급격히 다각화되고 있습니다.</p>
+                <p class="content-text">기존의 도시가스 매설 배관 인프라 및 가스 연소 기기 인프라를 100% 재활용하는 '자산 보존형 GX' 모델의 표준 설계가 확정되었음을 의미합니다[cite: 1]. 단순 실증 수준의 가스 합성 기술이 실제 발주가 수반되는 초대형 메가 플랜트 하드웨어 건설 주기로 진입하여 장기 보증(Warranty)형 합금강 구매 구조를 형성했습니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코인터내셔널이 글로벌 시장에서 추진 중인 CCS 액화 이송선 및 터미널 프로젝트와 연계하여, 치요다화공이 FEED를 수행하는 수송·저장 아키텍처에 포스코의 이산화탄소 수송용 고압 내부식 강재 기술을 패키지로 결합해야 합니다.
+                    <strong>POSCO Opportunity:</strong> 도쿄가스-IHI 핵심 설계 도면에 포스코 고유의 수소 취성 내성 특수 합금강 및 극저온 고망간(High Mn)강의 강재 사양 등록(Spec-in)을 반영시킬 수 있는 마지막 기회입니다. 기술연구소 적격성 데이터를 기반으로 일본 엔지니어링사(JGC, 치요다 등) 설계 실무 채널을 전방위 압박해야 합니다[cite: 1].
                 </div>
             </div>
 
-            <!-- 뉴스 7: 태평양 심해저 망간 혁신 메탈 발견 -->
+            <!-- 뉴스 7: 치요다화공 해외 CCS FEED 수주 -->
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge medium">중요도: MEDIUM</span>
-                    <span class="badge high">Source: 닛폰재단 / 도쿄대학</span>
+                    <span class="badge high">Source: 치요다화공건설 IR 공시</span>
                 </div>
-                <div class="news-title">일본 연구팀, 태평양 심해저에서 차세대 배터리·수소용 '망간 촉매 노듈' 매장지 발견</div>
+                <div class="news-title">치요다화공, 해외 대형 CCS 프로젝트 FEED(기초설계) 연속 수주 가속화</div>
                 <div class="meta">
-                    <span>발표일: 2026-05-19</span> | 
-                    <a href="https://www.nippon-foundation.or.jp/en/news/pr" target="_blank">Nippon Foundation PR</a>
+                    <span>발표일: 2026-05-19</span>
+                    <a href="https://www.chiyodacorp.com/en/" target="_blank">Chiyoda Corp 미디어 센터</a>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">닛폰재단(Nippon Foundation)과 도쿄대 연구팀은 태평양 심해저에서 플래티넘과 이리듐 등 초고가 희귀 광물을 완벽히 대체할 수 있는 막대한 양의 망간 고효율 촉매 노듈(Nodules) 매장지를 발견했습니다[cite: 1]. 일본 정부의 1,070억 달러(약 140조 원) 규모 수소·이차전지 주권 확보 미션의 일환으로 진행된 이번 발견을 통해, 연구진은 이 망간 기반 촉매가 그린 수소 수전해 및 차세대 배터리 생산 단가를 기존 대비 획기적으로 낮출 수 있음을 검증했습니다[cite: 1].</p>
+                <p class="content-text">치요다화공건설은 일본 경제산업성의 GX 추진 전략 및 총 20조 엔 규모의 'GX 경제이행채' 자금 지원 가이드라인에 맞추어, 해외 대형 이산화탄소 포집·저장(CCS) 프로젝트의 기초설계(FEED) 및 타당성 조사를 연이어 수주했습니다[cite: 1]. 이는 일본 내 다배출 대기업들이 필수형으로 전환된 'GX-ETS 2단계' 탄소 규제 부채를 헷징하기 위해 해외 탄소 저장소 자본 투자를 대대적으로 서두르고 있는 실물 경제 흐름에 기인합니다[cite: 1].</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">특정 희귀 금속의 자원 독점 리스크를 우회할 수 있는 원소재 대체 기술 노선이 확보되었습니다. 일본 정부가 심해저 광물 인프라 자급화에 대규모 국가 자본을 투입할 근거가 마련되었습니다[cite: 1].</p>
+                <p class="content-text">일본 정부의 경제이행채 금융 인프라와 결합하여 대규모 CCUS 인프라 시장이 일본 국내를 넘어 아세안 및 호주 등 글로벌 Cross-border 고압 이송 저장 물류 시스템 시장 구조로 고속 다각화되고 있습니다[cite: 1].</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코퓨처엠의 미래 차세대 비리튬계/비귀금속 배터리 및 수전해 전극 소재 R&D 로드맵에 도쿄대 연구팀의 망간 촉매 가공 원천 기술을 접목할 수 있도록 전략적 기술 모니터링 및 공동 연구 채널 개설을 추진해야 합니다.
+                    <strong>POSCO Opportunity:</strong> 포스코인터내셔널이 글로벌 시장에서 전개 중인 이산화탄소 고압 액화 운송선 및 저장 터미널 구축 프로젝트와 연계하여 치요다화공이 FEED를 수행하는 글로벌 CCS 자산의 기자재 라인업에 포스코 고압 내부식 특수 강재 공급 패키지를 연동해야 합니다[cite: 1].
                 </div>
             </div>
 
