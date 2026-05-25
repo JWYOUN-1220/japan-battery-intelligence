@@ -1,83 +1,53 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Government"},
-    {"id": "BAJ", "group": "Association"},
-    {"id": "SMM", "group": "Material"},
-    {"id": "Toda Kogyo", "group": "Material"},
-    {"id": "Resonac", "group": "Material"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
-    {"id": "Tokyo Gas", "group": "Energy"},
-    {"id": "IHI", "group": "Infra"},
-    {"id": "Kobe Steel", "group": "Material"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Chiyoda", "group": "Infra"},
-    {"id": "Nippon Foundation", "group": "Foundation"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "GS Yuasa", "group": "Cell"},
+    {"id": "Mitsubishi Corp", "group": "Trading"},
+    {"id": "JX Metals", "group": "Refining"},
+    {"id": "Panasonic Energy", "group": "Cell"},
+    {"id": "Itochu Corp", "group": "Trading"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "SMM",
-      "type": "규제 적용",
-      "date": "2026-04-14",
-      "strength": "높음",
-      "note": "비중국산 원료 공급망 지수(Non-China Index) 기준 미달 시 조달 배제 위험 부과"
+      "target": "POSCO",
+      "type": "Subsidy Qualification",
+      "date": "2026-04-02",
+      "strength": "매우 높음",
+      "note": "안보 등급 가이드라인 시행에 따른 비중국(LFP/흑연) 소재 보조금 수혜 가점 부여"
     },
     {
-      "source": "BAJ",
+      "source": "GS Yuasa",
+      "target": "POSCO",
+      "type": "Pricing Strategy",
+      "date": "2026-04-02",
+      "strength": "매우 높음",
+      "note": "배터리 가격 인상에 따른 원가 방어 목적 장기 가격 안정형 소재 제안 타진"
+    },
+    {
+      "source": "Mitsubishi Corp",
       "target": "Panasonic Energy",
-      "type": "표준화 수립",
-      "date": "2026-05-11",
+      "type": "Supply",
+      "date": "2026-04-02",
       "strength": "높음",
-      "note": "미국 IRA FEOC 완벽 대응을 위한 HEV/PHEV용 고출력 소재 비중국산 규격 표준화 착수"
+      "note": "폐수 리사이클 화학 추출 탄산리튬 첫 상업 물량 납품 및 검증"
     },
     {
-      "source": "Tokyo Gas",
-      "target": "IHI",
-      "type": "전략적 협력",
-      "date": "2026-05-15",
-      "strength": "높음",
-      "note": "합성메탄 메가 플랜트 기초설계(FEED) 단계에서 고압·수소 취성 내성 강재 스펙 확정"
+      "source": "Panasonic Energy",
+      "target": "POSCO",
+      "type": "Compliance",
+      "date": "2026-04-02",
+      "strength": "매우 높음",
+      "note": "배터리 여권 연동 재생 원료(Recycled Content) 비율 실시간 인증 의무화"
     },
     {
-      "source": "Toyota",
-      "target": "Chiyoda",
-      "type": "공동 전개",
-      "date": "2026-05-22",
-      "strength": "높음",
-      "note": "귀금속 프리 니켈 기반 100MW급 대형 수전해 시스템 상업화 및 실전 가동 세일즈 착수"
-    },
-    {
-      "source": "Chiyoda",
-      "target": "METI",
-      "type": "정책 연계 수주",
-      "date": "2026-05-19",
+      "source": "Itochu Corp",
+      "target": "POSCO",
+      "type": "Potential Partner",
+      "date": "2026-04-02",
       "strength": "보통",
-      "note": "GX 경제이행채 금융 가이드라인 및 의무형 GX-ETS 2단계 규제 대응 해외 CCS FEED 연속 수주"
-    },
-    {
-      "source": "Nippon Foundation",
-      "target": "Toyota",
-      "type": "기술 검증",
-      "date": "2026-05-19",
-      "strength": "보통",
-      "note": "태평양 심해저에서 발견된 수소·배터리용 고효율 망간 촉매 원가 절감 유효성 검증"
-    },
-    {
-      "source": "POSCO",
-      "target": "BAJ",
-      "type": "사양 제안",
-      "date": "2026-05-25",
-      "strength": "높음",
-      "note": "비중국산 흑연 음극재 및 탄소 배출 이력 데이터 기반 기술 파트너 진입 타진"
-    },
-    {
-      "source": "POSCO",
-      "target": "IHI",
-      "type": "Spec-in 승인 추진",
-      "date": "2026-05-25",
-      "strength": "높음",
-      "note": "e-methane 리액터 및 배관류 적격성 인증을 위한 고망간강 및 특수 합금강 데이터 제출"
+      "note": "호주산 천연흑연 물량 기반 포스코 기술 적용 하이브리드 음극재 개발 협의"
     }
   ]
 }
