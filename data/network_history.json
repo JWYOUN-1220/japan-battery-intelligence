@@ -1482,4 +1482,63 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-02",
+      "event": "일본 정부, 배터리 보조금 '안보 등급' 공식 도입 및 중국산 배제",
+      "company": ["METI"],
+      "type": "정책 변화",
+      "strength": "매우 높음",
+      "summary": "일본경제신문 보도. 특정 국가 소재 의존도가 높은 배터리 프로젝트를 보조금 대상에서 실질적으로 배제하는 안보 가점제를 가동함.",
+      "impact": "중국산 LFP의 가격 경쟁력 무력화. 안보 증명이 가능한 포스코퓨처엠 등 한국 소재사의 일본 시장 수주 확률 극대화.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "GS유아사, 배터리 원가 전가 '가격 인상' 단행",
+      "company": ["GS Yuasa"],
+      "type": "가격 정책 변화",
+      "strength": "매우 높음",
+      "summary": "GS유아사 공식 보도. 원자재 및 에너지 비용 상승 압박에 대응해 산업용 배터리 단가를 인상하며 점유율 출혈 경쟁을 멈춤.",
+      "impact": "셀 메이커 수익성 방어 기조 전환. 원가 상승 부담을 줄일 수 있는 장기 안정형 양·음극재 패키지의 영업 중요성 부각.",
+      "source": "GS Yuasa Newsroom",
+      "url": "https://newsroom.gs-yuasa.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "미쓰비시-JX 리사이클 법인, 폐수 추출 리튬 첫 상업 출하",
+      "company": ["Mitsubishi Corp", "JX Metals", "Panasonic Energy"],
+      "type": "상업화 실효",
+      "strength": "높음",
+      "summary": "일간철강신문 보도. 공정 폐수에서 화학적 필터링으로 추출한 저비용 탄산리튬을 파나소닉 양산 라인에 첫 공급함.",
+      "impact": "도시광산 추출 비용의 구조적 개선 및 자급화 달성. 역내 밸류체인 진입을 위한 스왑(Swap) 등 제휴 파트너십 구축 필수.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "파나소닉, 배터리 여권 연동 '재생 원료 인증제' 전격 도입",
+      "company": ["Panasonic Energy"],
+      "type": "조달 규범 변화",
+      "strength": "매우 높음",
+      "summary": "일본경제신문 보도. 양극재 등 1차 벤더들에게 납품 시 재생 원료 사용 함량과 탄소 발자국 데이터 입력을 강제하는 시스템 오픈.",
+      "impact": "친환경 데이터가 소재 조달의 절대적 기준으로 확립. 포스코HY클린메탈 재생 원료 연계형 양극재 제품의 브랜드화 호기.",
+      "source": "日本経済新聞 (Nikkei)",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "date": "2026-04-02",
+      "event": "이토추 상사, 호주산 천연흑연 10년 독점 조달 계약",
+      "company": ["Itochu Corp"],
+      "type": "원료 확보",
+      "strength": "보통",
+      "summary": "일간철강신문 보도. 중국 흑연 수출 통제에 대응하여 호주산 원광 물량을 대규모로 확보하고 일본 내 음극재 제조사에 배분함.",
+      "impact": "일본 종합상사의 음극재 흑연 조달 시장 지배력 강화. 상사 확보 물량과 포스코 가공 기술을 엮는 조인트 비즈니스 검토 요망.",
+      "source": "日刊鉄鋼新聞 (Japan Metal Daily)",
+      "url": "https://www.japanmetaldaily.com/"
+    }
+  ]
+}
 
