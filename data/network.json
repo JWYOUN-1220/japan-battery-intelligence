@@ -1,53 +1,73 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "GS Yuasa", "group": "Cell"},
-    {"id": "Mitsubishi Corp", "group": "Trading"},
-    {"id": "JX Metals", "group": "Refining"},
-    {"id": "Panasonic Energy", "group": "Cell"},
-    {"id": "Itochu Corp", "group": "Trading"},
+    {"id": "Idemitsu Kosan", "group": "Material"},
+    {"id": "Mitsui Kinzoku", "group": "Material"},
+    {"id": "Mitsubishi Chemical", "group": "Material"},
+    {"id": "Kawasaki Heavy Industries", "group": "Infra"},
+    {"id": "Daimler Truck", "group": "OEM"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "TEPCO", "group": "Energy"},
+    {"id": "Hitachi Energy", "group": "Infra"},
+    {"id": "Honda", "group": "OEM"},
     {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
       "source": "METI",
-      "target": "POSCO",
-      "type": "Subsidy Qualification",
-      "date": "2026-04-02",
-      "strength": "매우 높음",
-      "note": "안보 등급 가이드라인 시행에 따른 비중국(LFP/흑연) 소재 보조금 수혜 가점 부여"
-    },
-    {
-      "source": "GS Yuasa",
-      "target": "POSCO",
-      "type": "Pricing Strategy",
-      "date": "2026-04-02",
-      "strength": "매우 높음",
-      "note": "배터리 가격 인상에 따른 원가 방어 목적 장기 가격 안정형 소재 제안 타진"
-    },
-    {
-      "source": "Mitsubishi Corp",
-      "target": "Panasonic Energy",
-      "type": "Supply",
-      "date": "2026-04-02",
+      "target": "Idemitsu Kosan",
+      "type": "보조금 승인",
+      "date": "2026-05-25",
       "strength": "높음",
-      "note": "폐수 리사이클 화학 추출 탄산리튬 첫 상업 물량 납품 및 검증"
+      "note": "치바 사업장 전고체용 황화리튬 설비에 최대 71억 엔 자본 보조 확정"
+    },
+    {
+      "source": "METI",
+      "target": "Mitsubishi Chemical",
+      "type": "보조금 승인",
+      "date": "2026-05-25",
+      "strength": "높음",
+      "note": "카가와 사업장 EV용 흑연계 음극 활물질 설비 69억 엔 지원"
+    },
+    {
+      "source": "Kawasaki Heavy Industries",
+      "target": "Daimler Truck",
+      "type": "전략적 협력",
+      "date": "2026-05-20",
+      "strength": "높음",
+      "note": "유럽-일본 액체 수소 복도 구축용 대형 상업선 극저온 단열 탱크 표준 설계 완료"
     },
     {
       "source": "Panasonic Energy",
-      "target": "POSCO",
-      "type": "Compliance",
-      "date": "2026-04-02",
-      "strength": "매우 높음",
-      "note": "배터리 여권 연동 재생 원료(Recycled Content) 비율 실시간 인증 의무화"
+      "target": "Panasonic Energy",
+      "type": "공급망 다변화",
+      "date": "2026-05-21",
+      "strength": "높음",
+      "note": "북미 IRA FEOC 대응 완벽화를 위한 비중국 흑연 장기 조달선 전격 다변화"
     },
     {
-      "source": "Itochu Corp",
-      "target": "POSCO",
-      "type": "Potential Partner",
-      "date": "2026-04-02",
-      "strength": "보통",
-      "note": "호주산 천연흑연 물량 기반 포스코 기술 적용 하이브리드 음극재 개발 협의"
+      "source": "TEPCO",
+      "target": "Hitachi Energy",
+      "type": "인프라 교체",
+      "date": "2026-05-22",
+      "strength": "높음",
+      "note": "AI 데이터센터 계통 병목 해소용 수도권 초고압 변전소 소형·고효율 자재 2차 긴급 발주"
+    },
+    {
+      "source": "POSCO",
+      "target": "Kawasaki Heavy Industries",
+      "type": "Spec-in 추진",
+      "date": "2026-05-27",
+      "strength": "높음",
+      "note": "액체 수소 대형 단열 탱크향 극저온 특수강 및 고망간강 사양 등록 진행"
+    },
+    {
+      "source": "POSCO",
+      "target": "TEPCO",
+      "type": "Spec-in 추진",
+      "date": "2026-05-27",
+      "strength": "높음",
+      "note": "수도권 노후 변전소 초고압 변압기 교체 물량 타겟 최고 등급 Hyper NO 공급 영업"
     }
   ]
 }
