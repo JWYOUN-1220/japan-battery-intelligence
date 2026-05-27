@@ -1541,4 +1541,52 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-05-20",
+      "event": "가와사키 중공업, 글로벌 대형 액체 수소 운반선 '극저온 단열 탱크' 기본 설계(FEED) 완료",
+      "company": ["Kawasaki Heavy Industries", "Daimler Truck"],
+      "type": "기술 상용화",
+      "strength": "높음",
+      "summary": "가와사키 중공업은 영하 253도의 수소 기화 손실을 극소화하는 다중 진공 단열 구조 탱크의 설계를 완료하고, 단순 실증 단계를 넘어 대형 상업용 선박 인프라 발주 국면으로 전격 진입했습니다.",
+      "impact": "글로벌 수소 해상 물류의 물리적 안전 표준을 일본이 선점하며, 극저온 특수강 등 고부가가치 하드웨어 소재 발주 사이클 가동",
+      "source": "Kawasaki Heavy Industries Press",
+      "url": "https://www.khi.co.jp/english/"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "파나소닉 에너지, 북미 배터리 라인향 '비중국산 흑연 음극재' 장기 조달 계약 확대",
+      "company": ["Panasonic Energy"],
+      "type": "공급망 다변화",
+      "strength": "높음",
+      "summary": "혼다 등 OEM의 HEV 전환 기조 속에서도, 파나소닉은 IRA FEOC 리스크를 완벽히 통제하기 위해 단가 효율을 포기하고 호주·캐나다계 광산과 비중국 청정 흑연 장기 조달(LTA)을 확정지었습니다.",
+      "impact": "범용 중국산 흑연 시장에서 탈피하여 북미 및 우방국 중심의 로컬 청정 원소재 벨트로 배터리 조달 패러다임 급속 재편",
+      "source": "Panasonic Energy IR",
+      "url": "https://holdings.panasonic/global/corporate/investors.html"
+    },
+    {
+      "date": "2026-05-22",
+      "event": "도쿄전력(TEPCO), 수도권 AI 데이터센터 병목 해소용 '초고압 변전소 2차 교체 예산' 긴급 편성",
+      "company": ["TEPCO", "Hitachi Energy"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "하이퍼스케일러의 대규모 일본 투자를 가로막는 전력망 대기 병목(최대 10년)을 돌파하기 위해, 노후 변전소의 초고압 송전망 및 고효율 소형 변압기 자재를 조기 교체하는 긴급 발주 예산을 확정했습니다.",
+      "impact": "일본 인프라 발주가 신설 중심에서 도심 거점 고용량·고효율 가속 교체 시장으로 재편되며 최고 등급 전기강판 수요 폭발",
+      "source": "TEPCO IR / Nikkei",
+      "url": "https://www.tepco.co.jp/en/hd/about/ir/index-e.html"
+    },
+    {
+      "date": "2026-05-25",
+      "event": "일본 경제산업성(METI), 전고체 배터리 핵심 소재 공급망 자립화 수백억 엔 보조금 전격 승인",
+      "company": ["METI", "Idemitsu Kosan", "Mitsui Kinzoku", "Mitsubishi Chemical"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "METI는 차세대 배터리 내재화 승부수를 띄우며 이데미츠코산 황화리튬 설비 71억 엔 등 주요 기업의 고체 전해질 및 흑연 음극 활물질 양산 계획을 공식 승인하고 자본 보조를 확정했습니다.",
+      "impact": "액체 리튬이온 패권을 건너뛰고 소재-셀-완성차로 이어지는 전고체(ASSB) 밸류체인을 국가 주도로 완벽히 내재화하려는 실질적 양산 지원 개시",
+      "source": "METI Policy Announcement",
+      "url": "https://www.meti.go.jp/english/policy/economy/economic_security/index.html"
+    }
+  ]
+}
 
