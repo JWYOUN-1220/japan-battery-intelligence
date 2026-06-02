@@ -1589,4 +1589,74 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-04-07",
+      "event": "일본 방위성, ACSL과 비중국산 안보형 방산 무인기(UAV) 대형 조달 계약 체결",
+      "company": ["Ministry of Defense", "ACSL"],
+      "type": "공급 계약",
+      "strength": "높음",
+      "summary": "일본 로컬 드론 제조사 ACSL이 방위성 실시 소형 촬영 무인기 입찰에서 약 3억 5,000만 엔 및 7,000만 엔 규모의 프로젝트를 추가 수주했습니다. 해당 드론팩은 94.1Wh 용량에 중국산 부품과 소스코드를 철저히 배제한 고출력 BMS 아키텍처가 적용되었습니다[span_25](start_span)[span_25](end_span).",
+      "impact": "일본 경제안보 규정을 충족하는 방산 무인 전력의 배터리 및 부품 국산화/자가 자립화 기조를 공식 가시화함[span_26](start_span)[span_26](end_span)",
+      "source": "ACSL 공식 IR 공시 및 Unmanned Systems Technology",
+      "url": "https://www.acsl.co.kr/ir/news/"
+    },
+    {
+      "date": "2026-05-27",
+      "event": "에너지 볼트, 일본 내 850MW 규모 대형 BESS 및 AI 컴퓨팅 자산 전격 인수 완료",
+      "company": ["Energy Vault", "Panasonic Energy", "GS Yuasa"],
+      "type": "인수/합병",
+      "strength": "높음",
+      "summary": "글로벌 에너지 저장 선도 기업인 에너지 볼트가 일본 내 850MW 대형 배터리 저장 자산 인수를 최종 완료했습니다. 이 중 350MW 물량은 3시간 이상의 장주기 저장 능력을 구현하도록 설계되었습니다[span_27](start_span)[span_27](end_span).",
+      "impact": "일본 전력망 및 데이터센터 과부하 제어를 위해 내수 셀 메이커들의 리튬 셀 생산 축을 고안전성 BESS 스펙으로 대거 피벗 유도함[span_28](start_span)[span_28](end_span)",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/commodities-news/"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "JOGMEC-이와타니 산업, 프랑스 합작 중희토류 플랜트 'Caremag' 연말 가동 합의",
+      "company": ["JOGMEC", "Iwatani"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "일본 에너지 기구 및 이와타니 산업이 프랑스 정부와 공동 투자한 중희토류 정제 공장 Caremag의 연말 가동을 확정했습니다. 영구자석 필수 성분인 디스프로슘과 테르븀 미래 수요의 20%를 독자 확보하는 구조입니다[span_29](start_span)[span_29](end_span).",
+      "impact": "자원 무기화 리스크가 극심한 희토류 부문에서 유럽-일본 간 안보 동맹을 통해 중국산 자석 규제 장벽을 완전히 무력화함[span_30](start_span)[span_30](end_span)",
+      "source": "METI / Reuters / Kitco News",
+      "url": "https://www.reuters.com/markets/commodities/"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "화낙·야스카와, 공급망 우려 배제를 위한 '우방국 무결성 부품 조달 등급제' 정식 도입",
+      "company": ["FANUC", "Yaskawa"],
+      "type": "조달 규범 제정",
+      "strength": "높음",
+      "summary": "일본 탑티어 로봇 제어 대기업들이 하반기 물류 로봇 및 무인 구동 시스템 서보모터 핵심 부품에 '공급망 무결성 등급제'를 도입했습니다. 제련부터 가공까지 FEOC 영향이 없는 우방국 부품에 A등급을 부여합니다[span_31](start_span)[span_31](end_span).",
+      "impact": "부품 소싱 기준이 단순 단가 중심에서 전 공정의 디지털 이력(Digital Passport) 증빙 유무로 전면 개편되어 안보 신용 등급화 정착[span_32](start_span)[span_32](end_span)",
+      "source": "방위성 제한 소싱 지침 조보 및 기업 구매 가이드라인",
+      "url": "https://corporate.fanuc.co.jp/en/ir/"
+    },
+    {
+      "date": "2026-06-01",
+      "event": "일본 주요 종합상사 연합, '비중국·비중동 청정 자원 2차 조달 루트 마스터 리스트' 긴급 확정",
+      "company": ["Mitsubishi Corporation", "Mitsui & Co.", "Sumitomo Corporation"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "미쓰비시, 미쓰이, 스미토모 등 메이저 종합상사들이 LME 알루미늄 폭등 쇼크 및 중동 리스크에 대응해 우방국 중심의 리튬, 흑연, 알루미늄 빌렛 조달선을 장기 계약(LTA) 구조로 묶는 마스터 리스트를 편성했습니다[span_33](start_span)[span_33](end_span).",
+      "impact": "단기 스팟 구매 위험을 차단하고 상사 자본을 매개로 가공 단계까지 우방국 자원으로 귀속시켜 공급망의 폐쇄적 블록화 고착[span_34](start_span)[span_34](end_span)",
+      "source": "일간철강신문 및 일본 전지공업회(BAJ) 서미트 소싱 가이드",
+      "url": "https://www.japanmetaldaily.com/news/"
+    },
+    {
+      "date": "2026-06-02",
+      "event": "도쿄전력(TEPCO), 지바현 AI 데이터센터 변전소 '전력 손실 한계 12% 저감' 기기 스펙 통보",
+      "company": ["TEPCO", "Hitachi Energy", "Mitsubishi Electric"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "도쿄전력이 지바현 인근 신설 초고압 변전소 3개소의 조달 사양서에서 에너지 손실률 한계선을 기존 대비 12% 이상 강제 저감하는 최고 수준의 고효율 지침을 확정해 하달했습니다[span_35](start_span)[span_35](end_span).",
+      "impact": "일본 내 유틸리티 인프라 입찰 사양이 최저가 중심에서 미세 손실률을 정량 수치로 증명하는 엄격한 성능 보증 체제로 전면 전환됨[span_36](start_span)[span_36](end_span)",
+      "source": "도쿄전력홀딩스 조달 사양 가이드라인 서면 공고",
+      "url": "https://www.tepco.co.jp/en/hd/about/ir/index-e.html"
+    }
+  ]
+}
 
