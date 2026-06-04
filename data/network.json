@@ -1,111 +1,64 @@
 {
-  "nodes": [
-    {"id": "METI", "group": "정부"},
-    {"id": "JOGMEC", "group": "정부기관"},
-    {"id": "Iwatani", "group": "소재/에너지"},
-    {"id": "TEPCO", "group": "전력망"},
-    {"id": "Hitachi Energy", "group": "전력기기"},
-    {"id": "Mitsubishi Electric", "group": "전력기기/항공우주"},
-    {"id": "Mitsubishi Corporation", "group": "종합상사"},
-    {"id": "Mitsui & Co.", "group": "종합상사"},
-    {"id": "Sumitomo Corporation", "group": "종합상사"},
-    {"id": "FANUC", "group": "로보틱스"},
-    {"id": "Yaskawa", "group": "로보틱스"},
-    {"id": "Energy Vault", "group": "ESS/BESS"},
-    {"id": "Panasonic Energy", "group": "셀메이커"},
-    {"id": "GS Yuasa", "group": "셀메이커"},
-    {"id": "Ministry of Defense", "group": "정부부처"},
-    {"id": "ACSL", "group": "니치 전동화 OEM"},
-    {"id": "POSCO", "group": "소재 공급사"}
-  ],
-  "links": [
+  "records": [
     {
-      "source": "JOGMEC",
-      "target": "Iwatani",
-      "type": "전략적 협력",
-      "date": "2026-05-28",
-      "strength": "높음",
-      "note": "중희토류 정제 플랜트 Caremag 공동 투자를 통한 탈중국 20% 조달망 확보"
-    },
-    {
-      "source": "TEPCO",
-      "target": "Hitachi Energy",
-      "type": "공급 계약",
-      "date": "2026-06-02",
-      "strength": "높음",
-      "note": "지바현 변전소 조달 사양서 내 전력 손실 한계 12% 저감 스펙 강제 통보"
-    },
-    {
-      "source": "TEPCO",
-      "target": "Mitsubishi Electric",
-      "type": "공급 계약",
-      "date": "2026-06-02",
-      "strength": "높음",
-      "note": "AI 데이터센터 계통 연계 변전소 초고압 변압기 고효율 성능 보증제 적용"
-    },
-    {
-      "source": "Mitsubishi Corporation",
-      "target": "METI",
-      "type": "정책 변화",
-      "date": "2026-06-01",
-      "strength": "높음",
-      "note": "LME 알루미늄 폭등에 대응하는 비중국·비중동 청정 자원 2차 조달 마스터 리스트 긴급 편성"
-    },
-    {
-      "source": "Mitsui & Co.",
-      "target": "Sumitomo Corporation",
-      "type": "전략적 협력",
-      "date": "2026-06-01",
-      "strength": "보통",
-      "note": "종합상사 자본 매개 비중국산 흑연 및 리튬 장기 계약(LTA) 우방국 네트워크 구축"
-    },
-    {
-      "source": "FANUC",
-      "target": "Yaskawa",
-      "type": "조달 규범 제정",
-      "date": "2026-05-28",
-      "strength": "높음",
-      "note": "방위성 지침 연동 서보모터 핵심 부품 공급망 무결성 등급제(Tiering) 정식 도입"
-    },
-    {
-      "source": "Energy Vault",
-      "target": "Panasonic Energy",
-      "type": "인수/합병",
-      "date": "2026-05-27",
-      "strength": "높음",
-      "note": "일본 내 850MW BESS 자산 인수 완성을 통한 장주기 고안전성 피벗 유도"
-    },
-    {
-      "source": "Energy Vault",
-      "target": "GS Yuasa",
-      "type": "인수/합병",
-      "date": "2026-05-27",
-      "strength": "보통",
-      "note": "350MW 규모 장주기 저장 능력 구현에 따른 고안전성 BESS 셀 전환 배경 형성"
-    },
-    {
+      "date": "2026-04-07",
       "source": "Ministry of Defense",
       "target": "ACSL",
       "type": "공급 계약",
-      "date": "2026-04-07",
       "strength": "높음",
-      "note": "중국산 부품 및 소프트웨어를 전면 배제한 방산 무인기 소형 촬영용 UAV 국산 조달 수주"
+      "note": "일본 방위성은 촬영 무인기 입찰에서 중국산 부품과 소스코드를 배제한 ACSL의 스마트 배터리 팩(94.1Wh) 탑재 드론 조달 계약을 추가 체결했습니다.",
+      "news_title": "방위성-ACSL: 방산 무인기(UAV) 국산 스마트 배터리 팩 조달 계약 및 스펙",
+      "source_name": "ACSL 공식 IR 공시 / Japan Drone 2026 쇼 가이드"
     },
     {
-      "source": "POSCO",
-      "target": "FANUC",
-      "type": "Spec-in 추진",
-      "date": "2026-05-31",
+      "date": "2026-05-27",
+      "source": "Energy Vault",
+      "target": "Panasonic Energy",
+      "type": "인수/합병",
       "strength": "높음",
-      "note": "한국 본토 전 공정 생산 데이터 기반 공급망 무결성 A등급 요건 스펙인 완료 전개"
+      "note": "에너지 볼트가 일본 내 850MW 규모 BESS 및 AI 컴퓨팅 자산 인수를 완료했습니다. 이 중 350MW 프로젝트는 3시간 이상 장주기 저장을 구현합니다.",
+      "news_title": "에너지 볼트(Energy Vault), 일본 내 850MW 규모 대형 배터리 저장(BESS) 자산 전격 인수",
+      "source_name": "Investing.com"
     },
     {
-      "source": "POSCO",
+      "date": "2026-05-28",
+      "source": "JOGMEC",
+      "target": "Iwatani",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "일본 JOGMEC과 이와타니 산업은 프랑스 합작 중희토류 플랜트 Caremag의 연말 가동을 확정하고 디스프로슘, 테르븀 미래 수요의 20% 탈중국망을 확보했습니다.",
+      "news_title": "일본-프랑스 합작 희토류 정제 플랜트 'Caremag' 가동 확정... 탈중국 20% 확보",
+      "source_name": "METI / Reuters / Kitco News"
+    },
+    {
+      "date": "2026-05-28",
+      "source": "FANUC",
+      "target": "Yaskawa",
+      "type": "조달 규범 제정",
+      "strength": "높음",
+      "note": "화낙과 야스카와전기는 방위성 지침에 연동하여 서보모터 핵심 부품에 대해 FEOC 영향력이 없는 우방국 부품에 A등급을 보장하는 무결성 등급제를 전격 가동했습니다.",
+      "news_title": "화낙·야스카와, '우방국 무결성' 부품 조달 등급제 정식 도입",
+      "source_name": "방위성 제한 소싱 지침 조보 및 기업 가이드라인"
+    },
+    {
+      "date": "2026-06-01",
+      "source": "Mitsubishi Corporation",
+      "target": "Mitsui & Co.",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "LME 알루미늄 폭등에 대응해 주요 종합상사들이 중국 지분이 배제된 호주·캐나다 중심의 청정 자원 2차 조달 루트 마스터 리스트를 긴급 편성했습니다.",
+      "news_title": "일본 종합상사 연합, 6월 초 '비중국·비중동 청정 자원 2차 조달 루트' 긴급 확정",
+      "source_name": "일간철강신문 / BAJ 서미트 가이드"
+    },
+    {
+      "date": "2026-06-02",
+      "source": "TEPCO",
       "target": "Hitachi Energy",
-      "type": "Spec-in 추진",
-      "date": "2026-05-31",
+      "type": "정책 변화",
       "strength": "높음",
-      "note": "도쿄전력 12% 손실 저감 가이드라인 충족 목적 최상위 등급 Hyper NO 변압기 강재 기술 세일즈"
+      "note": "도쿄전력은 지바현 AI 데이터센터 전용 변전소 사양서에서 에너지 손실률 한계선을 기존 대비 12% 이상 강제 저감하는 고효율 물성 규격을 통보했습니다.",
+      "news_title": "도쿄전력, 지바현 신설 변전소 '전력 손실 한계 12% 저감' 기기 스펙 통보",
+      "source_name": "도쿄전력홀딩스 조달 사양 가이드라인 서면 공고"
     }
   ]
 }
