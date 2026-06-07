@@ -1724,4 +1724,92 @@
   ]
 }
 
+{
+  "records": [
+    {
+      "date": "2026-03-03",
+      "source": "Toyota",
+      "target": "Idemitsu Kosan",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "도요타는 전고체 상업 양산 로드맵의 핵심인 수분 차단 고정밀 라미네이션 및 프레싱 공정 특허를 등록하며 황화물계 고체 전해질 파트너와의 시너지를 가시화했습니다.",
+      "news_title": "도요타, 차세대 전고체 라미네이션 및 프레스 제어 특허 등록",
+      "source_name": "EV Infrastructure News",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-05-15",
+      "source": "Sumitomo Metal Mining",
+      "target": "Sumitomo Corporation",
+      "type": "투자 확대",
+      "strength": "높음",
+      "note": "스미토모 금속광산은 재생 니켈 등을 재제조하는 완전 폐루프 플랜트를 완공함과 동시에 호주·뉴질랜드 지역 블랙매스 생산 밸류체인 타당성 조사에 전격 착수했습니다.",
+      "news_title": "스미토모 금속광산(SMM), 에히메현 리사이클링 플랜트 완공 및 오세아니아 타당성 조사 착수",
+      "source_name": "스미토모 금속광산 공식 프레스릴리스",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-06-02",
+      "source": "METI",
+      "target": "Toyota",
+      "type": "정책 변화",
+      "strength": "높음",
+      "note": "일본 중의원은 배터리 부품 및 광물 제련 관련 인프라 조달 시 제3국 자본 필터링을 정밀화하는 경제안전보장추진법 개정안을 가결했습니다.",
+      "news_title": "일본 국회, 2026 경제안전보장추진법 개정안 중의원 통과",
+      "source_name": "Edelman Global Advisory Insights",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-06-04",
+      "source": "METI",
+      "target": "Mitsubishi Corporation",
+      "type": "정책 변화",
+      "strength": "높음",
+      "note": "일본 정부는 세계은행과 함께 글로벌 통상 규제를 회피할 수 있는 우방국 중심의 자원 블록 'RISE·DRIVE' 금융 지원 프로그램을 전격 확대했습니다.",
+      "news_title": "일본 정부-세계은행, 아시아 핵심 광물 및 에너지 안보 신전략 'RISE·DRIVE' 확대",
+      "source_name": "일본 정부 및 세계은행 공동 릴리스 추정",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-06-05",
+      "source": "FANUC",
+      "target": "Matex",
+      "type": "투자 확대",
+      "strength": "높음",
+      "note": "화낙과 야스카와전기의 우방국 안보 A등급 벤더 지침에 따라, 마텍스 등 특수강 가공사들이 FEOC 자재를 원천 배제한 로봇·방산용 초고장력강 전용 라인 구축 투자를 단행했습니다.",
+      "news_title": "화낙·야스카와, 'A등급 안보 벤더' 연동형 초정밀 가공 설비 증설 개시",
+      "source_name": "日刊鉄鋼新聞",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-06-08",
+      "source": "Mitsubishi Corporation",
+      "target": "Toyota",
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "note": "미국의 철강 및 비철금속 고율 관세 발효 즉시, 일본 주요 종합상사들은 완성차의 북미 HEV 보조금을 사수하기 위해 중국산 자재가 완전 배제된 폐쇄형 조달 믹스 체제로 긴급 전환했습니다.",
+      "news_title": "미국 추가 고율 관세 공식 발효... 일본 상사 연합 '북미향 HEV/방산 부품 조달 믹스' 긴급 변경",
+      "source_name": "일본 주요 상사 긴급 통상 대응 브리핑",
+      "jp_url": "",
+      "en_url": ""
+    },
+    {
+      "date": "2026-06-08",
+      "source": "Kansai Electric Power",
+      "target": "Mitsubishi Electric",
+      "type": "조달 규범 제정",
+      "strength": "높음",
+      "note": "간사이전력은 5.2조 엔 변전 예산을 가동하며 변전 손실률 12%를 소재 물성으로 직접 보증해야 하는 극한의 성능 보증 체제(Performance Warranty) 입찰 스펙을 강제했습니다.",
+      "news_title": "간사이전력 15조 엔 발주 실전 기동... 초고압 변압기 '성능 보증 계약' 전면 도입",
+      "source_name": "간사이전력 입찰 공고 추정",
+      "jp_url": "",
+      "en_url": ""
+    }
+  ]
+}
 
