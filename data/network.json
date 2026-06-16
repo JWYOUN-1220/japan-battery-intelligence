@@ -1,80 +1,58 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "Ministry of Defense", "group": "Policy"},
-    {"id": "Panasonic Holdings", "group": "Cell Maker"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
-    {"id": "Kansai Electric Power", "group": "Energy"},
-    {"id": "Mitsubishi Electric", "group": "Infra"},
-    {"id": "Fuji Electric", "group": "Infra"},
-    {"id": "Mitsubishi Corporation", "group": "Trader"},
-    {"id": "Marubeni", "group": "Trader"},
-    {"id": "Sumitomo Corporation", "group": "Trader"},
+    {"id": "Toray Industries", "group": "Material Tech"},
+    {"id": "3DC (Tohoku Univ.)", "group": "Material Tech"},
+    {"id": "JX Nippon Mining & Metals", "group": "Non-ferrous Metals"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "Honda", "group": "OEM"},
+    {"id": "Idemitsu Kosan", "group": "Material"},
+    {"id": "Mitsubishi Electric", "group": "Energy Infra"},
+    {"id": "Fuji Electric", "group": "Energy Infra"},
     {"id": "FANUC", "group": "Robotics"},
     {"id": "Yaskawa", "group": "Robotics"},
-    {"id": "Matex", "group": "Material Processor"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
-    {"id": "Idemitsu Kosan", "group": "Material"},
-    {"id": "POSCO", "group": "Material"}
+    {"id": "Data Center/BESS Operators", "group": "Energy Infra"},
+    {"id": "POSCO", "group": "Material/Tech Partner"}
   ],
   "links": [
     {
-      "source": "Panasonic Holdings",
-      "target": "Panasonic Energy",
-      "type": "투자 확대",
-      "date": "2026-06-08",
+      "source": "METI",
+      "target": "Data Center/BESS Operators",
+      "type": "정책 지원",
+      "date": "2026-06-15",
       "strength": "높음",
-      "note": "AI 데이터센터용 BESS 배터리 셀 매스 프로덕션 구축 목적 3500억 엔 자본 전격 할당"
+      "note": "청정 전력 100% 사용 기업 대상 탈탄소 전력 인프라 및 변전 설비 2,100억 엔 현금 보조금 예산 배포"
     },
     {
-      "source": "Kansai Electric Power",
+      "source": "Data Center/BESS Operators",
       "target": "Mitsubishi Electric",
-      "type": "조달 규범 제정",
-      "date": "2026-06-08",
+      "type": "공급 계약/규제 적용",
+      "date": "2026-06-15",
       "strength": "높음",
-      "note": "오사카 AI 클러스터 변전소 발주 시 변전 손실률 12% 강제 저감 성능 보증서 의무화"
+      "note": "METI 보조금 적격 심사 및 간사이전력 발주 스펙 맞춤형 변전 손실률 12% 강제 저감 보증 요구"
     },
     {
-      "source": "Kansai Electric Power",
-      "target": "Fuji Electric",
-      "type": "조달 규범 제정",
-      "date": "2026-06-08",
-      "strength": "높음",
-      "note": "초고압 변압기 성능 보증 도입에 따른 하이엔드 자성 물량 확보 경쟁 유도"
+      "source": "Toray Industries",
+      "target": "POSCO",
+      "type": "잠재 협력 타겟",
+      "date": "2026-06-12",
+      "strength": "보통",
+      "note": "강산성 견디는 폐배터리 리튬 회수 95% 나노 분리막 기술 공개에 따른 포스코HY클린메탈 등 연계 가능성 타진"
     },
     {
-      "source": "Mitsubishi Corporation",
-      "target": "Toyota",
-      "type": "통상 규제 대응",
-      "date": "2026-06-08",
+      "source": "JX Nippon Mining & Metals",
+      "target": "FANUC",
+      "type": "전략적 소싱",
+      "date": "2026-06-11",
       "strength": "높음",
-      "note": "미국 고율 관세 발효에 따른 북미향 HEV 부품 내 중국산 배제 수직 통합 가동"
+      "note": "화낙 등 하이엔드 로봇 메이커 구동계 성능 향상을 위한 베릴륨동 대체 특수 치탄동 소재 공급 활황"
     },
     {
-      "source": "Marubeni",
-      "target": "Honda",
-      "type": "통상 규제 대응",
-      "date": "2026-06-08",
-      "strength": "높음",
-      "note": "추가 관세 장벽 헷징 목적 원소재 조달 단계 100% 비중국 우방국 믹스 변경안 실행"
-    },
-    {
-      "source": "FANUC",
-      "target": "Matex",
-      "type": "전략적 협력",
-      "date": "2026-06-05",
-      "strength": "높음",
-      "note": "공급망 무결성 A등급 벤더 지침 연동형 하이텐 전용 전 공정 라인 격리 구축 가동"
-    },
-    {
-      "source": "Yaskawa",
-      "target": "Matex",
-      "type": "전략적 협력",
-      "date": "2026-06-05",
-      "strength": "높음",
-      "note": "무인 구동 시스템 서보모터 부품의 디지털 이력 및 FEOC 영향 차단 이력 추적 의무화"
+      "source": "3DC (Tohoku Univ.)",
+      "target": "POSCO",
+      "type": "잠재 협력 타겟",
+      "date": "2026-06-11",
+      "strength": "보통",
+      "note": "활물질 입자 파쇄 방어용 그래핀 메조스펀지 대량 양산 가동에 따른 포스코퓨처엠 차세대 음극재 기술 평가 연계"
     },
     {
       "source": "Toyota",
@@ -82,31 +60,23 @@
       "type": "전략적 협력",
       "date": "2026-03-03",
       "strength": "높음",
-      "note": "2027~2028 전고체 상업 양산 대응 라미네이션 및 프레스 정밀 제어 특허 공조 시너지"
-    },
-    {
-      "source": "Sumitomo Metal Mining",
-      "target": "Sumitomo Corporation",
-      "type": "JV 설립",
-      "date": "2026-05-15",
-      "strength": "높음",
-      "note": "오세아니아 지역 폐배터리 수거 블랙매스 생산 가치사슬 구축 타당성 조사 MOU 체결"
-    },
-    {
-      "source": "METI",
-      "target": "Toyota",
-      "type": "정책 변화",
-      "date": "2026-05-19",
-      "strength": "높음",
-      "note": "배터리 부품 및 크리티컬 미네랄 제련 연계 제3국 자본 진입 필터링 경제안보법 중의원 가결"
+      "note": "전고체 상업 양산 로드맵의 핵심인 수분 차단 고정밀 라미네이션 공정 특허 동시 시너지 가시화"
     },
     {
       "source": "POSCO",
-      "target": "Matex",
+      "target": "Mitsubishi Electric",
       "type": "공급 제안",
-      "date": "2026-06-09",
+      "date": "2026-06-16",
       "strength": "높음",
-      "note": "한국 본토 생산 무결성 기반 방산 특수강 및 모터용 Hyper NO 쿼터 선제 배정 Spec-in 전개"
+      "note": "손실 한계 12% 저감 스펙 달성용 독보적 자성 소재 Hyper NO 기반 고마진 장기 공급 확약 제값 받기 제안"
+    },
+    {
+      "source": "POSCO",
+      "target": "FANUC",
+      "type": "공급 제안",
+      "date": "2026-06-16",
+      "strength": "보통",
+      "note": "JX금속 소재 수요 증가에 연동된 A등급 안보 무결성 모터 코어 패키지 사양 결합 영업"
     }
   ]
 }
