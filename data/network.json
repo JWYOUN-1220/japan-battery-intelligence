@@ -1,82 +1,54 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "Toray Industries", "group": "Material Tech"},
-    {"id": "3DC (Tohoku Univ.)", "group": "Material Tech"},
-    {"id": "JX Nippon Mining & Metals", "group": "Non-ferrous Metals"},
+    {"id": "SoftBank", "group": "Tech/Cell"},
+    {"id": "Hitachi", "group": "Infra/Energy"},
+    {"id": "X LABS", "group": "Investment"},
+    {"id": "Kawasaki Heavy Industries", "group": "GX/Logistics"},
+    {"id": "Daimler Truck", "group": "OEM"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "Idemitsu Kosan", "group": "Material"},
-    {"id": "Mitsubishi Electric", "group": "Energy Infra"},
-    {"id": "Fuji Electric", "group": "Energy Infra"},
-    {"id": "FANUC", "group": "Robotics"},
-    {"id": "Yaskawa", "group": "Robotics"},
-    {"id": "Data Center/BESS Operators", "group": "Energy Infra"},
-    {"id": "POSCO", "group": "Material/Tech Partner"}
+    {"id": "LiSTie", "group": "Material/Startup"},
+    {"id": "POSCO", "group": "Material/Steel"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Data Center/BESS Operators",
-      "type": "정책 지원",
-      "date": "2026-06-15",
+      "source": "SoftBank",
+      "target": "SoftBank",
+      "type": "Investment",
+      "date": "2026-05-11",
       "strength": "높음",
-      "note": "청정 전력 100% 사용 기업 대상 탈탄소 전력 인프라 및 변전 설비 2,100억 엔 현금 보조금 예산 배포"
+      "note": "GWh급 아연-할로겐 배터리 생산 공장 'GX Factory' 런칭"
     },
     {
-      "source": "Data Center/BESS Operators",
-      "target": "Mitsubishi Electric",
-      "type": "공급 계약/규제 적용",
-      "date": "2026-06-15",
+      "source": "Hitachi",
+      "target": "X LABS",
+      "type": "전략적 협력",
+      "date": "2026-05-12",
       "strength": "높음",
-      "note": "METI 보조금 적격 심사 및 간사이전력 발주 스펙 맞춤형 변전 손실률 12% 강제 저감 보증 요구"
+      "note": "북미 AI 데이터센터 타겟 GW급 에너지 파크 건설 파트너십"
     },
     {
-      "source": "Toray Industries",
-      "target": "POSCO",
-      "type": "잠재 협력 타겟",
-      "date": "2026-06-12",
-      "strength": "보통",
-      "note": "강산성 견디는 폐배터리 리튬 회수 95% 나노 분리막 기술 공개에 따른 포스코HY클린메탈 등 연계 가능성 타진"
-    },
-    {
-      "source": "JX Nippon Mining & Metals",
-      "target": "FANUC",
-      "type": "전략적 소싱",
-      "date": "2026-06-11",
+      "source": "Kawasaki Heavy Industries",
+      "target": "Daimler Truck",
+      "type": "전략적 협력",
+      "date": "2026-05-11",
       "strength": "높음",
-      "note": "화낙 등 하이엔드 로봇 메이커 구동계 성능 향상을 위한 베릴륨동 대체 특수 치탄동 소재 공급 활황"
-    },
-    {
-      "source": "3DC (Tohoku Univ.)",
-      "target": "POSCO",
-      "type": "잠재 협력 타겟",
-      "date": "2026-06-11",
-      "strength": "보통",
-      "note": "활물질 입자 파쇄 방어용 그래핀 메조스펀지 대량 양산 가동에 따른 포스코퓨처엠 차세대 음극재 기술 평가 연계"
+      "note": "유럽-일본 간 대규모 액체 수소 물류 복도 구축 협약"
     },
     {
       "source": "Toyota",
-      "target": "Idemitsu Kosan",
-      "type": "전략적 협력",
-      "date": "2026-03-03",
-      "strength": "높음",
-      "note": "전고체 상업 양산 로드맵의 핵심인 수분 차단 고정밀 라미네이션 공정 특허 동시 시너지 가시화"
-    },
-    {
-      "source": "POSCO",
-      "target": "Mitsubishi Electric",
-      "type": "공급 제안",
-      "date": "2026-06-16",
-      "strength": "높음",
-      "note": "손실 한계 12% 저감 스펙 달성용 독보적 자성 소재 Hyper NO 기반 고마진 장기 공급 확약 제값 받기 제안"
-    },
-    {
-      "source": "POSCO",
-      "target": "FANUC",
-      "type": "공급 제안",
-      "date": "2026-06-16",
+      "target": "Toyota",
+      "type": "OEM 전략 변화",
+      "date": "2026-05-13",
       "strength": "보통",
-      "note": "JX금속 소재 수요 증가에 연동된 A등급 안보 무결성 모터 코어 패키지 사양 결합 영업"
+      "note": "2026 C-HR BEV의 배터리 스펙 확정 및 NACS 표준 채택"
+    },
+    {
+      "source": "POSCO",
+      "target": "Hitachi",
+      "type": "잠재적 공급",
+      "date": "2026-05-13",
+      "strength": "높음",
+      "note": "에너지 파크 내 고효율 변압기용 Hyper NO 전기강판 공급 타진"
     }
   ]
 }
