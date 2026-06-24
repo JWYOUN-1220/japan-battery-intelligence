@@ -1,54 +1,75 @@
 {
   "nodes": [
-    {"id": "SoftBank", "group": "Tech/Cell"},
-    {"id": "Hitachi", "group": "Infra/Energy"},
-    {"id": "X LABS", "group": "Investment"},
-    {"id": "Kawasaki Heavy Industries", "group": "GX/Logistics"},
-    {"id": "Daimler Truck", "group": "OEM"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "LiSTie", "group": "Material/Startup"},
-    {"id": "POSCO", "group": "Material/Steel"}
+    {"id": "METI", "group": "Policy"},
+    {"id": "MOE", "group": "Policy"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "Honda", "group": "OEM"},
+    {"id": "QuantumScape", "group": "Cell Maker"},
+    {"id": "Toray Industries", "group": "Material Tech"},
+    {"id": "Sumitomo Metal Mining", "group": "Material"},
+    {"id": "3DC", "group": "Material Tech"},
+    {"id": "Mitsubishi Electric", "group": "Energy Infra"},
+    {"id": "FANUC", "group": "Robotics"},
+    {"id": "Matex", "group": "Processor"},
+    {"id": "Data Center/BESS Operators", "group": "Energy Infra"},
+    {"id": "POSCO", "group": "Material/Tech Partner"}
   ],
   "links": [
     {
-      "source": "SoftBank",
-      "target": "SoftBank",
-      "type": "Investment",
-      "date": "2026-05-11",
+      "source": "METI",
+      "target": "Data Center/BESS Operators",
+      "type": "정책 지원",
+      "date": "2026-06-15",
       "strength": "높음",
-      "note": "GWh급 아연-할로겐 배터리 생산 공장 'GX Factory' 런칭"
+      "note": "청정 전력 100% 사용 오사카·지바 데이터센터 기업 대상 최대 50% 현금 보조금 2,100억 엔 예산 지침 배포"
     },
     {
-      "source": "Hitachi",
-      "target": "X LABS",
-      "type": "전략적 협력",
-      "date": "2026-05-12",
+      "source": "METI",
+      "target": "MOE",
+      "type": "정책 협력",
+      "date": "2026-06-16",
       "strength": "높음",
-      "note": "북미 AI 데이터센터 타겟 GW급 에너지 파크 건설 파트너십"
+      "note": "2040년 EV 폐배터리 40만 대 폭증 대비 제조업자 의무 회수 법안 워킹그룹 공동 출범"
     },
     {
-      "source": "Kawasaki Heavy Industries",
-      "target": "Daimler Truck",
-      "type": "전략적 협력",
-      "date": "2026-05-11",
+      "source": "Panasonic Energy",
+      "target": "Data Center/BESS Operators",
+      "type": "전략적 소싱",
+      "date": "2026-06-18",
       "strength": "높음",
-      "note": "유럽-일본 간 대규모 액체 수소 물류 복도 구축 협약"
+      "note": "미국 캔자스 EV 공장 라인을 AI 데이터센터 전용 BESS 셀 매스 프로덕션으로 전환(3,500억 엔 투입)"
     },
     {
-      "source": "Toyota",
-      "target": "Toyota",
-      "type": "OEM 전략 변화",
-      "date": "2026-05-13",
+      "source": "Honda",
+      "target": "QuantumScape",
+      "type": "공동 개발",
+      "date": "2026-06-19",
+      "strength": "높음",
+      "note": "무음극 리튬메탈 세라믹 분리막 기술 평가 완료(1000사이클 95% 유지)에 따른 전고체 배터리 상용화 계약"
+    },
+    {
+      "source": "FANUC",
+      "target": "Matex",
+      "type": "규범 강제",
+      "date": "2026-06-19",
+      "strength": "높음",
+      "note": "공급망 무결성 A등급 벤더 지침에 따라 중국 FEOC 지분 강재 물리적 격리형 자동 샤어링 라인 가동"
+    },
+    {
+      "source": "Toray Industries",
+      "target": "POSCO",
+      "type": "잠재 협력",
+      "date": "2026-06-15",
       "strength": "보통",
-      "note": "2026 C-HR BEV의 배터리 스펙 확정 및 NACS 표준 채택"
+      "note": "강산성 유기 황산 침출액 견디는 블랙매스 리튬 회수 95% 나노막 기술 포스코HY클린메탈 공정 적용 잠재 타진"
     },
     {
       "source": "POSCO",
-      "target": "Hitachi",
-      "type": "잠재적 공급",
-      "date": "2026-05-13",
+      "target": "Mitsubishi Electric",
+      "type": "공급 제안",
+      "date": "2026-06-24",
       "strength": "높음",
-      "note": "에너지 파크 내 고효율 변압기용 Hyper NO 전기강판 공급 타진"
+      "note": "METI 보조금 적격 심사용 12% 저감 스펙 달성을 위한 독보적 방향성 전기강판(Hyper NO) 기반 LTA 단가 인상 제안"
     }
   ]
 }
