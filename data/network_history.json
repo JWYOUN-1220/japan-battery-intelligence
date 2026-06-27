@@ -1860,4 +1860,63 @@
     }
   ]
 }
+{
+  "history": [
+    {
+      "date": "2026-06-25",
+      "event": "사쿠라인터넷, 홋카이도 이시카리 AI 데이터센터 전력망 계약 체결",
+      "company": ["Sakura Internet", "Fuji Electric", "Hitachi Energy"],
+      "type": "공급 계약",
+      "strength": "높음",
+      "summary": "지역 전력청과 수력·풍력 기반 100MW 계통 연계 계약을 체결하고 대형 EPC사에 3상 변압기 스펙 하달. 도쿄 전력 대기 병목 전면 우회.",
+      "impact": "METI 보조금 요건 및 혹한기 인프라 내구성을 충족하기 위한 포스코 방향성 전기강판(Hyper NO)의 필수적 숏티지 유발",
+      "source": "사쿠라인터넷 공시",
+      "url": "https://www.sakura.ad.jp"
+    },
+    {
+      "date": "2026-06-25",
+      "event": "토요타 배터리 부문(PEVE), 북미 수출형 HEV 배터리 케이스 특수강 설계 변경 승인",
+      "company": ["Toyota", "POSCO"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "미국 알루미늄 관세 폭등 리스크에 대응해 하반기 HEV 배터리 팩 케이스를 초고장력 특수강으로 전면 교체. FEOC 지분 배제 강재 한정 할당.",
+      "impact": "알루미늄 압출재를 대체하는 우방국 초고장력 자동차 강판(기가스틸)의 장기 독점적 쿼터 폭발",
+      "source": "일간철강신문",
+      "url": "https://www.japanmetaldaily.com"
+    },
+    {
+      "date": "2026-06-26",
+      "event": "도쿄전력·간사이전력, 차세대 HVDC 해저 케이블 및 변전 그리드 보강 사양 통고",
+      "company": ["TEPCO", "KEPCO", "Mitsubishi Electric"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "전력 손실 14% 의무 저감 및 FEOC 소재 100% 차단을 명시한 변전 설비 표준 사양서를 플랜트 메이커에 공식 하달.",
+      "impact": "최저가 입찰 관행이 붕괴되고 최고 수준의 자성 효율과 안보 무결성을 보증하는 하이엔드 소재 제한 경쟁으로 패러다임 완벽 재편",
+      "source": "일본경제신문",
+      "url": "https://www.nikkei.com"
+    },
+    {
+      "date": "2026-06-26",
+      "event": "가와사키 중공업-치요다화공, 청정 암모니아 크래킹 '수소 취성 프리' 가이드라인 정식 수립",
+      "company": ["Kawasaki Heavy Industries", "Chiyoda Corporation"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "대형 수소 터미널 및 추출 기기 설계 스펙에 '수소 취성 프리 15년 보증'을 의무화하고 관련 내벽 전수 심사 가동.",
+      "impact": "수소 플랜트 하드웨어 신용도의 자산화로 극저온 고망간강(High Mn) 및 특수 합금 후판의 압도적 대량 스펙인(Spec-in) 진입 장벽 구축",
+      "source": "일간철강신문",
+      "url": "https://www.japanmetaldaily.com"
+    },
+    {
+      "date": "2026-06-26",
+      "event": "미·일 경제안보 연합, 토요타·혼다 구동모터 조달 안보 격리망 실전 배치 승인",
+      "company": ["Toyota", "Honda", "Denso"],
+      "type": "공급망 개편",
+      "strength": "높음",
+      "summary": "하반기 북미 수출형 모빌리티 구동계 영구자석 코어 조달망에서 중국 지분을 100% 분리하는 안보 격리 조달 루트를 완성차 연합이 최종 승인.",
+      "impact": "무역 제재 페널티가 원천 배제된 한국산 구동모터용 극박형 무방향성 전기강판(Hyper NO)의 폭발적 쿼터 독식 및 폐쇄형 블록 정착",
+      "source": "일본 재무성 분석",
+      "url": "https://www.mof.go.jp"
+    }
+  ]
+}
 
