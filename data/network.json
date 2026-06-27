@@ -1,75 +1,58 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "MOE", "group": "Policy"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "Sakura Internet", "group": "Data Center"},
+    {"id": "Fuji Electric", "group": "EPC"},
+    {"id": "Hitachi Energy", "group": "EPC"},
+    {"id": "Toyota", "group": "OEM"},
+    {"id": "TEPCO", "group": "Utility"},
+    {"id": "KEPCO", "group": "Utility"},
+    {"id": "Mitsubishi Electric", "group": "EPC"},
+    {"id": "Kawasaki Heavy Industries", "group": "Plant EPC"},
+    {"id": "Chiyoda Corporation", "group": "Plant EPC"},
     {"id": "Honda", "group": "OEM"},
-    {"id": "QuantumScape", "group": "Cell Maker"},
-    {"id": "Toray Industries", "group": "Material Tech"},
-    {"id": "Sumitomo Metal Mining", "group": "Material"},
-    {"id": "3DC", "group": "Material Tech"},
-    {"id": "Mitsubishi Electric", "group": "Energy Infra"},
-    {"id": "FANUC", "group": "Robotics"},
-    {"id": "Matex", "group": "Processor"},
-    {"id": "Data Center/BESS Operators", "group": "Energy Infra"},
-    {"id": "POSCO", "group": "Material/Tech Partner"}
+    {"id": "Denso", "group": "Tier 1"},
+    {"id": "POSCO", "group": "Material"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Data Center/BESS Operators",
-      "type": "정책 지원",
-      "date": "2026-06-15",
+      "source": "Sakura Internet",
+      "target": "Fuji Electric",
+      "type": "공급 계약",
+      "date": "2026-06-25",
       "strength": "높음",
-      "note": "청정 전력 100% 사용 오사카·지바 데이터센터 기업 대상 최대 50% 현금 보조금 2,100억 엔 예산 지침 배포"
+      "note": "이시카리 데이터센터 100MW 계통 연계 3상 변압기 및 전력망 대형 발주 기동"
     },
     {
-      "source": "METI",
-      "target": "MOE",
-      "type": "정책 협력",
-      "date": "2026-06-16",
-      "strength": "높음",
-      "note": "2040년 EV 폐배터리 40만 대 폭증 대비 제조업자 의무 회수 법안 워킹그룹 공동 출범"
-    },
-    {
-      "source": "Panasonic Energy",
-      "target": "Data Center/BESS Operators",
-      "type": "전략적 소싱",
-      "date": "2026-06-18",
-      "strength": "높음",
-      "note": "미국 캔자스 EV 공장 라인을 AI 데이터센터 전용 BESS 셀 매스 프로덕션으로 전환(3,500억 엔 투입)"
-    },
-    {
-      "source": "Honda",
-      "target": "QuantumScape",
-      "type": "공동 개발",
-      "date": "2026-06-19",
-      "strength": "높음",
-      "note": "무음극 리튬메탈 세라믹 분리막 기술 평가 완료(1000사이클 95% 유지)에 따른 전고체 배터리 상용화 계약"
-    },
-    {
-      "source": "FANUC",
-      "target": "Matex",
-      "type": "규범 강제",
-      "date": "2026-06-19",
-      "strength": "높음",
-      "note": "공급망 무결성 A등급 벤더 지침에 따라 중국 FEOC 지분 강재 물리적 격리형 자동 샤어링 라인 가동"
-    },
-    {
-      "source": "Toray Industries",
+      "source": "Toyota",
       "target": "POSCO",
-      "type": "잠재 협력",
-      "date": "2026-06-15",
+      "type": "전략적 소싱",
+      "date": "2026-06-25",
       "strength": "보통",
-      "note": "강산성 유기 황산 침출액 견디는 블랙매스 리튬 회수 95% 나노막 기술 포스코HY클린메탈 공정 적용 잠재 타진"
+      "note": "북미 수출형 HEV 배터리 케이스 알루미늄 대체를 위한 초고장력 특수강 잠재 공급 쿼터 검토"
     },
     {
-      "source": "POSCO",
+      "source": "TEPCO",
       "target": "Mitsubishi Electric",
-      "type": "공급 제안",
-      "date": "2026-06-24",
+      "type": "사양 통고",
+      "date": "2026-06-26",
       "strength": "높음",
-      "note": "METI 보조금 적격 심사용 12% 저감 스펙 달성을 위한 독보적 방향성 전기강판(Hyper NO) 기반 LTA 단가 인상 제안"
+      "note": "전력 손실 14% 의무 저감을 강제한 HVDC 해저 케이블 및 변전 그리드 보강 대책 스펙 하달"
+    },
+    {
+      "source": "Kawasaki Heavy Industries",
+      "target": "Chiyoda Corporation",
+      "type": "전략적 협력",
+      "date": "2026-06-26",
+      "strength": "높음",
+      "note": "청정 암모니아 크래킹 설비 및 플랜트 기기 수소 취성 프리 15년 보증 의무화 규격 수립"
+    },
+    {
+      "source": "Toyota",
+      "target": "Denso",
+      "type": "조달망 개편",
+      "date": "2026-06-26",
+      "strength": "높음",
+      "note": "친환경차 구동계 영구자석 코어 자재 중국 지분 100% 분리 안보 격리 루트 승인 및 가동"
     }
   ]
 }
