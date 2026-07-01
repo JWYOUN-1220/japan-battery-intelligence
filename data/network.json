@@ -1,45 +1,57 @@
 {
   "nodes": [
+    {"id": "Tohoku Electric Power", "group": "Utility"},
+    {"id": "Fuji Electric", "group": "EPC"},
+    {"id": "Mitsubishi Electric", "group": "EPC"},
+    {"id": "NSK", "group": "Robotics Component"},
+    {"id": "NTN", "group": "Robotics Component"},
+    {"id": "FANUC", "group": "Robotics"},
     {"id": "METI", "group": "Policy"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "QuantumScape", "group": "Cell Maker"},
-    {"id": "JX Advanced Metals", "group": "Material"},
-    {"id": "Yaskawa", "group": "Robotics"},
-    {"id": "Ricoh", "group": "Robotics"},
+    {"id": "Subaru", "group": "OEM"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "Resonac", "group": "Material"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "Honda",
-      "target": "QuantumScape",
-      "type": "전략적 협력",
-      "date": "2026-06-19",
+      "source": "Tohoku Electric Power",
+      "target": "Mitsubishi Electric",
+      "type": "공급 계약",
+      "date": "2026-06-30",
       "strength": "높음",
-      "note": "무음극 리튬메탈 세라믹 분리막 전고체 배터리 상업화 및 공동 R&D 계약 체결"
+      "note": "3,500억 엔 신재생 연계 14% 손실 저감 및 FEOC 배제 변압기 스펙 하달"
     },
     {
-      "source": "JX Advanced Metals",
-      "target": "METI",
-      "type": "정책 준수",
-      "date": "2026-06-11",
+      "source": "NSK",
+      "target": "NTN",
+      "type": "인수/합병",
+      "date": "2026-06-28",
       "strength": "높음",
-      "note": "핵심 광물 안보 지침 준수를 위한 일본 국내 배터리 리사이클 준상업 라인 확장"
+      "note": "합병 기반 조달 통합 및 로봇 구동계 특수강 규격 안보 A등급 일원화 착수"
     },
     {
-      "source": "Yaskawa",
-      "target": "POSCO",
-      "type": "잠재 협력",
-      "date": "2026-06-05",
+      "source": "METI",
+      "target": "Japanese Battery Players",
+      "type": "정책 지원",
+      "date": "2026-06-24",
       "strength": "높음",
-      "note": "대형 워크 반송용 고서보 로봇 모터 코어재용 극박 무방향성 전기강판 공급 협의"
+      "note": "전고체 배터리(ASSB) 고체 전해질 대량 생산 체제 구축에 1,057억 엔 보조금 투입"
     },
     {
-      "source": "Ricoh",
+      "source": "Subaru",
+      "target": "Panasonic Energy",
+      "type": "공급 계약",
+      "date": "2026-06-29",
+      "strength": "높음",
+      "note": "2028년 군마현 신규 EV 공장용 원통형 배터리 직공급 및 인라인 팩 조립망 가동 협약"
+    },
+    {
+      "source": "Resonac",
       "target": "POSCO",
       "type": "잠재 협력",
       "date": "2026-06-30",
       "strength": "보통",
-      "note": "배터리 조립 공정 다능공 휴머노이드 로봇 구동부 정밀 특수강 소재 사양 제안"
+      "note": "일본 내 인조흑연 2배 증산에 따른 전구체 원료 스왑 파트너십 추진"
     }
   ]
 }
