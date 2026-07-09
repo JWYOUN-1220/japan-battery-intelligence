@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Dashboard</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; }
+        td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Dashboard</h1>
+            <p>Date: 2026.07.09 | Analyst: MI Intelligence System | Target: POSCO Group Strategic Planning</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                2026년 하반기에 접어들며 일본 배터리 및 GX 가치사슬은 <strong>'차세대 초격차 기술(ASSB) 양산 체제 가동'</strong>과 <strong>'국가 주도의 광물 순환망 강제 법제화'</strong>라는 두 축으로 맹렬히 재편되고 있습니다[span_0](start_span)[span_0](end_span). 경제산업성(METI)은 전고체 배터리 핵심 원료(황화물계) 대량 생산에 1,057억 엔의 천문학적 보조금을 투입하며 도요타·혼다·닛산 중심의 초고수율 검증에 돌입했습니다. 이와 동시에 METI와 환경성(MOE)은 2040년 40만 대로 폭증할 EV 폐배터리에 대한 '제조업자 의무 회수 법안'을 전격 가동하여 국가 차원의 크리티컬 미네랄 통제권을 쥐었습니다. 전력망에서는 동북전력이 14% 손실 저감을 강제하는 3,500억 엔 규모 계통 보강을 확정했습니다. 포스코그룹은 독점적 물성의 Hyper NO 확약서를 지렛대로 전력망 SCM을 통제하는 한편, 전고체 전지 외함과 황화물계 고체 전해질 파트너십을 선제적으로 제안해 일본 SCM 내에서 대체 불가능한 지위를 확보해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key Intelligence Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 차세대 배터리 / SCM 보장</span>
+                </div>
+                <div class="news-title">일본 정부-소재 대기업 연합, 전고체 배터리(ASSB) 핵심 원료 공급망 보장에 누적 보조금 1,057억 엔 돌파</div>
+                <div class="meta">
+                    <span>발표일: 2026-06-24</span>
+                    <span>Source: TrendForce Press Center</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 경제산업성(METI)의 '배터리 안정 공급 보장 계획'의 일환으로 전고체 배터리 핵심 자산 부문에 투입된 누적 보조금이 6억 6,000만 달러(약 1,057억 엔)를 돌파했습니다. 글로벌 ASSB 특허의 37%를 독점 중인 일본은 도요타, 혼다, 닛산의 파일럿 라인 구축을 넘어 '황화물계 고체 전해질 및 리튬 황(Li₂S) 원료의 대량 생산 체제 구축을 통한 원가 절감'으로 가치사슬의 목표를 상향했습니다. 2030년 완전 상업화를 타겟으로 소재 공급사와 셀 메이커 간 초고수율 엔지니어링 검증이 진행 중입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 고체 전해질 대량 생산은 필수 원재료인 고순도 리튬 및 황화화물 공급망의 안정성에 직결됩니다. 포스코그룹의 글로벌 리튬 광산 자산 및 포스코JK솔리드솔루션의 황화물계 고체 전해질 생산 데이터를 연동하여, 일본 완성차 연합의 초기 검증 단계부터 원소재 장기 공급 파트너(오프테이커)로 진입해야 합니다. 전고체 전용 고강도 배터리 프레임(포스맥) 솔루션도 동반 제안하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 리사이클링 / 규제 법제화</span>
+                </div>
+                <div class="news-title">경제산업성(METI) · 환경성(MOE), 'EV 폐배터리 제조업자 의무 회수 법안' 전격 가동</div>
+                <div class="meta">
+                    <span>발표일: 2026-06-16 ~ 06-22</span>
+                    <span>Source: AutoTechInsight / Shanghai Metals Market</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 환경성과 경제산업성은 기존 자발적 회수 구조를 폐기하고 'EV 폐배터리 제조업자 의무 회수(Take-back mandate)' 법안 제정을 확정했습니다. 일본 내 폐배터리 발생량은 2026년 5만 대에서 2040년 약 40만 대 규모로 폭증할 전망입니다. 정부는 이를 '특정 재활용 의무 품목'으로 지정하여 발화 리스크를 방지하고 니켈, 코발트, 리튬 등 핵심 크리티컬 미네랄의 내재화 수율을 강제로 통제할 계획입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 국가 주도의 폐배터리 의무 수거망이 확립됨에 따라 리사이클 광물 확보전이 격화됩니다. 포스코HY클린메탈의 블랙매스 정제 기술력을 앞세워 일본 완성차(토요타, 혼다) 및 종합상사가 회수한 40만 대 분량의 폐배터리 스크랩에 대한 정제 위탁 및 원료 스왑(Swap) 파트너십을 조기에 체결하여 클린 광물 밸류체인을 장악하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge medium">분류: 이차전지 / 자원 순환</span>
+                </div>
+                <div class="news-title">일본 소재 기업, 오세아니아 폐루프 가동 및 글로벌 자원 순환망 장악 가속</div>
+                <div class="meta">
+                    <span>발표일: 2026-06 하순</span>
+                    <span>Source: MI Intelligence System</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 배터리 의무 회수 법제화와 연동하여, 일본 메이저 종합상사 및 비철 제련 소재사들이 오세아니아 및 북미 권역을 아우르는 글로벌 폐루프(Closed-loop) 배터리 자원 순환망 가동을 선언했습니다. 이는 물리적 수거망 강제화 지침에 디지털 추적성을 결합하여 해외 원료 기지에서 발생한 블랙매스를 자국 내로 회수하는 안보 블록화 전략의 일환입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 일본의 오세아니아 및 북미 클린 소싱 벨트 구축은 글로벌 광물 무기화에 대응하는 움직임입니다. 포스코퓨처엠의 글로벌 거점(캐나다 등)과 일본 상사들의 오세아니아 폐루프 믹스를 선제적으로 엮어, 북미 IRA 보조금 무결성을 사수하는 크로스 록인 조달 연합을 구축해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 전력 인프라 / GX</span>
+                </div>
+                <div class="news-title">동북전력, 3,500억 엔 규모 ‘신재생 연계 송전망 보강 대책’ 수립... 변압기 철손 14% 규제 실전 배치</div>
+                <div class="meta">
+                    <span>발표일: 2026-06-30</span>
+                    <span>Source: 일간철강신문 (JMD)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">동북전력은 홋카이도 및 동북 권역의 대규모 풍력·태양광 전력을 수도권으로 송전하기 위해 3,500억 엔 규모의 초고압 계통 보강 자재 규격을 확정했습니다. 신설 대형 변압기는 분기별 전력 손실을 14% 이상 저감해야 하며 중국산 부품을 원천 배제해야 보조금이 인정됩니다. 자본 비용을 상쇄할 하이엔드 자성 전기강판 제한 경쟁이 고착화되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 미쓰비시전기 및 후지전기 등 핵심 변압기 메이커의 최고 등급 강재 확보 전쟁이 절정에 달했습니다. 14% 손실 저감을 완벽히 보증하는 포스코 방향성 전기강판(Hyper NO) 최상위 그레이드 공급 확약서를 지렛대 삼아 하반기 LTA 계약 물량 통제권과 단가 인상을 관철하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge medium">분류: 모빌리티 / 소재 시프트</span>
+                </div>
+                <div class="news-title">토요타 배터리 부문, 북미 수출형 HEV 배터리 케이스 '알루미늄→특수강' 설계 변경 도면 확정</div>
+                <div class="meta">
+                    <span>발표일: 2026-06-25</span>
+                    <span>Source: 일간철강신문 (JMD)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">토요타의 배터리 자회사는 미국 비철 관세 부과에 따른 북미향 알루미늄 외함 유통가 상승을 헷징하기 위해, 북미 수출형 HEV 차종 배터리 팩 케이스를 알루미늄에서 '초고장력 박판 특수강'으로 전면 교체하는 도면을 승인했습니다. FEOC 지분을 배제한 디지털 패스포트 확약 강재에 소싱 쿼터가 집중됩니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 100% 통제 생산으로 규제 리스크가 제로인 포스코의 '초고장력 기가스틸 배터리 팩 솔루션' 및 고내식 포스맥(PosMAC)을 토요타 조달 룸에 적극 투입하여 강재 쿼터를 독점 수주하십시오.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">POSCO Strategic Opportunity Action Matrix</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>타겟 분야 (Sector)</th>
+                        <th>대상 주체 (Targets)</th>
+                        <th>전략적 실행 아이템 (Action Item)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>차세대 전지 (ASSB)</strong></td>
+                        <td>도요타, 혼다, 닛산, METI</td>
+                        <td>전고체 1,057억 엔 보조금 양산 체제 진입에 대응하여 황화리튬(Li₂S) 원료 장기 공급 및 고강도 배터리 프레임 일괄 역제안</td>
+                    </tr>
+                    <tr>
+                        <td><strong>폐배터리 리사이클링</strong></td>
+                        <td>파나소닉 에너지, 메이저 상사 연합</td>
+                        <td>제조업자 의무 회수 법안 가동으로 폭증할 폐배터리(40만 대/년)에 대해 포스코HY클린메탈 블랙매스 정제 및 원료 스왑 파트너십 구축</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GX 변전 유틸리티</strong></td>
+                        <td>동북전력, 미쓰비시전기, 후지전기</td>
+                        <td>3,500억 엔 규모 계통 보강 프로젝트 14% 손실 저감 규격 충족용 최고 그레이드 Hyper NO 공급 확약 및 LTA 단가 인상 관철</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery & GX Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
