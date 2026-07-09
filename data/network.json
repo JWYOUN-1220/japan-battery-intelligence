@@ -1,15 +1,14 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
+    {"id": "MOE", "group": "Policy"},
     {"id": "Toyota", "group": "OEM"},
     {"id": "Honda", "group": "OEM"},
     {"id": "Nissan", "group": "OEM"},
-    {"id": "Sumitomo Corporation", "group": "Trading"},
-    {"id": "Marubeni", "group": "Trading"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
-    {"id": "JFE Steel", "group": "Material"},
     {"id": "Tohoku Electric Power", "group": "Utility"},
-    {"id": "TEPCO", "group": "Utility"},
+    {"id": "Mitsubishi Electric", "group": "EPC"},
+    {"id": "Fuji Electric", "group": "EPC"},
+    {"id": "Toyota Battery", "group": "Cell Maker"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
@@ -27,47 +26,39 @@
       "type": "정책 지원",
       "date": "2026-06-24",
       "strength": "높음",
-      "note": "전고체 황화물계 고체 전해질 대량 생산 체제 원가 절감 국책 기금 투입"
+      "note": "전고체 황화물계 고체 전해질 대량 생산 체제 원가 절감 펀딩 투입"
     },
     {
       "source": "METI",
-      "target": "Nissan",
-      "type": "정책 지원",
-      "date": "2026-06-24",
+      "target": "MOE",
+      "type": "전략적 협력",
+      "date": "2026-06-16",
       "strength": "높음",
-      "note": "2030년 완전 상업화 타겟 전고체 소재-셀 메이커 간 초고수율 엔지니어링 검증 펀딩"
+      "note": "EV 폐배터리 제조업자 의무 회수 법안 제정을 위한 합동 워킹그룹 출범"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "Sumitomo Corporation",
-      "type": "조달망 개편",
+      "source": "Tohoku Electric Power",
+      "target": "Mitsubishi Electric",
+      "type": "사양 통고",
+      "date": "2026-06-30",
+      "strength": "높음",
+      "note": "3,500억 엔 규모 초고압 송전망 보강에 변압기 철손 14% 저감 규제 실전 배치"
+    },
+    {
+      "source": "Toyota Battery",
+      "target": "Toyota",
+      "type": "설계 변경",
       "date": "2026-06-25",
       "strength": "높음",
-      "note": "북미 리사이클 벨트 가동에 따른 비중국산 클린 블랙매스 소싱 쿼터 세부 조율 착수"
+      "note": "미국 비철 관세 폭격 대응 목적으로 북미 수출형 HEV 배터리 케이스 자재 특수강 시프트"
     },
     {
-      "source": "Panasonic Energy",
-      "target": "Marubeni",
-      "type": "조달망 개편",
+      "source": "POSCO",
+      "target": "Toyota",
+      "type": "잠재 협력",
       "date": "2026-06-25",
-      "strength": "높음",
-      "note": "북미·일본 연동 LiB 리사이클 블록 연계 클린 광물 소싱 매칭 개시"
-    },
-    {
-      "source": "JFE Steel",
-      "target": "TEPCO",
-      "type": "사양 등록",
-      "date": "2026-06-29",
       "strength": "보통",
-      "note": "초고압 변전 그리드 보강용 저탄소 알카리 활성 재료 콘크리트 하부 구조재 규격 진입 추진"
-    },
-    {
-      "source": "JFE Steel",
-      "target": "Tohoku Electric Power",
-      "type": "사양 등록",
-      "date": "2026-06-29",
-      "strength": "보통",
-      "note": "3,500억 엔 규모 신재생 연계 변전 인프라 토목 기초재 정식 규격 등록 가동"
+      "note": "토요타 특수강 전환에 대응한 기가스틸 배터리 팩 솔루션 공급 협의 및 전고체 원료 록인 추진"
     }
   ]
 }
