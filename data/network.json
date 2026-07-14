@@ -3,46 +3,47 @@
     {"id": "METI", "group": "Policy"},
     {"id": "MOE", "group": "Policy"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Nissan", "group": "OEM"},
-    {"id": "Tohoku Electric Power", "group": "Utility"},
-    {"id": "Mitsubishi Electric", "group": "EPC"},
-    {"id": "Fuji Electric", "group": "EPC"},
     {"id": "Toyota Battery", "group": "Cell Maker"},
+    {"id": "Mitsubishi Electric", "group": "EPC"},
+    {"id": "Panasonic Energy", "group": "Cell Maker"},
+    {"id": "Marubeni", "group": "Trading"},
+    {"id": "Murata", "group": "Niche OEM"},
+    {"id": "Taica", "group": "Material"},
+    {"id": "JUIDA", "group": "Policy"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
       "source": "METI",
       "target": "Toyota",
-      "type": "정책 지원",
-      "date": "2026-06-24",
+      "type": "정책 규제",
+      "date": "2026-07-10",
       "strength": "높음",
-      "note": "배터리 안정 공급 보장 계획 하에 전고체 핵심 원료 개발 누적 보조금 1,057억 엔 집행"
+      "note": "GX-ETS 2단계를 통해 FEOC 우회 수입 강재 및 배터리 소재 100% 차단 지침 하달"
     },
     {
       "source": "METI",
-      "target": "Honda",
-      "type": "정책 지원",
-      "date": "2026-06-24",
-      "strength": "높음",
-      "note": "전고체 황화물계 고체 전해질 대량 생산 체제 원가 절감 펀딩 투입"
-    },
-    {
-      "source": "METI",
-      "target": "MOE",
-      "type": "전략적 협력",
-      "date": "2026-06-16",
-      "strength": "높음",
-      "note": "EV 폐배터리 제조업자 의무 회수 법안 제정을 위한 합동 워킹그룹 출범"
-    },
-    {
-      "source": "Tohoku Electric Power",
       "target": "Mitsubishi Electric",
-      "type": "사양 통고",
-      "date": "2026-06-30",
+      "type": "정책 규제",
+      "date": "2026-07-10",
       "strength": "높음",
-      "note": "3,500억 엔 규모 초고압 송전망 보강에 변압기 철손 14% 저감 규제 실전 배치"
+      "note": "LCA 무결성 보고서를 통한 우회 수입 원소재 사용 차단 압박"
+    },
+    {
+      "source": "JUIDA",
+      "target": "Murata",
+      "type": "생태계 확장",
+      "date": "2026-06-05",
+      "strength": "보통",
+      "note": "Japan Drone 2026을 통한 산업용 드론 배터리 진동 제어 및 BMS 스펙 고도화 유도"
+    },
+    {
+      "source": "Taica",
+      "target": "Murata",
+      "type": "전략적 협력",
+      "date": "2026-06-05",
+      "strength": "보통",
+      "note": "드론 탑재 배터리 팩 충격 흡수용 경량 소재 및 진동 댐핑 밸류체인 구축"
     },
     {
       "source": "Toyota Battery",
@@ -50,15 +51,7 @@
       "type": "설계 변경",
       "date": "2026-06-25",
       "strength": "높음",
-      "note": "미국 비철 관세 폭격 대응 목적으로 북미 수출형 HEV 배터리 케이스 자재 특수강 시프트"
-    },
-    {
-      "source": "POSCO",
-      "target": "Toyota",
-      "type": "잠재 협력",
-      "date": "2026-06-25",
-      "strength": "보통",
-      "note": "토요타 특수강 전환에 대응한 기가스틸 배터리 팩 솔루션 공급 협의 및 전고체 원료 록인 추진"
+      "note": "북미 수출형 HEV 배터리 케이스 알루미늄에서 특수강으로 전면 교체 도면 확정"
     }
   ]
 }
