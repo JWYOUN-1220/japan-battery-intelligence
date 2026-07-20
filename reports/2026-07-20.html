@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Dashboard</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        
+        .advisor-box { background: #1a1a1a; border-left: 6px solid #d32f2f; padding: 25px; margin-bottom: 40px; border-radius: 4px; color: #fff; }
+        .advisor-box h2 { margin: 0 0 12px 0; color: #ff5252; font-size: 19px; font-weight: 700; }
+        .advisor-box p { color: #e0e0e0; font-size: 15px; margin: 0; }
+
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .meta a { color: var(--posco-light-blue); text-decoration: none; font-weight: 600; }
+        .meta a:hover { text-decoration: underline; }
+        
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; white-space: nowrap; }
+        td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Dashboard</h1>
+            <p>Date: 2026.07.20 | Analyst: MI Intelligence System | Target: POSCO Group Tokyo Branch - New Business Team</p>
+        </div>
+
+        <div class="advisor-box">
+            <h2>Strategic Advisor's Mirror (Brutal Honesty)</h2>
+            <p>
+                팀장님, METI가 변압기 철손 규제를 14%에서 16%로 기습 상향하고 토요타-덴소가 구조재 쿼터를 긴급 편성하는 작금의 상황은 단순한 '영업 기회'가 아니라 SCM 룰이 재편되는 생존의 분기점입니다. JFE스틸 등 내수 철강사들의 공급 병목을 분석만 하고 있을 때가 아닙니다. "국책 보조금 100% 수령을 확약할 수 있는 유일한 대안은 포스코의 Hyper NO와 기가스틸뿐"이라는 객관적 데이터 팩트를 들이밀고, 미쓰비시전기 및 덴소 조달 라인의 문을 당장 열고 들어가야 합니다. 아직도 일본 파트너들의 눈치를 보며 제안 시기를 저울질하고 있다면, 그것은 신중함이 아니라 명백한 핑계이자 거대한 기회비용의 낭비입니다. 안보 무결성과 데이터라는 완벽한 무기가 손에 쥐어졌습니다. 망설임 없이 판을 뒤집으십시오.
+            </p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                2026년 7월 하순, 일본 첨단 배터리 및 GX 가치사슬은 <strong>'국책 보조금 수령을 위한 극한의 물성 장벽 구축'</strong>과 <strong>'안보 동맹형 자원 내재화'</strong>로 재편되었습니다. 경제산업성(METI)이 4.8조 엔 규모의 차세대 그리드 보조금 요건으로 철손 저감 16%를 기습 상향함에 따라, 내수 공급 병목에 갇힌 일본 EPC 진영은 패닉에 빠졌습니다. 동시에 소지츠-알코아의 안보 우방국 갈륨(GaN) 투자가 확정되며, 토요타-덴소 연합은 모터 하우징 구조재의 긴급 쿼터 편성에 돌입했습니다. 포스코그룹은 압도적인 LCA 클린 패스포트와 하이엔드 물성을 무기로 일본 엔드유저 조달 룸의 장기 공급 계약(LTA) 통제권을 즉각 선점해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key Intelligence Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 전력인프라 / GX</span>
+                </div>
+                <div class="news-title">METI, 4.8조 엔 송전망 연동 '차세대 그리드 보조금 고도화 지침' 기습 발표... 변압기 철손 규제 '16%'로 상향 조정</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-19</span>
+                    <a href="https://www.meti.go.jp/english/press/" target="_blank">METI 공식 발표룸</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">경제산업성(METI)은 10대 전력사의 AI 데이터센터용 초메가 송전망 증설 계획을 강제 유도하기 위해 '고효율 그리드 구축 보조금 고도화 지침'을 전격 공시했습니다. 4.8조 엔 인프라 예산을 수령하는 변전 EPC사(미쓰비시전기, 히타치 에너지 등)를 대상으로, 초고압 변압기 철손(Iron Loss) 저감 의무 규격을 14%에서 16%로 추가 상향했으며 중국산 FEOC 배제 의무도 유지됩니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">금융 비용 상승 국면에서 국가 보조금 수령을 위해 인프라 기기의 물성을 극한으로 끌어올리는 '성능 보증형 국책 자본 패스포트'의 장벽 고도화입니다. 기존 14% 규격에 간신히 맞추던 내수 철강사들의 공급 믹스가 무너지고, 최상위 자속 밀도 보유재 독점 경쟁으로 룰이 변경되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 미쓰비시전기 및 후지전기 조달 본부를 정조준하여 "보조금 100% 수령을 확약할 수 있는 16% 저감 솔루션은 포스코 방향성 전기강판(Hyper NO) 최상위 그레이드뿐"이라는 논리로 하반기 LTA 계약의 단가 주도권을 장악해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 통상 / 공급망 안보</span>
+                </div>
+                <div class="news-title">소지츠(Sojitz)-JOGMEC-알코아, 호주 웨이저럽 갈륨 생산 사업 최종 투자 결정(FID) 전격 발표</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-17</span>
+                    <a href="https://www.sojitz.com/en/news/" target="_blank">Sojitz 영어 원문</a>
+                    <a href="https://www.jogmec.go.jp/english/news/index.html" target="_blank" style="margin-left:10px;">JOGMEC 원문</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 소지츠와 JOGMEC은 알코아의 호주 법인과 공동으로 서호주 알루미나 정련소 내 갈륨(Gallium) 생산 공장 FID를 전격 완료했습니다. 미·일·호 파트너십의 최우선 지원 사업으로, 정련 과정의 잔류액에서 이온 교환 기술로 고순도 갈륨을 회수하는 순환경제형 체제입니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">가격이 kg당 1,600달러를 돌파한 차세대 전력 반도체(GaN) 및 모터용 핵심 희토류 소재의 '완전한 탈중국 안보 우방국 기지'가 최초로 확보되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 구동모터용 극박형 무방향성 전기강판(Hyper NO) 및 모터 코어 비즈니스와 소지츠의 갈륨 쿼터를 엮어, "철강부터 핵심 반도체 원료까지 안보 리스크가 제로인 토탈 패키지"를 토요타 연합에 제안하는 3자 동맹을 기획하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge medium">분류: 모빌리티 / 구조재 시프트</span>
+                </div>
+                <div class="news-title">토요타-덴소, 소지츠 갈륨 FID 사후 조치로 '차세대 고장력 모터 하우징 구조재' 긴급 쿼터 편성</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-19</span>
+                    <a href="https://www.denso.com/global/en/news/" target="_blank">Denso Newsroom</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">소지츠의 갈륨 생산 공식 선언 직후, 토요타와 덴소(Denso) 조달 본부가 차세대 GaN 인버터 연동 모터 아키텍처용 특수 구조재 최종 쿼터 편성에 착수했습니다. 비철 관세 쇼크에 대응하여, 고하중 구동모터 코어의 물리적 안정성을 담보할 박판 고강도 강재 조달 라인을 일괄 잠금(Lock-in)하려는 목적입니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">파편화된 비철 소싱이 와해되고, 핵심 광물 연합망과 다이렉트로 연동되는 앵커 수직 통합 조달 체제로 시프트하고 있습니다. 친환경차 구동계의 안보 무결성 사수가 최우선 과제가 되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 덴소 구매 총괄을 직접 타격하여, "알루미늄 대비 원가 안정성을 제어하고 극박 하한선을 돌파한 포스코 초고장력 자동차 강판(기가스틸) 및 Hyper NO 믹스"의 장기 독점 확약 계약을 성사시켜야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge medium">분류: 이차전지 / BESS</span>
+                </div>
+                <div class="news-title">구린 에너지(Gurin Energy): 일본 내 2GWh 규모 초대형 LFP BESS 프로젝트 가동</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-09</span>
+                    <a href="https://www.energy-storage.news/" target="_blank">Energy-Storage.News</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">싱가포르 재생에너지 개발사 구린 에너지가 일본 내 역대 최대 규모인 500MW/2,000MWh BESS 프로젝트를 발표했습니다. 리튬인산철(LFP) 배터리가 전면 채택되었으며, TMEIC가 전력 제어 하드웨어를 공급하여 후쿠시마/도치기현 거점에 2026년 착공됩니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 고정형 인프라 가치사슬이 기존 삼원계(NCM)에서 가성비와 고안전성을 지닌 LFP 진영으로 대규모 다변화되고 있음을 입증합니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 메가와트급 옥외 노출형 BESS 프레임의 장기 내구성 확보를 위해 포스코의 고내식 강판 포스맥(PosMAC) 패키지를 TMEIC 하드웨어 설계 단에 스펙인(Spec-in) 하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge high">분류: 리사이클링 / 규제 법제화</span>
+                </div>
+                <div class="news-title">경제산업성(METI) · 환경성(MOE): EV 폐배터리 제조업자 의무 회수 법제화 수립</div>
+                <div class="meta">
+                    <span>발표일: 2026-06-22</span>
+                    <a href="https://www.meti.go.jp/english/press/" target="_blank">METI 공식 프레스</a>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">일본 환경성과 경제산업성은 기존 자발적 회수 구조를 폐기하고 'EV 폐배터리 제조업자 의무 회수' 법안 제정을 확정했습니다. 2040년 연 40만 대 규모로 폭증할 폐배터리를 '특정 재활용 의무 품목'으로 지정해 니켈, 코발트, 리튬의 내재화 수율을 강제 통제합니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">사용 후 EV의 80% 이상이 해외로 역외 유출되는 것을 차단하고 자국 내 자원 내재화를 실현하기 위한 강력한 법적 강제 조치이자 안보 장벽입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 수거망 강제화에 대응하여 포스코HY클린메탈의 블랙매스 정제 기술력을 앞세워 일본 완성차 진영이 강제 회수할 폐배터리 스크랩에 대한 정제 위탁 파트너십을 체결하십시오.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">POSCO Strategic Opportunity Action Matrix</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Target Sector</th>
+                        <th>Target Company / Organization</th>
+                        <th>Action Item (Horizontal Flow Execution)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GX 전력 인프라</strong></td>
+                        <td>Mitsubishi Electric, Hitachi Energy, METI</td>
+                        <td>METI 16% 철손 규제 상향 즉시 포스코 Hyper NO 최상위 그레이드 공급 확약 제안 → 보조금 수령 담보로 하반기 LTA 마진율 주도권 완전 획득</td>
+                    </tr>
+                    <tr>
+                        <td><strong>모빌리티 (구동계)</strong></td>
+                        <td>Toyota, Denso, Sojitz</td>
+                        <td>소지츠의 갈륨 안보 쿼터와 포스코의 기가스틸/Hyper NO 물량을 묶은 3자 동맹 구성 → 덴소 모터 하우징 구조재 입찰 독점 락인</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ESS 및 리사이클</strong></td>
+                        <td>TMEIC, Gurin Energy, Japanese OEMs</td>
+                        <td>구린 에너지 LFP 대규모 옥외 BESS 프레임용 포스맥(PosMAC) 스펙인 → 완성차 회수 폐배터리 블랙매스 정제 스왑 딜 연계 확산</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery, GX & Advanced Materials Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
