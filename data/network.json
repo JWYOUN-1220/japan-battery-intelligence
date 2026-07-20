@@ -2,56 +2,57 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "MOE", "group": "Policy"},
+    {"id": "Sojitz", "group": "Trading"},
+    {"id": "JOGMEC", "group": "Policy"},
+    {"id": "Alcoa", "group": "Material"},
     {"id": "Toyota", "group": "OEM"},
-    {"id": "Toyota Battery", "group": "Cell Maker"},
+    {"id": "Denso", "group": "Tier1"},
     {"id": "Mitsubishi Electric", "group": "EPC"},
-    {"id": "Panasonic Energy", "group": "Cell Maker"},
-    {"id": "Marubeni", "group": "Trading"},
-    {"id": "Murata", "group": "Niche OEM"},
-    {"id": "Taica", "group": "Material"},
-    {"id": "JUIDA", "group": "Policy"},
+    {"id": "Hitachi Energy", "group": "EPC"},
+    {"id": "Gurin Energy", "group": "Developer"},
+    {"id": "TMEIC", "group": "EPC"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "METI",
-      "target": "Toyota",
-      "type": "정책 규제",
-      "date": "2026-07-10",
+      "source": "Sojitz",
+      "target": "JOGMEC",
+      "type": "전략적 협력",
+      "date": "2026-07-17",
       "strength": "높음",
-      "note": "GX-ETS 2단계를 통해 FEOC 우회 수입 강재 및 배터리 소재 100% 차단 지침 하달"
+      "note": "서호주 웨이저럽 갈륨 생산 공장 합작 최종 투자 결정 완료"
     },
     {
       "source": "METI",
       "target": "Mitsubishi Electric",
       "type": "정책 규제",
-      "date": "2026-07-10",
+      "date": "2026-07-19",
       "strength": "높음",
-      "note": "LCA 무결성 보고서를 통한 우회 수입 원소재 사용 차단 압박"
+      "note": "초고압 변압기 철손 저감 의무 규격을 16%로 상향 통고"
     },
     {
-      "source": "JUIDA",
-      "target": "Murata",
-      "type": "생태계 확장",
-      "date": "2026-06-05",
-      "strength": "보통",
-      "note": "Japan Drone 2026을 통한 산업용 드론 배터리 진동 제어 및 BMS 스펙 고도화 유도"
-    },
-    {
-      "source": "Taica",
-      "target": "Murata",
-      "type": "전략적 협력",
-      "date": "2026-06-05",
-      "strength": "보통",
-      "note": "드론 탑재 배터리 팩 충격 흡수용 경량 소재 및 진동 댐핑 밸류체인 구축"
-    },
-    {
-      "source": "Toyota Battery",
-      "target": "Toyota",
-      "type": "설계 변경",
-      "date": "2026-06-25",
+      "source": "Toyota",
+      "target": "Denso",
+      "type": "생태계 조율",
+      "date": "2026-07-19",
       "strength": "높음",
-      "note": "북미 수출형 HEV 배터리 케이스 알루미늄에서 특수강으로 전면 교체 도면 확정"
+      "note": "차세대 GaN 모터 하우징용 고장력 구조재 쿼터 긴급 편성"
+    },
+    {
+      "source": "Gurin Energy",
+      "target": "TMEIC",
+      "type": "공급 계약",
+      "date": "2026-07-09",
+      "strength": "보통",
+      "note": "2GWh 규모 LFP BESS 전력 제어 하드웨어 시스템 조달 발주"
+    },
+    {
+      "source": "METI",
+      "target": "MOE",
+      "type": "정책 변화",
+      "date": "2026-06-22",
+      "strength": "높음",
+      "note": "EV 폐배터리 제조업자 의무 회수 법안 제정 확정"
     }
   ]
 }
