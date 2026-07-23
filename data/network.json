@@ -2,49 +2,51 @@
   "nodes": [
     {"id": "METI", "group": "Policy"},
     {"id": "MOE", "group": "Policy"},
+    {"id": "TANAKA", "group": "Material"},
+    {"id": "Toshiba", "group": "EPC"},
+    {"id": "TEPCO", "group": "Utility"},
+    {"id": "JERA", "group": "Utility"},
+    {"id": "Mitsubishi Electric", "group": "EPC"},
+    {"id": "Hitachi Energy", "group": "EPC"},
+    {"id": "Yamaha Motor", "group": "OEM"},
+    {"id": "Honda", "group": "OEM"},
     {"id": "Sojitz", "group": "Trading"},
     {"id": "JOGMEC", "group": "Policy"},
     {"id": "Alcoa", "group": "Material"},
-    {"id": "Toyota", "group": "OEM"},
-    {"id": "Denso", "group": "Tier1"},
-    {"id": "Mitsubishi Electric", "group": "EPC"},
-    {"id": "Hitachi Energy", "group": "EPC"},
-    {"id": "Gurin Energy", "group": "Developer"},
-    {"id": "TMEIC", "group": "EPC"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
+      "source": "TANAKA",
+      "target": "Toshiba",
+      "type": "전략적 협력",
+      "date": "2026-07-21",
+      "strength": "높음",
+      "note": "500kW 순수 수소 연료전지 'H2 Nexus' 설비 구축 및 상업 가동 연동"
+    },
+    {
+      "source": "TEPCO",
+      "target": "Mitsubishi Electric",
+      "type": "공급 계약",
+      "date": "2026-07-22",
+      "strength": "높음",
+      "note": "1.8조 엔 초고압 HVDC 3차 예산 집행 및 16% 철손 저감 변압기 발주"
+    },
+    {
+      "source": "Yamaha Motor",
+      "target": "Honda",
+      "type": "전략적 협력",
+      "date": "2026-07-20",
+      "strength": "보통",
+      "note": "상용 물류 스쿠터 GEAREV에 혼다 표준 탈착식 배터리 플랫폼 채택"
+    },
+    {
       "source": "Sojitz",
       "target": "JOGMEC",
-      "type": "전략적 협력",
+      "type": "JV 설립",
       "date": "2026-07-17",
       "strength": "높음",
-      "note": "서호주 웨이저럽 갈륨 생산 공장 합작 최종 투자 결정 완료"
-    },
-    {
-      "source": "METI",
-      "target": "Mitsubishi Electric",
-      "type": "정책 규제",
-      "date": "2026-07-19",
-      "strength": "높음",
-      "note": "초고압 변압기 철손 저감 의무 규격을 16%로 상향 통고"
-    },
-    {
-      "source": "Toyota",
-      "target": "Denso",
-      "type": "생태계 조율",
-      "date": "2026-07-19",
-      "strength": "높음",
-      "note": "차세대 GaN 모터 하우징용 고장력 구조재 쿼터 긴급 편성"
-    },
-    {
-      "source": "Gurin Energy",
-      "target": "TMEIC",
-      "type": "공급 계약",
-      "date": "2026-07-09",
-      "strength": "보통",
-      "note": "2GWh 규모 LFP BESS 전력 제어 하드웨어 시스템 조달 발주"
+      "note": "알코아 법인과 연계한 호주 갈륨 생산 사업 최종 투자 결정(FID) 완료"
     },
     {
       "source": "METI",
