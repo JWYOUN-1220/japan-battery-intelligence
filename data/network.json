@@ -1,7 +1,7 @@
 {
   "nodes": [
     {"id": "METI", "group": "Policy"},
-    {"id": "MOE", "group": "Policy"},
+    {"id": "US Gov (USTR)", "group": "Policy"},
     {"id": "TANAKA", "group": "Material"},
     {"id": "Toshiba", "group": "EPC"},
     {"id": "TEPCO", "group": "Utility"},
@@ -10,27 +10,25 @@
     {"id": "Hitachi Energy", "group": "EPC"},
     {"id": "Yamaha Motor", "group": "OEM"},
     {"id": "Honda", "group": "OEM"},
-    {"id": "Sojitz", "group": "Trading"},
-    {"id": "JOGMEC", "group": "Policy"},
-    {"id": "Alcoa", "group": "Material"},
+    {"id": "Green Growth", "group": "Developer"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
-    {
-      "source": "TANAKA",
-      "target": "Toshiba",
-      "type": "전략적 협력",
-      "date": "2026-07-21",
-      "strength": "높음",
-      "note": "500kW 순수 수소 연료전지 'H2 Nexus' 설비 구축 및 상업 가동 연동"
-    },
     {
       "source": "TEPCO",
       "target": "Mitsubishi Electric",
       "type": "공급 계약",
       "date": "2026-07-22",
       "strength": "높음",
-      "note": "1.8조 엔 초고압 HVDC 3차 예산 집행 및 16% 철손 저감 변압기 발주"
+      "note": "1.8조 엔 초고압 HVDC 3차 예산 집행 및 16% 철손 저감 변압기 발주 (출처: 니혼게이자이신문)"
+    },
+    {
+      "source": "TANAKA",
+      "target": "Toshiba",
+      "type": "전략적 협력",
+      "date": "2026-07-21",
+      "strength": "높음",
+      "note": "500kW 순수 수소 연료전지 'TANAKA H2 Nexus' 상업 가동 연동 (출처: 일간철강신문)"
     },
     {
       "source": "Yamaha Motor",
@@ -38,23 +36,23 @@
       "type": "전략적 협력",
       "date": "2026-07-20",
       "strength": "보통",
-      "note": "상용 물류 스쿠터 GEAREV에 혼다 표준 탈착식 배터리 플랫폼 채택"
+      "note": "상용 물류 스쿠터 GEAREV에 혼다 표준 탈착식 배터리 플랫폼 채택 (출처: The Pack News)"
     },
     {
-      "source": "Sojitz",
-      "target": "JOGMEC",
-      "type": "JV 설립",
-      "date": "2026-07-17",
-      "strength": "높음",
-      "note": "알코아 법인과 연계한 호주 갈륨 생산 사업 최종 투자 결정(FID) 완료"
+      "source": "Green Growth",
+      "target": "METI",
+      "type": "정책 규제",
+      "date": "2026-07-20",
+      "strength": "보통",
+      "note": "일본 최초 FIT에서 FIP 전환형 태양광 연계 BESS 상업 가동 개시 (출처: ESS News)"
     },
     {
-      "source": "METI",
-      "target": "MOE",
+      "source": "US Gov (USTR)",
+      "target": "METI",
       "type": "정책 변화",
-      "date": "2026-06-22",
+      "date": "2026-07-22",
       "strength": "높음",
-      "note": "EV 폐배터리 제조업자 의무 회수 법안 제정 확정"
+      "note": "미·일 핵심 광물 협정 개정을 통한 배터리 광물 무관세 가공 통로 확정 (출처: USTR 공시)"
     }
   ]
 }
