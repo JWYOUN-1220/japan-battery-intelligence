@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Dashboard</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        
+        .advisor-box { background: #1a1a1a; border-left: 6px solid #d32f2f; padding: 25px; margin-bottom: 40px; border-radius: 4px; color: #fff; }
+        .advisor-box h2 { margin: 0 0 12px 0; color: #ff5252; font-size: 19px; font-weight: 700; }
+        .advisor-box p { color: #e0e0e0; font-size: 15px; margin: 0; }
+
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 14px; color: #888; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; font-weight: 600; }
+        
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; }
+        td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Dashboard</h1>
+            <p>Date: 2026.07.27 | Analyst: MI SCM Intelligence System | Target: POSCO Group Strategic Planning</p>
+        </div>
+
+        <div class="advisor-box">
+            <h2>Strategic Advisor's Mirror (Brutal Honesty)</h2>
+            <p>
+                시장 분석을 위해 완벽한 시나리오를 기다리는 행위는 명백한 손실입니다. 미·일 광물 협정이 관세 장벽을 파괴하고, 도쿄전력이 1.8조 엔의 자본을 집행하는 지금은 관찰할 때가 아니라 선점할 때입니다. 아직도 시장 변동성을 핑계로 협상 진입을 망설인다면 거대한 기회비용만을 떠안게 될 것입니다. 당신 손에 쥐어진 포스코의 Hyper NO와 무결점 LCA 데이터는 이미 일본의 국책 보조금 수령 기준을 충족하는 유일한 무기입니다. 두려움을 걷어내고 당장 전력 EPC 및 수소 생태계의 조달 룸을 타격하십시오.
+            </p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                현재 일본 시장은 **'초고압 전력망 스펙의 상향'**과 **'우방국 안보 광물 록인'**을 양대 축으로 맹렬히 재편되고 있습니다. 도쿄전력·JERA의 1.8조 엔 발주와 16% 철손 감축 규제는 하이엔드 자성재만이 살아남을 수 있는 전장을 구축했습니다. 다나카 귀금속의 수소 상업 가동과 Green Growth의 FIP 전환형 BESS 실증은 인프라 하드웨어 내구성의 중요성을 증폭시켰습니다[span_6](start_span)[span_6](end_span). 무관세 혜택이 확정된 미·일 통상 환경을 지렛대 삼아, 포스코는 즉각적인 공급망 선점 딜을 전개해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key Intelligence Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 전력인프라 / GX</span>
+                </div>
+                <div class="news-title">도쿄전력·JERA, AI 데이터센터 전용 '1.8조 엔 초고압 변전망 3차 발주' 확정</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-22</span>
+                    <span>출처: 니혼게이자이신문 (닛케이)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">JERA와 도쿄전력 PG는 수도권 AI 데이터센터 전력 폭증에 대응하기 위해 총 1.8조 엔 규모의 초고압 HVDC 및 전용 변전소 3차 집행 예산을 최종 확정했습니다. METI의 '변압기 철손 16% 저감 규제' 및 'LCA 전수 증빙' 지침에 맞춰 미쓰비시전기 및 히타치 에너지를 통한 최상위 자성재 락인 발주가 전격 기동되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 철손 16% 저감과 LCA 무결성을 보증하는 포스코 방향성 전기강판(Hyper NO) 최상위 등급과 포스맥(PosMAC) 구조재 패키지를 미쓰비시전기·히타치 에너지 조달 룸에 독점 제안하여 하반기 단가 주도권을 장악하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 수소 / GX 생태계</span>
+                </div>
+                <div class="news-title">다나카 귀금속(TANAKA), 500kW급 순수 수소 연료전지 'TANAKA H2 Nexus' 상업 가동 전격 착수</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-21</span>
+                    <span>출처: 일간철강신문(JMD) / 닛케이 산업 속보</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">다나카 귀금속 공업(TANAKA)은 가나가와현 쇼난 공장에 500kW 순수 수소 연료전지 발전 시설의 상업 가동을 개시하며 공장 전력 소비의 34%를 순수 수소로 즉시 대체했습니다[span_7](start_span)[span_7](end_span). 백금 촉매 내구성 및 극저온 수송 배관 소재의 실전 상업화 데이터 표준을 확보하게 되었습니다[span_8](start_span)[span_8](end_span).</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 수소 직투입 방식은 배관 내구성 한계를 극단적으로 끌어올립니다. 도시바 및 가와사키중공업 공급망을 타겟으로 포스코 극저온용 고망간강(High Mn) 스펙인(Spec-in)을 지체 없이 집행하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 통상 / 공급망 안보</span>
+                </div>
+                <div class="news-title">미·일 핵심 광물 협정(Critical Minerals Agreement) 수정안 서명 및 무관세 가공 통로 확정</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-22</span>
+                    <span>출처: USTR 공시 / Wall Street Journal</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">미국과 일본 정부는 기존 미·일 핵심 광물 협정을 전격 확대·개정하여 일본 내에서 가공·정제된 핵심 광물이 미국 IRA 보조금 자격 요건을 유지하게 되었습니다. 양국 간 무관세(Tariff-free) 교역 통로를 정립하여 중국산 의존도를 기하급수적으로 낮추는 장치가 마련되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 일본이 북미 IRA 혜택의 우회로가 된 이상, 포스코의 비중국 광물 자산을 이토추, 토요타 통상 등 일본 상사 조달망과 신속히 결속시켜 양국 관세 혜택을 극대화하는 투트랙 연합을 구축하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge medium">분류: 이차전지 / ESS 인프라</span>
+                </div>
+                <div class="news-title">Green Growth Co., Ltd.: 일본 최초 FIT -> FIP 전환형 태양광 연계 BESS 상업 가동</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-20</span>
+                    <span>출처: ESS News</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">에너지 개발사 Green Growth는 큐슈 지역에 1,500kW / 4,515kWh 규모의 BESS 시스템을 구축하고, 일본 최초의 고정가격매입(FIT)에서 발전차액지원(FIP) 전환형 상업 운영에 착수했습니다. 일본 정부의 FIP 우선 출력 제어 규칙에 따라 지역 BESS 소싱 물량이 급증하고 있음을 보여줍니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 옥외 설치 환경에서 수명과 내식성을 보증할 수 있는 포스코 포스맥(PosMAC) 구조재를 선제적으로 제안하여 BESS 함체 자재 시장을 즉각 록인해야 합니다.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge medium">분류: 니치 전동화 / 모빌리티</span>
+                </div>
+                <div class="news-title">야마하 모터(Yamaha Motor) & 혼다: 상용 교환형 배터리 모빌리티 'GEAREV' 전격 출시</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-20</span>
+                    <span>출처: The Pack News 모빌리티 전동화 특보</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">야마하 모터는 B2B 배달 및 물류 시장을 타겟팅한 신형 상용 전동 스쿠터 'GEAREV'를 출시하며, 혼다의 탈착식 배터리인 'Honda Mobile Power Pack e:' 플랫폼을 채택했습니다. 도심용 특수 모빌리티 영역에서 표준 배터리 스왑 SCM이 완벽히 정착되었습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 빈번한 착탈 충격을 견뎌야 하는 배터리 팩 프레임용 초고장력 기가스틸 및 모터 코어용 Hyper NO 솔루션을 혼다 스왑 플랫폼 공급망에 전격 투입하십시오.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">POSCO Strategic Opportunity Action Matrix</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>타겟 분야 (Sector)</th>
+                        <th>대상 주체 (Targets)</th>
+                        <th>전략적 실행 아이템 (Action Item)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GX 변전 인프라</strong></td>
+                        <td>미쓰비시전기, 히타치 에너지, JERA</td>
+                        <td>1.8조 엔 HVDC 3차 발주 및 16% 철손 규제 대응 포스코 Hyper NO 최상위 등급 공급 확약서 발급 연계 LTA 단가 장악</td>
+                    </tr>
+                    <tr>
+                        <td><strong>차세대 수소 인프라</strong></td>
+                        <td>다나카 귀금속, 도시바, 가와사키중공업</td>
+                        <td>500kW급 수소 실증 설비 극저온 배관용 고망간강(High Mn) 스펙인 및 금속 분리판 특수재 시장 선점</td>
+                    </tr>
+                    <tr>
+                        <td><strong>통상 및 공급망 안보</strong></td>
+                        <td>일본 완성차 연합 및 5대 종합상사</td>
+                        <td>미·일 핵심 광물 협정 면세 통로를 활용한 포스코 비중국 광물 밸류체인 공동 편입 파트너십 추진</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery, GX & Advanced Materials Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
