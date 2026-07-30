@@ -28,23 +28,7 @@
       "type": "전략적 협력",
       "date": "2026-07-21",
       "strength": "높음",
-      "note": "500kW 순수 수소 연료전지 'TANAKA H2 Nexus' 상업 가동 연동 (출처: 일간철강신문)"
-    },
-    {
-      "source": "Yamaha Motor",
-      "target": "Honda",
-      "type": "전략적 협력",
-      "date": "2026-07-20",
-      "strength": "보통",
-      "note": "상용 물류 스쿠터 GEAREV에 혼다 표준 탈착식 배터리 플랫폼 채택 (출처: The Pack News)"
-    },
-    {
-      "source": "Green Growth",
-      "target": "METI",
-      "type": "정책 규제",
-      "date": "2026-07-20",
-      "strength": "보통",
-      "note": "일본 최초 FIT에서 FIP 전환형 태양광 연계 BESS 상업 가동 개시 (출처: ESS News)"
+      "note": "500kW 순수 수소 연료전지 'TANAKA H2 Nexus' 상업 가동 인프라 연동 (출처: 일간철강신문)"
     },
     {
       "source": "US Gov (USTR)",
@@ -52,7 +36,75 @@
       "type": "정책 변화",
       "date": "2026-07-22",
       "strength": "높음",
-      "note": "미·일 핵심 광물 협정 개정을 통한 배터리 광물 무관세 가공 통로 확정 (출처: USTR 공시)"
+      "note": "미·일 핵심 광물 협정 확대를 통한 무관세 배터리 밸류체인 교역로 확정 (출처: USTR 공시)"
+    },
+    {
+      "source": "Yamaha Motor",
+      "target": "Honda",
+      "type": "전략적 협력",
+      "date": "2026-07-20",
+      "strength": "보통",
+      "note": "상용 물류 스쿠터 GEAREV에 혼다 교환형 표준 배터리 플랫폼 전격 도입 (출처: The Pack News)"
+    },
+    {
+      "source": "Green Growth",
+      "target": "METI",
+      "type": "정책 규제",
+      "date": "2026-07-20",
+      "strength": "보통",
+      "note": "규제 개혁에 따른 일본 최초 FIT에서 FIP 전환형 BESS 상업 가동 실시 (출처: ESS News)"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-07-22",
+      "event": "도쿄전력·JERA, 1.8조 엔 초고압 변전망 3차 발주 확정",
+      "company": ["TEPCO", "JERA", "Mitsubishi Electric", "Hitachi Energy"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "AI 데이터센터 전력 대응을 위해 1.8조 엔 규모 초고압 HVDC 3차 예산 집행을 확정하고, METI의 16% 철손 감축 규제를 준수하는 하드웨어 발주를 개시했습니다.",
+      "impact": "16% 철손 및 LCA 클린 데이터를 만족하는 포스코 방향성 전기강판(Hyper NO) 최상위 프리미엄 그레이드의 독점적 수요 폭발",
+      "source": "니혼게이자이신문 (닛케이)"
+    },
+    {
+      "date": "2026-07-21",
+      "event": "다나카 귀금속, 500kW급 순수 수소 연료전지 상업 가동 전격 착수",
+      "company": ["TANAKA", "Toshiba"],
+      "type": "전략적 협력",
+      "strength": "높음",
+      "summary": "다나카 귀금속이 공장 전력 소비의 34%를 순수 수소로 대체하는 대형 발전 시설 가동을 시작하며 상업화 데이터 표준 확보에 나섰습니다.",
+      "impact": "극저온 수소 배관 및 연료전지 금속 분리판 소재의 물성 요구 상향으로 포스코 극저온용 고망간강 스펙인(Spec-in) 기회 증가",
+      "source": "일간철강신문 (JMD)"
+    },
+    {
+      "date": "2026-07-22",
+      "event": "미·일 광물 협정 수정안 서명 통한 무관세 교역 통로 개방",
+      "company": ["US Gov (USTR)", "METI"],
+      "type": "정책 변화",
+      "strength": "높음",
+      "summary": "미·일 간 광물 협정 확대로 일본에서 가공된 리튬 등 핵심 광물이 미국 IRA 보조금 자격 요건을 완벽히 유지하도록 보장하는 무관세 통로가 확정되었습니다.",
+      "impact": "미·일 교역 관세 혜택을 극대화할 수 있는 포스코 비중국산 광물의 일본 내 소재 조달 매력도 폭증",
+      "source": "USTR 공식 공시 / Wall Street Journal"
+    },
+    {
+      "date": "2026-07-20",
+      "event": "Green Growth, 일본 최초 FIP 전환형 태양광 BESS 상업 운영",
+      "company": ["Green Growth", "METI"],
+      "type": "투자 확대",
+      "strength": "보통",
+      "summary": "도심 및 지역 계통망 연계 BESS 소싱 물량의 급증을 대비하여 큐슈 지역 내 1,500kW 규모의 전환형 상업 운영에 착수했습니다.",
+      "impact": "야외 환경 하드웨어 내구성 요구치가 상승함에 따라 포스코 고내식 포스맥(PosMAC)의 BESS 프레임 록인(Lock-in) 기회 확산",
+      "source": "ESS News"
+    },
+    {
+      "date": "2026-07-20",
+      "event": "야마하 모터-혼다, B2B 상용 교환형 배터리 스쿠터 'GEAREV' 출시",
+      "company": ["Yamaha Motor", "Honda"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "야마하가 상용 배달 스쿠터 GEAREV에 혼다의 표준 교환형 배터리 팩 플랫폼을 채택하며 배터리 스왑 인프라가 통합되었습니다.",
+      "impact": "반복되는 배터리 스왑 충격을 견딜 수 있는 배터리 외함 강건화 수요 상승 및 기가스틸 프레임 도입 시급성 증대",
+      "source": "The Pack News"
     }
   ]
 }
