@@ -1,110 +1,157 @@
 {
   "nodes": [
-    {"id": "METI", "group": "Policy"},
-    {"id": "US Gov (USTR)", "group": "Policy"},
-    {"id": "TANAKA", "group": "Material"},
-    {"id": "Toshiba", "group": "EPC"},
-    {"id": "TEPCO", "group": "Utility"},
-    {"id": "JERA", "group": "Utility"},
-    {"id": "Mitsubishi Electric", "group": "EPC"},
-    {"id": "Hitachi Energy", "group": "EPC"},
-    {"id": "Yamaha Motor", "group": "OEM"},
-    {"id": "Honda", "group": "OEM"},
-    {"id": "Green Growth", "group": "Developer"},
+    {"id": "Toray", "group": "Material"},
+    {"id": "Mitsui Chemicals", "group": "Material"},
+    {"id": "NVIDIA", "group": "IT/AI"},
+    {"id": "Meta", "group": "IT/AI"},
+    {"id": "Samsung", "group": "OEM/Tech"},
+    {"id": "Applied Materials", "group": "Equipment"},
+    {"id": "NEC", "group": "IT/GX"},
+    {"id": "DMG MORI", "group": "Equipment"},
+    {"id": "Osaka Metropolitan Univ", "group": "R&D"},
+    {"id": "EV & LIB Makers", "group": "OEM"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "TEPCO",
-      "target": "Mitsubishi Electric",
+      "source": "Toray",
+      "target": "EV & LIB Makers",
       "type": "공급 계약",
-      "date": "2026-07-22",
+      "date": "2026-07-31",
       "strength": "높음",
-      "note": "1.8조 엔 초고압 HVDC 3차 예산 집행 및 16% 철손 저감 변압기 발주 (출처: 니혼게이자이신문)"
+      "note": "LIB 셀 10% 경량화를 달성하는 수지 필름 기반 탈동박 집전체 샘플 공급"
     },
     {
-      "source": "TANAKA",
-      "target": "Toshiba",
+      "source": "Mitsui Chemicals",
+      "target": "NVIDIA",
       "type": "전략적 협력",
-      "date": "2026-07-21",
+      "date": "2026-07-31",
       "strength": "높음",
-      "note": "500kW 순수 수소 연료전지 'TANAKA H2 Nexus' 상업 가동 인프라 연동 (출처: 일간철강신문)"
+      "note": "생성AI 기반 신소재 개발 인프라 구축을 위한 AI Materials Foundry 창립 멤버 합류"
     },
     {
-      "source": "US Gov (USTR)",
-      "target": "METI",
-      "type": "정책 변화",
-      "date": "2026-07-22",
+      "source": "NEC",
+      "target": "EV & LIB Makers",
+      "type": "솔루션 제공",
+      "date": "2026-07-31",
       "strength": "높음",
-      "note": "미·일 핵심 광물 협정 확대를 통한 무관세 배터리 밸류체인 교역로 확정 (출처: USTR 공시)"
+      "note": "제조 및 소재 공급업체의 실제 감축 데이터를 반영하는 Scope3 산정 플랫폼 연동"
     },
     {
-      "source": "Yamaha Motor",
-      "target": "Honda",
+      "source": "DMG MORI",
+      "target": "EV & LIB Makers",
+      "type": "솔루션 제공",
+      "date": "2026-07-31",
+      "strength": "보통",
+      "note": "타사 설비 연계 및 연속 가동이 개선된 차세대 자율주행 모바일 매니퓰레이터 상용화"
+    }
+  ],
+  "records": [
+    {
+      "date": "2026-07-31",
+      "source": "Toray",
+      "target": "EV & LIB Makers",
+      "type": "공급 계약",
+      "strength": "높음",
+      "note": "도레이가 동박을 대체하는 수지 필름 집전체를 개발해 배터리 경량화 샘플을 공급하기 시작했습니다.",
+      "news_title": "탈동박, 리튬이온전지 셀을 10% 경량화하는 신필름",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/",
+      "en_url": ""
+    },
+    {
+      "date": "2026-07-31",
+      "source": "Mitsui Chemicals",
+      "target": "NVIDIA",
       "type": "전략적 협력",
-      "date": "2026-07-20",
-      "strength": "보통",
-      "note": "상용 물류 스쿠터 GEAREV에 혼다 교환형 표준 배터리 플랫폼 전격 도입 (출처: The Pack News)"
+      "strength": "높음",
+      "note": "미쓰이화학이 글로벌 빅테크와 연합하여 AI 기반 소재 탐색 인프라 파운드리에 합류했습니다.",
+      "news_title": "생성AI로 신소재 개발, 미쓰이화학이 NVIDIA 등이 참여하는 국제 네트워크 참가",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/",
+      "en_url": ""
     },
     {
-      "source": "Green Growth",
-      "target": "METI",
-      "type": "정책 규제",
-      "date": "2026-07-20",
+      "date": "2026-07-31",
+      "source": "NEC",
+      "target": "EV & LIB Makers",
+      "type": "전략적 협력",
+      "strength": "높음",
+      "note": "NEC가 협력사 실제 감축 데이터를 활용해 Scope3 배출량을 정밀하게 산정하는 플랫폼을 상용화했습니다.",
+      "news_title": "공급업체 감축효과를 반영하는 Scope3 산정 방식 개발",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/",
+      "en_url": ""
+    },
+    {
+      "date": "2026-07-31",
+      "source": "DMG MORI",
+      "target": "EV & LIB Makers",
+      "type": "솔루션 제공",
       "strength": "보통",
-      "note": "규제 개혁에 따른 일본 최초 FIT에서 FIP 전환형 BESS 상업 가동 실시 (출처: ESS News)"
+      "note": "DMG MORI가 타사 기계와 연동이 가능한 차세대 무인 자동화 AMR 로봇을 제조 현장에 출시했습니다.",
+      "news_title": "자율주행 로봇 2세대, 연속가동 3.6배·타사 설비 연계 가능",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/",
+      "en_url": ""
+    },
+    {
+      "date": "2026-07-31",
+      "source": "Osaka Metropolitan Univ",
+      "target": "EV & LIB Makers",
+      "type": "R&D",
+      "strength": "낮음",
+      "note": "오사카공립대가 유색 플라스틱을 본연의 색으로 거의 100% 반복 재생하는 캡슐 기술을 개발했습니다.",
+      "news_title": "유색 플라스틱을 반복 재생하는 캡슐 기술",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/",
+      "en_url": ""
     }
   ],
   "history": [
     {
-      "date": "2026-07-22",
-      "event": "도쿄전력·JERA, 1.8조 엔 초고압 변전망 3차 발주 확정",
-      "company": ["TEPCO", "JERA", "Mitsubishi Electric", "Hitachi Energy"],
-      "type": "투자 확대",
+      "date": "2026-07-31",
+      "event": "도레이(Toray), 동박 대체용 수지 필름 집전체 샘플 공급 개시",
+      "company": ["Toray", "EV & LIB Makers"],
+      "type": "공급 계약",
       "strength": "높음",
-      "summary": "AI 데이터센터 전력 대응을 위해 1.8조 엔 규모 초고압 HVDC 3차 예산 집행을 확정하고, METI의 16% 철손 감축 규제를 준수하는 하드웨어 발주를 개시했습니다.",
-      "impact": "16% 철손 및 LCA 클린 데이터를 만족하는 포스코 방향성 전기강판(Hyper NO) 최상위 프리미엄 그레이드의 독점적 수요 폭발",
-      "source": "니혼게이자이신문 (닛케이)"
+      "summary": "도레이가 금속 동박을 대체하여 셀 중량을 10% 이상 절감하는 폴리머 얼로이 기반 수지 필름을 양산 제막하고 EV 제조사에 공급합니다.",
+      "impact": "기존 동박 중심의 배터리 소재 룰 파괴 우려 및 차세대 필름에 최적화된 새로운 음극재 매칭 데이터 확보 시급성 증폭",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/"
     },
     {
-      "date": "2026-07-21",
-      "event": "다나카 귀금속, 500kW급 순수 수소 연료전지 상업 가동 전격 착수",
-      "company": ["TANAKA", "Toshiba"],
+      "date": "2026-07-31",
+      "event": "미쓰이화학, NVIDIA-Meta 주도 AI 소재 파운드리 합류",
+      "company": ["Mitsui Chemicals", "NVIDIA", "Meta", "Samsung"],
       "type": "전략적 협력",
       "strength": "높음",
-      "summary": "다나카 귀금속이 공장 전력 소비의 34%를 순수 수소로 대체하는 대형 발전 시설 가동을 시작하며 상업화 데이터 표준 확보에 나섰습니다.",
-      "impact": "극저온 수소 배관 및 연료전지 금속 분리판 소재의 물성 요구 상향으로 포스코 극저온용 고망간강 스펙인(Spec-in) 기회 증가",
-      "source": "일간철강신문 (JMD)"
+      "summary": "미쓰이화학이 글로벌 빅테크 45개 기관이 모인 AI Materials Foundry에 창립 멤버로 참여해 생성 AI 중심의 신소재 탐색망을 구축합니다.",
+      "impact": "반복 실험 기반에서 빅데이터+HPC 기반으로 R&D 패러다임이 이동함에 따라 일본 화학업계의 차세대 소재 상용화 속도 극단적 단축",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/"
     },
     {
-      "date": "2026-07-22",
-      "event": "미·일 광물 협정 수정안 서명 통한 무관세 교역 통로 개방",
-      "company": ["US Gov (USTR)", "METI"],
+      "date": "2026-07-31",
+      "event": "NEC, 실데이터 기반 Scope3 산정 플랫폼(GreenGlobeX) 상용화",
+      "company": ["NEC", "EV & LIB Makers"],
       "type": "정책 변화",
       "strength": "높음",
-      "summary": "미·일 간 광물 협정 확대로 일본에서 가공된 리튬 등 핵심 광물이 미국 IRA 보조금 자격 요건을 완벽히 유지하도록 보장하는 무관세 통로가 확정되었습니다.",
-      "impact": "미·일 교역 관세 혜택을 극대화할 수 있는 포스코 비중국산 광물의 일본 내 소재 조달 매력도 폭증",
-      "source": "USTR 공식 공시 / Wall Street Journal"
+      "summary": "NEC가 협력업체의 실제 탄소 감축 활동 데이터를 반영해 Category1 배출량을 약 12% 줄여주는 플랫폼의 제3자 검증을 완료했습니다.",
+      "impact": "엔드유저의 저탄소 입증이 실시간 데이터 추적으로 강화되며 포스코 등 소재사의 클린 데이터 인증 시스템 연동 여부가 낙찰을 좌우",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/"
     },
     {
-      "date": "2026-07-20",
-      "event": "Green Growth, 일본 최초 FIP 전환형 태양광 BESS 상업 운영",
-      "company": ["Green Growth", "METI"],
-      "type": "투자 확대",
+      "date": "2026-07-31",
+      "event": "DMG MORI, 공장 자동화용 2세대 모바일 매니퓰레이터 출시",
+      "company": ["DMG MORI", "EV & LIB Makers"],
+      "type": "솔루션 제공",
       "strength": "보통",
-      "summary": "도심 및 지역 계통망 연계 BESS 소싱 물량의 급증을 대비하여 큐슈 지역 내 1,500kW 규모의 전환형 상업 운영에 착수했습니다.",
-      "impact": "야외 환경 하드웨어 내구성 요구치가 상승함에 따라 포스코 고내식 포스맥(PosMAC)의 BESS 프레임 록인(Lock-in) 기회 확산",
-      "source": "ESS News"
-    },
-    {
-      "date": "2026-07-20",
-      "event": "야마하 모터-혼다, B2B 상용 교환형 배터리 스쿠터 'GEAREV' 출시",
-      "company": ["Yamaha Motor", "Honda"],
-      "type": "전략적 협력",
-      "strength": "보통",
-      "summary": "야마하가 상용 배달 스쿠터 GEAREV에 혼다의 표준 교환형 배터리 팩 플랫폼을 채택하며 배터리 스왑 인프라가 통합되었습니다.",
-      "impact": "반복되는 배터리 스왑 충격을 견딜 수 있는 배터리 외함 강건화 수요 상승 및 기가스틸 프레임 도입 시급성 증대",
-      "source": "The Pack News"
+      "summary": "비전 인식 및 무선 충전 성능이 향상되고 타사 공작기계와 연동이 가능한 2세대 AMR이 일본 제조 현장에 전격 배치됩니다.",
+      "impact": "철강 및 배터리 소재 제조 공장의 부분 무인화를 촉진하며 신규 생산 라인의 자동화 설비 SCM 록인 기회 제공",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/"
     }
   ]
 }
