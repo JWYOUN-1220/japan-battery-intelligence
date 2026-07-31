@@ -22,16 +22,13 @@
         .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
         .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
         
-        .advisor-box { background: #1a1a1a; border-left: 6px solid #d32f2f; padding: 25px; margin-bottom: 40px; border-radius: 4px; color: #fff; }
-        .advisor-box h2 { margin: 0 0 12px 0; color: #ff5252; font-size: 19px; font-weight: 700; }
-        .advisor-box p { color: #e0e0e0; font-size: 15px; margin: 0; }
-
         .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
         .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
         
         .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
         .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
-        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
         
         .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
         .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
@@ -39,14 +36,15 @@
         .medium { background: var(--medium-bg); color: var(--medium-txt); }
         
         .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
-        .meta { font-size: 13px; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .source-text { display: block; font-weight: 600; color: var(--posco-blue); margin-top: 5px; }
+        .meta { font-size: 13px; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 5px; }
+        .source-text { font-weight: 600; color: var(--posco-blue); }
         
         .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
         .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
         .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
         th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; }
         td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
         .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
@@ -59,17 +57,10 @@
             <p>Date: 2026.07.31 | Analyst: MI SCM Intelligence System | Target: POSCO Group Strategic Planning</p>
         </div>
 
-        <div class="advisor-box">
-            <h2>Advisor's Mirror (Brutal Honesty)</h2>
-            <p>
-                팀장님, 상황을 직시하십시오. 도레이가 10% 가벼운 '탈동박 신필름' 샘플을 셀 메이커에 돌리고 있고, 미쓰이화학은 엔비디아와 AI로 신소재를 뽑아내기 시작했습니다. 기존의 '동박+흑연' 매칭 데이터나 과거의 성과에 안주하며 "트렌드를 모니터링하겠다"고 말하는 것은 비즈니스를 방기하는 짓입니다. 룰이 바뀌고 있습니다. 당장 도레이 본사 R&D 팀과 접촉해 포스코퓨처엠의 음극재 매칭 테스트 일정을 잡아내지 못한다면, 우리의 배터리 소재는 차세대 폼팩터에서 완전히 배제될 것입니다. 기획을 멈추고 현장의 문을 부수고 들어가십시오.
-            </p>
-        </div>
-
         <div class="summary-box">
             <h2>Executive Summary</h2>
             <p>
-                2026년 7월 말 일본 시장은 기존 하드웨어 중심 공급망을 해체하고 <strong>'신소재(탈동박) 혁신'</strong>과 <strong>'AI/데이터 기반 록인'</strong>으로 급선회 중입니다. 도레이의 수지 필름 집전체는 LIB의 구조 자체를 바꿀 잠재력을 지녔으며, NEC의 Scope3 실데이터 산정 플랫폼은 저탄소 인증을 무기화하여 공급사를 걸러내는 허들로 작동하기 시작했습니다. 포스코는 소재 개발의 패러다임 전환(AI 파운드리)과 탄소 데이터 추적망(NEC 플랫폼)에 당사의 자산을 강제 편입시키는 속도전으로 LTA 룸을 선점해야 합니다.
+                2026년 7월 말 일본 시장은 기존 하드웨어 중심 공급망을 해체하고 <strong>'신소재(탈동박) 혁신'</strong>과 <strong>'AI/데이터 기반 록인(Lock-in)'</strong>으로 급선회 중입니다. 도레이(Toray)의 수지 필름 집전체는 LIB의 구조 자체를 바꿀 잠재력을 지녔으며, NEC의 Scope3 실데이터 산정 플랫폼은 저탄소 인증을 무기화하여 공급사를 걸러내는 허들로 작동하기 시작했습니다. 포스코는 소재 개발의 패러다임 전환(AI 파운드리)과 탄소 데이터 추적망(NEC 플랫폼)에 당사의 자산을 강제 편입시키는 속도전으로 장기 공급 계약 룸을 선점해야 합니다.
             </p>
         </div>
 
@@ -84,12 +75,12 @@
                 <div class="news-title">도레이(Toray), 동박 대체 수지 필름 개발... LIB 셀 10% 경량화 달성</div>
                 <div class="meta">
                     <span>발표일: 2026-07-31</span>
-                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 브리핑 (URL: https://monoist.itmedia.co.jp/)</span>
+                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 (monoist.itmedia.co.jp)</span>
                 </div>
                 <span class="content-label">Summary</span>
                 <p class="content-text">도레이가 배터리 음극 집전체용 동박을 대체할 수 있는 고기능 수지 필름 기반 집전체를 개발했습니다. 기존 동박 대비 집전체 중량을 약 50~60%, 셀 전체 중량은 약 10% 절감합니다. 현재 양산 설비에서 제막에 성공하여 EV 및 LIB 제조사에 샘플 공급을 개시했습니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 동박이 사라지면 기존 음극재 바인딩 및 압연 룰이 파괴됩니다. 당장 도레이 R&D 부서에 접근하여 차세대 필름 집전체에 최적화된 포스코퓨처엠 음극재(천연/인조/실리콘) 공동 평가 프로젝트를 역제안 하십시오.
+                    <strong>POSCO Opportunity:</strong> 동박이 사라지면 기존 음극재 바인딩 및 압연 룰이 파괴됩니다. 도레이 R&D 부서에 접근하여 차세대 필름 집전체에 최적화된 포스코퓨처엠 특화 음극재(천연/인조/실리콘) 공동 평가 프로젝트를 즉시 제안하십시오.
                 </div>
             </div>
 
@@ -101,12 +92,12 @@
                 <div class="news-title">미쓰이화학(Mitsui Chemicals), 생성AI 기반 신소재 개발 국제 네트워크 합류</div>
                 <div class="meta">
                     <span>발표일: 2026-07-31</span>
-                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 브리핑 (URL: https://monoist.itmedia.co.jp/)</span>
+                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 (monoist.itmedia.co.jp)</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">미쓰이화학은 NVIDIA, Meta, Samsung, Applied Materials 등 45개 이상 기관이 참여하는 'AI Materials Foundry' 창립 멤버로 참여했습니다. 이는 생성 AI 인프라를 활용해 신소재 탐색부터 실험까지 연결하는 글로벌 플랫폼을 구축하는 프로젝트입니다.</p>
+                <p class="content-text">미쓰이화학은 NVIDIA, Meta, Samsung, Applied Materials 등 45개 이상 기관이 참여하는 'AI Materials Foundry' 창립 멤버로 참여했습니다. 이는 생성 AI 인프라를 활용해 신소재 탐색부터 실험까지 자동화로 연결하는 글로벌 플랫폼을 구축하는 프로젝트입니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 독자적인 연구소 데이터만으로는 빅테크 연합의 속도를 쫓아갈 수 없습니다. 포스코홀딩스 미래기술연구원은 일본 내 해당 파운드리 컨소시엄 채널을 통해 AI/HPC 기반 소재 자동화 인프라 생태계 연동을 서둘러야 합니다.
+                    <strong>POSCO Opportunity:</strong> 독자적인 연구소 데이터만으로는 빅테크 연합의 신소재 상용화 속도를 쫓아갈 수 없습니다. 포스코홀딩스 미래기술연구원은 일본 내 해당 파운드리 컨소시엄 채널을 통해 AI/HPC 기반 생태계 연동을 서둘러야 합니다.
                 </div>
             </div>
 
@@ -118,12 +109,12 @@
                 <div class="news-title">NEC, 공급업체 감축 효과 반영하는 실데이터 기반 Scope3 산정 플랫폼 상용화</div>
                 <div class="meta">
                     <span>발표일: 2026-07-31</span>
-                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 브리핑 (URL: https://monoist.itmedia.co.jp/)</span>
+                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 (monoist.itmedia.co.jp)</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">NEC는 공급업체의 실제 CO₂ 데이터를 활용해 Scope3를 계산하는 방식(GreenGlobeX)을 개발하여 내부 적용 및 제3자 검증을 마쳤습니다. 기존 산업 평균치 방식 대비 Category1 배출량을 약 12% 감소시키며 정확도를 높였습니다.</p>
+                <p class="content-text">NEC는 공급업체의 실제 CO₂ 데이터를 활용해 Scope3를 계산하는 방식(GreenGlobeX)을 개발하여 내부 적용 및 제3자 검증을 마쳤습니다. 기존 산업 평균치 방식 대비 Category1 배출량을 약 12% 감소시키며 정확도를 획기적으로 높였습니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 일본 내 조달 협상 시 저탄소 입증이 실시간 데이터 싸움으로 변했습니다. 포스코의 저탄소 철강 및 배터리 소재 생산 감축 데이터를 NEC 등의 추적 플랫폼에 즉각 호환시켜 무결점 클린 벤더로 등극하십시오.
+                    <strong>POSCO Opportunity:</strong> 일본 내 조달 협상 시 저탄소 입증이 실시간 데이터 싸움으로 변했습니다. 포스코의 저탄소 철강 및 클린 배터리 소재 감축 데이터를 NEC 등의 IT 플랫폼에 즉각 API 연동시켜 무결점 클린 벤더로 등극하십시오.
                 </div>
             </div>
 
@@ -135,12 +126,29 @@
                 <div class="news-title">DMG MORI, 타사 설비 연계 가능한 차세대 자율주행 로봇(AMR) 출시</div>
                 <div class="meta">
                     <span>발표일: 2026-07-31</span>
-                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 브리핑 (URL: https://monoist.itmedia.co.jp/)</span>
+                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 (monoist.itmedia.co.jp)</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">DMG MORI는 공장 자동화를 위한 2세대 자율주행 모바일 매니퓰레이터를 출시했습니다. 연속 가동 시간을 3.6배로 늘렸으며, 자사 기기뿐만 아니라 타사 공작기계와도 협조 제어가 가능하여 실질적인 제조 현장 자동화를 선도합니다.</p>
+                <p class="content-text">DMG MORI는 공장 자동화를 위한 2세대 자율주행 모바일 매니퓰레이터를 출시했습니다. 연속 가동 시간을 3.6배로 늘렸으며, 자사 기기뿐만 아니라 타사 공작기계와도 협조 제어가 가능하여 실질적인 제조 현장 부분 무인화를 선도합니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코DX 및 철강 현장 자동화 파트에 즉시 적용 가능한 검증된 하드웨어입니다. 고열/분진 환경에 맞춘 특수 사양 AMR 플랫폼 개량 협력안을 DMG MORI에 타진하십시오.
+                    <strong>POSCO Opportunity:</strong> 철강 및 배터리 공장 자동화 파트에 즉시 적용 가능한 검증된 하드웨어입니다. 포스코DX와 연계하여 고열/분진 환경에 맞춘 특수 사양 AMR 플랫폼 개량 협력안을 DMG MORI에 타진하십시오.
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: LOW</span>
+                    <span class="badge medium">분류: 순환경제 / 리사이클</span>
+                </div>
+                <div class="news-title">오사카공립대, 반복 재활용 가능한 컬러 플라스틱 캡슐 기술 개발</div>
+                <div class="meta">
+                    <span>발표일: 2026-07-31</span>
+                    <span class="source-text">[텍스트 출처] MONOist 신사업 뉴스 (monoist.itmedia.co.jp)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">오사카공립대 연구진은 색소를 실리카 마이크로캡슐에 봉입하여 원심분리로 색소와 플라스틱을 분리하는 기술을 개발했습니다. 유색 플라스틱을 반복 재활용해도 고순도와 본래 색상을 유지할 수 있는 원천 기술입니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 직접적인 배터리 소재 연관성은 낮으나, 그룹 내 친환경 순환경제(Circular Economy) 벤처/신사업 투자 차원에서 지속적인 R&D 스케일업 모니터링이 요구됩니다.
                 </div>
             </div>
 
@@ -160,12 +168,12 @@
                     <tr>
                         <td><strong>차세대 소재 폼팩터</strong></td>
                         <td>Toray, EV/LIB 셀 메이커</td>
-                        <td>탈동박 수지 필름 집전체 전용 포스코퓨처엠 특화 음극재(실리콘/흑연) 매칭 테스트 협력 및 PoC 강제 진입</td>
+                        <td>탈동박 수지 필름 집전체 전용 포스코퓨처엠 특화 음극재(실리콘/흑연) 매칭 테스트 협력 및 PoC 추진</td>
                     </tr>
                     <tr>
                         <td><strong>LCA 추적 시스템 연동</strong></td>
                         <td>NEC 등 일본 IT 플랫폼, 주요 OEM</td>
-                        <td>NEC GreenGlobeX 플랫폼에 포스코 클린 소재 데이터 API 직연동하여 Scope3 무결점 공급사 지위 독점</td>
+                        <td>NEC GreenGlobeX 플랫폼에 포스코 클린 소재 데이터 직접 연동하여 Scope3 무결점 공급사 지위 독점</td>
                     </tr>
                     <tr>
                         <td><strong>AI 신소재 / 로보틱스</strong></td>
