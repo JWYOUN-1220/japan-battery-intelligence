@@ -1,157 +1,57 @@
 {
   "nodes": [
-    {"id": "Toray", "group": "Material"},
-    {"id": "Mitsui Chemicals", "group": "Material"},
-    {"id": "NVIDIA", "group": "IT/AI"},
-    {"id": "Meta", "group": "IT/AI"},
-    {"id": "Samsung", "group": "OEM/Tech"},
-    {"id": "Applied Materials", "group": "Equipment"},
-    {"id": "NEC", "group": "IT/GX"},
+    {"id": "Toyota Motor", "group": "OEM"},
+    {"id": "Lexus", "group": "OEM"},
+    {"id": "PPES", "group": "Cell Maker"},
+    {"id": "PEVE", "group": "Cell Maker"},
     {"id": "DMG MORI", "group": "Equipment"},
-    {"id": "Osaka Metropolitan Univ", "group": "R&D"},
-    {"id": "EV & LIB Makers", "group": "OEM"},
+    {"id": "AIST", "group": "Research/Policy"},
+    {"id": "Somic Ishikawa", "group": "Component OEM"},
+    {"id": "ALGO ARTIS", "group": "IT/AI"},
+    {"id": "Lintec", "group": "Material"},
+    {"id": "Toray", "group": "Material"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
+      "source": "Toyota Motor",
+      "target": "PPES",
+      "type": "공급 계약",
+      "date": "2026-08-05",
+      "strength": "높음",
+      "note": "2027~2028년 연산 60만 대 규모 HEV용 리튬이온전지를 차세대 전지로 양산 라인 전환"
+    },
+    {
+      "source": "DMG MORI",
+      "target": "AIST",
+      "type": "전략적 협력",
+      "date": "2026-08-05",
+      "strength": "높음",
+      "note": "100개사 1,000대 설비 데이터 기반 제조 피지컬 AI 기반모델 공동 개발"
+    },
+    {
+      "source": "Somic Ishikawa",
+      "target": "ALGO ARTIS",
+      "type": "전략적 협력",
+      "date": "2026-08-05",
+      "strength": "보통",
+      "note": "생성 AI 코딩 교육을 통한 현장 직원 직접 주도형 생산관리 DX 시스템 개발"
+    },
+    {
+      "source": "Lintec",
+      "target": "Toyota Motor",
+      "type": "전략적 협력",
+      "date": "2026-08-05",
+      "strength": "보통",
+      "note": "200억 엔 투자 후쿠오카 솔루션 랩 구축을 통한 고객 공정 수율 공동 검증"
+    },
+    {
       "source": "Toray",
-      "target": "EV & LIB Makers",
+      "target": "Toyota Motor",
       "type": "공급 계약",
       "date": "2026-07-31",
       "strength": "높음",
       "note": "LIB 셀 10% 경량화를 달성하는 수지 필름 기반 탈동박 집전체 샘플 공급"
-    },
-    {
-      "source": "Mitsui Chemicals",
-      "target": "NVIDIA",
-      "type": "전략적 협력",
-      "date": "2026-07-31",
-      "strength": "높음",
-      "note": "생성AI 기반 신소재 개발 인프라 구축을 위한 AI Materials Foundry 창립 멤버 합류"
-    },
-    {
-      "source": "NEC",
-      "target": "EV & LIB Makers",
-      "type": "솔루션 제공",
-      "date": "2026-07-31",
-      "strength": "높음",
-      "note": "제조 및 소재 공급업체의 실제 감축 데이터를 반영하는 Scope3 산정 플랫폼 연동"
-    },
-    {
-      "source": "DMG MORI",
-      "target": "EV & LIB Makers",
-      "type": "솔루션 제공",
-      "date": "2026-07-31",
-      "strength": "보통",
-      "note": "타사 설비 연계 및 연속 가동이 개선된 차세대 자율주행 모바일 매니퓰레이터 상용화"
-    }
-  ],
-  "records": [
-    {
-      "date": "2026-07-31",
-      "source": "Toray",
-      "target": "EV & LIB Makers",
-      "type": "공급 계약",
-      "strength": "높음",
-      "note": "도레이가 동박을 대체하는 수지 필름 집전체를 개발해 배터리 경량화 샘플을 공급하기 시작했습니다.",
-      "news_title": "탈동박, 리튬이온전지 셀을 10% 경량화하는 신필름",
-      "source_name": "MONOist",
-      "jp_url": "https://monoist.itmedia.co.jp/",
-      "en_url": ""
-    },
-    {
-      "date": "2026-07-31",
-      "source": "Mitsui Chemicals",
-      "target": "NVIDIA",
-      "type": "전략적 협력",
-      "strength": "높음",
-      "note": "미쓰이화학이 글로벌 빅테크와 연합하여 AI 기반 소재 탐색 인프라 파운드리에 합류했습니다.",
-      "news_title": "생성AI로 신소재 개발, 미쓰이화학이 NVIDIA 등이 참여하는 국제 네트워크 참가",
-      "source_name": "MONOist",
-      "jp_url": "https://monoist.itmedia.co.jp/",
-      "en_url": ""
-    },
-    {
-      "date": "2026-07-31",
-      "source": "NEC",
-      "target": "EV & LIB Makers",
-      "type": "전략적 협력",
-      "strength": "높음",
-      "note": "NEC가 협력사 실제 감축 데이터를 활용해 Scope3 배출량을 정밀하게 산정하는 플랫폼을 상용화했습니다.",
-      "news_title": "공급업체 감축효과를 반영하는 Scope3 산정 방식 개발",
-      "source_name": "MONOist",
-      "jp_url": "https://monoist.itmedia.co.jp/",
-      "en_url": ""
-    },
-    {
-      "date": "2026-07-31",
-      "source": "DMG MORI",
-      "target": "EV & LIB Makers",
-      "type": "솔루션 제공",
-      "strength": "보통",
-      "note": "DMG MORI가 타사 기계와 연동이 가능한 차세대 무인 자동화 AMR 로봇을 제조 현장에 출시했습니다.",
-      "news_title": "자율주행 로봇 2세대, 연속가동 3.6배·타사 설비 연계 가능",
-      "source_name": "MONOist",
-      "jp_url": "https://monoist.itmedia.co.jp/",
-      "en_url": ""
-    },
-    {
-      "date": "2026-07-31",
-      "source": "Osaka Metropolitan Univ",
-      "target": "EV & LIB Makers",
-      "type": "R&D",
-      "strength": "낮음",
-      "note": "오사카공립대가 유색 플라스틱을 본연의 색으로 거의 100% 반복 재생하는 캡슐 기술을 개발했습니다.",
-      "news_title": "유색 플라스틱을 반복 재생하는 캡슐 기술",
-      "source_name": "MONOist",
-      "jp_url": "https://monoist.itmedia.co.jp/",
-      "en_url": ""
-    }
-  ],
-  "history": [
-    {
-      "date": "2026-07-31",
-      "event": "도레이(Toray), 동박 대체용 수지 필름 집전체 샘플 공급 개시",
-      "company": ["Toray", "EV & LIB Makers"],
-      "type": "공급 계약",
-      "strength": "높음",
-      "summary": "도레이가 금속 동박을 대체하여 셀 중량을 10% 이상 절감하는 폴리머 얼로이 기반 수지 필름을 양산 제막하고 EV 제조사에 공급합니다.",
-      "impact": "기존 동박 중심의 배터리 소재 룰 파괴 우려 및 차세대 필름에 최적화된 새로운 음극재 매칭 데이터 확보 시급성 증폭",
-      "source": "MONOist",
-      "url": "https://monoist.itmedia.co.jp/"
-    },
-    {
-      "date": "2026-07-31",
-      "event": "미쓰이화학, NVIDIA-Meta 주도 AI 소재 파운드리 합류",
-      "company": ["Mitsui Chemicals", "NVIDIA", "Meta", "Samsung"],
-      "type": "전략적 협력",
-      "strength": "높음",
-      "summary": "미쓰이화학이 글로벌 빅테크 45개 기관이 모인 AI Materials Foundry에 창립 멤버로 참여해 생성 AI 중심의 신소재 탐색망을 구축합니다.",
-      "impact": "반복 실험 기반에서 빅데이터+HPC 기반으로 R&D 패러다임이 이동함에 따라 일본 화학업계의 차세대 소재 상용화 속도 극단적 단축",
-      "source": "MONOist",
-      "url": "https://monoist.itmedia.co.jp/"
-    },
-    {
-      "date": "2026-07-31",
-      "event": "NEC, 실데이터 기반 Scope3 산정 플랫폼(GreenGlobeX) 상용화",
-      "company": ["NEC", "EV & LIB Makers"],
-      "type": "정책 변화",
-      "strength": "높음",
-      "summary": "NEC가 협력업체의 실제 탄소 감축 활동 데이터를 반영해 Category1 배출량을 약 12% 줄여주는 플랫폼의 제3자 검증을 완료했습니다.",
-      "impact": "엔드유저의 저탄소 입증이 실시간 데이터 추적으로 강화되며 포스코 등 소재사의 클린 데이터 인증 시스템 연동 여부가 낙찰을 좌우",
-      "source": "MONOist",
-      "url": "https://monoist.itmedia.co.jp/"
-    },
-    {
-      "date": "2026-07-31",
-      "event": "DMG MORI, 공장 자동화용 2세대 모바일 매니퓰레이터 출시",
-      "company": ["DMG MORI", "EV & LIB Makers"],
-      "type": "솔루션 제공",
-      "strength": "보통",
-      "summary": "비전 인식 및 무선 충전 성능이 향상되고 타사 공작기계와 연동이 가능한 2세대 AMR이 일본 제조 현장에 전격 배치됩니다.",
-      "impact": "철강 및 배터리 소재 제조 공장의 부분 무인화를 촉진하며 신규 생산 라인의 자동화 설비 SCM 록인 기회 제공",
-      "source": "MONOist",
-      "url": "https://monoist.itmedia.co.jp/"
     }
   ]
 }
