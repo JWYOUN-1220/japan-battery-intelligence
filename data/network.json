@@ -1,57 +1,45 @@
 {
   "nodes": [
-    {"id": "Toyota Motor", "group": "OEM"},
-    {"id": "Lexus", "group": "OEM"},
-    {"id": "PPES", "group": "Cell Maker"},
-    {"id": "PEVE", "group": "Cell Maker"},
-    {"id": "DMG MORI", "group": "Equipment"},
-    {"id": "AIST", "group": "Research/Policy"},
-    {"id": "Somic Ishikawa", "group": "Component OEM"},
-    {"id": "ALGO ARTIS", "group": "IT/AI"},
-    {"id": "Lintec", "group": "Material"},
-    {"id": "Toray", "group": "Material"},
+    {"id": "Honda Motor", "group": "OEM"},
+    {"id": "Mitsubishi Chemical", "group": "Material"},
+    {"id": "Mitsubishi Research Institute", "group": "IT/Consulting"},
+    {"id": "Dai Nippon Printing", "group": "Packaging"},
+    {"id": "TOPPAN", "group": "Packaging"},
+    {"id": "TANAKA Precious Metals", "group": "Material"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "Toyota Motor",
-      "target": "PPES",
-      "type": "공급 계약",
-      "date": "2026-08-05",
+      "source": "Honda Motor",
+      "target": "POSCO",
+      "type": "전략 변화",
+      "date": "2026-08-06",
       "strength": "높음",
-      "note": "2027~2028년 연산 60만 대 규모 HEV용 리튬이온전지를 차세대 전지로 양산 라인 전환"
+      "note": "북미 EV 투자 지연에 따른 소재 공급망 보상 협상 및 최소구매조건 리스크 발생"
     },
     {
-      "source": "DMG MORI",
-      "target": "AIST",
+      "source": "Mitsubishi Chemical",
+      "target": "Dai Nippon Printing",
       "type": "전략적 협력",
-      "date": "2026-08-05",
-      "strength": "높음",
-      "note": "100개사 1,000대 설비 데이터 기반 제조 피지컬 AI 기반모델 공동 개발"
-    },
-    {
-      "source": "Somic Ishikawa",
-      "target": "ALGO ARTIS",
-      "type": "전략적 협력",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "strength": "보통",
-      "note": "생성 AI 코딩 교육을 통한 현장 직원 직접 주도형 생산관리 DX 시스템 개발"
+      "note": "다층 연포장재 리사이클 설비 공동 활용 및 탈묵 통합 플랫폼 실증 구축"
     },
     {
-      "source": "Lintec",
-      "target": "Toyota Motor",
+      "source": "Mitsubishi Chemical",
+      "target": "TOPPAN",
       "type": "전략적 협력",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "strength": "보통",
-      "note": "200억 엔 투자 후쿠오카 솔루션 랩 구축을 통한 고객 공정 수율 공동 검증"
+      "note": "일본 환경성 지원 플라스틱 자원순환 협창형 플랫폼 네트워크 합류"
     },
     {
-      "source": "Toray",
-      "target": "Toyota Motor",
-      "type": "공급 계약",
-      "date": "2026-07-31",
-      "strength": "높음",
-      "note": "LIB 셀 10% 경량화를 달성하는 수지 필름 기반 탈동박 집전체 샘플 공급"
+      "source": "TANAKA Precious Metals",
+      "target": "POSCO",
+      "type": "소재 수요",
+      "date": "2026-08-06",
+      "strength": "보통",
+      "note": "LNG 엔진 및 데이터센터용 황 피독 내성 메탄 산화촉매 적용 가능성"
     }
   ]
 }
