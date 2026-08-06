@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Battery & GX Market Intelligence Dashboard - 2026.08.06</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 13px; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 5px; }
+        .source-text { font-weight: 600; color: var(--posco-blue); }
+        
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; }
+        td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Battery & GX Market Intelligence Dashboard</h1>
+            <p>Date: 2026.08.06 | Analyst: MI SCM Intelligence System | Target: POSCO Group Strategic Planning</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                2026년 8월 6일 일본 배터리 및 GX 가치사슬은 <strong>'혼다의 북미 EV 공급망 손실 보상 및 전략 수정'</strong>과 <strong>'미쓰비시케미칼 주도의 리사이클링 공동 인프라 가동'</strong>을 중심으로 중대한 국면 전환을 맞이하고 있습니다[span_18](start_span)[span_18](end_span). 완성차 OEM의 조달 축소 여파가 공급망에 본격적인 재무 리스크를 유발함에 따라, 소재 업계는 장기 구매 계약의 법적 보호 장치를 강화해야 하는 시점입니다[span_19](start_span)[span_19](end_span). 반면, 자원 순환 영역에서는 단일 기업의 기술 독점이 아닌 설비 공동 활용 모델이 수익성을 창출하는 표준으로 안착하고 있습니다[span_20](start_span)[span_20](end_span). 포스코그룹은 북미 EV 배터리 소재 납품 리스크를 헤징(Hedging)하기 위해 혼다 HEV 밸류체인 진입을 가속하고, 그룹 내 분산된 리사이클 인프라를 광역형 거점으로 통합하여 운영 고정비를 혁신해야 합니다[span_21](start_span)[span_21](end_span).
+            </p>
+        </div>
+
+        <h2 class="section-title">Key Intelligence Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 이차전지 / OEM 전략</span>
+                </div>
+                <div class="news-title">혼다(Honda), EV 전략 축소에 따른 북미 공급망 손실 협상 본격화</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-06</span>
+                    <span class="source-text">[텍스트 출처] MONOist (monoist.itmedia.co.jp/mn/articles/2608/06/news053.html)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">혼다는 2026년도 1분기 이륜 및 하이브리드 사업 호조로 영업이익 5,307억 엔의 사상 최고 실적을 거두었으나, 전동화 투자 계획을 재검토하며 북미 EV 배터리·부품 공급업체들과 계약 조정 및 손실 보상 협상을 진행하고 있습니다[span_22](start_span)[span_22](end_span). 해당 손실 규모는 2분기 이후 회계에 순차 반영될 예정입니다[span_23](start_span)[span_23](end_span).</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">주요 완성차 업체의 생산 지연 및 취소로 인해 공급망 전반(셀, 양·음극재 등)의 장기구매계약(Take-or-Pay) 및 투자비 회수 리스크가 수면 위로 부상했습니다[span_24](start_span)[span_24](end_span). 발표된 비전보다 확정된 단기 물량 중심의 SCM 재편이 강제되고 있습니다[span_25](start_span)[span_25](end_span).</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 북미 내 혼다 향 배터리 소재 밸류체인 투자의 최소 구매 요건 및 보상 조항을 전면 재점검하고, 리스크 상쇄를 위해 Blue Energy 향 등 HEV용 고출력 특화 양·음극재 영업을 전격 확대하십시오[span_26](start_span)[span_26](end_span).
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM-HIGH</span>
+                    <span class="badge medium">분류: 순환경제 / 리사이클</span>
+                </div>
+                <div class="news-title">미쓰비시케미칼 등 9개사, 연포장재 재활용 공동 플랫폼 실증 개시</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-06</span>
+                    <span class="source-text">[텍스트 출처] MONOist (monoist.itmedia.co.jp/mn/articles/2608/06/news035.html)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">미쓰비시케미칼을 포함한 9개 기업이 일본 환경성 지원을 받아 플라스틱 연포장재 탈묵 및 박리를 위한 공동 실증에 착수했습니다[span_27](start_span)[span_27](end_span). 개별 기업이 기술과 설비를 독점하는 방식을 버리고, 공동 인프라를 통해 고정비를 나누고 재생원료 물량을 통합하는 협창형(Co-creation) 생태계 사업성을 검증합니다[span_28](start_span)[span_28](end_span).</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">원료가 분산된 리사이클 산업에서 단독 투자는 낮은 가동률과 단가 상승을 초래합니다[span_29](start_span)[span_29](end_span). 동맥 산업(제조)과 정맥 산업(재활용) 기업 간의 인프라 공유 모델이 순환 경제의 유일한 해법으로 증명되고 있습니다[span_30](start_span)[span_30](end_span).</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 배터리 블랙매스 전처리 설비, 양·음극 공정 스크랩 집하장, 폐내화물 처리장을 광역 단위로 통합 운영하는 '조인트 리사이클 콤플렉스' 구축안을 실행하여 운영 원가를 혁신하십시오[span_31](start_span)[span_31](end_span).
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM-HIGH</span>
+                    <span class="badge medium">분류: GX / 소재</span>
+                </div>
+                <div class="news-title">다나카 귀금속, 데이터센터 및 선박용 '황 피독 내구형' 메탄 산화촉매 개발</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-06</span>
+                    <span class="source-text">[텍스트 출처] MONOist (monoist.itmedia.co.jp/mn/articles/2608/06/news029.html)</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">다나카 귀금속 공업이 배기가스 내 황 성분에 의한 성능 저하(피독)를 억제하고 1,000시간 운전 후에도 메탄 전환율 80% 이상을 보장하는 고성능 메탄 산화촉매를 개발했습니다[span_32](start_span)[span_32](end_span). 이 제품은 LNG 발전, AI 데이터센터 비상전원, 선박 엔진 등에서 발생하는 메탄 슬립을 극적으로 저감합니다[span_33](start_span)[span_33](end_span).</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">탄소 배출 규제가 CO2에서 강력한 온실가스인 메탄으로 확장됨에 따라, LNG를 브릿지 전원으로 활용하는 산업군에서 후처리 귀금속 촉매 수요가 급증하고 있습니다[span_34](start_span)[span_34](end_span).</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코인터내셔널의 LNG 선박 및 전력망 운영에 본 촉매 솔루션을 사전 연계하고, 추후 배출되는 폐촉매를 그룹 내에서 수거하여 백금(Pt) 등 귀금속을 회수하는 고부가 비즈니스를 기획하십시오[span_35](start_span)[span_35](end_span).
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">POSCO Strategic Opportunity Action Matrix</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>타겟 분야 (Sector)</th>
+                        <th>대상 주체 (Targets)</th>
+                        <th>전략적 실행 아이템 (Action Item)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>OEM 공급망 리스크 관리</strong></td>
+                        <td>혼다(Honda), 북미 밸류체인</td>
+                        <td>합작사 및 투자 설비의 EV 전용 소재 감축 리스크 헷징 및 Blue Energy 向 HEV 특화 양·음극재 물량 스왑[span_36](start_span)[span_36](end_span)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>리사이클 플랫폼 효율화</strong></td>
+                        <td>일본 내 종합상사, 화학 연합</td>
+                        <td>전지 소재 스크랩 및 폐기물 전처리 설비를 공동 활용하는 광역 단위 '조인트 리사이클 거점' 설계[span_37](start_span)[span_37](end_span)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GX 메탄 저감 소재</strong></td>
+                        <td>다나카 귀금속, 가스엔진 메이커</td>
+                        <td>LNG 발전·선박 네트워크 내 귀금속 산화촉매 실증 연계 및 폐촉매 귀금속(백금족) 회수 비즈니스 사전 기획[span_38](start_span)[span_38](end_span)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Battery, GX & Advanced Materials Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
