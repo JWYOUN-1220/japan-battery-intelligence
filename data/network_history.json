@@ -2150,5 +2150,126 @@
     }
   ]
 }
+{
+  "records": [
+    {
+      "date": "2026-08-05",
+      "source": "Toyota Motor",
+      "target": "PPES",
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "note": "도요타가 2027~2028년 일본 내 연산 60만 대 규모의 HEV용 배터리를 고출력 차세대 전지로 전격 전환합니다.",
+      "news_title": "도요타가 2026년도 실적 전망을 상향 조정, 호조인 HEV는 차세대 전지로 경쟁력 강화",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/mn/articles/2608/05/news048.html",
+      "en_url": ""
+    },
+    {
+      "date": "2026-08-07",
+      "source": "ZEALS",
+      "target": "POSCO",
+      "type": "기술 협력",
+      "strength": "높음",
+      "note": "ZEALS가 이족보행 대신 바퀴형 대차를 채택하고 5kg 가반중량 양팔을 갖춘 휴머노이드 D1을 공개했습니다.",
+      "news_title": "일부러 걷게 하지 않는다―준국산 휴머노이드 ‘D1’ 등장, 현장 가동으로 일본의 승부수",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/mn/articles/2608/07/news039.html",
+      "en_url": ""
+    },
+    {
+      "date": "2026-08-07",
+      "source": "Kobe Steel",
+      "target": "METI",
+      "type": "투자 확대",
+      "strength": "높음",
+      "note": "고베제강이 경제안보 국비 보조금을 받아 다이안제조소에 20.7억 엔 규모 항공·방산 사형주조 증설을 결정했습니다.",
+      "news_title": "고베제강, 항공·방산용 사형주조품 생산능력 강화에 약 20억 엔 투자",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/mn/articles/2608/03/news022.html",
+      "en_url": ""
+    },
+    {
+      "date": "2026-08-06",
+      "source": "Hitachi",
+      "target": "Intel",
+      "type": "전략적 협력",
+      "strength": "보통",
+      "note": "히타치와 인텔이 AIST, NEDO 지원 하에 Intel 18A 공정을 활용한 실리콘 양자컴퓨터 양산 기술 개발을 개시했습니다.",
+      "news_title": "실리콘 양자컴퓨터 양산개발에 인텔 18A 프로세스 활용",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/mn/articles/2608/06/news025.html",
+      "en_url": ""
+    },
+    {
+      "date": "2026-08-06",
+      "source": "Denso",
+      "target": "STATION Ai",
+      "type": "전략적 협력",
+      "strength": "보통",
+      "note": "덴소가 STATION Ai와 함께 거래기업의 기술과 스타트업을 연결하는 오픈이노베이션 RE-CORE를 시작했습니다.",
+      "news_title": "덴소, 거래처의 신규사업 창출 지원 위해 STATION Ai와 공동프로그램 개시",
+      "source_name": "MONOist",
+      "jp_url": "https://monoist.itmedia.co.jp/mn/articles/2608/06/news051.html",
+      "en_url": ""
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-08-05",
+      "event": "도요타, HEV용 연산 60만 대 라인 차세대 전지 전격 전환",
+      "company": ["Toyota Motor", "Lexus", "PPES"],
+      "type": "OEM 전략 변화",
+      "strength": "높음",
+      "summary": "연간 HEV 500만 대 판매 호조에 대응하여 2027~2028년 일본 내 60만 대 규모 HEV 배터리 라인을 고출력·고수명·저원가의 차세대 전지로 전면 전환합니다.",
+      "impact": "HEV 특화 저저항·고출력 NCM 양극재 및 피치 코팅 천연/인조흑연 음극재의 포스코퓨처엠 신규 수주 기회 창출",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/05/news048.html"
+    },
+    {
+      "date": "2026-08-07",
+      "event": "ZEALS, 대차형 모바일 휴머노이드 'D1' 공개 및 실증",
+      "company": ["ZEALS", "POSCO"],
+      "type": "기술 협력",
+      "strength": "높음",
+      "summary": "이족보행 대신 바퀴형 대차를 적용하고 5kg 가반중량 양팔을 보유한 실내 현장 가동용 로봇 D1을 100대 양산하여 1만 시간 가동 데이터를 축적합니다.",
+      "impact": "포스코 제조 현장의 사람 중심 작업 공간 자동화를 위한 대차형 양팔 매니퓰레이터 도입 타당성 검토 제공",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/07/news039.html"
+    },
+    {
+      "date": "2026-08-07",
+      "event": "고베제강, 20.7억 엔 투입 항공·방산 사형주조 증설",
+      "company": ["Kobe Steel", "METI"],
+      "type": "투자 확대",
+      "strength": "높음",
+      "summary": "경제안보추진법 지정을 통해 투자금의 50% 국비 지원을 받아 다이안제조소에 알루미늄/마그네슘 사형주조 및 3D프린터·CT 인프라를 증설합니다.",
+      "impact": "포스코그룹 항공우주·방산 소재 진입 시 소재 개발과 가공, 비파괴검사, 품질인증 통합 패키지 구축 필요성 입증",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/03/news022.html"
+    },
+    {
+      "date": "2026-08-06",
+      "event": "히타치-인텔-AIST, Intel 18A 기반 실리콘 양자컴퓨터 상용화 R&D",
+      "company": ["Hitachi", "Intel", "AIST"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "NEDO 포스트 5G 사업 지원으로 Intel 18A 파운드리 공정을 이용해 100~1,000큐비트 실리콘 양자 칩과 극저온 3D 패키징을 공동 개발합니다.",
+      "impact": "양자 하드웨어 직접 투자 대신 AIST G-QuAT 연계를 통한 포스코 소재 분자 동역학 및 공급망 최적화 알고리즘 R&D 추진 타당성 확보",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/06/news025.html"
+    },
+    {
+      "date": "2026-08-06",
+      "event": "덴소-STATION Ai, 공급망 신사업 창출 'RE-CORE' 가동",
+      "company": ["Denso", "STATION Ai"],
+      "type": "전략적 협력",
+      "strength": "보통",
+      "summary": "전동화 전환에 대응해 덴소 조달 거래기업의 현장 과제와 스타트업을 연결하는 오픈이노베이션으로 공급망 유지 및 신사업 전환을 통합 지원합니다.",
+      "impact": "포스코 철강/배터리 고객사 및 가공사 네트워크 대상 신사업 전환 매칭 오픈이노베이션 프로그램 벤치마킹 모델 제공",
+      "source": "MONOist",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/06/news051.html"
+    }
+  ]
+}
 
 
