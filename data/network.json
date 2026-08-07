@@ -1,45 +1,57 @@
 {
   "nodes": [
-    {"id": "Honda Motor", "group": "OEM"},
-    {"id": "Mitsubishi Chemical", "group": "Material"},
-    {"id": "Mitsubishi Research Institute", "group": "IT/Consulting"},
-    {"id": "Dai Nippon Printing", "group": "Packaging"},
-    {"id": "TOPPAN", "group": "Packaging"},
-    {"id": "TANAKA Precious Metals", "group": "Material"},
+    {"id": "Toyota Motor", "group": "OEM"},
+    {"id": "PPES", "group": "Cell Maker"},
+    {"id": "ZEALS", "group": "Robotics"},
+    {"id": "Kobe Steel", "group": "Material"},
+    {"id": "METI", "group": "Policy"},
+    {"id": "Hitachi", "group": "IT/AI"},
+    {"id": "Intel", "group": "Semiconductor"},
+    {"id": "AIST", "group": "Research/Policy"},
+    {"id": "Denso", "group": "Component OEM"},
+    {"id": "STATION Ai", "group": "IT/AI"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "Honda Motor",
-      "target": "POSCO",
-      "type": "전략 변화",
-      "date": "2026-08-06",
+      "source": "Toyota Motor",
+      "target": "PPES",
+      "type": "공급 계약",
+      "date": "2026-08-05",
       "strength": "높음",
-      "note": "북미 EV 투자 지연에 따른 소재 공급망 보상 협상 및 최소구매조건 리스크 발생"
+      "note": "2027~2028년 연산 60만 대 규모 HEV용 리튬이온전지를 차세대 전지로 양산 라인 전환"
     },
     {
-      "source": "Mitsubishi Chemical",
-      "target": "Dai Nippon Printing",
-      "type": "전략적 협력",
-      "date": "2026-08-06",
-      "strength": "보통",
-      "note": "다층 연포장재 리사이클 설비 공동 활용 및 탈묵 통합 플랫폼 실증 구축"
-    },
-    {
-      "source": "Mitsubishi Chemical",
-      "target": "TOPPAN",
-      "type": "전략적 협력",
-      "date": "2026-08-06",
-      "strength": "보통",
-      "note": "일본 환경성 지원 플라스틱 자원순환 협창형 플랫폼 네트워크 합류"
-    },
-    {
-      "source": "TANAKA Precious Metals",
+      "source": "ZEALS",
       "target": "POSCO",
-      "type": "소재 수요",
+      "type": "기술 협력",
+      "date": "2026-08-07",
+      "strength": "높음",
+      "note": "실내 작업 특화 대차형 휴머노이드 D1 공개 및 1만 시간 가동 데이터 수집"
+    },
+    {
+      "source": "Kobe Steel",
+      "target": "METI",
+      "type": "정책 변화",
+      "date": "2026-08-07",
+      "strength": "높음",
+      "note": "경제안보추진법 지정 20.7억 엔 규모 항공·방산용 알루미늄/마그네슘 사형주조 증설 및 50% 국비 지원"
+    },
+    {
+      "source": "Hitachi",
+      "target": "Intel",
+      "type": "전략적 협력",
       "date": "2026-08-06",
       "strength": "보통",
-      "note": "LNG 엔진 및 데이터센터용 황 피독 내성 메탄 산화촉매 적용 가능성"
+      "note": "Intel 18A 공정 기반 실리콘 스핀 양자컴퓨터 100~1,000큐비트 양산 R&D 착수"
+    },
+    {
+      "source": "Denso",
+      "target": "STATION Ai",
+      "type": "전략적 협력",
+      "date": "2026-08-06",
+      "strength": "보통",
+      "note": "거래기업 신사업 전환 지원 오픈이노베이션 프로그램 RE-CORE 출범"
     }
   ]
 }
