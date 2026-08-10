@@ -14,6 +14,8 @@
             --high-txt: #d32f2f;
             --medium-bg: #fff4e5;
             --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
         }
 
         body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
@@ -34,6 +36,7 @@
         .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
         .high { background: var(--high-bg); color: var(--high-txt); }
         .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .low { background: var(--low-bg); color: var(--low-txt); }
         
         .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
         .meta { font-size: 13px; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 5px; }
@@ -60,7 +63,7 @@
         <div class="summary-box">
             <h2>Executive Summary</h2>
             <p>
-                2026년 8월 10일 기준 일본 배터리 및 그린 트랜스포메이션(GX) 생태계는 <strong>'도요타의 HEV 60만 대 배터리 차세대 전환'</strong>, <strong>'Sharp-NVIDIA-Foxconn 연합 기반 AI 인프라 및 전력 망 확장'</strong>, 그리고 <strong>'탈동박 필름 소재 폼팩터 혁신'</strong>을 주요 축으로 긴박하게 재편되고 있습니다. 도요타는 연간 500만 대 규모의 HEV 판매 호조에 맞추어 2027~2028년 일본 내 60만 대 생산 라인을 고출력 차세대 배터리로 전격 교체하기로 확정했습니다. 동시에 Sharp는 NVIDIA Blackwell 인프라 수주를 기점으로 피지컬 AI 생태계에 본격 진입하며 데이터센터용 초고압 전력기기 및 특수 강재 수요를 자극하고 있습니다. 포스코그룹은 HEV 특화 고출력 양·음극재 포트폴리오를 조속히 저격 오퍼링하는 한편, AI 인프라 확충에 따른 하이엔드 자성재(Hyper NO) 및 포스맥(PosMAC) 구조재 락인 계약을 선제 집행해야 합니다.
+                2026년 8월 10일 기준 일본 배터리 및 그린 트랜스포메이션(GX) 생태계는 <strong>'도요타의 HEV 60만 대 배터리 차세대 전환'</strong>과 <strong>'Sharp-Foxconn-NVIDIA 연합 기반 AI 인프라 확장'</strong>, 그리고 <strong>'도쿄대 중심의 원자층 금속 실드 기반 고온 초전도체 원천 연구'</strong>를 축으로 급격히 확장되고 있습니다. 도요타는 연간 500만 대 이상 판매되는 HEV 라인업의 전원을 고출력·고수명 차세대 배터리로 교체하기로 확정했습니다. 동시에 Sharp는 모회사 Foxconn과 NVIDIA Blackwell 인프라를 연계해 AI 서버 및 AI 팩토리 시장에 본격 진입하며 데이터센터용 초고압 전력망 강재 수요를 자극하고 있고, 도쿄대 연구진은 고온 초전도체의 전자 결맞음성을 극대화하는 원자 수준 소재 아키텍처 기술을 검증했습니다. 포스코그룹은 HEV용 고출력 양·음극재 스펙인을 추진하는 한편, AI 인프라용 하이엔드 전기강판(Hyper NO) 및 포스맥(PosMAC) 패키지 공급 타격 마케팅을 선제 집행해야 합니다.
             </p>
         </div>
 
@@ -109,61 +112,61 @@
 
             <div class="news-card">
                 <div class="badge-row">
-                    <span class="badge high">중요도: HIGH</span>
-                    <span class="badge high">분류: 이차전지 / 소재 폼팩터 혁신</span>
+                    <span class="badge low">중요도: LOW</span>
+                    <span class="badge low">분류: 양자소재 / 기초연구</span>
                 </div>
-                <div class="news-title">도레이(Toray), 동박 대체 수지 필름 개발... LIB 셀 10% 경량화 달성</div>
+                <div class="news-title">도쿄대 연합 연구진, 원자층 금속 실드로 이상적인 고온 초전도 전자상태 구현</div>
                 <div class="meta">
-                    <span>발표일: 2026-07-31</span>
+                    <span>발표일: 2026-08-10</span>
                     <span class="source-text">출처: MONOist</span>
-                    <span class="source-text">원문 링크: https://monoist.itmedia.co.jp/mn/articles/2607/31/news001.html</span>
+                    <span class="source-text">원문 링크: https://monoist.itmedia.co.jp/mn/articles/2608/10/news012.html</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">도레이는 리튬이온전지(LIB)의 음극 집전체용 금속 동박을 대체할 수 있는 고기능 폴리머 얼로이 수지 필름 기반 집전체를 개발했습니다. 기존 동박 대비 집전체 중량을 약 50~60%, LIB 셀 전체 중량은 약 10% 절감 가능하게 합니다. 현재 양산 설비에서 광폭 제막에 성공하여 글로벌 EV 및 셀 메이커를 대상으로 고객사 평가용 샘플 공급을 본격 개시했습니다.</p>
+                <p class="content-text">도쿄대·도쿄이과대·조치대 공동 연구진이 3층형 구리산화물 고온 초전도체 내부에 원자층 수준의 '금속 실드'를 형성하는 구조 제어 기술을 완성했습니다. 외측 CuO2층을 고전도 금속 상태로 유도해 전하공급층의 불질서(Disorder)를 차단함으로써 중앙 초전도층 전자의 결맞음성(Coherence)을 대폭 향상시켰으며, ARPES 측정을 통해 전자 상태를 입증했습니다.</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">무거운 구리 금속박을 초박막 폴리머 수지로 대체하는 기술은 배터리 경량화 및 고에너지밀도 달성의 핵심 게임 체인저입니다. 기존 음극재(흑연/실리콘)와 동박 간의 슬러리 코팅, 바인딩, 압연 공정 표준이 전면 수정될 수 있는 파괴적 변화를 시사합니다.</p>
+                <p class="content-text">단순 화학 조성 변경을 넘어 원자층별 기능을 고의적으로 분리·제어하는 원자 스케일 소재 아키텍처(Atomic-scale Material Architecture)의 가능성을 보여준 학술 연구입니다. 단기 사업화 가능성은 낮으나, 장기적으로 핵융합, 양자 소자, 초고장 자석용 고온 초전도 선재 개발에 적용될 수 있습니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 도레이 R&D 본부와 즉시 접촉하여 차세대 수지 필름 집전체에 최적화된 포스코퓨처엠 특화 음극재(천연/인조흑연 및 실리콘계)의 공동 계면 평가 및 PoC 프로젝트를 선제 추진하십시오.
+                    <strong>POSCO Opportunity:</strong> 사업화 이전 단계이므로 직접 투자보다는 장기적 관점에서 일본 국립대 연구진의 양자 소재 및 초전도 선재 제련 R&D 동향 센싱 네트워크로 관리하십시오.
                 </div>
             </div>
 
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
-                    <span class="badge high">분류: 통상 / 공급망 안보</span>
+                    <span class="badge high">분류: 피지컬 AI / 로보틱스</span>
                 </div>
-                <div class="news-title">미·일 핵심 광물 협정(Critical Minerals Agreement) 수정안 서명... 무관세 가공 통로 확정</div>
+                <div class="news-title">ZEALS, 보행 포기하고 현장 가동에 집약한 준국산 대차형 휴머노이드 'D1' 공개</div>
                 <div class="meta">
-                    <span>발표일: 2026-07-22</span>
-                    <span class="source-text">출처: USTR 공식 공시 / Wall Street Journal</span>
-                    <span class="source-text">원문 링크: https://ustr.gov/about-us/policy-offices/press-office/press-releases</span>
+                    <span>발표일: 2026-08-07</span>
+                    <span class="source-text">출처: MONOist</span>
+                    <span class="source-text">원문 링크: https://monoist.itmedia.co.jp/mn/articles/2608/07/news039.html</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">미국과 일본 정부가 기존 핵심 광물 협정을 전격 확대·개정하여, 일본 내에서 가공·정제된 리튬, 니켈, 코발트, 흑연 등 핵심 광물이 미국 IRA 보조금 자격 요건을 완벽히 유지하도록 명시했습니다. 양국 간 핵심 미네랄의 무관세(Tariff-free) 교역 통로가 공식 확립되었습니다.</p>
+                <p class="content-text">로보틱스 벤처 ZEALS가 일본의 병원·공장·물류시설 등 실내 가동 환경에 특화된 대차형 모바일 휴머노이드 'D1'을 공개했습니다. 불안정한 이족보행 대신 바퀴형 대차 이동부를 채택하여 전도 위험과 자세제어 비용을 근본적으로 축소하고, 양팔 5지형 손을 활용한 실질적 작업에 로봇 자원을 집중했습니다. 2026년도 중 100대 양산과 현장 누적 가동 1만 시간 달성을 통해 실전 작업 물리 데이터를 수집할 예정입니다.</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">중국산 핵심 광물 의존도를 타개하는 동시에 일본 내 정제 및 소재 가공 플랜트에 대한 글로벌 자본 투자를 보장하는 제도적 장치입니다. 일본이 북미 IRA 보조금 수혜의 거점 교두보로 재확인되었습니다.</p>
+                <p class="content-text">화려한 보행 메커니즘보다 작업 성공률, 가동률, ROI(투자대비효과)를 우선시하는 실용주의 로보틱스가 일본 현장 자동화의 대세로 부상하고 있습니다. 포스코 제조 현장에서 요구되는 로봇 역시 완전 이족보행 형태보다 기존 사람용 조작 인터페이스를 그대로 활용 가능한 대차형/AMR 연동 양팔 매니퓰레이터 형태가 단기 실효성이 높습니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 포스코홀딩스 및 포스코퓨처엠의 비중국 원료 밸류체인(아르헨티나 리튬, 호주 니켈 등)을 일본 5대 종합상사의 정제·가공망과 다이렉트로 연결하여 미·일 양국 관세 혜택을 극대화하는 패키지 딜을 추진하십시오.
+                    <strong>POSCO Opportunity:</strong> D1의 1만 시간 가동 데이터 및 원격 개입률 실증 경과를 모니터링하고, 포스코 검사 샘플 운반, 공구 전달, 단순 조작 공정에 적용 가능한 고열·분진 대응 특화 모바일 매니퓰레이터 시뮬레이션 환경을 선제 구축하십시오.
                 </div>
             </div>
 
             <div class="news-card">
                 <div class="badge-row">
                     <span class="badge high">중요도: HIGH</span>
-                    <span class="badge high">분류: 피지컬 AI / 스마트팩토리</span>
+                    <span class="badge high">분류: 항공우주·방산 / 비철 소재</span>
                 </div>
-                <div class="news-title">DMG MORI, 100개사·1,000대 설비 실가동 데이터 통합 기반 '제조 피지컬 AI' 개발 본격화</div>
+                <div class="news-title">고베제강, 경제안보 국책 지원받아 항공·방산용 알루미늄/마그네슘 사형주조 20억 엔 증설</div>
                 <div class="meta">
-                    <span>발표일: 2026-08-05</span>
+                    <span>발표일: 2026-08-07</span>
                     <span class="source-text">출처: MONOist</span>
-                    <span class="source-text">원문 링크: https://monoist.itmedia.co.jp/mn/articles/2608/05/news055.html</span>
+                    <span class="source-text">원문 링크: https://monoist.itmedia.co.jp/mn/articles/2608/03/news022.html</span>
                 </div>
                 <span class="content-label">Summary</span>
-                <p class="content-text">공작기계 자이언트 DMG MORI는 항공우주, 방산, 반도체 등 비자동차 분야 호조로 2026년 상반기 사상 최대 수주를 달성함과 동시에, 산업기술종합연구소(AIST) 등과 연합하여 약 100개사, 1,000대 생산설비의 정밀 데이터를 수집해 제조 피지컬 AI 기반모델을 개발하기로 발표했습니다. 향후 약 1만 대의 연결 설비 데이터와 20년간 축적된 3,000건의 시험 가공 데이터를 활용하여, 클라우드 의존 없이 가공 이상을 실시간 제어하는 고성능 엣지 AI를 2030년까지 개별 설비에 탑재할 예정입니다.</p>
+                <p class="content-text">고베제강(Kobe Steel)이 미에현 다이안제조소에 약 20.7억 엔을 투자해 항공·방산용 알루미늄 및 마그네슘 사형주조 생산설비를 전격 증강합니다. 사형 3D프린터 및 X선 CT 비파괴 검사 장비를 함께 도입하여 2028년 양산을 개시할 예정입니다. 본 투자는 일본 경제안보추진법상 항공기 부품 공급확보계획으로 공식 인정되어 투자액의 최대 50%(약 10.4억 엔)를 일본 정부로부터 보조금 지원받습니다.</p>
                 <span class="content-label">Strategic Implication</span>
-                <p class="content-text">제조 피지컬 AI의 승패는 알고리즘 자체보다 현장의 실가동 설비 데이터 및 라벨링 자산의 축적 규모에서 결정됩니다. 공정 보안과 네트워크 제약이 높은 고온·연속 소재 생산 현장에서는 클라우드 방식보다 DMG MORI가 주도하는 엣지(Edge) AI 제어 아키텍처가 현실적 대안으로 부상하고 있습니다.</p>
+                <p class="content-text">일본 정부가 경제안보 관점에서 항공·방산 핵심 부품의 자국 내 생산기반 구축을 강력히 지원하고 있습니다. 고베제강은 단순 소재 공급을 넘어 3D프린팅 사형 형성, 디지털 비파괴 검사, 품질보증까지 수직통합된 고부가 경량 구조부품 사업 체계를 구축하고 있습니다.</p>
                 <div class="posco-rel">
-                    <strong>POSCO Opportunity:</strong> 철강 및 이차전지 소재 공정 내 분절된 데이터 태그를 표준화하고, 고열·분진 환경 특화 엣지 AI 제어 및 디지털트윈 모델을 구축하여 포스코 스마트팩토리의 피지컬 AI 전환을 가속화하십시오.
+                    <strong>POSCO Opportunity:</strong> 포스코그룹의 항공우주·방산 소재 신사업 진입 시 소재 단품 개발에 머물지 말고, 정밀 주단조, 비파괴검사, 항공품질 인증 및 추적성 관리 체계를 통합 설계하여 일본 우방국 안보 공급망 타겟 패키지 영업을 추진하십시오.
                 </div>
             </div>
 
@@ -191,14 +194,14 @@
                         <td>AI 데이터센터 전력망용 방향성 전기강판(Hyper NO) 및 옥외 구조재(PosMAC) 패키지 락인 계약 추진</td>
                     </tr>
                     <tr>
-                        <td><strong>차세대 소재 폼팩터</strong></td>
-                        <td>도레이(Toray), 일본 셀 메이커</td>
-                        <td>수지 필름 집전체 전용 포스코퓨처엠 음극재(흑연/실리콘) 공동 계면 평가 및 PoC 프로젝트 긴급 추진</td>
+                        <td><strong>피지컬 AI & 로보틱스</strong></td>
+                        <td>ZEALS, 도요타, 포스코DX</td>
+                        <td>대차형 모바일 휴머노이드 가동 데이터 모니터링 및 고열·분진 환경 특화 공정 시뮬레이션 환경 구축</td>
                     </tr>
                     <tr>
-                        <td><strong>통상 및 공급망 안보</strong></td>
-                        <td>일본 5대 종합상사 (토요타통상, 이토추 등)</td>
-                        <td>미·일 핵심 광물 협정 면세 통로를 활용한 포스코 비중국 광물 밸류체인 공동 편입 파트너십 추진</td>
+                        <td><strong>양자 소재 원천 연구</strong></td>
+                        <td>도쿄대, 도쿄이과대, AIST</td>
+                        <td>원자층 제어 소재 아키텍처 R&D 동향 모니터링 및 학술 연계 센싱 자산화</td>
                     </tr>
                 </tbody>
             </table>
