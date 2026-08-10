@@ -2,14 +2,14 @@
   "nodes": [
     {"id": "Toyota Motor", "group": "OEM"},
     {"id": "PPES", "group": "Cell Maker"},
-    {"id": "ZEALS", "group": "Robotics"},
-    {"id": "Kobe Steel", "group": "Material"},
+    {"id": "Sharp", "group": "Tech/IT"},
+    {"id": "Foxconn", "group": "Manufacturing"},
+    {"id": "NVIDIA", "group": "IT/AI"},
+    {"id": "Toray", "group": "Material"},
+    {"id": "US Gov (USTR)", "group": "Policy"},
     {"id": "METI", "group": "Policy"},
-    {"id": "Hitachi", "group": "IT/AI"},
-    {"id": "Intel", "group": "Semiconductor"},
+    {"id": "DMG MORI", "group": "Equipment"},
     {"id": "AIST", "group": "Research/Policy"},
-    {"id": "Denso", "group": "Component OEM"},
-    {"id": "STATION Ai", "group": "IT/AI"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
@@ -22,36 +22,36 @@
       "note": "2027~2028년 연산 60만 대 규모 HEV용 리튬이온전지를 차세대 전지로 양산 라인 전환"
     },
     {
-      "source": "ZEALS",
-      "target": "POSCO",
-      "type": "기술 협력",
-      "date": "2026-08-07",
+      "source": "Sharp",
+      "target": "Foxconn",
+      "type": "전략적 협력",
+      "date": "2026-08-10",
       "strength": "높음",
-      "note": "실내 작업 특화 대차형 휴머노이드 D1 공개 및 1만 시간 가동 데이터 수집"
+      "note": "NVIDIA Blackwell 인프라 결합을 통한 AI 서버 제조 및 일본 시장 수주 본격화"
     },
     {
-      "source": "Kobe Steel",
+      "source": "Toray",
+      "target": "Toyota Motor",
+      "type": "공급 계약",
+      "date": "2026-07-31",
+      "strength": "높음",
+      "note": "LIB 셀 10% 경량화를 달성하는 수지 필름 기반 탈동박 집전체 샘플 공급"
+    },
+    {
+      "source": "US Gov (USTR)",
       "target": "METI",
       "type": "정책 변화",
-      "date": "2026-08-07",
+      "date": "2026-07-22",
       "strength": "높음",
-      "note": "경제안보추진법 지정 20.7억 엔 규모 항공·방산용 알루미늄/마그네슘 사형주조 증설 및 50% 국비 지원"
+      "note": "미·일 핵심 광물 협정 확대를 통한 무관세 배터리 밸류체인 교역로 확정"
     },
     {
-      "source": "Hitachi",
-      "target": "Intel",
+      "source": "DMG MORI",
+      "target": "AIST",
       "type": "전략적 협력",
-      "date": "2026-08-06",
-      "strength": "보통",
-      "note": "Intel 18A 공정 기반 실리콘 스핀 양자컴퓨터 100~1,000큐비트 양산 R&D 착수"
-    },
-    {
-      "source": "Denso",
-      "target": "STATION Ai",
-      "type": "전략적 협력",
-      "date": "2026-08-06",
-      "strength": "보통",
-      "note": "거래기업 신사업 전환 지원 오픈이노베이션 프로그램 RE-CORE 출범"
+      "date": "2026-08-05",
+      "strength": "높음",
+      "note": "100개사 1,000대 설비 데이터 기반 제조 피지컬 AI 기반모델 공동 개발"
     }
   ]
 }
