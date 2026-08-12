@@ -1,17 +1,25 @@
 {
   "nodes": [
+    {"id": "Sony Semiconductor", "group": "Tech/IT"},
+    {"id": "TSMC", "group": "Semiconductor"},
     {"id": "Toyota Motor", "group": "OEM"},
     {"id": "PPES", "group": "Cell Maker"},
     {"id": "Sharp", "group": "Tech/IT"},
     {"id": "Foxconn", "group": "Manufacturing"},
-    {"id": "University of Tokyo", "group": "Research"},
-    {"id": "Tokyo University of Science", "group": "Research"},
     {"id": "ZEALS", "group": "Robotics"},
     {"id": "Kobe Steel", "group": "Material"},
     {"id": "METI", "group": "Policy"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
+    {
+      "source": "Sony Semiconductor",
+      "target": "TSMC",
+      "type": "JV 설립",
+      "date": "2026-08-12",
+      "strength": "높음",
+      "note": "Advanced Vision Semiconductor Manufacturing 합작법인 설립 및 구마모토 차세대 센서 2029년 양산"
+    },
     {
       "source": "Toyota Motor",
       "target": "PPES",
@@ -27,14 +35,6 @@
       "date": "2026-08-10",
       "strength": "높음",
       "note": "NVIDIA Blackwell 인프라 결합을 통한 AI 서버 제조 및 일본 시장 수주 본격화"
-    },
-    {
-      "source": "University of Tokyo",
-      "target": "Tokyo University of Science",
-      "type": "전략적 협력",
-      "date": "2026-08-10",
-      "strength": "보통",
-      "note": "원자층 금속 실드 구조 적용 3층 구리산화물 고온 초전도체 전자상태 구현 성공"
     },
     {
       "source": "ZEALS",
