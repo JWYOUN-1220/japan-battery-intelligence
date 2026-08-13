@@ -1,24 +1,23 @@
 {
   "nodes": [
-    {"id": "Sony Semiconductor", "group": "Tech/IT"},
-    {"id": "TSMC", "group": "Semiconductor"},
+    {"id": "ROKI", "group": "Material/Engineering"},
     {"id": "Toyota Motor", "group": "OEM"},
     {"id": "PPES", "group": "Cell Maker"},
+    {"id": "Sony Semiconductor", "group": "Tech/IT"},
+    {"id": "TSMC", "group": "Semiconductor"},
     {"id": "Sharp", "group": "Tech/IT"},
     {"id": "Foxconn", "group": "Manufacturing"},
-    {"id": "ZEALS", "group": "Robotics"},
-    {"id": "Kobe Steel", "group": "Material"},
-    {"id": "METI", "group": "Policy"},
+    {"id": "University of Tokyo", "group": "Research"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "Sony Semiconductor",
-      "target": "TSMC",
-      "type": "JV 설립",
+      "source": "ROKI",
+      "target": "POSCO",
+      "type": "전략적 협력",
       "date": "2026-08-12",
       "strength": "높음",
-      "note": "Advanced Vision Semiconductor Manufacturing 합작법인 설립 및 구마모토 차세대 센서 2029년 양산"
+      "note": "CCUS용 MOF 가공 성형체 및 카트리지 모듈 실장기술 개발에 따른 공동 PoC 타진"
     },
     {
       "source": "Toyota Motor",
@@ -29,28 +28,28 @@
       "note": "2027~2028년 연산 60만 대 규모 HEV용 리튬이온전지를 차세대 전지로 양산 라인 전환"
     },
     {
+      "source": "Sony Semiconductor",
+      "target": "TSMC",
+      "type": "JV 설립",
+      "date": "2026-08-12",
+      "strength": "높음",
+      "note": "Advanced Vision Semiconductor Manufacturing 합작법인 설립 확정계약 체결"
+    },
+    {
       "source": "Sharp",
       "target": "Foxconn",
       "type": "전략적 협력",
       "date": "2026-08-10",
       "strength": "높음",
-      "note": "NVIDIA Blackwell 인프라 결합을 통한 AI 서버 제조 및 일본 시장 수주 본격화"
+      "note": "NVIDIA Blackwell 인프라 결합을 통한 AI 서버 및 AI 팩토리 사업 진입"
     },
     {
-      "source": "ZEALS",
+      "source": "University of Tokyo",
       "target": "POSCO",
-      "type": "기술 협력",
-      "date": "2026-08-07",
-      "strength": "높음",
-      "note": "실내 작업 특화 대차형 휴머노이드 D1 공개 및 1만 시간 가동 데이터 수집"
-    },
-    {
-      "source": "Kobe Steel",
-      "target": "METI",
-      "type": "정책 변화",
-      "date": "2026-08-07",
-      "strength": "높음",
-      "note": "경제안보추진법 지정 20.7억 엔 규모 항공·방산용 알루미늄/마그네슘 사형주조 증설 및 50% 국비 지원"
+      "type": "기술 센싱",
+      "date": "2026-08-12",
+      "strength": "낮음",
+      "note": "단일 OPD 기반 광·변형 동시 감지 스트레처블 멀티모달 센서 원리 검증"
     }
   ]
 }
