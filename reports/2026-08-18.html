@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Industrial AI & Advanced Materials Dashboard - 2026.08.18</title>
+    <style>
+        :root {
+            --posco-blue: #004b91;
+            --posco-light-blue: #00a0e9;
+            --posco-gray: #4b4b4b;
+            --bg-light: #f8f9fa;
+            --high-bg: #ffebeb;
+            --high-txt: #d32f2f;
+            --medium-bg: #fff4e5;
+            --medium-txt: #ef6c00;
+            --low-bg: #f0f0f0;
+            --low-txt: #666;
+        }
+
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-light); color: #333; margin: 0; padding: 0; line-height: 1.7; word-break: keep-all; }
+        .container { width: 95%; max-width: 1200px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .header { border-bottom: 4px solid var(--posco-blue); padding-bottom: 25px; margin-bottom: 35px; }
+        .header h1 { color: var(--posco-blue); font-size: 32px; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .header p { color: var(--posco-gray); font-size: 15px; margin: 8px 0 0 0; font-weight: 500; }
+        
+        .summary-box { background: #f0f4f8; border-left: 6px solid var(--posco-blue); padding: 25px; margin-bottom: 40px; border-radius: 4px; }
+        .summary-box h2 { margin: 0 0 12px 0; color: var(--posco-blue); font-size: 20px; font-weight: 700; }
+        
+        .section-title { font-size: 22px; color: var(--posco-blue); border-bottom: 2px solid #eaedf0; padding-bottom: 12px; margin: 50px 0 25px; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .news-card { border: 1px solid #e1e8ed; border-radius: 10px; padding: 30px; position: relative; transition: all 0.3s ease; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-color: var(--posco-light-blue); }
+        
+        .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+        .high { background: var(--high-bg); color: var(--high-txt); }
+        .medium { background: var(--medium-bg); color: var(--medium-txt); }
+        .low { background: var(--low-bg); color: var(--low-txt); }
+        
+        .news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; line-height: 1.45; }
+        .meta { font-size: 13px; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; display: flex; flex-direction: column; gap: 5px; }
+        .source-text { font-weight: 600; color: var(--posco-blue); }
+        
+        .content-label { font-weight: 700; font-size: 14px; color: var(--posco-blue); display: block; margin-bottom: 6px; text-transform: uppercase; }
+        .content-text { font-size: 15px; color: #444; margin-bottom: 18px; text-align: justify; white-space: pre-line; }
+        .posco-rel { background: #f8faff; padding: 18px; border-radius: 8px; font-size: 14.5px; border: 1px dashed #b8c5d6; color: #2c3e50; margin-top: 12px; }
+        
+        .table-wrapper { margin-top: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; color: var(--posco-blue); padding: 15px; border: 1px solid #eee; text-align: left; font-size: 15px; }
+        td { padding: 15px; border: 1px solid #eee; font-size: 14.5px; }
+        .footer { text-align: center; padding: 40px; font-size: 13px; color: #999; border-top: 1px solid #eee; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Japan Industrial AI & Advanced Materials Dashboard</h1>
+            <p>Date: 2026.08.18 | Analyst: MI SCM Intelligence System | Target: POSCO Group Strategic Planning</p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Executive Summary</h2>
+            <p>
+                2026년 8월 18일 기준 일본 산업 생태계는 <strong>'데이터 구조화 기반의 제조 특화 AI (CADDi)'</strong>와 <strong>'로봇 도입 엔지니어링 자동화 (Panasonic)'</strong>를 중심으로 하드웨어 중심에서 인프라 및 소프트웨어 통합 솔루션으로 진화하고 있습니다. CADDi는 현장 데이터의 시맨틱 레이어를 구축해 얀마, 가와사키중공업 등 중후장대 기업의 제조 OS로 자리 잡고 있으며, Panasonic은 AI 비전 기반으로 로봇 도입 ROI 산정을 자동화했습니다. 포스코그룹은 제철소 AX 전략 시 단순 범용 LLM 선정을 넘어 현장 데이터 통합 시맨틱 아키텍처를 선구축하고, 로보틱스 투입 시 사전 시뮬레이션 및 배포 엔지니어링 체계를 도입하여 실질적 비용 최적화를 달성해야 합니다.
+            </p>
+        </div>
+
+        <h2 class="section-title">Key Intelligence Section</h2>
+        <div class="news-grid">
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge high">중요도: HIGH</span>
+                    <span class="badge high">분류: 산업 AI / 제조 OS</span>
+                </div>
+                <div class="news-title">CADDi, 제조업 AI 데이터 플랫폼 전면 개편…'산업 OS' 전략 본격화</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-18</span>
+                    <span class="source-text">출처: MONOist</span>
+                    <span class="source-text">원문 출처: monoist.itmedia.co.jp</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">캐디(CADDi)가 제조업의 CAD, ERP, 조달, 품질 등 파편화된 데이터를 의미망으로 연결하는 시맨틱 레이어(Semantic Layer) 기반 차세대 AI 플랫폼을 상용화했습니다. 기존 ERP를 걷어내지 않고도 특정 현장 문제부터 점진적으로 도입할 수 있어 NSK, 가와사키중공업 등의 비용 구조를 획기적으로 혁신하고 있습니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">제조 현장에 범용 생성AI만 도입할 경우 겪는 한계(데이터 컨텍스트 부족)를 극복하기 위해, 원천 데이터를 지식 자산으로 구조화하는 '제조업 특화 버티컬 AI' 플랫폼이 글로벌 산업계의 새로운 표준이 되고 있습니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 포스코 현장의 분산된 조업, 설비, 원가 데이터를 연결하는 '시맨틱 아키텍처'를 선행 구축하여 LLM의 실제 판단 기반을 제공하고, 가와사키중공업의 비용 적정화 성공 사례를 심층 분석하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge medium">중요도: MEDIUM</span>
+                    <span class="badge medium">분류: 피지컬 AI / 로보틱스</span>
+                </div>
+                <div class="news-title">Panasonic Connect, AI 기반 로봇 도입 기획 툴 'Robo Sync Planner' 출시</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-17</span>
+                    <span class="source-text">출처: MONOist</span>
+                    <span class="source-text">원문 출처: monoist.itmedia.co.jp</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">Panasonic Connect가 로봇을 제조 라인에 도입하기 전 거쳐야 하는 현장 영상 분석, 자동화 난이도 판별, ROI(투자수익률) 시뮬레이션 과정을 AI로 자동 지원하는 소프트웨어를 출시했습니다. SI 및 도입 리드타임을 혁신적으로 줄이는 것을 목표로 합니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">일본 로보틱스 시장의 경쟁력이 하드웨어 자체 성능에서 '공정 맞춤형 최적화 배포(Deployment Engineering)' 소프트웨어 스택으로 수직 상향 이동하고 있음을 보여줍니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 로봇 벤더 선정 위주의 기존 하드웨어 중심 전략에서 벗어나, 도입 대상 공정의 비용-효과를 사전 검증하는 AI 시뮬레이션 및 SI(System Integration) 표준 방법론을 포스코 내재화 과제로 추진하십시오.
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="badge-row">
+                    <span class="badge low">중요도: LOW</span>
+                    <span class="badge low">분류: 양자 소재 / 기초 연구</span>
+                </div>
+                <div class="news-title">JAEA·도호쿠대, 구조 대칭성 기반의 순전자적 '카이랄 신전자질서' 발견</div>
+                <div class="meta">
+                    <span>발표일: 2026-08-17</span>
+                    <span class="source-text">출처: MONOist</span>
+                    <span class="source-text">원문 출처: monoist.itmedia.co.jp</span>
+                </div>
+                <span class="content-label">Summary</span>
+                <p class="content-text">JAEA와 도호쿠대 연구진이 극저온 상태의 우라늄 화합물(URhSn)에서 원자 구조가 아닌 전자 분포 배열만으로 카이랄성(Chirality)을 갖는 새로운 전자 상태를 규명했습니다. 이는 향후 빛이나 자기장으로 고속 제어 가능한 양자 및 스핀트로닉스 신소재의 토대가 될 수 있습니다.</p>
+                <span class="content-label">Strategic Implication</span>
+                <p class="content-text">기존 원소 배합 위주의 소재 개발을 넘어, 전자의 스핀과 대칭성 등 양자역학적 속성 자체를 제어하려는 차세대 기능성 소재 원천 연구의 궤적을 제시합니다.</p>
+                <div class="posco-rel">
+                    <strong>POSCO Opportunity:</strong> 직접적인 투자나 단기 사업화 타깃이 아닌, 일본 첨단 학계의 양자 소재(Quantum Materials) 원천 R&D 패러다임 동향 파악을 위한 장기 센싱용 정보로 활용하십시오.
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">POSCO Strategic Opportunity Action Matrix</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>타겟 분야 (Sector)</th>
+                        <th>대상 주체 (Targets)</th>
+                        <th>전략적 실행 아이템 (Action Item)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>제조 AI / 데이터 인프라</strong></td>
+                        <td>CADDi, 가와사키중공업(벤치마크)</td>
+                        <td>포스코 현장 데이터 전사 연결을 위한 'Semantic Layer' 선행 구축 및 특화 Agent 설계</td>
+                    </tr>
+                    <tr>
+                        <td><strong>로보틱스 도입 스택</strong></td>
+                        <td>Panasonic Connect, 로봇 SI 파트너</td>
+                        <td>로봇 투입 전 자동화 최적성 및 ROI 산정을 위한 AI 시뮬레이션 방법론 내재화 도입</td>
+                    </tr>
+                    <tr>
+                        <td><strong>차세대 소재 R&D</strong></td>
+                        <td>JAEA, 도호쿠대</td>
+                        <td>양자역학적 특성 기반 차세대 스핀트로닉스/광기능성 원천 소재 연구 동향 장기 모니터링</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            대외비 · Japan Industrial AI & Advanced Materials Market Intelligence · © 2026 POSCO Group
+        </div>
+    </div>
+</body>
+</html>
