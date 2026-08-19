@@ -1,119 +1,55 @@
 {
   "nodes": [
-    {"id": "CADDi", "group": "Tech/AI"},
-    {"id": "NSK", "group": "Manufacturing"},
-    {"id": "Yanmar Holdings", "group": "Manufacturing"},
-    {"id": "Kawasaki Heavy Industries", "group": "Manufacturing"},
+    {"id": "PTC Japan", "group": "IT/AI"},
+    {"id": "Mazda", "group": "OEM"},
+    {"id": "CADDi", "group": "IT/AI"},
+    {"id": "Kawasaki Heavy Industries", "group": "Robotics/Manufacturing"},
+    {"id": "ROKI", "group": "Material/Engineering"},
+    {"id": "Toyota Motor", "group": "OEM"},
+    {"id": "PPES", "group": "Cell Maker"},
     {"id": "Panasonic Connect", "group": "Robotics/IT"},
-    {"id": "JAEA", "group": "Research"},
-    {"id": "Tohoku University", "group": "Research"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "CADDi",
-      "target": "Kawasaki Heavy Industries",
-      "type": "솔루션 도입",
-      "date": "2026-08-18",
-      "strength": "높음",
-      "note": "CADDi AI 데이터 플랫폼 활용을 통한 수천만 엔 규모 비용 최적화"
+      "source": "PTC Japan",
+      "target": "Mazda",
+      "type": "전략적 협력",
+      "date": "2026-08-19",
+      "strength": "보통",
+      "note": "Digital Thread 기반 Intelligent Product Lifecycle 솔루션 검증 및 적용"
     },
     {
       "source": "CADDi",
-      "target": "NSK",
-      "type": "솔루션 도입",
+      "target": "Kawasaki Heavy Industries",
+      "type": "전략적 협력",
       "date": "2026-08-18",
       "strength": "높음",
-      "note": "도면 데이터 및 부문 간 정보 구조화 적용"
+      "note": "제조 AI 데이터 플랫폼 도입을 통한 연간 수천만 엔 규모 원가 적정화 달성"
+    },
+    {
+      "source": "ROKI",
+      "target": "POSCO",
+      "type": "전략적 협력",
+      "date": "2026-08-12",
+      "strength": "높음",
+      "note": "CCUS용 MOF 가공 성형체 및 카트리지 모듈 실장기술 공동 실증 타진"
+    },
+    {
+      "source": "Toyota Motor",
+      "target": "PPES",
+      "type": "공급 계약",
+      "date": "2026-08-05",
+      "strength": "높음",
+      "note": "2027~2028년 연산 60만 대 규모 HEV용 배터리를 차세대 전지로 양산 라인 전환"
     },
     {
       "source": "Panasonic Connect",
       "target": "POSCO",
-      "type": "벤치마크",
+      "type": "기술 협력",
       "date": "2026-08-17",
       "strength": "보통",
-      "note": "로봇 도입 상류 공정 설계 및 ROI 검증 AI 툴(Robo Sync Planner) 연계성 평가"
-    },
-    {
-      "source": "JAEA",
-      "target": "Tohoku University",
-      "type": "공동 연구",
-      "date": "2026-08-17",
-      "strength": "보통",
-      "note": "순전자적 카이랄 전자 질서 규명을 통한 차세대 양자 소재 원천 연구"
-    }
-  ],
-  "records": [
-    {
-      "date": "2026-08-18",
-      "source": "CADDi",
-      "target": "Manufacturing Market",
-      "type": "서비스 출시",
-      "strength": "높음",
-      "note": "CADDi가 시맨틱 레이어와 버티컬 AI를 결합한 차세대 제조업 AI 데이터 플랫폼을 상용화했습니다.",
-      "news_title": "CADDi, 제조업 AI 데이터 플랫폼 전면 개편…'산업 OS' 전략 본격화",
-      "source_name": "MONOist",
-      "jp_url": "monoist.itmedia.co.jp",
-      "en_url": ""
-    },
-    {
-      "date": "2026-08-17",
-      "source": "Panasonic Connect",
-      "target": "Robot SI Market",
-      "type": "서비스 출시",
-      "strength": "보통",
-      "note": "Panasonic이 로봇 도입 전 단계의 사양 정의와 ROI 계산을 자동화하는 AI 플랫폼을 출시했습니다.",
-      "news_title": "Panasonic Connect, AI로 로봇 도입 전 단계까지 지원하는 'Robo Sync Planner' 출시",
-      "source_name": "MONOist",
-      "jp_url": "monoist.itmedia.co.jp",
-      "en_url": ""
-    },
-    {
-      "date": "2026-08-17",
-      "source": "JAEA",
-      "target": "Tohoku University",
-      "type": "기초 연구",
-      "strength": "낮음",
-      "note": "우라늄 화합물 기반으로 좌우 구조 대칭 상황에서도 전자 분포만으로 방향성을 띄는 신전자질서를 규명했습니다.",
-      "news_title": "JAEA·도호쿠대, 구조는 대칭이지만 전자배열만 카이랄한 신전자질서 발견",
-      "source_name": "MONOist",
-      "jp_url": "monoist.itmedia.co.jp",
-      "en_url": ""
-    }
-  ],
-  "history": [
-    {
-      "date": "2026-08-18",
-      "event": "CADDi, 산업용 OS 기반 제조업 AI 플랫폼 본격 확장",
-      "company": ["CADDi", "Kawasaki Heavy Industries", "NSK"],
-      "type": "상용화 및 확장",
-      "strength": "높음",
-      "summary": "제조 데이터의 상호 의미망을 구축하는 시맨틱 레이어와 에이전트 기반 버티컬 AI를 통해 중후장대 고객사의 전사 지식 자산화를 달성했습니다.",
-      "impact": "포스코 AX 추진 시 범용 LLM 위주의 전략을 탈피하여 현장 데이터 아키텍처 및 시맨틱 레이어 사전 설계 중요성 부각",
-      "source": "MONOist",
-      "url": "monoist.itmedia.co.jp"
-    },
-    {
-      "date": "2026-08-17",
-      "event": "Panasonic, 로봇 도입 자동화 설계 툴 Robo Sync Planner 출시",
-      "company": ["Panasonic Connect"],
-      "type": "신제품 출시",
-      "strength": "보통",
-      "summary": "로봇 하드웨어 도입에 앞서 AI 영상 분석을 통해 자동화 난이도 및 ROI를 산출하는 기획 소프트웨어를 시장에 공급합니다.",
-      "impact": "포스코 로보틱스 도입 시 하드웨어 자체 성능 비교를 넘어 상류 단계 SI 및 배포 엔지니어링 역량 확보 필요",
-      "source": "MONOist",
-      "url": "monoist.itmedia.co.jp"
-    },
-    {
-      "date": "2026-08-17",
-      "event": "JAEA 등, 양자 제어 기반 카이랄 반강사극자 질서 발견",
-      "company": ["JAEA", "Tohoku University"],
-      "type": "기초 기술 발견",
-      "strength": "낮음",
-      "summary": "결정 구조가 대칭임에도 전자의 배열만으로 카이랄성을 띠는 새로운 양자 역학적 전자 상태를 구현해냈습니다.",
-      "impact": "포스코그룹 신소재 전략 중 장기 센싱 영역인 양자 소재 개발 방법론 모니터링 데이터로 활용",
-      "source": "MONOist",
-      "url": "monoist.itmedia.co.jp"
+      "note": "AI 기반 로봇 도입 기획 및 ROI 시뮬레이션 플랫폼(Robo Sync Planner) 연계성 평가"
     }
   ]
 }
