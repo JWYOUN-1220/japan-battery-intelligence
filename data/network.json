@@ -1,55 +1,57 @@
 {
   "nodes": [
-    {"id": "PTC Japan", "group": "IT/AI"},
-    {"id": "Mazda", "group": "OEM"},
-    {"id": "CADDi", "group": "IT/AI"},
-    {"id": "Kawasaki Heavy Industries", "group": "Robotics/Manufacturing"},
-    {"id": "ROKI", "group": "Material/Engineering"},
-    {"id": "Toyota Motor", "group": "OEM"},
-    {"id": "PPES", "group": "Cell Maker"},
-    {"id": "Panasonic Connect", "group": "Robotics/IT"},
+    {"id": "Quemix", "group": "IT/AI"},
+    {"id": "Tohoku University", "group": "Research"},
+    {"id": "NEDO", "group": "Policy"},
+    {"id": "Mitsubishi Electric", "group": "Defense/Aerospace"},
+    {"id": "Array Labs", "group": "Space/DeepTech"},
+    {"id": "Nihon Kagaku Sangyo", "group": "Material"},
+    {"id": "Sumitomo Bakelite", "group": "Material"},
+    {"id": "TIER IV", "group": "Autonomous Driving"},
+    {"id": "Astemo", "group": "Component OEM"},
+    {"id": "POSCO Future M", "group": "POSCO"},
     {"id": "POSCO", "group": "POSCO"}
   ],
   "links": [
     {
-      "source": "PTC Japan",
-      "target": "Mazda",
-      "type": "전략적 협력",
-      "date": "2026-08-19",
-      "strength": "보통",
-      "note": "Digital Thread 기반 Intelligent Product Lifecycle 솔루션 검증 및 적용"
-    },
-    {
-      "source": "CADDi",
-      "target": "Kawasaki Heavy Industries",
+      "source": "Quemix",
+      "target": "Tohoku University",
       "type": "전략적 협력",
       "date": "2026-08-18",
       "strength": "높음",
-      "note": "제조 AI 데이터 플랫폼 도입을 통한 연간 수천만 엔 규모 원가 적정화 달성"
+      "note": "NEDO 대형실증 사업 채택을 통한 양자컴퓨터 기반 배터리 소재 시뮬레이션 및 NanoTerasu 검증 플랫폼 개발"
     },
     {
-      "source": "ROKI",
-      "target": "POSCO",
+      "source": "Mitsubishi Electric",
+      "target": "Array Labs",
+      "type": "투자 확대",
+      "date": "2026-08-19",
+      "strength": "높음",
+      "note": "1,000만 달러 전략 투자를 통한 저궤도 레이더 위성 기반 안보 정보 서비스 공동 사업화"
+    },
+    {
+      "source": "Sumitomo Bakelite",
+      "target": "Tohoku University",
       "type": "전략적 협력",
-      "date": "2026-08-12",
-      "strength": "높음",
-      "note": "CCUS용 MOF 가공 성형체 및 카트리지 모듈 실장기술 공동 실증 타진"
-    },
-    {
-      "source": "Toyota Motor",
-      "target": "PPES",
-      "type": "공급 계약",
-      "date": "2026-08-05",
-      "strength": "높음",
-      "note": "2027~2028년 연산 60만 대 규모 HEV용 배터리를 차세대 전지로 양산 라인 전환"
-    },
-    {
-      "source": "Panasonic Connect",
-      "target": "POSCO",
-      "type": "기술 협력",
-      "date": "2026-08-17",
+      "date": "2026-08-20",
       "strength": "보통",
-      "note": "AI 기반 로봇 도입 기획 및 ROI 시뮬레이션 플랫폼(Robo Sync Planner) 연계성 평가"
+      "note": "수지 절연 2층 구조 3D SiC-MOSFET 파워모듈 프로토타입 공동 개발"
+    },
+    {
+      "source": "TIER IV",
+      "target": "Astemo",
+      "type": "전략적 협력",
+      "date": "2026-08-19",
+      "strength": "보통",
+      "note": "Co-MLOps 기반 E2E 자율주행 AI 개발 환경 구축 및 2030년 실용화 추진"
+    },
+    {
+      "source": "Nihon Kagaku Sangyo",
+      "target": "POSCO",
+      "type": "소재 수요",
+      "date": "2026-08-20",
+      "strength": "보통",
+      "note": "AI 서버용 MLCC 수요 급증에 따른 티탄산바륨 생산능력 1.5배 증설"
     }
   ]
 }
