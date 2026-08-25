@@ -1,462 +1,315 @@
 {
-  "report_date": "2026-08-21",
+  "report_date": "2026-08-25",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-08-21T08:14:20+09:00",
+  "generated_at": "2026-08-25T08:16:24+09:00",
   "articles": [
     {
-      "id": "2026-08-21-hitachi-hightech-assb-physical-ai",
+      "id": "2026-08-25-re-circle-battery-recycling",
       "category": [
         "이차전지",
-        "전고체전지",
-        "양극재",
-        "Physical AI"
+        "배터리 리사이클",
+        "Black Mass",
+        "Circular Economy"
       ],
-      "title": "Hitachi High-Tech, Physical AI로 전고체전지 양극 활물질 코팅 최적화 실증 완료",
-      "published_at": "2026-08-21T05:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/21/news054.html",
+      "title": "폐LIB 재생자원으로 신규자원 동등수준 셀 구현 - Re-CIRCLE 수평 리사이클 실증",
+      "published_at": "2026-08-25T07:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news023.html",
       "summary": [
-        "Hitachi High-Tech와 POWREX가 전고체전지용 양극 활물질 표면 코팅조건을 Physical AI·Process Informatics로 최적화하는 실증을 완료했음. XRF·SEM으로 막두께, 피복 균일성 및 계면특성을 정량화하고 제조조건·재료특성·전지성능 데이터를 통합해 AI가 최적 조건을 도출하는 구조임.",
-        "2030년경 전고체전지 시장 본격화를 겨냥해 HMAX Industry의 상용 Solution으로 제공하고 다른 전지재료·고기능 소재까지 확대할 계획임. 소재 자체보다 Lab-to-Fab 공정개발 기간을 단축하는 Digital Manufacturing 기술이라는 점이 중요함.",
-        "전일 Quemix의 Quantum Materials Simulation과 연결할 경우 소재설계→실험·분석→Process Informatics→Scale-up으로 이어지는 일본 Battery R&D Digital Stack이 형성되고 있음."
+        "마크텍·KDDI·리테크 RES·EFT·상선미쓰이로지스틱스·트랜스코스모스 등 6개사가 사용후 LIB에서 회수·재생한 자원을 이용해 시제품 전지를 제작하고 신규 자원 기반 전지와 동등 수준의 주요 성능을 확인했음. 단순 금속회수에 그치지 않고 폐Battery→재생자원→배터리 소재→신규 Cell로 다시 연결하는 수평 리사이클 품질 검증까지 진행됐음.",
+        "사용후 Cell에서 고순도 Black Mass를 제조한 뒤 EFT의 Emulsion Flow 용매추출 기술로 희소금속을 회수하고 이를 양극재로 재사용했음. 전극 저항, 0.1C~2C Rate 특성 및 Cycle 특성에서 신규 자원 기반 전지와 동등 수준을 확인했음.",
+        "향후 상용전지 적용과 재생자원 품질 고도화, 국내외 규제에 대응한 물류·Traceability 체계를 구축할 예정임. 일본 Battery Recycling이 Recovery Technology에서 Closed-loop Supply Chain 구축 단계로 이동하고 있음."
       ],
       "core_technology": [
-        "All-Solid-State Battery",
-        "Cathode Active Material Coating",
-        "Process Informatics",
-        "Physical AI",
-        "XRF",
-        "SEM",
-        "Fluidized-bed Coating",
-        "Lab-to-Fab Optimization"
+        "Lithium-ion Battery Recycling",
+        "Black Mass",
+        "Emulsion Flow",
+        "Solvent Extraction",
+        "Rare Metal Recovery",
+        "Cathode Material Recycling",
+        "Battery-to-Battery",
+        "Traceability"
       ],
-      "commercialization_stage": "PoC 완료 후 상용 Solution 전환 단계",
+      "commercialization_stage": "Supply Chain 실증 완료 후 Commercialization 준비 단계",
       "related_entities": [
-        "Hitachi High-Tech",
-        "POWREX",
-        "Hitachi Group",
-        "향후 전고체전지 소재·셀 제조기업"
+        "Marktec",
+        "KDDI",
+        "Re-Tech Renewable Energy Solutions",
+        "Emulsion Flow Technologies",
+        "Mitsui O.S.K. Lines Logistics",
+        "transcosmos",
+        "Re-CIRCLE Project"
       ],
       "posco_implications": [
-        "포스코퓨처엠의 양극재 표면코팅, Dopant/Coating 조합 Screening, 신규 조성 Scale-up, 소성·분쇄·코팅 공정조건 최적화에 직접 적용 가능성이 있음.",
-        "전고체전지뿐 아니라 기존 양극재 공정에서도 Process Informatics를 활용해 실험횟수와 Scale-up 기간을 줄일 가능성이 있음.",
-        "Quemix의 Quantum Materials Simulation과 결합할 경우 소재설계부터 공정최적화까지 연결되는 Battery R&D Digital Stack 관점에서 추적 가치가 높음."
+        "Battery Recycling 경쟁기준이 Recovery Rate·Purity·Cost에서 Battery-grade Quality·Cell Performance·Logistics·Traceability까지 확대되고 있음.",
+        "POSCO는 광물→전구체→양극재→Recycling Value Chain을 활용해 일본 Cell/OEM에 Closed-loop Battery Material Supply Chain을 제안할 구조적 기반이 있음.",
+        "일본에서는 폐배터리 물류·규제·Traceability가 사업화의 핵심요소이므로 Recycling Technology 단독보다 Consortium 구조를 Benchmark할 필요가 있음."
       ],
       "priority": "High",
       "follow_up": [
-        "코팅 산화물 실제 조성 확인",
-        "적용 양극재 계열 확인",
-        "고체전해질 계열 확인",
-        "공정조건 탐색시간 단축 정량효과 확인",
-        "Dataset 규모 및 AI Model 확인",
-        "POWREX 코팅장비 양산 Scale 확인",
-        "일본 Battery Maker 고객 PoC 확인",
-        "포스코퓨처엠 공정개발 적용 가능성 검토"
+        "금속별 회수율과 순도",
+        "Emulsion Flow CAPEX·OPEX",
+        "재생 양극재 조성",
+        "Cycle 평가조건",
+        "신규자원 대비 원가",
+        "Battery Maker 평가",
+        "상용화 Capacity",
+        "폐LIB 확보 Route",
+        "Traceability 구조",
+        "POSCO Recycling Value Chain 비교"
       ]
     },
     {
-      "id": "2026-08-21-nsk-atom-humanoid",
+      "id": "2026-08-24-asahi-kasei-lithium-predoping",
+      "category": [
+        "이차전지",
+        "음극재",
+        "Si Anode",
+        "Pre-lithiation",
+        "누락 보완"
+      ],
+      "title": "旭化成, Li₂CO₃ 기반 Li Pre-doping으로 Si 음극 비가역용량 보완",
+      "published_at": "2026-08-24T07:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/24/news025.html",
+      "summary": [
+        "旭化成이 고비율 Si계 음극의 초기 비가역용량 문제를 보완하기 위해 탄산리튬을 Li Source로 활용하는 Pre-doping 기술을 개발했음. Si 함량 증가 시 초기 충전에서 소비되는 Li를 보충해 실제 사용 가능한 Cell Capacity를 높이는 방식임.",
+        "Li₂CO₃의 높은 분해전압 문제를 전해액 분해촉진 첨가제로 해결했으며 Li₂CO₃를 양극에 혼합하고 첨가제를 전해액에 넣는 구조여서 기존 LIB 제조공정과의 친화성이 높음. 고비율 Si 음극 Cell에서 방전용량밀도를 약 10% 향상시켰음.",
+        "향후 고전압 양극·Si계 음극 Battery Maker를 대상으로 기술정보와 IP 사용권을 포함한 License 사업을 추진하고 고객 Cell 검증을 거쳐 양산 적용을 확대할 예정임."
+      ],
+      "core_technology": [
+        "Lithium Pre-doping",
+        "Silicon Anode",
+        "Li2CO3",
+        "Electrolyte Additive",
+        "Irreversible Capacity Compensation",
+        "Materials Informatics",
+        "Battery Simulation"
+      ],
+      "commercialization_stage": "기술개발 완료 후 고객 Cell 검증 및 License 사업화 단계",
+      "related_entities": [
+        "Asahi Kasei",
+        "High-voltage Cathode Battery Makers",
+        "Silicon Anode Battery Makers",
+        "EV Battery",
+        "Humanoid Battery"
+      ],
+      "posco_implications": [
+        "Si계 음극 고함량화에서는 Anode Capacity뿐 아니라 Initial Efficiency와 Li Inventory가 Cell Energy Density를 좌우함.",
+        "Si 음극 평가 시 Capacity·Initial Efficiency·Pre-lithiation·Cathode Li Inventory·Cell Design을 통합적으로 평가할 필요가 있음.",
+        "License Model이므로 고객 Cell 검증에 성공할 경우 Si 음극 Supply Chain에 비교적 빠르게 확산될 가능성이 있음."
+      ],
+      "priority": "High",
+      "follow_up": [
+        "Si계 음극 종류",
+        "Si 함량",
+        "Initial Coulombic Efficiency 개선폭",
+        "방전용량밀도 10% 향상 조건",
+        "Cycle Life",
+        "Gas 발생",
+        "Electrolyte Additive 조성",
+        "고전압 양극 Compatibility",
+        "Li2CO3 첨가량",
+        "양산공정 추가 Step",
+        "License Business Model",
+        "실제 Battery Maker 고객"
+      ]
+    },
+    {
+      "id": "2026-08-24-nssol-iauto-sdv-aidv",
       "category": [
         "AI",
-        "로보틱스",
-        "휴머노이드",
-        "Physical AI",
-        "일본 스타트업"
+        "산업AI",
+        "SDV",
+        "AIDV",
+        "Strategic Investment"
       ],
-      "title": "NSK–Atom, 국산 휴머노이드 액추에이터 공동검증·Physical AI 데이터 수집",
-      "published_at": "2026-08-21T06:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/21/news049.html",
+      "title": "NSSOL–iAuto 자본업무제휴 - SDV·AIDV용 AI Cockpit / 차량 AI Agent 공동개발",
+      "published_at": "2026-08-24T10:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/24/news030.html",
       "summary": [
-        "NSK와 일본 스타트업 Atom이 국산 휴머노이드 AI 로봇 개발·실장을 위한 포괄적 MOU를 체결했음. NSK가 개발 중인 휴머노이드용 Actuator를 Atom 로봇에 탑재해 공동 검증하고 실제 제품개발 결과를 부품 Spec 개선에 피드백할 예정임.",
-        "동시에 NSK 제조현장에서 휴머노이드를 실제 가동해 Physical AI 학습 데이터를 수집하고 기반모델 고도화에 활용하고 있음. Component+Robot Hardware+Manufacturing Site+Real-world Data를 하나의 개발 Loop로 연결하는 구조가 핵심임.",
-        "일본이 휴머노이드 경쟁에서 완제품 자체보다 국산 핵심부품, 제조기업의 양산역량, 실제 제조현장 데이터를 결합하는 방식으로 생태계를 구축하려는 움직임으로 해석 가능함."
+        "NSSOL이 차량 SW 기업 iAuto와 자본업무제휴를 체결했음. NSSOL의 AI·Data 기술과 iAuto의 Smart Cockpit·ADAS·차량제어 SW를 결합해 SDV와 AIDV를 중장기 성장사업으로 육성하고 있음.",
+        "양사는 AI Cockpit, 차량 AI Agent, SDV/AIDV Software Platform을 공동 개발하고 일본 및 글로벌 OEM 시장을 대상으로 사업을 확대할 계획임.",
+        "iAuto는 세계 104개 국가·지역, 누적 4,000만대 이상의 차량 적용 기반을 보유하고 있음. NSSOL도 별도 SDV Business Promotion 조직을 신설해 신규사업화 의지를 명확히 하고 있음."
       ],
       "core_technology": [
-        "Humanoid Robot",
-        "Integrated Actuator",
-        "Physical AI",
-        "Foundation Model",
-        "Real-world Manufacturing Data",
-        "Robot Joint Module",
-        "Precision Bearing"
+        "SDV",
+        "AIDV",
+        "AI Cockpit",
+        "Automotive AI Agent",
+        "ADAS",
+        "Vehicle Control Software",
+        "Automotive Software Platform"
       ],
-      "commercialization_stage": "MOU, Component PoC 및 제조현장 데이터 수집 단계",
+      "commercialization_stage": "Capital Alliance 및 공동개발·사업확대 단계",
       "related_entities": [
-        "NSK",
-        "Atom",
-        "NSK 제조현장",
-        "향후 일본 제조업 고객"
+        "Nippon Steel Solutions",
+        "iAuto",
+        "Global Automotive OEM"
       ],
       "posco_implications": [
-        "휴머노이드 완제품뿐 아니라 Bearing·Reducer·Motor·Encoder·Brake·Structural Material 등 Component Value Chain을 별도 Map으로 구축할 필요가 있음.",
-        "제조기업의 공장이 단순 수요처가 아니라 Physical AI Training Data를 생성하는 전략자산으로 전환될 가능성이 있음.",
-        "POSCO 제철소도 중량물·물류·검사·정비·위험작업 분야에서 희소성이 높은 Industrial Physical AI Dataset 확보 Site로 활용 가능성이 있음."
-      ],
-      "priority": "High",
-      "follow_up": [
-        "Atom 기업정보 및 주요 투자자 확인",
-        "Atom Humanoid 사양 확인",
-        "NSK Actuator 구조 및 Torque Density 확인",
-        "감속기·Motor·Bearing 공급구조 확인",
-        "중국산 Component 비중 확인",
-        "NSK 공장 적용 작업 종류 확인",
-        "수집 Data Type 및 Foundation Model 구조 확인",
-        "양산 Target 및 원가 확인",
-        "POSCO 제조현장 PoC 가능성 검토"
-      ]
-    },
-    {
-      "id": "2026-08-20-japan-green-steel-procurement",
-      "category": [
-        "GX",
-        "Green Steel",
-        "철강",
-        "공공조달"
-      ],
-      "title": "경제산업성, '그린철' 공공공사 시범조달로 초기 수요 창출",
-      "published_at": "2026-08-20T10:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/20/news064.html",
-      "summary": [
-        "일본 경제산업성이 국토교통성 발주 토목공사에서 제조 과정의 CO2를 감축한 '그린철'을 시범 사용하고 있음. 2030년 이후 공공공사 본격 활용을 목표로 제품 유통 및 GX 가치평가 관련 데이터를 축적할 계획임.",
-        "정부가 초기 구매자가 되어 저탄소 철강의 Demand를 만들고 환경가치가 가격에 반영되는 시장을 형성하려는 정책임. Green Steel 경쟁이 생산기술 지원을 넘어 초기시장 및 Reference Price 형성 단계로 이동하고 있다는 의미가 있음.",
-        "향후 인정기준과 조달규격이 구체화될 경우 일본 내 Green Steel 시장의 사실상 진입요건으로 작동할 가능성이 있어 해외산 제품의 참여조건 확인이 중요함."
-      ],
-      "core_technology": [
-        "Green Steel",
-        "Green Public Procurement",
-        "Embodied Carbon",
-        "GX Value",
-        "Low-carbon Steel",
-        "Carbon Accounting",
-        "Demand Creation"
-      ],
-      "commercialization_stage": "정부 초기시장 창출 및 Public Procurement 실증 단계",
-      "related_entities": [
-        "METI",
-        "MLIT",
-        "일본 철강사",
-        "국토교통성 직할 토목공사",
-        "공공 인프라 발주기관"
-      ],
-      "posco_implications": [
-        "일본 저탄소 철강 경쟁이 기술개발에서 초기수요 창출과 Green Premium 형성 단계로 이동하고 있음.",
-        "POSCO 일본향 Green Steel 전략에서는 자동차뿐 아니라 건설·공공 인프라·교량·철도·에너지 인프라 수요를 별도 분석할 필요가 있음.",
-        "향후 공공조달 Spec에 Embodied Carbon 또는 Green Steel 인증기준이 반영될 경우 해외산 제품의 진입요건으로 작용할 가능성이 있음."
-      ],
-      "priority": "High",
-      "follow_up": [
-        "그린철 인정기준 확인",
-        "Mass Balance 허용 여부 확인",
-        "GX League 및 CFP 기준 연계 여부 확인",
-        "일본산 우대 여부 확인",
-        "해외산 Green Steel 참여 가능 여부 확인",
-        "Nippon Steel·JFE·Kobe Steel 적용제품 확인",
-        "Green Premium 처리방식 확인",
-        "2030년 이후 공공조달 의무화 가능성 확인",
-        "POSCO 일본 판매전략 영향 분석"
-      ]
-    },
-    {
-      "id": "2026-08-20-triorb-keyence-plc",
-      "category": [
-        "로보틱스",
-        "자동화",
-        "모바일로봇",
-        "OT Integration"
-      ],
-      "title": "TriOrb, 전방향 이동로봇을 Keyence PLC와 직접 연결",
-      "published_at": "2026-08-20T13:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/20/news042.html",
-      "summary": [
-        "TriOrb가 360도 전방향 이동 플랫폼 'TriOrb BASE'를 Keyence KV-X500 PLC와 직접 연결할 수 있도록 표준 지원하고 있음. HTTP/REST API 연결을 통해 기존 중계 PC와 별도 Device를 제거해 시스템 구성과 초기 도입비용을 단순화했음.",
-        "생산기술자가 기존 Ladder 프로그램만으로 설비 동작과 연동한 운반 명령을 구현할 수 있어 Legacy FA 현장과의 통합장벽을 낮추고 있음. 로봇 성능보다 기존 OT System과의 Compatibility가 실제 도입속도에 중요한 변수임을 보여줌.",
-        "Mobile Robot 도입 시 Navigation 성능뿐 아니라 PLC·MES·안전시스템과의 연결비용이 Total Cost of Ownership을 좌우하는 구조가 확인되고 있음."
-      ],
-      "core_technology": [
-        "Omnidirectional Mobile Robot",
-        "Spherical Drive",
-        "PLC Integration",
-        "REST API",
-        "HTTP",
-        "Factory Automation",
-        "OT Integration"
-      ],
-      "commercialization_stage": "상용 제품 Integration 및 제조현장 확산 단계",
-      "related_entities": [
-        "TriOrb",
-        "Keyence",
-        "KV-X500 PLC 사용자",
-        "제조업 생산·물류 현장"
-      ],
-      "posco_implications": [
-        "이동로봇 확산의 실제 병목은 Navigation 성능보다 기존 PLC·설비와의 Integration 비용으로 볼 수 있음.",
-        "POSCO 제조현장 AMR·Mobile Manipulator 평가 시 PLC·MES·안전 PLC·현장 Network·Operator UI와의 연동비용을 Robot 가격과 함께 평가할 필요가 있음.",
-        "TriOrb는 일본 Mobile Robot 후보군에서 지속 센싱 가치가 있음."
+        "대기업 Domain Knowledge와 외부 전문기술을 지분투자 및 Joint Product로 연결하는 신규사업 구축 사례임.",
+        "POSCO의 AI·Robot 투자도 Minority Investment 자체보다 제조현장 Data와 Startup 기술을 결합한 Joint Platform 사업화를 투자조건으로 설계할 필요가 있음."
       ],
       "priority": "Medium",
       "follow_up": [
-        "TriOrb 투자자 및 매출 확인",
-        "가반중량 확인",
-        "Positioning Accuracy 확인",
-        "Fleet Management 기능 확인",
-        "Mobile Manipulator 전개 여부 확인",
-        "실제 고객사 확인",
-        "철강현장 바닥조건 적용성 검토"
+        "투자규모 및 지분율",
+        "iAuto 주주구성",
+        "주요 OEM",
+        "AI Cockpit Architecture",
+        "AI Agent 적용범위",
+        "Chip Platform",
+        "일본 OEM PoC",
+        "AIDV 수익모델"
       ]
     },
     {
-      "id": "2026-08-20-dks-low-dk-resin",
+      "id": "2026-08-24-ctc-processlens",
+      "category": [
+        "AI",
+        "산업AI",
+        "머신비전",
+        "Process Mining",
+        "누락 보완"
+      ],
+      "title": "CTC, 영상AI 기반 현장 Process Mining 'ProcessLens' 상용화",
+      "published_at": "2026-08-24T06:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/24/news042.html",
+      "summary": [
+        "CTC가 Wearable·고정 Camera 영상을 AI로 분석해 작업자의 행동과 공정을 자동 Data화하는 ProcessLens 제공을 시작했음. Office Log 중심의 Process Mining을 제조·물류의 Physical Work로 확장하고 있음.",
+        "작업 시작·종료, 기기조작, 확인, 이동, 대기 등을 자동 인식해 숙련자와 비숙련자의 차이, Bottleneck, 재작업, 품질·작업시간에 영향을 주는 행동을 분석할 수 있음.",
+        "향후 3년간 50건 수주를 목표로 하고 있으며 노동력 부족·Skill Transfer·품질편차 문제를 배경으로 Human Work를 Machine-readable Process Data로 전환하는 시장을 공략하고 있음."
+      ],
+      "core_technology": [
+        "Computer Vision",
+        "Video Analytics",
+        "Process Mining",
+        "Task Mining",
+        "Machine Vision",
+        "Skill Transfer",
+        "Manufacturing AI"
+      ],
+      "commercialization_stage": "상용 Solution Launch 및 고객확대 단계",
+      "related_entities": [
+        "Itochu Techno-Solutions",
+        "Manufacturing Companies",
+        "Logistics Companies",
+        "Maintenance Operations"
+      ],
+      "posco_implications": [
+        "설비점검·정비·Sampling·검사·위험작업 등 숙련자 의존 업무의 Skill Transfer에 적용 가능성이 있음.",
+        "Human Video→Skill Data→Robot Training Data로 연결될 경우 Humanoid·Mobile Manipulator의 Learning Data 생성기술로 발전할 가능성이 있음."
+      ],
+      "priority": "Medium",
+      "follow_up": [
+        "Vision Model",
+        "작업인식 정확도",
+        "Camera 조건",
+        "Edge·Cloud 처리",
+        "Privacy 대응",
+        "실제 제조고객",
+        "ROI",
+        "Robot Learning Data 전환성",
+        "POSCO PoC 가능성"
+      ]
+    },
+    {
+      "id": "2026-08-24-fujifilm-post-cmp-cleaner",
       "category": [
         "첨단소재",
         "AI Infrastructure",
-        "전자재료"
-      ],
-      "title": "제일공업제약, AI 서버용 저유전 수지에 약 100억 엔 투자",
-      "published_at": "2026-08-20T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/20/news007.html",
-      "summary": [
-        "제일공업제약이 데이터센터·고속통신 인프라용 저유전 수지 소재의 공급능력 확대를 위해 약 100억 엔 투자를 결정했음. 국내외 생산거점에 신규 설비를 구축하고 2027년도 이후 가동할 예정임.",
-        "생성AI와 고속통신 확대가 Server용 PCB·CCL 등 고주파 전자부품 소재의 실물 수요로 전이되고 있음. 최근 MLCC 소재 증설과 함께 AI Infrastructure Downstream 소재 투자가 연속적으로 확인되고 있음.",
-        "AI Data Center 소재 경쟁이 GPU·HBM에서 전력·PCB·기능성 Resin·Thermal Material까지 빠르게 확장되고 있다는 점이 핵심임."
-      ],
-      "core_technology": [
-        "Low Dielectric Resin",
-        "High-frequency Material",
-        "High-speed Server Material",
-        "PCB",
-        "CCL",
-        "AI Data Center"
-      ],
-      "commercialization_stage": "대규모 양산 Capacity 투자 단계",
-      "related_entities": [
-        "Dai-ichi Kogyo Seiyaku",
-        "PCB·CCL Maker",
-        "AI Server Supply Chain",
-        "Data Center 및 Network Equipment 업체"
-      ],
-      "posco_implications": [
-        "AI/Data Center 산업을 GPU·전력기기만으로 보는 것은 범위가 좁음.",
-        "향후 소재 Map은 전력·Cooling·PCB·Passive Component·Advanced Packaging·Functional Resin·Thermal Material까지 확대할 필요가 있음.",
-        "POSCO 직접 소재사업 연계는 제한적이나 AI Infrastructure 소재산업의 구조적 수요 변화를 파악하는 데 의미가 있음."
-      ],
-      "priority": "Medium",
-      "follow_up": [
-        "수지 조성 확인",
-        "Dk·Df 수치 확인",
-        "주요 PCB·CCL 고객 확인",
-        "AI Server 적용 Layer 확인",
-        "증설 Capacity 확인",
-        "경쟁소재 공급사 확인",
-        "일본 AI Infrastructure Material Map 정리"
-      ]
-    },
-    {
-      "id": "2026-08-21-mitsubishi-chemical-colloidal-silica",
-      "category": [
-        "첨단소재",
         "반도체",
-        "AI Infrastructure"
+        "누락 보완"
       ],
-      "title": "Mitsubishi Chemical, 최첨단 반도체용 초고순도 콜로이달 실리카 사업화",
-      "published_at": "2026-08-21T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/21/news029.html",
+      "title": "Fujifilm, AI 반도체용 Post-CMP Cleaner 생산능력 3배 확대",
+      "published_at": "2026-08-24T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/24/news046.html",
       "summary": [
-        "Mitsubishi Chemical이 첨단 반도체 CMP Slurry 원료용 초고순도 Colloidal Silica 사업화를 결정했음. 기타큐슈에 생산설비를 신설해 2028년 10월 상업운전을 시작하며 고순도 Tetramethoxysilane부터 일관생산할 계획임.",
-        "고객 공정에 맞춰 입자크기·밀도 등을 조절할 수 있는 Customization을 경쟁력으로 설정하고 있음. AI·데이터센터용 최첨단 반도체 확대가 CMP용 고순도 Chemical까지 신규투자를 유발하고 있음.",
-        "일본 화학기업이 범용 Petrochemical보다 고순도·고기능 Semiconductor Material 중심으로 Portfolio를 이동시키는 흐름이 지속되고 있음."
+        "Fujifilm Electronic Materials가 오이타공장에 Post-CMP Cleaner 신동을 완공하고 2026년 8월부터 가동했음. 자동생산·품질평가 설비를 도입해 생산능력을 기존의 3배로 확대했음.",
+        "Post-CMP Cleaner는 CMP 연마 후 금속표면을 보호하면서 Particle·미량금속·유기잔류물을 제거하는 고순도 소재임. AI Semiconductor의 미세화가 진행될수록 CMP 이후 Cleaning 중요성이 커지고 있음.",
+        "Fujifilm은 CMP Slurry와 Cleaner를 함께 제안하는 전략을 추진하고 있으며 Post-CMP Cleaner 매출을 2030년도에 2024년도 대비 2배 이상 확대할 계획임."
       ],
       "core_technology": [
-        "Ultra-high-purity Colloidal Silica",
-        "CMP Slurry",
-        "Semiconductor Polishing",
-        "Tetramethoxysilane",
-        "Particle Size Control",
-        "Advanced Semiconductor Materials"
+        "Post-CMP Cleaner",
+        "CMP",
+        "Semiconductor Cleaning Chemical",
+        "Ultra-high-purity Material",
+        "Particle Removal",
+        "Trace Metal Removal"
       ],
-      "commercialization_stage": "신규사업 및 양산설비 투자 단계",
+      "commercialization_stage": "양산 Capacity 3배 증설 및 글로벌 판매확대 단계",
       "related_entities": [
-        "Mitsubishi Chemical",
-        "CMP Slurry 업체",
-        "Leading-edge Semiconductor Fab",
-        "Semiconductor Wafer Maker"
+        "Fujifilm",
+        "Fujifilm Electronic Materials",
+        "Global Semiconductor Fabs",
+        "AI Semiconductor Supply Chain"
       ],
       "posco_implications": [
-        "AI 반도체 확대가 고순도 Chemical·CMP 소재에까지 신규투자를 발생시키고 있음.",
-        "일본 화학기업의 범용소재에서 고순도·고기능 Semiconductor Material로의 Portfolio Shift가 지속되고 있음.",
-        "직접 연계보다는 고순도·Customization 중심 첨단소재 사업모델 Benchmark 가치가 있음."
+        "AI Infrastructure 수요가 BaTiO3·Low-Dk Resin·Colloidal Silica·Post-CMP Cleaner 등 다양한 고기능 소재의 Capacity 투자로 확산되고 있음.",
+        "AI Data Center Material Map을 고순도 Chemical까지 확대할 필요가 있음.",
+        "High Purity·Process-specific Customization·Customer Qualification·Integrated Solution 구조는 첨단소재 사업모델 Benchmark 가치가 있음."
       ],
       "priority": "Medium",
       "follow_up": [
-        "Purity Level 확인",
-        "생산 Capacity 확인",
-        "CMP 고객 확인",
-        "경쟁사 확인",
-        "EUV·Advanced Logic·HBM 연계 여부 확인",
-        "원료 Supply Chain 확인",
-        "매출 Target 확인"
-      ]
-    },
-    {
-      "id": "2026-08-20-ptc-onshape-mcp",
-      "category": [
-        "AI",
-        "산업AI",
-        "Engineering Automation",
-        "MCP"
-      ],
-      "title": "PTC, Onshape에 MCP 연계…자연어로 CAD 자동화 기능 생성",
-      "published_at": "2026-08-20T09:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/20/news021.html",
-      "summary": [
-        "PTC가 Cloud CAD/PDM 'Onshape'에 FeatureScript MCP Server를 제공하기 시작했음. Claude·ChatGPT·Gemini 등 LLM과 MCP로 연결해 사용자가 자연어만으로 Custom CAD 기능을 생성·테스트·디버깅할 수 있도록 지원하고 있음.",
-        "숙련 엔지니어의 설계방법을 반복 사용 가능한 Tool로 전환해 Engineering Knowledge를 조직 내에서 재사용하는 구조임. AI Agent가 단순 질의응답을 넘어 실제 Engineering Tool을 실행하는 단계로 이동하고 있음.",
-        "향후 MCP 기반 Agent가 CAD뿐 아니라 PLM·CAE·MES 등 제조 Engineering System으로 확대될 경우 Manufacturing AX의 실행계층으로 발전할 가능성이 있음."
-      ],
-      "core_technology": [
-        "Model Context Protocol",
-        "AI CAD",
-        "Onshape",
-        "FeatureScript",
-        "Engineering Agent",
-        "Design Automation",
-        "Knowledge Reuse"
-      ],
-      "commercialization_stage": "상용 Cloud CAD 기능 Early Access 및 적용 확대 단계",
-      "related_entities": [
-        "PTC",
-        "Onshape",
-        "Anthropic",
-        "OpenAI",
-        "Google",
-        "제조·설계기업"
-      ],
-      "posco_implications": [
-        "AI Agent가 실제 Engineering Tool을 조작하는 단계로 이동하고 있음.",
-        "POSCO에서도 장기적으로 AI Agent가 PLM·CAE·공정 Model 등 Engineering System과 직접 연결되는 구조를 고려할 필요가 있음.",
-        "Process Manufacturing에 바로 적용하기보다 R&D·설비설계·부품설계 영역에서 우선 검토하는 것이 적절함."
-      ],
-      "priority": "Medium",
-      "follow_up": [
-        "MCP Security 확인",
-        "Permission Control 방식 확인",
-        "생성 Feature 검증방식 확인",
-        "Enterprise On-premise 대응 확인",
-        "PLM·MES 연결 가능성 확인",
-        "실제 고객 Case 확인",
-        "Process Industry 활용 가능성 검토"
-      ]
-    },
-    {
-      "id": "2026-08-21-calbee-cboss",
-      "category": [
-        "AI",
-        "산업AI",
-        "Supply Chain",
-        "S&OP"
-      ],
-      "title": "Calbee, 자체 AI 'C-BOSS'로 전사 공급망 최적화 본격 가동",
-      "published_at": "2026-08-21T06:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/21/news046.html",
-      "summary": [
-        "Calbee가 원료·영업·생산·물류 데이터를 통합해 전사 이익을 최적화하는 자체 AI Simulation System 'C-BOSS'를 2026년 7월부터 전 부문에서 본격 가동하고 있음. 감자 수확량, 공장 Capacity, 물류 등 복수 제약조건을 동시에 고려해 회사 전체의 최적 생산·판매계획을 계산하는 구조임.",
-        "사후 대응형 공급망 관리에서 Data 기반 S&OP 체계로 전환하는 실제 Manufacturing AI 사례임. 기술 Algorithm 자체보다 부서별 Data와 KPI를 하나의 Optimization Model에 연결했다는 점이 중요함.",
-        "공급망 AI의 성과는 예측 정확도만이 아니라 생산·재고·물류·수요 간 Trade-off를 실제 경영 의사결정에 반영할 수 있는지가 핵심임."
-      ],
-      "core_technology": [
-        "Supply Chain Optimization",
-        "S&OP",
-        "AI Simulation",
-        "Constraint Optimization",
-        "Integrated Planning",
-        "Supply·Production·Logistics Planning"
-      ],
-      "commercialization_stage": "사내 상용 운영 단계",
-      "related_entities": [
-        "Calbee",
-        "영업 조직",
-        "생산 조직",
-        "물류 조직",
-        "조달 조직"
-      ],
-      "posco_implications": [
-        "투자후보보다는 Manufacturing AI 적용 Reference로 보는 것이 적절함.",
-        "POSCO에서도 수요·생산 Capacity·원료·재고·물류·고객 Priority를 연결하는 S&OP AI 관점에서 참고 가능함.",
-        "성공 여부는 Algorithm 자체보다 Data Governance와 현업 Adoption에 좌우될 가능성이 높음."
-      ],
-      "priority": "Low",
-      "follow_up": [
-        "Optimization Algorithm 확인",
-        "수익 개선 정량효과 확인",
-        "Forecast Accuracy 확인",
-        "의사결정 주기 확인",
-        "Human Override 구조 확인",
-        "POSCO S&OP 적용 Benchmark"
+        "신규동 투자금액",
+        "생산 Capacity",
+        "주요 고객",
+        "Post-CMP Cleaner Chemistry",
+        "CMP Slurry Package Sales",
+        "경쟁사",
+        "AI·HBM·Advanced Logic 적용비중",
+        "2030년 매출 목표"
       ]
     }
   ],
   "key_insights": [
-    "전고체전지 개발이 소재 탐색을 넘어 Physical AI 기반 제조공정 최적화 단계로 진입하고 있음.",
-    "일본 Humanoid 전략이 국산 Actuator, Startup Robot, 제조현장 Real-world Data를 결합하는 구조로 구체화되고 있음.",
-    "일본 정부가 Green Steel 공공조달을 통해 기술지원에서 초기 수요창출 정책으로 이동하고 있음.",
-    "AI Data Center 투자가 Low-Dk Resin·초고순도 CMP 소재 등 Downstream Material Capacity로 확산되고 있음.",
-    "제조 AI·Robot 확산의 실질적 병목은 기존 PLC·CAD·PDM 등 Legacy OT/Engineering System과의 Integration으로 확인됨."
+    "Battery Recycling이 희소금속 회수에서 Battery-grade 품질·Cell 성능검증·Logistics·Traceability를 포함한 Closed-loop Supply Chain 경쟁으로 이동하고 있음.",
+    "Si계 음극 고함량화에 따라 Initial Efficiency와 Li Inventory 관리가 중요해지고 있으며 Li Pre-doping이 핵심 Enabler로 부상하고 있음.",
+    "제조 AI의 Data Source가 설비 Sensor와 Engineering Data에서 Human Video·Work Process까지 확대되고 있음.",
+    "AI Semiconductor 확대가 BaTiO3·Low-Dk Resin·CMP Material·Post-CMP Cleaner 등 고기능 소재의 실제 Capacity 투자로 전이되고 있음.",
+    "대기업의 기술투자가 단순 지분투자보다 Domain Knowledge·External Technology·Joint Product를 결합하는 방식으로 이동하고 있음."
   ],
   "priority_ranking": [
     {
       "rank": 1,
-      "article_id": "2026-08-21-hitachi-hightech-assb-physical-ai",
+      "article_id": "2026-08-25-re-circle-battery-recycling",
       "priority": "High"
     },
     {
       "rank": 2,
-      "article_id": "2026-08-21-nsk-atom-humanoid",
+      "article_id": "2026-08-24-asahi-kasei-lithium-predoping",
       "priority": "High"
     },
     {
       "rank": 3,
-      "article_id": "2026-08-20-japan-green-steel-procurement",
-      "priority": "High"
+      "article_id": "2026-08-24-nssol-iauto-sdv-aidv",
+      "priority": "Medium"
     },
     {
       "rank": 4,
-      "article_id": "2026-08-20-triorb-keyence-plc",
+      "article_id": "2026-08-24-ctc-processlens",
       "priority": "Medium"
     },
     {
       "rank": 5,
-      "article_id": "2026-08-20-dks-low-dk-resin",
+      "article_id": "2026-08-24-fujifilm-post-cmp-cleaner",
       "priority": "Medium"
-    },
-    {
-      "rank": 6,
-      "article_id": "2026-08-21-mitsubishi-chemical-colloidal-silica",
-      "priority": "Medium"
-    },
-    {
-      "rank": 7,
-      "article_id": "2026-08-20-ptc-onshape-mcp",
-      "priority": "Medium"
-    },
-    {
-      "rank": 8,
-      "article_id": "2026-08-21-calbee-cboss",
-      "priority": "Low"
     }
   ],
   "no_new_articles_categories": [
+    "전고체전지",
     "LFP·LMR·NCM 신규소재",
-    "음극재",
-    "전해질·분리막",
-    "배터리 리사이클",
-    "항공우주·방산 신규기사",
+    "분리막",
+    "항공우주·방산소재",
+    "휴머노이드 신규 Hardware",
+    "모바일 매니퓰레이터 신규사업",
     "CCUS",
     "수소·암모니아",
     "SAF·e-SAF",
     "e-Fuel",
     "페로브스카이트",
-    "전력망·ESS",
+    "전력망·ESS 신규사업",
     "핵융합",
     "양자컴퓨팅 신규기사"
   ]
