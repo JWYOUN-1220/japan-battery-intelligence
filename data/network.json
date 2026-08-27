@@ -1,194 +1,310 @@
 {
-  "report_date": "2026-08-26",
+  "report_date": "2026-08-27",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-08-26T08:20:47+09:00",
+  "generated_at": "2026-08-27T08:09:02+09:00",
   "articles": [
     {
-      "id": "2026-08-25-denso-battery-passport",
-      "category": ["이차전지", "Circular Economy", "Battery Passport", "Traceability"],
-      "title": "DENSO, EU 규제 대응 배터리 패스포트 서비스 상용화",
-      "published_at": "2026-08-25T16:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news081.html",
-      "summary": [
-        "DENSO가 EU Battery Regulation 대응을 지원하는 DENSO Digital Product Passport Solution for Battery의 상용 제공을 시작했음. 2027년 2월부터 EV·LMT·산업용 Battery Passport 의무화가 예정된 가운데 OEM·Battery Maker·Supplier 정보를 제품별로 연결하는 구조임.",
-        "Battery Pass Ready Consortium Data Model과 사용자별 Access Control을 적용하고 DENSO의 Blockchain 기술을 활용해 Battery 정보의 위·변조 방지와 Data Reliability 확보를 지원하고 있음.",
-        "Battery 이외 제품의 DPP까지 확장 가능한 Multi-connect Architecture를 채택해 규제대응 Tool에서 Circular Economy Data Platform으로 확장하려는 방향임."
+      "id": "2026-08-27-asahi-kasei-us-separator",
+      "category": [
+        "이차전지",
+        "분리막",
+        "북미 공급망"
       ],
-      "core_technology": ["Battery Passport", "Digital Product Passport", "Blockchain", "Traceability", "Data Sovereignty", "Circular Economy"],
-      "commercialization_stage": "상용 Service Launch 및 고객확대 단계",
-      "related_entities": ["DENSO", "Automotive OEM", "Battery Maker", "Battery Pass Ready Consortium", "EU Market"],
+      "title": "Asahi Kasei, 미국 LIB용 습식 분리막 코팅라인 완공",
+      "published_at": "2026-08-27T06:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news032.html",
+      "summary": [
+        "Asahi Kasei가 미국 North Carolina주 Charlotte에 LIB용 습식 분리막 Hipore 코팅라인을 완공했음. 기존 Celgard 공장 내에 신설했으며 2026년도 하반기부터 상업생산을 시작할 예정임.",
+        "북미 EV 시장의 단기 성장둔화에도 불구하고 2030년 EV·ESS 수요 확대를 전제로 현지 생산능력을 선제 확보하고 있음.",
+        "Canada에서 건설 중인 제막·코팅 일관공장과 결합해 북미 역내 Separator Supply Chain을 구축할 계획임."
+      ],
+      "core_technology": [
+        "Wet-process Separator",
+        "Hipore",
+        "Separator Coating",
+        "LIB",
+        "EV Battery",
+        "ESS"
+      ],
+      "commercialization_stage": "생산설비 완공 후 상업생산 전환 단계",
+      "related_entities": [
+        "Asahi Kasei",
+        "Asahi Kasei Battery Separator America",
+        "Celgard",
+        "Toyota Tsusho America",
+        "North American Battery Makers"
+      ],
       "posco_implications": [
-        "Battery Recycling과 Battery Passport를 동일 Circular Supply Chain Infrastructure 관점에서 관리할 필요가 있음.",
-        "광물부터 Recycling까지 Material Traceability와 Recycled Content·Carbon Footprint Data를 연결하는 구조가 필요함.",
-        "일본 Battery Recycling 사업에서 Data Platform Provider가 OEM·Cell·Material·Recycler를 연결하는 핵심 사업자가 될 가능성이 있음."
+        "북미 Battery 소재 경쟁에서 Local Production과 Supply Stability의 중요성이 확대되고 있음.",
+        "POSCO도 양극재·전구체·리튬·Recycling을 북미 역내 Supply Chain 관점에서 통합적으로 관리할 필요가 있음.",
+        "EV 수요 단기둔화보다 2030년 공급망 Positioning을 전제로 한 선제투자 경쟁이 지속되고 있음."
       ],
       "priority": "High",
-      "follow_up": ["실제 고객사", "서비스 가격", "Catena-X 연계", "Uranos Ecosystem 연계", "Recycled Content Data", "Carbon Footprint Data", "POSCO 시스템 연계"]
+      "follow_up": [
+        "Charlotte 코팅 Capacity",
+        "Canada 공장 Capacity",
+        "주요 Cell Maker",
+        "Hipore Premium",
+        "중국산 Separator 대비 Cost",
+        "IRA 영향",
+        "북미 소재 Supply Chain"
+      ]
     },
     {
-      "id": "2026-08-25-toray-cfrp-recycling-mi",
-      "category": ["항공우주·첨단소재", "CFRP", "Materials Informatics", "누락 보완"],
-      "title": "Toray, MI로 재활용 가능 CFRP 소재설계 정밀도 향상",
-      "published_at": "2026-08-25T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news021.html",
-      "summary": [
-        "Toray가 CFRP의 기계적 특성과 Matrix Resin의 Recycling 용이성을 동시에 만족시키는 Materials Informatics 기반 소재설계 기술을 개발했음.",
-        "Resin 분자구조와 Recycling성·기계적 특성을 Machine Learning으로 학습해 후보 선정 예측정밀도를 기존 Model 대비 최대 약 25% 향상시켰음.",
-        "선정 조성이 실제 CFRP에서도 Recycling 특성을 유지하는 것을 확인했으며 향후 실험·Simulation 평가 건수를 수천~수만건 줄일 수 있을 것으로 전망하고 있음."
+      "id": "2026-08-27-rlwrld-japan-physical-ai",
+      "category": [
+        "AI",
+        "Physical AI",
+        "로보틱스",
+        "일본 PoC",
+        "Startup"
       ],
-      "core_technology": ["CFRP", "Carbon Fiber Composite", "Materials Informatics", "Machine Learning", "Thermoset Resin", "Design for Recycling"],
-      "commercialization_stage": "R&D 및 Material Design Platform 검증 단계",
-      "related_entities": ["Toray", "Cabinet Office SIP", "Aerospace Industry", "Automotive Industry"],
+      "title": "RLWRLD, 일본 기업과 Physical AI 공동사업 확대",
+      "published_at": "2026-08-27T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news023.html",
+      "summary": [
+        "RLWRLD가 5지 Robot Hand·Tactile/Force Sensing·독자 Foundation Model RLDX-1을 기반으로 일본시장 Physical AI 사업을 확대하고 있음.",
+        "Chiba 물류창고, 반도체 장비기업, 편의점, 자동차기업, 항공사 등과 공동 Project를 진행하고 있으며 추가 PoC도 검토 중임.",
+        "고객 요구가 Demo 성공 여부보다 Cycle Time·Throughput·Task Success Rate 등 실제 현장 Deployment와 경제성을 중심으로 변화하고 있음."
+      ],
+      "core_technology": [
+        "Physical AI",
+        "RLDX-1",
+        "Robot Foundation Model",
+        "Five-finger Hand",
+        "Tactile Sensing",
+        "Force Sensing",
+        "Cross-embodiment"
+      ],
+      "commercialization_stage": "다수 고객 PoC 및 현장 Deployment 준비 단계",
+      "related_entities": [
+        "RLWRLD",
+        "NVIDIA",
+        "일본 물류기업",
+        "Semiconductor Equipment Maker",
+        "Convenience Store",
+        "Automotive Maker",
+        "Airline"
+      ],
       "posco_implications": [
-        "항공우주 소재 경쟁축이 경량·고강도에서 Recyclability와 Life Cycle Carbon까지 확대되고 있음.",
-        "금속과 CFRP의 경쟁을 초기 소재가격보다 LCA 관점에서 재평가할 필요가 있음.",
-        "Design-for-Circularity를 소재 조성 설계단계부터 반영하는 R&D 방식의 Benchmark 가치가 높음."
+        "Physical AI 경쟁력이 Robot Hardware보다 Foundation Model·Tactile Data·Cross-embodiment로 이동하고 있음.",
+        "POSCO Robot Architecture도 Task→Data→Model→Hand/Sensor→Robot Body 순으로 설계할 필요가 있음.",
+        "Tool Handling·검사·Sample Handling 등 Tactile Data가 필요한 제철소 작업에서 PoC 가능성이 있음."
       ],
       "priority": "High",
-      "follow_up": ["Resin Chemistry", "Recycling 방식", "Recycled CFRP 물성", "Virgin CFRP 비교", "Recycling Cost", "Aerospace Certification", "Metal 대비 LCA"]
+      "follow_up": [
+        "일본 PoC 고객",
+        "PoC Task",
+        "RLDX-1 Architecture",
+        "Training Data 규모",
+        "Tactile Sensor",
+        "Cycle Time",
+        "Task Success Rate",
+        "Funding",
+        "Valuation",
+        "POSCO PoC"
+      ]
     },
     {
-      "id": "2026-08-25-daihen-vivace",
-      "category": ["로보틱스", "Mobile Manipulator", "협동로봇", "자동화", "누락 보완"],
-      "title": "DAIHEN, 이동로봇+협동로봇 통합 'VIVACE' 상용화",
-      "published_at": "2026-08-25T07:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news051.html",
-      "summary": [
-        "DAIHEN이 자사 개발 AMR과 협동Robot을 통합한 자주형 Robot VIVACE의 수주를 시작했으며 연간 판매목표는 200대임.",
-        "Auto Tool Changer를 활용해 운반·Machine Loading·연마·Screw Tightening·용접 등 복수 작업을 1대로 수행하며 Digital Map 기반 Guide-less 주행과 전방향 이동을 지원함.",
-        "이동경로와 Robot Arm Teaching을 Tablet 1대로 통합해 Programming 난이도를 낮췄으며 Mobile Manipulator가 PoC에서 실제 범용 상용제품으로 전환되고 있음을 보여줌."
+      "id": "2026-08-26-airoa-heiwajima-data-hub",
+      "category": [
+        "AI",
+        "Physical AI",
+        "로보틱스",
+        "Mobile Manipulator"
       ],
-      "core_technology": ["Mobile Manipulator", "AMR", "Collaborative Robot", "Auto Tool Changer", "Guide-less Navigation", "Omnidirectional Drive"],
-      "commercialization_stage": "Commercial Product 및 Market Deployment 단계",
-      "related_entities": ["DAIHEN", "Manufacturing Plants", "Machining", "Welding", "Assembly"],
+      "title": "AIRoA, 3,500㎡ Physical AI R&D 거점 구축",
+      "published_at": "2026-08-26T14:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news063.html",
+      "summary": [
+        "AIRoA가 Tokyo Heiwajima 약 3,500㎡ 거점에 연구개발과 법인기능을 통합하고 제조·가정·Retail 환경을 모사한 Real-world Robot Data 수집환경을 구축했음.",
+        "2025년도 Mobile Manipulator Teleoperation을 통해 약 8만시간의 Data를 확보하고 Foundation Model Training Pipeline을 구축했음.",
+        "2026년도부터 Dual-arm Mobile Manipulation 등으로 Robot 종류와 Data 수집방식을 확대하면서 일본 Physical AI 공동 R&D 기반을 강화하고 있음."
+      ],
+      "core_technology": [
+        "Physical AI",
+        "Robot Foundation Model",
+        "Mobile Manipulator",
+        "Dual-arm Manipulation",
+        "Teleoperation",
+        "Real-world Robot Data"
+      ],
+      "commercialization_stage": "산업 공동 R&D Infrastructure 구축 단계",
+      "related_entities": [
+        "AI Robot Association",
+        "Japan Manufacturing Companies",
+        "Robot Makers",
+        "AI Startups",
+        "Miraikan"
+      ],
       "posco_implications": [
-        "단기 제조자동화에서는 Humanoid보다 Mobile Manipulator가 ROI와 Reliability 측면에서 빠르게 확산될 가능성이 있음.",
-        "POSCO 적용 후보로 Sample 운반·부품공급·검사·Simple Maintenance·Grinding·Welding 보조 등을 검토 가능함.",
-        "철강현장의 고온·분진·진동·단차 환경 Adaptation이 PoC의 핵심 검증요소임."
+        "Real-world Industrial Data가 Physical AI의 핵심 전략자산으로 부상하고 있음.",
+        "POSCO 제철소를 Robot 구매현장이 아니라 Industrial Physical AI Data Factory로 정의할 필요가 있음.",
+        "향후 PoC 계약에서 Data Ownership·Model Training Rights·Model IP 조건을 명확히 해야 함."
       ],
       "priority": "High",
-      "follow_up": ["가격", "Payload", "Arm Reach", "Navigation Accuracy", "Battery Runtime", "IP Rating", "고온·분진 대응", "실제 고객", "POSCO PoC"]
+      "follow_up": [
+        "AIRoA 참여기업",
+        "8만시간 Data 구성",
+        "Data Format",
+        "Model 공개계획",
+        "Model IP",
+        "정부지원 규모",
+        "기업 PoC 참여방식",
+        "POSCO Japan 협력접점"
+      ]
     },
     {
-      "id": "2026-08-25-mitsubishi-qunasys-quantum-cae",
-      "category": ["양자컴퓨팅", "CAE", "첨단 Engineering"],
-      "title": "Mitsubishi Electric–QunaSys, 양자 CAE용 2개 핵심 Algorithm 개발",
-      "published_at": "2026-08-25T09:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news025.html",
-      "summary": [
-        "Mitsubishi Electric과 QunaSys가 대규모 CAE 물리 Simulation을 Quantum Computer에서 효율적으로 수행하기 위한 2개 기반 Algorithm을 개발했음.",
-        "첫 Algorithm은 반복 Matrix Pattern을 재사용해 Block Encoding 비용을 낮추며 두 번째 Algorithm은 Quantum Signal Processing Parameter 계산의 Numerical Instability를 개선하고 있음.",
-        "Matrix Inversion·Hamiltonian Simulation·Phase Estimation·Eigenvalue Filtering에서 안정성을 검증했으나 Classical CAE 대비 실질적인 Quantum Advantage는 향후 검증이 필요함."
+      "id": "2026-08-26-nedo-aluminum-upgrade-recycling",
+      "category": [
+        "GX",
+        "Recycling",
+        "첨단소재",
+        "Aluminum"
       ],
-      "core_technology": ["Quantum Computing", "Quantum CAE", "Block Encoding", "Quantum Signal Processing", "Hamiltonian Simulation", "Phase Estimation"],
-      "commercialization_stage": "기초 Algorithm 검증 및 Quantum CAE R&D 단계",
-      "related_entities": ["Mitsubishi Electric", "QunaSys", "CAE Users", "Motor Development"],
+      "title": "NEDO, 알루미늄 Upcycling 대형 실증 착수",
+      "published_at": "2026-08-26T11:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news009.html",
+      "summary": [
+        "YKK AP·UACJ·Kobe Steel·Honda R&D 등 8개 기관이 NEDO 지원을 받아 Aluminum Upgrade Recycling 실용화 개발을 시작했음.",
+        "불순물 제거·무해화·Vertical Twin-roll Casting·Process DX·User Validation·Standardization을 통합해 고품질 압연재로 재활용하는 것을 목표로 하고 있음.",
+        "2032년도 이후 양산화를 목표로 하며 2040년에는 연간 21.5만t 수준의 재생 Al 생산과 원유 약 16.87만kL 상당의 Energy 절감을 목표로 하고 있음."
+      ],
+      "core_technology": [
+        "Aluminum Recycling",
+        "Upgrade Recycling",
+        "Impurity Removal",
+        "Vertical Twin-roll Casting",
+        "Process DX",
+        "AI",
+        "Closed-loop Recycling"
+      ],
+      "commercialization_stage": "실용화 개발 및 대규모 실증 단계",
+      "related_entities": [
+        "YKK AP",
+        "UACJ",
+        "Kobe Steel",
+        "Asahi Seiren",
+        "AISing",
+        "Honda R&D",
+        "Toyo Seikan",
+        "Japan Aluminium Association",
+        "NEDO"
+      ],
       "posco_implications": [
-        "Quantum 산업이 Hardware 중심에서 산업 Application·Algorithm Layer로 확대되고 있음.",
-        "장기적으로 전자기·열·유동·구조·소재 Simulation과 연계 가능성이 있음.",
-        "현재는 Quantum Advantage가 입증된 상용단계가 아니므로 기술 Option 확보 관점에서 추적하는 것이 적절함."
+        "Metal Recycling 경쟁이 회수량보다 Virgin Material을 대체할 수 있는 품질 확보로 이동하고 있음.",
+        "철강에서도 Cu·Sn 등 Tramp Element를 관리해 고급강으로 재투입하는 Upgrade Recycling이 중요해질 가능성이 있음.",
+        "Material Maker·Process Technology·End User·Standardization을 포함한 Consortium형 사업모델을 Benchmark할 필요가 있음."
+      ],
+      "priority": "High",
+      "follow_up": [
+        "불순물 대상원소",
+        "Purification Yield",
+        "Energy Consumption",
+        "Virgin Al 대비 Cost",
+        "Honda 적용부품",
+        "Kobe Steel 역할",
+        "UACJ 역할",
+        "Recycling Alloy 규격",
+        "철강 Scrap 비교"
+      ]
+    },
+    {
+      "id": "2026-08-26-iter-tf-coil-10ka",
+      "category": [
+        "핵융합",
+        "첨단소재",
+        "Superconductor"
+      ],
+      "title": "QST–Toshiba, ITER 세계 최대급 TF Coil 1만A 통전 성공",
+      "published_at": "2026-08-26T08:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news025.html",
+      "summary": [
+        "QST와 Toshiba가 제작한 ITER용 세계 최대급 Toroidal Field Coil을 -269℃ 극저온 환경에서 최대 10,000A까지 안정적으로 통전하는 데 성공했음.",
+        "Nb3Sn 초전도 도체를 이용한 대형 Coil의 Joint Resistance·Cryogen Flow·Leakage 등 실제 운전조건을 검증해 모두 설계범위 내임을 확인했음.",
+        "이번 성과는 ITER Superconducting Coil System의 Commissioning과 운전절차 수립, Risk Reduction을 위한 Full-scale Engineering Validation으로 평가됨."
+      ],
+      "core_technology": [
+        "Nuclear Fusion",
+        "ITER",
+        "Toroidal Field Coil",
+        "Nb3Sn Superconductor",
+        "Superconducting Magnet",
+        "Cryogenic Engineering"
+      ],
+      "commercialization_stage": "Full-scale Engineering Validation 및 ITER Commissioning 준비 단계",
+      "related_entities": [
+        "QST",
+        "Toshiba",
+        "ITER Organization"
+      ],
+      "posco_implications": [
+        "Fusion 산업이 Component R&D에서 Full-scale System Validation 단계로 이동하고 있음.",
+        "POSCO 관점에서는 Cryogenic Structural Steel·Stainless Steel·High-strength Plate·Special Alloy 등 구조소재 Supply Chain을 추적할 필요가 있음.",
+        "ITER 공급·Qualification 경험이 향후 DEMO Reactor 및 민간 Fusion Project의 경쟁력으로 연결될 가능성이 있음."
       ],
       "priority": "Medium",
-      "follow_up": ["Quantum Hardware", "Qubit Requirement", "Classical CAE 비교", "Quantum Advantage 예상시점", "Hybrid Architecture", "산업 고객 PoC", "POSCO 적용 문제군"]
-    },
-    {
-      "id": "2026-08-25-furukawa-ai-datacenter-fiber",
-      "category": ["AI Infrastructure", "첨단소재", "Optical Network"],
-      "title": "Furukawa Electric, AI Data Center 광통신 증설에 약 1,000억엔 투자",
-      "published_at": "2026-08-25T10:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/25/news019.html",
-      "summary": [
-        "Furukawa Electric이 AI·Cloud 확대에 따른 Hyperscale Data Center용 광통신 수요에 대응해 광Fiber·Rollable Ribbon Cable 생산능력 증설에 약 1,000억엔을 투자할 계획임.",
-        "미국·브라질·일본·인도에 투자해 Rollable Ribbon Cable 생산능력을 Fiber 수량 기준 2025년도 말 대비 약 2배 확대할 예정임.",
-        "2028년도 하반기부터 순차 양산하며 고객의 장기 구매 Commitment를 확인하고 투자한 만큼 AI Infrastructure의 구조적 실수요를 반영한 사례임."
-      ],
-      "core_technology": ["Optical Fiber", "Rollable Ribbon Cable", "AI Data Center", "Hyperscale Data Center", "High-capacity Communication"],
-      "commercialization_stage": "대규모 Global Capacity Expansion 단계",
-      "related_entities": ["Furukawa Electric", "Lightera", "Lightera LatAm", "Lightera Japan", "Birla Furukawa Fibre Optics"],
-      "posco_implications": [
-        "AI Data Center 투자가 Power·Cooling·Semiconductor에서 Optical Network까지 확대되고 있음.",
-        "Data Center를 전력설비만이 아닌 Communication·Structure·Material까지 포함하는 Infrastructure Ecosystem으로 관리할 필요가 있음."
-      ],
-      "priority": "Medium",
-      "follow_up": ["지역별 투자액", "Capacity", "Hyperscaler 고객", "구매 Commitment", "Optical Cable 원재료", "Data Center당 Fiber 사용량"]
-    },
-    {
-      "id": "2026-08-26-sumitomo-bakelite-motor-insulation",
-      "category": ["첨단소재", "GX", "전동화", "Motor"],
-      "title": "Sumitomo Bakelite, EV Motor 절연재 상온물류·130℃ 저온경화 구현",
-      "published_at": "2026-08-26T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news018.html",
-      "summary": [
-        "Sumitomo Bakelite가 xEV 구동Motor Coil-end 절연용 Epoxy Resin Powder Coating 2종을 개발했음.",
-        "ECP-383KA는 기존 냉장운송·보관을 10~35℃ 상온으로 전환할 수 있고 ECP-382WA는 기존 160~200℃ 경화온도를 130℃까지 낮추면서 기존 수준의 절연·내구특성을 유지함.",
-        "저온경화 적용 시 도장공정 CO2를 약 30% 낮출 수 있다고 발표했으며 소재경쟁이 고객 Process Energy와 CO2 저감까지 확대되고 있음을 보여줌."
-      ],
-      "core_technology": ["Epoxy Resin", "Powder Coating", "Motor Insulation", "Low-temperature Curing", "VOC-free Material", "Process Decarbonization"],
-      "commercialization_stage": "개발제품 및 고객평가·상용화 준비 단계",
-      "related_entities": ["Sumitomo Bakelite", "EV Motor Manufacturers", "Automotive Tier-1", "Automotive OEM"],
-      "posco_implications": [
-        "기능소재 가치평가가 Material Performance뿐 아니라 Process Temperature·Storage Condition·Energy Consumption·CO2로 확대되고 있음.",
-        "향후 배터리·모터·Power Electronics 소재에서도 고객 제조공정 절감효과가 중요한 채택요인이 될 가능성이 있음."
-      ],
-      "priority": "Medium",
-      "follow_up": ["절연내압", "Thermal Class", "Motor Voltage", "고객", "Cost", "CO2 산정조건", "양산일정"]
-    },
-    {
-      "id": "2026-08-26-sony-csl-origanoid",
-      "category": ["로보틱스", "Precision Robotics", "Medical Robot"],
-      "title": "Sony CSL, Origami 구조 기반 초소형 정밀 수술로봇 개발",
-      "published_at": "2026-08-26T06:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news029.html",
-      "summary": [
-        "Sony CSL과 VC Cell Therapy가 Origami 구조를 활용한 소형 수술지원 Robot Origanoid를 개발했음. 160×50×50mm, 17.9g 구조에서 12μm 위치정밀도를 구현하고 있음.",
-        "멸균 Arm과 재사용 Drive를 Magnetic Coupling으로 연결하고 Emergency 상황에서는 약 50ms 안에 기구를 자동퇴피시키는 Safety Mechanism을 적용했음.",
-        "Rabbit Model 망막하 투여에서 6안 중 5안의 액체주입에 성공했으며 향후 Clinical Application을 위한 신뢰성·내구성 평가를 추진할 예정임."
-      ],
-      "core_technology": ["Surgical Robot", "Origami Mechanism", "Precision Robotics", "12μm Positioning", "Magnetic Coupling", "Safety Retraction"],
-      "commercialization_stage": "Preclinical R&D 및 Animal Validation 단계",
-      "related_entities": ["Sony Computer Science Laboratories", "VC Cell Therapy", "Vision Care", "Ophthalmology"],
-      "posco_implications": [
-        "POSCO 직접 연계성은 낮으나 Lightweight·Low-cost Precision Robot Design Reference 가치가 있음.",
-        "의료기기 인증과 Clinical Risk가 크므로 투자·사업 우선순위는 낮음."
-      ],
-      "priority": "Low",
-      "follow_up": ["Clinical Roadmap", "Medical Device Approval", "Manufacturing Cost", "Disposable Arm 가격", "Durability", "IP Portfolio"]
+      "follow_up": [
+        "TF Coil 구조재",
+        "Nb3Sn Supply Chain",
+        "Toshiba Scope",
+        "Cryogenic Material Spec",
+        "ITER 이후 DEMO Roadmap",
+        "민간 Fusion 기술전이",
+        "POSCO 적용 가능성"
+      ]
     }
   ],
   "key_insights": [
-    "Battery Circular Economy 경쟁이 Physical Recycling과 Digital Passport·Traceability를 동시에 관리하는 구조로 확대되고 있음.",
-    "Toray MI와 Mitsubishi Electric–QunaSys Quantum CAE 사례를 통해 AI·Quantum이 실제 소재·Engineering Workflow에 특화되고 있음.",
-    "단기 제조 Robot 시장에서는 Humanoid보다 Mobile Manipulator의 상용화와 ROI 확보가 빠르게 진행되고 있음.",
-    "AI Data Center의 실물투자 범위가 Semiconductor·Cooling·Power에서 Optical Network까지 확대되고 있음.",
-    "첨단소재 경쟁력이 고객 제조공정의 Energy·CO2·물류비 절감효과까지 포함하는 방향으로 확대되고 있음."
+    "북미 Battery 소재 경쟁이 Material Performance와 Cost에서 Local Production·Supply Stability까지 확대되고 있음.",
+    "Physical AI의 핵심 경쟁자산이 Robot Hardware보다 Real-world Data·Foundation Model·Tactile Data로 이동하고 있음.",
+    "Robot 고객 평가기준이 Demo 성공 여부에서 Cycle Time·Task Success Rate·Deployment Time·ROI 등 실제 생산 KPI로 이동하고 있음.",
+    "Circular Economy 경쟁에서 Recycling Rate보다 Virgin Material을 실질적으로 대체할 수 있는 High-grade Recycling 품질이 중요해지고 있음.",
+    "ITER TF Coil 10kA 통전 성공으로 Fusion 산업이 Component R&D에서 Full-scale Engineering Validation 단계로 이동하고 있음."
   ],
   "priority_ranking": [
-    {"rank": 1, "article_id": "2026-08-25-denso-battery-passport", "priority": "High"},
-    {"rank": 2, "article_id": "2026-08-25-toray-cfrp-recycling-mi", "priority": "High"},
-    {"rank": 3, "article_id": "2026-08-25-daihen-vivace", "priority": "High"},
-    {"rank": 4, "article_id": "2026-08-25-mitsubishi-qunasys-quantum-cae", "priority": "Medium"},
-    {"rank": 5, "article_id": "2026-08-25-furukawa-ai-datacenter-fiber", "priority": "Medium"},
-    {"rank": 6, "article_id": "2026-08-26-sumitomo-bakelite-motor-insulation", "priority": "Medium"},
-    {"rank": 7, "article_id": "2026-08-26-sony-csl-origanoid", "priority": "Low"}
+    {
+      "rank": 1,
+      "article_id": "2026-08-27-asahi-kasei-us-separator",
+      "priority": "High"
+    },
+    {
+      "rank": 2,
+      "article_id": "2026-08-27-rlwrld-japan-physical-ai",
+      "priority": "High"
+    },
+    {
+      "rank": 3,
+      "article_id": "2026-08-26-airoa-heiwajima-data-hub",
+      "priority": "High"
+    },
+    {
+      "rank": 4,
+      "article_id": "2026-08-26-nedo-aluminum-upgrade-recycling",
+      "priority": "High"
+    },
+    {
+      "rank": 5,
+      "article_id": "2026-08-26-iter-tf-coil-10ka",
+      "priority": "Medium"
+    }
   ],
   "no_new_articles_categories": [
     "전고체전지",
     "LFP·LMR·NCM 신규소재",
     "양극재·음극재 신규소재",
-    "전해질·분리막",
-    "배터리 리사이클 신규 Physical Process",
-    "방산소재",
-    "휴머노이드 신규기사",
-    "머신비전 신규기사",
-    "CCUS",
-    "수소·암모니아",
+    "전해질",
+    "Battery Recycling 신규기사",
+    "항공우주·방산소재",
     "SAF·e-SAF",
     "e-Fuel",
+    "수소·암모니아",
+    "CCUS",
     "페로브스카이트",
-    "전력망·ESS 신규사업",
-    "핵융합"
+    "전력망 신규사업",
+    "양자컴퓨팅 신규기사"
   ]
 }
