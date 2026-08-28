@@ -1,310 +1,357 @@
 {
-  "report_date": "2026-08-27",
+  "report_date": "2026-08-28",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-08-27T08:09:02+09:00",
+  "generated_at": "2026-08-28T08:59:02+09:00",
   "articles": [
     {
-      "id": "2026-08-27-asahi-kasei-us-separator",
+      "id": "2026-08-28-dkk-hafnium",
       "category": [
-        "이차전지",
-        "분리막",
-        "북미 공급망"
+        "첨단소재",
+        "Rare Metal",
+        "AI Semiconductor"
       ],
-      "title": "Asahi Kasei, 미국 LIB용 습식 분리막 코팅라인 완공",
-      "published_at": "2026-08-27T06:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news032.html",
+      "title": "第一稀元素化学工業, AI 반도체용 Hafnium 일본 국내 제조기술 확보",
+      "published_at": "2026-08-28T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/28/news035.html",
       "summary": [
-        "Asahi Kasei가 미국 North Carolina주 Charlotte에 LIB용 습식 분리막 Hipore 코팅라인을 완공했음. 기존 Celgard 공장 내에 신설했으며 2026년도 하반기부터 상업생산을 시작할 예정임.",
-        "북미 EV 시장의 단기 성장둔화에도 불구하고 2030년 EV·ESS 수요 확대를 전제로 현지 생산능력을 선제 확보하고 있음.",
-        "Canada에서 건설 중인 제막·코팅 일관공장과 결합해 북미 역내 Separator Supply Chain을 구축할 계획임."
+        "第一稀元素化学工業이 AI Data Center용 첨단반도체와 항공우주 분야에서 수요 확대가 예상되는 Hafnium의 일본 국내 제조·Sample 기술을 확보했음. Hafnium은 Zirconium 광석에 미량 포함돼 분리·정제가 어려운 전략 Rare Metal임.",
+        "베트남에서 제조한 Zirconium Intermediate에 포함된 Hafnium을 일본에서 Solvent Extraction으로 분리·정제하며 Emulsion Flow Technologies의 기술협력을 활용했음.",
+        "2026년 내 Semiconductor용 Sample 공급을 시작하고 Scale-up을 거쳐 2028년 일본 국내 양산을 목표로 하고 있음."
       ],
       "core_technology": [
-        "Wet-process Separator",
-        "Hipore",
-        "Separator Coating",
-        "LIB",
-        "EV Battery",
-        "ESS"
+        "Hafnium",
+        "Rare Metal",
+        "Solvent Extraction",
+        "Zirconium/Hafnium Separation",
+        "High-purity Material",
+        "Semiconductor Material"
       ],
-      "commercialization_stage": "생산설비 완공 후 상업생산 전환 단계",
+      "commercialization_stage": "기술확립 후 고객 Sample 및 Scale-up·양산 준비 단계",
       "related_entities": [
-        "Asahi Kasei",
-        "Asahi Kasei Battery Separator America",
-        "Celgard",
-        "Toyota Tsusho America",
-        "North American Battery Makers"
+        "Daiichi Kigenso Kagaku Kogyo",
+        "Emulsion Flow Technologies",
+        "Semiconductor Material Customers",
+        "Aerospace Industry"
       ],
       "posco_implications": [
-        "북미 Battery 소재 경쟁에서 Local Production과 Supply Stability의 중요성이 확대되고 있음.",
-        "POSCO도 양극재·전구체·리튬·Recycling을 북미 역내 Supply Chain 관점에서 통합적으로 관리할 필요가 있음.",
-        "EV 수요 단기둔화보다 2030년 공급망 Positioning을 전제로 한 선제투자 경쟁이 지속되고 있음."
+        "AI Infrastructure 소재 수요가 Rare Metal Upstream까지 확대되고 있음.",
+        "기존 Feedstock의 Minor Metal을 Advanced Separation으로 고부가화하는 사업모델을 Benchmark할 가치가 있음.",
+        "Emulsion Flow Technologies가 Battery Recycling뿐 아니라 Rare Metal Separation Platform으로 확장 가능한지 별도 추적할 필요가 있음."
       ],
       "priority": "High",
       "follow_up": [
-        "Charlotte 코팅 Capacity",
-        "Canada 공장 Capacity",
-        "주요 Cell Maker",
-        "Hipore Premium",
-        "중국산 Separator 대비 Cost",
-        "IRA 영향",
-        "북미 소재 Supply Chain"
+        "Hafnium Purity",
+        "제품 형태",
+        "Semiconductor Application",
+        "Sample 고객",
+        "2028년 Capacity",
+        "경쟁 Supplier",
+        "제조원가",
+        "EFT 협업구조"
       ]
     },
     {
-      "id": "2026-08-27-rlwrld-japan-physical-ai",
+      "id": "2026-08-27-quemix-mitsui-kinzoku",
       "category": [
-        "AI",
-        "Physical AI",
-        "로보틱스",
-        "일본 PoC",
-        "Startup"
+        "양자컴퓨팅",
+        "첨단소재",
+        "Strategic Investment"
       ],
-      "title": "RLWRLD, 일본 기업과 Physical AI 공동사업 확대",
-      "published_at": "2026-08-27T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news023.html",
+      "title": "Quemix–Mitsui Kinzoku, Quantum Material Simulation 실용화 위한 자본업무제휴",
+      "published_at": "2026-08-27T11:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news007.html",
       "summary": [
-        "RLWRLD가 5지 Robot Hand·Tactile/Force Sensing·독자 Foundation Model RLDX-1을 기반으로 일본시장 Physical AI 사업을 확대하고 있음.",
-        "Chiba 물류창고, 반도체 장비기업, 편의점, 자동차기업, 항공사 등과 공동 Project를 진행하고 있으며 추가 PoC도 검토 중임.",
-        "고객 요구가 Demo 성공 여부보다 Cycle Time·Throughput·Task Success Rate 등 실제 현장 Deployment와 경제성을 중심으로 변화하고 있음."
+        "Quemix와 Mitsui Kinzoku가 Quantum Computer 기반 Material Simulation의 실용화를 위한 자본업무제휴를 체결했음.",
+        "양사는 2026년 6월 Quantum Materials Calculation을 효율화하는 기술을 공동 개발했으며 Mitsui Kinzoku는 CVC Fund를 통해 Quemix의 제3자배정 증자를 인수했음.",
+        "Quantum Material Simulation이 정부 R&D 단계에서 대형 소재기업의 Strategic Capital 투입 및 산업 Application 사업화 단계로 이동하고 있음을 보여줌."
       ],
       "core_technology": [
-        "Physical AI",
-        "RLDX-1",
-        "Robot Foundation Model",
-        "Five-finger Hand",
-        "Tactile Sensing",
-        "Force Sensing",
-        "Cross-embodiment"
+        "Quantum Computing",
+        "Material Simulation",
+        "Quantum Chemistry",
+        "Quantum Algorithm",
+        "Materials Informatics"
       ],
-      "commercialization_stage": "다수 고객 PoC 및 현장 Deployment 준비 단계",
+      "commercialization_stage": "Strategic Investment 및 공동 R&D, Commercialization 준비 단계",
       "related_entities": [
-        "RLWRLD",
-        "NVIDIA",
-        "일본 물류기업",
-        "Semiconductor Equipment Maker",
-        "Convenience Store",
-        "Automotive Maker",
-        "Airline"
+        "Quemix",
+        "Mitsui Kinzoku",
+        "Mitsui Kinzoku CVC",
+        "NEDO",
+        "Tohoku University"
       ],
       "posco_implications": [
-        "Physical AI 경쟁력이 Robot Hardware보다 Foundation Model·Tactile Data·Cross-embodiment로 이동하고 있음.",
-        "POSCO Robot Architecture도 Task→Data→Model→Hand/Sensor→Robot Body 순으로 설계할 필요가 있음.",
-        "Tool Handling·검사·Sample Handling 등 Tactile Data가 필요한 제철소 작업에서 PoC 가능성이 있음."
+        "Quantum Hardware 확보보다 실제 포스코 Material Problem을 Quantum Application으로 정의하는 접근이 우선임.",
+        "Mitsui Kinzoku의 직접 자본참여는 Technology Validation 측면에서 의미 있는 Signal임.",
+        "배터리·합금·촉매·표면계면 등 실제 소재문제를 대상으로 공동연구 가능성을 검토할 가치가 있음."
       ],
       "priority": "High",
       "follow_up": [
-        "일본 PoC 고객",
-        "PoC Task",
-        "RLDX-1 Architecture",
-        "Training Data 규모",
-        "Tactile Sensor",
-        "Cycle Time",
-        "Task Success Rate",
-        "Funding",
-        "Valuation",
-        "POSCO PoC"
+        "투자금액 및 지분율",
+        "Quemix Valuation",
+        "적용 Material",
+        "DFT·HPC 대비 성능",
+        "Quloud 연계",
+        "산업 고객",
+        "POSCO 공동연구 및 투자 가능성"
       ]
     },
     {
-      "id": "2026-08-26-airoa-heiwajima-data-hub",
-      "category": [
-        "AI",
-        "Physical AI",
-        "로보틱스",
-        "Mobile Manipulator"
-      ],
-      "title": "AIRoA, 3,500㎡ Physical AI R&D 거점 구축",
-      "published_at": "2026-08-26T14:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news063.html",
-      "summary": [
-        "AIRoA가 Tokyo Heiwajima 약 3,500㎡ 거점에 연구개발과 법인기능을 통합하고 제조·가정·Retail 환경을 모사한 Real-world Robot Data 수집환경을 구축했음.",
-        "2025년도 Mobile Manipulator Teleoperation을 통해 약 8만시간의 Data를 확보하고 Foundation Model Training Pipeline을 구축했음.",
-        "2026년도부터 Dual-arm Mobile Manipulation 등으로 Robot 종류와 Data 수집방식을 확대하면서 일본 Physical AI 공동 R&D 기반을 강화하고 있음."
-      ],
-      "core_technology": [
-        "Physical AI",
-        "Robot Foundation Model",
-        "Mobile Manipulator",
-        "Dual-arm Manipulation",
-        "Teleoperation",
-        "Real-world Robot Data"
-      ],
-      "commercialization_stage": "산업 공동 R&D Infrastructure 구축 단계",
-      "related_entities": [
-        "AI Robot Association",
-        "Japan Manufacturing Companies",
-        "Robot Makers",
-        "AI Startups",
-        "Miraikan"
-      ],
-      "posco_implications": [
-        "Real-world Industrial Data가 Physical AI의 핵심 전략자산으로 부상하고 있음.",
-        "POSCO 제철소를 Robot 구매현장이 아니라 Industrial Physical AI Data Factory로 정의할 필요가 있음.",
-        "향후 PoC 계약에서 Data Ownership·Model Training Rights·Model IP 조건을 명확히 해야 함."
-      ],
-      "priority": "High",
-      "follow_up": [
-        "AIRoA 참여기업",
-        "8만시간 Data 구성",
-        "Data Format",
-        "Model 공개계획",
-        "Model IP",
-        "정부지원 규모",
-        "기업 PoC 참여방식",
-        "POSCO Japan 협력접점"
-      ]
-    },
-    {
-      "id": "2026-08-26-nedo-aluminum-upgrade-recycling",
+      "id": "2026-08-27-jfe-floating-wind",
       "category": [
         "GX",
-        "Recycling",
-        "첨단소재",
-        "Aluminum"
+        "전력인프라",
+        "Offshore Wind",
+        "Steel Structure"
       ],
-      "title": "NEDO, 알루미늄 Upcycling 대형 실증 착수",
-      "published_at": "2026-08-26T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news009.html",
+      "title": "JFE Engineering 등 5개사, 부유식 해상풍력 모듈형 부유체 개발",
+      "published_at": "2026-08-27T09:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news028.html",
       "summary": [
-        "YKK AP·UACJ·Kobe Steel·Honda R&D 등 8개 기관이 NEDO 지원을 받아 Aluminum Upgrade Recycling 실용화 개발을 시작했음.",
-        "불순물 제거·무해화·Vertical Twin-roll Casting·Process DX·User Validation·Standardization을 통합해 고품질 압연재로 재활용하는 것을 목표로 하고 있음.",
-        "2032년도 이후 양산화를 목표로 하며 2040년에는 연간 21.5만t 수준의 재생 Al 생산과 원유 약 16.87만kL 상당의 Energy 절감을 목표로 하고 있음."
+        "JFE Engineering 등 5개사가 NEDO Floating Offshore Wind 실증에 채택돼 Pin Joint와 Grout Joint를 활용한 Modular Semi-submersible Floater를 개발하고 있음.",
+        "각 Module을 다수 Steel Pipe·Steel Structure 업체가 제작 가능한 형태로 표준화하고 항만에서 조립해 대형 전용공장 의존도와 Cost를 낮출 계획임.",
+        "2040년 일본 Floating Offshore Wind 15GW 이상 Project 형성과 연계해 기존 철강·조선 Supply Chain을 양산체계로 활용하려는 전략임."
       ],
       "core_technology": [
-        "Aluminum Recycling",
-        "Upgrade Recycling",
-        "Impurity Removal",
-        "Vertical Twin-roll Casting",
-        "Process DX",
-        "AI",
-        "Closed-loop Recycling"
+        "Floating Offshore Wind",
+        "Semi-submersible Floater",
+        "Modular Steel Structure",
+        "Pin Joint",
+        "Grout Joint",
+        "Port Assembly"
       ],
-      "commercialization_stage": "실용화 개발 및 대규모 실증 단계",
+      "commercialization_stage": "NEDO R&D 및 양산형 구조 실증 단계",
       "related_entities": [
-        "YKK AP",
-        "UACJ",
-        "Kobe Steel",
-        "Asahi Seiren",
-        "AISing",
-        "Honda R&D",
-        "Toyo Seikan",
-        "Japan Aluminium Association",
-        "NEDO"
+        "JFE Engineering",
+        "Shimizu Corporation",
+        "TEPCO Renewable Power",
+        "Eurus Energy Holdings",
+        "ClassNK",
+        "NEDO",
+        "DNV"
       ],
       "posco_implications": [
-        "Metal Recycling 경쟁이 회수량보다 Virgin Material을 대체할 수 있는 품질 확보로 이동하고 있음.",
-        "철강에서도 Cu·Sn 등 Tramp Element를 관리해 고급강으로 재투입하는 Upgrade Recycling이 중요해질 가능성이 있음.",
-        "Material Maker·Process Technology·End User·Standardization을 포함한 Consortium형 사업모델을 Benchmark할 필요가 있음."
+        "Floating Wind 확대는 후판·강관·용접소재의 구조적 수요기회가 될 수 있음.",
+        "일본 Local Supply Chain 강화가 한국산 소재의 진입장벽으로 작용할 가능성도 있음.",
+        "Developer부터 Steel Supplier·Fabricator·Port까지 전체 Supply Chain Map 구축이 필요함."
       ],
       "priority": "High",
       "follow_up": [
-        "불순물 대상원소",
-        "Purification Yield",
-        "Energy Consumption",
-        "Virgin Al 대비 Cost",
-        "Honda 적용부품",
-        "Kobe Steel 역할",
-        "UACJ 역할",
-        "Recycling Alloy 규격",
-        "철강 Scrap 비교"
+        "Floater Steel 사용량",
+        "Steel Grade",
+        "후판 두께",
+        "일본산 소재 Requirement",
+        "15GW 기준 Steel Demand",
+        "Port Assembly Capacity",
+        "POSCO 일본향 Offshore Wind 전략"
       ]
     },
     {
-      "id": "2026-08-26-iter-tf-coil-10ka",
+      "id": "2026-08-28-ntt-autonomous-deposition",
       "category": [
-        "핵융합",
+        "AI",
+        "산업AI",
+        "Materials Informatics",
         "첨단소재",
-        "Superconductor"
+        "자동화"
       ],
-      "title": "QST–Toshiba, ITER 세계 최대급 TF Coil 1만A 통전 성공",
-      "published_at": "2026-08-26T08:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/26/news025.html",
+      "title": "NTT, AI·Robot 기반 '해석 가능한 자율성막' 실증",
+      "published_at": "2026-08-28T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/28/news021.html",
       "summary": [
-        "QST와 Toshiba가 제작한 ITER용 세계 최대급 Toroidal Field Coil을 -269℃ 극저온 환경에서 최대 10,000A까지 안정적으로 통전하는 데 성공했음.",
-        "Nb3Sn 초전도 도체를 이용한 대형 Coil의 Joint Resistance·Cryogen Flow·Leakage 등 실제 운전조건을 검증해 모두 설계범위 내임을 확인했음.",
-        "이번 성과는 ITER Superconducting Coil System의 Commissioning과 운전절차 수립, Risk Reduction을 위한 Full-scale Engineering Validation으로 평가됨."
+        "NTT가 자동 Sputtering·자동 Optical Measurement·Bayesian Optimization을 연결해 Thin-film Deposition 조건을 스스로 탐색하는 Autonomous Lab을 구현했음.",
+        "기존 연구자 중심 실험보다 Deposition/Evaluation Cycle을 약 3배 고속화하고 Random Forest로 각 Process Parameter의 영향과 상호작용을 분석했음.",
+        "AI가 찾은 최적조건을 사람이 이해하고 다른 소재·장비에도 활용할 수 있는 Process Rule로 변환해 기존 Autonomous Experiment의 Black-box 문제를 보완했음."
       ],
       "core_technology": [
-        "Nuclear Fusion",
-        "ITER",
-        "Toroidal Field Coil",
-        "Nb3Sn Superconductor",
-        "Superconducting Magnet",
-        "Cryogenic Engineering"
+        "AI for Science",
+        "Autonomous Laboratory",
+        "Thin-film Deposition",
+        "Sputtering",
+        "Bayesian Optimization",
+        "Random Forest",
+        "Explainable AI",
+        "Materials Informatics"
       ],
-      "commercialization_stage": "Full-scale Engineering Validation 및 ITER Commissioning 준비 단계",
+      "commercialization_stage": "R&D Validation 및 Autonomous Lab 기술실증 단계",
       "related_entities": [
-        "QST",
-        "Toshiba",
-        "ITER Organization"
+        "NTT",
+        "Semiconductor R&D",
+        "Advanced Material R&D"
       ],
       "posco_implications": [
-        "Fusion 산업이 Component R&D에서 Full-scale System Validation 단계로 이동하고 있음.",
-        "POSCO 관점에서는 Cryogenic Structural Steel·Stainless Steel·High-strength Plate·Special Alloy 등 구조소재 Supply Chain을 추적할 필요가 있음.",
-        "ITER 공급·Qualification 경험이 향후 DEMO Reactor 및 민간 Fusion Project의 경쟁력으로 연결될 가능성이 있음."
+        "소재 R&D의 다음 단계는 MI Software보다 실험장비를 연결한 Closed-loop R&D임.",
+        "양극재·Si 음극·Coating·촉매·합금·열처리 등 포스코 소재개발에 확장 가능성이 있음.",
+        "실험자동화와 MI를 별도 Project가 아니라 하나의 Architecture로 설계할 필요가 있음."
+      ],
+      "priority": "High",
+      "follow_up": [
+        "절대 Cycle Time",
+        "Experiment 횟수",
+        "적용 Material",
+        "Rule Extraction Accuracy",
+        "Scale-up 적용성",
+        "상용화 계획",
+        "POSCO R&D 적용 가능성"
+      ]
+    },
+    {
+      "id": "2026-08-27-hitachi-enewill-storing-re",
+      "category": [
+        "GX",
+        "ESS",
+        "전력인프라",
+        "Renewable Energy"
+      ],
+      "title": "Hitachi–Enewill, ESS 저장 재생전력 Green Value 인증·판매사업 개시",
+      "published_at": "2026-08-27T10:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/27/news043.html",
+      "summary": [
+        "Hitachi와 Enewill이 Grid-scale ESS에 저장된 Renewable Energy의 Green Value를 인증하고 이를 실제 전력판매에 활용하는 사업협력을 시작했음.",
+        "Hokkaido Nayoro의 1,999kW·8,128kWh ESS에서 Solar Power를 저장 후 Time-shift 공급하고 Storing RE를 통해 30분 단위의 수급·충방전 Data를 추적하고 있음.",
+        "향후 AI Demand Forecast를 결합해 환경가치와 전력판매 Economics를 함께 최적화하는 HMAX Industry Solution으로 확대할 계획임."
+      ],
+      "core_technology": [
+        "Grid-scale ESS",
+        "Renewable Energy",
+        "Green Value Certification",
+        "Energy Traceability",
+        "Time-shift Power",
+        "AI Forecasting"
+      ],
+      "commercialization_stage": "실제 ESS 운영 및 Green Power 판매사업 단계",
+      "related_entities": [
+        "Hitachi",
+        "Enewill",
+        "Powered by RE Certification Committee",
+        "Igarashi Holdings",
+        "Nayoro No.1 Battery Storage"
+      ],
+      "posco_implications": [
+        "ESS Value Pool이 Hardware와 Arbitrage에서 Green Certification·Traceability·AI Optimization으로 확대되고 있음.",
+        "Data Center 등의 24/7 Carbon-free Energy 수요와 결합할 가능성이 있음.",
+        "POSCO 전력인프라 전략에서도 Digital Energy Service까지 사업범위를 확대해 볼 필요가 있음."
       ],
       "priority": "Medium",
       "follow_up": [
-        "TF Coil 구조재",
-        "Nb3Sn Supply Chain",
-        "Toshiba Scope",
-        "Cryogenic Material Spec",
-        "ITER 이후 DEMO Roadmap",
-        "민간 Fusion 기술전이",
-        "POSCO 적용 가능성"
+        "Revenue Model",
+        "Green Premium",
+        "인증 Standard",
+        "24/7 CFE 대응",
+        "AI Forecast",
+        "Data Center 고객",
+        "POSCO 연계성"
+      ]
+    },
+    {
+      "id": "2026-08-28-hitachi-ai-orchestration",
+      "category": [
+        "AI",
+        "산업AI",
+        "AI Agent",
+        "Supply Chain"
+      ],
+      "title": "Hitachi, Supply Chain AI Agent Orchestration 기술 개발",
+      "published_at": "2026-08-28T07:45:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/28/news060.html",
+      "summary": [
+        "Hitachi가 영업·생산 등 부문별 AI Agent를 연결해 주문변경과 납기조정 시 Supply Chain 전체 Schedule을 자동 재조정하는 AI Orchestration 기술을 개발했음.",
+        "일반 LLM 추론만 사용하는 대신 MLCP 기반 Mathematical Optimization과 Machine Learning을 결합해 설비·인력·재고·Energy Constraint를 실제 계획에 반영하고 있음.",
+        "ERP·MES·AI Agent·Physical Equipment를 연결하고 Human-in-the-loop를 적용해 Cyber 공간의 판단을 실제 제조현장 실행까지 연결하는 HMAX Industry Solution으로 2027년 제공할 예정임."
+      ],
+      "core_technology": [
+        "AI Agent",
+        "AI Orchestration",
+        "Supply Chain Optimization",
+        "MLCP",
+        "Mathematical Optimization",
+        "ERP",
+        "MES",
+        "Physical AI"
+      ],
+      "commercialization_stage": "기술개발 완료 후 2027년 상용 Solution 제공 준비 단계",
+      "related_entities": [
+        "Hitachi",
+        "Manufacturing Companies",
+        "Distribution Companies",
+        "ERP/MES Users",
+        "HMAX Industry Customers"
+      ],
+      "posco_implications": [
+        "POSCO Manufacturing AX에서도 순수 LLM Agent보다 LLM+Optimization+ERP/MES Hybrid Architecture가 현실적일 가능성이 높음.",
+        "수주·생산계획·원료·재고·물류·고객납기 간 조정업무에 적용 가능성이 있음.",
+        "투자대상보다 Manufacturing AX Architecture Benchmark 성격이 강함."
+      ],
+      "priority": "Medium",
+      "follow_up": [
+        "MLCP 적용고객",
+        "Optimization Scale",
+        "KPI Conflict 처리",
+        "Human Approval",
+        "ERP·MES Connector",
+        "Physical AI 연결범위",
+        "POSCO S&OP 적용 가능성"
       ]
     }
   ],
   "key_insights": [
-    "북미 Battery 소재 경쟁이 Material Performance와 Cost에서 Local Production·Supply Stability까지 확대되고 있음.",
-    "Physical AI의 핵심 경쟁자산이 Robot Hardware보다 Real-world Data·Foundation Model·Tactile Data로 이동하고 있음.",
-    "Robot 고객 평가기준이 Demo 성공 여부에서 Cycle Time·Task Success Rate·Deployment Time·ROI 등 실제 생산 KPI로 이동하고 있음.",
-    "Circular Economy 경쟁에서 Recycling Rate보다 Virgin Material을 실질적으로 대체할 수 있는 High-grade Recycling 품질이 중요해지고 있음.",
-    "ITER TF Coil 10kA 통전 성공으로 Fusion 산업이 Component R&D에서 Full-scale Engineering Validation 단계로 이동하고 있음."
+    "AI Infrastructure 소재 수요가 고순도 Chemical을 넘어 Hafnium 등 전략 Rare Metal의 Local Production까지 확대되고 있음.",
+    "Quantum Materials가 정부 R&D 단계에서 대형 소재기업의 Strategic Capital 투입 단계로 이동하고 있음.",
+    "AI for Materials가 후보추천에서 Experiment·Measurement·Learning까지 연결하는 Closed-loop Autonomous Lab으로 진화하고 있음.",
+    "Floating Offshore Wind에서 Floater의 표준화·양산·Port Assembly Cost가 핵심 경쟁요소로 부상하고 있음.",
+    "ESS의 가치가 전력 Arbitrage에서 Green Value Certification·Traceability·AI Optimization까지 확대되고 있음.",
+    "Manufacturing AI Agent가 ERP·MES·Optimization·Physical AI를 연결하는 실제 실행 Layer로 이동하고 있음."
   ],
   "priority_ranking": [
     {
       "rank": 1,
-      "article_id": "2026-08-27-asahi-kasei-us-separator",
+      "article_id": "2026-08-28-dkk-hafnium",
       "priority": "High"
     },
     {
       "rank": 2,
-      "article_id": "2026-08-27-rlwrld-japan-physical-ai",
+      "article_id": "2026-08-27-quemix-mitsui-kinzoku",
       "priority": "High"
     },
     {
       "rank": 3,
-      "article_id": "2026-08-26-airoa-heiwajima-data-hub",
+      "article_id": "2026-08-27-jfe-floating-wind",
       "priority": "High"
     },
     {
       "rank": 4,
-      "article_id": "2026-08-26-nedo-aluminum-upgrade-recycling",
+      "article_id": "2026-08-28-ntt-autonomous-deposition",
       "priority": "High"
     },
     {
       "rank": 5,
-      "article_id": "2026-08-26-iter-tf-coil-10ka",
+      "article_id": "2026-08-27-hitachi-enewill-storing-re",
+      "priority": "Medium"
+    },
+    {
+      "rank": 6,
+      "article_id": "2026-08-28-hitachi-ai-orchestration",
       "priority": "Medium"
     }
   ],
   "no_new_articles_categories": [
-    "전고체전지",
-    "LFP·LMR·NCM 신규소재",
-    "양극재·음극재 신규소재",
-    "전해질",
-    "Battery Recycling 신규기사",
-    "항공우주·방산소재",
+    "이차전지·축전지 신규기사",
+    "전고체·LFP·LMR·NCM",
+    "양극재·음극재",
+    "전해질·분리막",
+    "배터리 리사이클",
+    "항공우주·방산 전용 신규기사",
+    "휴머노이드 신규사업",
+    "모바일 매니퓰레이터 신규사업",
+    "머신비전 신규사업",
+    "CCUS",
+    "수소·암모니아",
     "SAF·e-SAF",
     "e-Fuel",
-    "수소·암모니아",
-    "CCUS",
     "페로브스카이트",
-    "전력망 신규사업",
-    "양자컴퓨팅 신규기사"
+    "핵융합 신규기사"
   ]
 }
