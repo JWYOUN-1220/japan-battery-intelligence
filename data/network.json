@@ -1,275 +1,174 @@
 {
-  "report_date": "2026-08-31",
+  "report_date": "2026-09-01",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-08-31T08:03:47+09:00",
-  "weekend_monday_window": {
-    "start": "2026-08-29T00:00:00+09:00",
-    "end": "2026-08-31T08:03:47+09:00",
-    "saturday": "신규 유효기사 없음",
-    "sunday": "신규 유효기사 없음",
-    "monday": "신규 유효기사 4건"
-  },
+  "generated_at": "2026-09-01T08:55:04+09:00",
   "articles": [
     {
-      "id": "2026-08-31-mitsubishi-chemical-negative-expansion-filler",
-      "category": [
-        "첨단소재",
-        "AI Infrastructure",
-        "Semiconductor",
-        "Advanced Packaging"
-      ],
-      "title": "Mitsubishi Chemical, AI/HPC 반도체 패키지용 '음열팽창 필러' 사업화",
-      "published_at": "2026-08-31T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news013.html",
+      "id": "2026-08-31-zeon-swcnt-capacity",
+      "category": ["이차전지", "음극재 연계", "SWCNT", "첨단소재"],
+      "title": "日本ゼオン, LIB용 SWCNT 신규 Plant 착공 - 생산능력 현행 대비 수십 배 확대",
+      "published_at": "2026-08-31T08:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news034.html",
       "summary": [
-        "Mitsubishi Chemical이 AI Server와 HPC용 첨단반도체 Package의 열팽창과 Warpage를 억제하는 음열팽창 Filler M-Filleris NTE를 개발하고 사업화를 결정했음. 2026년도 Pilot 제품 판매와 고객 인증을 거쳐 2027년도 하반기 양산판매를 시작할 예정임.",
-        "기존 Silica Filler 고충전 방식의 한계를 보완하기 위해 온도 상승 시 자체 수축하는 소재를 적용했음. Room Temperature~400℃에서 음열팽창 특성을 유지하고 구형 입자, 낮은 흡수성, Low-alpha 특성 등을 확보했음.",
-        "Encapsulation·Underfill·Build-up Film에 적용 가능하며 기존 Epoxy Resin과 혼합한 Masterbatch 형태도 공급할 예정임. 향후 방열·전기특성 등 다른 Functional Filler로 Series를 확대할 계획임."
+        "日本ゼオン이 徳山工場에서 SWCNT 신규 Plant 건설에 착수했음. 2028년 본격가동을 목표로 하며 완공 후 생산능력을 현재 대비 수십 배 확대할 계획임.",
+        "주요 성장수요로 LIB를 명확히 지목하고 있어 SWCNT가 연구·Niche 소재에서 Battery 양산용 Conductive Additive로 Scale-up되는 단계로 판단됨.",
+        "해당 사업은 METI의 축전지 공급확보계획에 인정돼 일본 정부의 Battery 소재 공급망 강화전략과도 연결돼 있음."
       ],
-      "core_technology": [
-        "Negative Thermal Expansion Filler",
-        "Advanced Semiconductor Packaging",
-        "Chiplet",
-        "3D Stacking",
-        "CTE Control",
-        "Package Warpage",
-        "Underfill",
-        "Encapsulation Material",
-        "Low-alpha Material"
-      ],
-      "commercialization_stage": "Pilot 판매 후 고객 Qualification을 거쳐 2027년도 하반기 양산 전환 단계",
-      "related_entities": [
-        "Mitsubishi Chemical",
-        "Semiconductor Package Material Makers",
-        "Underfill Material Makers",
-        "Encapsulation Material Makers",
-        "AI/HPC Semiconductor Supply Chain"
-      ],
+      "core_technology": ["SWCNT", "Conductive Additive", "Silicon Anode", "Conductive Network", "Super Growth Method"],
+      "commercialization_stage": "대규모 Capacity Expansion 및 2028년 본격 양산 준비 단계",
+      "related_entities": ["日本ゼオン", "METI", "LIB Cell Makers", "Battery Material Makers"],
       "posco_implications": [
-        "AI Infrastructure 소재 Map을 Front-end 중심에서 Package·Substrate·Thermal·CTE Control까지 확대할 필요가 있음.",
-        "Advanced Packaging에서 소재의 열팽창·방열·절연·Low-alpha·흡수 특성이 Device 신뢰성의 핵심요소로 확대되고 있음.",
-        "기존 Epoxy 사업과 신규 Functional Filler를 Masterbatch Solution으로 묶는 사업모델은 첨단소재 Value-up 사례로 Benchmark 가치가 있음."
+        "Si계 음극 경쟁력을 Si 소재 단품보다 SWCNT·Binder·Pre-lithiation을 포함한 Electrode System 관점에서 평가할 필요가 있음.",
+        "Si 함량 증가 시 전극 팽창·수축 환경에서 Conductive Network 유지가 중요해 SWCNT의 전략적 가치가 높아질 가능성이 있음.",
+        "일본 SWCNT Player를 Capacity·Quality·Cost·Dispersion·Battery Qualification 기준으로 비교할 필요가 있음."
       ],
       "priority": "High",
-      "follow_up": [
-        "M-Filleris NTE 조성",
-        "Negative CTE 수치",
-        "Warpage 감소효과",
-        "Thermal Conductivity",
-        "고객 Qualification 기간",
-        "주요 Packaging 고객",
-        "2027년 Capacity",
-        "생산거점",
-        "경쟁 Negative Expansion Material",
-        "HBM·Advanced Package 적용 가능성"
-      ]
+      "follow_up": ["현재·증설 Capacity", "Battery Grade", "Diameter·Length·Purity", "Si Anode 고객", "첨가량", "Cost", "Dispersion", "Battery Qualification", "POSCO Future M 연계"]
     },
     {
-      "id": "2026-08-31-silicon-studio-defense-space-sim2real",
-      "category": [
-        "항공우주·방산",
-        "AI",
-        "Digital Twin",
-        "Robotics"
-      ],
-      "title": "Silicon Studio, 방산·우주용 Digital Twin / Sim2Real 사업 전담조직 신설",
-      "published_at": "2026-08-31T07:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news021.html",
+      "id": "2026-09-01-sumitomo-chemical-inp-epi",
+      "category": ["AI Infrastructure", "첨단소재", "Photonics", "Semiconductor"],
+      "title": "Sumitomo Chemical, AI Data Center용 InP Epi-wafer 일본 양산 개시",
+      "published_at": "2026-09-01T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/01/news036.html",
       "summary": [
-        "Silicon Studio가 2026년 9월 1일부로 官公庁事業推進室을 신설해 방산·방재·사회인프라·에너지·해양·우주 분야 사업개발을 본격 확대할 예정임. 게임 분야에서 축적한 Real-time 3D CG 기술을 Digital Twin·Simulation·AI 개발환경으로 전환하고 있음.",
-        "Point Cloud·Photogrammetry·3D Gaussian Splatting으로 현실환경을 Digital Twin화하고 Game Engine과 ROS 2를 연결해 무인기·Robot의 AI Training과 Sim2Real 검증을 지원하는 구조임.",
-        "방산 Digital Twin 관련 복수 수탁개발 실적을 이미 확보하고 있으며 AEROSALVA의 AI·XR·자율운용·Multi-sensor·Satellite Communication 기술과 결합한 신규 Solution도 추진하고 있음."
+        "Sumitomo Chemical이 茨城工場에서 4-inch InP Epi-wafer 양산체계를 확립하고 판매를 시작했음. InP는 AI Data Center용 고속·저전력 Optical Semiconductor의 핵심 소재임.",
+        "기존 GaAs·GaN Epi 양산에서 축적한 조성제어·박막적층·결정성장 Process 기술을 활용해 결정 균질성과 막두께 균일성, 양산 재현성을 확보했음.",
+        "GaN·GaAs에 InP를 추가해 Compound Semiconductor Portfolio를 확대하며 2030년대 중반 InP 제품군 매출 100억엔 규모를 목표로 하고 있음."
       ],
-      "core_technology": [
-        "Defense Technology",
-        "Space Technology",
-        "Digital Twin",
-        "Sim2Real",
-        "Real-time 3D CG",
-        "3D Gaussian Splatting",
-        "Photogrammetry",
-        "Point Cloud",
-        "ROS 2",
-        "Autonomous Robot",
-        "Unmanned System"
-      ],
-      "commercialization_stage": "기존 방산 수탁개발 실적을 기반으로 전담조직을 신설하고 사업을 확대하는 단계",
-      "related_entities": [
-        "Silicon Studio",
-        "AEROSALVA",
-        "Japanese Government Agencies",
-        "Defense Organizations",
-        "Research Institutions",
-        "Space and Maritime Industry"
-      ],
+      "core_technology": ["InP Epi-wafer", "Compound Semiconductor", "Epitaxial Growth", "Optical Semiconductor", "Optical Interconnect", "Photonics"],
+      "commercialization_stage": "양산체계 구축 및 Commercial Sales 단계",
+      "related_entities": ["Sumitomo Chemical", "Optical Semiconductor Makers", "Optical Transceiver Makers", "AI Data Center Supply Chain"],
       "posco_implications": [
-        "방산·우주의 Autonomous System과 제조 Physical AI가 Digital Twin→Simulation→AI Training→Real System이라는 동일 Development Architecture로 수렴하고 있음.",
-        "항공우주·방산소재 사업도 소재 단품이 아니라 Platform·Vehicle·Digital Twin·Simulation까지 포함한 Ecosystem으로 볼 필요가 있음.",
-        "제철소 환경을 Digital Twin화해 Robot Training과 Safety Validation에 활용하는 산업용 Sim2Real 방식에도 적용 가능성이 있음."
+        "AI Infrastructure Value Chain이 Power·Cooling·Optical Fiber에서 Optical Semiconductor Upstream까지 확대되고 있음.",
+        "Optical I/O와 CPO 확대 시 InP 수요가 구조적으로 성장할 가능성이 있음.",
+        "AI Infrastructure를 Power·Cooling·Network·Photonics·Semiconductor·Packaging의 통합 Stack으로 관리할 필요가 있음."
       ],
       "priority": "High",
-      "follow_up": [
-        "방산 수탁개발 Project",
-        "정부기관 고객",
-        "전담조직 인력",
-        "AEROSALVA 협업 Scope",
-        "Sim2Real Engine",
-        "NVIDIA Omniverse 연계",
-        "ROS 2 적용사례",
-        "방산·우주 Revenue Target",
-        "POSCO Robot Digital Twin PoC 가능성"
-      ]
+      "follow_up": ["Capacity", "6-inch Roadmap", "주요 고객", "InP Substrate 조달", "Epi 구조", "CPO 적용", "경쟁 Epi-house", "100억엔 목표 Volume"]
     },
     {
-      "id": "2026-08-31-panasonic-ai-robotics-rd",
-      "category": [
-        "AI",
-        "Robotics",
-        "Physical AI",
-        "Corporate Strategy"
-      ],
-      "title": "Panasonic HD, 'AI·Robotics R&D 본부' 신설",
-      "published_at": "2026-08-31T06:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news057.html",
+      "id": "2026-08-31-sb-frameworks-autostore",
+      "category": ["자동화", "로보틱스", "Warehouse Robotics", "누락 보완"],
+      "title": "SB Frameworks, Robot 160대 AutoStore 기반 대규모 자동창고 운영",
+      "published_at": "2026-08-31T07:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news058.html",
       "summary": [
-        "Panasonic Holdings가 2026년 10월 1일부로 AI·Robotics R&D 본부를 신설할 예정임. AI·Robotics·Cloud·Data 관련 전문인력·기술·개발기능을 하나의 조직으로 집약해 Group-level 기술기반과 신규사업 창출력을 강화하고 있음.",
-        "기존 DX·CPS 본부는 사업개발본부로 재편해 Energy 효율화와 노동력 부족 등의 사회과제를 중심으로 사업기회의 탐색·검증·사업화·수익화·Exit까지 일관 추진하게 됨.",
-        "기술개발 기능과 사업개발 기능을 분리하면서 AI·Robotics를 Group Core Capability로 통합한 것이 핵심이며 Physical AI를 개별 Product가 아닌 공통 Technology Platform으로 육성하려는 조직전략으로 판단됨."
+        "SB Frameworks가 Kawasaki 사업소에서 Robot 160대, Bin 6만5000개, Workstation 28개 규모 AutoStore를 운영하고 있음.",
+        "Grid 기반 Robot이 상품 Bin을 Picking Station으로 자동 운반하는 Goods-to-Person 방식으로 고밀도 보관과 물류인력 절감을 동시에 추진하고 있음.",
+        "Physical AI 장기기대와 별개로 Task-specific Logistics Robotics가 이미 대규모 Commercial Operation 단계에 진입했음을 보여주는 사례임."
       ],
-      "core_technology": [
-        "Artificial Intelligence",
-        "Robotics",
-        "Physical AI",
-        "Cloud",
-        "Data Platform",
-        "Cyber Physical System",
-        "Group R&D Platform"
-      ],
-      "commercialization_stage": "전사 조직재편 및 AI·Robotics 신규사업 창출 기반 구축 단계",
-      "related_entities": [
-        "Panasonic Holdings",
-        "Panasonic Connect",
-        "Panasonic Group Operating Companies",
-        "Group CAIO Organization"
-      ],
+      "core_technology": ["Warehouse Robotics", "AutoStore", "Goods-to-Person", "Automated Storage", "Fleet Robotics", "Logistics Automation"],
+      "commercialization_stage": "대규모 상용운영 단계",
+      "related_entities": ["SB Frameworks", "AutoStore", "SoftBank Group", "ESR Higashi-Ogishima Distribution Center"],
       "posco_implications": [
-        "Physical AI를 개별 Automation Project로 관리하면 Data·Model·Simulation·Safety 기술이 조직별로 분절될 가능성이 있음.",
-        "Foundation Model·Robot Data·Simulation·Safety·Edge Infrastructure·PoC Standard를 Group-level 공통화하는 접근을 검토할 가치가 있음.",
-        "다만 현재는 조직개편 단계이므로 향후 Budget·인력·Platform·Startup Investment·Deployment 실적을 통해 실제 경쟁력을 확인해야 함."
+        "단기 Robot ROI에서는 Humanoid보다 Task-specific Automation이 현실적인 경우가 많음.",
+        "POSCO Robot 전략을 단기 AMR·전용자동화, 중기 Mobile Manipulator, 장기 Humanoid로 구분할 필요가 있음.",
+        "MRO·부품·Sample·소모품 물류는 Warehouse Automation 적용성이 높을 수 있음."
       ],
       "priority": "Medium",
-      "follow_up": [
-        "AI·Robotics R&D 본부 인력",
-        "R&D Budget",
-        "기존 Robot 조직 통합범위",
-        "Physical AI Roadmap",
-        "Foundation Model 전략",
-        "Panasonic Connect 역할",
-        "Startup Investment",
-        "Group Data Architecture",
-        "신규사업 KPI"
-      ]
+      "follow_up": ["인력절감", "Throughput", "CAPEX", "Payback Period", "Space Efficiency", "가동률", "WMS 연계", "POSCO MRO Warehouse 적용"]
     },
     {
-      "id": "2026-08-31-yokohama-rubber-rag-ai-agent",
-      "category": [
-        "AI",
-        "산업AI",
-        "Material R&D",
-        "Knowledge Management"
-      ],
-      "title": "Yokohama Rubber, RAG+AI Agent 기반 기술지식 시스템 본격 운영",
-      "published_at": "2026-08-31T06:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2608/31/news041.html",
+      "id": "2026-09-01-toray-nf-pfas",
+      "category": ["GX", "첨단소재", "Water", "PFAS"],
+      "title": "Toray, PFAS 제거·고내약품성 NF Membrane 글로벌 판매 개시",
+      "published_at": "2026-09-01T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/01/news040.html",
       "summary": [
-        "Yokohama Rubber가 사내 규정·기술보고서·과거사례 등 기술문서를 대상으로 한 RAG 기반 생성AI 시스템을 독자 개발하고 2026년 8월부터 본격 운영하고 있음.",
-        "AI Agent가 기술자의 질문 의도를 파악해 Search Planning→Information Retrieval→Result Evaluation→Re-search를 자율적으로 반복하며 답변과 함께 근거 원문 Link를 표시해 Engineer가 직접 검증할 수 있도록 하고 있음.",
-        "기존 Rubber Compound Property Prediction·Tire Performance Prediction·배합생성·금형설계 지원 AI에 이어 Unstructured Technical Knowledge까지 AI 활용범위를 확대하면서 Tire·Material R&D Digitalization을 고도화하고 있음."
+        "Toray와 Toray Advanced Materials Korea가 PFAS 제거와 산업폐수 재활용용 NF Membrane 2종의 글로벌 판매를 시작했음.",
+        "NE8040-XDM은 표준품 대비 최대 5배의 내약품성과 약 10% 향상된 2가 Ion 분리성능을 확보했으며 NE8040-90F는 PFAS 제거성능과 높은 Water Flux를 함께 구현했음.",
+        "Water Scarcity와 PFAS 규제 강화에 따라 산업 Water Reuse·Resource Recovery에서 고기능 Separation Membrane 시장이 확대될 가능성이 있음."
       ],
-      "core_technology": [
-        "RAG",
-        "Generative AI",
-        "AI Agent",
-        "Knowledge Management",
-        "Technical Document Search",
-        "Human-in-the-loop",
-        "Material R&D",
-        "Domain Knowledge"
-      ],
-      "commercialization_stage": "사내 상용운영 및 Tire·Material R&D Process 적용 단계",
-      "related_entities": [
-        "Yokohama Rubber",
-        "Tire R&D Organization",
-        "Material Development Engineers",
-        "Internal Technical Knowledge Base"
-      ],
+      "core_technology": ["Nano-filtration Membrane", "PFAS Removal", "Industrial Wastewater", "Water Reuse", "Resource Recovery", "Zero Liquid Discharge"],
+      "commercialization_stage": "글로벌 Commercial Sales 단계",
+      "related_entities": ["Toray", "Toray Advanced Materials Korea", "Semiconductor Fabs", "Chemical Plants", "Industrial Water Treatment"],
       "posco_implications": [
-        "연구보고서·고객 Feedback·Sample 평가·공정 Trouble·실패실험 등 비정형 R&D Knowledge의 재활용 Benchmark 가치가 높음.",
-        "소재 R&D에서는 수치 Data보다 과거 의사결정 배경과 실패 Context가 중요하므로 RAG+Agent의 활용효과가 클 수 있음.",
-        "NTT Autonomous Lab과 연결할 경우 Past Knowledge→Experiment Planning→Autonomous Experiment→New Knowledge의 Closed-loop R&D Architecture로 확장 가능함."
+        "Semiconductor·Battery·Data Center 투자에서는 전력뿐 아니라 Water Infrastructure가 핵심 입지조건이 될 가능성이 있음.",
+        "제철소 Process Water 재이용과 폐수처리 Energy 절감 관점에서도 기술 추적 가치가 있음.",
+        "PFAS 규제 강화가 고기능 Membrane·Adsorbent·Treatment System 시장을 확대할 가능성이 있음."
       ],
       "priority": "Medium",
-      "follow_up": [
-        "사용 LLM",
-        "RAG Architecture",
-        "Vector DB",
-        "Document 규모",
-        "Search Accuracy",
-        "Hallucination 관리",
-        "Confidential Data Security",
-        "User Adoption",
-        "R&D Cycle 단축효과",
-        "POSCO Future M R&D Knowledge Agent 적용 가능성"
-      ]
+      "follow_up": ["PFAS 제거율", "대상 PFAS", "Flux", "Operating Pressure", "RO 대비 Energy", "Membrane Life", "Semiconductor 적용", "Battery Plant 적용"]
+    },
+    {
+      "id": "2026-09-01-wilo-japan-data-center",
+      "category": ["AI Infrastructure", "전력인프라", "Cooling", "Water"],
+      "title": "Wilo, 일본법인 신설해 AI Data Center Cooling 시장 본격 진입",
+      "published_at": "2026-09-01T06:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/01/news017.html",
+      "summary": [
+        "독일 Pump Maker Wilo가 2026년 8월 Wilo Japan을 설립하고 AI Data Center와 Semiconductor Plant를 중심으로 일본시장에 본격 진입했음.",
+        "급배수·HVAC·Cooling Pump System을 보유하고 있으며 한국 등에서 Data Center 적용실적을 확보하고 있음. Microsoft 한국 Data Center에도 적용실적이 있다고 설명하고 있음.",
+        "Pioneering WATER AI 전략을 통해 Pump에 AI 기반 자율최적화 기능을 적용하고 AI Infrastructure용 Intelligent Water Solution 사업을 확대하고 있음."
+      ],
+      "core_technology": ["AI Data Center", "Pump System", "HVAC", "Cooling Infrastructure", "Water Management", "High-efficiency Motor", "AI Optimization"],
+      "commercialization_stage": "일본시장 신규진입 및 판매·Partner Network 구축 단계",
+      "related_entities": ["Wilo", "Wilo Japan", "Wilo Korea", "Microsoft", "Data Center Operators", "Semiconductor Fabs"],
+      "posco_implications": [
+        "Data Center Cooling은 Chiller·CDU·Pump·Heat Exchanger·Pipe·Control 전체 System Efficiency로 평가해야 함.",
+        "AI Rack Power Density 상승에 따라 Cooling Water Flow와 Pump Energy 최적화의 중요성이 커질 가능성이 있음.",
+        "POSCO의 Data Center 전략도 Power·Cooling·Water·Network·Structure를 하나의 Infrastructure Domain으로 관리할 필요가 있음."
+      ],
+      "priority": "Medium",
+      "follow_up": ["일본 고객 Pipeline", "Microsoft 적용범위", "Pump Efficiency", "Liquid Cooling 대응", "EPC Partner", "경쟁사", "일본 현지생산", "Data Center 매출목표"]
     }
   ],
   "key_insights": [
-    "AI Semiconductor 소재 경쟁이 Wafer 공정을 넘어 Advanced Packaging의 CTE·Warpage·Thermal Management 영역까지 확대되고 있음.",
-    "방산·우주의 Autonomous System과 제조 Physical AI가 Digital Twin→Simulation→AI Training→Sim2Real이라는 동일한 기술 Stack으로 수렴하고 있음.",
-    "일본 대기업이 AI·Robotics·Cloud·Data를 개별 DX 과제가 아니라 Group-level Core Technology로 통합하기 시작했음.",
-    "제조 R&D의 AI 활용이 Prediction→RAG·AI Agent→Autonomous Experiment로 확대되며 Closed-loop R&D Architecture가 형성되고 있음."
+    "日本ゼオン의 SWCNT Capacity 수십 배 확대와 METI 공급망 지원을 통해 SWCNT가 차세대 LIB용 전략소재로 Scale-up되고 있음.",
+    "AI Infrastructure 소재 Stack이 Optical Fiber에서 InP Epi-wafer 등 Optical Semiconductor Upstream까지 확대되고 있음.",
+    "Physical AI 기대감과 별개로 단기 Robot ROI는 대규모 Warehouse Automation 등 Task-specific System에서 이미 현실화되고 있음.",
+    "Water Scarcity와 PFAS 규제 강화로 산업 Water Reuse용 고기능 Separation Material의 중요성이 높아지고 있음.",
+    "AI Data Center 경쟁이 전력에서 Pump·HVAC·Water 등 Cooling Infrastructure 전반으로 확대되고 있음."
   ],
   "priority_ranking": [
     {
       "rank": 1,
-      "article_id": "2026-08-31-mitsubishi-chemical-negative-expansion-filler",
+      "article_id": "2026-08-31-zeon-swcnt-capacity",
       "priority": "High"
     },
     {
       "rank": 2,
-      "article_id": "2026-08-31-silicon-studio-defense-space-sim2real",
+      "article_id": "2026-09-01-sumitomo-chemical-inp-epi",
       "priority": "High"
     },
     {
       "rank": 3,
-      "article_id": "2026-08-31-panasonic-ai-robotics-rd",
+      "article_id": "2026-08-31-sb-frameworks-autostore",
       "priority": "Medium"
     },
     {
       "rank": 4,
-      "article_id": "2026-08-31-yokohama-rubber-rag-ai-agent",
+      "article_id": "2026-09-01-toray-nf-pfas",
+      "priority": "Medium"
+    },
+    {
+      "rank": 5,
+      "article_id": "2026-09-01-wilo-japan-data-center",
       "priority": "Medium"
     }
   ],
   "no_new_articles_categories": [
-    "이차전지·축전지",
-    "전고체·LFP·LMR·NCM",
-    "양극재·음극재",
-    "전해질·분리막",
+    "전고체전지",
+    "LFP·LMR·NCM 신규기사",
+    "양극재 신규기사",
+    "전해질·분리막 신규기사",
     "Battery Recycling",
-    "ESS 신규사업",
+    "항공우주·방산소재",
+    "Humanoid 신규기사",
+    "Mobile Manipulator 신규기사",
+    "Machine Vision 신규기사",
     "CCUS",
     "수소·암모니아",
     "SAF·e-SAF",
     "e-Fuel",
-    "페로브스카이트",
-    "전력망 신규사업",
+    "Perovskite",
+    "ESS 신규사업",
     "핵융합",
     "양자컴퓨팅",
-    "모바일 매니퓰레이터 신규사업",
-    "휴머노이드 신규제품"
+    "일본 Startup 신규 투자·PoC"
   ]
 }
