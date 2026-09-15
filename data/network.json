@@ -1,215 +1,170 @@
 {
-  "report_date": "2026-09-14",
+  "report_date": "2026-09-15",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-09-14T08:45:53+09:00",
-  "weekend_monday_window": {
-    "start": "2026-09-12T00:00:00+09:00",
-    "end": "2026-09-14T08:45:53+09:00",
-    "saturday": "신규 유효기사 없음. 9/7~9/11 기사를 재정리한 주간 Summary는 중복 제외",
-    "sunday": "신규 유효기사 없음",
-    "monday": "신규 유효기사 3건"
-  },
+  "generated_at": "2026-09-15T08:46:55+09:00",
   "articles": [
     {
-      "id": "2026-09-14-lanxess-battery-lab",
-      "category": [
-        "이차전지",
-        "LFP",
-        "양극재",
-        "Sodium-ion",
-        "첨단소재"
-      ],
-      "title": "LANXESS, 독일에 Battery Lab 신설 - LFP 등 Cell 성능 검증 가속",
-      "published_at": "2026-09-14T07:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/14/news024.html",
+      "id": "2026-09-15-fanuc-ai-welding-agent",
+      "category": ["AI", "Physical AI", "Robotics", "자동화", "Industrial AI"],
+      "title": "FANUC, Google Cloud 기반 AI 용접 Agent 개발 - 도면→용접조건·Robot 동작 자동생성, 12월 출하",
+      "published_at": "2026-09-15T07:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/15/news026.html",
       "summary": [
-        "LANXESS가 독일 Krefeld-Uerdingen 거점에 신규 Battery Lab을 개설했음. LFP 양극재 원료로 개발 중인 Iron Oxide와 Iron Phosphate를 실제 Battery Cell 내부에서 평가해 Cell Performance·Processability·Application Suitability까지 검증할 수 있도록 구축했음.",
-        "원료 Grade가 Electrode Processing과 실제 Cell 성능에 미치는 영향을 고객과 조기에 검증해 Material Development와 Qualification Cycle을 단축하려는 목적임. 소재기업의 Cell Evaluation Capability가 R&D를 넘어 Technical Marketing 경쟁력으로 확대되고 있음.",
-        "Lab은 Sodium Iron Pyrophosphate 양극재를 사용하는 Sodium-ion Battery 등 다른 Chemistry의 평가에도 대응함. Iron-based LFP와 Na-ion Material Portfolio를 함께 지원하는 Application Engineering Platform으로 활용 가능함."
+        "FANUC가 Google Cloud Gemini Enterprise를 활용해 부품 설계도면에서 Material·형상을 해석하고 Welding Current·Voltage와 Robot Motion을 자동 생성하는 AI Welding Agent를 개발했음. CRX Teaching Pendant의 기존 Camera를 이용하므로 추가 Vision Hardware 없이 사용할 수 있음.",
+        "작업자는 AI가 생성한 Welding Condition과 Motion을 그대로 사용하거나 수정할 수 있으며 특정 Welding Power Source에도 종속되지 않음. 별도 Google Cloud 계약 대신 FANUC 기존 고객계약 내 Subscription 방식으로 제공해 도입장벽을 낮추고 있음.",
+        "2026 International Welding Show에서 공개 후 2026년 12월 말 출하할 예정임. Engineering Drawing→Process Condition→Robot Motion을 AI가 연결하는 Process-specific Physical AI가 Commercial Product 단계로 이동하는 사례임."
       ],
-      "core_technology": [
-        "LFP Battery",
-        "Iron Phosphate",
-        "Iron Oxide",
-        "Cathode Raw Material",
-        "Cell Evaluation",
-        "Sodium-ion Battery",
-        "Sodium Iron Pyrophosphate",
-        "Application Engineering"
-      ],
-      "commercialization_stage": "Battery Raw Material 개발에서 Cell-level Customer Qualification 지원으로 확대하는 단계",
-      "related_entities": [
-        "LANXESS",
-        "LFP Cathode Material Makers",
-        "Battery Cell Makers",
-        "European Battery Manufacturers",
-        "Sodium-ion Battery Developers"
-      ],
+      "core_technology": ["Physical AI", "AI Agent", "Welding Robot", "Gemini Enterprise", "Drawing Recognition", "Robot Program Generation", "Process Parameter Generation"],
+      "commercialization_stage": "Commercial Launch 준비 단계로 2026년 12월 말 출하 예정",
+      "related_entities": ["FANUC", "Google Cloud", "CRX Users", "Metal Fabrication Companies", "Automotive Parts Manufacturers"],
       "posco_implications": [
-        "포스코퓨처엠도 Powder Spec에서 Electrode·Cell Performance까지 빠르게 연결하는 평가역량이 Customer Approval Lead Time 단축에 직접적인 경쟁력이 될 수 있음.",
-        "LFP 경쟁구도는 완성 양극재 Maker뿐 아니라 Iron Phosphate·Iron Oxide 등 상류 원료업체의 품질·Application Engineering 역량까지 포함해 추적해야 함.",
-        "LFP와 Na-ion 일부 Chemistry에서는 Fe/P계 원료·분석·Cell Evaluation Capability를 공유할 여지가 있어 소재 Portfolio를 완전히 독립적으로 관리할 필요는 없음."
+        "범용 Humanoid보다 기존 Industrial Robot에 Process-specific AI Agent를 추가하는 방식이 단기 ROI가 높을 가능성이 있음.",
+        "POSCO의 Welding·Cutting·Grinding·Repair 등에서 Drawing→Process Parameter→Robot Motion 자동생성 구조를 적용할 여지가 있음.",
+        "Installed Base·Process Know-how·Customer Channel을 이미 보유한 기존 Robot Maker가 Physical AI Commercialization에서 구조적으로 유리할 수 있음."
       ],
       "priority": "High",
-      "follow_up": [
-        "Iron Phosphate 제조공정",
-        "Iron Oxide Grade 및 Purity",
-        "LFP용 원료 Capacity",
-        "생산거점",
-        "고객 및 Qualification 현황",
-        "중국산 대비 Cost",
-        "Particle 및 Impurity Control",
-        "Sodium Iron Pyrophosphate 개발수준",
-        "Europe LFP Supply Chain",
-        "POSCO LFP 원료 Value Chain 비교"
-      ]
+      "follow_up": ["가격", "Subscription", "Drawing Format", "Recognition Accuracy", "Welding Condition Accuracy", "지원 Welding Process", "고객 Test", "Data Ownership", "POSCO 적용"]
     },
     {
-      "id": "2026-09-14-ntn-kddi-machine-vision",
-      "category": [
-        "AI",
-        "산업AI",
-        "Machine Vision",
-        "자동화"
-      ],
-      "title": "NTN–KDDI Technology, 고속 손목축×AI로 복잡형상 다면 외관검사 자동화",
-      "published_at": "2026-09-14T07:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/14/news046.html",
+      "id": "2026-09-15-universal-robots-gen7",
+      "category": ["AI", "Physical AI", "Robotics", "Collaborative Robot"],
+      "title": "Universal Robots, Physical AI용 'Gen 7' 공개 - 2027년 GPU Controller 투입",
+      "published_at": "2026-09-15T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/15/news056.html",
       "summary": [
-        "NTN의 외관검사용 고속 Unit i-WRIST Type-U와 KDDI Technology의 AI 불량검사 Application MiraLens를 결합한 Solution이 공개됐음. Camera를 빠르게 여러 위치와 각도로 이동시켜 복잡한 3D Work의 다점·다면 이미지를 취득할 수 있음.",
-        "MiraLens가 촬영영상을 AI로 분석해 Scratch·Defect를 판정하며 수매 수준의 Good Sample Image로도 간단한 학습이 가능함. Fixed-camera 방식에서 Blind Spot이 발생하기 쉬운 Die-casting 등 복잡형상 부품의 검사 자동화가 주요 Target임.",
-        "AI Model뿐 아니라 Motion·View Angle·Image Acquisition을 통합한 Active Vision 구조로, Machine Vision의 경쟁영역이 Software Algorithm에서 Application-specific Mechatronics까지 확대되고 있음."
+        "Universal Robots가 Physical AI 적용을 전제로 설계한 차세대 Cobot Platform Gen 7을 공개했음. PolyScope X를 중심으로 Robot Arm·Controller·Teaching Pendant·Tool Interface를 개편했으며 2026년 10월 이후 순차 출하함.",
+        "Robot Flange에 1GbE·Power·Safety Signal을 통합해 Camera·Sensor·End-effector 연결을 단순화했으며 CB7 Core Controller는 기존 대비 Computing Performance 40% 향상, 설치면적 30% 절감을 달성했음. ROS2·C++도 Standard로 지원함.",
+        "2027년에는 AI용 GPU 내장 Controller를 투입할 예정임. AI의 Motion Command보다 Certified Safety Layer가 항상 우선하도록 설계해 Physical AI와 Industrial Functional Safety를 분리·결합하고 있음."
       ],
-      "core_technology": [
-        "Machine Vision",
-        "Industrial AI",
-        "Visual Inspection",
-        "i-WRIST",
-        "High-speed Positioning",
-        "Multi-angle Inspection",
-        "MiraLens",
-        "Defect Detection"
-      ],
-      "commercialization_stage": "상용 Hardware와 AI Solution을 통합해 복잡형상 Inspection Application을 확대하는 단계",
-      "related_entities": [
-        "NTN",
-        "KDDI Technology",
-        "Automotive Parts Manufacturers",
-        "Die-casting Manufacturers",
-        "Factory Quality Departments"
-      ],
+      "core_technology": ["Physical AI", "Gen 7", "PolyScope X", "ROS2", "GPU Controller", "Edge AI", "Integrated Ethernet", "Functional Safety"],
+      "commercialization_stage": "Commercial Platform Launch 및 AI-ready Architecture 확대 단계",
+      "related_entities": ["Universal Robots", "Teradyne Robotics", "Cobot Developers", "AI Robotics Developers", "Manufacturing Companies"],
       "posco_implications": [
-        "복잡형상 부품이나 설비 Inspection에서는 AI Model 정확도뿐 아니라 Camera가 필요한 View를 확보할 수 있는 Imaging Architecture가 중요함.",
-        "POSCO의 Coil Surface Inspection과 Robot·설비부품 Inspection을 동일한 Vision Architecture로 처리하기보다 Work Geometry에 따라 분리할 필요가 있음.",
-        "Robot Vision에서도 Perception Planning→Motion→Image Acquisition→AI Judgment를 연결하는 Active Vision 접근을 검토할 가치가 있음."
+        "향후 Robot 평가에는 Payload·Reach·Repeatability뿐 아니라 GPU·Compute·Network·Sensor Interface·ROS2·Cybersecurity·Safety Architecture를 포함해야 함.",
+        "AI Compute가 Robot Controller 내부로 통합되면 External PC 의존을 줄여 Deployment·Latency·Maintenance가 개선될 가능성이 있음.",
+        "AI Task Layer와 Certified Safety Controller를 분리하는 구조를 POSCO Physical AI Architecture에서도 원칙으로 적용할 필요가 있음."
       ],
-      "priority": "Medium",
-      "follow_up": [
-        "Inspection Cycle Time",
-        "i-WRIST Position Accuracy",
-        "Work Size Range",
-        "MiraLens Detection Accuracy",
-        "Good Sample 필요수",
-        "False Positive 및 False Negative",
-        "Lighting",
-        "Inline 적용사례",
-        "Die-casting 고객",
-        "POSCO 복잡형상 Inspection PoC"
-      ]
+      "priority": "High",
+      "follow_up": ["GPU Spec", "Gen 7 가격", "기존 UR Compatibility", "Sensor Interface", "ROS2", "Cybersecurity", "Edge VLA", "Physical AI Partner", "POSCO Cobot Benchmark"]
     },
     {
-      "id": "2026-09-14-dexerials-acf-capacity",
-      "category": [
-        "첨단소재",
-        "Electronic Packaging",
-        "자동화",
-        "Smart Factory"
-      ],
-      "title": "Dexerials, ACF 신공장에 300억엔 투자·생산능력 1.5배 확대",
-      "published_at": "2026-09-14T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/14/news019.html",
+      "id": "2026-09-15-panasonic-industry-manufacturing-ai",
+      "category": ["AI", "Industrial AI", "AI Agent", "자동화"],
+      "title": "Panasonic Industry, 600+ 설비 Data·15개 이상 AI Agent로 현장 운영 고도화",
+      "published_at": "2026-09-15T06:50:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/15/news058.html",
       "summary": [
-        "Dexerials가 Tochigi현 Kanuma 사업소에 약 300억엔을 투자한 ACF 신규 생산동 101호관을 공개했음. 신규 거점으로 전체 ACF 생산능력은 기존 대비 약 1.5배, Particle-aligned ACF 생산능력은 약 2배로 확대될 예정임.",
-        "AI·Data Center·Automotive·Robotics 등 Electronics 고도화에 따라 Display와 Fine-pitch Interconnection 수요 확대에 대응하는 투자임. 전체 Capacity보다 고부가 Particle-aligned ACF에 더 높은 증설률을 배정하고 있음.",
-        "신공장에는 AGV와 Automated Warehouse를 도입해 기존 개별 Cell 내부 자동화에서 Cell 간 Material Flow까지 자동화 범위를 확대했음. Cogeneration·Solar Power와 재해대응 설비도 적용해 Productivity·BCP·Environmental Performance를 함께 강화하고 있음."
+        "Panasonic Industry Yamaguchi Site가 약 10년에 걸쳐 600대 이상의 전체 생산설비 Data를 취득·가시화하고 작업자의 상황판단과 Action까지 AI가 학습할 수 있는 형태로 구조화했음.",
+        "AI Priority Notification을 적용해 Equipment Recovery Time을 최대 약 30% 줄였으며 RFID 기반 WIP 관리로 Material Waiting Loss를 최대 50% 이상 감소시켰음. Data 기반 AI가 실제 Factory KPI 개선에 사용되고 있음.",
+        "현재 공정·품질·가동관리 등을 담당하는 15개 이상의 AI Sub-agent와 Front Agent를 연계해 숙련관리자 수준의 작업 Recommendation을 수분 단위로 생성하고 있으며 향후 SCM 영역까지 확대할 계획임."
       ],
-      "core_technology": [
-        "Anisotropic Conductive Film",
-        "ACF",
-        "Particle-aligned ACF",
-        "Fine-pitch Interconnection",
-        "MicroLED",
-        "Electronic Packaging",
-        "AGV",
-        "Automated Warehouse",
-        "Smart Factory"
-      ],
-      "commercialization_stage": "대규모 Commercial Capacity Expansion 및 Smart Factory 가동 단계",
-      "related_entities": [
-        "Dexerials",
-        "Display Manufacturers",
-        "Smartphone Manufacturers",
-        "Automotive Display Makers",
-        "MicroLED Ecosystem",
-        "Electronics Packaging Customers"
-      ],
+      "core_technology": ["Industrial AI", "Multi-agent System", "Tacit Knowledge", "Factory Data Platform", "OODA", "PLC", "RFID", "Knowledge Structuring"],
+      "commercialization_stage": "실제 자사공장 대규모 운영 및 Multi-agent Scale-up 단계",
+      "related_entities": ["Panasonic Industry", "Panasonic Industry Yamaguchi Site", "Capacitor Manufacturing"],
       "posco_implications": [
-        "고부가 소재 증설에서는 전체 시장 CAGR뿐 아니라 Premium Grade Demand·Customer Qualification·Switching Cost를 별도로 평가할 필요가 있음.",
-        "신규 소재공장에서는 설비별 자동화를 사후 연결하기보다 초기 Layout 단계에서 AGV·Warehouse·MES를 포함한 Autonomous Material Flow를 설계하는 편이 유리함.",
-        "대체 Supplier가 제한되고 Qualification이 긴 소재에서는 Capacity Redundancy와 BCP가 단순 Cost가 아니라 고객 Lock-in과 공급자 지위를 강화하는 자산이 될 수 있음."
+        "AI Agent 도입 이전에 Equipment Data Connectivity와 Tacit Knowledge Structuring이 선행돼야 제조 AI를 Scale-up할 수 있음.",
+        "POSCO 역시 Equipment Data→Data Standardization→Human Decision Structuring→AI Recommendation→Multi-agent→Physical Execution 순으로 구축하는 것이 합리적임.",
+        "일상적인 현장 개선활동 자체가 AI Training Data를 생성하도록 구조화하는 것이 장기적인 Data Moat가 될 수 있음."
+      ],
+      "priority": "High",
+      "follow_up": ["Tacit Knowledge Framework", "600대 Data Architecture", "Data Lake/Historian", "Agent Platform", "Model Provider", "QCD 효과", "SCM Roadmap", "POSCO Benchmark"]
+    },
+    {
+      "id": "2026-09-14-mitsubishi-electric-audio-ai",
+      "category": ["AI", "Physical AI", "Industrial AI", "Multimodal AI"],
+      "title": "Mitsubishi Electric, 단일 AI로 혼합음 선택 분리 - Physical AI에 '청각' 부여",
+      "published_at": "2026-09-14T14:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/14/news048.html",
+      "summary": [
+        "Mitsubishi Electric과 MERL이 혼합음에서 Prompt로 지정한 종류와 개수의 Sound Source를 추출하는 Task-general Sound Source Separation 기술을 개발했음. Speech Separation·Noise Removal·Machine Sound Separation 등 여러 Task를 단일 AI Model로 처리함.",
+        "분리된 Sound는 Equipment Anomaly Detection·Speech Recognition·Voice Operation 등에 활용할 수 있으며 Edge Device·Robot에서도 실행할 수 있도록 Computation을 경량화하고 있음.",
+        "Sound를 Token화해 LLM에 직접 입력하는 Codec 기술도 개발 중이며 2027년도 Physical AI와 Product 적용을 목표로 하고 있음. Physical AI Perception이 Vision 중심에서 Audio를 포함한 Multimodal 구조로 확장되고 있음."
+      ],
+      "core_technology": ["Physical AI", "Audio AI", "Sound Source Separation", "Multimodal AI", "Edge AI", "Audio Tokenization", "Anomaly Detection"],
+      "commercialization_stage": "Technology Development 이후 2027년도 Physical AI 및 Product 적용 목표",
+      "related_entities": ["Mitsubishi Electric", "Mitsubishi Electric Research Laboratories", "Manufacturing Companies", "Robot Developers"],
+      "posco_implications": [
+        "제철소 Equipment Diagnosis에서는 Vision뿐 아니라 Sound·Vibration·Temperature·Current를 함께 이용하는 Multimodal Sensing이 유효할 가능성이 있음.",
+        "숙련자의 이상음 판단 Know-how를 Audio Dataset으로 전환하면 Inspection AI와 Maintenance Agent의 정확도를 높일 가능성이 있음.",
+        "현 단계에서는 즉시투자보다 Mitsubishi Electric의 Physical AI Sensor Stack 확대를 추적하는 것이 적절함."
       ],
       "priority": "Medium",
-      "follow_up": [
-        "기존 및 신규 ACF 절대 Capacity",
-        "Particle-aligned ACF 매출비중",
-        "Global Market Share",
-        "MicroLED Customer",
-        "Automotive 비중",
-        "ASP 및 Margin",
-        "300억엔 투자 Payback",
-        "가동률",
-        "AGV 및 Warehouse Vendor",
-        "Material Flow Automation 효과"
-      ]
+      "follow_up": ["Sound Separation Accuracy", "Industrial Noise Test", "Edge Requirement", "Latency", "Audio Token", "Anomaly Detection", "Robot Application", "POSCO Sound Dataset"]
+    },
+    {
+      "id": "2026-09-15-advance-composite-acmh6",
+      "category": ["첨단소재", "AI Data Center", "Power Semiconductor", "Thermal Management"],
+      "title": "Advance Composite, 열전도 580W/m·K Graphite-Al 복합 방열재 개발",
+      "published_at": "2026-09-15T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/15/news016.html",
+      "summary": [
+        "Advance Composite가 Porous Graphite에 Molten Aluminum을 침투시킨 Graphite-Al Composite ACM-H6를 개발했으며 Thermal Conductivity 580W/m·K와 Density 2.30g/cm³를 구현했음.",
+        "높은 Thermal Conductivity와 함께 CTE를 X 2.9/Y 22.0ppm/K 수준으로 제어하고 있으며 Power Semiconductor·SiC Module·CPU/GPU·Laser·Communication Equipment의 Heat Spreader를 Target으로 하고 있음.",
+        "기존 방열재 대비 Cost가 높고 Block Casting 후 Cutting하는 공정으로 Mass Production Speed가 약점임. 기존 Cu/Al 소재로 요구성능을 충족하기 어려운 High-end Application을 중심으로 사업화를 검토하고 있음."
+      ],
+      "core_technology": ["Graphite-Al Composite", "Thermal Management", "580W/m·K", "Low CTE", "Power Semiconductor", "SiC", "GPU Cooling"],
+      "commercialization_stage": "개발품 및 High-end Customer Application 검토 단계",
+      "related_entities": ["Advance Composite", "Power Semiconductor Makers", "SiC Module Makers", "CPU/GPU Manufacturers", "Data Center Hardware Companies"],
+      "posco_implications": [
+        "AI Data Center와 Power Electronics의 고열밀도화로 TIM·Heat Spreader·Base Plate 등 Thermal Material이 별도 Value Pool로 성장할 가능성이 있음.",
+        "Graphite-Al Composite는 POSCO 본원제품과 직접 경쟁하지 않더라도 Data Center Material Value Chain에서 추적할 가치가 있음.",
+        "상용성 판단에서는 Thermal Property보다 Capacity·Yield·Cost·Thermal Cycle Reliability 확인이 중요함."
+      ],
+      "priority": "Medium",
+      "follow_up": ["Production Capacity", "Cost", "Yield", "Thermal Conductivity Directionality", "Mechanical Strength", "Thermal Cycle", "Customer Qualification", "GPU/SiC 적용", "800W/m·K Roadmap"]
+    },
+    {
+      "id": "2026-09-14-hitachi-hmax-ai-orchestration",
+      "category": ["AI", "Industrial AI", "AI Agent", "자동화", "누락 보완"],
+      "title": "Hitachi HMAX, 부문별 AI Agent와 최적화 Engine으로 생산계획 자동조정",
+      "published_at": "2026-09-14T08:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/14/news041.html",
+      "summary": [
+        "Hitachi가 HMAX Industry에 적용할 AI Orchestration Technology의 제조 Use Case를 공개했음. Sales·Procurement·Production·Inspection·Shipping별 Domain AI Agent를 배치해 각 부문의 Rule·Constraint·Data를 분산 관리하는 구조임.",
+        "긴급주문이나 Delivery Date 변경이 발생하면 Coordinator AI가 각 Agent로부터 필요한 정보를 수집하고 MLCP Planning Optimization Engine이 Equipment Resource와 운영조건을 반영해 복수의 실행가능 Schedule을 생성함.",
+        "최종 Decision은 Human이 수행하며 2027년 Service 제공을 목표로 함. LLM은 Knowledge·Coordination, Mathematical Optimizer는 Quantitative Planning을 담당하도록 역할을 구분한 Hybrid Architecture임."
+      ],
+      "core_technology": ["Industrial AI", "AI Orchestration", "Multi-agent System", "Planning Optimization", "HMAX Industry", "MLCP", "Supply Chain Planning"],
+      "commercialization_stage": "Technology Demonstration에서 2027 Commercial Service로 전환 예정",
+      "related_entities": ["Hitachi", "HMAX Industry", "Manufacturing Companies", "Production Planning", "Procurement", "Sales", "Logistics"],
+      "posco_implications": [
+        "POSCO의 Order·Production·Quality·Logistics·Energy·Maintenance를 Domain Agent로 분리하고 기존 APS·Optimization Engine과 연결하는 구조가 단일 LLM보다 현실적임.",
+        "Manufacturing Agent Architecture에서도 LLM과 Deterministic Optimization의 역할을 분리해야 Reliability와 Governance를 확보할 수 있음.",
+        "Panasonic 사례와 결합하면 Data Foundation→Structured Knowledge→Domain Agents→Optimization→Human Approval→Physical Execution의 Roadmap이 유효함."
+      ],
+      "priority": "High",
+      "follow_up": ["HMAX Architecture", "MLCP Algorithm", "Agent Framework", "사용 LLM", "Planning KPI", "Human Approval", "실제 Customer", "ERP/MES/APS 연계", "POSCO 적용"]
     }
   ],
   "key_insights": [
-    "Battery 소재 경쟁에서 Powder Specification뿐 아니라 Electrode Processing과 Cell Performance를 사전에 연결하는 Application Engineering이 Customer Qualification Speed를 좌우하고 있음.",
-    "LFP와 Sodium-ion 일부 Chemistry에서는 Fe/P계 원료·분석·Cell Evaluation Capability를 공유할 여지가 있음.",
-    "Machine Vision 경쟁력은 AI Model 단독이 아니라 Motion·Viewing Angle·Image Acquisition·AI를 통합한 Active Vision System으로 확대되고 있음.",
-    "고부가 소재 Capacity Expansion은 전체 시장성장률보다 Premium Grade Demand·Customer Qualification·Switching Cost를 별도로 평가해야 함.",
-    "Smart Factory는 개별 Equipment 자동화에서 Cell-to-cell Material Flow와 Warehouse까지 통합하는 방향으로 이동하고 있음."
+    "Physical AI Value Chain이 Process AI Agent·AI-ready Robot Hardware·Multimodal Perception·Factory Multi-agent·Planning Optimization 등으로 빠르게 분화되고 있음.",
+    "Panasonic Industry 사례에서 Manufacturing AI Scale-up의 선행조건은 AI Model보다 Equipment Data Connectivity와 Tacit Knowledge Structuring임이 확인됨.",
+    "FANUC과 Universal Robots처럼 Installed Base·Industrial Safety Certification·Service Channel을 보유한 기존 Robot Maker가 Physical AI Commercialization에서 구조적으로 유리할 가능성이 있음.",
+    "Industrial AI는 LLM에 모든 판단을 맡기는 구조보다 AI Agent·Mathematical Optimization·Certified Control·Human Approval을 결합하는 Hybrid Architecture가 현실적임.",
+    "AI Data Center 확대는 Power Infrastructure뿐 아니라 GPU·Power Semiconductor용 Thermal Management Material의 신규 Value Pool을 확대하고 있음."
   ],
   "priority_ranking": [
-    {
-      "rank": 1,
-      "article_id": "2026-09-14-lanxess-battery-lab",
-      "priority": "High"
-    },
-    {
-      "rank": 2,
-      "article_id": "2026-09-14-ntn-kddi-machine-vision",
-      "priority": "Medium"
-    },
-    {
-      "rank": 3,
-      "article_id": "2026-09-14-dexerials-acf-capacity",
-      "priority": "Medium"
-    }
+    {"rank": 1, "article_id": "2026-09-15-fanuc-ai-welding-agent", "priority": "High"},
+    {"rank": 2, "article_id": "2026-09-15-universal-robots-gen7", "priority": "High"},
+    {"rank": 3, "article_id": "2026-09-15-panasonic-industry-manufacturing-ai", "priority": "High"},
+    {"rank": 4, "article_id": "2026-09-14-hitachi-hmax-ai-orchestration", "priority": "High"},
+    {"rank": 5, "article_id": "2026-09-14-mitsubishi-electric-audio-ai", "priority": "Medium"},
+    {"rank": 6, "article_id": "2026-09-15-advance-composite-acmh6", "priority": "Medium"}
   ],
   "no_new_articles_categories": [
+    "이차전지·축전지",
     "전고체전지",
-    "LMR·NCM",
-    "음극재",
+    "LFP·LMR·NCM",
+    "양극재·음극재",
     "전해질·분리막",
     "Battery Recycling",
     "항공우주·방산소재",
-    "Physical AI 신규기사",
-    "Humanoid",
-    "Mobile Manipulator",
+    "Humanoid 신규기사",
+    "Mobile Manipulator 신규기사",
+    "GX",
     "CCUS",
     "수소·암모니아",
     "SAF·e-SAF",
