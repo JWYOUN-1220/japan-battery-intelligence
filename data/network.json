@@ -1,179 +1,174 @@
 {
-  "report_date": "2026-09-29",
+  "report_date": "2026-09-30",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-09-29T08:44:42+09:00",
+  "generated_at": "2026-09-30T08:49:53+09:00",
   "articles": [
     {
-      "id": "2026-09-28-jaist-fpti",
-      "category": ["이차전지", "전해액", "음극", "첨단소재"],
-      "title": "JAIST, 1000회 충방전 후 95.6% 용량 유지하는 전해액 첨가제 FPTI 개발",
-      "published_at": "2026-09-28T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news020.html",
+      "id": "2026-09-29-eliiy-high-ni",
+      "category": ["이차전지", "High-Ni", "ESS"],
+      "title": "ELIIY Power, 못 관통에도 열폭주 없는 280Wh/kg High-Ni Battery 개발",
+      "published_at": "2026-09-29T07:45:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news063.html",
       "summary": [
-        "JAIST가 Graphite 음극 표면에 안정적인 SEI를 형성하는 신규 전해액 첨가제 FPTI를 개발했음. FPTI는 일반 전해액 성분보다 먼저 환원돼 Graphite 표면의 불필요한 전해액 분해를 억제하도록 설계됐음.",
-        "4mg/mL 첨가 시 SEI 저항은 7.6Ω에서 2.2Ω, 전하이동저항은 41.8Ω에서 19.8Ω으로 감소했으며 1000 cycle 용량유지율은 무첨가 62.7% 대비 95.6%까지 개선됐음.",
-        "NMC811/Graphite Full-cell에서도 약 233Wh/kg을 확인했으나 주요 장기 Cycle 결과는 Graphite/Li Half-cell 기준임. 실제 EV 적용성 판단을 위해 고온·급속충전·대면적 Full-cell 검증이 필요함."
+        "ELIIY Power가 자사 최초 High-Nickel 양극재 기반 HY Battery E Series를 개발했으며 기존 LFP 제품 대비 중량 Energy Density를 2배 이상 높여 280Wh/kg을 달성했음.",
+        "신품 및 열화 후 완전충전 Cell의 Nail Penetration Test에서 발연·발화·파열·Thermal Runaway가 발생하지 않았다고 발표했으며 약 4년간 소재·Cell 구조·제조공정 안전설계를 축적했음.",
+        "Data Center Backup·Portable Power·Light Mobility 등을 Target으로 하고 있어 High-Ni의 Non-EV Application 확대 가능성을 보여줌."
       ],
-      "core_technology": [
-        "FPTI",
-        "Graphite",
-        "SEI Engineering",
-        "Preferential Reduction",
-        "Interfacial Resistance Reduction",
-        "NMC811/Graphite"
-      ],
-      "commercialization_stage": "Laboratory R&D / Early Validation",
-      "related_entities": [
-        "JAIST",
-        "Graphite 음극",
-        "NMC811",
-        "LIB 제조사",
-        "전해액 업체"
-      ],
-      "posco_implications": [
-        "POSCO Future M Graphite의 Surface/Interface 성능개선 관점에서 Monitoring 가치가 있음.",
-        "95.6% 수치는 Graphite/Li Half-cell 조건이므로 상용 EV Cell 수준의 성능으로 직접 해석해서는 안 됨."
-      ],
+      "core_technology": ["High-Nickel Cathode", "280Wh/kg", "Thermal Runaway Suppression", "Nail Penetration Safety"],
+      "commercialization_stage": "Product Development / Pre-commercial",
+      "related_entities": ["ELIIY Power", "Data Center", "Backup Power", "ESS"],
+      "posco_implications": ["High-Ni 양극재의 ESS Application 확대 가능성을 확인하는 사례임.", "POSCO Future M의 Non-EV High-Ni 수요처 관점에서 Tracking 가치가 높음."],
       "priority": "High",
-      "follow_up": [
-        "원 논문 및 특허",
-        "FPTI 합성 Cost",
-        "초기효율",
-        "Gas 발생",
-        "고온 Storage",
-        "Fast Charging",
-        "NMC811 Full-cell 장기 Cycle",
-        "Si/Graphite 적용 가능성"
-      ]
+      "follow_up": ["Ni 조성", "Cathode 공급사", "Cycle Life", "Calendar Life", "Cost/kWh", "Data Center 고객"]
     },
     {
-      "id": "2026-09-28-festo-ax-mip",
-      "category": ["AI", "산업AI", "자동화", "설비보전"],
-      "title": "FESTO, 별도 센서 없이 PLC 데이터만으로 Air Cylinder AI 예지보전",
-      "published_at": "2026-09-28T13:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news073.html",
+      "id": "2026-09-29-panasonic-perovskite",
+      "category": ["GX", "Perovskite", "PoC"],
+      "title": "Panasonic HD, Kobe 공공시설에서 Glass형 Perovskite 태양전지 실증",
+      "published_at": "2026-09-29T07:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news021.html",
       "summary": [
-        "FESTO의 AX Motion Insights Pneumatic은 기존 Air Cylinder의 시작점과 종점 Sensor Signal을 AI로 분석해 마모와 이상징후를 탐지하며 별도 Sensor 추가 없이 PLC 연결만으로 적용할 수 있음.",
-        "AI가 정상운전 데이터를 관찰해 Baseline을 자동 학습하고 설비상태를 신품 100% 기준 Health Score로 표시함. FESTO 제품뿐 아니라 타사 Cylinder와 주요 PLC에도 대응함.",
-        "기존 OT Data를 재활용해 Sensor 추가설치 Cost를 낮출 수 있어 Brownfield 제조현장의 AI Predictive Maintenance 확산모델로 참고가치가 있음."
+        "Panasonic HD와 Kobe City가 Kobe Port 공공시설 Kamomeria에서 Glass-type Perovskite Solar Cell 실증을 시작했으며 공공시설 설치는 서일본 최초임.",
+        "관광지역 경관과 조화를 이루는 Design을 적용해 유리면 자체를 발전공간으로 활용하는 BIPV Application을 검증하고 있음.",
+        "Perovskite 경쟁이 Lab Efficiency에서 실제 도시공간·건축재 Integration으로 이동하고 있음을 보여줌."
       ],
-      "core_technology": [
-        "AI Predictive Maintenance",
-        "Pneumatic Cylinder",
-        "PLC Data Analytics",
-        "Health Score",
-        "Baseline Learning",
-        "Brownfield Retrofit"
+      "core_technology": ["Glass-type Perovskite", "BIPV", "Building Facade Generation"],
+      "commercialization_stage": "Field PoC / Demonstration",
+      "related_entities": ["Panasonic Holdings", "Kobe City", "Panasonic Environmental Systems & Engineering"],
+      "posco_implications": ["Steel Exterior·Building Structure·Perovskite Module을 결합한 BIPV Solution을 검토할 가치가 높음."],
+      "priority": "High",
+      "follow_up": ["효율", "내구성", "발전량", "양산일정", "POSCO Steel BIPV 연계"]
+    },
+    {
+      "id": "2026-09-29-ricoh-perovskite",
+      "category": ["GX", "Perovskite", "제조"],
+      "title": "Ricoh, Inkjet 기반 Perovskite Solar Cell 2030 사업화 추진",
+      "published_at": "2026-09-29T06:45:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news056.html",
+      "summary": [
+        "Ricoh는 Atsugi 신공장을 2028년도 상반기 완공하고 AI·Digital Twin·Robot을 활용한 차세대 생산거점으로 구축할 예정임.",
+        "Functional Printing 신사업으로 Film-type Perovskite를 육성하며 Inkjet을 활용해 필요한 부분에만 소재를 직접 도포해 Laser·Vacuum Process와 소재 Loss를 줄이는 제조방식을 개발하고 있음.",
+        "Daiwa House·NTT Anode Energy와 NEDO Consortium을 구성했으며 2030년 사업화를 목표로 하고 있음."
       ],
-      "commercialization_stage": "Commercial Solution / Demonstration",
-      "related_entities": [
-        "FESTO",
-        "PLC Vendor",
-        "Pneumatic Equipment Users",
-        "Manufacturing Plants"
+      "core_technology": ["Film Perovskite", "Inkjet Manufacturing", "Functional Printing"],
+      "commercialization_stage": "Development + Consortium PoC / 2030 Commercialization",
+      "related_entities": ["Ricoh", "Daiwa House Industry", "NTT Anode Energy", "NEDO"],
+      "posco_implications": ["Perovskite Cell 자체보다 건축재 Integration과 제조 Value Chain 접점을 우선 검토할 필요가 있음."],
+      "priority": "High",
+      "follow_up": ["효율", "수명", "Cost/W", "CAPA", "Daiwa House 실증"]
+    },
+    {
+      "id": "2026-09-29-tohoku-ru-catalyst",
+      "category": ["GX", "CCU", "수소", "Catalyst"],
+      "title": "Tohoku Univ. 등, CO₂를 99% 이상 선택률로 Formic Acid로 전환하는 Ru Single-atom Catalyst 개발",
+      "published_at": "2026-09-29T11:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news031.html",
+      "summary": [
+        "공동연구팀이 Ru를 최대 11wt%까지 Single-atom 상태로 Carbon Material에 고정하는 Bottom-up 합성법을 개발했음.",
+        "CO₂ Hydrogenation에서 Formic Acid 선택률 99% 이상을 기록했고 반복 사용 후에도 Ru 응집과 뚜렷한 활성저하가 확인되지 않았음.",
+        "Formic Acid와 Hydrogen Carrier, Precious Metal 절감 측면에서 의미가 있으나 현재는 Laboratory R&D 단계임."
       ],
-      "posco_implications": [
-        "기존 PLC Data를 활용해 추가 Sensor 투자부담을 낮추는 방식은 Brownfield 비중이 높은 철강 제조현장에 적합한 접근임.",
-        "PLC Data→AI 상태진단→이상예측→AI Agent 원인분석→정비 Recommendation으로 확장할 가능성이 있음."
-      ],
+      "core_technology": ["Ru Single-atom Catalyst", "CO2 Hydrogenation", "Formic Acid", "11wt% Ru Loading"],
+      "commercialization_stage": "Laboratory R&D / Proof of Concept",
+      "related_entities": ["Tohoku University", "University of Tsukuba", "Kyoto University", "Eindhoven University of Technology", "Kanazawa University", "Osaka University"],
+      "posco_implications": ["CCU 후보기술로 Monitoring 가치가 있으나 선택률만으로 사업성을 판단해서는 안 됨."],
       "priority": "Medium",
-      "follow_up": [
-        "이상탐지 정확도",
-        "False Alarm",
-        "정상학습 기간",
-        "PLC Sampling Rate",
-        "지원 PLC",
-        "POSCO 적용 후보설비"
-      ]
+      "follow_up": ["Conversion", "STY", "H2 Consumption", "Catalyst Cost", "Lifetime", "Scale-up"]
     },
     {
-      "id": "2026-09-28-smm-300mm-sic",
-      "category": ["첨단소재", "전력반도체", "누락 보완"],
-      "title": "Sumitomo Metal Mining, 세계 최초 300mm 접합 SiC 기판 개발",
-      "published_at": "2026-09-28T07:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/25/news034.html",
+      "id": "2026-09-29-pfu-inspection",
+      "category": ["AI", "Machine Vision", "자동화"],
+      "title": "PFU, CAD 단계에서 결함과 검사설비까지 설계하는 AI 외관검사 기술 개발",
+      "published_at": "2026-09-29T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news018.html",
       "summary": [
-        "SMM이 300mm 접합형 SiC 기판 SiCkrest 개발에 성공하고 Semiconductor 업체에 Sample 출하를 시작했음. SMM에 따르면 Bonded SiC 기판으로 300mm를 구현한 것은 세계 최초임.",
-        "저저항 Polycrystalline SiC 지지기판 위에 고품질 Single-crystal SiC층을 얇게 접합해 단결정 특성을 유지하면서 기판 저항 저감과 통전열화 억제를 구현함.",
-        "300mm 대구경화는 Wafer당 Chip 생산량 증가와 SiC Power Device 원가절감에 연결됨. SMM은 원료부터 기판까지 일관 생산체계를 기반으로 공급확대를 추진하고 있음."
+        "PFU가 CAD와 설계요구를 기반으로 예상 Defect를 Virtual Space에 생성하는 외관검사 설계 자동화 Solution을 개발하고 있음.",
+        "생산 이후 불량 Image를 확보하는 기존 방식과 달리 생산 이전에 Defect Pattern과 검사조건을 검증하는 Shift-left Quality 접근임.",
+        "NEDO Challenge 제조업DX Theme 2에서 1위를 획득했으며 Synthetic Data 기반 검사설계로 확장 가능성이 있음."
       ],
-      "core_technology": [
-        "300mm SiC Wafer",
-        "Bonded SiC Substrate",
-        "Single-crystal SiC",
-        "Polycrystalline SiC Support",
-        "Power Semiconductor"
+      "core_technology": ["Machine Vision", "CAD", "Synthetic Defect", "Inspection Design"],
+      "commercialization_stage": "Development / NEDO Challenge Validation",
+      "related_entities": ["PFU", "NEDO"],
+      "posco_implications": ["Virtual Defect 기반 검사 Algorithm 사전검증은 Steel Surface Inspection AI에 응용 가능성이 있음."],
+      "priority": "Medium",
+      "follow_up": ["Domain Gap", "Synthetic Data", "철강표면 적용성", "상용화 일정"]
+    },
+    {
+      "id": "2026-09-29-noritake-sic",
+      "category": ["첨단소재", "SiC", "반도체 제조"],
+      "title": "Noritake, Slurry 없이 물만 사용하는 SiC Wafer 연마 Pad 개발",
+      "published_at": "2026-09-29T13:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news070.html",
+      "summary": [
+        "Noritake가 Diamond Abrasive 내장형 SiC Wafer 연마 Pad LumiDia를 개발했으며 별도 Diamond Slurry 없이 물만으로 연마 가능함.",
+        "기존 Slurry 방식에서 어려웠던 곡면 Edge 연마가 가능하며 Chip·Crack·Particle을 줄여 대구경 SiC Wafer Yield 향상을 겨냥하고 있음.",
+        "SMM의 300mm Bonded SiC와 연결하면 일본에서 소재 대구경화와 제조공정 Cost Down이 동시에 진행되고 있음."
       ],
-      "commercialization_stage": "Sample Shipment / Customer Qualification",
-      "related_entities": [
-        "Sumitomo Metal Mining",
-        "Power Semiconductor Manufacturers",
-        "EV Inverter",
-        "Industrial Power Electronics"
+      "core_technology": ["SiC Wafer", "Diamond Abrasive Pad", "Slurry-free Polishing", "Wafer Yield"],
+      "commercialization_stage": "Product Development / Application Expansion",
+      "related_entities": ["Noritake", "SiC Wafer Manufacturers", "Power Semiconductor Manufacturers"],
+      "posco_implications": ["SiC Power Semiconductor Value Chain 및 제조원가 구조 분석에 참고가치가 있음."],
+      "priority": "Medium",
+      "follow_up": ["Removal Rate", "Surface Roughness", "Cost", "300mm 대응", "고객"]
+    },
+    {
+      "id": "2026-09-29-sumitomo-chemical-optical",
+      "category": ["첨단소재", "Photonics", "반도체"],
+      "title": "Sumitomo Chemical, 굴절률 1.06 초저굴절 투명 Coating Material 개발",
+      "published_at": "2026-09-29T08:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news038.html",
+      "summary": [
+        "Sumitomo Chemical이 굴절률 1.06의 초저굴절 투명박막용 Coating Liquid를 개발했으며 굴절률을 1.06~1.36 범위에서 제어할 수 있음.",
+        "Nano-pore 구조를 이용해 높은 가시광 투과율과 300℃ 내열성, 내용제성을 확보했음.",
+        "CMOS Image Sensor, Optical Interconnect, Meta-lens 등을 Target으로 2026년 Sample 공급을 시작할 예정임."
       ],
-      "posco_implications": [
-        "SMM은 광산·제련→Battery 소재→Recycling→SiC/전자소재로 연결되는 자원·제련 기반 첨단소재 제조기업으로 평가하는 것이 적절함.",
-        "향후 SMM 경쟁사 분석에서는 Battery Cathode뿐 아니라 SiC와 전자소재 Portfolio까지 포함할 필요가 있음."
-      ],
-      "priority": "High",
-      "follow_up": [
-        "300mm Wafer 수율",
-        "양산 일정",
-        "Sample 고객",
-        "200mm 대비 Cost",
-        "Defect Density",
-        "SMM SiC CAPA"
-      ]
+      "core_technology": ["Ultra-low Refractive Index", "Nano-porous Film", "Optical Interconnect", "Meta-lens"],
+      "commercialization_stage": "Sample / Customer Evaluation",
+      "related_entities": ["Sumitomo Chemical", "CMOS Image Sensor Manufacturers", "Optical Device Manufacturers"],
+      "posco_implications": ["직접 사업연계성은 낮으나 AI Data Center의 Optical Interconnect 확대에 따른 첨단소재 시장 변화 관점에서 Monitoring 가치가 있음."],
+      "priority": "Low",
+      "follow_up": ["Sample 고객", "Optical Loss", "Mechanical Strength", "Moisture Resistance", "양산 일정"]
     }
   ],
   "key_insights": [
-    "Battery 소재 경쟁은 Graphite Particle 자체뿐 아니라 Surface Treatment·Binder·Electrolyte Additive·SEI Engineering을 포함하는 Interface System 경쟁으로 확대되고 있음.",
-    "FPTI의 1000 cycle 95.6% 용량유지율은 Graphite/Li Half-cell 결과이므로 상용 EV Battery 성능으로 과대해석해서는 안 됨.",
-    "FESTO 사례는 기존 Sensor와 PLC Data를 재활용하는 Low-CAPEX Retrofit형 AI가 Brownfield 제조현장에서 현실적인 Predictive Maintenance 확산모델이 될 수 있음을 보여줌.",
-    "SMM의 300mm Bonded SiC 개발은 SMM을 단순 양극재 제조사가 아니라 자원·제련 기반 첨단소재 기업으로 평가해야 할 필요성을 강화함."
+    "High-Ni Battery가 280Wh/kg과 높은 Nail Penetration Safety를 동시에 제시하면서 Data Center 등 Non-EV ESS Application 확대 가능성이 나타나고 있음.",
+    "일본 Perovskite 시장은 Panasonic의 Glass/BIPV와 Ricoh의 Film/Inkjet Manufacturing처럼 사업모델이 분화되고 있어 Cell Efficiency만으로 비교해서는 안 됨.",
+    "POSCO의 Perovskite 진입은 Cell 제조보다 Steel Building Material과 BIPV Integration에서 기존 Capability를 활용하는 방향이 현실적임.",
+    "Ru Single-atom Catalyst의 CO2→Formic Acid 선택률은 높지만 사업성 판단에는 Conversion·STY·H2 Cost·Catalyst Life가 필요함.",
+    "SMM 300mm SiC와 Noritake Slurry-free Polishing을 연결하면 일본의 SiC Supply Chain이 소재 대구경화와 제조공정 Cost Down을 동시에 추진하고 있음.",
+    "PFU 사례는 Machine Vision이 생산 후 검사에서 CAD·Synthetic Data 기반 사전 Quality Engineering으로 이동하고 있음을 보여줌."
   ],
   "priority_ranking": [
-    {
-      "rank": 1,
-      "article_id": "2026-09-28-jaist-fpti",
-      "priority": "High"
-    },
-    {
-      "rank": 2,
-      "article_id": "2026-09-28-smm-300mm-sic",
-      "priority": "High"
-    },
-    {
-      "rank": 3,
-      "article_id": "2026-09-28-festo-ax-mip",
-      "priority": "Medium"
-    }
+    {"rank": 1, "article_id": "2026-09-29-eliiy-high-ni", "priority": "High"},
+    {"rank": 2, "article_id": "2026-09-29-panasonic-perovskite", "priority": "High"},
+    {"rank": 3, "article_id": "2026-09-29-ricoh-perovskite", "priority": "High"},
+    {"rank": 4, "article_id": "2026-09-29-tohoku-ru-catalyst", "priority": "Medium"},
+    {"rank": 5, "article_id": "2026-09-29-pfu-inspection", "priority": "Medium"},
+    {"rank": 6, "article_id": "2026-09-29-noritake-sic", "priority": "Medium"},
+    {"rank": 7, "article_id": "2026-09-29-sumitomo-chemical-optical", "priority": "Low"}
   ],
   "no_new_articles_categories": [
-    "9/29 당일 신규기사",
+    "9/30 08:49 기준 당일 신규 핵심기사",
     "전고체전지",
-    "LFP·LMR·NCM 신규 양극재",
-    "신규 음극활물질",
+    "LFP 신규기술",
+    "LMR",
+    "신규 NCM 소재",
+    "음극재",
+    "전해질",
     "분리막",
     "Battery Recycling",
     "항공우주·방산소재",
     "Humanoid",
     "Mobile Manipulator",
     "신규 Robot Platform",
-    "Machine Vision 신규 핵심기술",
-    "GX",
-    "CCUS",
-    "수소",
-    "암모니아",
-    "SAF·e-SAF",
-    "e-Fuel",
-    "Perovskite",
-    "전력망·ESS",
     "핵융합",
     "양자컴퓨팅",
-    "일본 Startup 신규 투자/PoC"
+    "수소·암모니아 직접 생산기술",
+    "SAF·e-Fuel",
+    "전력망",
+    "일본 Startup 신규 투자"
   ]
 }
