@@ -1,174 +1,117 @@
 {
-  "report_date": "2026-09-30",
+  "report_date": "2026-10-01",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-09-30T08:49:53+09:00",
+  "generated_at": "2026-10-01T08:53:32+09:00",
   "articles": [
     {
-      "id": "2026-09-29-eliiy-high-ni",
-      "category": ["이차전지", "High-Ni", "ESS"],
-      "title": "ELIIY Power, 못 관통에도 열폭주 없는 280Wh/kg High-Ni Battery 개발",
-      "published_at": "2026-09-29T07:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news063.html",
+      "id": "2026-10-01-hitachi-fanuc-physical-ai",
+      "category": ["AI", "Physical AI", "Robotics"],
+      "title": "Hitachi-FANUC, Physical AI 공동사업화 추진…2027년도 글로벌 전개",
+      "published_at": "2026-10-01T07:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/01/news031.html",
       "summary": [
-        "ELIIY Power가 자사 최초 High-Nickel 양극재 기반 HY Battery E Series를 개발했으며 기존 LFP 제품 대비 중량 Energy Density를 2배 이상 높여 280Wh/kg을 달성했음.",
-        "신품 및 열화 후 완전충전 Cell의 Nail Penetration Test에서 발연·발화·파열·Thermal Runaway가 발생하지 않았다고 발표했으며 약 4년간 소재·Cell 구조·제조공정 안전설계를 축적했음.",
-        "Data Center Backup·Portable Power·Light Mobility 등을 Target으로 하고 있어 High-Ni의 Non-EV Application 확대 가능성을 보여줌."
+        "Hitachi와 FANUC이 Physical AI 구현 및 공동사업화를 위한 전략적 Partnership을 체결했으며 Hitachi AI와 FANUC 산업용 Robot을 결합한 공동실증을 추진함.",
+        "Hitachi Ibaraki 지역 공장을 Customer Zero로 활용해 다양한 부품 Picking과 Setup Change를 대상으로 인지정확도·동작·Takt Time·품질을 검증하며 Edge AI 반도체도 결합함.",
+        "2027년도부터 반도체·고기능소재·자동차·물류 등 글로벌 Install Base로 전개할 계획으로 Physical AI가 Commercialization 단계로 이동하는 대표 사례임."
       ],
-      "core_technology": ["High-Nickel Cathode", "280Wh/kg", "Thermal Runaway Suppression", "Nail Penetration Safety"],
-      "commercialization_stage": "Product Development / Pre-commercial",
-      "related_entities": ["ELIIY Power", "Data Center", "Backup Power", "ESS"],
-      "posco_implications": ["High-Ni 양극재의 ESS Application 확대 가능성을 확인하는 사례임.", "POSCO Future M의 Non-EV High-Ni 수요처 관점에서 Tracking 가치가 높음."],
+      "core_technology": ["Physical AI", "Industrial Robot", "Edge AI", "Autonomous Picking", "Continuous Learning"],
+      "commercialization_stage": "Joint PoC → 2027 Global Commercialization",
+      "related_entities": ["Hitachi", "FANUC", "Hitachi Ibaraki Factory"],
+      "posco_implications": ["부품 Picking·검사·Palletizing·정비자재 Handling 등 주변 비정형 공정을 우선 적용후보로 검토할 필요가 있음.", "FANUC-Hitachi 조합은 일본 Physical AI Ecosystem의 기준 사례로 Tracking 가치가 높음."],
       "priority": "High",
-      "follow_up": ["Ni 조성", "Cathode 공급사", "Cycle Life", "Calendar Life", "Cost/kWh", "Data Center 고객"]
+      "follow_up": ["PoC 공정", "Robot Model", "AI Model", "Sensor", "Edge AI Chip", "Takt Time", "Commercial Model"]
     },
     {
-      "id": "2026-09-29-panasonic-perovskite",
-      "category": ["GX", "Perovskite", "PoC"],
-      "title": "Panasonic HD, Kobe 공공시설에서 Glass형 Perovskite 태양전지 실증",
-      "published_at": "2026-09-29T07:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news021.html",
+      "id": "2026-10-01-fujisoft-smart-factory",
+      "category": ["AI", "AX", "Smart Factory"],
+      "title": "Fujisoft, Digital Thread + Physical AI 기반 Smart Factory 사업 확대",
+      "published_at": "2026-10-01T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/01/news034.html",
       "summary": [
-        "Panasonic HD와 Kobe City가 Kobe Port 공공시설 Kamomeria에서 Glass-type Perovskite Solar Cell 실증을 시작했으며 공공시설 설치는 서일본 최초임.",
-        "관광지역 경관과 조화를 이루는 Design을 적용해 유리면 자체를 발전공간으로 활용하는 BIPV Application을 검증하고 있음.",
-        "Perovskite 경쟁이 Lab Efficiency에서 실제 도시공간·건축재 Integration으로 이동하고 있음을 보여줌."
+        "Fujisoft가 AI×IT×OT 기반 Smart Factory 전략을 발표하고 연 10% 이상의 사업성장을 목표로 제시했으며 설계·제조·품질·보전 Data를 Digital Thread로 연결하는 전략임.",
+        "PLM/BOM, Simulation, AI Robotics, 기존 PLC/MES Integration을 4개 Offering으로 구성해 기존 설비를 전면교체하지 않는 Brownfield Automation을 추진함.",
+        "Daido와 Physical AI Start Package를 상품화해 10월 13일 발표할 예정이며 AMD·Qualcomm·SiMa.ai 등과 Edge AI 생태계도 구축 중임."
       ],
-      "core_technology": ["Glass-type Perovskite", "BIPV", "Building Facade Generation"],
+      "core_technology": ["Digital Thread", "Physical AI", "Digital Twin", "PLC/MES Integration", "Edge AI"],
+      "commercialization_stage": "Commercialization / Solution Deployment",
+      "related_entities": ["Fujisoft", "Cybernet Systems", "Daido", "AMD", "Qualcomm", "SiMa.ai"],
+      "posco_implications": ["Brownfield 제조업에서는 신규 Robot 성능보다 기존 OT Data와 AI를 연결하는 Integration Architecture가 핵심임."],
+      "priority": "High",
+      "follow_up": ["Physical AI Start Package", "Cost", "PoC 기간", "Digital Twin", "PLC/MES 연결", "POSCO 적용성"]
+    },
+    {
+      "id": "2026-09-30-yazaki-cuebus-yamazen",
+      "category": ["Robotics", "Humanoid", "Logistics PoC"],
+      "title": "Yazaki-Cuebus-Yamazen, 입체 Robot Warehouse와 Humanoid 연계 실증",
+      "published_at": "2026-09-30T10:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/30/news031.html",
+      "summary": [
+        "Yazaki, Cuebus, Yamazen이 Innovation Hub-REN에서 Linear Motor 방식 입체 Robot Warehouse CUEBUS를 활용한 실증을 시작했음.",
+        "CUEBUS에서 자동 출고된 부품·자재를 Autonomous Humanoid가 받아 다음 공정으로 전달하며 Physical AI Data와 연계해 공정간 물류와 재고관리 최적화를 검증함.",
+        "고정 자동화설비와 비정형 작업 Robot을 연결해 제조공장 내부물류의 End-to-End 무인화를 검증하는 PoC로 평가됨."
+      ],
+      "core_technology": ["Linear Motor Warehouse", "Autonomous Humanoid", "Physical AI", "Robot Orchestration"],
       "commercialization_stage": "Field PoC / Demonstration",
-      "related_entities": ["Panasonic Holdings", "Kobe City", "Panasonic Environmental Systems & Engineering"],
-      "posco_implications": ["Steel Exterior·Building Structure·Perovskite Module을 결합한 BIPV Solution을 검토할 가치가 높음."],
+      "related_entities": ["Yazaki", "Cuebus", "Yamazen", "Innovation Hub-REN"],
+      "posco_implications": ["Spare Part Warehouse·정비자재·Lab Sample 등 자동화설비 사이에 남아 있는 사람 작업이 Humanoid의 현실적인 초기 적용처가 될 가능성이 높음."],
       "priority": "High",
-      "follow_up": ["효율", "내구성", "발전량", "양산일정", "POSCO Steel BIPV 연계"]
+      "follow_up": ["Humanoid Maker", "Physical AI 공급사", "CUEBUS 처리량", "Picking 성공률", "Takt Time", "PoC KPI"]
     },
     {
-      "id": "2026-09-29-ricoh-perovskite",
-      "category": ["GX", "Perovskite", "제조"],
-      "title": "Ricoh, Inkjet 기반 Perovskite Solar Cell 2030 사업화 추진",
-      "published_at": "2026-09-29T06:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news056.html",
+      "id": "2026-09-30-kanazawa-pefc-ink",
+      "category": ["수소", "Fuel Cell", "R&D AX"],
+      "title": "Kanazawa Univ. 등, PEFC 촉매 Ink의 초기 Pt/C 응집상태가 Pt 이용률 좌우",
+      "published_at": "2026-09-30T11:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/30/news022.html",
       "summary": [
-        "Ricoh는 Atsugi 신공장을 2028년도 상반기 완공하고 AI·Digital Twin·Robot을 활용한 차세대 생산거점으로 구축할 예정임.",
-        "Functional Printing 신사업으로 Film-type Perovskite를 육성하며 Inkjet을 활용해 필요한 부분에만 소재를 직접 도포해 Laser·Vacuum Process와 소재 Loss를 줄이는 제조방식을 개발하고 있음.",
-        "Daiwa House·NTT Anode Energy와 NEDO Consortium을 구성했으며 2030년 사업화를 목표로 하고 있음."
+        "Kanazawa Univ., University of Tokyo, HORIBA 연구팀이 PEFC Catalyst Ink에서 Ionomer 첨가 전 Pt/C 초기 응집상태가 이후 분산과 Pt 이용률에 큰 영향을 준다는 점을 규명했음.",
+        "짧은 Premixing 조건에서는 혼합 1시간 후 ECSA 64.42m²/gPt로 연구 내 최고값을 기록한 반면 과도한 Premixing은 재응집을 유발해 Pt 이용률을 낮췄음.",
+        "NEDO 사업의 자동·자율 혼합분산 최적화 System ROPES 개발과 연결돼 있으며 향후 Fuel Cell Catalyst Layer 제조공정의 Autonomous Optimization을 목표로 하고 있음."
       ],
-      "core_technology": ["Film Perovskite", "Inkjet Manufacturing", "Functional Printing"],
-      "commercialization_stage": "Development + Consortium PoC / 2030 Commercialization",
-      "related_entities": ["Ricoh", "Daiwa House Industry", "NTT Anode Energy", "NEDO"],
-      "posco_implications": ["Perovskite Cell 자체보다 건축재 Integration과 제조 Value Chain 접점을 우선 검토할 필요가 있음."],
-      "priority": "High",
-      "follow_up": ["효율", "수명", "Cost/W", "CAPA", "Daiwa House 실증"]
-    },
-    {
-      "id": "2026-09-29-tohoku-ru-catalyst",
-      "category": ["GX", "CCU", "수소", "Catalyst"],
-      "title": "Tohoku Univ. 등, CO₂를 99% 이상 선택률로 Formic Acid로 전환하는 Ru Single-atom Catalyst 개발",
-      "published_at": "2026-09-29T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news031.html",
-      "summary": [
-        "공동연구팀이 Ru를 최대 11wt%까지 Single-atom 상태로 Carbon Material에 고정하는 Bottom-up 합성법을 개발했음.",
-        "CO₂ Hydrogenation에서 Formic Acid 선택률 99% 이상을 기록했고 반복 사용 후에도 Ru 응집과 뚜렷한 활성저하가 확인되지 않았음.",
-        "Formic Acid와 Hydrogen Carrier, Precious Metal 절감 측면에서 의미가 있으나 현재는 Laboratory R&D 단계임."
-      ],
-      "core_technology": ["Ru Single-atom Catalyst", "CO2 Hydrogenation", "Formic Acid", "11wt% Ru Loading"],
-      "commercialization_stage": "Laboratory R&D / Proof of Concept",
-      "related_entities": ["Tohoku University", "University of Tsukuba", "Kyoto University", "Eindhoven University of Technology", "Kanazawa University", "Osaka University"],
-      "posco_implications": ["CCU 후보기술로 Monitoring 가치가 있으나 선택률만으로 사업성을 판단해서는 안 됨."],
+      "core_technology": ["PEFC", "Pt/C Catalyst", "Catalyst Ink", "ECSA", "ROPES", "Autonomous Experiment"],
+      "commercialization_stage": "Laboratory R&D + NEDO Process Automation Development",
+      "related_entities": ["Kanazawa University", "University of Tokyo", "HORIBA", "NEDO"],
+      "posco_implications": ["Robot+Measurement+Optimization 기반 소재공정 자율실험은 Battery Electrode Slurry와 양·음극 소재 분산공정으로 확장 검토 가치가 있음."],
       "priority": "Medium",
-      "follow_up": ["Conversion", "STY", "H2 Consumption", "Catalyst Cost", "Lifetime", "Scale-up"]
-    },
-    {
-      "id": "2026-09-29-pfu-inspection",
-      "category": ["AI", "Machine Vision", "자동화"],
-      "title": "PFU, CAD 단계에서 결함과 검사설비까지 설계하는 AI 외관검사 기술 개발",
-      "published_at": "2026-09-29T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news018.html",
-      "summary": [
-        "PFU가 CAD와 설계요구를 기반으로 예상 Defect를 Virtual Space에 생성하는 외관검사 설계 자동화 Solution을 개발하고 있음.",
-        "생산 이후 불량 Image를 확보하는 기존 방식과 달리 생산 이전에 Defect Pattern과 검사조건을 검증하는 Shift-left Quality 접근임.",
-        "NEDO Challenge 제조업DX Theme 2에서 1위를 획득했으며 Synthetic Data 기반 검사설계로 확장 가능성이 있음."
-      ],
-      "core_technology": ["Machine Vision", "CAD", "Synthetic Defect", "Inspection Design"],
-      "commercialization_stage": "Development / NEDO Challenge Validation",
-      "related_entities": ["PFU", "NEDO"],
-      "posco_implications": ["Virtual Defect 기반 검사 Algorithm 사전검증은 Steel Surface Inspection AI에 응용 가능성이 있음."],
-      "priority": "Medium",
-      "follow_up": ["Domain Gap", "Synthetic Data", "철강표면 적용성", "상용화 일정"]
-    },
-    {
-      "id": "2026-09-29-noritake-sic",
-      "category": ["첨단소재", "SiC", "반도체 제조"],
-      "title": "Noritake, Slurry 없이 물만 사용하는 SiC Wafer 연마 Pad 개발",
-      "published_at": "2026-09-29T13:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news070.html",
-      "summary": [
-        "Noritake가 Diamond Abrasive 내장형 SiC Wafer 연마 Pad LumiDia를 개발했으며 별도 Diamond Slurry 없이 물만으로 연마 가능함.",
-        "기존 Slurry 방식에서 어려웠던 곡면 Edge 연마가 가능하며 Chip·Crack·Particle을 줄여 대구경 SiC Wafer Yield 향상을 겨냥하고 있음.",
-        "SMM의 300mm Bonded SiC와 연결하면 일본에서 소재 대구경화와 제조공정 Cost Down이 동시에 진행되고 있음."
-      ],
-      "core_technology": ["SiC Wafer", "Diamond Abrasive Pad", "Slurry-free Polishing", "Wafer Yield"],
-      "commercialization_stage": "Product Development / Application Expansion",
-      "related_entities": ["Noritake", "SiC Wafer Manufacturers", "Power Semiconductor Manufacturers"],
-      "posco_implications": ["SiC Power Semiconductor Value Chain 및 제조원가 구조 분석에 참고가치가 있음."],
-      "priority": "Medium",
-      "follow_up": ["Removal Rate", "Surface Roughness", "Cost", "300mm 대응", "고객"]
-    },
-    {
-      "id": "2026-09-29-sumitomo-chemical-optical",
-      "category": ["첨단소재", "Photonics", "반도체"],
-      "title": "Sumitomo Chemical, 굴절률 1.06 초저굴절 투명 Coating Material 개발",
-      "published_at": "2026-09-29T08:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news038.html",
-      "summary": [
-        "Sumitomo Chemical이 굴절률 1.06의 초저굴절 투명박막용 Coating Liquid를 개발했으며 굴절률을 1.06~1.36 범위에서 제어할 수 있음.",
-        "Nano-pore 구조를 이용해 높은 가시광 투과율과 300℃ 내열성, 내용제성을 확보했음.",
-        "CMOS Image Sensor, Optical Interconnect, Meta-lens 등을 Target으로 2026년 Sample 공급을 시작할 예정임."
-      ],
-      "core_technology": ["Ultra-low Refractive Index", "Nano-porous Film", "Optical Interconnect", "Meta-lens"],
-      "commercialization_stage": "Sample / Customer Evaluation",
-      "related_entities": ["Sumitomo Chemical", "CMOS Image Sensor Manufacturers", "Optical Device Manufacturers"],
-      "posco_implications": ["직접 사업연계성은 낮으나 AI Data Center의 Optical Interconnect 확대에 따른 첨단소재 시장 변화 관점에서 Monitoring 가치가 있음."],
-      "priority": "Low",
-      "follow_up": ["Sample 고객", "Optical Loss", "Mechanical Strength", "Moisture Resistance", "양산 일정"]
+      "follow_up": ["Pt Loading", "Cell Performance", "Premixing 조건", "ROPES Algorithm", "Cycle Time", "Battery Slurry 적용성"]
     }
   ],
   "key_insights": [
-    "High-Ni Battery가 280Wh/kg과 높은 Nail Penetration Safety를 동시에 제시하면서 Data Center 등 Non-EV ESS Application 확대 가능성이 나타나고 있음.",
-    "일본 Perovskite 시장은 Panasonic의 Glass/BIPV와 Ricoh의 Film/Inkjet Manufacturing처럼 사업모델이 분화되고 있어 Cell Efficiency만으로 비교해서는 안 됨.",
-    "POSCO의 Perovskite 진입은 Cell 제조보다 Steel Building Material과 BIPV Integration에서 기존 Capability를 활용하는 방향이 현실적임.",
-    "Ru Single-atom Catalyst의 CO2→Formic Acid 선택률은 높지만 사업성 판단에는 Conversion·STY·H2 Cost·Catalyst Life가 필요함.",
-    "SMM 300mm SiC와 Noritake Slurry-free Polishing을 연결하면 일본의 SiC Supply Chain이 소재 대구경화와 제조공정 Cost Down을 동시에 추진하고 있음.",
-    "PFU 사례는 Machine Vision이 생산 후 검사에서 CAD·Synthetic Data 기반 사전 Quality Engineering으로 이동하고 있음을 보여줌."
+    "일본 Physical AI가 Robot 개발에서 실제 제조현장 통합 및 공동사업화 단계로 이동하고 있음.",
+    "Hitachi-FANUC은 Customer Zero 실증 후 2027년도 글로벌 전개를 명시해 단순 기술협력보다 높은 우선순위로 Tracking할 필요가 있음.",
+    "POSCO의 초기 Physical AI 적용은 고온·중량물 Main Process보다 부품 Picking·검사·Palletizing·정비자재 물류 등 주변 비정형 공정이 현실적임.",
+    "대형 제조업에서 Physical AI의 핵심 병목은 Robot Hardware보다 기존 PLC·MES·설비와의 Brownfield Integration일 가능성이 높음.",
+    "Fuel Cell Catalyst Ink의 ROPES 사례는 소재개발에서도 Robot·Measurement·Optimization 기반 Autonomous Experiment가 확산되고 있음을 보여줌."
   ],
   "priority_ranking": [
-    {"rank": 1, "article_id": "2026-09-29-eliiy-high-ni", "priority": "High"},
-    {"rank": 2, "article_id": "2026-09-29-panasonic-perovskite", "priority": "High"},
-    {"rank": 3, "article_id": "2026-09-29-ricoh-perovskite", "priority": "High"},
-    {"rank": 4, "article_id": "2026-09-29-tohoku-ru-catalyst", "priority": "Medium"},
-    {"rank": 5, "article_id": "2026-09-29-pfu-inspection", "priority": "Medium"},
-    {"rank": 6, "article_id": "2026-09-29-noritake-sic", "priority": "Medium"},
-    {"rank": 7, "article_id": "2026-09-29-sumitomo-chemical-optical", "priority": "Low"}
+    {"rank": 1, "article_id": "2026-10-01-hitachi-fanuc-physical-ai", "priority": "High"},
+    {"rank": 2, "article_id": "2026-09-30-yazaki-cuebus-yamazen", "priority": "High"},
+    {"rank": 3, "article_id": "2026-10-01-fujisoft-smart-factory", "priority": "High"},
+    {"rank": 4, "article_id": "2026-09-30-kanazawa-pefc-ink", "priority": "Medium"}
   ],
   "no_new_articles_categories": [
-    "9/30 08:49 기준 당일 신규 핵심기사",
+    "이차전지·축전지",
     "전고체전지",
-    "LFP 신규기술",
+    "LFP",
     "LMR",
-    "신규 NCM 소재",
+    "NCM·양극재",
     "음극재",
     "전해질",
     "분리막",
     "Battery Recycling",
     "항공우주·방산소재",
-    "Humanoid",
-    "Mobile Manipulator",
-    "신규 Robot Platform",
+    "CCUS",
+    "암모니아",
+    "SAF",
+    "e-Fuel",
+    "Perovskite",
+    "전력망",
+    "ESS",
     "핵융합",
     "양자컴퓨팅",
-    "수소·암모니아 직접 생산기술",
-    "SAF·e-Fuel",
-    "전력망",
     "일본 Startup 신규 투자"
   ]
 }
