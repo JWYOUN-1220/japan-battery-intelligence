@@ -1,99 +1,189 @@
 {
-  "report_date": "2026-10-01",
+  "report_date": "2026-10-05",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-10-01T08:53:32+09:00",
+  "generated_at": "2026-10-05T08:43:52+09:00",
+  "weekend_monday_window": {
+    "start": "2026-10-03T00:00:00+09:00",
+    "end": "2026-10-05T08:43:52+09:00",
+    "saturday": "신규 유효기사 없음. 주간 재정리 기사는 제외",
+    "sunday": "신규 유효기사 없음",
+    "monday": "3건"
+  },
   "articles": [
     {
-      "id": "2026-10-01-hitachi-fanuc-physical-ai",
-      "category": ["AI", "Physical AI", "Robotics"],
-      "title": "Hitachi-FANUC, Physical AI 공동사업화 추진…2027년도 글로벌 전개",
-      "published_at": "2026-10-01T07:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/01/news031.html",
-      "summary": [
-        "Hitachi와 FANUC이 Physical AI 구현 및 공동사업화를 위한 전략적 Partnership을 체결했으며 Hitachi AI와 FANUC 산업용 Robot을 결합한 공동실증을 추진함.",
-        "Hitachi Ibaraki 지역 공장을 Customer Zero로 활용해 다양한 부품 Picking과 Setup Change를 대상으로 인지정확도·동작·Takt Time·품질을 검증하며 Edge AI 반도체도 결합함.",
-        "2027년도부터 반도체·고기능소재·자동차·물류 등 글로벌 Install Base로 전개할 계획으로 Physical AI가 Commercialization 단계로 이동하는 대표 사례임."
+      "id": "2026-10-05-kddi-rlwrld-physical-ai",
+      "category": [
+        "AI",
+        "Physical AI",
+        "Robotics",
+        "Startup",
+        "PoC"
       ],
-      "core_technology": ["Physical AI", "Industrial Robot", "Edge AI", "Autonomous Picking", "Continuous Learning"],
-      "commercialization_stage": "Joint PoC → 2027 Global Commercialization",
-      "related_entities": ["Hitachi", "FANUC", "Hitachi Ibaraki Factory"],
-      "posco_implications": ["부품 Picking·검사·Palletizing·정비자재 Handling 등 주변 비정형 공정을 우선 적용후보로 검토할 필요가 있음.", "FANUC-Hitachi 조합은 일본 Physical AI Ecosystem의 기준 사례로 Tracking 가치가 높음."],
+      "title": "KDDI-RLWRLD, Physical AI 공동사업 구체화…Lawson 현장 데이터 기반 Robot Foundation Model 개발",
+      "published_at": "2026-10-05T06:30:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news021.html",
+      "summary": [
+        "KDDI와 한국 Physical AI Startup RLWRLD가 일본 물류·소매현장의 업무를 Robot으로 대체하기 위한 Robot Foundation Model 공동개발을 추진하고 있음. KDDI Project는 METI·NEDO GENIAC에 채택됐으며 RLWRLD가 Foundation Model을 제공하고 있음.",
+        "Robot 원격조작 Data뿐 아니라 작업자의 1인칭 영상을 기록하는 Egocentric Data 수집방식을 적용하고 있음. Lawson 등 실제 현장 Data를 직접 학습시켜 일본 소매·물류환경에서 작동 가능한 Model을 개발하는 구조임.",
+        "협력은 2025년 4월 KDDI CVC 투자에서 시작해 Lawson 현장조사, PB상품 PoC, Store Simulation Data 수집 PoC, GENIAC 국가 Project로 확대됐음. RLWRLD 인력도 약 20명에서 한·미·일 126명 규모로 확대됐음."
+      ],
+      "core_technology": [
+        "Physical AI",
+        "Robot Foundation Model",
+        "VLA",
+        "Egocentric Data Collection",
+        "Fine-tuning",
+        "Simulation",
+        "Robot Hardware Integration"
+      ],
+      "commercialization_stage": "PoC → Government-backed R&D → Field Implementation",
+      "related_entities": [
+        "KDDI",
+        "RLWRLD",
+        "Lawson",
+        "METI",
+        "NEDO",
+        "GENIAC"
+      ],
+      "posco_implications": [
+        "Physical AI 경쟁에서 실제 산업현장 작업 Data가 핵심 전략자산으로 부상하고 있음.",
+        "POSCO그룹은 Robot 자체개발보다 제철·물류·건설 현장을 PoC/Data Platform으로 활용해 유망 Foundation Model·Robot 기업과 공동개발하는 전략을 검토할 필요가 있음.",
+        "산업현장 Data는 일반 소비자 환경보다 확보 난도가 높아 장기적으로 차별화 자산이 될 가능성이 있음."
+      ],
       "priority": "High",
-      "follow_up": ["PoC 공정", "Robot Model", "AI Model", "Sensor", "Edge AI Chip", "Takt Time", "Commercial Model"]
+      "follow_up": [
+        "RLWRLD Foundation Model Architecture",
+        "VLA 적용 여부",
+        "Robot Hardware",
+        "Egocentric Data 변환방식",
+        "Lawson PoC Task 및 성공률",
+        "Simulation/Real Data 비율",
+        "KDDI 투자규모",
+        "POSCO 적용 Use Case"
+      ]
     },
     {
-      "id": "2026-10-01-fujisoft-smart-factory",
-      "category": ["AI", "AX", "Smart Factory"],
-      "title": "Fujisoft, Digital Thread + Physical AI 기반 Smart Factory 사업 확대",
-      "published_at": "2026-10-01T07:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/01/news034.html",
-      "summary": [
-        "Fujisoft가 AI×IT×OT 기반 Smart Factory 전략을 발표하고 연 10% 이상의 사업성장을 목표로 제시했으며 설계·제조·품질·보전 Data를 Digital Thread로 연결하는 전략임.",
-        "PLM/BOM, Simulation, AI Robotics, 기존 PLC/MES Integration을 4개 Offering으로 구성해 기존 설비를 전면교체하지 않는 Brownfield Automation을 추진함.",
-        "Daido와 Physical AI Start Package를 상품화해 10월 13일 발표할 예정이며 AMD·Qualcomm·SiMa.ai 등과 Edge AI 생태계도 구축 중임."
+      "id": "2026-10-05-nitto-co-creation-ai",
+      "category": [
+        "AI",
+        "산업AI",
+        "첨단소재",
+        "신사업 AX"
       ],
-      "core_technology": ["Digital Thread", "Physical AI", "Digital Twin", "PLC/MES Integration", "Edge AI"],
-      "commercialization_stage": "Commercialization / Solution Deployment",
-      "related_entities": ["Fujisoft", "Cybernet Systems", "Daido", "AMD", "Qualcomm", "SiMa.ai"],
-      "posco_implications": ["Brownfield 제조업에서는 신규 Robot 성능보다 기존 OT Data와 AI를 연결하는 Integration Architecture가 핵심임."],
-      "priority": "High",
-      "follow_up": ["Physical AI Start Package", "Cost", "PoC 기간", "Digital Twin", "PLC/MES 연결", "POSCO 적용성"]
-    },
-    {
-      "id": "2026-09-30-yazaki-cuebus-yamazen",
-      "category": ["Robotics", "Humanoid", "Logistics PoC"],
-      "title": "Yazaki-Cuebus-Yamazen, 입체 Robot Warehouse와 Humanoid 연계 실증",
-      "published_at": "2026-09-30T10:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/30/news031.html",
+      "title": "Nitto, '공창 AI' 기반 고객 잠재과제 발굴…소재기업의 AI 활용을 R&D·사업개발 영역으로 확대",
+      "published_at": "2026-10-05T07:15:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news027.html",
       "summary": [
-        "Yazaki, Cuebus, Yamazen이 Innovation Hub-REN에서 Linear Motor 방식 입체 Robot Warehouse CUEBUS를 활용한 실증을 시작했음.",
-        "CUEBUS에서 자동 출고된 부품·자재를 Autonomous Humanoid가 받아 다음 공정으로 전달하며 Physical AI Data와 연계해 공정간 물류와 재고관리 최적화를 검증함.",
-        "고정 자동화설비와 비정형 작업 Robot을 연결해 제조공장 내부물류의 End-to-End 무인화를 검증하는 PoC로 평가됨."
+        "Nitto가 inovas TOKYO를 Renewal하고 고객·체험 Demo·공창 AI·전문인력을 결합한 신규 사업개발 체계를 구축했음. AI를 고객 잠재 Needs 발굴과 자사 소재기술 Matching에 직접 활용하고 있음.",
+        "공창 AI는 고객 Background, 산업정보, 특허정보를 분석해 복수의 잠재과제를 생성함. 고객과의 대화로 과제를 구체화하면 Nitto 핵심기술 Database에서 적합한 Solution을 찾아 연결하는 구조임.",
+        "AI 분석과 고객 직접대화, 연구자·전문가, 실제 Demo를 결합해 R&D와 사업공창으로 연결하고 있음. 소재기업의 AX 적용범위가 생산현장에서 영업·R&D·신사업개발까지 확대되는 사례임."
       ],
-      "core_technology": ["Linear Motor Warehouse", "Autonomous Humanoid", "Physical AI", "Robot Orchestration"],
-      "commercialization_stage": "Field PoC / Demonstration",
-      "related_entities": ["Yazaki", "Cuebus", "Yamazen", "Innovation Hub-REN"],
-      "posco_implications": ["Spare Part Warehouse·정비자재·Lab Sample 등 자동화설비 사이에 남아 있는 사람 작업이 Humanoid의 현실적인 초기 적용처가 될 가능성이 높음."],
-      "priority": "High",
-      "follow_up": ["Humanoid Maker", "Physical AI 공급사", "CUEBUS 처리량", "Picking 성공률", "Takt Time", "PoC KPI"]
-    },
-    {
-      "id": "2026-09-30-kanazawa-pefc-ink",
-      "category": ["수소", "Fuel Cell", "R&D AX"],
-      "title": "Kanazawa Univ. 등, PEFC 촉매 Ink의 초기 Pt/C 응집상태가 Pt 이용률 좌우",
-      "published_at": "2026-09-30T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/30/news022.html",
-      "summary": [
-        "Kanazawa Univ., University of Tokyo, HORIBA 연구팀이 PEFC Catalyst Ink에서 Ionomer 첨가 전 Pt/C 초기 응집상태가 이후 분산과 Pt 이용률에 큰 영향을 준다는 점을 규명했음.",
-        "짧은 Premixing 조건에서는 혼합 1시간 후 ECSA 64.42m²/gPt로 연구 내 최고값을 기록한 반면 과도한 Premixing은 재응집을 유발해 Pt 이용률을 낮췄음.",
-        "NEDO 사업의 자동·자율 혼합분산 최적화 System ROPES 개발과 연결돼 있으며 향후 Fuel Cell Catalyst Layer 제조공정의 Autonomous Optimization을 목표로 하고 있음."
+      "core_technology": [
+        "Generative AI",
+        "Technology Knowledge Database",
+        "Patent Intelligence",
+        "Customer Needs Analysis",
+        "Technology-Needs Matching",
+        "AI-assisted Business Development"
       ],
-      "core_technology": ["PEFC", "Pt/C Catalyst", "Catalyst Ink", "ECSA", "ROPES", "Autonomous Experiment"],
-      "commercialization_stage": "Laboratory R&D + NEDO Process Automation Development",
-      "related_entities": ["Kanazawa University", "University of Tokyo", "HORIBA", "NEDO"],
-      "posco_implications": ["Robot+Measurement+Optimization 기반 소재공정 자율실험은 Battery Electrode Slurry와 양·음극 소재 분산공정으로 확장 검토 가치가 있음."],
+      "commercialization_stage": "Internal Deployment / Customer Co-creation",
+      "related_entities": [
+        "Nitto",
+        "Nitto Customers",
+        "Nitto R&D",
+        "Technology Marketing"
+      ],
+      "posco_implications": [
+        "철강·Battery·GX 분야의 특허, 고객 Meeting, 기술자료와 시장정보를 연결하는 Knowledge AI 적용 가능성이 있음.",
+        "단순 News Search보다 고객과제와 내부기술을 연결하는 신사업 Agent가 실제 업무생산성 향상에 더 직접적인 가치가 있을 가능성이 높음.",
+        "AI 성능 자체보다 고객 접점과 내부 기술 Database의 품질이 경쟁력을 결정할 가능성이 높음."
+      ],
       "priority": "Medium",
-      "follow_up": ["Pt Loading", "Cell Performance", "Premixing 조건", "ROPES Algorithm", "Cycle Time", "Battery Slurry 적용성"]
+      "follow_up": [
+        "공창 AI 개발주체",
+        "LLM/RAG 구조",
+        "특허 DB 연계",
+        "내부 기술 DB",
+        "Security",
+        "사업 Theme 창출사례",
+        "PoC-매출 전환 KPI"
+      ]
+    },
+    {
+      "id": "2026-10-05-isuzu-hino-ev-inverter-recall",
+      "category": [
+        "EV",
+        "Power Electronics",
+        "Advanced Materials",
+        "Quality"
+      ],
+      "title": "Isuzu·Hino EV Bus 138대 Recall…Inverter 납땜 불량으로 단락·화재 위험",
+      "published_at": "2026-10-05T06:45:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news028.html",
+      "summary": [
+        "Isuzu와 Hino가 공동설계한 노선 EV Bus에서 Inverter 내부 단락 및 화재 위험이 확인돼 총 138대를 Recall하고 있음. Isuzu ERGA EV 134대와 Hino Blue Ribbon Z EV 4대가 대상이며 시장에서 실제 화재 1건이 발생했음.",
+        "직접 원인은 Battery가 아니라 Inverter PCB의 부적절한 납땜 공정임. 열팽창·수축 반복으로 납땜부 Crack이 발생하고 접촉불안정과 제어신호 이상을 거쳐 Inverter 내부 Short Circuit 및 Harness 발열로 이어질 수 있음.",
+        "대상 차량은 Inverter를 정상제품으로 교환하고 일부 차량은 MCU도 교환함. EV 안전성이 Battery Cell뿐 아니라 Power Electronics의 접합 및 Thermal Cycle Reliability에도 크게 좌우됨을 보여주는 사례임."
+      ],
+      "core_technology": [
+        "EV Inverter",
+        "PCB Soldering",
+        "Thermal Cycling",
+        "Short Circuit",
+        "Motor Control Unit",
+        "Power Electronics Reliability"
+      ],
+      "commercialization_stage": "Commercial Product / Field Recall",
+      "related_entities": [
+        "Isuzu Motors",
+        "Hino Motors",
+        "J-Bus",
+        "MLIT"
+      ],
+      "posco_implications": [
+        "본 건은 Battery 화재가 아니라 Inverter 접합 Reliability 문제로 분류하는 것이 정확함.",
+        "EV 고전력화에 따라 Power Semiconductor, 접합재, Busbar, 방열소재 등 주변 소재의 중요성이 확대되고 있음.",
+        "SMM Nano Cu 등 Power Semiconductor 접합재 사업과 연계해 Monitoring할 필요가 있음."
+      ],
+      "priority": "Medium",
+      "follow_up": [
+        "Inverter Supplier",
+        "Solder Material",
+        "Thermal Cycle 조건",
+        "Power Semiconductor 종류",
+        "접합 Reliability Spec",
+        "Cu/Ag Sintering 적용 가능성",
+        "관련 소재시장 규모"
+      ]
     }
   ],
   "key_insights": [
-    "일본 Physical AI가 Robot 개발에서 실제 제조현장 통합 및 공동사업화 단계로 이동하고 있음.",
-    "Hitachi-FANUC은 Customer Zero 실증 후 2027년도 글로벌 전개를 명시해 단순 기술협력보다 높은 우선순위로 Tracking할 필요가 있음.",
-    "POSCO의 초기 Physical AI 적용은 고온·중량물 Main Process보다 부품 Picking·검사·Palletizing·정비자재 물류 등 주변 비정형 공정이 현실적임.",
-    "대형 제조업에서 Physical AI의 핵심 병목은 Robot Hardware보다 기존 PLC·MES·설비와의 Brownfield Integration일 가능성이 높음.",
-    "Fuel Cell Catalyst Ink의 ROPES 사례는 소재개발에서도 Robot·Measurement·Optimization 기반 Autonomous Experiment가 확산되고 있음을 보여줌."
+    "KDDI-RLWRLD 사례에서 Physical AI 사업화의 핵심이 Robot Hardware 자체보다 실제 작업 Data, Foundation Model, Hardware Integration 및 반복적인 현장 PoC로 이동하고 있음.",
+    "POSCO그룹은 대규모 산업현장을 보유하고 있어 Physical AI 분야에서 단순 Robot 구매자가 아니라 Data 및 PoC Partner로 참여할 수 있는 전략적 자산을 보유하고 있음.",
+    "Nitto 사례는 소재기업의 AI 활용영역이 생산자동화에서 고객 Needs 발굴, 기술 Matching, R&D 및 신사업개발까지 확대되고 있음을 보여줌.",
+    "Isuzu/Hino Recall은 EV 안전성 Monitoring을 Battery Cell에서 Power Semiconductor, 접합재, Busbar, Thermal Management 등 Power Electronics Value Chain까지 확대할 필요성을 보여줌."
   ],
   "priority_ranking": [
-    {"rank": 1, "article_id": "2026-10-01-hitachi-fanuc-physical-ai", "priority": "High"},
-    {"rank": 2, "article_id": "2026-09-30-yazaki-cuebus-yamazen", "priority": "High"},
-    {"rank": 3, "article_id": "2026-10-01-fujisoft-smart-factory", "priority": "High"},
-    {"rank": 4, "article_id": "2026-09-30-kanazawa-pefc-ink", "priority": "Medium"}
+    {
+      "rank": 1,
+      "article_id": "2026-10-05-kddi-rlwrld-physical-ai",
+      "priority": "High"
+    },
+    {
+      "rank": 2,
+      "article_id": "2026-10-05-nitto-co-creation-ai",
+      "priority": "Medium"
+    },
+    {
+      "rank": 3,
+      "article_id": "2026-10-05-isuzu-hino-ev-inverter-recall",
+      "priority": "Medium"
+    }
   ],
   "no_new_articles_categories": [
-    "이차전지·축전지",
     "전고체전지",
     "LFP",
     "LMR",
@@ -103,7 +193,11 @@
     "분리막",
     "Battery Recycling",
     "항공우주·방산소재",
+    "Humanoid",
+    "Mobile Manipulator",
+    "Machine Vision",
     "CCUS",
+    "수소",
     "암모니아",
     "SAF",
     "e-Fuel",
@@ -111,7 +205,6 @@
     "전력망",
     "ESS",
     "핵융합",
-    "양자컴퓨팅",
-    "일본 Startup 신규 투자"
+    "양자컴퓨팅"
   ]
 }
