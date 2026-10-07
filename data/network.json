@@ -1,190 +1,124 @@
 {
-  "report_date": "2026-10-05",
+  "report_date": "2026-10-06",
   "source": {
     "name": "MONOist",
     "domain": "monoist.itmedia.co.jp"
   },
-  "generated_at": "2026-10-05T08:43:52+09:00",
-  "weekend_monday_window": {
-    "start": "2026-10-03T00:00:00+09:00",
-    "end": "2026-10-05T08:43:52+09:00",
-    "saturday": "신규 유효기사 없음. 주간 재정리 기사는 제외",
-    "sunday": "신규 유효기사 없음",
-    "monday": "3건"
-  },
+  "generated_at": "2026-10-06T12:03:00+09:00",
   "articles": [
     {
-      "id": "2026-10-05-kddi-rlwrld-physical-ai",
+      "id": "2026-10-06-mhi-pfn-mission-critical-ai",
       "category": [
         "AI",
         "Physical AI",
-        "Robotics",
-        "Startup",
-        "PoC"
+        "방산",
+        "사회인프라",
+        "전략투자"
       ],
-      "title": "KDDI-RLWRLD, Physical AI 공동사업 구체화…Lawson 현장 데이터 기반 Robot Foundation Model 개발",
-      "published_at": "2026-10-05T06:30:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news021.html",
+      "title": "미쓰비시중공업-PFN, 100억엔 자본업무제휴…Mission-critical AI 공동개발·사회실장 확대",
+      "published_at": "2026-10-06T10:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news012.html",
       "summary": [
-        "KDDI와 한국 Physical AI Startup RLWRLD가 일본 물류·소매현장의 업무를 Robot으로 대체하기 위한 Robot Foundation Model 공동개발을 추진하고 있음. KDDI Project는 METI·NEDO GENIAC에 채택됐으며 RLWRLD가 Foundation Model을 제공하고 있음.",
-        "Robot 원격조작 Data뿐 아니라 작업자의 1인칭 영상을 기록하는 Egocentric Data 수집방식을 적용하고 있음. Lawson 등 실제 현장 Data를 직접 학습시켜 일본 소매·물류환경에서 작동 가능한 Model을 개발하는 구조임.",
-        "협력은 2025년 4월 KDDI CVC 투자에서 시작해 Lawson 현장조사, PB상품 PoC, Store Simulation Data 수집 PoC, GENIAC 국가 Project로 확대됐음. RLWRLD 인력도 약 20명에서 한·미·일 126명 규모로 확대됐음."
+        "미쓰비시중공업이 Preferred Networks와 자본업무제휴를 체결하고 제3자 배정 증자를 통해 총 100억엔을 출자함. 양사는 기존 사회인프라·National Security 분야 AI 업무제휴를 자본제휴까지 확대했음.",
+        "미쓰비시중공업의 현장·설비·제어기술 및 Data와 PFN의 AI Semiconductor, Computing Infrastructure, Generative AI Foundation Model을 결합함. 높은 신뢰성과 즉응성이 요구되는 Mission-critical System의 지능화·자율화가 Target임.",
+        "AI 기술·Data·운영 Know-how를 일본 국내에 축적하면서 공동 R&D와 사회실장을 가속할 계획임. 일본 대형 중공업사가 AI Startup의 핵심 역량을 전략적 자본관계로 편입하는 사례임."
       ],
       "core_technology": [
+        "Mission-critical AI",
         "Physical AI",
-        "Robot Foundation Model",
-        "VLA",
-        "Egocentric Data Collection",
-        "Fine-tuning",
-        "Simulation",
-        "Robot Hardware Integration"
+        "Autonomous Systems",
+        "AI Semiconductor",
+        "AI Computing Infrastructure",
+        "Generative AI Foundation Model",
+        "Industrial Control"
       ],
-      "commercialization_stage": "PoC → Government-backed R&D → Field Implementation",
+      "commercialization_stage": "Strategic Investment + Joint R&D → Social Implementation",
       "related_entities": [
-        "KDDI",
-        "RLWRLD",
-        "Lawson",
-        "METI",
-        "NEDO",
-        "GENIAC"
+        "Mitsubishi Heavy Industries",
+        "Preferred Networks",
+        "Social Infrastructure",
+        "National Security"
       ],
       "posco_implications": [
-        "Physical AI 경쟁에서 실제 산업현장 작업 Data가 핵심 전략자산으로 부상하고 있음.",
-        "POSCO그룹은 Robot 자체개발보다 제철·물류·건설 현장을 PoC/Data Platform으로 활용해 유망 Foundation Model·Robot 기업과 공동개발하는 전략을 검토할 필요가 있음.",
-        "산업현장 Data는 일반 소비자 환경보다 확보 난도가 높아 장기적으로 차별화 자산이 될 가능성이 있음."
+        "POSCO도 Humanoid 업체 자체보다 Hardware, Foundation Model, Industrial Data, Simulation, System Integration 중 어느 Layer를 직접 확보할지 전략을 먼저 설계할 필요가 있음.",
+        "PFN은 제조AI뿐 아니라 일본 Sovereign AI·Defense AI의 핵심 Player로 확대될 가능성이 있어 별도 Tracking 가치가 높음."
       ],
       "priority": "High",
       "follow_up": [
-        "RLWRLD Foundation Model Architecture",
-        "VLA 적용 여부",
-        "Robot Hardware",
-        "Egocentric Data 변환방식",
-        "Lawson PoC Task 및 성공률",
-        "Simulation/Real Data 비율",
-        "KDDI 투자규모",
-        "POSCO 적용 Use Case"
+        "PFN 지분율",
+        "PFN 기업가치",
+        "공동개발 대상 System",
+        "방산 적용범위",
+        "AI Semiconductor",
+        "Foundation Model",
+        "IP 귀속",
+        "MHI 내부 AI 조직"
       ]
     },
     {
-      "id": "2026-10-05-nitto-co-creation-ai",
+      "id": "2026-10-06-ynu-kokusai-al2o3-bonding",
       "category": [
-        "AI",
-        "산업AI",
         "첨단소재",
-        "신사업 AX"
+        "반도체",
+        "Wafer Bonding"
       ],
-      "title": "Nitto, '공창 AI' 기반 고객 잠재과제 발굴…소재기업의 AI 활용을 R&D·사업개발 영역으로 확대",
-      "published_at": "2026-10-05T07:15:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news027.html",
+      "title": "요코하마국립대-KOKUSAI ELECTRIC, Plasma 없이 Al₂O₃ Wafer 직접접합 성공",
+      "published_at": "2026-10-06T11:00:00+09:00",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news007.html",
       "summary": [
-        "Nitto가 inovas TOKYO를 Renewal하고 고객·체험 Demo·공창 AI·전문인력을 결합한 신규 사업개발 체계를 구축했음. AI를 고객 잠재 Needs 발굴과 자사 소재기술 Matching에 직접 활용하고 있음.",
-        "공창 AI는 고객 Background, 산업정보, 특허정보를 분석해 복수의 잠재과제를 생성함. 고객과의 대화로 과제를 구체화하면 Nitto 핵심기술 Database에서 적합한 Solution을 찾아 연결하는 구조임.",
-        "AI 분석과 고객 직접대화, 연구자·전문가, 실제 Demo를 결합해 R&D와 사업공창으로 연결하고 있음. 소재기업의 AX 적용범위가 생산현장에서 영업·R&D·신사업개발까지 확대되는 사례임."
+        "요코하마국립대와 KOKUSAI ELECTRIC이 약 5nm ALD-Al₂O₃ 박막을 Plasma 처리나 화학적 연마 없이 직접 접합할 수 있는 Self-activated Bonding 특성을 확인했음. 300mm Si Wafer에서 Void-free 접합을 구현했음.",
+        "Al₂O₃ 표면의 OH Network가 실온 초기접착을 유도하고 열처리 과정에서 Al-O Network가 재배열되면서 강한 접합을 형성함. 300℃ 열처리 후에도 후공정을 견딜 수 있으며 성막 후 최소 2개월 동안 접합성능이 유지됐음.",
+        "Plasma·CMP·Rinse 전처리를 줄일 경우 장비구성 단순화와 Cost 절감, Plasma Damage 회피가 가능함. 향후 Cu 배선을 포함하는 Hybrid Bonding 적용과 신규 Self-activated Material 탐색을 추진할 예정임."
       ],
       "core_technology": [
-        "Generative AI",
-        "Technology Knowledge Database",
-        "Patent Intelligence",
-        "Customer Needs Analysis",
-        "Technology-Needs Matching",
-        "AI-assisted Business Development"
+        "ALD Al2O3",
+        "Self-activated Direct Bonding",
+        "300mm Wafer Bonding",
+        "Plasma-less Bonding",
+        "3D Semiconductor Integration",
+        "Hybrid Bonding"
       ],
-      "commercialization_stage": "Internal Deployment / Customer Co-creation",
+      "commercialization_stage": "Laboratory R&D / Wafer-scale Validation",
       "related_entities": [
-        "Nitto",
-        "Nitto Customers",
-        "Nitto R&D",
-        "Technology Marketing"
+        "Yokohama National University",
+        "KOKUSAI ELECTRIC",
+        "Semiconductor Packaging Industry"
       ],
       "posco_implications": [
-        "철강·Battery·GX 분야의 특허, 고객 Meeting, 기술자료와 시장정보를 연결하는 Knowledge AI 적용 가능성이 있음.",
-        "단순 News Search보다 고객과제와 내부기술을 연결하는 신사업 Agent가 실제 업무생산성 향상에 더 직접적인 가치가 있을 가능성이 높음.",
-        "AI 성능 자체보다 고객 접점과 내부 기술 Database의 품질이 경쟁력을 결정할 가능성이 높음."
+        "핵심 경쟁력은 Al2O3 소재 공급보다 ALD Film의 표면화학과 Wafer Bonding Process에 있음.",
+        "POSCO 직접 사업연계성은 낮아 AI Semiconductor 후공정 기술동향 차원의 Low-priority Monitoring이 적절함."
       ],
-      "priority": "Medium",
+      "priority": "Low",
       "follow_up": [
-        "공창 AI 개발주체",
-        "LLM/RAG 구조",
-        "특허 DB 연계",
-        "내부 기술 DB",
-        "Security",
-        "사업 Theme 창출사례",
-        "PoC-매출 전환 KPI"
-      ]
-    },
-    {
-      "id": "2026-10-05-isuzu-hino-ev-inverter-recall",
-      "category": [
-        "EV",
-        "Power Electronics",
-        "Advanced Materials",
-        "Quality"
-      ],
-      "title": "Isuzu·Hino EV Bus 138대 Recall…Inverter 납땜 불량으로 단락·화재 위험",
-      "published_at": "2026-10-05T06:45:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/05/news028.html",
-      "summary": [
-        "Isuzu와 Hino가 공동설계한 노선 EV Bus에서 Inverter 내부 단락 및 화재 위험이 확인돼 총 138대를 Recall하고 있음. Isuzu ERGA EV 134대와 Hino Blue Ribbon Z EV 4대가 대상이며 시장에서 실제 화재 1건이 발생했음.",
-        "직접 원인은 Battery가 아니라 Inverter PCB의 부적절한 납땜 공정임. 열팽창·수축 반복으로 납땜부 Crack이 발생하고 접촉불안정과 제어신호 이상을 거쳐 Inverter 내부 Short Circuit 및 Harness 발열로 이어질 수 있음.",
-        "대상 차량은 Inverter를 정상제품으로 교환하고 일부 차량은 MCU도 교환함. EV 안전성이 Battery Cell뿐 아니라 Power Electronics의 접합 및 Thermal Cycle Reliability에도 크게 좌우됨을 보여주는 사례임."
-      ],
-      "core_technology": [
-        "EV Inverter",
-        "PCB Soldering",
-        "Thermal Cycling",
-        "Short Circuit",
-        "Motor Control Unit",
-        "Power Electronics Reliability"
-      ],
-      "commercialization_stage": "Commercial Product / Field Recall",
-      "related_entities": [
-        "Isuzu Motors",
-        "Hino Motors",
-        "J-Bus",
-        "MLIT"
-      ],
-      "posco_implications": [
-        "본 건은 Battery 화재가 아니라 Inverter 접합 Reliability 문제로 분류하는 것이 정확함.",
-        "EV 고전력화에 따라 Power Semiconductor, 접합재, Busbar, 방열소재 등 주변 소재의 중요성이 확대되고 있음.",
-        "SMM Nano Cu 등 Power Semiconductor 접합재 사업과 연계해 Monitoring할 필요가 있음."
-      ],
-      "priority": "Medium",
-      "follow_up": [
-        "Inverter Supplier",
-        "Solder Material",
-        "Thermal Cycle 조건",
-        "Power Semiconductor 종류",
-        "접합 Reliability Spec",
-        "Cu/Ag Sintering 적용 가능성",
-        "관련 소재시장 규모"
+        "Cu Hybrid Bonding",
+        "Bonding Strength",
+        "양산 Process Window",
+        "기존 공정 대비 Cost",
+        "ALD Throughput",
+        "적용 Device"
       ]
     }
   ],
   "key_insights": [
-    "KDDI-RLWRLD 사례에서 Physical AI 사업화의 핵심이 Robot Hardware 자체보다 실제 작업 Data, Foundation Model, Hardware Integration 및 반복적인 현장 PoC로 이동하고 있음.",
-    "POSCO그룹은 대규모 산업현장을 보유하고 있어 Physical AI 분야에서 단순 Robot 구매자가 아니라 Data 및 PoC Partner로 참여할 수 있는 전략적 자산을 보유하고 있음.",
-    "Nitto 사례는 소재기업의 AI 활용영역이 생산자동화에서 고객 Needs 발굴, 기술 Matching, R&D 및 신사업개발까지 확대되고 있음을 보여줌.",
-    "Isuzu/Hino Recall은 EV 안전성 Monitoring을 Battery Cell에서 Power Semiconductor, 접합재, Busbar, Thermal Management 등 Power Electronics Value Chain까지 확대할 필요성을 보여줌."
+    "미쓰비시중공업의 PFN 100억엔 출자는 일본 제조업의 AI 전략이 외부 Solution 도입에서 현장 Data와 AI Stack을 결합하는 전략적 자본제휴 단계로 진전되고 있음을 보여줌.",
+    "KDDI-RLWRLD, Kawasaki-NVIDIA, Mitsubishi Heavy Industries-PFN 사례를 연결하면 일본 Industrial Physical AI 생태계가 Real-world Data, Digital Twin, Foundation Model, Computing 및 System Integration을 중심으로 빠르게 형성되고 있음.",
+    "Al2O3 Plasma-less Wafer Bonding은 3D Semiconductor Integration 관점에서 의미가 있으나 POSCO 소재사업과의 직접 연결성은 제한적이므로 우선순위를 과도하게 높일 필요는 없음."
   ],
   "priority_ranking": [
     {
       "rank": 1,
-      "article_id": "2026-10-05-kddi-rlwrld-physical-ai",
+      "article_id": "2026-10-06-mhi-pfn-mission-critical-ai",
       "priority": "High"
     },
     {
       "rank": 2,
-      "article_id": "2026-10-05-nitto-co-creation-ai",
-      "priority": "Medium"
-    },
-    {
-      "rank": 3,
-      "article_id": "2026-10-05-isuzu-hino-ev-inverter-recall",
-      "priority": "Medium"
+      "article_id": "2026-10-06-ynu-kokusai-al2o3-bonding",
+      "priority": "Low"
     }
   ],
   "no_new_articles_categories": [
-    "전고체전지",
+    "이차전지·축전지",
+    "전고체",
     "LFP",
     "LMR",
     "NCM·양극재",
@@ -192,10 +126,7 @@
     "전해질",
     "분리막",
     "Battery Recycling",
-    "항공우주·방산소재",
-    "Humanoid",
-    "Mobile Manipulator",
-    "Machine Vision",
+    "GX",
     "CCUS",
     "수소",
     "암모니아",
@@ -205,6 +136,9 @@
     "전력망",
     "ESS",
     "핵융합",
-    "양자컴퓨팅"
+    "양자컴퓨팅",
+    "Humanoid",
+    "Mobile Manipulator",
+    "Machine Vision"
   ]
 }
