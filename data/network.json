@@ -1,144 +1,57 @@
 {
-  "report_date": "2026-10-06",
-  "source": {
-    "name": "MONOist",
-    "domain": "monoist.itmedia.co.jp"
-  },
-  "generated_at": "2026-10-06T12:03:00+09:00",
-  "articles": [
+  "nodes": [
+    {"id": "Quemix", "group": "IT/AI"},
+    {"id": "Tohoku University", "group": "Research"},
+    {"id": "NEDO", "group": "Policy"},
+    {"id": "Mitsubishi Electric", "group": "Defense/Aerospace"},
+    {"id": "Array Labs", "group": "Space/DeepTech"},
+    {"id": "Nihon Kagaku Sangyo", "group": "Material"},
+    {"id": "Sumitomo Bakelite", "group": "Material"},
+    {"id": "TIER IV", "group": "Autonomous Driving"},
+    {"id": "Astemo", "group": "Component OEM"},
+    {"id": "POSCO Future M", "group": "POSCO"},
+    {"id": "POSCO", "group": "POSCO"}
+  ],
+  "links": [
     {
-      "id": "2026-10-06-mhi-pfn-mission-critical-ai",
-      "category": [
-        "AI",
-        "Physical AI",
-        "방산",
-        "사회인프라",
-        "전략투자"
-      ],
-      "title": "미쓰비시중공업-PFN, 100억엔 자본업무제휴…Mission-critical AI 공동개발·사회실장 확대",
-      "published_at": "2026-10-06T10:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news012.html",
-      "summary": [
-        "미쓰비시중공업이 Preferred Networks와 자본업무제휴를 체결하고 제3자 배정 증자를 통해 총 100억엔을 출자함. 양사는 기존 사회인프라·National Security 분야 AI 업무제휴를 자본제휴까지 확대했음.",
-        "미쓰비시중공업의 현장·설비·제어기술 및 Data와 PFN의 AI Semiconductor, Computing Infrastructure, Generative AI Foundation Model을 결합함. 높은 신뢰성과 즉응성이 요구되는 Mission-critical System의 지능화·자율화가 Target임.",
-        "AI 기술·Data·운영 Know-how를 일본 국내에 축적하면서 공동 R&D와 사회실장을 가속할 계획임. 일본 대형 중공업사가 AI Startup의 핵심 역량을 전략적 자본관계로 편입하는 사례임."
-      ],
-      "core_technology": [
-        "Mission-critical AI",
-        "Physical AI",
-        "Autonomous Systems",
-        "AI Semiconductor",
-        "AI Computing Infrastructure",
-        "Generative AI Foundation Model",
-        "Industrial Control"
-      ],
-      "commercialization_stage": "Strategic Investment + Joint R&D → Social Implementation",
-      "related_entities": [
-        "Mitsubishi Heavy Industries",
-        "Preferred Networks",
-        "Social Infrastructure",
-        "National Security"
-      ],
-      "posco_implications": [
-        "POSCO도 Humanoid 업체 자체보다 Hardware, Foundation Model, Industrial Data, Simulation, System Integration 중 어느 Layer를 직접 확보할지 전략을 먼저 설계할 필요가 있음.",
-        "PFN은 제조AI뿐 아니라 일본 Sovereign AI·Defense AI의 핵심 Player로 확대될 가능성이 있어 별도 Tracking 가치가 높음."
-      ],
-      "priority": "High",
-      "follow_up": [
-        "PFN 지분율",
-        "PFN 기업가치",
-        "공동개발 대상 System",
-        "방산 적용범위",
-        "AI Semiconductor",
-        "Foundation Model",
-        "IP 귀속",
-        "MHI 내부 AI 조직"
-      ]
+      "source": "Quemix",
+      "target": "Tohoku University",
+      "type": "전략적 협력",
+      "date": "2026-08-18",
+      "strength": "높음",
+      "note": "NEDO 대형실증 사업 채택을 통한 양자컴퓨터 기반 배터리 소재 시뮬레이션 및 NanoTerasu 검증 플랫폼 개발"
     },
     {
-      "id": "2026-10-06-ynu-kokusai-al2o3-bonding",
-      "category": [
-        "첨단소재",
-        "반도체",
-        "Wafer Bonding"
-      ],
-      "title": "요코하마국립대-KOKUSAI ELECTRIC, Plasma 없이 Al₂O₃ Wafer 직접접합 성공",
-      "published_at": "2026-10-06T11:00:00+09:00",
-      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news007.html",
-      "summary": [
-        "요코하마국립대와 KOKUSAI ELECTRIC이 약 5nm ALD-Al₂O₃ 박막을 Plasma 처리나 화학적 연마 없이 직접 접합할 수 있는 Self-activated Bonding 특성을 확인했음. 300mm Si Wafer에서 Void-free 접합을 구현했음.",
-        "Al₂O₃ 표면의 OH Network가 실온 초기접착을 유도하고 열처리 과정에서 Al-O Network가 재배열되면서 강한 접합을 형성함. 300℃ 열처리 후에도 후공정을 견딜 수 있으며 성막 후 최소 2개월 동안 접합성능이 유지됐음.",
-        "Plasma·CMP·Rinse 전처리를 줄일 경우 장비구성 단순화와 Cost 절감, Plasma Damage 회피가 가능함. 향후 Cu 배선을 포함하는 Hybrid Bonding 적용과 신규 Self-activated Material 탐색을 추진할 예정임."
-      ],
-      "core_technology": [
-        "ALD Al2O3",
-        "Self-activated Direct Bonding",
-        "300mm Wafer Bonding",
-        "Plasma-less Bonding",
-        "3D Semiconductor Integration",
-        "Hybrid Bonding"
-      ],
-      "commercialization_stage": "Laboratory R&D / Wafer-scale Validation",
-      "related_entities": [
-        "Yokohama National University",
-        "KOKUSAI ELECTRIC",
-        "Semiconductor Packaging Industry"
-      ],
-      "posco_implications": [
-        "핵심 경쟁력은 Al2O3 소재 공급보다 ALD Film의 표면화학과 Wafer Bonding Process에 있음.",
-        "POSCO 직접 사업연계성은 낮아 AI Semiconductor 후공정 기술동향 차원의 Low-priority Monitoring이 적절함."
-      ],
-      "priority": "Low",
-      "follow_up": [
-        "Cu Hybrid Bonding",
-        "Bonding Strength",
-        "양산 Process Window",
-        "기존 공정 대비 Cost",
-        "ALD Throughput",
-        "적용 Device"
-      ]
-    }
-  ],
-  "key_insights": [
-    "미쓰비시중공업의 PFN 100억엔 출자는 일본 제조업의 AI 전략이 외부 Solution 도입에서 현장 Data와 AI Stack을 결합하는 전략적 자본제휴 단계로 진전되고 있음을 보여줌.",
-    "KDDI-RLWRLD, Kawasaki-NVIDIA, Mitsubishi Heavy Industries-PFN 사례를 연결하면 일본 Industrial Physical AI 생태계가 Real-world Data, Digital Twin, Foundation Model, Computing 및 System Integration을 중심으로 빠르게 형성되고 있음.",
-    "Al2O3 Plasma-less Wafer Bonding은 3D Semiconductor Integration 관점에서 의미가 있으나 POSCO 소재사업과의 직접 연결성은 제한적이므로 우선순위를 과도하게 높일 필요는 없음."
-  ],
-  "priority_ranking": [
-    {
-      "rank": 1,
-      "article_id": "2026-10-06-mhi-pfn-mission-critical-ai",
-      "priority": "High"
+      "source": "Mitsubishi Electric",
+      "target": "Array Labs",
+      "type": "투자 확대",
+      "date": "2026-08-19",
+      "strength": "높음",
+      "note": "1,000만 달러 전략 투자를 통한 저궤도 레이더 위성 기반 안보 정보 서비스 공동 사업화"
     },
     {
-      "rank": 2,
-      "article_id": "2026-10-06-ynu-kokusai-al2o3-bonding",
-      "priority": "Low"
+      "source": "Sumitomo Bakelite",
+      "target": "Tohoku University",
+      "type": "전략적 협력",
+      "date": "2026-08-20",
+      "strength": "보통",
+      "note": "수지 절연 2층 구조 3D SiC-MOSFET 파워모듈 프로토타입 공동 개발"
+    },
+    {
+      "source": "TIER IV",
+      "target": "Astemo",
+      "type": "전략적 협력",
+      "date": "2026-08-19",
+      "strength": "보통",
+      "note": "Co-MLOps 기반 E2E 자율주행 AI 개발 환경 구축 및 2030년 실용화 추진"
+    },
+    {
+      "source": "Nihon Kagaku Sangyo",
+      "target": "POSCO",
+      "type": "소재 수요",
+      "date": "2026-08-20",
+      "strength": "보통",
+      "note": "AI 서버용 MLCC 수요 급증에 따른 티탄산바륨 생산능력 1.5배 증설"
     }
-  ],
-  "no_new_articles_categories": [
-    "이차전지·축전지",
-    "전고체",
-    "LFP",
-    "LMR",
-    "NCM·양극재",
-    "음극재",
-    "전해질",
-    "분리막",
-    "Battery Recycling",
-    "GX",
-    "CCUS",
-    "수소",
-    "암모니아",
-    "SAF",
-    "e-Fuel",
-    "Perovskite",
-    "전력망",
-    "ESS",
-    "핵융합",
-    "양자컴퓨팅",
-    "Humanoid",
-    "Mobile Manipulator",
-    "Machine Vision"
   ]
 }
