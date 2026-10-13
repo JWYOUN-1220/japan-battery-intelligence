@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.10.14</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.10.14 · 08:14 JST</p><p>신규 6건 + 누락 보완 1건</p><div class="stats"><div class="stat"><strong>7</strong>전체 기사</div><div class="stat"><strong>2</strong>High</div><div class="stat"><strong>3</strong>Medium</div><div class="stat"><strong>2</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① 로봇 현장 적용과 개발 단계 구분</b><br>AMR의 현장 출하와 양팔 모바일 로봇의 개발 단계가 병행 중임. 실제 도입 후보와 연구개발 후보를 나누어 평가할 필요가 있음.</div><div class="insight"><b>② 산업AI의 제어 실행 기반</b><br>산업AI는 데이터 분석을 PLC 제어로 연결하는 실행 기반까지 경쟁 범위를 확대 중임. 오므론의 인수 및 통합제품 일정은 아직 추진계획임.</div><div class="insight"><b>③ 기술 수치·상용화 수준 검증</b><br>피부 모사 센서는 상대변화 감지 기술이며, 암모니아 엔진은 개발 전시 단계임. 성능 수치의 시험조건과 상용화 수준을 구분해야 함.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false" class="">High</button><button type="button" data-value="Medium" aria-pressed="false" class="">Medium</button><button type="button" data-value="Low" aria-pressed="false" class="">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false" class="">신규</button><button type="button" data-value="누락 보완" aria-pressed="false" class="">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false" class="">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false" class="">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false" class="">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false" class="">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 7건 중 7건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261014-1" data-category="AI·로보틱스·AX" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>AIRoA, 국산 양팔 모바일 로봇 개발의 개량 단계에 Enactic·THK·나치·ugo 선정</h2><div class="meta">실제 공개일: 2026-10-13 14:00 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> AIRoA는 9월 30일 시제품 평가를 거쳐 7개 참여사 중 4개사를 개량 단계로 선정했음. MONOist는 10월 13일 이를 보도했으며, 개발 대상은 양팔 모바일 매니퓰레이터임.</p><p><b>2.</b> 가정·소매·제조·물류를 모사한 환경에서 작업 수행과 조작성을 평가했음. 양산 및 보수 계획도 심사했으나 현장 양산 운용의 실적을 의미하지는 않음.</p><p><b>3.</b> 개량 단계는 2027년 3월까지이며 기준 달성 기업의 양산 준비와 7월 이후 납품을 목표로 하고 있음. 개발 로봇은 로봇 기반모델용 데이터 수집에 활용할 예정임.</p></div><dl><dt>핵심 기술</dt><dd>양팔 모바일 매니퓰레이터 · 피지컬AI 학습 데이터 수집</dd><dt>사업화 단계</dt><dd>시제품 평가 완료 → 개량 개발 → 2027년 7월 이후 납품 목표</dd><dt>관련 기업·고객·PoC</dt><dd>AIRoA · Enactic · THK · NACHI-FUJIKOSHI · ugo · METI·NEDO</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 일본의 로봇 하드웨어·학습데이터 공급망을 추적할 우선 후보군임. 그룹 현장 PoC 검토 시 실제 취급물, 안전성, 원격개입 빈도와 보수체계를 먼저 확인해야 함.</p></div><p><b>Follow-up:</b> 4사별 가반하중·그리퍼·작업성공률, 2027년 개량 평가, 데이터 이용조건 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/13/news055.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://www.airoa.org/ja/updates/20260930/754/" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><article class="card" id="20261014-2" data-category="AI·로보틱스·AX" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>PFN·Preferred Robotics, 100kg AMR Kachaka Evo의 현장 도입 및 순차 출하</h2><div class="meta">실제 공개일: 2026-10-14 06:45 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> PFN은 CEATEC에서 자회사 Preferred Robotics의 Kachaka Evo 실기 데모를 공개했음. 2026년 3월 초기 도입 이후 복수의 제조현장에서 운용했으며 10월부터 순차 출하 중이라고 설명했음.</p><p><b>2.</b> 100kg 가반하중의 승강 리프트로 기존 대차·선반을 들어 운반하는 방식임. AI 영상인식과 SLAM을 활용하며 자기테이프나 마커 없이 주행·장애물 회피를 수행함.</p><p><b>3.</b> 발표 사양은 최대속도 1.2m/s, 최대부하 연속운용 7시간, 완충 3시간임. Web UI로 운용구역을 설정할 수 있으나 개별 현장의 실제 처리량·가격·회수기간은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>AI 영상인식 · SLAM · 승강 리프트형 AMR</dd><dt>사업화 단계</dt><dd>복수 현장 초기 도입 → 2026년 10월 순차 출하</dd><dt>관련 기업·고객·PoC</dt><dd>Preferred Networks · Preferred Robotics · 제조·물류 현장</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 경량 부품·공구·시험 샘플의 실내搬送 자동화 후보임. 고온·분진·중량물 중심 제철공정에 일반화하지 않고 바닥 조건·대차 호환성·안전구역을 검증해야 함.</p></div><p><b>Follow-up:</b> 판매가격, 대차 호환치수, 안전 규격, 다대수 관제 및 실제 처리량 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/14/news031.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261014-3" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>오므론, OnLogic 6.75억 달러 인수 추진…PLC·산업용 PC 기반 현장 최적화 확대</h2><div class="meta">실제 공개일: 2026-10-14 06:30 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 오므론은 10월 13일 미국 산업용 PC 기업 OnLogic의 완전자회사화를 발표했음. 취득금액은 6.75억 달러이며 주식 취득은 2027년 1월 예정으로, 거래 완료와 구분해야 함.</p><p><b>2.</b> OnLogic의 약 5,500개 고객 기반 및 구성 변경이 유연한 IPC를 확보하려는 전략임. 오므론의 PLC 제어와 현장 데이터 분석을 결합해 생산 중 조건을 최적화하는 실행 기반을 지향함.</p><p><b>3.</b> 공동개발팀을 구성해 2030년도까지 PLC·IPC 일체형 신제품을 투입할 목표임. 북미 확대와 제조 외 인프라·에너지 설비의 운용 최적화도 추진하나 통합제품 성과는 아직 미래 계획임.</p></div><dl><dt>핵심 기술</dt><dd>PLC·IPC 통합 · 엣지 데이터 분석 · 피지컬AI 실행 기반</dd><dt>사업화 단계</dt><dd>인수 발표 → 2027년 1월 취득 예정 → 2030년도 통합제품 목표</dd><dt>관련 기업·고객·PoC</dt><dd>OMRON · OnLogic · 북미 FA·데이터센터·인프라·에너지 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 공정 분석과 실제 제어의 연결이 산업AI 경쟁요소로 확대 중임. 철강·배터리 제조 적용은 제어 지연·안전·기존 OT 연동 성과를 확인한 후 검토할 필요가 있음.</p></div><p><b>Follow-up:</b> 거래 완료, PLC·IPC 연동 로드맵, 제조 PoC, 데이터 소유권·OT 보안 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/14/news032.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261014-4" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>무라타·규슈대, 저전력 피부 모사 센싱 공개…절대 온도 측정은 미지원</h2><div class="meta">실제 공개일: 2026-10-14 07:15 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 무라타는 규슈대와 공동연구한 뉴로모픽 센싱 시스템을 CEATEC에서 공개했음. 필름 서미스터와 직접 디지털 읽기 회로로 구성되며 뇌형 AI 연산을 수행하는 시스템은 아님.</p><p><b>2.</b> 전시 시트의 1,024개 신호를 23μs에 읽으며 기존 방식보다 약 2,500배 빠르다는 설명임. 초당 1,000회 센싱 소비전력 12μW와 AA전지 1개로 약 30년 동작 가능이라는 수치는 회사 제시 조건 및 계산임.</p><p><b>3.</b> 아날로그 회로·ADC를 생략해 저전력화를 달성하는 대신 상대적 온도변화만 검지함. 정량적 절대 온도계측은 불가능하며 양산 일정·로봇 고객 채택은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>필름 서미스터 어레이 · DDRO · 상대변화 디지털 검지</dd><dt>사업화 단계</dt><dd>공동연구 결과·전시 데모, 상용화 일정 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>Murata Manufacturing · 규슈대 야지마 연구진</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 넓은 표면의 저전력 상태변화 감지를 위한 탐색기술임. 로봇 촉각·설비 감시 응용은 추론이며 절대 온도 관리가 필요한 공정의 계측기 대체로 해석하면 안 됨.</p></div><p><b>Follow-up:</b> 측정 범위·교정·내구성, 비교기준, 전지 수명 산정조건, 촉각 응용 검증 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/14/news042.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261014-5" data-category="GX·전력인프라" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">GX·전력인프라</span><h2>다이하츠, 플라즈마 개질을 활용한 암모니아·수소 혼소 엔진 실기 공개</h2><div class="meta">실제 공개일: 2026-10-14 06:15 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 다이하츠는 개발 중인 658cc 3기통 암모니아·수소 혼소 엔진을 전시했음. 경차용 엔진을 기반으로 하며 상업 판매나 차량 양산 적용 발표는 아님.</p><p><b>2.</b> 시동 시 플라즈마로 암모니아에서 수소를 생성해 혼소하고 착화를 돕는 구조임. 안정 연소 이후에는 엔진 열로 활성화한 촉매를 사용해 플라즈마의 지속 작동을 줄이는 구상임.</p><p><b>3.</b> e-SMART HYBRID와 결합해 효율적인 엔진 운전영역을 활용할 계획임. 연소 단계 CO₂ 무배출과 전주기 탄소중립은 다르며 열효율·NOx·N₂O·미연 암모니아 성능은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>암모니아 개질 · 플라즈마·촉매 · 수소 혼소 · 하이브리드</dd><dt>사업화 단계</dt><dd>개발 엔진 실기 전시, 상용화 일정 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>Daihatsu Motor · Japan Mobility Show Bizweek</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 암모니아 이용기술의 소형화 사례임. 발전·산업열원으로의 전용 가능성은 별도 검증 과제이며 그룹 암모니아 사업과의 직접 수요 연결은 아직 확인되지 않았음.</p></div><p><b>Follow-up:</b> 개질 전력, 시스템 효율, NOx·N₂O·NH₃ 슬립, 내구성·연료 공급 안전성 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/14/news036.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261014-6" data-category="항공우주·방산·첨단기술" data-priority="Low" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">항공우주·방산·첨단기술</span><h2>스미토모베이클라이트, 중국·싱가포르 첨단 반도체 봉지재 생산능력 확대 추진</h2><div class="meta">실제 공개일: 2026-10-13 07:15 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 중국 쑤저우와 싱가포르에 MUF 및 압축성형용 과립 봉지재 라인을 도입할 계획임. 10월 13일 공개된 기사로 전일 보고서에서 빠져 누락 보완으로 수록했음.</p><p><b>2.</b> 미세 간극 충전·저휨 특성과 필러·점도·입도 제어로 고밀도 반도체 패키징 수요에 대응함. 생산능력은 MUF 약 2배, 과립형 약 3배 확대 예정으로 실제 생산 실적은 아님.</p><p><b>3.</b> 싱가포르는 2028년도 말, 쑤저우는 2030년도 생산 개시 예정임. 교세라 케미컬 사업 양수도 계획과 함께 공급망을 강화하나 고객별 채택과 신규 투자금액은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>Molded Underfill · 과립 에폭시 봉지재 · 저휨·미세충전 제어</dd><dt>사업화 단계</dt><dd>증설 계획, 2028년도 말·2030년도 생산 개시 목표</dd><dt>관련 기업·고객·PoC</dt><dd>Sumitomo Bakelite · 쑤저우주우전목 · Sumitomo Bakelite Singapore · Kyocera</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] AI·통신위성 수요가 반도체 패키징 소재 투자로 이어지는 사례임. 그룹 직접 사업 연계는 제한적이며 소재 시장·생산거점 재편의 관찰 대상으로 적절함.</p></div><p><b>Follow-up:</b> 증설 일정, 제품 인증, 투자규모 및 사업 양수 완료 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/13/news040.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://www.sumibe.co.jp/topics/2026/it-materials/1007_01/index.html" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><article class="card" id="20261014-7" data-category="항공우주·방산·첨단기술" data-priority="Low" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>도쿄오카공업, 약 230억 엔 투자한 포토레지스트 신제조동 준공</h2><div class="meta">실제 공개일: 2026-10-13 11:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 도쿄오카공업은 고리야마 공장 신제조동의 10월 8일 준공을 발표했음. 건축면적은 4,800㎡, 투자금액은 약 230억 엔이며 11월 가동을 예정하고 있음.</p><p><b>2.</b> 기존 고리야마 공장은 EUV·ArF를 포함한 반도체용 포토레지스트를 생산 중임. 신제조동은 고품질화와 공급 확대를 목적으로 자동화·디지털화를 도입할 계획임.</p><p><b>3.</b> 중기계획의 공급망 강화 및 생산·연구기반 확충의 일환임. 건물 준공은 확인된 실적이나 생산능력 증가량·출하 및 스마트공장 개선효과는 아직 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>반도체 포토레지스트 · 고순도 제조 · 공장 자동화·디지털화</dd><dt>사업화 단계</dt><dd>신제조동 준공 완료 → 2026년 11월 가동 예정</dd><dt>관련 기업·고객·PoC</dt><dd>Tokyo Ohka Kogyo · 고리야마 공장 · 반도체 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 일본 첨단소재의 국내 생산기반 확대 사례임. 직접 투자 정합성은 낮으므로 소재 공급망과 제조 자동화의 참고사례로 관리할 필요가 있음.</p></div><p><b>Follow-up:</b> 가동 개시, 신규 생산능력·고객 인증, 자동화 효과 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/13/news043.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://www.tok.co.jp/news/2026/261008" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261014-1"><b>1. AIRoA, 국산 양팔 모바일 로봇 개발의 개량 단계에 Enactic·THK·나치·ugo 선정</b></a><span class="badge high">High</span></div><div class="rank"><a href="#20261014-2"><b>2. PFN·Preferred Robotics, 100kg AMR Kachaka Evo의 현장 도입 및 순차 출하</b></a><span class="badge high">High</span></div><div class="rank"><a href="#20261014-3"><b>3. 오므론, OnLogic 6.75억 달러 인수 추진…PLC·산업용 PC 기반 현장 최적화 확대</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261014-4"><b>4. 무라타·규슈대, 저전력 피부 모사 센싱 공개…절대 온도 측정은 미지원</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261014-5"><b>5. 다이하츠, 플라즈마 개질을 활용한 암모니아·수소 혼소 엔진 실기 공개</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261014-6"><b>6. 스미토모베이클라이트, 중국·싱가포르 첨단 반도체 봉지재 생산능력 확대 추진</b></a><span class="badge low">Low</span></div><div class="rank"><a href="#20261014-7"><b>7. 도쿄오카공업, 약 230억 엔 투자한 포토레지스트 신제조동 준공</b></a><span class="badge low">Low</span></div><p class="meta">High는 PoC·실사 검토 우선순위임. 투자 결정을 의미하지 않음.</p></section><section class="box none"><h2>조사 범위 내 신규 기사 미확인 분야</h2><p><span>이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양음극재·전해질·분리막·제조장치·리사이클</span></p><p><span>GX: CCUS·수소 단독사업·SAF·e-Fuel·페로브스카이트·전력망·ESS</span></p><p><span>항공우주·방산 전용소재·핵융합·양자</span></p><p><span>휴머노이드·머신비전 단독사업</span></p><p class="meta">미확인은 해당 분야의 활동 부재를 의미하지 않음.</p></section><details class="box scope"><summary>조사 범위·출처 확인 기준</summary><p>2026.10.13 08:18 ~ 2026.10.14 08:14 JST. 전일 reports와 기사 URL·제목을 대조했음. 전일 미수록된 10월 13일 07:15 봉지재 기사는 누락 보완으로 표시했음.</p><p class="meta">MONOist 월간 기사 목록·실제 웹 검색·기사 원문을 확인했으며 AIRoA·스미토모베이클라이트·도쿄오카공업 공개자료를 보완적으로 대조했음. 편집후기·PR·일반 기술해설·재편집·단순 범용제품 홍보 및 범위 밖 물류통계는 제외했음.</p><p class="meta">CEATEC 및 Bizweek 개최기간 표기가 기사 간 상이해 행사 기간은 인용하지 않았음. 수치의 회사 설명·계산·목표와 실제 운용 실적을 구분했으며 포스코 시사점은 분석자의 추론임.</p></details><footer><a href="../index.html">← 뉴스 아카이브</a> · 공개일과 발표일을 구분해 작성했음.</footer></main><script type="application/json" id="report-data">{"report_date":"2026-10-14","generated_at":"2026-10-14T08:14:35+09:00","search_window":{"from":"2026-10-13T08:18:39+09:00","to":"2026-10-14T08:14:35+09:00","basis":"전일 보고서 이후 신규 기사 및 중요 누락 보완. MONOist 월간 목록·검색·원문(오므론 2페이지 포함)·공식자료 대조."},"articles":[{"category":"AI·로보틱스·AX","title":"AIRoA, 국산 양팔 모바일 로봇 개발의 개량 단계에 Enactic·THK·나치·ugo 선정","published_at":"2026-10-13T14:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/13/news055.html","summary":["AIRoA는 9월 30일 시제품 평가를 거쳐 7개 참여사 중 4개사를 개량 단계로 선정했음. MONOist는 10월 13일 이를 보도했으며, 개발 대상은 양팔 모바일 매니퓰레이터임.","가정·소매·제조·물류를 모사한 환경에서 작업 수행과 조작성을 평가했음. 양산 및 보수 계획도 심사했으나 현장 양산 운용의 실적을 의미하지는 않음.","개량 단계는 2027년 3월까지이며 기준 달성 기업의 양산 준비와 7월 이후 납품을 목표로 하고 있음. 개발 로봇은 로봇 기반모델용 데이터 수집에 활용할 예정임."],"core_technology":"양팔 모바일 매니퓰레이터 · 피지컬AI 학습 데이터 수집","commercialization_stage":"시제품 평가 완료 → 개량 개발 → 2027년 7월 이후 납품 목표","related_entities":"AIRoA · Enactic · THK · NACHI-FUJIKOSHI · ugo · METI·NEDO","posco_implications":"[분석] 일본의 로봇 하드웨어·학습데이터 공급망을 추적할 우선 후보군임. 그룹 현장 PoC 검토 시 실제 취급물, 안전성, 원격개입 빈도와 보수체계를 먼저 확인해야 함.","priority":"High","follow_up":"4사별 가반하중·그리퍼·작업성공률, 2027년 개량 평가, 데이터 이용조건 확인","source":"https://www.airoa.org/ja/updates/20260930/754/","id":"20261014-1","coverage_status":"신규"},{"category":"AI·로보틱스·AX","title":"PFN·Preferred Robotics, 100kg AMR Kachaka Evo의 현장 도입 및 순차 출하","published_at":"2026-10-14T06:45:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/14/news031.html","summary":["PFN은 CEATEC에서 자회사 Preferred Robotics의 Kachaka Evo 실기 데모를 공개했음. 2026년 3월 초기 도입 이후 복수의 제조현장에서 운용했으며 10월부터 순차 출하 중이라고 설명했음.","100kg 가반하중의 승강 리프트로 기존 대차·선반을 들어 운반하는 방식임. AI 영상인식과 SLAM을 활용하며 자기테이프나 마커 없이 주행·장애물 회피를 수행함.","발표 사양은 최대속도 1.2m/s, 최대부하 연속운용 7시간, 완충 3시간임. Web UI로 운용구역을 설정할 수 있으나 개별 현장의 실제 처리량·가격·회수기간은 확인되지 않았음."],"core_technology":"AI 영상인식 · SLAM · 승강 리프트형 AMR","commercialization_stage":"복수 현장 초기 도입 → 2026년 10월 순차 출하","related_entities":"Preferred Networks · Preferred Robotics · 제조·물류 현장","posco_implications":"[분석] 경량 부품·공구·시험 샘플의 실내搬送 자동화 후보임. 고온·분진·중량물 중심 제철공정에 일반화하지 않고 바닥 조건·대차 호환성·안전구역을 검증해야 함.","priority":"High","follow_up":"판매가격, 대차 호환치수, 안전 규격, 다대수 관제 및 실제 처리량 확인","id":"20261014-2","coverage_status":"신규"},{"category":"AI·로보틱스·AX","title":"오므론, OnLogic 6.75억 달러 인수 추진…PLC·산업용 PC 기반 현장 최적화 확대","published_at":"2026-10-14T06:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/14/news032.html","summary":["오므론은 10월 13일 미국 산업용 PC 기업 OnLogic의 완전자회사화를 발표했음. 취득금액은 6.75억 달러이며 주식 취득은 2027년 1월 예정으로, 거래 완료와 구분해야 함.","OnLogic의 약 5,500개 고객 기반 및 구성 변경이 유연한 IPC를 확보하려는 전략임. 오므론의 PLC 제어와 현장 데이터 분석을 결합해 생산 중 조건을 최적화하는 실행 기반을 지향함.","공동개발팀을 구성해 2030년도까지 PLC·IPC 일체형 신제품을 투입할 목표임. 북미 확대와 제조 외 인프라·에너지 설비의 운용 최적화도 추진하나 통합제품 성과는 아직 미래 계획임."],"core_technology":"PLC·IPC 통합 · 엣지 데이터 분석 · 피지컬AI 실행 기반","commercialization_stage":"인수 발표 → 2027년 1월 취득 예정 → 2030년도 통합제품 목표","related_entities":"OMRON · OnLogic · 북미 FA·데이터센터·인프라·에너지 고객","posco_implications":"[분석] 공정 분석과 실제 제어의 연결이 산업AI 경쟁요소로 확대 중임. 철강·배터리 제조 적용은 제어 지연·안전·기존 OT 연동 성과를 확인한 후 검토할 필요가 있음.","priority":"Medium","follow_up":"거래 완료, PLC·IPC 연동 로드맵, 제조 PoC, 데이터 소유권·OT 보안 확인","id":"20261014-3","coverage_status":"신규"},{"category":"AI·로보틱스·AX","title":"무라타·규슈대, 저전력 피부 모사 센싱 공개…절대 온도 측정은 미지원","published_at":"2026-10-14T07:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/14/news042.html","summary":["무라타는 규슈대와 공동연구한 뉴로모픽 센싱 시스템을 CEATEC에서 공개했음. 필름 서미스터와 직접 디지털 읽기 회로로 구성되며 뇌형 AI 연산을 수행하는 시스템은 아님.","전시 시트의 1,024개 신호를 23μs에 읽으며 기존 방식보다 약 2,500배 빠르다는 설명임. 초당 1,000회 센싱 소비전력 12μW와 AA전지 1개로 약 30년 동작 가능이라는 수치는 회사 제시 조건 및 계산임.","아날로그 회로·ADC를 생략해 저전력화를 달성하는 대신 상대적 온도변화만 검지함. 정량적 절대 온도계측은 불가능하며 양산 일정·로봇 고객 채택은 확인되지 않았음."],"core_technology":"필름 서미스터 어레이 · DDRO · 상대변화 디지털 검지","commercialization_stage":"공동연구 결과·전시 데모, 상용화 일정 미확인","related_entities":"Murata Manufacturing · 규슈대 야지마 연구진","posco_implications":"[분석] 넓은 표면의 저전력 상태변화 감지를 위한 탐색기술임. 로봇 촉각·설비 감시 응용은 추론이며 절대 온도 관리가 필요한 공정의 계측기 대체로 해석하면 안 됨.","priority":"Medium","follow_up":"측정 범위·교정·내구성, 비교기준, 전지 수명 산정조건, 촉각 응용 검증 확인","id":"20261014-4","coverage_status":"신규"},{"category":"GX·전력인프라","title":"다이하츠, 플라즈마 개질을 활용한 암모니아·수소 혼소 엔진 실기 공개","published_at":"2026-10-14T06:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/14/news036.html","summary":["다이하츠는 개발 중인 658cc 3기통 암모니아·수소 혼소 엔진을 전시했음. 경차용 엔진을 기반으로 하며 상업 판매나 차량 양산 적용 발표는 아님.","시동 시 플라즈마로 암모니아에서 수소를 생성해 혼소하고 착화를 돕는 구조임. 안정 연소 이후에는 엔진 열로 활성화한 촉매를 사용해 플라즈마의 지속 작동을 줄이는 구상임.","e-SMART HYBRID와 결합해 효율적인 엔진 운전영역을 활용할 계획임. 연소 단계 CO₂ 무배출과 전주기 탄소중립은 다르며 열효율·NOx·N₂O·미연 암모니아 성능은 확인되지 않았음."],"core_technology":"암모니아 개질 · 플라즈마·촉매 · 수소 혼소 · 하이브리드","commercialization_stage":"개발 엔진 실기 전시, 상용화 일정 미확인","related_entities":"Daihatsu Motor · Japan Mobility Show Bizweek","posco_implications":"[분석] 암모니아 이용기술의 소형화 사례임. 발전·산업열원으로의 전용 가능성은 별도 검증 과제이며 그룹 암모니아 사업과의 직접 수요 연결은 아직 확인되지 않았음.","priority":"Medium","follow_up":"개질 전력, 시스템 효율, NOx·N₂O·NH₃ 슬립, 내구성·연료 공급 안전성 확인","id":"20261014-5","coverage_status":"신규"},{"category":"항공우주·방산·첨단기술","title":"스미토모베이클라이트, 중국·싱가포르 첨단 반도체 봉지재 생산능력 확대 추진","published_at":"2026-10-13T07:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/13/news040.html","summary":["중국 쑤저우와 싱가포르에 MUF 및 압축성형용 과립 봉지재 라인을 도입할 계획임. 10월 13일 공개된 기사로 전일 보고서에서 빠져 누락 보완으로 수록했음.","미세 간극 충전·저휨 특성과 필러·점도·입도 제어로 고밀도 반도체 패키징 수요에 대응함. 생산능력은 MUF 약 2배, 과립형 약 3배 확대 예정으로 실제 생산 실적은 아님.","싱가포르는 2028년도 말, 쑤저우는 2030년도 생산 개시 예정임. 교세라 케미컬 사업 양수도 계획과 함께 공급망을 강화하나 고객별 채택과 신규 투자금액은 확인되지 않았음."],"core_technology":"Molded Underfill · 과립 에폭시 봉지재 · 저휨·미세충전 제어","commercialization_stage":"증설 계획, 2028년도 말·2030년도 생산 개시 목표","related_entities":"Sumitomo Bakelite · 쑤저우주우전목 · Sumitomo Bakelite Singapore · Kyocera","posco_implications":"[분석] AI·통신위성 수요가 반도체 패키징 소재 투자로 이어지는 사례임. 그룹 직접 사업 연계는 제한적이며 소재 시장·생산거점 재편의 관찰 대상으로 적절함.","priority":"Low","follow_up":"증설 일정, 제품 인증, 투자규모 및 사업 양수 완료 확인","source":"https://www.sumibe.co.jp/topics/2026/it-materials/1007_01/index.html","coverage_status":"누락 보완","id":"20261014-6"},{"category":"항공우주·방산·첨단기술","title":"도쿄오카공업, 약 230억 엔 투자한 포토레지스트 신제조동 준공","published_at":"2026-10-13T11:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/13/news043.html","summary":["도쿄오카공업은 고리야마 공장 신제조동의 10월 8일 준공을 발표했음. 건축면적은 4,800㎡, 투자금액은 약 230억 엔이며 11월 가동을 예정하고 있음.","기존 고리야마 공장은 EUV·ArF를 포함한 반도체용 포토레지스트를 생산 중임. 신제조동은 고품질화와 공급 확대를 목적으로 자동화·디지털화를 도입할 계획임.","중기계획의 공급망 강화 및 생산·연구기반 확충의 일환임. 건물 준공은 확인된 실적이나 생산능력 증가량·출하 및 스마트공장 개선효과는 아직 확인되지 않았음."],"core_technology":"반도체 포토레지스트 · 고순도 제조 · 공장 자동화·디지털화","commercialization_stage":"신제조동 준공 완료 → 2026년 11월 가동 예정","related_entities":"Tokyo Ohka Kogyo · 고리야마 공장 · 반도체 고객","posco_implications":"[분석] 일본 첨단소재의 국내 생산기반 확대 사례임. 직접 투자 정합성은 낮으므로 소재 공급망과 제조 자동화의 참고사례로 관리할 필요가 있음.","priority":"Low","follow_up":"가동 개시, 신규 생산능력·고객 인증, 자동화 효과 확인","source":"https://www.tok.co.jp/news/2026/261008","id":"20261014-7","coverage_status":"신규"}],"key_insights":["AMR의 현장 출하와 양팔 모바일 로봇의 개발 단계가 병행 중임. 실제 도입 후보와 연구개발 후보를 나누어 평가할 필요가 있음.","산업AI는 데이터 분석을 PLC 제어로 연결하는 실행 기반까지 경쟁 범위를 확대 중임. 오므론의 인수 및 통합제품 일정은 아직 추진계획임.","피부 모사 센서는 상대변화 감지 기술이며, 암모니아 엔진은 개발 전시 단계임. 성능 수치의 시험조건과 상용화 수준을 구분해야 함."],"priority_ranking":[{"id":"20261014-1","title":"AIRoA, 국산 양팔 모바일 로봇 개발의 개량 단계에 Enactic·THK·나치·ugo 선정","priority":"High"},{"id":"20261014-2","title":"PFN·Preferred Robotics, 100kg AMR Kachaka Evo의 현장 도입 및 순차 출하","priority":"High"},{"id":"20261014-3","title":"오므론, OnLogic 6.75억 달러 인수 추진…PLC·산업용 PC 기반 현장 최적화 확대","priority":"Medium"},{"id":"20261014-4","title":"무라타·규슈대, 저전력 피부 모사 센싱 공개…절대 온도 측정은 미지원","priority":"Medium"},{"id":"20261014-5","title":"다이하츠, 플라즈마 개질을 활용한 암모니아·수소 혼소 엔진 실기 공개","priority":"Medium"},{"id":"20261014-6","title":"스미토모베이클라이트, 중국·싱가포르 첨단 반도체 봉지재 생산능력 확대 추진","priority":"Low"},{"id":"20261014-7","title":"도쿄오카공업, 약 230억 엔 투자한 포토레지스트 신제조동 준공","priority":"Low"}],"no_new_articles_categories":["이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양음극재·전해질·분리막·제조장치·리사이클","GX: CCUS·수소 단독사업·SAF·e-Fuel·페로브스카이트·전력망·ESS","항공우주·방산 전용소재·핵융합·양자","휴머노이드·머신비전 단독사업"]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");function apply(){let n=0;document.querySelectorAll("article.card").forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(query.value.trim().toLowerCase());a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+document.querySelectorAll("article.card").length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});})();</script></body></html>
