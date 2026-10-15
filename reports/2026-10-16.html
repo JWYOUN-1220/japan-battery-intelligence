@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.10.16</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.10.16 · 08:49 JST</p><p>신규 5건 + 누락 보완 2건</p><div class="stats"><div class="stat"><strong>7</strong>전체 기사</div><div class="stat"><strong>2</strong>High</div><div class="stat"><strong>3</strong>Medium</div><div class="stat"><strong>2</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① 산업기기용 전고체전지의 사업화</b><br>소형 전고체전지는 산업기기 메모리 백업 등 제한된 용도에서 양산제품으로 확장 중임. EV 전고체전지 사업화와 분리해 평가해야 함.</div><div class="insight"><b>② 이기종 로봇의 현장 통합</b><br>AMR·협동로봇의 현장 적용은 이기종 통합·MES 연계·사전 시뮬레이션 역량에 좌우됨. 개별 로봇보다 SI·운영체계의 검증이 중요함.</div><div class="insight"><b>③ 리사이클 밸류체인·지표 구분</b><br>순환소재는 회수·분해·정제·재제품화를 연결하고 제품 품질·LCA를 입증해야 함. 재생원료 비중과 실제 재활용 수율은 서로 다른 지표임.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false" class="">High</button><button type="button" data-value="Medium" aria-pressed="false" class="">Medium</button><button type="button" data-value="Low" aria-pressed="false" class="">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false" class="">신규</button><button type="button" data-value="누락 보완" aria-pressed="false" class="">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false" class="">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false" class="">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false" class="">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false" class="">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 7건 중 7건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261016-1" data-category="이차전지" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">이차전지</span><h2>맥셀, 산업기기용 전고체전지 백업 모듈 4종 11월 양산 예정</h2><div class="meta">실제 공개일: 2026-10-15 15:00 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> 맥셀은 PSB401010H 세라믹 패키지 전고체전지 탑재 백업 모듈을 11월 초부터 양산·국내 판매할 계획임. 10월 14일 공식 발표로 현재 양산 개시 실적과는 구분해야 함.</p><p><b>2.</b> 3.6V·3.0V 출력과 11~22mAh 용량의 4종으로 ER·CR 일차전지의 대체를 겨냥함. 사용온도는 −10~85℃이며 10년 이상은 사용환경에 따른 예상 수명으로 10년 현장 검증을 뜻하지 않음.</p><p><b>3.</b> 2024년부터 고객 공장 설비에서 시험 운용했고 SUBARU·교세라 사례가 제시됐음. 용도는 로봇·PLC의 메모리·RTC 백업으로, 구동용 대형 EV 전고체전지의 양산과는 별개임.</p></div><dl><dt>핵심 기술</dt><dd>소형 전고체 이차전지 · 백업 전원 모듈 · 고온 내구</dd><dt>사업화 단계</dt><dd>고객 시험운용 → 모듈 4종 개발 → 2026년 11월 초 양산 예정</dd><dt>관련 기업·고객·PoC</dt><dd>Maxell · SUBARU · Kyocera · 산업용 로봇·PLC 사용자</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 전고체전지가 소형 산업용 고부가 응용에서 사업화되는 사례임. 그룹 설비 보전 PoC는 백업시간·인터페이스·정전 조건을 검증해 검토하되 EV 소재 매출기회로 확대 해석하지 않아야 함.</p></div><p><b>Follow-up:</b> 11월 양산 개시, 가격·공급량, 수명 산정조건, 기존 PLC 호환·정전시험 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/15/news080.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://ssl4.eir-parts.net/doc/6810/ir_material21/287507/00.pdf" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><article class="card" id="20261016-2" data-category="AI·로보틱스·AX" data-priority="High" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">AI·로보틱스·AX</span><h2>후지소프트, AMR·협동로봇·MES 통합 검증용 나고야 Lab 공개</h2><div class="meta">실제 공개일: 2026-10-15 07:30 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> 후지소프트는 10월 1일 개설한 로봇 개발·실증거점 나고야 Lab을 14일 공개했음. 전일 보고서에 빠진 15일 07:30 기사를 누락 보완했음.</p><p><b>2.</b> MixFlit으로 서로 다른 제조사의 AMR·협동로봇을 연계해 운반상자 순환 데모를 수행했음. Kachaka Pro·KeiganALI·YOUIBOT 및 FANUC·야스카와 로봇과 MES 등 상위시스템의 연동을 검증함.</p><p><b>3.</b> ROS 2와 임베디드 기술을 활용하며 Unity 가상공간에서 대수·경로를 사전 검토함. 고객 공동검증과 엔지니어 육성에 활용할 예정이나 특정 고객의 양산라인 도입효과는 미확인임.</p></div><dl><dt>핵심 기술</dt><dd>이기종 로봇 통합관제 MixFlit · ROS 2 · MES 연동 · 가상 사전검증</dd><dt>사업화 단계</dt><dd>실증거점 개설·통합 데모, 고객 도입 전 공동검증</dd><dt>관련 기업·고객·PoC</dt><dd>FUJISOFT · Preferred Robotics · Sumitomo Heavy Industries · YOUIBOT · FANUC · Yaskawa</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 로봇 개별 성능보다 이기종 통합·설비 연동·현장 구현을 평가할 후보임. 철강·소재공장 적용은 통신 지연·고장복구·안전구역·유지보수 책임을 검증해야 함.</p></div><p><b>Follow-up:</b> 사용자 공동 PoC 조건, 장비 호환범위·관제 라이선스, MES·안전 연동·고객 성과 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/15/news047.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261016-3" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>시티즌머시너리, 모터 전류로 공구 파손·마모를 감지하는 소프트웨어 발표</h2><div class="meta">실제 공개일: 2026-10-15 13:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 시티즌머시너리는 CNC 자동선반용 툴 모니터 플러스를 발표했으며 10월 26일 수주를 시작할 예정임. NC 모터 전류 데이터를 이용해 공구 상태변화를 감시하는 소프트웨어임.</p><p><b>2.</b> 여러 특징량과 상·하한 감시로 파손·마모뿐 아니라 공회전도 검지함. 소재 길이·기내 온도 등 외부요인의 전류 변동을 걸러 가공부하의 미세한 변화를 판단한다고 설명했음.</p><p><b>3.</b> 추가 센서·계측장비 없이 대응하는 기존 장비에 설치할 수 있으나 Cincom L20·L32와 필요한 NC 옵션에 한정됨. 일반 설비 전체에 적용 가능한 범용 AI 플랫폼이 아니며 검지 정확도·절감실적은 미공개임.</p></div><dl><dt>핵심 기술</dt><dd>NC 전류파형 특징량 · 공구상태 모니터링 · 이상검지</dd><dt>사업화 단계</dt><dd>제품 발표 → 2026년 10월 26일 수주 개시 예정</dd><dt>관련 기업·고객·PoC</dt><dd>Citizen Machinery · Cincom L20·L32 사용자</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 기존 제어데이터 기반 보전·품질관리 접근의 참고사례임. 그룹 가공설비에는 지원 NC와 데이터 접근·오검지율·가공재별 학습조건을 확인한 후 평가할 필요가 있음.</p></div><p><b>Follow-up:</b> 오검지·미검지율, 설치비·옵션비, 소재별 검증, 실제 공구비·불량률 절감 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/15/news049.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261016-4" data-category="GX·전력인프라" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">GX·전력인프라</span><h2>도요쓰케미플러스·산요화성·에보닉, 고순도 재생 폴리올 공급망 공동 검증</h2><div class="meta">실제 공개일: 2026-10-15 11:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 3사는 사용후 폴리우레탄 폼과 공정 스크랩에서 재생 폴리올을 제조·활용하는 공동사업을 시작했음. 일본 내 상업화와 사회실장을 목표로 하는 검증 단계임.</p><p><b>2.</b> 도요쓰케미플러스의 회수·물류, 에보닉의 화학적 재활용, 산요화성의 설계·공정기술을 결합함. 낮은 순도와 불순물, 고온·장시간 처리 문제를 개선하려는 구조임.</p><p><b>3.</b> 회수·선별부터 재생원료 제조와 재제품화까지 전체 밸류체인을 평가하고 LCA를 추가 검증할 예정임. 일본 상용설비 규모·회수율·투자비·탄소감축률이 확정된 발표는 아님.</p></div><dl><dt>핵심 기술</dt><dd>PU 폼 화학적 재활용 · 고순도 폴리올 · PCR·PIR 회수</dd><dt>사업화 단계</dt><dd>3사 공동검증 착수·일본 상업화 추진</dd><dt>관련 기업·고객·PoC</dt><dd>Toyota Tsusho Chemiplas · Sanyo Chemical · Evonik · 자동차시트·가구·매트리스 공급망</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 리사이클 사업화에 회수망·제련/분해공정·소재 재투입이 함께 필요하다는 사례임. 배터리와는 공정·규제·제품시장이 달라 직접 기술전용이 아닌 사업구조 참고가 적절함.</p></div><p><b>Follow-up:</b> 회수 피드·불순물 규격, 수율·에너지·LCA, 재제품 인증·공급계약 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/15/news015.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://www.sanyo-chemical.co.jp/wp/wp-content/uploads/2026/10/k20261013_poly.pdf" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><article class="card" id="20261016-5" data-category="GX·전력인프라" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">GX·전력인프라</span><h2>야마하발동기, 수소엔진 골프카 DRIVE H2의 제한구역 이동 수요 탐색</h2><div class="meta">실제 공개일: 2026-10-16 06:45 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 야마하는 수소엔진 탑재 4인승 골프카 컨셉트 DRIVE H2를 전시했음. 2024년 첫 공개 제품의 용도 개발을 이어가는 것으로 신규 상용차 출시나 수주 발표는 아님.</p><p><b>2.</b> 402cc 단기통 엔진과 70MPa 압축수소 탱크 2개를 탑재함. 회사는 만충전 100km 이상 주행과 희박연소·NOx 억제를 설명했으나 시험조건과 배출량 수치는 확인되지 않았음.</p><p><b>3.</b> 미국의 게이티드 커뮤니티 등 제한된 구역에서 일상 이동수단으로 활용하는 수요에 주목함. 충전 인프라를 소수 거점에 집중할 수 있다는 구상이지만 사업성·판매 시기는 미확정임.</p></div><dl><dt>핵심 기술</dt><dd>소형 수소 내연기관 · 포트분사·희박연소 · 압축수소 저장</dd><dt>사업화 단계</dt><dd>컨셉트 전시·용도 탐색, 상용화 일정 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>Yamaha Motor · DRIVE H2 · 미국 지역내 이동 수요처</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 수소 모빌리티는 충전거점·사용패턴을 묶어 검토해야 함을 보여줌. 그룹 수소 수요로 연결하려면 전동 골프카 대비 총비용·인프라·수소원료 탄소집약도를 먼저 비교해야 함.</p></div><p><b>Follow-up:</b> 실증 고객·운영시간, 수소소비량·NOx, BEV 대비 TCO·인프라 비용 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/16/news050.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://news.yamaha-motor.co.jp/2026/032696.html" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><article class="card" id="20261016-6" data-category="AI·로보틱스·AX" data-priority="Low" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>후지쯔, 사회 디지털트윈을 활용한 대규모 대피 시뮬레이션 데모</h2><div class="meta">실제 공개일: 2026-10-16 06:30 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 후지쯔는 CEATEC에서 도시의 사람·이동·상황을 재현하는 디지털 리허설을 시연했음. 가와사키역 주변 25만 명 대피는 전시 시나리오의 설정이며 실제 구조 실적이 아님.</p><p><b>2.</b> 공개 통계로 연령·가구구성과 행동모델을 구성하고 여러 대응책의 효과를 가상공간에서 비교함. 현실 시행 전 정책·운영 의사결정을 지원하는 사회 디지털트윈 기술임.</p><p><b>3.</b> 회사는 제품화를 위해 지자체와 교통공백 해소 등 실증을 진행 중이라고 설명했음. 재난 상황의 예측 정확도·인명피해 저감과 유료 상용 매출은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>사회 디지털트윈 · 행동선택모델 · 멀티시나리오 시뮬레이션</dd><dt>사업화 단계</dt><dd>전시 데모·지자체 공동실증, 제품화 추진</dd><dt>관련 기업·고객·PoC</dt><dd>Fujitsu · 지자체(기사상 미공개) · Toho</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 대규모 사업장 대피·통행·물류 시뮬레이션의 참고기술임. 공장 위험구역·실시간 데이터·행동모델 교정은 별도 검증이 필요하며 직접 도입 우선순위는 낮음.</p></div><p><b>Follow-up:</b> 실증 지자체·정확도 검증, 공장 적용 사례·데이터 요구·가격 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/16/news049.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261016-7" data-category="GX·전력인프라" data-priority="Low" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">GX·전력인프라</span><h2>도레이, 재생원료 비중 93% 이상 복합섬유 개발…2027년 제품 출시 목표</h2><div class="meta">실제 공개일: 2026-10-15 08:30 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 도레이는 폴리에스터·나일론 복합섬유 원사에 재생 유래 원료를 93% 이상 적용했다고 발표했음. 이 수치는 재생원료 투입비중이며 사용후 섬유의 회수·재활용 수율을 뜻하지 않음.</p><p><b>2.</b> 기존 &amp;+ 브랜드의 원료 활용과 복합방사 기술을 바탕으로 ARTIROSA CX 원단을 제안 중임. 재생원료 확대와 함께 외관·촉감·내구·가공성의 유지가 목표임.</p><p><b>3.</b> 2027년 가을·겨울 출시와 초년도 20만m 판매를 목표로 하며 양산 검증을 진행할 예정임. 100% 재생원료는 장기 개발 목표로 현재 성과와 구분해야 함.</p></div><dl><dt>핵심 기술</dt><dd>고재생원료비중 PET·나일론 복합방사 · 고기능 섬유</dd><dt>사업화 단계</dt><dd>개발 성공·양산 검증 추진 → 2027년 가을·겨울 출시 목표</dd><dt>관련 기업·고객·PoC</dt><dd>Toray · &amp;+ · ARTIROSA CX · 의류·아웃도어 시장</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 순환소재의 고객 채택에는 원료 비율만큼 품질·가공성 유지가 중요함. 그룹 직접 사업과의 정합성은 낮으며 ‘재활용률’ 지표의 정의를 엄격히 구분하는 참고사례임.</p></div><p><b>Follow-up:</b> 재생원료 출처·인증, 양산 품질·원가, 출시·판매 실적·LCA 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2610/15/news034.html" target="_blank" rel="noopener noreferrer">원문 보기</a><a class="link secondary" href="https://www.toray.co.jp/news/article.html?contentId=52d44f6z" target="_blank" rel="noopener noreferrer">기업 공개자료</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261016-1"><b>1. 맥셀, 산업기기용 전고체전지 백업 모듈 4종 11월 양산 예정</b></a><span class="badge high">High</span></div><div class="rank"><a href="#20261016-2"><b>2. 후지소프트, AMR·협동로봇·MES 통합 검증용 나고야 Lab 공개</b></a><span class="badge high">High</span></div><div class="rank"><a href="#20261016-3"><b>3. 시티즌머시너리, 모터 전류로 공구 파손·마모를 감지하는 소프트웨어 발표</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261016-4"><b>4. 도요쓰케미플러스·산요화성·에보닉, 고순도 재생 폴리올 공급망 공동 검증</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261016-5"><b>5. 야마하발동기, 수소엔진 골프카 DRIVE H2의 제한구역 이동 수요 탐색</b></a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261016-6"><b>6. 후지쯔, 사회 디지털트윈을 활용한 대규모 대피 시뮬레이션 데모</b></a><span class="badge low">Low</span></div><div class="rank"><a href="#20261016-7"><b>7. 도레이, 재생원료 비중 93% 이상 복합섬유 개발…2027년 제품 출시 목표</b></a><span class="badge low">Low</span></div><p class="meta">High는 검증·PoC 검토 우선순위이며 투자 추천을 의미하지 않음.</p></section><section class="box none"><h2>조사 범위 내 신규 기사 미확인 분야</h2><p><span>이차전지: EV 셀·LFP·LMR·NCM·양음극재·전해질·분리막·제조장치·배터리 리사이클</span></p><p><span>GX: CCUS·암모니아·SAF·e-Fuel·페로브스카이트·電力網·ESS</span></p><p><span>항공우주·방산 전용소재·핵융합·양자</span></p><p><span>휴머노이드·머신비전 신규 제품</span></p><p class="meta">미확인은 해당 산업 활동의 부재를 의미하지 않음.</p></section><details class="box scope"><summary>조사 범위·출처 확인 기준</summary><p>2026.10.15 08:42 ~ 2026.10.16 08:49 JST. MONOist 월간 기사 목록·실제 웹 검색·원문을 확인하고 기존 reports와 URL·제목을 대조했음. 전일 실행 전 공개된 후지소프트·도레이 기사는 누락 보완했음.</p><p class="meta">맥셀·산요화성 공식 PDF와 야마하 공식자료를 보완 대조했음. 도레이 공식 링크는 동적 페이지로 본문 추출이 제한되어 기사 원문을 기준으로 작성했음. 편집후기·퀴즈·재편집·일반 기술해설·단순 장비 홍보·공모전 작품소개 및 일반론 중심 피지컬AI 심포지엄은 제외했음.</p><p class="meta">제조·사용환경별 검증이 필요한 예상 수명·성능과 목표를 실적으로 표현하지 않았음. 포스코 시사점은 공개자료에 기초한 분석임.</p></details><footer><a href="../index.html">← 뉴스 아카이브</a> · 공개일과 발표일을 구분해 작성했음.</footer></main><script type="application/json" id="report-data">{"report_date":"2026-10-16","generated_at":"2026-10-16T08:49:40+09:00","search_window":{"from":"2026-10-15T08:42:17+09:00","to":"2026-10-16T08:49:40+09:00","basis":"직전 브리핑 이후 신규 기사·중요 누락 보완. 기존 reports URL·제목 대조 및 원문·공식자료 확인."},"articles":[{"category":"이차전지","title":"맥셀, 산업기기용 전고체전지 백업 모듈 4종 11월 양산 예정","published_at":"2026-10-15T15:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/15/news080.html","summary":["맥셀은 PSB401010H 세라믹 패키지 전고체전지 탑재 백업 모듈을 11월 초부터 양산·국내 판매할 계획임. 10월 14일 공식 발표로 현재 양산 개시 실적과는 구분해야 함.","3.6V·3.0V 출력과 11~22mAh 용량의 4종으로 ER·CR 일차전지의 대체를 겨냥함. 사용온도는 −10~85℃이며 10년 이상은 사용환경에 따른 예상 수명으로 10년 현장 검증을 뜻하지 않음.","2024년부터 고객 공장 설비에서 시험 운용했고 SUBARU·교세라 사례가 제시됐음. 용도는 로봇·PLC의 메모리·RTC 백업으로, 구동용 대형 EV 전고체전지의 양산과는 별개임."],"core_technology":"소형 전고체 이차전지 · 백업 전원 모듈 · 고온 내구","commercialization_stage":"고객 시험운용 → 모듈 4종 개발 → 2026년 11월 초 양산 예정","related_entities":"Maxell · SUBARU · Kyocera · 산업용 로봇·PLC 사용자","posco_implications":"[분석] 전고체전지가 소형 산업용 고부가 응용에서 사업화되는 사례임. 그룹 설비 보전 PoC는 백업시간·인터페이스·정전 조건을 검증해 검토하되 EV 소재 매출기회로 확대 해석하지 않아야 함.","priority":"High","follow_up":"11월 양산 개시, 가격·공급량, 수명 산정조건, 기존 PLC 호환·정전시험 확인","source":"https://ssl4.eir-parts.net/doc/6810/ir_material21/287507/00.pdf","id":"20261016-1","coverage_status":"신규"},{"category":"AI·로보틱스·AX","title":"후지소프트, AMR·협동로봇·MES 통합 검증용 나고야 Lab 공개","published_at":"2026-10-15T07:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/15/news047.html","summary":["후지소프트는 10월 1일 개설한 로봇 개발·실증거점 나고야 Lab을 14일 공개했음. 전일 보고서에 빠진 15일 07:30 기사를 누락 보완했음.","MixFlit으로 서로 다른 제조사의 AMR·협동로봇을 연계해 운반상자 순환 데모를 수행했음. Kachaka Pro·KeiganALI·YOUIBOT 및 FANUC·야스카와 로봇과 MES 등 상위시스템의 연동을 검증함.","ROS 2와 임베디드 기술을 활용하며 Unity 가상공간에서 대수·경로를 사전 검토함. 고객 공동검증과 엔지니어 육성에 활용할 예정이나 특정 고객의 양산라인 도입효과는 미확인임."],"core_technology":"이기종 로봇 통합관제 MixFlit · ROS 2 · MES 연동 · 가상 사전검증","commercialization_stage":"실증거점 개설·통합 데모, 고객 도입 전 공동검증","related_entities":"FUJISOFT · Preferred Robotics · Sumitomo Heavy Industries · YOUIBOT · FANUC · Yaskawa","posco_implications":"[분석] 로봇 개별 성능보다 이기종 통합·설비 연동·현장 구현을 평가할 후보임. 철강·소재공장 적용은 통신 지연·고장복구·안전구역·유지보수 책임을 검증해야 함.","priority":"High","follow_up":"사용자 공동 PoC 조건, 장비 호환범위·관제 라이선스, MES·안전 연동·고객 성과 확인","coverage_status":"누락 보완","id":"20261016-2"},{"category":"AI·로보틱스·AX","title":"시티즌머시너리, 모터 전류로 공구 파손·마모를 감지하는 소프트웨어 발표","published_at":"2026-10-15T13:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/15/news049.html","summary":["시티즌머시너리는 CNC 자동선반용 툴 모니터 플러스를 발표했으며 10월 26일 수주를 시작할 예정임. NC 모터 전류 데이터를 이용해 공구 상태변화를 감시하는 소프트웨어임.","여러 특징량과 상·하한 감시로 파손·마모뿐 아니라 공회전도 검지함. 소재 길이·기내 온도 등 외부요인의 전류 변동을 걸러 가공부하의 미세한 변화를 판단한다고 설명했음.","추가 센서·계측장비 없이 대응하는 기존 장비에 설치할 수 있으나 Cincom L20·L32와 필요한 NC 옵션에 한정됨. 일반 설비 전체에 적용 가능한 범용 AI 플랫폼이 아니며 검지 정확도·절감실적은 미공개임."],"core_technology":"NC 전류파형 특징량 · 공구상태 모니터링 · 이상검지","commercialization_stage":"제품 발표 → 2026년 10월 26일 수주 개시 예정","related_entities":"Citizen Machinery · Cincom L20·L32 사용자","posco_implications":"[분석] 기존 제어데이터 기반 보전·품질관리 접근의 참고사례임. 그룹 가공설비에는 지원 NC와 데이터 접근·오검지율·가공재별 학습조건을 확인한 후 평가할 필요가 있음.","priority":"Medium","follow_up":"오검지·미검지율, 설치비·옵션비, 소재별 검증, 실제 공구비·불량률 절감 확인","id":"20261016-3","coverage_status":"신규"},{"category":"GX·전력인프라","title":"도요쓰케미플러스·산요화성·에보닉, 고순도 재생 폴리올 공급망 공동 검증","published_at":"2026-10-15T11:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/15/news015.html","summary":["3사는 사용후 폴리우레탄 폼과 공정 스크랩에서 재생 폴리올을 제조·활용하는 공동사업을 시작했음. 일본 내 상업화와 사회실장을 목표로 하는 검증 단계임.","도요쓰케미플러스의 회수·물류, 에보닉의 화학적 재활용, 산요화성의 설계·공정기술을 결합함. 낮은 순도와 불순물, 고온·장시간 처리 문제를 개선하려는 구조임.","회수·선별부터 재생원료 제조와 재제품화까지 전체 밸류체인을 평가하고 LCA를 추가 검증할 예정임. 일본 상용설비 규모·회수율·투자비·탄소감축률이 확정된 발표는 아님."],"core_technology":"PU 폼 화학적 재활용 · 고순도 폴리올 · PCR·PIR 회수","commercialization_stage":"3사 공동검증 착수·일본 상업화 추진","related_entities":"Toyota Tsusho Chemiplas · Sanyo Chemical · Evonik · 자동차시트·가구·매트리스 공급망","posco_implications":"[분석] 리사이클 사업화에 회수망·제련/분해공정·소재 재투입이 함께 필요하다는 사례임. 배터리와는 공정·규제·제품시장이 달라 직접 기술전용이 아닌 사업구조 참고가 적절함.","priority":"Medium","follow_up":"회수 피드·불순물 규격, 수율·에너지·LCA, 재제품 인증·공급계약 확인","source":"https://www.sanyo-chemical.co.jp/wp/wp-content/uploads/2026/10/k20261013_poly.pdf","id":"20261016-4","coverage_status":"신규"},{"category":"GX·전력인프라","title":"야마하발동기, 수소엔진 골프카 DRIVE H2의 제한구역 이동 수요 탐색","published_at":"2026-10-16T06:45:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/16/news050.html","summary":["야마하는 수소엔진 탑재 4인승 골프카 컨셉트 DRIVE H2를 전시했음. 2024년 첫 공개 제품의 용도 개발을 이어가는 것으로 신규 상용차 출시나 수주 발표는 아님.","402cc 단기통 엔진과 70MPa 압축수소 탱크 2개를 탑재함. 회사는 만충전 100km 이상 주행과 희박연소·NOx 억제를 설명했으나 시험조건과 배출량 수치는 확인되지 않았음.","미국의 게이티드 커뮤니티 등 제한된 구역에서 일상 이동수단으로 활용하는 수요에 주목함. 충전 인프라를 소수 거점에 집중할 수 있다는 구상이지만 사업성·판매 시기는 미확정임."],"core_technology":"소형 수소 내연기관 · 포트분사·희박연소 · 압축수소 저장","commercialization_stage":"컨셉트 전시·용도 탐색, 상용화 일정 미확인","related_entities":"Yamaha Motor · DRIVE H2 · 미국 지역내 이동 수요처","posco_implications":"[분석] 수소 모빌리티는 충전거점·사용패턴을 묶어 검토해야 함을 보여줌. 그룹 수소 수요로 연결하려면 전동 골프카 대비 총비용·인프라·수소원료 탄소집약도를 먼저 비교해야 함.","priority":"Medium","follow_up":"실증 고객·운영시간, 수소소비량·NOx, BEV 대비 TCO·인프라 비용 확인","source":"https://news.yamaha-motor.co.jp/2026/032696.html","id":"20261016-5","coverage_status":"신규"},{"category":"AI·로보틱스·AX","title":"후지쯔, 사회 디지털트윈을 활용한 대규모 대피 시뮬레이션 데모","published_at":"2026-10-16T06:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/16/news049.html","summary":["후지쯔는 CEATEC에서 도시의 사람·이동·상황을 재현하는 디지털 리허설을 시연했음. 가와사키역 주변 25만 명 대피는 전시 시나리오의 설정이며 실제 구조 실적이 아님.","공개 통계로 연령·가구구성과 행동모델을 구성하고 여러 대응책의 효과를 가상공간에서 비교함. 현실 시행 전 정책·운영 의사결정을 지원하는 사회 디지털트윈 기술임.","회사는 제품화를 위해 지자체와 교통공백 해소 등 실증을 진행 중이라고 설명했음. 재난 상황의 예측 정확도·인명피해 저감과 유료 상용 매출은 확인되지 않았음."],"core_technology":"사회 디지털트윈 · 행동선택모델 · 멀티시나리오 시뮬레이션","commercialization_stage":"전시 데모·지자체 공동실증, 제품화 추진","related_entities":"Fujitsu · 지자체(기사상 미공개) · Toho","posco_implications":"[분석] 대규모 사업장 대피·통행·물류 시뮬레이션의 참고기술임. 공장 위험구역·실시간 데이터·행동모델 교정은 별도 검증이 필요하며 직접 도입 우선순위는 낮음.","priority":"Low","follow_up":"실증 지자체·정확도 검증, 공장 적용 사례·데이터 요구·가격 확인","id":"20261016-6","coverage_status":"신규"},{"category":"GX·전력인프라","title":"도레이, 재생원료 비중 93% 이상 복합섬유 개발…2027년 제품 출시 목표","published_at":"2026-10-15T08:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2610/15/news034.html","summary":["도레이는 폴리에스터·나일론 복합섬유 원사에 재생 유래 원료를 93% 이상 적용했다고 발표했음. 이 수치는 재생원료 투입비중이며 사용후 섬유의 회수·재활용 수율을 뜻하지 않음.","기존 &+ 브랜드의 원료 활용과 복합방사 기술을 바탕으로 ARTIROSA CX 원단을 제안 중임. 재생원료 확대와 함께 외관·촉감·내구·가공성의 유지가 목표임.","2027년 가을·겨울 출시와 초년도 20만m 판매를 목표로 하며 양산 검증을 진행할 예정임. 100% 재생원료는 장기 개발 목표로 현재 성과와 구분해야 함."],"core_technology":"고재생원료비중 PET·나일론 복합방사 · 고기능 섬유","commercialization_stage":"개발 성공·양산 검증 추진 → 2027년 가을·겨울 출시 목표","related_entities":"Toray · &+ · ARTIROSA CX · 의류·아웃도어 시장","posco_implications":"[분석] 순환소재의 고객 채택에는 원료 비율만큼 품질·가공성 유지가 중요함. 그룹 직접 사업과의 정합성은 낮으며 ‘재활용률’ 지표의 정의를 엄격히 구분하는 참고사례임.","priority":"Low","follow_up":"재생원료 출처·인증, 양산 품질·원가, 출시·판매 실적·LCA 확인","coverage_status":"누락 보완","source":"https://www.toray.co.jp/news/article.html?contentId=52d44f6z","id":"20261016-7"}],"key_insights":["소형 전고체전지는 산업기기 메모리 백업 등 제한된 용도에서 양산제품으로 확장 중임. EV 전고체전지 사업화와 분리해 평가해야 함.","AMR·협동로봇의 현장 적용은 이기종 통합·MES 연계·사전 시뮬레이션 역량에 좌우됨. 개별 로봇보다 SI·운영체계의 검증이 중요함.","순환소재는 회수·분해·정제·재제품화를 연결하고 제품 품질·LCA를 입증해야 함. 재생원료 비중과 실제 재활용 수율은 서로 다른 지표임."],"priority_ranking":[{"id":"20261016-1","title":"맥셀, 산업기기용 전고체전지 백업 모듈 4종 11월 양산 예정","priority":"High"},{"id":"20261016-2","title":"후지소프트, AMR·협동로봇·MES 통합 검증용 나고야 Lab 공개","priority":"High"},{"id":"20261016-3","title":"시티즌머시너리, 모터 전류로 공구 파손·마모를 감지하는 소프트웨어 발표","priority":"Medium"},{"id":"20261016-4","title":"도요쓰케미플러스·산요화성·에보닉, 고순도 재생 폴리올 공급망 공동 검증","priority":"Medium"},{"id":"20261016-5","title":"야마하발동기, 수소엔진 골프카 DRIVE H2의 제한구역 이동 수요 탐색","priority":"Medium"},{"id":"20261016-6","title":"후지쯔, 사회 디지털트윈을 활용한 대규모 대피 시뮬레이션 데모","priority":"Low"},{"id":"20261016-7","title":"도레이, 재생원료 비중 93% 이상 복합섬유 개발…2027년 제품 출시 목표","priority":"Low"}],"no_new_articles_categories":["이차전지: EV 셀·LFP·LMR·NCM·양음극재·전해질·분리막·제조장치·배터리 리사이클","GX: CCUS·암모니아·SAF·e-Fuel·페로브스카이트·電力網·ESS","항공우주·방산 전용소재·핵융합·양자","휴머노이드·머신비전 신규 제품"]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");function apply(){let n=0;document.querySelectorAll("article.card").forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(query.value.trim().toLowerCase());a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+document.querySelectorAll("article.card").length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});})();</script></body></html>
