@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.11.06</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.11.06 · 08:41 JST</p><p>신규 5건</p><div class="stats"><div class="stat"><strong>5</strong>전체 기사</div><div class="stat"><strong>2</strong>High</div><div class="stat"><strong>3</strong>Medium</div><div class="stat"><strong>0</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① 대규모 내부 수요를 로보틱스 신사업의 초기시장으로 삼는 전략이 구체화됐음</b><br>도요타는 2027년 전사조직을 신설하고 2028~2040년 그룹·공급사 40만대 예상 수요에서 기술과 운영모델을 축적할 계획임. 장기 수요 전망과 실제 설치·매출을 구분해 볼 필요가 있음.</div><div class="insight"><b>② 배터리 경쟁력은 소재뿐 아니라 셀·팩 안전평가와 인증 서비스까지 확장되고 있음</b><br>에나ックス는 안전·내구, 불량분석, 규격시험을 원스톱 제공하는 NECOLABO를 개설했음. 일본 고객지원·공동평가 후보로 보되 시험능력과 공인 인정범위를 확인해야 함.</div><div class="insight"><b>③ 자율실험과 산업 데이터 기반이 소재·제조 AI의 핵심 인프라로 이동 중임</b><br>아사히카세이는 소재개발 실험 수 4배를 목표로 폐루프 스마트랩을 구축하고, 도시바는 100억건 시계열 분석을 41초로 단축했다고 발표했음. 두 수치 모두 지정 조건 또는 향후 목표이므로 실제 운영성과와 구분해야 함.</div><div class="insight"><b>④ 설계지식 AI는 보안 요구가 높은 온프레미스 실증으로 진입했음</b><br>리코와 가와사키중공업은 도면·기술문서와 숙련자의 암묵지를 LLM/LMM으로 활용하는 검증을 추진함. 답변 근거·도면 버전·전문가 승인과 정량 생산성 측정이 사업화 판단의 핵심임.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false">High</button><button type="button" data-value="Medium" aria-pressed="false">Medium</button><button type="button" data-value="Low" aria-pressed="false">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false">신규</button><button type="button" data-value="누락 보완" aria-pressed="false">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 5건 중 5건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261106-1" data-category="AI·로보틱스·AX" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>도요타, 2027년 ‘Toyota Robotics’ 신설…그룹 내 40만대 FA 수요에서 사업화</h2><div class="meta">실제 공개일: 2026.11.06 06:30 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> 도요타자동차는 2027년 1월 전사 직할 조직 ‘Toyota Robotics’를 신설해 분산된 로보틱스 인력·기술·기능을 결집한다고 발표했음. FA와 생활지원 두 영역을 대상으로 하되, 우선 자사·그룹·공급사 공장의 내부 수요에서 기술과 인재를 축적할 계획임.</p><p><b>2.</b> 회사는 2028~2040년 누적 내부 FA 수요를 도요타·그룹사 15만대와 공급사 25만대 등 총 40만대로 추산했음. 이는 실제 수주나 설치 실적이 아니라 예상 수요이며, 노후설비 갱신 투자도 연간 1조엔 규모의 기회로 전환하겠다는 전략 목표임.</p><p><b>3.</b> TPS, 전 세계 60개 공장의 1만8000명 숙련인력 데이터, 로봇 기반모델, Arene과 공장관제 플랫폼을 경쟁력의 기반으로 제시했음. 내부 검증 뒤 외부 제조업·타산업과 생활영역으로 확장해 2030년 이후 매출 성장을 목표로 하나 제품 사양·파트너·가격·외판 실적은 미공개임.</p></div><dl><dt>핵심 기술</dt><dd>피지컬 AI·로봇 기반모델 · TPS 기반 공정자동화 · 숙련작업 데이터 · Arene · 공장관제 플랫폼 · FA 로봇</dd><dt>사업화 단계</dt><dd>2027년 1월 전사조직 신설 결정·그룹 내부 FA 적용 기획 단계, 외부 판매와 2030년 이후 매출 확대는 목표임</dd><dt>관련 기업·고객·PoC</dt><dd>Toyota Motor · Toyota Robotics(신설 예정) · Toyota 그룹사·공급사 · 전 세계 60개 공장·1만8000명 숙련인력</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 대규모 내부 공장 수요를 앵커시장으로 삼아 로봇 기술·데이터·운영모델을 축적한 뒤 외판하는 구조는 그룹 제조현장을 신사업 검증장으로 활용하는 전략의 강한 벤치마크임. 다만 40만대는 장기 예상 수요이므로 포스코그룹은 우선 고위험·반복·인력부족 공정을 좁히고, 공급사와 데이터 권리·표준 플랫폼·외판 가능성을 함께 설계해야 함.</p></div><p><b>Follow-up:</b> 조직 인력·예산과 개발/조달 범위, 로봇 유형·기반모델 공급사, 40만대 수요 산정 기준·연도별 도입계획, 내부 ROI·안전인증·데이터 권리, 외부 판매 제품·고객·매출목표 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/06/news041.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261106-2" data-category="이차전지" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">이차전지</span><h2>에나ックス, 셀·팩 원스톱 리튬이온전지 안전성 평가거점 ‘NECOLABO’ 개설</h2><div class="meta">실제 공개일: 2026.11.05 11:00 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> Daigas그룹의 에나ックス는 야마가타현 요네자와시에 리튬이온전지 안전성 평가거점 ‘NECOLABO’를 개설했음. 안전성·내구성 평가, 불량 원인분석, 규격·인증 시험을 셀부터 팩까지 원스톱으로 제공함.</p><p><b>2.</b> 설계·개발 경험이 있는 기술자가 발화·충격 등 가혹시험과 분해·재현시험을 수행하고, 결과를 설계개선 제안까지 연결하는 점을 차별점으로 제시했음. 1996년 창업 이후 약 30년간 축적한 셀·팩 구조와 제조공정 지식을 활용한다는 설명임.</p><p><b>3.</b> 거점은 개설돼 실제 서비스 기반이 마련됐지만 시험능력, 장비별 처리량, 인증기관 인정범위, 가격과 고객 계약은 공개되지 않았음. KRI가 2025년 12월 에나ックス를 완전자회사화한 이후 Daigas그룹이 축전지 수탁 R&amp;D의 대응영역을 확장하는 사업 행보임.</p></div><dl><dt>핵심 기술</dt><dd>리튬이온전지 셀·팩 안전/내구 시험 · 발화·충격 가혹시험 · 충방전 평가 · 불량 재현·분해분석 · 규격·인증 지원</dd><dt>사업화 단계</dt><dd>NECOLABO 거점 개설·원스톱 평가 서비스 제공 단계, 시험능력·인증범위·고객 계약·매출 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Enax · Daigas Group · KRI · EV·ESS·로봇·드론용 셀/팩 개발사 · 야마가타현 요네자와시</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 소재 평가를 셀·팩 안전성과 불량 원인분석까지 연결하는 외부 거점은 일본 고객의 인증·검증 기간을 줄이는 협업 후보가 될 수 있음. 포스코퓨처엠 소재 고객지원과 직접 연계하려면 양극재별 열폭주·가스·수명 분석 역량, 고객 데이터 보안, 국제 규격 인정과 시험 처리량을 먼저 확인해야 함.</p></div><p><b>Follow-up:</b> 보유 시험장비·셀/팩 크기·월 처리능력, ISO/IEC·UL·UN38.3 등 인정범위, 양극재별 열폭주/가스 분석 가능성, 가격·리드타임·보안, 실제 고객·공동개발·Daigas 내 투자계획 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/05/news013.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261106-3" data-category="항공우주·방산·첨단기술" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>아사히카세이, 반도체 절연재 자율개발 스마트랩 구축…실험 수 약 4배 목표</h2><div class="meta">실제 공개일: 2026.11.06 06:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 아사히카세이는 시즈오카현 후지지사에 AI와 자동화 기술을 활용한 스마트랩을 구축하고 2027년 1월 가동할 계획임. 반도체용 감광성 절연재 ‘파이멜’의 재료설계, 실험계획, 원료배합, 시료제작, 가공·성능평가와 학습을 하나의 자율 사이클로 연결함.</p><p><b>2.</b> 기존 실험 데이터와 공개 데이터, 연구자 지식, 시뮬레이션·이론과 신규 실험 결과를 MI에 학습해 다음 조성·조건을 제안하는 구조임. 일정 기간 검토 가능한 조성 수를 기존의 약 4배로 늘릴 전망이나, 이는 2027년 가동 이후 검증해야 할 목표치임.</p><p><b>3.</b> 파이멜 개발로 자율실험 기술·노하우를 축적한 뒤 다른 전자재료와 장기적으로는 다른 소재 분야로 확대할 계획임. 현재는 시설 개설 발표와 가동 준비 단계로 신규 소재의 고객 채택, 개발기간 단축률과 투자회수 성과는 미공개임.</p></div><dl><dt>핵심 기술</dt><dd>자율실험 스마트랩 · 마테리얼즈 인포매틱스 · 실험계획/스케줄링 · 자동 배합·시료제작·가공평가 · 폐루프 학습</dd><dt>사업화 단계</dt><dd>2027년 1월 가동 예정인 R&amp;D 인프라 구축 단계, 실험 4배는 목표이며 신규 소재 채택·개발성과 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>Asahi Kasei · 후지지사 스마트랩 · 반도체용 감광성 절연재 Pimel · 첨단 반도체 패키지 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 소재설계부터 고객공정 모사 평가까지 폐루프로 자동화하는 방식은 양·음극재 조성 탐색과 소성·코팅 조건 최적화에도 참고 가능함. 다만 파이멜은 반도체 절연재이므로 직접 사업 정합성을 과장하지 말고, 실험 자동화율·데이터 표준·장비 유연성과 실제 개발기간 단축을 벤치마킹해야 함.</p></div><p><b>Follow-up:</b> 총 투자액·장비 구성·자동화율·무인운전시간, 4배 산정 기준과 가동 후 실적, MI 모델·데이터 표준·IP 귀속, 타 전자재료 확장 일정, 고객 공동개발·채택 사례 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/06/news014.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261106-4" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>도시바, GridDB V6.0 출시…100억건 시계열 데이터 분석 2900초→41초</h2><div class="meta">실제 공개일: 2026.11.05 10:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 도시바는 대규모 IoT용 시계열 데이터베이스 ‘GridDB Enterprise Edition V6.0’ 제공을 시작했음. 열 지향 고속분석 기능으로 별도 DWH 없이 데이터 수집·축적과 장기 시계열 분석을 하나의 기반에서 처리하는 구조임.</p><p><b>2.</b> 서버 6대 클러스터와 공장 IoT 데이터 100억건을 사용한 테이블 스캔 검증에서 처리시간이 기존 버전 2900초에서 41초로 단축됐다고 발표했음. 약 70분의 1이라는 결과는 특정 하드웨어·쿼리 조건의 공급사 시험이므로 실제 설비 분석 워크로드의 성능과 동일시할 수 없음.</p><p><b>3.</b> 제품은 상용 제공 단계이며 설비감시, 예지보전, 품질관리와 수급 최적화 등 제조·에너지·사회인프라를 적용처로 제시했음. 고객 도입사, 라이선스 비용, DWH 대체 범위와 운영비 절감 실적은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>분산형 시계열 데이터베이스 · 열 지향 고속분석 · 페타바이트급 확장 · 실시간 IoT 분석 · SQL 인터페이스</dd><dt>사업화 단계</dt><dd>GridDB Enterprise Edition V6.0 상용 제공 개시, 성능은 도시바 검증환경 결과이며 고객 운영성과 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Toshiba · 제조·에너지·사회인프라 사업자 · 설비감시·예지보전·품질관리·수급최적화 시스템</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 대규모 설비 센서 데이터의 수집과 분석 기반을 통합하면 AI 모델 이전 단계의 데이터 이동·운영 복잡성을 줄일 가능성이 있음. 도입 검토에서는 기존 데이터레이크·DWH와 중복을 피하고 실제 제철 시계열 쿼리, 장애복구, 장기보존 비용으로 비교해야 함.</p></div><p><b>Follow-up:</b> 라이선스·하드웨어 TCO, 실제 고객·운영 규모, 압축률·쓰기성능·장애복구·보존정책, 기존 DWH/데이터레이크 연동, 제철소 대표 쿼리의 독립 성능검증 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/05/news016.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261106-5" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>리코·가와사키중공업, 온프레미스 LLM/LMM으로 설계도면·숙련 암묵지 활용 검증</h2><div class="meta">실제 공개일: 2026.11.05 09:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 리코와 가와사키중공업은 AI를 활용한 설계 지식자산 활용을 위한 전략적 파트너십을 체결했음. 설계문서·도면에 축적된 지식과 숙련기술자의 경험·판단기준을 정리·가시화해 기술전승과 설계 생산성 향상을 검증함.</p><p><b>2.</b> 리코의 온프레미스 LLM/LMM 기반 생성AI와 기업용 플랫폼 ‘Hi.DEEN’을 가와사키중공업의 실제 업무환경에 적용할 계획임. 가와사키중공업은 철도차량·선박·항공기·로봇 분야의 문서, 도면·표·그래프, 업무데이터와 실증환경을 제공함.</p><p><b>3.</b> 실제 업무환경 검증을 추진한다는 점에서 단순 개념 발표보다 구체적이지만 현재는 파트너십·검증 단계임. 대상 업무, 정답률, 검색시간 단축, 사용자 수, 제품화·외판 여부와 보안 성능은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>온프레미스 LLM/LMM · 설계도면·기술문서 멀티모달 검색 · 암묵지 구조화 · 기업용 생성AI 플랫폼 Hi.DEEN</dd><dt>사업화 단계</dt><dd>전략적 파트너십 체결·가와사키중공업 실제 업무환경 PoC 준비 단계, 정량성과·제품화·외판 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Ricoh · Kawasaki Heavy Industries · 철도차량·선박·항공기·로봇 설계조직 · Hi.DEEN</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 도면·표·보고서와 숙련자의 판단기준을 온프레미스에서 함께 다루는 구조는 제철설비 설계·정비 지식전승에 정합성이 높음. 다만 문서 검색과 암묵지 재현은 난도가 다르므로 답변 근거, 버전·권한, 퇴직자 지식 검증과 생산성 기준을 분리한 PoC가 필요함.</p></div><p><b>Follow-up:</b> 대상 설계업무·데이터 규모·PoC 일정, LLM/LMM 정확도·근거 추적·도면 버전관리, 온프레미스 HW·보안·권한, 숙련자 검증 절차, 정량 KPI와 외판 계획 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/05/news011.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261106-1">1. 도요타, 2027년 ‘Toyota Robotics’ 신설…그룹 내 40만대 FA 수요에서 사업화</a><span class="badge high">High</span></div><div class="rank"><a href="#20261106-2">2. 에나ックス, 셀·팩 원스톱 리튬이온전지 안전성 평가거점 ‘NECOLABO’ 개설</a><span class="badge high">High</span></div><div class="rank"><a href="#20261106-3">3. 아사히카세이, 반도체 절연재 자율개발 스마트랩 구축…실험 수 약 4배 목표</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261106-4">4. 도시바, GridDB V6.0 출시…100억건 시계열 데이터 분석 2900초→41초</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261106-5">5. 리코·가와사키중공업, 온프레미스 LLM/LMM으로 설계도면·숙련 암묵지 활용 검증</a><span class="badge medium">Medium</span></div><p class="meta">High는 기술 실사·사업 검토의 상대적 우선순위이며 투자 추천이 아님. 조직·거점 개설, 상용 제품, R&amp;D 인프라 구축과 PoC를 구분해 평가했음.</p></section><section class="box none"><h2>조사 범위 내 신규 기사 미확인 분야</h2><span>이차전지: 셀·팩 안전성 평가거점 개설을 확인했음. 신규 셀·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치·리사이클 기사는 미확인.</span><span>AI·로보틱스·AX: 도요타 로보틱스 사업화, GridDB 시계열 분석, 설계지식 AI 검증을 확인했음. 휴머노이드·모바일 매니퓰레이터·신규 머신비전 기사는 미확인.</span><span>GX·전력인프라: CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 신규 기사는 미확인.</span><span>항공우주·방산·첨단기술: 반도체 절연재 자율실험 스마트랩을 확인했음. 항공우주·방산소재·핵융합·양자 신규 기사는 미확인.</span><p class="meta">미확인은 해당 산업의 활동 부재를 의미하지 않음. 편집후기·퀴즈·교육형 연재·일반 기술해설·단순 결산·단순 홍보·중복 보도는 제외했음.</p></section><details class="box scope"><summary>조사 범위·출처 확인 기준</summary><p>주 검색 구간: 2026.11.05 08:48:58 JST 이후~2026.11.06 08:41:17 JST. MONOist 11월 월간 아카이브, 최신 목록, 분야별 목록과 후보 기사 전체 원문을 확인했음.</p><p>11월 5일 09:00 리코·가와사키중공업, 10:00 도시바 GridDB, 11:00 에나ックス 기사와 11월 6일 06:00 아사히카세이, 06:30 도요타 기사를 신규로 포함했음.</p><p>기존 11월 5일 보고서의 URL·제목과 대조했음. 단순 결산, 편집후기, 일반 교육형 콘텐츠, 비대상 의료·자동차 반도체, 단순 제품 홍보는 제외했음.</p><p class="scope-note">공개자료만 사용했으며 실제 운영·시설 개설, 상용 제공, 검증 단계와 향후 목표를 구분했음. 비공개 고객정보·개인정보는 포함하지 않았음.</p></details><footer><a href="../index.html">← 뉴스 아카이브</a> · 공개일·발표일·실적·목표를 구분해 작성했음.</footer></main><script id="report-data" type="application/json">{"report_date":"2026-11-06","generated_at":"2026-11-06T08:41:17+09:00","search_window":{"from":"2026-11-05T08:48:58+09:00","to":"2026-11-06T08:41:17+09:00","basis":"직전 실제 발행 보고서의 검색 종료 시점 이후부터 11월 6일 08:41 JST까지 MONOist 11월 아카이브·최신 목록·분야별 목록과 후보 기사 전체 원문을 확인했음. 11월 5일 08:48 이후 공개 3건과 11월 6일 오전 공개 2건을 포함했으며, 기존 11월 5일 보고서의 기사 URL·제목과 중복이 없음을 확인했음."},"articles":[{"id":"20261106-1","category":"AI·로보틱스·AX","coverage_status":"신규","priority":"High","title":"도요타, 2027년 ‘Toyota Robotics’ 신설…그룹 내 40만대 FA 수요에서 사업화","published_at":"2026-11-06T06:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/06/news041.html","summary":["도요타자동차는 2027년 1월 전사 직할 조직 ‘Toyota Robotics’를 신설해 분산된 로보틱스 인력·기술·기능을 결집한다고 발표했음. FA와 생활지원 두 영역을 대상으로 하되, 우선 자사·그룹·공급사 공장의 내부 수요에서 기술과 인재를 축적할 계획임.","회사는 2028~2040년 누적 내부 FA 수요를 도요타·그룹사 15만대와 공급사 25만대 등 총 40만대로 추산했음. 이는 실제 수주나 설치 실적이 아니라 예상 수요이며, 노후설비 갱신 투자도 연간 1조엔 규모의 기회로 전환하겠다는 전략 목표임.","TPS, 전 세계 60개 공장의 1만8000명 숙련인력 데이터, 로봇 기반모델, Arene과 공장관제 플랫폼을 경쟁력의 기반으로 제시했음. 내부 검증 뒤 외부 제조업·타산업과 생활영역으로 확장해 2030년 이후 매출 성장을 목표로 하나 제품 사양·파트너·가격·외판 실적은 미공개임."],"core_technology":"피지컬 AI·로봇 기반모델 · TPS 기반 공정자동화 · 숙련작업 데이터 · Arene · 공장관제 플랫폼 · FA 로봇","commercialization_stage":"2027년 1월 전사조직 신설 결정·그룹 내부 FA 적용 기획 단계, 외부 판매와 2030년 이후 매출 확대는 목표임","related_entities":"Toyota Motor · Toyota Robotics(신설 예정) · Toyota 그룹사·공급사 · 전 세계 60개 공장·1만8000명 숙련인력","posco_implications":"[분석] 대규모 내부 공장 수요를 앵커시장으로 삼아 로봇 기술·데이터·운영모델을 축적한 뒤 외판하는 구조는 그룹 제조현장을 신사업 검증장으로 활용하는 전략의 강한 벤치마크임. 다만 40만대는 장기 예상 수요이므로 포스코그룹은 우선 고위험·반복·인력부족 공정을 좁히고, 공급사와 데이터 권리·표준 플랫폼·외판 가능성을 함께 설계해야 함.","follow_up":"조직 인력·예산과 개발/조달 범위, 로봇 유형·기반모델 공급사, 40만대 수요 산정 기준·연도별 도입계획, 내부 ROI·안전인증·데이터 권리, 외부 판매 제품·고객·매출목표 확인"},{"id":"20261106-2","category":"이차전지","coverage_status":"신규","priority":"High","title":"에나ックス, 셀·팩 원스톱 리튬이온전지 안전성 평가거점 ‘NECOLABO’ 개설","published_at":"2026-11-05T11:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/05/news013.html","summary":["Daigas그룹의 에나ックス는 야마가타현 요네자와시에 리튬이온전지 안전성 평가거점 ‘NECOLABO’를 개설했음. 안전성·내구성 평가, 불량 원인분석, 규격·인증 시험을 셀부터 팩까지 원스톱으로 제공함.","설계·개발 경험이 있는 기술자가 발화·충격 등 가혹시험과 분해·재현시험을 수행하고, 결과를 설계개선 제안까지 연결하는 점을 차별점으로 제시했음. 1996년 창업 이후 약 30년간 축적한 셀·팩 구조와 제조공정 지식을 활용한다는 설명임.","거점은 개설돼 실제 서비스 기반이 마련됐지만 시험능력, 장비별 처리량, 인증기관 인정범위, 가격과 고객 계약은 공개되지 않았음. KRI가 2025년 12월 에나ックス를 완전자회사화한 이후 Daigas그룹이 축전지 수탁 R&D의 대응영역을 확장하는 사업 행보임."],"core_technology":"리튬이온전지 셀·팩 안전/내구 시험 · 발화·충격 가혹시험 · 충방전 평가 · 불량 재현·분해분석 · 규격·인증 지원","commercialization_stage":"NECOLABO 거점 개설·원스톱 평가 서비스 제공 단계, 시험능력·인증범위·고객 계약·매출 미공개","related_entities":"Enax · Daigas Group · KRI · EV·ESS·로봇·드론용 셀/팩 개발사 · 야마가타현 요네자와시","posco_implications":"[분석] 소재 평가를 셀·팩 안전성과 불량 원인분석까지 연결하는 외부 거점은 일본 고객의 인증·검증 기간을 줄이는 협업 후보가 될 수 있음. 포스코퓨처엠 소재 고객지원과 직접 연계하려면 양극재별 열폭주·가스·수명 분석 역량, 고객 데이터 보안, 국제 규격 인정과 시험 처리량을 먼저 확인해야 함.","follow_up":"보유 시험장비·셀/팩 크기·월 처리능력, ISO/IEC·UL·UN38.3 등 인정범위, 양극재별 열폭주/가스 분석 가능성, 가격·리드타임·보안, 실제 고객·공동개발·Daigas 내 투자계획 확인"},{"id":"20261106-3","category":"항공우주·방산·첨단기술","coverage_status":"신규","priority":"Medium","title":"아사히카세이, 반도체 절연재 자율개발 스마트랩 구축…실험 수 약 4배 목표","published_at":"2026-11-06T06:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/06/news014.html","summary":["아사히카세이는 시즈오카현 후지지사에 AI와 자동화 기술을 활용한 스마트랩을 구축하고 2027년 1월 가동할 계획임. 반도체용 감광성 절연재 ‘파이멜’의 재료설계, 실험계획, 원료배합, 시료제작, 가공·성능평가와 학습을 하나의 자율 사이클로 연결함.","기존 실험 데이터와 공개 데이터, 연구자 지식, 시뮬레이션·이론과 신규 실험 결과를 MI에 학습해 다음 조성·조건을 제안하는 구조임. 일정 기간 검토 가능한 조성 수를 기존의 약 4배로 늘릴 전망이나, 이는 2027년 가동 이후 검증해야 할 목표치임.","파이멜 개발로 자율실험 기술·노하우를 축적한 뒤 다른 전자재료와 장기적으로는 다른 소재 분야로 확대할 계획임. 현재는 시설 개설 발표와 가동 준비 단계로 신규 소재의 고객 채택, 개발기간 단축률과 투자회수 성과는 미공개임."],"core_technology":"자율실험 스마트랩 · 마테리얼즈 인포매틱스 · 실험계획/스케줄링 · 자동 배합·시료제작·가공평가 · 폐루프 학습","commercialization_stage":"2027년 1월 가동 예정인 R&D 인프라 구축 단계, 실험 4배는 목표이며 신규 소재 채택·개발성과 미확인","related_entities":"Asahi Kasei · 후지지사 스마트랩 · 반도체용 감광성 절연재 Pimel · 첨단 반도체 패키지 고객","posco_implications":"[분석] 소재설계부터 고객공정 모사 평가까지 폐루프로 자동화하는 방식은 양·음극재 조성 탐색과 소성·코팅 조건 최적화에도 참고 가능함. 다만 파이멜은 반도체 절연재이므로 직접 사업 정합성을 과장하지 말고, 실험 자동화율·데이터 표준·장비 유연성과 실제 개발기간 단축을 벤치마킹해야 함.","follow_up":"총 투자액·장비 구성·자동화율·무인운전시간, 4배 산정 기준과 가동 후 실적, MI 모델·데이터 표준·IP 귀속, 타 전자재료 확장 일정, 고객 공동개발·채택 사례 확인"},{"id":"20261106-4","category":"AI·로보틱스·AX","coverage_status":"신규","priority":"Medium","title":"도시바, GridDB V6.0 출시…100억건 시계열 데이터 분석 2900초→41초","published_at":"2026-11-05T10:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/05/news016.html","summary":["도시바는 대규모 IoT용 시계열 데이터베이스 ‘GridDB Enterprise Edition V6.0’ 제공을 시작했음. 열 지향 고속분석 기능으로 별도 DWH 없이 데이터 수집·축적과 장기 시계열 분석을 하나의 기반에서 처리하는 구조임.","서버 6대 클러스터와 공장 IoT 데이터 100억건을 사용한 테이블 스캔 검증에서 처리시간이 기존 버전 2900초에서 41초로 단축됐다고 발표했음. 약 70분의 1이라는 결과는 특정 하드웨어·쿼리 조건의 공급사 시험이므로 실제 설비 분석 워크로드의 성능과 동일시할 수 없음.","제품은 상용 제공 단계이며 설비감시, 예지보전, 품질관리와 수급 최적화 등 제조·에너지·사회인프라를 적용처로 제시했음. 고객 도입사, 라이선스 비용, DWH 대체 범위와 운영비 절감 실적은 공개되지 않았음."],"core_technology":"분산형 시계열 데이터베이스 · 열 지향 고속분석 · 페타바이트급 확장 · 실시간 IoT 분석 · SQL 인터페이스","commercialization_stage":"GridDB Enterprise Edition V6.0 상용 제공 개시, 성능은 도시바 검증환경 결과이며 고객 운영성과 미공개","related_entities":"Toshiba · 제조·에너지·사회인프라 사업자 · 설비감시·예지보전·품질관리·수급최적화 시스템","posco_implications":"[분석] 대규모 설비 센서 데이터의 수집과 분석 기반을 통합하면 AI 모델 이전 단계의 데이터 이동·운영 복잡성을 줄일 가능성이 있음. 도입 검토에서는 기존 데이터레이크·DWH와 중복을 피하고 실제 제철 시계열 쿼리, 장애복구, 장기보존 비용으로 비교해야 함.","follow_up":"라이선스·하드웨어 TCO, 실제 고객·운영 규모, 압축률·쓰기성능·장애복구·보존정책, 기존 DWH/데이터레이크 연동, 제철소 대표 쿼리의 독립 성능검증 확인"},{"id":"20261106-5","category":"AI·로보틱스·AX","coverage_status":"신규","priority":"Medium","title":"리코·가와사키중공업, 온프레미스 LLM/LMM으로 설계도면·숙련 암묵지 활용 검증","published_at":"2026-11-05T09:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/05/news011.html","summary":["리코와 가와사키중공업은 AI를 활용한 설계 지식자산 활용을 위한 전략적 파트너십을 체결했음. 설계문서·도면에 축적된 지식과 숙련기술자의 경험·판단기준을 정리·가시화해 기술전승과 설계 생산성 향상을 검증함.","리코의 온프레미스 LLM/LMM 기반 생성AI와 기업용 플랫폼 ‘Hi.DEEN’을 가와사키중공업의 실제 업무환경에 적용할 계획임. 가와사키중공업은 철도차량·선박·항공기·로봇 분야의 문서, 도면·표·그래프, 업무데이터와 실증환경을 제공함.","실제 업무환경 검증을 추진한다는 점에서 단순 개념 발표보다 구체적이지만 현재는 파트너십·검증 단계임. 대상 업무, 정답률, 검색시간 단축, 사용자 수, 제품화·외판 여부와 보안 성능은 공개되지 않았음."],"core_technology":"온프레미스 LLM/LMM · 설계도면·기술문서 멀티모달 검색 · 암묵지 구조화 · 기업용 생성AI 플랫폼 Hi.DEEN","commercialization_stage":"전략적 파트너십 체결·가와사키중공업 실제 업무환경 PoC 준비 단계, 정량성과·제품화·외판 미공개","related_entities":"Ricoh · Kawasaki Heavy Industries · 철도차량·선박·항공기·로봇 설계조직 · Hi.DEEN","posco_implications":"[분석] 도면·표·보고서와 숙련자의 판단기준을 온프레미스에서 함께 다루는 구조는 제철설비 설계·정비 지식전승에 정합성이 높음. 다만 문서 검색과 암묵지 재현은 난도가 다르므로 답변 근거, 버전·권한, 퇴직자 지식 검증과 생산성 기준을 분리한 PoC가 필요함.","follow_up":"대상 설계업무·데이터 규모·PoC 일정, LLM/LMM 정확도·근거 추적·도면 버전관리, 온프레미스 HW·보안·권한, 숙련자 검증 절차, 정량 KPI와 외판 계획 확인"}],"key_insights":["도요타는 2027년 전사조직을 신설하고 2028~2040년 그룹·공급사 40만대 예상 수요에서 기술과 운영모델을 축적할 계획임. 장기 수요 전망과 실제 설치·매출을 구분해 볼 필요가 있음.","에나ックス는 안전·내구, 불량분석, 규격시험을 원스톱 제공하는 NECOLABO를 개설했음. 일본 고객지원·공동평가 후보로 보되 시험능력과 공인 인정범위를 확인해야 함.","아사히카세이는 소재개발 실험 수 4배를 목표로 폐루프 스마트랩을 구축하고, 도시바는 100억건 시계열 분석을 41초로 단축했다고 발표했음. 두 수치 모두 지정 조건 또는 향후 목표이므로 실제 운영성과와 구분해야 함.","리코와 가와사키중공업은 도면·기술문서와 숙련자의 암묵지를 LLM/LMM으로 활용하는 검증을 추진함. 답변 근거·도면 버전·전문가 승인과 정량 생산성 측정이 사업화 판단의 핵심임."],"priority_ranking":[{"id":"20261106-1","title":"도요타, 2027년 ‘Toyota Robotics’ 신설…그룹 내 40만대 FA 수요에서 사업화","priority":"High"},{"id":"20261106-2","title":"에나ックス, 셀·팩 원스톱 리튬이온전지 안전성 평가거점 ‘NECOLABO’ 개설","priority":"High"},{"id":"20261106-3","title":"아사히카세이, 반도체 절연재 자율개발 스마트랩 구축…실험 수 약 4배 목표","priority":"Medium"},{"id":"20261106-4","title":"도시바, GridDB V6.0 출시…100억건 시계열 데이터 분석 2900초→41초","priority":"Medium"},{"id":"20261106-5","title":"리코·가와사키중공업, 온프레미스 LLM/LMM으로 설계도면·숙련 암묵지 활용 검증","priority":"Medium"}],"no_new_articles_categories":["이차전지: 셀·팩 안전성 평가거점 개설을 확인했음. 신규 셀·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치·리사이클 기사는 미확인.","AI·로보틱스·AX: 도요타 로보틱스 사업화, GridDB 시계열 분석, 설계지식 AI 검증을 확인했음. 휴머노이드·모바일 매니퓰레이터·신규 머신비전 기사는 미확인.","GX·전력인프라: CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 신규 기사는 미확인.","항공우주·방산·첨단기술: 반도체 절연재 자율실험 스마트랩을 확인했음. 항공우주·방산소재·핵융합·양자 신규 기사는 미확인."]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");const cards=[...document.querySelectorAll("article.card")];function apply(){let n=0;const q=query.value.trim().toLowerCase();cards.forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(q);a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+cards.length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});document.querySelectorAll(".stat strong").forEach((el,i)=>{el.textContent=i===0?cards.length:cards.filter(a=>a.dataset.priority===["","High","Medium","Low"][i]).length;});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});apply()})();</script></body></html>
