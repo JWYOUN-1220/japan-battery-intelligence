@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.11.13</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.11.13 · 08:55 JST</p><p>신규 4건 + 누락 보완 1건</p><div class="stats"><div class="stat"><strong>5</strong>전체 기사</div><div class="stat"><strong>1</strong>High</div><div class="stat"><strong>2</strong>Medium</div><div class="stat"><strong>2</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① 첨단 패키징 경쟁은 소재 단품보다 국제 공정검증으로 이동 중임</b><br>JX금속과 타츠타전선 소재는 Hi-CHIP의 유리기판 시드층·TGV 공정에 투입됐음. 공정 형성과 도통 확인은 의미가 있으나 양산 수율·고객 인증·상업수주는 아직 별도 단계임.</div><div class="insight"><b>② 일본어 합성데이터가 AI 개발장벽을 낮추지만 현장 전이성 검증이 필요함</b><br>NVIDIA는 금융 페르소나 900만건과 PII 합성문서 10만건을 공개했음. 실제 개인정보 없이 평가할 수 있으나 제조문서 성능과 합성 편향·미검출 위험은 별도 검증해야 함.</div><div class="insight"><b>③ GX 사업은 환경가치를 고객채널·원가·디자인과 결합하는 방향임</b><br>J-크레딧 협업은 고객망을 판매채널로 활용하고, kinari는 미사용 목재를 상용 복합재로 확장했음. 협업 발표와 양산판매 이후 실제 거래량·가격·LCA를 추적해야 함.</div><div class="insight"><b>④ 수직형 AX는 도메인 데이터·고객기반 인수로 반복매출을 확보하려는 구조임</b><br>OPTiM은 의료영상 공유기업을 인수해 기존 AX 패키지와 교차판매를 추진함. AI 기능 자체보다 고객 전환율, 규제준수와 반복매출이 사업성의 핵심임.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false">High</button><button type="button" data-value="Medium" aria-pressed="false">Medium</button><button type="button" data-value="Low" aria-pressed="false">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false">신규</button><button type="button" data-value="누락 보완" aria-pressed="false">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 5건 중 5건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261113-1" data-category="항공우주·방산·첨단기술" data-priority="High" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>JX금속·타츠타전선, 유리기판 시드층·TGV 도통 형성 국제프로젝트 검증</h2><div class="meta">실제 공개일: 2026-11-12 11:00:00 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> JX금속은 대만공업기술연구원(ITRI)이 주도하는 Hi-CHIP의 차세대 반도체 패키지 개발 프로젝트에서 자사 스퍼터링 타깃과 그룹사 타츠타전선의 도전성 페이스트가 활용됐다고 발표했음. Hi-CHIP는 이종집적·칩렛용 패키지의 설계, 시제품, 평가와 양산화를 목표로 하는 국제 협력기반임.</p><p><b>2.</b> 스퍼터링 타깃으로 유리 인터포저의 미세배선 시드층을 형성했고, 도전성 페이스트로 유리 코어기판의 TGV를 충전해 도통을 형성했음. 기사에서 확인되는 성과는 공정 형성과 도통 확인이며, 양산 수율·장기신뢰성·고객 인증을 달성했다는 의미는 아님.</p><p><b>3.</b> Intel·ASML·Applied Materials의 대만 거점 등을 포함한 반도체 생태계가 참여하고 있으며 성과는 2026년 10월 21일 IMPACT 2026에서 발표됐음. 유리기판의 대면적·미세배선 가능성이 부각됐지만 JX금속 소재의 상업 수주와 매출은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>유리 인터포저·유리 코어기판 · TGV · 스퍼터링 타깃 · 도전성 페이스트 · 칩렛·이종집적</dd><dt>사업화 단계</dt><dd>국제 개발프로젝트의 시제품·공정 검증 단계, 양산·고객 인증 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>JX금속 · 타츠타전선 · ITRI · Hi-CHIP · Intel·ASML·Applied Materials 대만 거점 · IMPACT 2026</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] AI 반도체 패키징 경쟁이 기판 자체보다 시드층과 비아 충전용 소재의 공동검증으로 확대되는 사례임. 포스코그룹은 직접 사업 정합성을 과장하지 말고 고순도 금속·동계 소재·정밀가공 역량이 실제 고객 인증 요구와 연결되는지부터 검토해야 함.</p></div><p><b>Follow-up:</b> 유리기판 규격·배선 피치, TGV 충전율·저항·열신뢰성, 파일럿 수율, 고객 인증·양산일정, 소재 공급계약 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/12/news020.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261113-2" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>NVIDIA, 일본어 AI용 금융·개인정보 합성데이터셋 공개</h2><div class="meta">실제 공개일: 2026-11-13 06:45:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> NVIDIA는 ‘NVIDIA Agentic AI Day Japan 2026’에서 일본어 AI 개발용 합성데이터셋 ‘Nemotron-Personas-Finance-Japan’과 ‘Nemotron-PII-Japan’을 공개했음. Nemotron 모델·도구와 함께 일본어 특화 에이전트와 개인정보 검출 모델의 개발·평가에 활용하도록 한 데이터 기반임.</p><p><b>2.</b> 금융 데이터셋은 일본어 100만건을 기반으로 페르소나 수를 600만건에서 900만건으로 확대했으며, 도쿄대 마쓰오연구소 출신 스타트업 Elith와 공동개발했음. 금융기관들이 실용성 검토에 협력했지만 실제 서비스 도입률이나 고객 업무성과가 공개된 것은 아님.</p><p><b>3.</b> PII 데이터셋은 실제 개인정보를 사용하지 않은 10만건 규모의 합성문서로 8개 분야, 43개 문서 유형과 56개 PII 라벨에 대응함. 두 데이터셋은 Hugging Face에 공개됐으며, 제조업 문서·설비데이터에 대한 성능은 별도 검증이 필요함.</p></div><dl><dt>핵심 기술</dt><dd>Nemotron · 일본어 합성데이터 · 금융 페르소나 · PII 검출·마스킹 · 오픈 데이터셋</dd><dt>사업화 단계</dt><dd>오픈 데이터셋 공개·개발자 활용 개시 단계, 산업현장 성과 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>NVIDIA · Elith · 손해보험재팬 · 도쿄해상HD · 후쿠오카은행 · 미즈호FG · 메이지야스다생명 · Hugging Face</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 실제 개인정보를 노출하지 않고 일본어 문서 AI를 학습·평가하는 접근은 일본 법인의 인사·조달·고객문서 자동화 검토에 참고 가능함. 다만 제조업 고유 문서로의 전이성, 합성데이터 편향과 PII 미검출 위험을 먼저 검증해야 함.</p></div><p><b>Follow-up:</b> 라이선스·상업이용 조건, PII 정밀도·재현율, 일본어 편향·환각, 제조문서 확장, 온프레미스 적용과 감사로그 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/13/news055.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261113-3" data-category="GX·전력인프라" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">GX·전력인프라</span><h2>이토키·NTT도코모비즈니스, 농업 유래 J-크레딧 판매·공동제안 협업</h2><div class="meta">실제 공개일: 2026-11-12 10:00:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 이토키와 NTT도코모비즈니스는 농업 유래 J-크레딧의 보급과 기업 활용 확대를 위한 협업을 시작했음. NTT도코모비즈니스가 취급하는 크레딧과 이토키의 고객망·제안역량을 결합해 기업의 탈탄소 경영을 지원하는 구조임.</p><p><b>2.</b> 양사는 크레딧 제안·판매, 탈탄소 공동제안, 세미나·이벤트를 통한 보급 활동의 세 축을 추진함. 협업 개시는 확인됐으나 판매량, 크레딧 가격, 계약 고객과 감축효과는 공개되지 않아 상업성과는 아직 판단하기 어려움.</p><p><b>3.</b> 기업의 직접 감축 노력 이후 남는 배출을 보완하는 수단으로 농업 유래 크레딧을 제안하며 지역·생산자 환원을 함께 내세우고 있음. 크레딧 구매가 자체 감축설비 투자나 재생에너지 조달을 대체하는 것으로 해석해서는 안 됨.</p></div><dl><dt>핵심 기술</dt><dd>농업 유래 J-크레딧 · 배출량 가시화 · 환경가치 판매 · 기업 탈탄소 공동제안</dd><dt>사업화 단계</dt><dd>양사 판매·공동제안 협업 개시, 실제 거래규모·고객 성과 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>이토키 · NTT도코모비즈니스 · 농업 생산자·지역 · 일본 기업 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 일본 내 잔여배출 대응을 고객채널과 지역공헌 스토리로 묶는 GX 서비스 모델임. 포스코그룹은 크레딧을 직접 감축의 대체수단으로 보지 말고 추가성·영속성·이중계상 방지와 가격 투명성을 전제로 제한적으로 검토해야 함.</p></div><p><b>Follow-up:</b> 크레딧 방법론·창출지역, 추가성·영속성, 판매가격·물량, 고객 계약, 이중계상 방지와 Scope 적용범위 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/12/news032.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261113-4" data-category="GX·전력인프라" data-priority="Low" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">GX·전력인프라</span><h2>파나소닉, 미사용 삼나무·편백 활용 셀룰로스 복합재 3종 양산판매</h2><div class="meta">실제 공개일: 2026-11-12 07:45:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 파나소닉 프로덕션엔지니어링은 식물 유래 셀룰로스 섬유를 고농도로 수지에 복합한 ‘kinari’의 신규 3개 등급을 양산 판매한다고 발표했음. 편백·삼나무 목분을 사용한 2종과 기존 제품 수준의 물성을 유지하면서 비용경쟁력을 높인 ‘kinari55-S’로 구성됨.</p><p><b>2.</b> 편백·삼나무 등급은 간벌재와 건축단재 등 미사용 목재를 업사이클하고 목질감 자체를 제품 디자인에 활용하는 것이 특징임. 회사는 셀룰로스 원료 품종을 바꾼 kinari55-S가 기존 kinari55와 동등한 강도 등 물성을 갖는다고 설명했음.</p><p><b>3.</b> 기존 kinari55는 2023년 1월부터 양산 판매됐고 후쿠치야마시 학교 급식 식기 등 적용사례가 있음. 신규 3종은 판매 개시 단계로 고객사, 판매가격, 제품별 탄소감축량과 장기내구성은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>셀룰로스 섬유·수지 고농도 복합 · 미사용 목재 업사이클 · 사출성형 · 바이오 기반 복합재</dd><dt>사업화 단계</dt><dd>신규 3등급 양산판매 개시, 기존 kinari55는 2023년부터 상용·일부 적용사례 보유</dd><dt>관련 기업·고객·PoC</dt><dd>Panasonic Production Engineering · Panasonic Holdings · 후쿠치야마시 · 성형품·자동차부품·생활제품 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 지역 미사용 자원을 디자인·원가와 결합해 상용 소재로 확장하는 순환경제 사례임. 포스코그룹의 직접 소재사업 정합성은 낮지만 사업장 비구조재·포장재 적용을 검토하려면 LCA, 난연성·내구성, 기존 수지 대비 총비용을 확인해야 함.</p></div><p><b>Follow-up:</b> 신규 고객·판매량, 셀룰로스 함량·원료 추적, LCA·난연·내수·내후성, 가격과 자동차부품 인증 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/12/news035.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261113-5" data-category="AI·로보틱스·AX" data-priority="Low" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>OPTiM, 의료 AX 확대 위해 MediTech 인수·스톡형 수익기반 강화</h2><div class="meta">실제 공개일: 2026-11-12 15:00:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> OPTiM은 의료영상 공유서비스 ‘Drs&#39;HotLine’을 제공하는 MediTech의 주식을 취득해 자회사화했음. OPTiM의 의료 분야 첫 M&amp;A로, 병원용 AX 통합 패키지와 결합해 의료 AX 사업과 스톡형 수익을 확대하려는 목적임.</p><p><b>2.</b> Drs&#39;HotLine은 2단계 인증, 이미지 메타데이터의 개인정보 자동제거와 수신단말 비다운로드 구조를 갖추며, OPTiM의 MDM과 결합할 계획임. AI 진단 기능의 상용화나 의료기기 승인성과가 발표된 것은 아니며 현재 핵심은 안전한 영상공유·단말관리 통합임.</p><p><b>3.</b> 양사는 OPTiM 판매망과 MediTech의 의료기관 고객기반을 상호 활용하고 지역 의료·원격판독으로 확장할 계획임. 인수가격·지분율, MediTech 매출, 유료 고객 수와 교차판매 성과는 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>의료영상 공유 · AI/IoT/Robotics · MDM · 개인정보 메타데이터 자동제거 · 원격의료 연계</dd><dt>사업화 단계</dt><dd>M&amp;A·자회사화 완료, 서비스 통합·교차판매와 신규 AI 서비스 개발 추진 단계</dd><dt>관련 기업·고객·PoC</dt><dd>OPTiM · MediTech · Drs&#39;HotLine · OPTiM AI Hospital Suite · 의료기관·지방자치단체</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 범용 AI 기업이 도메인 데이터와 고객기반을 보유한 회사를 인수해 수직형 AX와 반복매출을 강화하는 전략 사례임. 의료사업과의 직접 정합성은 낮지만 투자검토 시 기술보다 도메인 유통망·보안·규제 역량을 함께 평가해야 한다는 점은 참고할 가치가 있음.</p></div><p><b>Follow-up:</b> 인수가격·지분율, 고객·ARR·해지율, 교차판매 전환율, 의료기기 규제, 보안사고 대응과 통합 KPI 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/12/news055.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261113-1">1. JX금속·타츠타전선, 유리기판 시드층·TGV 도통 형성 국제프로젝트 검증</a><span class="badge high">High</span></div><div class="rank"><a href="#20261113-2">2. NVIDIA, 일본어 AI용 금융·개인정보 합성데이터셋 공개</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261113-3">3. 이토키·NTT도코모비즈니스, 농업 유래 J-크레딧 판매·공동제안 협업</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261113-4">4. 파나소닉, 미사용 삼나무·편백 활용 셀룰로스 복합재 3종 양산판매</a><span class="badge low">Low</span></div><div class="rank"><a href="#20261113-5">5. OPTiM, 의료 AX 확대 위해 MediTech 인수·스톡형 수익기반 강화</a><span class="badge low">Low</span></div></section><section class="box none"><h2>신규 기사 미확인 분야</h2><p>이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·배터리 제조장치·리사이클 관련 신규 기사는 미확인.</p><p>AI·로보틱스·AX: 일본어 합성데이터와 의료 AX M&amp;A 2건을 확인했음. 산업 AI·피지컬 AI·로봇·휴머노이드·모바일 매니퓰레이터·머신비전 관련 신규 기사는 미확인.</p><p>GX·전력인프라: 농업 유래 J-크레딧 협업과 셀룰로스 복합재 양산판매 2건을 확인했음. CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 기사는 미확인.</p><p>항공우주·방산·첨단기술: 유리기판용 반도체 패키징 소재 공정검증 1건을 확인했음. 항공우주·방산소재·핵융합·양자 관련 신규 기사는 미확인.</p></section><details class="box scope"><summary>조사 범위 및 선별 기준</summary><p><b>검색 범위:</b> 2026-11-12 08:23:34 ~ 2026-11-13 08:55:27 JST</p><p><b>조사 분야:</b> 이차전지, AI·산업AI·로보틱스·AX, GX·전력인프라, 항공우주·방산·핵융합·양자·첨단소재, 일본 딥테크 스타트업·PoC</p><p><b>선별:</b> 신규 4건과 직전 보고서 미수록 중요기사 1건을 포함했음. 결산·설문·리콜·일반 기술해설·행사 회고·편집후기·퀴즈·단순 홍보는 제외했음.</p><p class="scope-note">수치와 사업화 단계는 MONOist 원문에 공개된 사실을 기준으로 작성했으며, POSCO그룹 시사점은 공개정보 기반 분석임.</p></details></main><footer><div class="wrap">MONOist 공개기사 기반 · 생성 2026-11-13 08:55 JST</div></footer><script id="report-data" type="application/json">{"report_date":"2026-11-13","generated_at":"2026-11-13T08:55:27+09:00","search_window":{"start":"2026-11-12T08:23:34+09:00","end":"2026-11-13T08:55:27+09:00","timezone":"Asia/Tokyo","basis":"직전 실제 발행 브리핑 종료 이후 MONOist 2026년 11월 12~13일 공개분을 원문 확인했음. 신규 4건과 직전 보고서 미수록 중요기사 1건을 선별했으며 결산·설문·리콜·일반 해설·행사 회고·단순 기능 소개는 제외했음."},"articles":[{"id":"20261113-1","category":"항공우주·방산·첨단기술","coverage_status":"신규","priority":"High","title":"JX금속·타츠타전선, 유리기판 시드층·TGV 도통 형성 국제프로젝트 검증","published_at":"2026-11-12T11:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/12/news020.html","summary":["JX금속은 대만공업기술연구원(ITRI)이 주도하는 Hi-CHIP의 차세대 반도체 패키지 개발 프로젝트에서 자사 스퍼터링 타깃과 그룹사 타츠타전선의 도전성 페이스트가 활용됐다고 발표했음. Hi-CHIP는 이종집적·칩렛용 패키지의 설계, 시제품, 평가와 양산화를 목표로 하는 국제 협력기반임.","스퍼터링 타깃으로 유리 인터포저의 미세배선 시드층을 형성했고, 도전성 페이스트로 유리 코어기판의 TGV를 충전해 도통을 형성했음. 기사에서 확인되는 성과는 공정 형성과 도통 확인이며, 양산 수율·장기신뢰성·고객 인증을 달성했다는 의미는 아님.","Intel·ASML·Applied Materials의 대만 거점 등을 포함한 반도체 생태계가 참여하고 있으며 성과는 2026년 10월 21일 IMPACT 2026에서 발표됐음. 유리기판의 대면적·미세배선 가능성이 부각됐지만 JX금속 소재의 상업 수주와 매출은 공개되지 않았음."],"core_technology":"유리 인터포저·유리 코어기판 · TGV · 스퍼터링 타깃 · 도전성 페이스트 · 칩렛·이종집적","commercialization_stage":"국제 개발프로젝트의 시제품·공정 검증 단계, 양산·고객 인증 미확인","related_entities":"JX금속 · 타츠타전선 · ITRI · Hi-CHIP · Intel·ASML·Applied Materials 대만 거점 · IMPACT 2026","posco_implications":"[분석] AI 반도체 패키징 경쟁이 기판 자체보다 시드층과 비아 충전용 소재의 공동검증으로 확대되는 사례임. 포스코그룹은 직접 사업 정합성을 과장하지 말고 고순도 금속·동계 소재·정밀가공 역량이 실제 고객 인증 요구와 연결되는지부터 검토해야 함.","follow_up":"유리기판 규격·배선 피치, TGV 충전율·저항·열신뢰성, 파일럿 수율, 고객 인증·양산일정, 소재 공급계약 확인"},{"id":"20261113-2","category":"AI·로보틱스·AX","coverage_status":"신규","priority":"Medium","title":"NVIDIA, 일본어 AI용 금융·개인정보 합성데이터셋 공개","published_at":"2026-11-13T06:45:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/13/news055.html","summary":["NVIDIA는 ‘NVIDIA Agentic AI Day Japan 2026’에서 일본어 AI 개발용 합성데이터셋 ‘Nemotron-Personas-Finance-Japan’과 ‘Nemotron-PII-Japan’을 공개했음. Nemotron 모델·도구와 함께 일본어 특화 에이전트와 개인정보 검출 모델의 개발·평가에 활용하도록 한 데이터 기반임.","금융 데이터셋은 일본어 100만건을 기반으로 페르소나 수를 600만건에서 900만건으로 확대했으며, 도쿄대 마쓰오연구소 출신 스타트업 Elith와 공동개발했음. 금융기관들이 실용성 검토에 협력했지만 실제 서비스 도입률이나 고객 업무성과가 공개된 것은 아님.","PII 데이터셋은 실제 개인정보를 사용하지 않은 10만건 규모의 합성문서로 8개 분야, 43개 문서 유형과 56개 PII 라벨에 대응함. 두 데이터셋은 Hugging Face에 공개됐으며, 제조업 문서·설비데이터에 대한 성능은 별도 검증이 필요함."],"core_technology":"Nemotron · 일본어 합성데이터 · 금융 페르소나 · PII 검출·마스킹 · 오픈 데이터셋","commercialization_stage":"오픈 데이터셋 공개·개발자 활용 개시 단계, 산업현장 성과 미확인","related_entities":"NVIDIA · Elith · 손해보험재팬 · 도쿄해상HD · 후쿠오카은행 · 미즈호FG · 메이지야스다생명 · Hugging Face","posco_implications":"[분석] 실제 개인정보를 노출하지 않고 일본어 문서 AI를 학습·평가하는 접근은 일본 법인의 인사·조달·고객문서 자동화 검토에 참고 가능함. 다만 제조업 고유 문서로의 전이성, 합성데이터 편향과 PII 미검출 위험을 먼저 검증해야 함.","follow_up":"라이선스·상업이용 조건, PII 정밀도·재현율, 일본어 편향·환각, 제조문서 확장, 온프레미스 적용과 감사로그 확인"},{"id":"20261113-3","category":"GX·전력인프라","coverage_status":"신규","priority":"Medium","title":"이토키·NTT도코모비즈니스, 농업 유래 J-크레딧 판매·공동제안 협업","published_at":"2026-11-12T10:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/12/news032.html","summary":["이토키와 NTT도코모비즈니스는 농업 유래 J-크레딧의 보급과 기업 활용 확대를 위한 협업을 시작했음. NTT도코모비즈니스가 취급하는 크레딧과 이토키의 고객망·제안역량을 결합해 기업의 탈탄소 경영을 지원하는 구조임.","양사는 크레딧 제안·판매, 탈탄소 공동제안, 세미나·이벤트를 통한 보급 활동의 세 축을 추진함. 협업 개시는 확인됐으나 판매량, 크레딧 가격, 계약 고객과 감축효과는 공개되지 않아 상업성과는 아직 판단하기 어려움.","기업의 직접 감축 노력 이후 남는 배출을 보완하는 수단으로 농업 유래 크레딧을 제안하며 지역·생산자 환원을 함께 내세우고 있음. 크레딧 구매가 자체 감축설비 투자나 재생에너지 조달을 대체하는 것으로 해석해서는 안 됨."],"core_technology":"농업 유래 J-크레딧 · 배출량 가시화 · 환경가치 판매 · 기업 탈탄소 공동제안","commercialization_stage":"양사 판매·공동제안 협업 개시, 실제 거래규모·고객 성과 미공개","related_entities":"이토키 · NTT도코모비즈니스 · 농업 생산자·지역 · 일본 기업 고객","posco_implications":"[분석] 일본 내 잔여배출 대응을 고객채널과 지역공헌 스토리로 묶는 GX 서비스 모델임. 포스코그룹은 크레딧을 직접 감축의 대체수단으로 보지 말고 추가성·영속성·이중계상 방지와 가격 투명성을 전제로 제한적으로 검토해야 함.","follow_up":"크레딧 방법론·창출지역, 추가성·영속성, 판매가격·물량, 고객 계약, 이중계상 방지와 Scope 적용범위 확인"},{"id":"20261113-4","category":"GX·전력인프라","coverage_status":"누락 보완","priority":"Low","title":"파나소닉, 미사용 삼나무·편백 활용 셀룰로스 복합재 3종 양산판매","published_at":"2026-11-12T07:45:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/12/news035.html","summary":["파나소닉 프로덕션엔지니어링은 식물 유래 셀룰로스 섬유를 고농도로 수지에 복합한 ‘kinari’의 신규 3개 등급을 양산 판매한다고 발표했음. 편백·삼나무 목분을 사용한 2종과 기존 제품 수준의 물성을 유지하면서 비용경쟁력을 높인 ‘kinari55-S’로 구성됨.","편백·삼나무 등급은 간벌재와 건축단재 등 미사용 목재를 업사이클하고 목질감 자체를 제품 디자인에 활용하는 것이 특징임. 회사는 셀룰로스 원료 품종을 바꾼 kinari55-S가 기존 kinari55와 동등한 강도 등 물성을 갖는다고 설명했음.","기존 kinari55는 2023년 1월부터 양산 판매됐고 후쿠치야마시 학교 급식 식기 등 적용사례가 있음. 신규 3종은 판매 개시 단계로 고객사, 판매가격, 제품별 탄소감축량과 장기내구성은 공개되지 않았음."],"core_technology":"셀룰로스 섬유·수지 고농도 복합 · 미사용 목재 업사이클 · 사출성형 · 바이오 기반 복합재","commercialization_stage":"신규 3등급 양산판매 개시, 기존 kinari55는 2023년부터 상용·일부 적용사례 보유","related_entities":"Panasonic Production Engineering · Panasonic Holdings · 후쿠치야마시 · 성형품·자동차부품·생활제품 고객","posco_implications":"[분석] 지역 미사용 자원을 디자인·원가와 결합해 상용 소재로 확장하는 순환경제 사례임. 포스코그룹의 직접 소재사업 정합성은 낮지만 사업장 비구조재·포장재 적용을 검토하려면 LCA, 난연성·내구성, 기존 수지 대비 총비용을 확인해야 함.","follow_up":"신규 고객·판매량, 셀룰로스 함량·원료 추적, LCA·난연·내수·내후성, 가격과 자동차부품 인증 확인"},{"id":"20261113-5","category":"AI·로보틱스·AX","coverage_status":"신규","priority":"Low","title":"OPTiM, 의료 AX 확대 위해 MediTech 인수·스톡형 수익기반 강화","published_at":"2026-11-12T15:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/12/news055.html","summary":["OPTiM은 의료영상 공유서비스 ‘Drs'HotLine’을 제공하는 MediTech의 주식을 취득해 자회사화했음. OPTiM의 의료 분야 첫 M&A로, 병원용 AX 통합 패키지와 결합해 의료 AX 사업과 스톡형 수익을 확대하려는 목적임.","Drs'HotLine은 2단계 인증, 이미지 메타데이터의 개인정보 자동제거와 수신단말 비다운로드 구조를 갖추며, OPTiM의 MDM과 결합할 계획임. AI 진단 기능의 상용화나 의료기기 승인성과가 발표된 것은 아니며 현재 핵심은 안전한 영상공유·단말관리 통합임.","양사는 OPTiM 판매망과 MediTech의 의료기관 고객기반을 상호 활용하고 지역 의료·원격판독으로 확장할 계획임. 인수가격·지분율, MediTech 매출, 유료 고객 수와 교차판매 성과는 공개되지 않았음."],"core_technology":"의료영상 공유 · AI/IoT/Robotics · MDM · 개인정보 메타데이터 자동제거 · 원격의료 연계","commercialization_stage":"M&A·자회사화 완료, 서비스 통합·교차판매와 신규 AI 서비스 개발 추진 단계","related_entities":"OPTiM · MediTech · Drs'HotLine · OPTiM AI Hospital Suite · 의료기관·지방자치단체","posco_implications":"[분석] 범용 AI 기업이 도메인 데이터와 고객기반을 보유한 회사를 인수해 수직형 AX와 반복매출을 강화하는 전략 사례임. 의료사업과의 직접 정합성은 낮지만 투자검토 시 기술보다 도메인 유통망·보안·규제 역량을 함께 평가해야 한다는 점은 참고할 가치가 있음.","follow_up":"인수가격·지분율, 고객·ARR·해지율, 교차판매 전환율, 의료기기 규제, 보안사고 대응과 통합 KPI 확인"}],"key_insights":[{"title":"① 첨단 패키징 경쟁은 소재 단품보다 국제 공정검증으로 이동 중임","body":"JX금속과 타츠타전선 소재는 Hi-CHIP의 유리기판 시드층·TGV 공정에 투입됐음. 공정 형성과 도통 확인은 의미가 있으나 양산 수율·고객 인증·상업수주는 아직 별도 단계임."},{"title":"② 일본어 합성데이터가 AI 개발장벽을 낮추지만 현장 전이성 검증이 필요함","body":"NVIDIA는 금융 페르소나 900만건과 PII 합성문서 10만건을 공개했음. 실제 개인정보 없이 평가할 수 있으나 제조문서 성능과 합성 편향·미검출 위험은 별도 검증해야 함."},{"title":"③ GX 사업은 환경가치를 고객채널·원가·디자인과 결합하는 방향임","body":"J-크레딧 협업은 고객망을 판매채널로 활용하고, kinari는 미사용 목재를 상용 복합재로 확장했음. 협업 발표와 양산판매 이후 실제 거래량·가격·LCA를 추적해야 함."},{"title":"④ 수직형 AX는 도메인 데이터·고객기반 인수로 반복매출을 확보하려는 구조임","body":"OPTiM은 의료영상 공유기업을 인수해 기존 AX 패키지와 교차판매를 추진함. AI 기능 자체보다 고객 전환율, 규제준수와 반복매출이 사업성의 핵심임."}],"priority_ranking":[{"rank":1,"id":"20261113-1","title":"JX금속·타츠타전선, 유리기판 시드층·TGV 도통 형성 국제프로젝트 검증","priority":"High"},{"rank":2,"id":"20261113-2","title":"NVIDIA, 일본어 AI용 금융·개인정보 합성데이터셋 공개","priority":"Medium"},{"rank":3,"id":"20261113-3","title":"이토키·NTT도코모비즈니스, 농업 유래 J-크레딧 판매·공동제안 협업","priority":"Medium"},{"rank":4,"id":"20261113-4","title":"파나소닉, 미사용 삼나무·편백 활용 셀룰로스 복합재 3종 양산판매","priority":"Low"},{"rank":5,"id":"20261113-5","title":"OPTiM, 의료 AX 확대 위해 MediTech 인수·스톡형 수익기반 강화","priority":"Low"}],"no_new_articles_categories":["이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·배터리 제조장치·리사이클 관련 신규 기사는 미확인.","AI·로보틱스·AX: 일본어 합성데이터와 의료 AX M&A 2건을 확인했음. 산업 AI·피지컬 AI·로봇·휴머노이드·모바일 매니퓰레이터·머신비전 관련 신규 기사는 미확인.","GX·전력인프라: 농업 유래 J-크레딧 협업과 셀룰로스 복합재 양산판매 2건을 확인했음. CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 기사는 미확인.","항공우주·방산·첨단기술: 유리기판용 반도체 패키징 소재 공정검증 1건을 확인했음. 항공우주·방산소재·핵융합·양자 관련 신규 기사는 미확인."]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");const cards=[...document.querySelectorAll("article.card")];function apply(){let n=0;const q=query.value.trim().toLowerCase();cards.forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(q);a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+cards.length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});document.querySelectorAll(".stat strong").forEach((el,i)=>{el.textContent=i===0?cards.length:cards.filter(a=>a.dataset.priority===["","High","Medium","Low"][i]).length;});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});apply()})();</script></body></html>
