@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.11.16 주말 통합</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.11.16 · 08:15 JST · 주말 통합</p><p>신규 2건 + 누락 보완 4건</p><div class="stats"><div class="stat"><strong>6</strong>전체 기사</div><div class="stat"><strong>1</strong>High</div><div class="stat"><strong>3</strong>Medium</div><div class="stat"><strong>2</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① 배터리 리사이클이 리튬 선택분리막의 상용 단계로 진입했음</b><br>도레이의 고내산 NF막은 이미 판매를 시작했으며 리튬과 Ni·Co·Mn 등 2가 이온의 분리를 목표로 함. 제품 출시와 실제 상업공정 성과는 구분해 회수율·막수명·총비용을 검증해야 함.</div><div class="insight"><b>② 공정 탈탄소는 자원 메이저와의 파일럿 설비 계약으로 구체화 중임</b><br>MWCC와 리오틴토는 알루미나 정련의 마이크로파 전기화를 2028년부터 시험할 계획임. 기술 가능성은 산업 파트너가 인정했으나 감축률·처리량·경제성은 아직 미래 검증항목임.</div><div class="insight"><b>③ AI 데이터센터 전력문제의 해법이 광전송 신호처리로 확장 중임</b><br>NTT는 프로그래머블 광회로와 DNN 최적화로 1331km 시험의 DSP 부하를 약 60% 줄였음. 연구실 성과에서 실제 네트워크 총전력 절감과 양산으로 이어지는지 확인이 필요함.</div><div class="insight"><b>④ 순환경제·보안 인프라는 추적성과 전환가능성을 제품·실증으로 구현 중임</b><br>귀금속 DPP는 실제 회수·재생 공정으로 확대됐고 내양자암호는 기업용 제품이 출시됐음. 데이터 표준·고객 채택·운영 성과가 향후 사업성 판단의 핵심임.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false">High</button><button type="button" data-value="Medium" aria-pressed="false">Medium</button><button type="button" data-value="Low" aria-pressed="false">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false">신규</button><button type="button" data-value="누락 보완" aria-pressed="false">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 6건 중 6건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261116-1" data-category="이차전지" data-priority="High" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">이차전지</span><h2>도레이, 폐배터리 침출액에서 리튬 선택분리하는 고내산 NF막 상용 출시</h2><div class="meta">실제 공개일: 2026-11-13 07:30:00 JST</div></div><span class="badge high">High</span></div><div class="summary"><p><b>1.</b> 도레이는 산업용 차세대 나노여과막 3개 시리즈를 출시했으며, 이 가운데 LXM은 사용후 리튬이온배터리 재자원화 공정의 강산성 침출액을 대상으로 한 제품임. 2026년 9월부터 순차 판매를 시작했고 한국 100% 자회사 도레이첨단소재가 제조하며 양사가 공동개발했음.</p><p><b>2.</b> LXM은 리튬이온을 투과시키면서 니켈·코발트·망간·마그네슘 등 2가 금속이온을 분리하도록 설계됐음. 리튬 회수공정의 고효율·고순도화가 기대되지만 회수율, 선택도, 막 플럭스와 장기 수명은 기사에 공개되지 않았음.</p><p><b>3.</b> 발표는 연구목표가 아니라 실제 제품 판매 개시를 의미함. 다만 적용 고객, 상업 운전 규모, 기존 용매추출 대비 에너지·원가 절감과 실제 회수품 품질은 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>고내산 나노여과막 · 리튬/2가 금속이온 선택분리 · 침출액 정제 · 막 엘리먼트 최적화</dd><dt>사업화 단계</dt><dd>2026년 9월부터 상용 판매 개시, 고객 적용·상업 운전 성과 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Toray · Toray Advanced Materials Korea · 사용후 LIB 리사이클·습식제련 사업자</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 폐배터리 습식제련에서 리튬 선별 회수와 공정 단순화를 검토할 수 있는 직접 연관 기술임. 포스코그룹 공정 적용성은 실제 블랙매스 침출액 조성에서의 선택도·막수명·세정주기·총처리비를 파일럿으로 검증한 뒤 판단해야 함.</p></div><p><b>Follow-up:</b> 막 선택도·리튬 회수율·플럭스, 강산 장기내구·오염, 모듈 가격·교체주기, 실제 고객·처리량, 기존 용매추출 대비 OPEX 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/13/news030.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261116-2" data-category="GX·전력인프라" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">GX·전력인프라</span><h2>MWCC·리오틴토, 마이크로파 기반 알루미나 정련 탈탄소 파일럿 계약</h2><div class="meta">실제 공개일: 2026-11-16 06:30:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> MWCC는 Rio Tinto Aluminium과 마이크로파를 활용한 보크사이트 처리기술의 가능성을 평가하기 위해 파일럿 장치 설계·제작·시험 계약을 체결했음. 약 2년의 공동개발 이후 체결된 계약으로, 자원 메이저와 산업 규모 검증으로 넘어가는 단계임.</p><p><b>2.</b> 알루미나 정련의 화석연료 기반 열공정을 전기식 마이크로파 가열로 전환해 에너지효율 향상과 배출량 감축을 검토함. MWCC가 오사카 사업소에서 운전조건을 평가하지만 처리량, 에너지 절감률과 CO2 감축률은 아직 공개되지 않았음.</p><p><b>3.</b> 파일럿 장치 제작은 2027년 4월 시작하고 2028년 3월 완성 후 시험을 개시할 예정임. 상업 규모 확대는 파일럿 성과 이후의 목표이므로 계약 체결과 상용화 성과를 구분해야 함.</p></div><dl><dt>핵심 기술</dt><dd>마이크로파 가열 · 보크사이트 전처리 · 알루미나 정련 공정 전기화 · 산업 열공정 탈탄소</dd><dt>사업화 단계</dt><dd>파일럿 설계·제작 계약 체결, 2028년 3월 완성 후 시험 예정</dd><dt>관련 기업·고객·PoC</dt><dd>MWCC · Rio Tinto Aluminium · MWCC 오사카 사업소</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 고온 제련·정련 공정의 탈탄소가 설비 전기화와 자원 메이저 공동검증으로 이동하는 사례임. 포스코그룹은 알루미나 사업과의 직접 정합성보다 철강·배터리 원료 열처리에 대한 마이크로파 적용 가능성, 전력원가와 스케일업 한계를 비교 검토할 가치가 있음.</p></div><p><b>Follow-up:</b> 파일럿 처리능력, 에너지·CO2 절감 목표, 전력품질·열균일성, CAPEX/OPEX, Rio Tinto 후속 상업설비 의사결정 기준 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/16/news028.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261116-3" data-category="항공우주·방산·첨단기술" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>NTT, AI 최적화 프로그래머블 광회로로 장거리 광통신 DSP 부하 60% 저감</h2><div class="meta">실제 공개일: 2026-11-16 06:15:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> NTT는 광신호를 광영역에서 제어하는 프로그래머블 광회로와, 전송로 전체를 신경망으로 간주해 위상설정을 최적화하는 기법을 개발했음. 3개 공간모드와 12GBd 편파다중 QPSK 신호를 사용한 최대 1331.2km 전송시험에서 수신단 보상 시간범위를 약 27ns에서 약 10ns로 줄였음.</p><p><b>2.</b> 시험 결과는 DSP 신호처리 부하 약 60% 저감에 해당하며 복수 파장에서도 유사한 효과를 확인했음. 시제품은 25×50mm, 삽입손실 2.1dB, C밴드 40nm 동작, 충실도 96% 초과와 8개 입출력 포트를 동시에 달성했음.</p><p><b>3.</b> 성과는 장거리 실험계에서 검증된 연구개발 결과이며 데이터센터 간·해저케이블 적용을 목표로 함. 실제 네트워크의 총소비전력 절감, 장기 안정성, 양산비용과 상용 도입 일정은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>프로그래머블 광회로 · 마하젠더 간섭계 어레이 · 공간/파장 다중 · DNN 역전파 최적화 · DSP 부하 저감</dd><dt>사업화 단계</dt><dd>시제품·1331km급 장거리 전송 실험 검증, 현장 실증·상용화 미확인</dd><dt>관련 기업·고객·PoC</dt><dd>NTT · Nature Photonics · 데이터센터간 네트워크·해저케이블 사업자</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] AI 확산에 따른 데이터센터 전력부담을 광전송의 신호처리 저감으로 완화하는 접근임. 포스코그룹의 직접 사업 적합성은 제한적이지만 데이터센터 인프라 검토 시 서버 전력 외 네트워크 DSP 전력과 광부품 공급망까지 보는 참고 사례임.</p></div><p><b>Follow-up:</b> 시스템 총전력 절감률, 실환경 장애·온도 안정성, 광회로 수율·원가, 기존 DSP·광부품 호환성, 현장 실증·양산 로드맵 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/16/news049.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261116-4" data-category="GX·전력인프라" data-priority="Medium" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">GX·전력인프라</span><h2>아사히카세이·Circularise·후루야금속, 이리듐·루테늄 DPP 실공정 실증</h2><div class="meta">실제 공개일: 2026-11-13 07:15:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 아사히카세이는 Circularise, 후루야금속과 식염전해용 전극의 이리듐·루테늄 순환이력을 추적하고 DPP 발행 가능성을 검증하는 실증을 시작했음. 2025년의 금속 리사이클 실증과 2025년 2~9월 가상 시나리오 검증을 실제 회수·재생 공정으로 확장한 것임.</p><p><b>2.</b> 1단계는 사용후 전극 회수부터 귀금속 추출·정제와 재생지금까지를 추적하고, 2단계는 재생지금에서 신규 전극 제조까지 정보를 연결함. 후루야금속의 정제·가공·리사이클 지식과 Circularise의 기밀보호형 데이터 공유기술을 결합했음.</p><p><b>3.</b> 이리듐의 연간 1차 생산량은 약 7t, 루테늄 공급량은 약 30t으로 소개됐으며 향후 PEM 수전해 분야 확장을 염두에 둠. 현재는 DPP 사회구현 가능성 검증 단계로 실제 발행량, 리사이클 수율, 거래 고객과 비용은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>디지털 제품여권(DPP) · 귀금속 추적성 · 이리듐·루테늄 리사이클 · 기밀보호형 데이터 공유</dd><dt>사업화 단계</dt><dd>실제 회수·재생 공정 기반 2단계 실증, DPP 사회구현 검토 단계</dd><dt>관련 기업·고객·PoC</dt><dd>Asahi Kasei · Circularise · Furuya Metal · 식염전해 전극·향후 PEM 수전해 생태계</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 중요광물 리사이클의 경쟁력이 물질 회수뿐 아니라 원산지·정제·재투입 데이터를 연결하는 구조로 확대되는 사례임. 포스코그룹의 배터리·수소 소재 순환사업도 고객 인증과 책임조달을 고려해 DPP 데이터 항목, 기밀보호와 물량 검증 체계를 선제 설계할 필요가 있음.</p></div><p><b>Follow-up:</b> 실증 참여 고객·대상 물량, 금속 수율·품질, DPP 데이터 표준·검증주체, 기밀보호 방식, 배터리·PEM 수전해 확장 일정 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/13/news047.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261116-5" data-category="항공우주·방산·첨단기술" data-priority="Low" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">항공우주·방산·첨단기술</span><h2>NTT테크노크로스, QR-UOV·NIST 3방식 대응 내양자암호 라이브러리 출시</h2><div class="meta">실제 공개일: 2026-11-13 10:00:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> NTT테크노크로스는 기업용 ‘TX 내양자암호 라이브러리’를 2026년 11월 12일 제공하기 시작했음. Linux와 Windows를 지원하고 가격은 환경·구성별 개별 견적 방식임.</p><p><b>2.</b> 일본발 다변수 다항식 기반 서명 QR-UOV와 NIST 표준 ML-KEM·ML-DSA·SLH-DSA에 대응하며 기존 암호방식도 함께 지원함. QR-UOV는 NIST의 추가 서명 표준화 후보로 평가 중이므로 이미 국제표준으로 확정된 방식과 구분해야 함.</p><p><b>3.</b> 금융·공공·사회인프라·차량/IoT·SI의 5개 분야에서 PoC와 단계적 전환을 지원하는 제품임. 상용 제품 출시는 확인됐으나 고객 도입, 처리성능, 매출과 장기 운용사례는 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>내양자암호(PQC) · QR-UOV · ML-KEM · ML-DSA · SLH-DSA · 암호 민첩성</dd><dt>사업화 단계</dt><dd>기업용 소프트웨어 제품 제공 개시, 고객 도입·운용 실적 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>NTT TechnoCross · NTT 연구소 · 도쿄대 · 규슈대 · 나가사키현립대 · NIST</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 장기간 보호가 필요한 설비·인증·IoT 데이터의 암호전환을 제품 교체가 아닌 단계적 검증으로 추진할 수 있는 선택지임. 직접 투자 우선순위는 낮지만 OT·차량·기반시설 보안에서 암호자산 목록화와 교체가능성 확보를 시작할 필요가 있음.</p></div><p><b>Follow-up:</b> 벤치마크 성능·키/서명 크기, 기존 PKI·OT 호환성, QR-UOV 표준화 결과, 도입 고객·라이선스 비용, 양자내성 전환 컨설팅 범위 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/13/news045.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261116-6" data-category="항공우주·방산·첨단기술" data-priority="Low" data-coverage="누락 보완"><div class="top"><div><span class="tag missed">누락 보완</span><span class="tag">항공우주·방산·첨단기술</span><h2>일본제철, 하이퍼카미오칸데 수조용 스테인리스 후판 700t 납품 완료</h2><div class="meta">실제 공개일: 2026-11-13 11:00:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 일본제철은 2028년 관측 개시 예정인 하이퍼카미오칸데의 초대형 수조 라이닝용 스테인리스 후판을 완납했음. 직경 68m·높이 72m 수조에 후판 3830장, 약 700t이 사용됐고 약 12개월에 걸쳐 측면과 바닥을 시공했음.</p><p><b>2.</b> 용접 총연장은 14.4km이며, 대량의 초순수를 장기간 안정적으로 보관하기 위해 강도와 내식성이 요구됨. 이는 개발 목표가 아니라 실제 대형 과학시설 납품 완료 실적이지만 별도의 신규 강종이나 성능 수치는 공개되지 않았음.</p><p><b>3.</b> 일본제철은 기존에도 CERN 입자가속기, KAGRA 초고진공 덕트와 슈퍼카미오칸데에 스테인리스강을 공급했음. 고신뢰 과학시설용 소재의 레퍼런스는 축적됐으나 이번 납품의 수익성과 후속 수주 규모는 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>고강도·고내식 스테인리스 후판 · 초순수 수조 라이닝 · 장거리 용접·대형 구조물 시공</dd><dt>사업화 단계</dt><dd>실제 납품·시공 완료, 2028년 관측 개시 예정</dd><dt>관련 기업·고객·PoC</dt><dd>Nippon Steel · Hyper-Kamiokande · 도쿄대 우주선연구소 · 국제 공동연구기관</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 고내식 후판을 대형 과학·극한환경 프로젝트의 설계·시공 레퍼런스로 연결한 사례임. 포스코그룹은 단순 톤수보다 재료 인증, 용접시공 지원과 장기 신뢰성 데이터를 결합한 고부가 프로젝트 수주모델을 벤치마킹할 수 있음.</p></div><p><b>Follow-up:</b> 적용 강종·표면사양, 용접·검사 기준, 수주금액·마진, 장기 내식성 보증, 후속 대형 과학·원자력·수소 인프라 프로젝트 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/13/news025.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261116-1">1. 도레이, 폐배터리 침출액에서 리튬 선택분리하는 고내산 NF막 상용 출시</a><span class="badge high">High</span></div><div class="rank"><a href="#20261116-2">2. MWCC·리오틴토, 마이크로파 기반 알루미나 정련 탈탄소 파일럿 계약</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261116-3">3. NTT, AI 최적화 프로그래머블 광회로로 장거리 광통신 DSP 부하 60% 저감</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261116-4">4. 아사히카세이·Circularise·후루야금속, 이리듐·루테늄 DPP 실공정 실증</a><span class="badge medium">Medium</span></div><div class="rank"><a href="#20261116-5">5. NTT테크노크로스, QR-UOV·NIST 3방식 대응 내양자암호 라이브러리 출시</a><span class="badge low">Low</span></div><div class="rank"><a href="#20261116-6">6. 일본제철, 하이퍼카미오칸데 수조용 스테인리스 후판 700t 납품 완료</a><span class="badge low">Low</span></div></section><section class="box none"><h2>신규 기사 미확인 분야</h2><p>이차전지: 사용후 LIB 침출액용 리튬 선택분리 NF막 1건을 확인했음. 셀·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치 관련 신규 기사는 미확인.</p><p>AI·로보틱스·AX: 산업 AI·피지컬 AI·로봇·휴머노이드·모바일 매니퓰레이터·머신비전 관련 선정 기사는 미확인.</p><p>GX·전력인프라: 알루미나 정련 마이크로파 전기화와 귀금속 DPP 실증 2건을 확인했음. CCUS·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 기사는 미확인.</p><p>항공우주·방산·첨단기술: 프로그래머블 광회로, 내양자암호 제품, 대형 과학시설용 스테인리스 후판 3건을 확인했음. 방산소재·핵융합 관련 신규 기사는 미확인.</p></section><details class="box scope"><summary>조사 범위 및 선별 기준</summary><p><b>검색 범위:</b> 2026-11-13 08:55:27 ~ 2026-11-16 08:15:28 JST (Weekend + Monday 통합)</p><p><b>조사 분야:</b> 이차전지, AI·산업AI·로보틱스·AX, GX·전력인프라, 항공우주·방산·핵융합·양자·첨단소재, 일본 딥테크 스타트업·PoC</p><p><b>선별:</b> 월요일 신규 2건과 금요일 미수록 중요기사 4건을 누락 보완으로 포함했음. 11월 14일 주간요약과 일반 해설·홍보·편집후기·퀴즈는 제외했음.</p><p class="scope-note">수치와 사업화 단계는 MONOist 원문에 공개된 사실을 기준으로 작성했으며, POSCO그룹 시사점은 공개정보 기반 분석임.</p></details></main><footer><div class="wrap">MONOist 공개기사 기반 · 생성 2026-11-16 08:15 JST</div></footer><script id="report-data" type="application/json">{"report_date":"2026-11-16","generated_at":"2026-11-16T08:15:28+09:00","search_window":{"start":"2026-11-13T08:55:27+09:00","end":"2026-11-16T08:15:28+09:00","timezone":"Asia/Tokyo","basis":"직전 실제 발행 브리핑 종료 이후 금요일 잔여 구간과 토요일 00:00부터 월요일 실행시점까지를 통합 조사했음. 월요일 공개 2건과 금요일 미수록 중요기사 4건을 포함했으며 주간요약·일반 해설·홍보·편집후기·퀴즈는 제외했음."},"articles":[{"id":"20261116-1","category":"이차전지","coverage_status":"누락 보완","priority":"High","title":"도레이, 폐배터리 침출액에서 리튬 선택분리하는 고내산 NF막 상용 출시","published_at":"2026-11-13T07:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/13/news030.html","summary":["도레이는 산업용 차세대 나노여과막 3개 시리즈를 출시했으며, 이 가운데 LXM은 사용후 리튬이온배터리 재자원화 공정의 강산성 침출액을 대상으로 한 제품임. 2026년 9월부터 순차 판매를 시작했고 한국 100% 자회사 도레이첨단소재가 제조하며 양사가 공동개발했음.","LXM은 리튬이온을 투과시키면서 니켈·코발트·망간·마그네슘 등 2가 금속이온을 분리하도록 설계됐음. 리튬 회수공정의 고효율·고순도화가 기대되지만 회수율, 선택도, 막 플럭스와 장기 수명은 기사에 공개되지 않았음.","발표는 연구목표가 아니라 실제 제품 판매 개시를 의미함. 다만 적용 고객, 상업 운전 규모, 기존 용매추출 대비 에너지·원가 절감과 실제 회수품 품질은 확인되지 않았음."],"core_technology":"고내산 나노여과막 · 리튬/2가 금속이온 선택분리 · 침출액 정제 · 막 엘리먼트 최적화","commercialization_stage":"2026년 9월부터 상용 판매 개시, 고객 적용·상업 운전 성과 미공개","related_entities":"Toray · Toray Advanced Materials Korea · 사용후 LIB 리사이클·습식제련 사업자","posco_implications":"[분석] 폐배터리 습식제련에서 리튬 선별 회수와 공정 단순화를 검토할 수 있는 직접 연관 기술임. 포스코그룹 공정 적용성은 실제 블랙매스 침출액 조성에서의 선택도·막수명·세정주기·총처리비를 파일럿으로 검증한 뒤 판단해야 함.","follow_up":"막 선택도·리튬 회수율·플럭스, 강산 장기내구·오염, 모듈 가격·교체주기, 실제 고객·처리량, 기존 용매추출 대비 OPEX 확인"},{"id":"20261116-2","category":"GX·전력인프라","coverage_status":"신규","priority":"Medium","title":"MWCC·리오틴토, 마이크로파 기반 알루미나 정련 탈탄소 파일럿 계약","published_at":"2026-11-16T06:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/16/news028.html","summary":["MWCC는 Rio Tinto Aluminium과 마이크로파를 활용한 보크사이트 처리기술의 가능성을 평가하기 위해 파일럿 장치 설계·제작·시험 계약을 체결했음. 약 2년의 공동개발 이후 체결된 계약으로, 자원 메이저와 산업 규모 검증으로 넘어가는 단계임.","알루미나 정련의 화석연료 기반 열공정을 전기식 마이크로파 가열로 전환해 에너지효율 향상과 배출량 감축을 검토함. MWCC가 오사카 사업소에서 운전조건을 평가하지만 처리량, 에너지 절감률과 CO2 감축률은 아직 공개되지 않았음.","파일럿 장치 제작은 2027년 4월 시작하고 2028년 3월 완성 후 시험을 개시할 예정임. 상업 규모 확대는 파일럿 성과 이후의 목표이므로 계약 체결과 상용화 성과를 구분해야 함."],"core_technology":"마이크로파 가열 · 보크사이트 전처리 · 알루미나 정련 공정 전기화 · 산업 열공정 탈탄소","commercialization_stage":"파일럿 설계·제작 계약 체결, 2028년 3월 완성 후 시험 예정","related_entities":"MWCC · Rio Tinto Aluminium · MWCC 오사카 사업소","posco_implications":"[분석] 고온 제련·정련 공정의 탈탄소가 설비 전기화와 자원 메이저 공동검증으로 이동하는 사례임. 포스코그룹은 알루미나 사업과의 직접 정합성보다 철강·배터리 원료 열처리에 대한 마이크로파 적용 가능성, 전력원가와 스케일업 한계를 비교 검토할 가치가 있음.","follow_up":"파일럿 처리능력, 에너지·CO2 절감 목표, 전력품질·열균일성, CAPEX/OPEX, Rio Tinto 후속 상업설비 의사결정 기준 확인"},{"id":"20261116-3","category":"항공우주·방산·첨단기술","coverage_status":"신규","priority":"Medium","title":"NTT, AI 최적화 프로그래머블 광회로로 장거리 광통신 DSP 부하 60% 저감","published_at":"2026-11-16T06:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/16/news049.html","summary":["NTT는 광신호를 광영역에서 제어하는 프로그래머블 광회로와, 전송로 전체를 신경망으로 간주해 위상설정을 최적화하는 기법을 개발했음. 3개 공간모드와 12GBd 편파다중 QPSK 신호를 사용한 최대 1331.2km 전송시험에서 수신단 보상 시간범위를 약 27ns에서 약 10ns로 줄였음.","시험 결과는 DSP 신호처리 부하 약 60% 저감에 해당하며 복수 파장에서도 유사한 효과를 확인했음. 시제품은 25×50mm, 삽입손실 2.1dB, C밴드 40nm 동작, 충실도 96% 초과와 8개 입출력 포트를 동시에 달성했음.","성과는 장거리 실험계에서 검증된 연구개발 결과이며 데이터센터 간·해저케이블 적용을 목표로 함. 실제 네트워크의 총소비전력 절감, 장기 안정성, 양산비용과 상용 도입 일정은 공개되지 않았음."],"core_technology":"프로그래머블 광회로 · 마하젠더 간섭계 어레이 · 공간/파장 다중 · DNN 역전파 최적화 · DSP 부하 저감","commercialization_stage":"시제품·1331km급 장거리 전송 실험 검증, 현장 실증·상용화 미확인","related_entities":"NTT · Nature Photonics · 데이터센터간 네트워크·해저케이블 사업자","posco_implications":"[분석] AI 확산에 따른 데이터센터 전력부담을 광전송의 신호처리 저감으로 완화하는 접근임. 포스코그룹의 직접 사업 적합성은 제한적이지만 데이터센터 인프라 검토 시 서버 전력 외 네트워크 DSP 전력과 광부품 공급망까지 보는 참고 사례임.","follow_up":"시스템 총전력 절감률, 실환경 장애·온도 안정성, 광회로 수율·원가, 기존 DSP·광부품 호환성, 현장 실증·양산 로드맵 확인"},{"id":"20261116-4","category":"GX·전력인프라","coverage_status":"누락 보완","priority":"Medium","title":"아사히카세이·Circularise·후루야금속, 이리듐·루테늄 DPP 실공정 실증","published_at":"2026-11-13T07:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/13/news047.html","summary":["아사히카세이는 Circularise, 후루야금속과 식염전해용 전극의 이리듐·루테늄 순환이력을 추적하고 DPP 발행 가능성을 검증하는 실증을 시작했음. 2025년의 금속 리사이클 실증과 2025년 2~9월 가상 시나리오 검증을 실제 회수·재생 공정으로 확장한 것임.","1단계는 사용후 전극 회수부터 귀금속 추출·정제와 재생지금까지를 추적하고, 2단계는 재생지금에서 신규 전극 제조까지 정보를 연결함. 후루야금속의 정제·가공·리사이클 지식과 Circularise의 기밀보호형 데이터 공유기술을 결합했음.","이리듐의 연간 1차 생산량은 약 7t, 루테늄 공급량은 약 30t으로 소개됐으며 향후 PEM 수전해 분야 확장을 염두에 둠. 현재는 DPP 사회구현 가능성 검증 단계로 실제 발행량, 리사이클 수율, 거래 고객과 비용은 공개되지 않았음."],"core_technology":"디지털 제품여권(DPP) · 귀금속 추적성 · 이리듐·루테늄 리사이클 · 기밀보호형 데이터 공유","commercialization_stage":"실제 회수·재생 공정 기반 2단계 실증, DPP 사회구현 검토 단계","related_entities":"Asahi Kasei · Circularise · Furuya Metal · 식염전해 전극·향후 PEM 수전해 생태계","posco_implications":"[분석] 중요광물 리사이클의 경쟁력이 물질 회수뿐 아니라 원산지·정제·재투입 데이터를 연결하는 구조로 확대되는 사례임. 포스코그룹의 배터리·수소 소재 순환사업도 고객 인증과 책임조달을 고려해 DPP 데이터 항목, 기밀보호와 물량 검증 체계를 선제 설계할 필요가 있음.","follow_up":"실증 참여 고객·대상 물량, 금속 수율·품질, DPP 데이터 표준·검증주체, 기밀보호 방식, 배터리·PEM 수전해 확장 일정 확인"},{"id":"20261116-5","category":"항공우주·방산·첨단기술","coverage_status":"누락 보완","priority":"Low","title":"NTT테크노크로스, QR-UOV·NIST 3방식 대응 내양자암호 라이브러리 출시","published_at":"2026-11-13T10:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/13/news045.html","summary":["NTT테크노크로스는 기업용 ‘TX 내양자암호 라이브러리’를 2026년 11월 12일 제공하기 시작했음. Linux와 Windows를 지원하고 가격은 환경·구성별 개별 견적 방식임.","일본발 다변수 다항식 기반 서명 QR-UOV와 NIST 표준 ML-KEM·ML-DSA·SLH-DSA에 대응하며 기존 암호방식도 함께 지원함. QR-UOV는 NIST의 추가 서명 표준화 후보로 평가 중이므로 이미 국제표준으로 확정된 방식과 구분해야 함.","금융·공공·사회인프라·차량/IoT·SI의 5개 분야에서 PoC와 단계적 전환을 지원하는 제품임. 상용 제품 출시는 확인됐으나 고객 도입, 처리성능, 매출과 장기 운용사례는 공개되지 않았음."],"core_technology":"내양자암호(PQC) · QR-UOV · ML-KEM · ML-DSA · SLH-DSA · 암호 민첩성","commercialization_stage":"기업용 소프트웨어 제품 제공 개시, 고객 도입·운용 실적 미공개","related_entities":"NTT TechnoCross · NTT 연구소 · 도쿄대 · 규슈대 · 나가사키현립대 · NIST","posco_implications":"[분석] 장기간 보호가 필요한 설비·인증·IoT 데이터의 암호전환을 제품 교체가 아닌 단계적 검증으로 추진할 수 있는 선택지임. 직접 투자 우선순위는 낮지만 OT·차량·기반시설 보안에서 암호자산 목록화와 교체가능성 확보를 시작할 필요가 있음.","follow_up":"벤치마크 성능·키/서명 크기, 기존 PKI·OT 호환성, QR-UOV 표준화 결과, 도입 고객·라이선스 비용, 양자내성 전환 컨설팅 범위 확인"},{"id":"20261116-6","category":"항공우주·방산·첨단기술","coverage_status":"누락 보완","priority":"Low","title":"일본제철, 하이퍼카미오칸데 수조용 스테인리스 후판 700t 납품 완료","published_at":"2026-11-13T11:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/13/news025.html","summary":["일본제철은 2028년 관측 개시 예정인 하이퍼카미오칸데의 초대형 수조 라이닝용 스테인리스 후판을 완납했음. 직경 68m·높이 72m 수조에 후판 3830장, 약 700t이 사용됐고 약 12개월에 걸쳐 측면과 바닥을 시공했음.","용접 총연장은 14.4km이며, 대량의 초순수를 장기간 안정적으로 보관하기 위해 강도와 내식성이 요구됨. 이는 개발 목표가 아니라 실제 대형 과학시설 납품 완료 실적이지만 별도의 신규 강종이나 성능 수치는 공개되지 않았음.","일본제철은 기존에도 CERN 입자가속기, KAGRA 초고진공 덕트와 슈퍼카미오칸데에 스테인리스강을 공급했음. 고신뢰 과학시설용 소재의 레퍼런스는 축적됐으나 이번 납품의 수익성과 후속 수주 규모는 확인되지 않았음."],"core_technology":"고강도·고내식 스테인리스 후판 · 초순수 수조 라이닝 · 장거리 용접·대형 구조물 시공","commercialization_stage":"실제 납품·시공 완료, 2028년 관측 개시 예정","related_entities":"Nippon Steel · Hyper-Kamiokande · 도쿄대 우주선연구소 · 국제 공동연구기관","posco_implications":"[분석] 고내식 후판을 대형 과학·극한환경 프로젝트의 설계·시공 레퍼런스로 연결한 사례임. 포스코그룹은 단순 톤수보다 재료 인증, 용접시공 지원과 장기 신뢰성 데이터를 결합한 고부가 프로젝트 수주모델을 벤치마킹할 수 있음.","follow_up":"적용 강종·표면사양, 용접·검사 기준, 수주금액·마진, 장기 내식성 보증, 후속 대형 과학·원자력·수소 인프라 프로젝트 확인"}],"key_insights":[{"title":"① 배터리 리사이클이 리튬 선택분리막의 상용 단계로 진입했음","body":"도레이의 고내산 NF막은 이미 판매를 시작했으며 리튬과 Ni·Co·Mn 등 2가 이온의 분리를 목표로 함. 제품 출시와 실제 상업공정 성과는 구분해 회수율·막수명·총비용을 검증해야 함."},{"title":"② 공정 탈탄소는 자원 메이저와의 파일럿 설비 계약으로 구체화 중임","body":"MWCC와 리오틴토는 알루미나 정련의 마이크로파 전기화를 2028년부터 시험할 계획임. 기술 가능성은 산업 파트너가 인정했으나 감축률·처리량·경제성은 아직 미래 검증항목임."},{"title":"③ AI 데이터센터 전력문제의 해법이 광전송 신호처리로 확장 중임","body":"NTT는 프로그래머블 광회로와 DNN 최적화로 1331km 시험의 DSP 부하를 약 60% 줄였음. 연구실 성과에서 실제 네트워크 총전력 절감과 양산으로 이어지는지 확인이 필요함."},{"title":"④ 순환경제·보안 인프라는 추적성과 전환가능성을 제품·실증으로 구현 중임","body":"귀금속 DPP는 실제 회수·재생 공정으로 확대됐고 내양자암호는 기업용 제품이 출시됐음. 데이터 표준·고객 채택·운영 성과가 향후 사업성 판단의 핵심임."}],"priority_ranking":[{"rank":1,"id":"20261116-1","title":"도레이, 폐배터리 침출액에서 리튬 선택분리하는 고내산 NF막 상용 출시","priority":"High"},{"rank":2,"id":"20261116-2","title":"MWCC·리오틴토, 마이크로파 기반 알루미나 정련 탈탄소 파일럿 계약","priority":"Medium"},{"rank":3,"id":"20261116-3","title":"NTT, AI 최적화 프로그래머블 광회로로 장거리 광통신 DSP 부하 60% 저감","priority":"Medium"},{"rank":4,"id":"20261116-4","title":"아사히카세이·Circularise·후루야금속, 이리듐·루테늄 DPP 실공정 실증","priority":"Medium"},{"rank":5,"id":"20261116-5","title":"NTT테크노크로스, QR-UOV·NIST 3방식 대응 내양자암호 라이브러리 출시","priority":"Low"},{"rank":6,"id":"20261116-6","title":"일본제철, 하이퍼카미오칸데 수조용 스테인리스 후판 700t 납품 완료","priority":"Low"}],"no_new_articles_categories":["이차전지: 사용후 LIB 침출액용 리튬 선택분리 NF막 1건을 확인했음. 셀·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치 관련 신규 기사는 미확인.","AI·로보틱스·AX: 산업 AI·피지컬 AI·로봇·휴머노이드·모바일 매니퓰레이터·머신비전 관련 선정 기사는 미확인.","GX·전력인프라: 알루미나 정련 마이크로파 전기화와 귀금속 DPP 실증 2건을 확인했음. CCUS·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 기사는 미확인.","항공우주·방산·첨단기술: 프로그래머블 광회로, 내양자암호 제품, 대형 과학시설용 스테인리스 후판 3건을 확인했음. 방산소재·핵융합 관련 신규 기사는 미확인."]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");const cards=[...document.querySelectorAll("article.card")];function apply(){let n=0;const q=query.value.trim().toLowerCase();cards.forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(q);a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+cards.length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});document.querySelectorAll(".stat strong").forEach((el,i)=>{el.textContent=i===0?cards.length:cards.filter(a=>a.dataset.priority===["","High","Medium","Low"][i]).length;});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});apply()})();</script></body></html>
