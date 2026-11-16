@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOist 신사업 뉴스 | 2026.11.17</title><style>
+:root{
+  --navy:#102a43;
+  --blue:#1d4ed8;
+  --green:#047857;
+  --red:#b91c1c;
+  --orange:#b45309;
+  --gray:#64748b;
+  --bg:#f4f6f8;
+  --line:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#1f2937;
+  font:14px/1.75 -apple-system,BlinkMacSystemFont,
+       "Segoe UI","Noto Sans KR",sans-serif;
+}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;
+  padding:36px 0;
+}
+header h1{font-size:29px;margin:5px 0}
+header p{margin:4px 0;color:#dbeafe}
+main{padding:22px 0 50px}
+.box,.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin:16px 0;
+}
+h2,h3{color:var(--navy)}
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:flex-start;
+}
+.tag,.badge{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:18px;
+  font-size:12px;
+  font-weight:700;
+  margin:2px;
+}
+.tag{background:#eff6ff;color:var(--blue)}
+.missed{background:#fef3c7;color:#92400e}
+.high{background:#fef2f2;color:var(--red)}
+.medium{background:#fff7ed;color:var(--orange)}
+.low{background:#f1f5f9;color:#475569}
+.meta{color:var(--gray);font-size:13px}
+.summary{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:9px;
+  margin:14px 0;
+}
+.summary p{margin:8px 0}
+.posco{
+  background:#ecfdf5;
+  border-left:4px solid var(--green);
+  padding:15px;
+  border-radius:8px;
+  margin:14px 0;
+}
+.link{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  padding:8px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+}
+.insight,.rank{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.none span{
+  display:inline-block;
+  background:#f1f5f9;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:7px;
+  font-size:12px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.filters button{
+  border:1px solid #cbd5e1;
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  cursor:pointer;
+}
+.filters button.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.13);
+  padding:9px 14px;
+  border-radius:8px;
+}
+.stat strong{font-size:21px;display:block}
+@media(max-width:650px){
+  .top{display:block}
+  header h1{font-size:23px}
+  .box,.card{padding:16px}
+}
+
+/* Archive briefing layout */
+body{font-size:14px}main.wrap{padding-top:4px}
+h2{font-size:22px;line-height:1.45;margin:12px 0 16px}
+.summary p{margin:9px 0}.summary b{margin-right:6px}
+.top>div{min-width:0}.top>.badge{flex-shrink:0}
+dd{margin:0}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;margin:18px 0}
+dt{font-weight:700;color:#334155}
+.link.secondary{background:#eff6ff;color:var(--blue)}
+.card-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.scope{margin-top:22px;padding:16px 20px}
+.scope summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.scope p{margin:9px 0}.scope-note{font-size:12px}
+.toolbar{padding:16px 0 2px}.filters{margin:10px 0}
+.filter-label{color:var(--gray);font-size:12px;width:65px;align-self:center}
+.search-row{display:flex;gap:8px;margin:10px 0;align-items:center}
+.search-row input{font:inherit;flex:1;min-width:0;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:white}
+.search-row button{font:inherit;border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;background:#fff;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+[hidden]{display:none!important}
+#resultCount{margin:4px 0;color:var(--gray);font-size:13px}
+.empty{text-align:center;padding:28px;border:1px dashed #cbd5e1;background:white;border-radius:12px}
+.rank{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.rank a{color:var(--navy);text-decoration:none}.rank a:hover{text-decoration:underline}
+footer{color:var(--gray);padding:18px 0;font-size:12px}footer a{color:var(--blue)}
+@media(max-width:650px){dl{display:block}dt{margin-top:10px}h2{font-size:20px}.rank{align-items:flex-start}.filter-label{width:100%}.top>.badge{margin-top:8px}.scope{padding:14px}.stats{gap:7px}.stat{flex:1;min-width:64px;padding:8px 11px}.filters button{padding:7px 10px}}
+@media print{header{background:#fff;color:#102a43;padding:15px 0}header p{color:#334155}.stat{border:1px solid #cbd5e1}.toolbar{display:none}.card{break-inside:avoid}body{background:#fff}.scope{display:none}}
+</style></head><body><header><div class="wrap"><small>JAPAN NEW BUSINESS INTELLIGENCE</small><h1>MONOist 신사업 뉴스 브리핑</h1><p>2026.11.17 · 08:53 JST</p><p>신규 4건</p><div class="stats"><div class="stat"><strong>4</strong>전체 기사</div><div class="stat"><strong>0</strong>High</div><div class="stat"><strong>3</strong>Medium</div><div class="stat"><strong>1</strong>Low</div></div></div></header><main class="wrap"><section class="box"><h2>오늘의 핵심 시사점</h2><div class="insight"><b>① AI 데이터센터 소재 수요가 실적과 수익으로 확인됐음</b><br>레조낙은 CCL·TIM·NCF·절연필름 수요가 실적 상향의 대부분을 차지했다고 설명했음. 소재별 성장성과 고객 집중도는 공개되지 않아 AI 수요의 지속성과 증설 경제성을 분리해 확인해야 함.</div><div class="insight"><b>② 산업 AI는 범용 생성에서 물리·소재 지식 기반 의사결정 지원으로 이동 중임</b><br>다쏘시스템은 산업 월드모델과 버추얼 컴패니언을 상용 플랫폼에 결합하고 NVIDIA·오므론과 생태계를 구축 중임. 실제 고객성과보다 전략·제품 방향 발표의 성격이 강하므로 도입효과와 데이터 주권 검증이 필요함.</div><div class="insight"><b>③ 민간 우주사업의 병목은 제한된 추진계 공급자와 수년 단위 납기임</b><br>ispace는 Nammo 엔진을 일괄조달하고 글로벌 생산계획을 연계하는 장기협력을 추진 중임. 현재는 MOU 단계이므로 확정 물량·가격·임무 성과와 소재 공급기회를 구분해야 함.</div><div class="insight"><b>④ 머신비전은 검사 정확도뿐 아니라 반전·핸들링 제거로 자동화 범위를 넓히고 있음</b><br>Saki의 3D 하면검사장비는 THT 부품검사를 인라인화해 품질과 생산성의 동시 개선을 목표로 함. 정량 성능·출시일·수주가 미공개라 사업성 판단은 후속 검증이 필요함.</div></section><nav class="toolbar" aria-label="기사 필터"><div class="filters" data-group="priority"><span class="filter-label">우선순위</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="High" aria-pressed="false">High</button><button type="button" data-value="Medium" aria-pressed="false">Medium</button><button type="button" data-value="Low" aria-pressed="false">Low</button></div><div class="filters" data-group="coverage"><span class="filter-label">기사 구분</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="신규" aria-pressed="false">신규</button><button type="button" data-value="누락 보완" aria-pressed="false">누락 보완</button></div><div class="filters" data-group="category"><span class="filter-label">분야</span><button type="button" data-value="" aria-pressed="true" class="active">전체</button><button type="button" data-value="이차전지" aria-pressed="false">이차전지</button><button type="button" data-value="AI·로보틱스·AX" aria-pressed="false">AI·로보틱스·AX</button><button type="button" data-value="GX·전력인프라" aria-pressed="false">GX·전력인프라</button><button type="button" data-value="항공우주·방산·첨단기술" aria-pressed="false">항공우주·방산·첨단기술</button></div><div class="search-row"><input id="query" type="search" aria-label="기업·기술·본문 검색" placeholder="기업명·기술 키워드·기사 본문 검색"><button id="reset" type="button">초기화</button></div><p id="resultCount" aria-live="polite">전체 4건 중 4건 표시</p></nav><p id="empty" class="empty" hidden>선택 조건에 해당하는 기사가 없음.</p><article class="card" id="20261117-1" data-category="항공우주·방산·첨단기술" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>레조낙, AI 반도체 소재 호조로 전자재료 매출 37% 증가</h2><div class="meta">실제 공개일: 2026-11-17 06:15:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 레조낙홀딩스는 2026년 1~9월 연결 매출 8719억엔과 코어 영업이익 1641억엔을 기록해 전년 동기 대비 각각 14%, 136% 증가했음. 회사는 반도체·전자재료 호조와 흑연전극 구조개편 효과가 증익에 기여했다고 설명했음.</p><p><b>2.</b> AI용 동박적층판(CCL), 방열재(TIM), 대만 고객용 비전도성필름(NCF)과 절연필름의 성장이 실적 상향의 대부분을 차지했음. 반도체·전자재료 부문 매출은 5008억엔으로 37%, 코어 영업이익은 1586억엔으로 114% 증가했음.</p><p><b>3.</b> 데이터센터용 HDD 미디어와 일부 고객향 SiC 에피택셜 웨이퍼 수요도 증가했음. 이는 상용 판매가 실적에 반영된 사례이지만 개별 제품의 판매량·마진·고객 집중도와 증설 계획은 기사에 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>AI 반도체용 CCL · TIM 방열재 · NCF·절연필름 · 데이터센터용 HDD 미디어 · SiC 에피택셜 웨이퍼</dd><dt>사업화 단계</dt><dd>양산·상용 판매 실적이 연결 실적에 반영된 단계, 제품별 물량·수익성 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Resonac Holdings · 대만 AI 반도체 고객(사명 미공개) · AI 데이터센터·반도체 후공정 고객</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] AI 데이터센터 성장의 가치가 컴퓨팅 장비뿐 아니라 고속기판·열관리·패키징 필름으로 이동하고 있음을 실적으로 보여주는 사례임. 포스코그룹은 전자재료 직접 진입을 전제하기보다 동박·금속기판·열관리 소재 등 보유 역량과 인접한 영역의 파트너십·투자 기회를 선별할 필요가 있음.</p></div><p><b>Follow-up:</b> CCL·TIM·NCF별 매출·마진과 생산능력, 대만 고객 집중도, 증설 CAPEX, AI 투자 사이클 민감도, 흑연전극 구조개편 효과 분리 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/17/news030.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261117-2" data-category="항공우주·방산·첨단기술" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">항공우주·방산·첨단기술</span><h2>ispace·Nammo, 월착륙선 추진계 엔진 일괄조달·장기공급 MOU</h2><div class="meta">실제 공개일: 2026-11-16 10:00:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> ispace는 영국 Nammo와 우주기용 추진계 조달·제조의 장기 협력을 검토하는 양해각서를 체결했음. 엔진 일괄조달과 생산계획 연계를 통해 월착륙 임무의 공급 안정성, 비용 경쟁력과 납기 안정화를 추진 중임.</p><p><b>2.</b> 월착륙선용 추진계 엔진은 공급자가 제한적이고 발주부터 조달까지 수년이 걸리는 장납기 품목임. ispace는 ULTRA 랜더 주엔진으로 Nammo의 LEROS와 LEROS 2b를 채택했고 자세제어용 스러스터 하드웨어도 조달하고 있음.</p><p><b>3.</b> ispace EUROPE와 ispace-U.S.도 양해각서 서명자로 참여해 글로벌 공급체계를 강화할 계획임. 다만 현재 단계는 장기 협력 검토 MOU이며 확정 발주량·가격·생산능력과 향후 임무의 성공 실적은 공개되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>월착륙선 추진계 · LEROS/LEROS 2b 엔진 · 자세제어 스러스터 · 우주 공급망·장납기 조달관리</dd><dt>사업화 단계</dt><dd>기체 적용 엔진 선정 및 장기조달 MOU 단계, 일괄발주·공급계약 조건 미확정</dd><dt>관련 기업·고객·PoC</dt><dd>ispace · Nammo UK · Nammo Group · ispace EUROPE · ispace-U.S. · ESA Argonaut</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 민간 달 탐사에서 핵심 부품의 기술성뿐 아니라 제한된 공급자와 수년 단위 납기를 관리하는 조달전략이 사업 확장 조건이 되고 있음. 포스코그룹의 직접 소재 공급을 단정할 수 없으므로 엔진용 내열·내식 소재 사양, 공급업체 현지화와 인증 진입 가능성을 별도로 확인해야 함.</p></div><p><b>Follow-up:</b> MOU의 본계약 전환·발주량·가격, ULTRA 랜더 임무 일정, 엔진 소재·가공 사양, 공급망 현지화, 품질인증·추적성 요구 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/16/news052.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261117-3" data-category="AI·로보틱스·AX" data-priority="Medium" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>다쏘시스템, 산업 월드모델·버추얼 컴패니언 중심 산업 AI 전략 제시</h2><div class="meta">실제 공개일: 2026-11-17 06:30:00 JST</div></div><span class="badge medium">Medium</span></div><div class="summary"><p><b>1.</b> 다쏘시스템은 과학지식·설계원칙·산업데이터와 버추얼 트윈을 결합한 ‘산업 월드모델’을 산업 AI의 기반으로 제시했음. 생성 답변을 넘어 물리법칙·재료특성·공학 제약을 이해하고 설계·생산 의사결정을 지원하는 AI 네이티브 3DEXPERIENCE 플랫폼을 지향함.</p><p><b>2.</b> 탐색의 AURA, 공학적 실현가능성을 판단하는 LEO, 재료·화학·규제 관점의 MARIE 등 3개 버추얼 컴패니언은 2026년 7월부터 플랫폼에서 제공 중임. 상용 기능 제공은 확인됐지만 고객별 도입성과, 검증 정확도와 비용절감 수치는 공개되지 않았음.</p><p><b>3.</b> NVIDIA와 산업 AI 공통기반을 구축하고 오므론 Sysmac과 생산시스템 버추얼 트윈을 연결해 라인·로봇·물류를 사전 검증하는 협업을 추진 중임. 이는 협업 방향과 플랫폼 전략을 설명한 것으로 신규 고객 PoC나 상용 운영 성과 발표와는 구분해야 함.</p></div><dl><dt>핵심 기술</dt><dd>산업 월드모델 · 버추얼 트윈 · AI 에이전트/버추얼 컴패니언 · 지식그래프 · IT/OT 통합</dd><dt>사업화 단계</dt><dd>3DEXPERIENCE 상용 플랫폼에서 AI 컴패니언 제공 중, 파트너 통합·고객 효과 검증은 진행 단계</dd><dt>관련 기업·고객·PoC</dt><dd>Dassault Systèmes · NVIDIA · OMRON · 일본 제조업 고객 · 3DEXPERIENCE 사용자</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 배터리 소재·철강 공정의 실험데이터, 물성모델과 설비데이터를 연결하면 연구개발·라인 설계·기술전승의 AX 후보가 될 수 있음. 다만 산업 AI 적용 전 데이터 주권, 지식재산 보호, 모델 검증 책임과 기존 PLM·MES·OT 연계비용을 우선 확인해야 함.</p></div><p><b>Follow-up:</b> 일본 제조 고객 도입사례, 모델 검증정확도·책임체계, 데이터 소유권·소버린 클라우드, 라이선스·통합비용, 배터리·소재 R&amp;D 적용사례 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/17/news025.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><article class="card" id="20261117-4" data-category="AI·로보틱스·AX" data-priority="Low" data-coverage="신규"><div class="top"><div><span class="tag ">신규</span><span class="tag">AI·로보틱스·AX</span><h2>사키코퍼레이션, 기판 반전 없는 인라인 3D 하면 자동검사 장비 개발</h2><div class="meta">실제 공개일: 2026-11-16 13:00:00 JST</div></div><span class="badge low">Low</span></div><div class="summary"><p><b>1.</b> 사키코퍼레이션은 실장기판 후공정의 스루홀 부품을 기판 반전이나 별도 핸들링 없이 검사하는 인라인 3D 하면 자동외관검사장비 ‘3Di-LS3BX’를 개발했음. 차량용 기판 등의 전수검사, 품질 안정화와 검사공정 자동화·무인화를 목표로 함.</p><p><b>2.</b> 고강성 프레임과 돔 조명, THT 솔더검사용 전용 소프트웨어·알고리즘을 결합해 핀과 필렛의 하면 검사를 수행함. 장비 성능과 반복재현성 향상을 설명했으나 검사 정확도·처리속도·오검률 등의 정량 성능은 공개되지 않았음.</p><p><b>3.</b> 기존 Saki SPI·AOI 장비와 공통 소프트웨어 플랫폼을 사용하며 하부 리턴 컨베이어를 추가할 수 있음. 제품 개발은 발표됐지만 출시일, 가격, 고객사·수주와 실제 라인 운영 성과는 기사에서 확인되지 않았음.</p></div><dl><dt>핵심 기술</dt><dd>3D 자동광학검사(AOI) · THT 솔더 핀/필렛 검사 · 돔 조명 · 고강성 프레임 · 인라인 하면검사</dd><dt>사업화 단계</dt><dd>신제품 개발·공개 단계, 출시일·수주·양산라인 적용 실적 미공개</dd><dt>관련 기업·고객·PoC</dt><dd>Saki Corporation · 차량용·전자기기 PCB 제조사 · 기존 Saki SPI/AOI 도입 공장</dd></dl><div class="posco"><b>POSCO그룹 관점 시사점</b><p>[분석] 반전·이송 공정을 제거해 검사 자동화와 라인 단순화를 동시에 추구하는 머신비전 사례임. 포스코그룹 소재 표면검사로의 전용 가능성은 기사만으로 입증되지 않으므로 광학계·알고리즘의 대상물 확장성보다 우선 기판 제조시장 내 제품성을 확인할 필요가 있음.</p></div><p><b>Follow-up:</b> 출시일·가격·수주처, 검사 정확도·속도·오검률, AI 학습·레시피 작성 범위, 기존 라인 통합시간, 비PCB 대상 확장성 확인</p><div class="card-links"><a class="link" href="https://monoist.itmedia.co.jp/mn/articles/2611/16/news054.html" target="_blank" rel="noopener noreferrer">원문 보기</a></div></article><section class="box"><h2>우선순위 종합</h2><div class="rank"><a href="#20261117-1"><b>1. 레조낙, AI 반도체 소재 호조로 전자재료 매출 37% 증가</b></a> <span class="badge medium">Medium</span></div><div class="rank"><a href="#20261117-2"><b>2. ispace·Nammo, 월착륙선 추진계 엔진 일괄조달·장기공급 MOU</b></a> <span class="badge medium">Medium</span></div><div class="rank"><a href="#20261117-3"><b>3. 다쏘시스템, 산업 월드모델·버추얼 컴패니언 중심 산업 AI 전략 제시</b></a> <span class="badge medium">Medium</span></div><div class="rank"><a href="#20261117-4"><b>4. 사키코퍼레이션, 기판 반전 없는 인라인 3D 하면 자동검사 장비 개발</b></a> <span class="badge low">Low</span></div></section><section class="box none"><h2>신규 기사 미확인 분야</h2><p>이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치·리사이클 관련 신규 선정 기사는 미확인.</p><p>AI·로보틱스·AX: 산업 월드모델·버추얼 컴패니언과 3D 하면검사장비 2건을 확인했음. 휴머노이드·모바일 매니퓰레이터 관련 신규 선정 기사는 미확인.</p><p>GX·전력인프라: CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 선정 기사는 미확인.</p><p>항공우주·방산·첨단기술: AI 반도체 소재 실적과 월착륙선 추진계 공급망 2건을 확인했음. 방산소재·핵융합·양자 관련 신규 선정 기사는 미확인.</p></section><details class="box"><summary>조사 범위 및 선별 기준</summary><p>검색 범위: 2026-11-16 08:15:28 JST ~ 2026-11-17 08:53:24 JST</p><p>MONOist 월간 기사 아카이브와 원문을 확인하고 기존 reports의 기사 URL·제목과 대조했음. 중복, 편집후기, 퀴즈, 주간요약, 일반 기술해설, 단순 홍보·기능소개는 제외했음.</p><p class="scope-note">수치와 사업화 단계는 MONOist 원문에 공개된 사실을 기준으로 작성했으며, POSCO그룹 시사점은 공개정보 기반 분석임.</p></details></main><footer><div class="wrap">MONOist 공개기사 기반 · 생성 2026-11-17 08:53 JST</div></footer><script id="report-data" type="application/json">{"report_date":"2026-11-17","generated_at":"2026-11-17T08:53:24+09:00","search_window":{"start":"2026-11-16T08:15:28+09:00","end":"2026-11-17T08:53:24+09:00","timezone":"Asia/Tokyo","basis":"직전 실제 발행 브리핑 종료 이후 공개된 MONOist 기사와 오늘 실행시점까지의 공개분을 조사했음. 원문 확인 후 중복·편집후기·주간요약·일반 해설·단순 기능소개를 제외하고 4건을 선정했음."},"articles":[{"id":"20261117-1","category":"항공우주·방산·첨단기술","coverage_status":"신규","title":"레조낙, AI 반도체 소재 호조로 전자재료 매출 37% 증가","published_at":"2026-11-17T06:15:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/17/news030.html","summary":["레조낙홀딩스는 2026년 1~9월 연결 매출 8719억엔과 코어 영업이익 1641억엔을 기록해 전년 동기 대비 각각 14%, 136% 증가했음. 회사는 반도체·전자재료 호조와 흑연전극 구조개편 효과가 증익에 기여했다고 설명했음.","AI용 동박적층판(CCL), 방열재(TIM), 대만 고객용 비전도성필름(NCF)과 절연필름의 성장이 실적 상향의 대부분을 차지했음. 반도체·전자재료 부문 매출은 5008억엔으로 37%, 코어 영업이익은 1586억엔으로 114% 증가했음.","데이터센터용 HDD 미디어와 일부 고객향 SiC 에피택셜 웨이퍼 수요도 증가했음. 이는 상용 판매가 실적에 반영된 사례이지만 개별 제품의 판매량·마진·고객 집중도와 증설 계획은 기사에 공개되지 않았음."],"core_technology":"AI 반도체용 CCL · TIM 방열재 · NCF·절연필름 · 데이터센터용 HDD 미디어 · SiC 에피택셜 웨이퍼","commercialization_stage":"양산·상용 판매 실적이 연결 실적에 반영된 단계, 제품별 물량·수익성 미공개","related_entities":"Resonac Holdings · 대만 AI 반도체 고객(사명 미공개) · AI 데이터센터·반도체 후공정 고객","posco_implications":"[분석] AI 데이터센터 성장의 가치가 컴퓨팅 장비뿐 아니라 고속기판·열관리·패키징 필름으로 이동하고 있음을 실적으로 보여주는 사례임. 포스코그룹은 전자재료 직접 진입을 전제하기보다 동박·금속기판·열관리 소재 등 보유 역량과 인접한 영역의 파트너십·투자 기회를 선별할 필요가 있음.","priority":"Medium","follow_up":"CCL·TIM·NCF별 매출·마진과 생산능력, 대만 고객 집중도, 증설 CAPEX, AI 투자 사이클 민감도, 흑연전극 구조개편 효과 분리 확인"},{"id":"20261117-2","category":"항공우주·방산·첨단기술","coverage_status":"신규","title":"ispace·Nammo, 월착륙선 추진계 엔진 일괄조달·장기공급 MOU","published_at":"2026-11-16T10:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/16/news052.html","summary":["ispace는 영국 Nammo와 우주기용 추진계 조달·제조의 장기 협력을 검토하는 양해각서를 체결했음. 엔진 일괄조달과 생산계획 연계를 통해 월착륙 임무의 공급 안정성, 비용 경쟁력과 납기 안정화를 추진 중임.","월착륙선용 추진계 엔진은 공급자가 제한적이고 발주부터 조달까지 수년이 걸리는 장납기 품목임. ispace는 ULTRA 랜더 주엔진으로 Nammo의 LEROS와 LEROS 2b를 채택했고 자세제어용 스러스터 하드웨어도 조달하고 있음.","ispace EUROPE와 ispace-U.S.도 양해각서 서명자로 참여해 글로벌 공급체계를 강화할 계획임. 다만 현재 단계는 장기 협력 검토 MOU이며 확정 발주량·가격·생산능력과 향후 임무의 성공 실적은 공개되지 않았음."],"core_technology":"월착륙선 추진계 · LEROS/LEROS 2b 엔진 · 자세제어 스러스터 · 우주 공급망·장납기 조달관리","commercialization_stage":"기체 적용 엔진 선정 및 장기조달 MOU 단계, 일괄발주·공급계약 조건 미확정","related_entities":"ispace · Nammo UK · Nammo Group · ispace EUROPE · ispace-U.S. · ESA Argonaut","posco_implications":"[분석] 민간 달 탐사에서 핵심 부품의 기술성뿐 아니라 제한된 공급자와 수년 단위 납기를 관리하는 조달전략이 사업 확장 조건이 되고 있음. 포스코그룹의 직접 소재 공급을 단정할 수 없으므로 엔진용 내열·내식 소재 사양, 공급업체 현지화와 인증 진입 가능성을 별도로 확인해야 함.","priority":"Medium","follow_up":"MOU의 본계약 전환·발주량·가격, ULTRA 랜더 임무 일정, 엔진 소재·가공 사양, 공급망 현지화, 품질인증·추적성 요구 확인"},{"id":"20261117-3","category":"AI·로보틱스·AX","coverage_status":"신규","title":"다쏘시스템, 산업 월드모델·버추얼 컴패니언 중심 산업 AI 전략 제시","published_at":"2026-11-17T06:30:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/17/news025.html","summary":["다쏘시스템은 과학지식·설계원칙·산업데이터와 버추얼 트윈을 결합한 ‘산업 월드모델’을 산업 AI의 기반으로 제시했음. 생성 답변을 넘어 물리법칙·재료특성·공학 제약을 이해하고 설계·생산 의사결정을 지원하는 AI 네이티브 3DEXPERIENCE 플랫폼을 지향함.","탐색의 AURA, 공학적 실현가능성을 판단하는 LEO, 재료·화학·규제 관점의 MARIE 등 3개 버추얼 컴패니언은 2026년 7월부터 플랫폼에서 제공 중임. 상용 기능 제공은 확인됐지만 고객별 도입성과, 검증 정확도와 비용절감 수치는 공개되지 않았음.","NVIDIA와 산업 AI 공통기반을 구축하고 오므론 Sysmac과 생산시스템 버추얼 트윈을 연결해 라인·로봇·물류를 사전 검증하는 협업을 추진 중임. 이는 협업 방향과 플랫폼 전략을 설명한 것으로 신규 고객 PoC나 상용 운영 성과 발표와는 구분해야 함."],"core_technology":"산업 월드모델 · 버추얼 트윈 · AI 에이전트/버추얼 컴패니언 · 지식그래프 · IT/OT 통합","commercialization_stage":"3DEXPERIENCE 상용 플랫폼에서 AI 컴패니언 제공 중, 파트너 통합·고객 효과 검증은 진행 단계","related_entities":"Dassault Systèmes · NVIDIA · OMRON · 일본 제조업 고객 · 3DEXPERIENCE 사용자","posco_implications":"[분석] 배터리 소재·철강 공정의 실험데이터, 물성모델과 설비데이터를 연결하면 연구개발·라인 설계·기술전승의 AX 후보가 될 수 있음. 다만 산업 AI 적용 전 데이터 주권, 지식재산 보호, 모델 검증 책임과 기존 PLM·MES·OT 연계비용을 우선 확인해야 함.","priority":"Medium","follow_up":"일본 제조 고객 도입사례, 모델 검증정확도·책임체계, 데이터 소유권·소버린 클라우드, 라이선스·통합비용, 배터리·소재 R&D 적용사례 확인"},{"id":"20261117-4","category":"AI·로보틱스·AX","coverage_status":"신규","title":"사키코퍼레이션, 기판 반전 없는 인라인 3D 하면 자동검사 장비 개발","published_at":"2026-11-16T13:00:00+09:00","url":"https://monoist.itmedia.co.jp/mn/articles/2611/16/news054.html","summary":["사키코퍼레이션은 실장기판 후공정의 스루홀 부품을 기판 반전이나 별도 핸들링 없이 검사하는 인라인 3D 하면 자동외관검사장비 ‘3Di-LS3BX’를 개발했음. 차량용 기판 등의 전수검사, 품질 안정화와 검사공정 자동화·무인화를 목표로 함.","고강성 프레임과 돔 조명, THT 솔더검사용 전용 소프트웨어·알고리즘을 결합해 핀과 필렛의 하면 검사를 수행함. 장비 성능과 반복재현성 향상을 설명했으나 검사 정확도·처리속도·오검률 등의 정량 성능은 공개되지 않았음.","기존 Saki SPI·AOI 장비와 공통 소프트웨어 플랫폼을 사용하며 하부 리턴 컨베이어를 추가할 수 있음. 제품 개발은 발표됐지만 출시일, 가격, 고객사·수주와 실제 라인 운영 성과는 기사에서 확인되지 않았음."],"core_technology":"3D 자동광학검사(AOI) · THT 솔더 핀/필렛 검사 · 돔 조명 · 고강성 프레임 · 인라인 하면검사","commercialization_stage":"신제품 개발·공개 단계, 출시일·수주·양산라인 적용 실적 미공개","related_entities":"Saki Corporation · 차량용·전자기기 PCB 제조사 · 기존 Saki SPI/AOI 도입 공장","posco_implications":"[분석] 반전·이송 공정을 제거해 검사 자동화와 라인 단순화를 동시에 추구하는 머신비전 사례임. 포스코그룹 소재 표면검사로의 전용 가능성은 기사만으로 입증되지 않으므로 광학계·알고리즘의 대상물 확장성보다 우선 기판 제조시장 내 제품성을 확인할 필요가 있음.","priority":"Low","follow_up":"출시일·가격·수주처, 검사 정확도·속도·오검률, AI 학습·레시피 작성 범위, 기존 라인 통합시간, 비PCB 대상 확장성 확인"}],"key_insights":[{"title":"① AI 데이터센터 소재 수요가 실적과 수익으로 확인됐음","body":"레조낙은 CCL·TIM·NCF·절연필름 수요가 실적 상향의 대부분을 차지했다고 설명했음. 소재별 성장성과 고객 집중도는 공개되지 않아 AI 수요의 지속성과 증설 경제성을 분리해 확인해야 함."},{"title":"② 산업 AI는 범용 생성에서 물리·소재 지식 기반 의사결정 지원으로 이동 중임","body":"다쏘시스템은 산업 월드모델과 버추얼 컴패니언을 상용 플랫폼에 결합하고 NVIDIA·오므론과 생태계를 구축 중임. 실제 고객성과보다 전략·제품 방향 발표의 성격이 강하므로 도입효과와 데이터 주권 검증이 필요함."},{"title":"③ 민간 우주사업의 병목은 제한된 추진계 공급자와 수년 단위 납기임","body":"ispace는 Nammo 엔진을 일괄조달하고 글로벌 생산계획을 연계하는 장기협력을 추진 중임. 현재는 MOU 단계이므로 확정 물량·가격·임무 성과와 소재 공급기회를 구분해야 함."},{"title":"④ 머신비전은 검사 정확도뿐 아니라 반전·핸들링 제거로 자동화 범위를 넓히고 있음","body":"Saki의 3D 하면검사장비는 THT 부품검사를 인라인화해 품질과 생산성의 동시 개선을 목표로 함. 정량 성능·출시일·수주가 미공개라 사업성 판단은 후속 검증이 필요함."}],"priority_ranking":[{"rank":1,"id":"20261117-1","title":"레조낙, AI 반도체 소재 호조로 전자재료 매출 37% 증가","priority":"Medium"},{"rank":2,"id":"20261117-2","title":"ispace·Nammo, 월착륙선 추진계 엔진 일괄조달·장기공급 MOU","priority":"Medium"},{"rank":3,"id":"20261117-3","title":"다쏘시스템, 산업 월드모델·버추얼 컴패니언 중심 산업 AI 전략 제시","priority":"Medium"},{"rank":4,"id":"20261117-4","title":"사키코퍼레이션, 기판 반전 없는 인라인 3D 하면 자동검사 장비 개발","priority":"Low"}],"no_new_articles_categories":["이차전지: 셀·축전지·전고체·LFP·LMR·NCM·양극재·음극재·전해질·분리막·제조장치·리사이클 관련 신규 선정 기사는 미확인.","AI·로보틱스·AX: 산업 월드모델·버추얼 컴패니언과 3D 하면검사장비 2건을 확인했음. 휴머노이드·모바일 매니퓰레이터 관련 신규 선정 기사는 미확인.","GX·전력인프라: CCUS·수소·암모니아·SAF·e-Fuel·페로브스카이트·전력망·ESS 관련 신규 선정 기사는 미확인.","항공우주·방산·첨단기술: AI 반도체 소재 실적과 월착륙선 추진계 공급망 2건을 확인했음. 방산소재·핵융합·양자 관련 신규 선정 기사는 미확인."]}</script><script>(()=>{const filters={priority:"",coverage:"",category:""};const query=document.getElementById("query");const cards=[...document.querySelectorAll("article.card")];function apply(){let n=0;const q=query.value.trim().toLowerCase();cards.forEach(a=>{const match=Object.keys(filters).every(k=>!filters[k]||filters[k]===a.dataset[k])&&a.textContent.toLowerCase().includes(q);a.hidden=!match;if(match)n++});document.getElementById("empty").hidden=n>0;document.getElementById("resultCount").textContent="전체 "+cards.length+"건 중 "+n+"건 표시";}document.querySelectorAll(".filters").forEach(group=>{group.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{filters[group.dataset.group]=button.dataset.value;group.querySelectorAll("button").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});apply();}));});document.querySelectorAll(".stat strong").forEach((el,i)=>{el.textContent=i===0?cards.length:cards.filter(a=>a.dataset.priority===["","High","Medium","Low"][i]).length;});query.addEventListener("input",apply);document.getElementById("reset").addEventListener("click",()=>{query.value="";document.querySelectorAll(".filters").forEach(g=>{filters[g.dataset.group]="";g.querySelectorAll("button").forEach(b=>{const active=b.dataset.value==="";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});});apply();});apply()})();</script></body></html>
